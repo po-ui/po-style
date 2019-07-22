@@ -33,3 +33,8 @@
     overflow-y: visible;
   }
 }
+
+/* Classe utilizada para sobreposição do valor touch em dispositivos ios mobile (?: DTHFUI-1221) */
+.po-page-overflow-scrolling-auto {
+  -webkit-overflow-scrolling: auto !important;
+}

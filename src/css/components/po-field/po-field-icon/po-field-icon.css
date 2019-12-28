@@ -9,7 +9,8 @@
 }
 
 .po-field-icon-container-left,
-.po-field-icon-container-right {
+.po-field-icon-container-right,
+.po-field-second-icon-container-right {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -22,6 +23,10 @@
 
 .po-field-icon-container-right {
   right: 10px;
+}
+
+.po-field-second-icon-container-right {
+  right: 30px;
 }
 
 .po-field-icon,

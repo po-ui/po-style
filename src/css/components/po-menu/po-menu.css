@@ -33,12 +33,22 @@
 
 .po-menu-body {
   height: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   overflow-y: auto;
 }
 
-.po-menu-inner::-webkit-scrollbar {
-  width: 0;
+.po-menu-body::-webkit-scrollbar {
+  width: 12px;
+}
+
+.po-menu-body::-webkit-scrollbar-thumb {
+  opacity: 0.75;
+  border-radius: 6px;
+  background-color: #c93570;
+}
+
+.po-container::-webkit-scrollbar-track {
+  display: none;
 }
 
 .po-menu-header-container-logo {
@@ -97,7 +107,7 @@
 .po-menu-outer {
   height: 100%;
   width: 115%;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-right: 0px;
   position: relative;
 }
@@ -105,8 +115,8 @@
 .po-menu-inner {
   box-sizing: content-box;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
   padding-right: 20px;
   width: 110%;
 }
@@ -148,6 +158,11 @@
 
 .po-menu-item:hover {
   background-color: var(--color-menu-background-color-item-hover);
+}
+
+.po-menu-item-link:focus {
+  border-radius: 1px;
+  border: solid 4px #8140a3;
 }
 
 .po-menu-item-link,

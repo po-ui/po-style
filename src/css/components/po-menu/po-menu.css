@@ -38,6 +38,10 @@
 }
 
 .po-menu-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.po-menu-body::-webkit-scrollbar:hover {
   width: 12px;
 }
 

@@ -1,0 +1,144 @@
+:root {
+  --font-page-slide-body: {
+    @apply --font-text;
+  }
+
+  --font-page-slide-title: {
+    @apply --font-subtitle;
+  }
+
+  --font-page-slide-subtitle: {
+    @apply --font-text-small;
+  }
+}
+
+.po-page-slide-overlay {
+  overflow: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+.po-page-slide-container {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.po-page-slide-content {
+  border-radius: 0;
+  min-height: 100%;
+}
+
+.po-page-slide-content {
+  background-color: var(--color-page-background-color-page);
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 8px;
+  position: relative;
+  max-width: 768px;
+}
+
+.po-page-slide-right,
+.po-page-slide-left {
+  display: table-cell;
+}
+
+.po-page-slide-left {
+  text-align: left;
+}
+
+.po-page-slide-right {
+  text-align: right;
+}
+
+.po-page-slide-sm {
+  width: 40%;
+}
+
+.po-page-slide-md {
+  width: 50%;
+}
+
+.po-page-slide-lg {
+  width: 60%;
+}
+
+.po-page-slide-xl {
+  width: 70%;
+}
+
+.po-page-slide-auto {
+  width: auto;
+  max-width: 90%;
+}
+
+.po-page-slide-header {
+  @apply --font-page-slide-title;
+  border: 0;
+  padding: 21px 8px;
+  max-width: 100%;
+  text-align: left;
+}
+
+.po-page-slide-title {
+  color: var(--color-page-header-color-title);
+  max-width: 736px;
+  padding-right: 24px;
+}
+
+.po-page-slide-subtitle {
+  @apply --font-page-slide-subtitle;
+}
+
+.po-page-slide-close-button {
+  color: var(--color-page-slide-color-close-button);
+  cursor: pointer;
+  position: absolute;
+  top: 21px;
+  right: 16px;
+  width: 24px;
+  text-decoration: none;
+}
+
+.po-page-slide-body {
+  @apply --font-page-slide-body;
+  color: var(--color-page-slide-text-color-body);
+  margin: 8px;
+  max-width: 736px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+  .po-page-slide-content {
+    width: 90%;
+  }
+
+  .po-page-slide-header {
+    padding: 8px;
+    width: 100%;
+  }
+
+  .po-page-slide-auto {
+    width: 90%;
+  }
+
+  .po-page-slide-close-button {
+    right: 16px;
+    top: 8px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .po-page-slide-content {
+    width: 80%;
+  }
+
+  .po-page-slide-auto {
+    width: auto;
+  }
+}

@@ -153,7 +153,7 @@
 }
 
 .po-multiselect-checkbox-input-checked + .po-multiselect-checkbox-label:before {
-  content: '\e938';
+  content: '\e93c';
 }
 
 @media screen and (max-width: 1366px) {

@@ -713,6 +713,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 
   <li>
     <a>
+      <span class="po-icon po-icon-pdf"></span>
+      <span>po-icon po-icon-pdf</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
       <span class="po-icon po-icon-picker"></span>
       <span>po-icon po-icon-picker</span>
     </a>
@@ -811,6 +818,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 
   <li>
     <a>
+      <span class="po-icon po-icon-sms"></span>
+      <span>po-icon po-icon-sms</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
       <span class="po-icon po-icon-social-github"></span>
       <span>po-icon po-icon-social-github</span>
     </a>
@@ -820,6 +834,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
     <a>
       <span class="po-icon po-icon-social-twitter"></span>
       <span>po-icon po-icon-social-twitter</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-social-whatsapp"></span>
+      <span>po-icon po-icon-social-whatsapp</span>
     </a>
   </li>
 
@@ -1009,6 +1030,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
     <a>
       <span class="po-icon po-icon-world"></span>
       <span>po-icon po-icon-world</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-xml"></span>
+      <span>po-icon po-icon-xml</span>
     </a>
   </li>
 

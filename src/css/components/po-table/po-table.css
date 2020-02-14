@@ -470,11 +470,11 @@
 }
 
 .po-table-column-selectable .po-table-checkbox-checked+.po-table-checkbox-label:before {
-  content: '\e938';
+  content: '\e93c';
 }
 
 .po-table-checkbox-indeterminate+.po-table-checkbox-label:before {
-  content: '\e929' !important;
+  content: '\e939' !important;
 }
 
 .po-table-master-detail {

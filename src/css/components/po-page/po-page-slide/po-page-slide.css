@@ -94,6 +94,8 @@
 }
 
 .po-page-slide-close-button {
+  background: none;
+  border: none;
   color: var(--color-page-slide-color-close-button);
   cursor: pointer;
   position: absolute;

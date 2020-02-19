@@ -22,6 +22,7 @@
   height: 44px;
   padding: 0 16px;
   text-align: center;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--color-button-background-color-hover);
@@ -39,6 +40,7 @@
     background-color: var(--color-button-background-color-disabled);
     border: solid 1px var(--color-button-border-disabled);
     color: var(--color-button-color-disabled);
+    cursor: default;
   }
 
   &-primary {

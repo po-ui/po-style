@@ -856,8 +856,8 @@
   PAGE SLIDE
 \*------------------------------------*/
 
-  --color-page-slide-color-close-button: var(--color-primary);
-  --color-page-slide-text-color-body: var(--color-neutral-dark-60);
+  --color-page-slide-close-button-color: var(--color-primary);
+  --color-page-slide-body-text-color: var(--color-neutral-dark-60);
 
 /*------------------------------------*\
   POPOVER

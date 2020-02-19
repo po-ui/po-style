@@ -2,6 +2,46 @@
   --collapsed-menu-width: 64px;
   --menu-width: 256px;
   --menu-panel-width: 56px;
+
+  --full-wrapper: {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  --full-wrapper-fixed {
+    position: fixed;
+    @apply --full-wrapper;
+  }
+
+  --full-wrapper-absolute {
+    position: absolute;
+    @apply --full-wrapper;
+  }
+
+  --overlay: {
+    background-color: var(--color-overlay-background-color-overlay);
+    content: '';
+    z-index: 1000;
+    @apply --full-wrapper;
+  }
+
+  --overlay-fixed {
+    @apply --overlay;
+    position: fixed;
+  }
+
+  --overlay-absolute {
+    @apply --overlay;
+    position: absolute;
+  }
+
+  --text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 /* po-common */
@@ -38,9 +78,7 @@
 }
 
 .po-text-ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  @apply --text-ellipsis;
 }
 
 .po-wrapper,
@@ -102,45 +140,31 @@
   transition: all 0.2s ease;
 }
 
-.po-full-wrapper-absolute,
-.po-full-wrapper-fixed,
-.po-overlay-absolute,
-.po-overlay-fixed {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.po-overlap,
-.po-overlay-absolute,
-.po-overlay-fixed {
-  z-index: 1000;
-}
-
-.po-overlay-absolute,
-.po-overlay-fixed {
-  background-color: var(--color-overlay-background-color-overlay);
-  content: '';
-}
-
-.po-overlay-absolute {
-  border-radius: 3px;
-}
-
-.po-full-wrapper-absolute,
-.po-overlay-absolute {
-  position: absolute;
-}
-
-.po-full-wrapper-fixed,
-.po-overlay-fixed {
-  position: fixed;
-}
-
 .po-wrapper .po-toolbar-title,
 .po-wrapper-menu-panel .po-toolbar-title {
   padding-left: 0;
+}
+
+.po-full-wrapper-absolute {
+  @apply --full-wrapper-absolute;
+}
+
+.po-full-wrapper-fixed {
+  @apply --full-wrapper-fixed;
+}
+
+.po-overlay-absolute {
+  @apply --overlay-absolute;
+  border-radius: 3px;
+}
+
+.po-overlay-fixed {
+  @apply --overlay-fixed;
+}
+
+/* transitions */
+.po-fade {
+  transition: opacity 0.15s linear;
 }
 
 @media screen and (max-width: 1200px) {

@@ -18,19 +18,7 @@
 </div>
 
 <div class="po-row po-m-1">
-  <p class="po-sm-12 po-font-subtitle">Align</p>
-  <div class="po-sm-2">
-    <button class="po-button" type="button" onClick="changePageAlign('left');">Left</button>
-  </div>
-  <div class="po-sm-2">
-    <button class="po-button" type="button" onClick="changePageAlign('right');">Right</button>
-  </div>
-  <div class="po-sm-8">
-    <div class="po-row">
-      <div class="po-sm-6 style-page-size">Size: md</div>
-      <div class="po-sm-6 style-page-align">Align: left</div>
-    </div>
-  </div>
+  <div class="po-sm-12 style-page-size">Size: md</div>
 </div>
 
 <div class="po-row po-m-1 po-mt-5">
@@ -42,7 +30,7 @@
 <!-- PAGE SLIDE COMPONENT -->
 <div class="po-page-slide po-fade" tabindex="-1">
   <div class="po-page-slide-overlay">
-    <div class="po-page-slide-container po-page-slide-left po-page-slide-sm">
+    <div class="po-page-slide-container po-page-slide-right po-page-slide-sm">
         
       <div class="po-page-slide-content">
         
@@ -119,16 +107,6 @@
     element.classList.add(`po-page-slide-${size}`);
 
     document.querySelector('.style-page-size').innerHTML = `Size: ${size}`;
-  }
-
-  function changePageAlign(align) {
-    const element = document.getElementsByClassName('po-page-slide-container')[0];
-    
-    element.classList.remove('po-page-slide-left');
-    element.classList.remove('po-page-slide-right');
-    element.classList.add(`po-page-slide-${align}`);
-
-    document.querySelector('.style-page-align').innerHTML = `Align: ${align}`;
   }
 
   function showPageSlide() {

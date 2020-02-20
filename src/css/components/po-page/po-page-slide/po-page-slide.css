@@ -34,8 +34,6 @@
 }
 
 .po-page-slide-container {
-  scroll-behavior: smooth;
-  scrollbar-width: thin;
   max-width: 768px;
   width: 100%;
   height: 100vh;
@@ -119,6 +117,8 @@
   overflow-y: auto;
   text-align: left;
   height: calc(100% - 70px); /* 100% - .po-page-slide-header */
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
 }
 
 @media screen and (max-width: 480px) {

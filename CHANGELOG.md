@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.27.0](https://github.com/portinariui/portinari-style/compare/v1.26.0...v1.27.0) (2020-02-21)
+
+
+### Features
+
+* **button:** melhora no affordance dos botões com o uso do cursor ([dc5c05e](https://github.com/portinariui/portinari-style/commit/dc5c05e))
+
+
 
 ## [1.26.0](https://github.com/portinariui/portinari-style/compare/v1.25.0...v1.26.0) (2020-02-14)
 
@@ -13,7 +21,10 @@
 ### Features
 
 * **icons:** adiciona mais 4 ícones a biblioteca ([4258b02](https://github.com/portinariui/portinari-style/commit/4258b02))
-
+  - pdf
+  - sms
+  - whatsapp
+  - xml
 
 
 ## [1.25.0](https://github.com/portinariui/portinari-style/compare/v1.24.0...v1.25.0) (2020-02-07)

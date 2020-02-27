@@ -10,12 +10,12 @@
     height: 100%;
   }
 
-  --full-wrapper-fixed {
+  --full-wrapper-fixed: {
     position: fixed;
     @apply --full-wrapper;
   }
 
-  --full-wrapper-absolute {
+  --full-wrapper-absolute: {
     position: absolute;
     @apply --full-wrapper;
   }
@@ -27,17 +27,17 @@
     @apply --full-wrapper;
   }
 
-  --overlay-fixed {
+  --overlay-fixed: {
     @apply --overlay;
     position: fixed;
   }
 
-  --overlay-absolute {
+  --overlay-absolute: {
     @apply --overlay;
     position: absolute;
   }
 
-  --text-ellipsis {
+  --text-ellipsis: {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

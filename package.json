@@ -19,8 +19,9 @@
     "release": "standard-version"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.0.0",
-    "@commitlint/config-angular": "^8.0.0",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-angular": "^8.3.4",
+    "@commitlint/travis-cli": "^8.3.5",
     "autoprefixer": "^9.7.4",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
@@ -32,19 +33,14 @@
     "gulp-rename": "^2.0.0",
     "gulp-tap": "^2.0.0",
     "http-server": "^0.12.1",
-    "husky": "^3.0.0",
+    "husky": "^4.2.3",
     "postcss-apply": "^0.12.0",
     "postcss-custom-properties": "^9.0.2",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
-    "standard-version": "^6.0.1",
+    "standard-version": "^7.1.0",
     "xml2js": "^0.4.23",
     "yargs": "^15.1.0"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "standard-version": {
     "skip": {

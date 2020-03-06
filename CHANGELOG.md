@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.28.0](https://github.com/portinariui/portinari-style/compare/v1.27.1...v1.28.0) (2020-03-06)
+
+Compatibilidade com @portinari/portinari-ui@1.28.0
+
 ## [1.27.1](https://github.com/portinariui/portinari-style/compare/v1.27.0...v1.27.1) (2020-02-28)
 
 Compatibilidade com @portinari/portinari-ui@1.27.1

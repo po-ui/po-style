@@ -16,7 +16,10 @@
     "build:icon": "node icon-generator",
     "watch": "gulp watch",
     "dev": "http-server ./app-dist -o -c-1",
-    "release": "standard-version"
+    "release": "standard-version",
+    "format:fix": "pretty-quick --staged",
+    "format:check": "prettier --check --loglevel error \"src/**/*{.ts,.js,.json,.css,.scss}\"",
+    "format:all": "prettier --write \"src/**/*{.ts,.js,.json,.css,.scss}\""
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -40,7 +43,9 @@
     "postcss-nested": "^4.2.1",
     "standard-version": "^7.1.0",
     "xml2js": "^0.4.23",
-    "yargs": "^15.1.0"
+    "yargs": "^15.1.0",
+    "prettier": "1.19.1",
+    "pretty-quick": "^2.0.1"
   },
   "standard-version": {
     "skip": {

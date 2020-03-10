@@ -19,7 +19,7 @@
   display: inline-block;
   height: var(--switch-container-height);
   position: relative;
-  transition: .3s ease-out all;
+  transition: 0.3s ease-out all;
   width: var(--switch-container-width);
 
   &-on {
@@ -50,7 +50,7 @@
   height: 20px;
   position: relative;
   top: 4px;
-  transition: .3s ease-out all;
+  transition: 0.3s ease-out all;
   width: 20px;
 
   &-on {
@@ -109,12 +109,12 @@
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-switch-label {
     @apply --font-switch-text-smaller;
   }
 
-  .po-switch-button-off > .po-icon-close, .po-switch-button-on > .po-icon-ok {
+  .po-switch-button-off > .po-icon-close,
+  .po-switch-button-on > .po-icon-ok {
     bottom: 2px;
     font-size: 14px;
     top: unset;
@@ -141,13 +141,10 @@
   .po-switch-content {
     margin-top: 4px;
   }
-
 }
 
 @media print {
-
   .po-switch-container {
     color-adjust: exact;
   }
-
 }

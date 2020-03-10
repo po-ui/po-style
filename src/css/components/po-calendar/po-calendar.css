@@ -12,7 +12,7 @@
   }
 
   --font-calendar-content {
-    @apply --font-text
+    @apply --font-text;
   }
 
   --shadow-calendar-box-shadow: var(--shadow-card);

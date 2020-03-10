@@ -17,7 +17,8 @@
   vertical-align: middle;
 }
 
-.po-tab-button-md, .po-tab-button-sm {
+.po-tab-button-md,
+.po-tab-button-sm {
   align-items: center;
   display: inline-flex;
   text-align: center;
@@ -54,10 +55,8 @@
 }
 
 @media screen and (max-width: 480px) {
-
   .po-tab-button-mobile {
     max-width: 40vw;
     width: 40vw;
   }
-
 }

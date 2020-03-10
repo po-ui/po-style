@@ -1,4 +1,3 @@
-
 :root {
   --font-page-list-link-text: {
     @apply --font-text-bold;
@@ -18,7 +17,9 @@
   --filter-container-padding-smaller: 8px;
 
   --filter-container: calc(var(--filter-content-width) + var(--filter-search-width) + var(--filter-container-padding));
-  --filter-container-smaller: calc(var(--filter-content-width-smaller) + var(--filter-search-width-smaller) + var(--filter-container-padding-smaller));
+  --filter-container-smaller: calc(
+    var(--filter-content-width-smaller) + var(--filter-search-width-smaller) + var(--filter-container-padding-smaller)
+  );
 }
 
 .po-page-list-operations {
@@ -68,7 +69,6 @@
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-page-list-actions.po-page-list-actions-padding,
   .po-page-list-header-padding .po-page-header-title {
     width: calc(100% - (var(--filter-container-smaller)));
@@ -112,11 +112,9 @@
     @apply --font-page-list-link-text-smaller;
     max-height: 32px;
   }
-
 }
 
 @media (max-width: 490px) {
-
   .po-page-list-actions,
   .po-page-list-actions .po-button,
   .po-page-list-actions .po-dropdown,
@@ -134,5 +132,4 @@
   .po-page-filter-content {
     width: calc(100% - (var(--filter-search-width-smaller) + var(--filter-container-padding-smaller)));
   }
-
 }

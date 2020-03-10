@@ -13,11 +13,10 @@
   .container {
     padding: 8px;
   }
-
 </style>
 
 <script>
-  (function(){
+  (function() {
     let timeout;
 
     init();
@@ -41,37 +40,42 @@
       dragDropAreaOverlay.style.right = boundingClientRect.right + 'px';
       dragDropAreaOverlay.style.top = boundingClientRect.top + 'px';
       dragDropAreaOverlay.style.width = boundingClientRect.width + 'px';
-    };
+    }
 
-    document.getElementById('uploadPage').addEventListener('dragover', function(event) {
-      event.preventDefault();
+    document.getElementById('uploadPage').addEventListener(
+      'dragover',
+      function(event) {
+        event.preventDefault();
 
-      clearTimeout(timeout);
+        clearTimeout(timeout);
 
-      setBoundClientRect();
+        setBoundClientRect();
 
-      document.getElementById('dragDropOverlay').classList.remove('po-invisible');
-    }, false);
+        document.getElementById('dragDropOverlay').classList.remove('po-invisible');
+      },
+      false
+    );
 
-    document.getElementById('uploadPage').addEventListener('dragleave', function(event) {
-      event.preventDefault();
+    document.getElementById('uploadPage').addEventListener(
+      'dragleave',
+      function(event) {
+        event.preventDefault();
 
-      timeout = setTimeout(() => {
-        document.getElementById('dragDropOverlay').classList.add('po-invisible');
-      }, 200)
-    }, false);
-
-  }());
-
+        timeout = setTimeout(() => {
+          document.getElementById('dragDropOverlay').classList.add('po-invisible');
+        }, 200);
+      },
+      false
+    );
+  })();
 </script>
 
 <article id="uploadPage">
   <section>
-
     <div class="container">
       <h4>Botão para seleção de um único arquivo</h4>
       <div class="po-upload">
-        <input type="file" name="name" id="id" class="po-upload-input">
+        <input type="file" name="name" id="id" class="po-upload-input" />
         <button type="button" class="po-upload-button po-button po-text-ellipsis">
           <span class="po-button-label">Selecionar arquivo</span>
         </button>
@@ -81,7 +85,7 @@
     <div class="container">
       <h4>Botão para seleção de múltiplos arquivos</h4>
       <div class="po-upload">
-        <input type="file" name="name" id="id" class="po-upload-input">
+        <input type="file" name="name" id="id" class="po-upload-input" />
         <button type="button" class="po-upload-button po-button po-text-ellipsis">
           <span class="po-button-label">Selecionar arquivos</span>
         </button>
@@ -91,13 +95,13 @@
     <div class="container">
       <h4>Botão para seleção de pastas</h4>
       <div class="po-upload">
-        <input type="file" name="name" id="id" class="po-upload-input">
+        <input type="file" name="name" id="id" class="po-upload-input" />
         <button type="button" class="po-upload-button po-button po-text-ellipsis">
           <span class="po-button-label">Selecionar pasta</span>
         </button>
       </div>
     </div>
-    
+
     <div class="container">
       <h4>Nenhum arquivo selecionado com label, help e opcional</h4>
       <div class="po-upload">
@@ -108,7 +112,7 @@
           </div>
           <div class="po-field-help">Texto de ajuda</div>
           <div class="po-field-container-content ng-valid">
-            <input type="file" name="name" id="id" class="po-upload-input">
+            <input type="file" name="name" id="id" class="po-upload-input" />
             <button type="button" class="po-upload-button po-button po-text-ellipsis">
               <span class="po-button-label">Selecionar arquivo</span>
             </button>
@@ -122,7 +126,7 @@
       <h4>Campo inválido</h4>
       <div class="ng-invalid ng-dirty">
         <div class="po-upload">
-          <input type="file" name="name" id="id" class="po-upload-input">
+          <input type="file" name="name" id="id" class="po-upload-input" />
           <button type="button" class="po-upload-button po-button po-text-ellipsis">
             <span class="po-button-label">Selecionar arquivo</span>
           </button>
@@ -133,17 +137,18 @@
     <div class="container">
       <h4>Menos de cinco arquivos selecionados</h4>
       <div class="po-upload">
-        <input type="file" name="name" id="id" class="po-upload-input">
+        <input type="file" name="name" id="id" class="po-upload-input" />
         <button type="button" class="po-upload-button po-button po-text-ellipsis">
           <span class="po-button-label">Selecionar arquivos</span>
         </button>
 
         <!-- PROGRESS -->
         <div class="po-upload-progress-container">
-          <div class="po-container po-container-no-border po-container-no-padding po-container-no-shadow" style="height: auto;">
-
+          <div
+            class="po-container po-container-no-border po-container-no-padding po-container-no-shadow"
+            style="height: auto;"
+          >
             <div class="po-progress po-progress-default">
-
               <label class="po-progress-description-mobile po-progress-description-text">
                 Planilha_de_colaboradores XMLS - 754KB
               </label>
@@ -166,7 +171,6 @@
             </div>
 
             <div class="po-progress po-progress-default">
-
               <label class="po-progress-description-mobile po-progress-description-text">
                 logo_portinari - 16KB
               </label>
@@ -199,7 +203,7 @@
     <div class="container">
       <h4>Mais de cinco arquivos selecionados</h4>
       <div class="po-upload">
-        <input type="file" name="name" id="id" class="po-upload-input">
+        <input type="file" name="name" id="id" class="po-upload-input" />
         <button type="button" class="po-upload-button po-button po-text-ellipsis">
           <span class="po-button-label">Selecionar arquivos</span>
         </button>
@@ -207,11 +211,8 @@
         <!-- PROGRESS -->
         <div class="po-upload-progress-container">
           <div class="po-container po-container-no-shadow" style="height: 280px;">
-
             <div class="po-upload-progress-container-area po-pt-2 po-pl-1">
-
               <div class="po-progress po-progress-default">
-
                 <label class="po-progress-description-mobile po-progress-description-text">
                   Planilha_de_colaboradores XMLS - 754KB
                 </label>
@@ -234,7 +235,6 @@
               </div>
 
               <div class="po-progress po-progress-default">
-
                 <label class="po-progress-description-mobile po-progress-description-text">
                   logo_portinari - 16KB
                 </label>
@@ -257,7 +257,6 @@
               </div>
 
               <div class="po-progress po-progress-default">
-
                 <label class="po-progress-description-mobile po-progress-description-text">
                   image_20191021.jpg - 44KB
                 </label>
@@ -280,7 +279,6 @@
               </div>
 
               <div class="po-progress po-progress-default">
-
                 <label class="po-progress-description-mobile po-progress-description-text">
                   image_20191022.jpg - 44KB
                 </label>
@@ -303,7 +301,6 @@
               </div>
 
               <div class="po-progress po-progress-default">
-
                 <label class="po-progress-description-mobile po-progress-description-text">
                   image_20191023.jpg - 59KB
                 </label>
@@ -326,7 +323,6 @@
               </div>
 
               <div class="po-progress po-progress-default">
-
                 <label class="po-progress-description-mobile po-progress-description-text">
                   image_20191024.jpg - 97KB
                 </label>
@@ -360,29 +356,31 @@
     <div class="container">
       <h4>Arquivos selecionados com restrição de arquivos</h4>
       <div class="po-upload">
-        <input type="file" name="name" id="id" class="po-upload-input">
+        <input type="file" name="name" id="id" class="po-upload-input" />
         <button type="button" class="po-upload-button po-button po-text-ellipsis">
           <span class="po-button-label">Selecionar arquivos</span>
         </button>
 
         <!-- INICIO FILE RESTRICTIONS -->
         <div class="po-upload-file-restrictions">
-            <p class="po-font-text-small">
-              Quantidade máxima: 2 arquivo(s)
-            </p>
-            <p class="po-font-text-small">
-              Formatos adotados: .PNG e .ZIP.
-            </p>
-            <p class="po-font-text-small">
-              Limite de tamanho por arquivo: de 1 Bytes até 30.72 KB
-            </p>
+          <p class="po-font-text-small">
+            Quantidade máxima: 2 arquivo(s)
+          </p>
+          <p class="po-font-text-small">
+            Formatos adotados: .PNG e .ZIP.
+          </p>
+          <p class="po-font-text-small">
+            Limite de tamanho por arquivo: de 1 Bytes até 30.72 KB
+          </p>
         </div>
         <!-- FIM FILE RESTRICTIONS -->
 
         <!-- PROGRESS -->
         <div class="po-upload-progress-container">
-          <div class="po-container po-container-no-border po-container-no-padding po-container-no-shadow" style="height: auto;">
-
+          <div
+            class="po-container po-container-no-border po-container-no-padding po-container-no-shadow"
+            style="height: auto;"
+          >
             <div class="po-progress po-progress-default">
               <label class="po-progress-description-mobile po-progress-description-text">
                 Planilha_de_colaboradores XMLS - 754KB
@@ -437,15 +435,17 @@
     <div class="container">
       <h4>Carregando arquivos</h4>
       <div class="po-upload">
-        <input type="file" name="name" id="id" class="po-upload-input">
+        <input type="file" name="name" id="id" class="po-upload-input" />
         <button type="button" class="po-upload-button po-button po-text-ellipsis" disabled>
           <span class="po-button-label">Selecionar arquivos</span>
         </button>
 
         <!-- PROGRESS -->
         <div class="po-upload-progress-container">
-          <div class="po-container po-container-no-border po-container-no-padding po-container-no-shadow" style="height: auto;">
-            
+          <div
+            class="po-container po-container-no-border po-container-no-padding po-container-no-shadow"
+            style="height: auto;"
+          >
             <div class="po-progress po-progress-default">
               <label class="po-progress-description-mobile po-progress-description-text">
                 Planilha_de_colaboradores XMLS - 754KB
@@ -501,7 +501,7 @@
 
               <div class="po-progress-description">
                 <label class="po-progress-description-text">
-                    image_20191020.jpg - 44KB
+                  image_20191020.jpg - 44KB
                 </label>
               </div>
 
@@ -512,7 +512,6 @@
               </div>
             </div>
           </div>
-
         </div>
         <div class="po-upload-send-button">
           <button type="button" name="button" class="po-button po-button-primary" disabled>
@@ -523,31 +522,27 @@
     </div>
 
     <div class="po-row">
-
       <div class="container po-md-6">
         <h4>Drag Drop de arquivos</h4>
 
         <div class="po-upload">
-          <input type="file" name="name" id="id" class="po-upload-input">
+          <input type="file" name="name" id="id" class="po-upload-input" />
 
           <!-- DRAG DROP AREA -->
           <div>
             <div class="po-upload-drag-drop-area" style="height: 320px">
-
               <div class="po-upload-drag-drop-area-container">
                 <span class="po-upload-drag-drop-area-icon po-icon po-icon-upload-cloud"></span>
 
-                <div class="po-upload-drag-drop-area-label"> Arraste os arquivos aqui </div>
+                <div class="po-upload-drag-drop-area-label">Arraste os arquivos aqui</div>
 
                 <button class="po-upload-drag-drop-area-select-files po-clickable">
                   ou selecione os arquivos no computador
                 </button>
               </div>
-
             </div>
           </div>
           <!-- FIM DRAG DROP AREA -->
-
 
           <!-- PROGRESS -->
           <div class="po-upload-progress-container">
@@ -582,31 +577,27 @@
         </div>
       </div>
 
-
       <div class="container po-md-6">
         <h4>Drag Drop de diretórios</h4>
 
         <div class="po-upload">
-          <input type="file" name="name" id="id" class="po-upload-input">
+          <input type="file" name="name" id="id" class="po-upload-input" />
 
           <!-- DRAG DROP AREA -->
           <div>
             <div class="po-upload-drag-drop-area" style="height: 320px">
-
               <div class="po-upload-drag-drop-area-container">
                 <span class="po-upload-drag-drop-area-icon po-icon po-icon-upload-cloud"></span>
 
-                <div class="po-upload-drag-drop-area-label"> Arraste as pastas aqui </div>
+                <div class="po-upload-drag-drop-area-label">Arraste as pastas aqui</div>
 
                 <button class="po-upload-drag-drop-area-select-files po-clickable">
                   ou selecione as pastas no computador
                 </button>
               </div>
-
             </div>
           </div>
           <!-- FIM DRAG DROP AREA -->
-
 
           <!-- PROGRESS -->
           <div class="po-upload-progress-container">
@@ -645,22 +636,20 @@
         <h4>Drag Drop com restrição de arquivos</h4>
 
         <div class="po-upload">
-          <input type="file" name="name" id="id" class="po-upload-input">
+          <input type="file" name="name" id="id" class="po-upload-input" />
 
           <!-- DRAG DROP AREA -->
           <div>
             <div class="po-upload-drag-drop-area" style="height: 320px">
-
               <div class="po-upload-drag-drop-area-container">
                 <span class="po-upload-drag-drop-area-icon po-icon po-icon-upload-cloud"></span>
 
-                <div class="po-upload-drag-drop-area-label"> Arraste os arquivos aqui </div>
+                <div class="po-upload-drag-drop-area-label">Arraste os arquivos aqui</div>
 
                 <button class="po-upload-drag-drop-area-select-files po-clickable">
                   ou selecione os arquivos no computador
                 </button>
               </div>
-
             </div>
           </div>
           <!-- FIM DRAG DROP AREA -->
@@ -711,115 +700,98 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <div class="po-row">
-
       <div class="container po-md-6">
         <h4>Drag Drop com Drop habilitado</h4>
 
         <div class="po-upload">
-          <input type="file" name="name" id="id" class="po-upload-input">
+          <input type="file" name="name" id="id" class="po-upload-input" />
 
           <!-- DRAG DROP OVERLAY -->
           <div class="po-overlay-fixed" id="dragDropOverlay">
-
             <div id="dragDropAreaOverlay" class="po-upload-drag-drop-area-overlay">
-
               <div class="po-upload-drag-drop-area">
                 <div class="po-upload-drag-drop-area-container">
-
                   <span class="po-upload-drag-drop-area-overlay-icon po-icon po-icon-upload-cloud"></span>
 
-                  <div class="po-upload-drag-drop-area-overlay-label"> Solte os arquivos aqui </div>
+                  <div class="po-upload-drag-drop-area-overlay-label">Solte os arquivos aqui</div>
                 </div>
               </div>
             </div>
-
           </div>
           <!-- FIM DRAG DROP OVERLAY -->
 
           <!-- DRAG DROP AREA -->
           <div id="dragDropArea">
             <div class="po-upload-drag-drop-area" style="height: 320px">
-
               <div class="po-upload-drag-drop-area-container">
                 <span class="po-upload-drag-drop-area-icon po-icon po-icon-upload-cloud"></span>
 
-                <div class="po-upload-drag-drop-area-label"> Arraste os arquivos aqui </div>
+                <div class="po-upload-drag-drop-area-label">Arraste os arquivos aqui</div>
 
                 <button class="po-upload-drag-drop-area-select-files po-clickable">
                   ou selecione os arquivos no computador
                 </button>
               </div>
-
             </div>
           </div>
           <!-- FIM DRAG DROP AREA -->
         </div>
       </div>
 
-
       <div class="container po-md-6">
         <h4>Drag Drop desabilitado</h4>
 
-          <div class="po-upload">
-            <input type="file" name="name" id="id" class="po-upload-input">
+        <div class="po-upload">
+          <input type="file" name="name" id="id" class="po-upload-input" />
 
           <!-- DRAG DROP AREA -->
           <div>
             <div class="po-upload-drag-drop-area po-upload-drag-drop-area-disabled" style="height: 320px">
-
               <div class="po-upload-drag-drop-area-container">
                 <span class="po-upload-drag-drop-area-icon po-icon po-icon-upload-cloud"></span>
 
-                <div class="po-upload-drag-drop-area-label"> Arraste os arquivos aqui </div>
+                <div class="po-upload-drag-drop-area-label">Arraste os arquivos aqui</div>
 
                 <button class="po-upload-drag-drop-area-select-files" disabled>
                   ou selecione os arquivos no computador
                 </button>
               </div>
-
             </div>
           </div>
           <!-- FIM DRAG DROP AREA -->
         </div>
       </div>
-
     </div>
 
     <div class="po-row">
-
       <div class="container po-md-6">
         <h4>Drag Drop inválido</h4>
 
         <div class="ng-invalid ng-dirty">
           <div class="po-upload">
-            <input type="file" name="name" id="id" class="po-upload-input">
+            <input type="file" name="name" id="id" class="po-upload-input" />
 
             <!-- DRAG DROP AREA -->
             <div>
               <div class="po-upload-drag-drop-area" style="height: 320px">
-
                 <div class="po-upload-drag-drop-area-container">
                   <span class="po-upload-drag-drop-area-icon po-icon po-icon-upload-cloud"></span>
 
-                  <div class="po-upload-drag-drop-area-label"> Arraste os arquivos aqui </div>
+                  <div class="po-upload-drag-drop-area-label">Arraste os arquivos aqui</div>
 
                   <button class="po-upload-drag-drop-area-select-files po-clickable">
                     ou selecione os arquivos no computador
                   </button>
                 </div>
-
               </div>
             </div>
             <!-- FIM DRAG DROP AREA -->
           </div>
         </div>
       </div>
-
     </div>
-
   </section>
 </article>

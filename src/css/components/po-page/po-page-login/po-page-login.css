@@ -1,14 +1,14 @@
 :root {
   --font-page-login-highlight-text: {
-      @apply --font-display;
+    @apply --font-display;
   }
 
   --font-page-login-font-title: {
-      @apply --font-title;
+    @apply --font-title;
   }
 
   --font-page-login-font-title-responsive: {
-      @apply --font-subtitle;
+    @apply --font-subtitle;
   }
 
   --font-page-login-font-link: {
@@ -51,25 +51,30 @@
   text-align: center;
 }
 
-.po-page-login-header-greeting, .po-page-login-header-title {
+.po-page-login-header-greeting,
+.po-page-login-header-title {
   @apply --font-page-login-font-title;
 }
 
-.po-page-login-recovery-link, .po-page-login-register-link {
+.po-page-login-recovery-link,
+.po-page-login-register-link {
   margin-top: 30px;
   text-align: center;
   width: 100%;
 }
 
-.po-page-login-recovery-link a, .po-page-login-register-link a {
+.po-page-login-recovery-link a,
+.po-page-login-register-link a {
   @apply --font-page-login-font-link;
   color: var(--color-page-login-link-color);
   cursor: pointer;
   text-decoration: none;
 }
 
-.po-page-login-recovery-link a:hover, .po-page-login-recovery-link a:focus,
-.po-page-login-register-link a:hover, .po-page-login-register-link a:focus {
+.po-page-login-recovery-link a:hover,
+.po-page-login-recovery-link a:focus,
+.po-page-login-register-link a:hover,
+.po-page-login-register-link a:focus {
   color: var(--color-page-login-link-hover-color);
   text-decoration: underline;
 }
@@ -130,16 +135,16 @@
 }
 
 .po-page-login-popover {
-	background-color: var(--color-white);
+  background-color: var(--color-white);
   border-radius: 3px;
-	box-shadow: var(--shadow-page-login-popover-box-shadow);
+  box-shadow: var(--shadow-page-login-popover-box-shadow);
   max-width: 206px;
   min-width: 232px;
   z-index: 1000;
 }
 
 .po-page-login-popover-arrow {
-	background-color: var(--color-popover-background-color-arrow);
+  background-color: var(--color-popover-background-color-arrow);
   box-shadow: var(--shadow-page-login-popover-box-shadow-arrow);
   height: 8px;
   left: -3px;
@@ -204,7 +209,6 @@
 }
 
 @media (max-width: 1366px) {
-
   .po-page-login-field-size {
     width: calc(100% - 21px);
   }
@@ -228,7 +232,6 @@
   .po-page-login-popover-arrow {
     top: 16px;
   }
-
 }
 
 @media (max-width: 998px) {
@@ -250,28 +253,26 @@
     top: -3px;
     transform: rotate(45deg);
   }
-
 }
 
 @media (max-width: 768px) {
-
   .po-page-login-highlight-image {
     display: none;
   }
 
-  .po-page-login-highlight-image-off, .po-page-login-highlight-text {
+  .po-page-login-highlight-image-off,
+  .po-page-login-highlight-text {
     display: none;
   }
 
   .po-page-login-password-popover-container {
     width: 21px;
   }
-
 }
 
 @media (max-width: 540px) {
-
-  .po-page-login-header-greeting, .po-page-login-header-title {
+  .po-page-login-header-greeting,
+  .po-page-login-header-title {
     @apply --font-page-login-font-title-responsive;
   }
 
@@ -292,7 +293,8 @@
     padding-top: 8px;
   }
 
-  .po-page-login-recovery-link, .po-page-login-register-link {
+  .po-page-login-recovery-link,
+  .po-page-login-register-link {
     margin-top: 16px;
   }
 
@@ -307,11 +309,9 @@
   .po-page-login-info-icon-container .po-tooltip {
     min-width: 200px;
   }
-
 }
 
 @media (max-width: 320px) {
-
   .po-page-login-panel {
     padding-bottom: 0;
     padding-top: 0;
@@ -326,7 +326,8 @@
     padding-top: 0px;
   }
 
-  .po-page-login-recovery-link, .po-page-login-register-link {
+  .po-page-login-recovery-link,
+  .po-page-login-register-link {
     margin-top: 8px;
     text-align: center;
     width: 50%;
@@ -345,5 +346,4 @@
   .po-page-login-panel-content {
     padding: 32px 0 0;
   }
-
 }

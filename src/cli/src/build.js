@@ -8,7 +8,7 @@ const del = require('del');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
 
-const customProperties = require('postcss-custom-properties')
+const customProperties = require('postcss-custom-properties');
 const importCss = require('postcss-import');
 
 async function command() {
@@ -21,8 +21,9 @@ async function command() {
   const cleanDirDist = () => del('./dist');
 
   const copyAssets = (assetType, custom = false) =>
-    src(`${custom ? './src/assets/' : './node_modules/@portinari/style/'}${assetType}/**/*.*`)
-      .pipe(dest(`./dist/${assetType}/`));
+    src(`${custom ? './src/assets/' : './node_modules/@portinari/style/'}${assetType}/**/*.*`).pipe(
+      dest(`./dist/${assetType}/`)
+    );
 
   const copyPackageJson = () => src('package.json').pipe(dest(`./dist/`));
 
@@ -30,7 +31,7 @@ async function command() {
 
   const buildThemeVariablesCss = () =>
     src(`./.temp/css/po-theme-custom.css`)
-      .pipe(postcss([ cssnano() ]))
+      .pipe(postcss([cssnano()]))
       .pipe(rename(`po-theme-${customName}-variables.min.css`))
       .on('error', err => {
         console.log(err.toString());
@@ -40,14 +41,16 @@ async function command() {
 
   const buildThemeCssLegacy = () =>
     src('./.temp/css/index.css')
-      .pipe(postcss([
-        importCss(),
-        customProperties({
-          preserve: false,
-          warnings: true
-        }),
-        cssnano()
-      ]))
+      .pipe(
+        postcss([
+          importCss(),
+          customProperties({
+            preserve: false,
+            warnings: true
+          }),
+          cssnano()
+        ])
+      )
       .pipe(rename(`css/po-theme-${customName}.min.css`))
       .on('error', err => {
         console.log(err.toString());
@@ -60,18 +63,18 @@ async function command() {
   const copyAssetsFonts = () => copyAssets('fonts', customFonts);
 
   const showFinalMessage = () => {
-    console.log('\n========================\n')
+    console.log('\n========================\n');
     console.log(' ' + chalk.white.bold('To publish theme:') + '\n');
     console.log(' ' + chalk.green.bold(`cd dist`));
     console.log(' ' + chalk.green.bold(`npm publish`) + '\n');
   };
 
-  (series(
+  series(
     parallel(cleanDirDist, cleanDirTemp),
     parallel(copyAssetsImages, copyAssetsIcons, copyAssetsFonts, copyPackageJson, copyCssToDirTemp),
     parallel(buildThemeVariablesCss, buildThemeCssLegacy),
     parallel(cleanDirTemp, showFinalMessage)
-  ))();
+  )();
 }
 
 module.exports = command;

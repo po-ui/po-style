@@ -60,7 +60,6 @@ po-radio-group.ng-invalid.ng-dirty .po-radio-group-input + .po-radio-group-label
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-radio-group-item {
     @apply --font-radio-group-label-smaller;
     height: 32px;
@@ -75,5 +74,4 @@ po-radio-group.ng-invalid.ng-dirty .po-radio-group-input + .po-radio-group-label
   .po-radio-group-input-checked + .po-radio-group-label:before {
     line-height: 16px;
   }
-
 }

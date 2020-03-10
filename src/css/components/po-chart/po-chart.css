@@ -91,7 +91,6 @@ po-chart-legend {
 }
 
 @media screen and (min-width: 1024px) {
-
   .po-chart-header {
     padding-bottom: 24px;
   }
@@ -106,5 +105,4 @@ po-chart-legend {
   .po-chart-legend-item:not(:last-child) {
     margin-right: 24px;
   }
-
 }

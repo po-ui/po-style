@@ -6,7 +6,7 @@
   --font-input-text-smaller: {
     @apply --font-text;
   }
-  
+
   --shadow-input-box-shadow-input: var(--shadow-input);
 }
 
@@ -39,7 +39,8 @@
 }
 
 /* Desabilita o clean field e o reveal do IE 10+ */
-.po-input::-ms-clear, .po-input::-ms-reveal {
+.po-input::-ms-clear,
+.po-input::-ms-reveal {
   display: none;
 }
 
@@ -81,7 +82,6 @@ po-url.ng-invalid.ng-dirty .po-input {
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-input {
     @apply --font-input-text-smaller;
     height: 32px;
@@ -99,5 +99,4 @@ po-url.ng-invalid.ng-dirty .po-input {
   .po-input-double-icon-right {
     padding-right: 52px;
   }
-
 }

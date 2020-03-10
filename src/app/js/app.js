@@ -33,7 +33,7 @@ function loadInitialPage() {
   window.location.search
     .replace('?', '') // Remove o "?" do ínicio dos query parameters
     .split('&') // Separa os parametros
-    .forEach(function (param) {
+    .forEach(function(param) {
       var name = param.split('=')[0];
       var value = param.split('=')[1];
 
@@ -71,8 +71,8 @@ function createMenuItemElement(menuItem) {
   menuItemElement.className = 'po-menu-item-wrapper';
   menuItemElement.innerHTML =
     '<div class="po-menu-item po-menu-item-grouper-down po-clickable" onclick="toggleMenuItem(this)">' +
-      '<span class="po-icon po-icon-arrow-down po-menu-group-icon"></span>' +
-      menuItem.title +
+    '<span class="po-icon po-icon-arrow-down po-menu-group-icon"></span>' +
+    menuItem.title +
     '</div>';
 
   var menuSubItemsContainerElement;
@@ -139,7 +139,8 @@ function clickMenuSubItem(menuSubItem) {
   var pageHref = anchorSubItemElement.getAttribute('href');
   var title = anchorSubItemElement.innerText.trim();
 
-  if (history.pushState) { // IE9 não tem history.pushState
+  if (history.pushState) {
+    // IE9 não tem history.pushState
     history.pushState(undefined, undefined, '?sample=' + pageHref);
   }
 

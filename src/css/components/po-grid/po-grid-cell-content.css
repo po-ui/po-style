@@ -10,7 +10,8 @@
   --color-grid-cell-content-required-color: var(--color-07);
 }
 
-.po-grid-cell-content, .po-grid-cell-input {
+.po-grid-cell-content,
+.po-grid-cell-input {
   @apply --font-grid-cell-content-font;
   border: 0 1px 1px 0 solid var(--color-grid-cell-content-input-border-color);
   height: 44px;
@@ -42,7 +43,7 @@
 
 .po-grid-cell-input {
   border: 1px solid var(--color-grid-cell-content-color);
-  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   min-width: 100%;
   outline: none;

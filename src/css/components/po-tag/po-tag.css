@@ -48,7 +48,7 @@
   border-radius: 1px;
   border: 2px dashed var(--color-tag-border-color-dashed-focus);
   box-sizing: border-box;
-  content: "";
+  content: '';
   height: calc(100% + 8px);
   left: -4px;
   position: absolute;
@@ -181,9 +181,7 @@
 }
 
 @media print {
-
   .po-tag {
     color-adjust: exact;
   }
-
 }

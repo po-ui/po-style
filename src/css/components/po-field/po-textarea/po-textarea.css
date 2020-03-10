@@ -1,4 +1,3 @@
-
 :root {
   --font-textarea-text: {
     @apply --font-text-large;
@@ -69,10 +68,8 @@
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-textarea {
     @apply --font-textarea-text-smaller;
     padding: 4px 8px;
   }
-
 }

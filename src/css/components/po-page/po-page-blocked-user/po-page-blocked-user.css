@@ -8,11 +8,11 @@
   }
 
   --font-page-blocked-user-font-text: {
-    @apply --font-text
+    @apply --font-text;
   }
 
   --font-page-blocked-user-font-text-bold-responsive: {
-    @apply --font-text-bold
+    @apply --font-text-bold;
   }
 }
 
@@ -130,15 +130,12 @@
 }
 
 @media (max-width: 320px) {
-
   .po-page-blocked-user-image {
     display: none;
   }
-
 }
 
 @media (max-width: 539px) {
-
   .po-page-background-wrap .po-page-login-panel-content {
     padding: 0;
   }
@@ -150,11 +147,9 @@
   .po-page-blocked-user-image {
     margin-bottom: 8px;
   }
-
 }
 
 @media (min-width: 540px) {
-
   .po-page-background-wrap {
     height: 100%;
     max-height: 100vh;
@@ -211,15 +206,13 @@
   .po-page-blocked-user-mobile-bottom-alignment {
     position: static;
   }
-
 }
 
 @media (min-width: 768px) {
-
   .po-page-background-wrap .po-page-login-panel-content {
     padding: 84px 0;
   }
-  
+
   .po-page-background-wrap .po-page-background-hide-logo {
     display: block;
   }
@@ -227,9 +220,8 @@
   .po-page-blocked-user-image {
     width: 248px;
   }
-    
+
   .po-page-blocked-user-reason-content {
     display: block;
   }
-
 }

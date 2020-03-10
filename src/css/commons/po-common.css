@@ -6,7 +6,7 @@
 
 /* po-common */
 .po-clickable {
-  cursor: pointer!important;
+  cursor: pointer !important;
 }
 
 .po-invisible {
@@ -43,7 +43,8 @@
   white-space: nowrap;
 }
 
-.po-wrapper, .po-wrapper-menu-panel {
+.po-wrapper,
+.po-wrapper-menu-panel {
   background-color: var(--color-wrapper-menu-panel-color-background);
   max-height: 100vh;
   max-width: 100%;
@@ -53,7 +54,7 @@
 .po-wrapper .po-page {
   display: inline-block;
   height: 100vh;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   white-space: normal;
 }
 
@@ -66,7 +67,7 @@
 .po-wrapper-menu-panel .po-page {
   display: inline-block;
   height: 100vh;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   white-space: normal;
 }
 
@@ -90,14 +91,15 @@
 .po-wrapper .po-page .po-page-content,
 .po-wrapper-menu-panel .po-page .po-page-content {
   padding: 20px 16px 10px 16px;
-  transition: width .2s ease;
+  transition: width 0.2s ease;
   white-space: normal;
   width: 100%;
 }
 
-.po-wrapper .po-toolbar, .po-wrapper-menu-panel .po-toolbar {
+.po-wrapper .po-toolbar,
+.po-wrapper-menu-panel .po-toolbar {
   padding-left: 16px;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .po-overlay-absolute,
@@ -126,7 +128,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-
   .po-wrapper .po-toolbar,
   .po-wrapper.po-collapsed-menu .po-toolbar {
     margin-left: 44px;
@@ -154,7 +155,6 @@
     margin: 0;
     width: 100%;
   }
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -176,14 +176,12 @@
 }
 
 @media (min-width: 540px) {
-
   .po-mobile-only {
     display: none;
   }
 }
 
 @media print {
-
   .po-wrapper {
     overflow: auto;
   }
@@ -201,5 +199,4 @@
   .po-dynamic-view.po-row {
     display: block;
   }
-
 }

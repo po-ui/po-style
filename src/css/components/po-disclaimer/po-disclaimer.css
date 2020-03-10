@@ -15,7 +15,8 @@
   display: inline-flex;
 }
 
-.po-disclaimer .po-disclaimer-label, .po-disclaimer .po-disclaimer-remove {
+.po-disclaimer .po-disclaimer-label,
+.po-disclaimer .po-disclaimer-remove {
   @apply --font-disclaimer-font-label;
   color: var(--color-disclaimer-color-text);
   display: inline-block;
@@ -50,9 +51,8 @@
 }
 
 @media print {
-
-  .po-disclaimer-label, .po-disclaimer-remove {
+  .po-disclaimer-label,
+  .po-disclaimer-remove {
     color-adjust: exact;
   }
-
 }

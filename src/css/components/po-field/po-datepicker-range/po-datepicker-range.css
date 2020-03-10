@@ -77,7 +77,6 @@ po-datepicker-range.ng-invalid.ng-dirty .po-input {
 }
 
 @media screen and (min-width: 1367px) {
-
   .po-datepicker-range-field {
     padding: 0 8px 0 16px !important;
   }
@@ -89,5 +88,4 @@ po-datepicker-range.ng-invalid.ng-dirty .po-input {
   .po-datepicker-range-start-date {
     width: 90px;
   }
-
 }

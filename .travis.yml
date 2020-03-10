@@ -13,3 +13,4 @@ cache:
 
 script:
   - commitlint-travis
+  - npm run format:check

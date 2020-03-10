@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -20,13 +21,18 @@ th {
   text-align: left;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
 }
 
 hr {
   border: 0;
-  border-top: 1px solid var( --color-hr-border-top);
+  border-top: 1px solid var(--color-hr-border-top);
   margin-bottom: 1rem;
   margin-top: 1rem;
 }

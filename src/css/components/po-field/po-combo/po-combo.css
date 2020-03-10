@@ -92,7 +92,7 @@ po-combo.ng-invalid.ng-dirty .po-input {
 }
 
 .po-combo-input {
-  padding-right:30px !important;
+  padding-right: 30px !important;
   text-overflow: ellipsis;
 }
 
@@ -102,12 +102,11 @@ po-combo.ng-invalid.ng-dirty .po-input {
 }
 
 @media screen and (max-width: 1366px) {
- 
   .po-combo-item {
     @apply --font-combo-text-smaller;
   }
 
-  .po-combo-item-title, 
+  .po-combo-item-title,
   .po-combo-item {
     padding: 7px 8px;
   }
@@ -116,5 +115,4 @@ po-combo.ng-invalid.ng-dirty .po-input {
     @apply --font-combo-text-sm-bold;
     padding: 40px 0;
   }
-
 }

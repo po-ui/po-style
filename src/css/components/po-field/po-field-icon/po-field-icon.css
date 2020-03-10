@@ -4,7 +4,7 @@
   }
 
   --font-field-icon-small {
-    @apply --font-text-large
+    @apply --font-text-large;
   }
 }
 
@@ -60,9 +60,8 @@ po-url.ng-invalid.ng-dirty .po-field-icon {
 }
 
 @media screen and (max-width: 1366px) {
-
-  .po-field-icon, .po-field-icon-disabled {
+  .po-field-icon,
+  .po-field-icon-disabled {
     @apply --font-field-icon-small;
   }
-
 }

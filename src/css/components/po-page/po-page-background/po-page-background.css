@@ -36,8 +36,8 @@
 }
 
 .po-page-background-footer-select .po-select-button,
-.po-page-background-footer-select .po-select:focus+.po-select-container .po-select-button,
-.po-page-background-footer-select .po-select-container.po-select-show>.po-select-button {
+.po-page-background-footer-select .po-select:focus + .po-select-container .po-select-button,
+.po-page-background-footer-select .po-select-container.po-select-show > .po-select-button {
   background-color: transparent;
   border: transparent;
   box-shadow: none;
@@ -94,7 +94,6 @@
 }
 
 @media (max-width: 1366px) {
-
   .po-page-background-footer {
     padding-right: 28px;
   }
@@ -102,11 +101,9 @@
   .po-page-background-footer-select .po-select-content {
     bottom: 50px;
   }
-
 }
 
 @media (max-width: 540px) {
-
   .po-page-background-main-logo {
     height: auto;
     max-height: 32px;
@@ -121,21 +118,19 @@
   .po-page-background-footer-mobile-only {
     display: block;
   }
-
 }
 
 @media (max-width: 320px) {
-
   .po-page-background-secondary-logo {
     max-width: 40px;
   }
 
-  .po-page-background-main-logo, .po-page-background-secondary-logo {
+  .po-page-background-main-logo,
+  .po-page-background-secondary-logo {
     bottom: 8px;
   }
 
   .po-page-background-secondary-logo .po-page-background-secondary-logo-image {
     height: 16px;
   }
-
 }

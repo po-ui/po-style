@@ -1,6 +1,6 @@
 :root {
   --font-tooltip-font-text: {
-      @apply --font-text;
+    @apply --font-text;
   }
 
   --shadow-tooltip-shadow-balloon: var(--shadow-tooltip);

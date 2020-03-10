@@ -1,6 +1,6 @@
 :root {
   --font-breadcrumb: {
-      @apply --font-text-small;
+    @apply --font-text-small;
   }
 
   --breadcrumb-lenght-middle-arrow: 16.5px;
@@ -12,7 +12,7 @@
 .po-breadcrumb {
   @apply --font-breadcrumb;
   background-color: var(--color-breadcrumb-background-color-container);
-  border: solid 1px var( --color-breadcrumb-border-color-container);
+  border: solid 1px var(--color-breadcrumb-border-color-container);
   border-radius: 3px;
   height: 32px;
   position: relative;
@@ -23,7 +23,8 @@
   list-style: none;
 }
 
-.po-breadcrumb-item, .po-breadcrumb-item-unclickable {
+.po-breadcrumb-item,
+.po-breadcrumb-item-unclickable {
   float: left;
 }
 
@@ -33,8 +34,7 @@
   float: right;
   height: var(--breadcrumb-lenght-middle-arrow);
   margin-top: 7px;
-  transform:
-    rotate(var(--breadcrumb-transform-rotate-arrow))
+  transform: rotate(var(--breadcrumb-transform-rotate-arrow))
     skew(var(--breadcrumb-transform-skew-X-arrow), var(--breadcrumb-transform-skew-Y-arrow));
   width: var(--breadcrumb-lenght-middle-arrow);
 }
@@ -68,7 +68,8 @@
   color: var(--color-breadcrumb-color-star-active);
 }
 
-.po-breadcrumb-item-unclickable, .po-breadcrumb-favorite {
+.po-breadcrumb-item-unclickable,
+.po-breadcrumb-favorite {
   color: var(--color-breadcrumb-color-item-unclickable);
 }
 

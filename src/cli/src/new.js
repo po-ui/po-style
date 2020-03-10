@@ -33,7 +33,8 @@ async function command(themeName) {
 
     fs.copyFileSync(
       __dirname.replace('src', 'node_modules/@portinari/style/css/po-theme-default-variables.css'),
-      destination + '/src/po-theme-custom.css');
+      destination + '/src/po-theme-custom.css'
+    );
 
     const package = {
       name: themeName,
@@ -52,21 +53,22 @@ async function command(themeName) {
 
     fs.writeFileSync(destination + '/package.json', JSON.stringify(package, {}, 2));
 
-    fs.writeFileSync(destination + '/src/index.css',
-      '@import \'../../node_modules/@portinari/style/css/po-theme-core.min.css\';' + '\r\n\r\n' +
-      '@import \'./po-theme-custom.css\';'
+    fs.writeFileSync(
+      destination + '/src/index.css',
+      "@import '../../node_modules/@portinari/style/css/po-theme-core.min.css';" +
+        '\r\n\r\n' +
+        "@import './po-theme-custom.css';"
     );
 
     cd(destination);
 
     await _installPackages();
 
-    console.log('\n========================\n')
+    console.log('\n========================\n');
     console.log(' ' + chalk.white.bold('To custom theme:') + '\n');
     console.log(' ' + chalk.green.bold(`cd ${themeName}`));
     console.log(' ' + chalk.green.bold(`Customize your theme in 'src/po-theme-custom.css'`));
     console.log(' ' + chalk.green.bold(`Build: 'npm run build'`));
-
   } catch (e) {
     console.error(`Ops! An error occurred in the installation of the project "${themeName}"`);
     console.error(e.message);
@@ -89,8 +91,8 @@ function _installPackages() {
 
       console.log(chalk.white.bold('Packages installed sucessfully!'));
       resolve();
-    })
-  })
+    });
+  });
 }
 
 module.exports = command;

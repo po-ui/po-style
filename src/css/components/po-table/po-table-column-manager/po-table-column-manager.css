@@ -1,9 +1,7 @@
 :root {
-
   --font-table-column-manager-text: {
     @apply --font-text-large;
   }
-
 }
 
 po-table-column-manager .po-popover {
@@ -31,7 +29,7 @@ po-table-column-manager .po-popover .po-popover-content {
 
 .po-table-column-manager-header-title {
   color: var(--color-table-column-manager-header-title);
-  padding: 0 16px
+  padding: 0 16px;
 }
 
 .po-table-column-manager-header-title,
@@ -89,17 +87,13 @@ po-table-column-manager .po-popover .po-popover-content {
 }
 
 @media screen and (max-width: 768px) {
-
   .po-table-column-manager-body {
     max-height: 144px;
   }
-
 }
 
 @media screen and (min-width: 769px) and (max-width: 1366px) {
-
   .po-table-column-manager-body {
     max-height: 272px;
   }
-
 }

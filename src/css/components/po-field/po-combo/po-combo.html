@@ -14,7 +14,7 @@
           </div>
           <div class="po-field-help">Texto de ajuda</div>
           <div class="po-field-container-content ng-valid">
-            <input type="text" class="po-input po-input-icon-right" value="São Paulo">
+            <input type="text" class="po-input po-input-icon-right" value="São Paulo" />
             <div class="po-field-icon-container-right">
               <span class="po-icon po-field-icon po-icon-arrow-down"></span>
             </div>
@@ -34,7 +34,7 @@
               <span class="po-icon po-field-icon po-icon-portinari"></span>
             </div>
 
-            <input type="text" class="po-input po-input-icon-right po-input-icon-left" value="Joinville">
+            <input type="text" class="po-input po-input-icon-right po-input-icon-left" value="Joinville" />
             <div class="po-field-icon-container-right">
               <span class="po-icon po-field-icon po-icon-arrow-down"></span>
             </div>
@@ -49,7 +49,7 @@
         <div class="po-field-container">
           <div class="po-field-container-title"></div>
           <div class="po-field-container-content ng-valid">
-            <input type="text" class="po-input po-input-icon-right" placeholder="Sem label e sem help">
+            <input type="text" class="po-input po-input-icon-right" placeholder="Sem label e sem help" />
             <div class="po-field-icon-container-right">
               <span class="po-icon po-field-icon po-icon-arrow-down"></span>
             </div>
@@ -66,7 +66,11 @@
               <span class="po-icon po-field-icon po-icon-company"></span>
             </div>
 
-            <input type="text" class="po-input po-input-icon-right po-input-icon-left" placeholder="Sem label, sem help e com ícone">
+            <input
+              type="text"
+              class="po-input po-input-icon-right po-input-icon-left"
+              placeholder="Sem label, sem help e com ícone"
+            />
             <div class="po-field-icon-container-right">
               <span class="po-icon po-field-icon po-icon-arrow-down"></span>
             </div>
@@ -77,93 +81,96 @@
     </div>
 
     <div class="po-row"></div>
-      <div class="po-sm-6">
-        <div class="po-field-container">
-          <div class="po-field-container-title">
-            <span class="po-field-title">Combobox desabilitado</span>
-          </div>
-
-          <div class="po-field-container-content ng-valid">
-            <input type="text" class="po-input po-input-icon-right" value="São Paulo" disabled>
-            <div class="po-field-icon-container-right">
-              <span class="po-icon po-field-icon-disabled po-icon-arrow-down"></span>
-            </div>
-          </div>
-          <div class="po-field-container-bottom"></div>
+    <div class="po-sm-6">
+      <div class="po-field-container">
+        <div class="po-field-container-title">
+          <span class="po-field-title">Combobox desabilitado</span>
         </div>
+
+        <div class="po-field-container-content ng-valid">
+          <input type="text" class="po-input po-input-icon-right" value="São Paulo" disabled />
+          <div class="po-field-icon-container-right">
+            <span class="po-icon po-field-icon-disabled po-icon-arrow-down"></span>
+          </div>
+        </div>
+        <div class="po-field-container-bottom"></div>
       </div>
+    </div>
 
-      <div class="po-sm-6">
-        <div class="po-field-container">
-          <div class="po-field-container-title">
-            <span class="po-field-title">Combobox desabilitado e com ícone</span>
-          </div>
-
-          <div class="po-field-container-content ng-valid">
-            <div class="po-field-icon-container-left">
-              <span class="po-icon po-field-icon po-icon-stock po-field-icon-disabled"></span>
-            </div>
-
-            <input type="text" class="po-input po-input-icon-right po-input-icon-left" value="São Paulo" disabled>
-            <div class="po-field-icon-container-right">
-              <span class="po-icon po-field-icon-disabled po-icon-arrow-down"></span>
-            </div>
-          </div>
-          <div class="po-field-container-bottom"></div>
+    <div class="po-sm-6">
+      <div class="po-field-container">
+        <div class="po-field-container-title">
+          <span class="po-field-title">Combobox desabilitado e com ícone</span>
         </div>
+
+        <div class="po-field-container-content ng-valid">
+          <div class="po-field-icon-container-left">
+            <span class="po-icon po-field-icon po-icon-stock po-field-icon-disabled"></span>
+          </div>
+
+          <input type="text" class="po-input po-input-icon-right po-input-icon-left" value="São Paulo" disabled />
+          <div class="po-field-icon-container-right">
+            <span class="po-icon po-field-icon-disabled po-icon-arrow-down"></span>
+          </div>
+        </div>
+        <div class="po-field-container-bottom"></div>
       </div>
     </div>
 
     <div class="po-row"></div>
-      <div class="po-sm-6">
-        <po-combo class="ng-invalid ng-dirty">
-          <div class="po-field-container">
-            <div class="po-field-container-title">
-              <span class="po-field-title">Combobox inválido</span>
-            </div>
-            <div class="po-field-help">Texto de ajuda</div>
-            <div class="po-field-container-content ng-valid">
-              <input type="text" class="po-input po-input-icon-right" value="" placeholder="Selecione um estado">
-              <div class="po-field-icon-container-right">
-                <span class="po-icon po-field-icon po-icon-arrow-down"></span>
-              </div>
-            </div>
-            <div class="po-field-container-bottom">
-              <span class="po-field-container-bottom-text-error">
-                <span class="po-icon po-icon-warning po-field-container-icon-error"></span>
-                Mensagem de erro
-              </span>
+    <div class="po-sm-6">
+      <po-combo class="ng-invalid ng-dirty">
+        <div class="po-field-container">
+          <div class="po-field-container-title">
+            <span class="po-field-title">Combobox inválido</span>
+          </div>
+          <div class="po-field-help">Texto de ajuda</div>
+          <div class="po-field-container-content ng-valid">
+            <input type="text" class="po-input po-input-icon-right" value="" placeholder="Selecione um estado" />
+            <div class="po-field-icon-container-right">
+              <span class="po-icon po-field-icon po-icon-arrow-down"></span>
             </div>
           </div>
-        </po-combo>
-      </div>
+          <div class="po-field-container-bottom">
+            <span class="po-field-container-bottom-text-error">
+              <span class="po-icon po-icon-warning po-field-container-icon-error"></span>
+              Mensagem de erro
+            </span>
+          </div>
+        </div>
+      </po-combo>
+    </div>
 
-      <div class="po-sm-6">
-        <po-combo class="ng-invalid ng-dirty">
-          <div class="po-field-container">
-            <div class="po-field-container-title">
-              <span class="po-field-title">Combobox inválido e com ícone</span>
+    <div class="po-sm-6">
+      <po-combo class="ng-invalid ng-dirty">
+        <div class="po-field-container">
+          <div class="po-field-container-title">
+            <span class="po-field-title">Combobox inválido e com ícone</span>
+          </div>
+          <div class="po-field-help">Texto de ajuda</div>
+          <div class="po-field-container-content ng-valid">
+            <div *ngIf="icon" class="po-field-icon-container-left">
+              <span class="po-icon po-field-icon po-icon-finance"></span>
             </div>
-            <div class="po-field-help">Texto de ajuda</div>
-            <div class="po-field-container-content ng-valid">
-              <div *ngIf="icon" class="po-field-icon-container-left">
-                <span class="po-icon po-field-icon po-icon-finance"></span>
-              </div>
 
-              <input type="text" class="po-input po-input-icon-right po-input-icon-left" value="" placeholder="Selecione um estado">
-              <div class="po-field-icon-container-right">
-                <span class="po-icon po-field-icon po-icon-arrow-down"></span>
-              </div>
-            </div>
-            <div class="po-field-container-bottom">
-              <span class="po-field-container-bottom-text-error">
-                <span class="po-icon po-icon-warning po-field-container-icon-error"></span>
-                Mensagem de erro
-              </span>
+            <input
+              type="text"
+              class="po-input po-input-icon-right po-input-icon-left"
+              value=""
+              placeholder="Selecione um estado"
+            />
+            <div class="po-field-icon-container-right">
+              <span class="po-icon po-field-icon po-icon-arrow-down"></span>
             </div>
           </div>
-        </po-combo>
-      </div>
+          <div class="po-field-container-bottom">
+            <span class="po-field-container-bottom-text-error">
+              <span class="po-icon po-icon-warning po-field-container-icon-error"></span>
+              Mensagem de erro
+            </span>
+          </div>
+        </div>
+      </po-combo>
     </div>
 
     <div class="po-row">
@@ -174,7 +181,7 @@
           </div>
           <div class="po-field-help">Texto de ajuda</div>
           <div class="po-field-container-content">
-            <input type="text" class="po-input po-input-icon-right" value="São Paulo">
+            <input type="text" class="po-input po-input-icon-right" value="São Paulo" />
 
             <div class="po-field-icon-container-right">
               <span class="po-icon po-field-icon po-icon-arrow-up"></span>
@@ -212,7 +219,7 @@
           <div class="po-field-help">Texto de ajuda</div>
 
           <div class="po-field-container-content ng-valid">
-            <input type="text" class="po-input po-input-icon-right" value="São Paulo">
+            <input type="text" class="po-input po-input-icon-right" value="São Paulo" />
             <div class="po-field-icon-container-right">
               <span class="po-icon po-field-icon po-icon-arrow-up"></span>
             </div>
@@ -251,7 +258,7 @@
           </div>
           <div class="po-field-help">Texto de ajuda</div>
           <div class="po-field-container-content">
-            <input type="text" class="po-input po-input-icon-right" value="São Paulo">
+            <input type="text" class="po-input po-input-icon-right" value="São Paulo" />
 
             <div class="po-field-icon-container-right">
               <span class="po-icon po-field-icon po-icon-arrow-up"></span>
@@ -281,7 +288,7 @@
           <div class="po-field-help">Texto de ajuda</div>
 
           <div class="po-field-container-content ng-valid">
-            <input type="text" class="po-input po-input-icon-right" value="São Paulo">
+            <input type="text" class="po-input po-input-icon-right" value="São Paulo" />
             <div class="po-field-icon-container-right">
               <span class="po-icon po-field-icon po-icon-arrow-up"></span>
             </div>
@@ -296,7 +303,7 @@
                 </a>
               </li>
               <li value="2">
-                <a class="po-combo-item"> 
+                <a class="po-combo-item">
                   <!-- Conteúdo passado através de po-combo-option-template -->
                   <span class="po-icon po-icon-world po-pr-2"></span>Paraná
                 </a>
@@ -308,13 +315,13 @@
                 </a>
               </li>
               <li value="4">
-                <a class="po-combo-item"> 
+                <a class="po-combo-item">
                   <!-- Conteúdo passado através de po-combo-option-template -->
                   <span class="po-icon po-icon-world po-pr-2"></span>Sergipe
                 </a>
               </li>
               <li value="5">
-                <a class="po-combo-item"> 
+                <a class="po-combo-item">
                   <!-- Conteúdo passado através de po-combo-option-template -->
                   <span class="po-icon po-icon-world po-pr-2"></span>Tocantins
                 </a>
@@ -333,7 +340,7 @@
           </div>
           <div class="po-field-help">Texto de ajuda</div>
           <div class="po-field-container-content ng-valid">
-            <input type="text" class="po-input po-input-icon-right" value="São Paulo">
+            <input type="text" class="po-input po-input-icon-right" value="São Paulo" />
             <div class="po-field-icon-container-right">
               <span class="po-icon po-field-icon po-icon-arrow-up"></span>
             </div>

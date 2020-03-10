@@ -18,8 +18,8 @@
     "dev": "http-server ./app-dist -o -c-1",
     "release": "standard-version",
     "format:fix": "pretty-quick --staged",
-    "format:check": "prettier --check --loglevel error \"src/**/*{.ts,.js,.json,.css,.scss}\"",
-    "format:all": "prettier --write \"src/**/*{.ts,.js,.json,.css,.scss}\""
+    "format:check": "prettier --check --loglevel error \"src/**/*{.ts,.js,.json,.css,.scss,.html}\"",
+    "format:all": "prettier --write \"src/**/*{.ts,.js,.json,.css,.scss,.html}\""
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",

@@ -139,7 +139,6 @@
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-select-button {
     @apply --font-select-text-smaller;
     height: 16px;
@@ -151,5 +150,4 @@
     @apply --font-select-text-smaller;
     padding: 8px;
   }
-
 }

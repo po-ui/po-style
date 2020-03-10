@@ -1,8 +1,6 @@
-
 /* Classes para definição de offset */
 
 @media (max-width: 480px) {
-
   .po-offset-sm-1 {
     margin-left: 8.33333333%;
   }
@@ -46,11 +44,9 @@
   .po-offset-sm-11 {
     margin-left: 91.66666667%;
   }
-
 }
 
 @media (min-width: 481px) and (max-width: 960px) {
-
   .po-offset-md-1 {
     margin-left: 8.33333333%;
   }
@@ -94,11 +90,9 @@
   .po-offset-md-11 {
     margin-left: 91.66666667%;
   }
-
 }
 
 @media (min-width: 961px) and (max-width: 1366px) {
-
   .po-offset-lg-1 {
     margin-left: 8.33333333%;
   }
@@ -142,11 +136,9 @@
   .po-offset-lg-11 {
     margin-left: 91.66666667%;
   }
-
 }
 
 @media (min-width: 1367px) {
-
   .po-offset-xl-1 {
     margin-left: 8.33333333%;
   }

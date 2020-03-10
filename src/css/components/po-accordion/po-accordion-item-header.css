@@ -1,5 +1,4 @@
 :root {
-
   --font-accordion-header-font-button: {
     @apply --font-text-large-bold;
   }
@@ -47,7 +46,7 @@
   border-radius: 1px;
   border: 2px dashed var(--color-accordion-item-header-button-focus);
   box-sizing: border-box;
-  content: "";
+  content: '';
   height: calc(100% + 11px);
   left: -6px;
   position: absolute;
@@ -69,7 +68,7 @@
 
 .po-accordion-item-header-icon {
   transform: rotate(0deg);
-  transition: all .3s cubic-bezier(.07,.88,.58,.92);
+  transition: all 0.3s cubic-bezier(0.07, 0.88, 0.58, 0.92);
 }
 
 .po-accordion-item-active .po-accordion-item-header-icon {

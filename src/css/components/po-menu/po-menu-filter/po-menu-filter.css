@@ -51,7 +51,8 @@
 }
 
 /* Desabilita o clean field e o reveal do IE 10+ */
-.po-menu-filter::-ms-clear, .po-menu-filter::-ms-reveal {
+.po-menu-filter::-ms-clear,
+.po-menu-filter::-ms-reveal {
   display: none;
 }
 
@@ -68,7 +69,8 @@
   }
 }
 
-.po-menu-filter-close-icon-container, .po-menu-filter-search-icon-container {
+.po-menu-filter-close-icon-container,
+.po-menu-filter-search-icon-container {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

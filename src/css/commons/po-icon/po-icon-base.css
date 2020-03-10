@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'PortinariIcon';
-  src:  url('./../icons/PortinariIcon.eot?31xwv');
-  src:  url('./../icons/PortinariIcon.eot?31xwv#iefix') format('embedded-opentype'),
+  src: url('./../icons/PortinariIcon.eot?31xwv');
+  src: url('./../icons/PortinariIcon.eot?31xwv#iefix') format('embedded-opentype'),
     url('./../icons/PortinariIcon.ttf?31xwv') format('truetype'),
     url('./../icons/PortinariIcon.woff?31xwv') format('woff'),
     url('./../icons/PortinariIcon.svg?31xwv#PortinariIcon') format('svg');
@@ -9,7 +9,8 @@
   font-style: normal;
 }
 
-[class^='po-icon'], [class*=' po-icon'] {
+[class^='po-icon'],
+[class*=' po-icon'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'PortinariIcon' !important;
   speak: none;

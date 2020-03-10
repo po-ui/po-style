@@ -24,10 +24,8 @@
 }
 
 @media screen and (max-width: 768px) {
-
   /* Utilizado para ocultar atingir a responsividade */
   .po-navbar-item-navigation {
-    display: none!important;
+    display: none !important;
   }
-
 }

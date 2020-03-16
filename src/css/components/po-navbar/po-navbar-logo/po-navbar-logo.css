@@ -10,23 +10,19 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .po-navbar-logo {
     text-align: center;
     width: 100%;
   }
-
 }
 
 @media screen and (max-width: 1200px) {
-
   .po-navbar-logo-menu {
     padding-left: 24px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-
   .po-navbar-logo-menu {
     padding: 0 16px;
   }
@@ -40,7 +36,7 @@
   .po-navbar-no-logo {
     padding-left: 0px;
   }
-  
+
   .po-navbar-no-logo {
     padding-left: 0px;
   }

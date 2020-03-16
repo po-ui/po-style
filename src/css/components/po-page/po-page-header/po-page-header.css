@@ -22,7 +22,7 @@
 }
 
 .po-page-header-actions {
-  display: inline
+  display: inline;
 }
 
 .po-page-header-breadcrumb {
@@ -40,15 +40,12 @@
 }
 
 @media screen and (max-width: 1024px) {
-
   .po-page-header {
     padding: 8px;
   }
-
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-page-header-title {
     @apply --font-page-header-title-smaller;
   }
@@ -56,11 +53,9 @@
   .po-page-header-actions .po-button {
     margin-left: 8px;
   }
-
 }
 
 @media (max-width: 479px) {
-
   .po-page-header-actions {
     margin: 0;
   }
@@ -70,5 +65,4 @@
     margin: 8px 0 0 0;
     width: 100%;
   }
-
 }

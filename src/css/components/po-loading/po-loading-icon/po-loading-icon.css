@@ -9,7 +9,7 @@
 
 .po-loading-icon {
   display: block;
-  height: var(--loading-icon-height);;
+  height: var(--loading-icon-height);
   position: relative;
   width: var(--loading-icon-width);
 }
@@ -32,46 +32,49 @@
 
 .po-loading-icon .po-loading-icon-bar-1 {
   animation-delay: -0.875s;
-  transform:rotate(0deg) translate(0, -142%);
-}    
+  transform: rotate(0deg) translate(0, -142%);
+}
 
 .po-loading-icon .po-loading-icon-bar-2 {
   animation-delay: -0.75s;
-  transform:rotate(45deg) translate(0, -142%); 
+  transform: rotate(45deg) translate(0, -142%);
 }
 
 .po-loading-icon .po-loading-icon-bar-3 {
   animation-delay: -0.625s;
-  transform:rotate(90deg) translate(0, -142%); 
+  transform: rotate(90deg) translate(0, -142%);
 }
 
 .po-loading-icon .po-loading-icon-bar-4 {
   animation-delay: -0.5s;
-  transform:rotate(135deg) translate(0, -142%); 
+  transform: rotate(135deg) translate(0, -142%);
 }
 
 .po-loading-icon .po-loading-icon-bar-5 {
   animation-delay: -0.375s;
-  transform:rotate(180deg) translate(0, -142%); 
+  transform: rotate(180deg) translate(0, -142%);
 }
 
 .po-loading-icon .po-loading-icon-bar-6 {
   animation-delay: -0.25s;
-  transform:rotate(225deg) translate(0, -142%); 
+  transform: rotate(225deg) translate(0, -142%);
 }
 
 .po-loading-icon .po-loading-icon-bar-7 {
   animation-delay: -0.125s;
-  transform:rotate(270deg) translate(0, -142%); 
+  transform: rotate(270deg) translate(0, -142%);
 }
 
 .po-loading-icon .po-loading-icon-bar-8 {
   animation-delay: 0s;
-  transform:rotate(315deg) translate(0, -142%); 
+  transform: rotate(315deg) translate(0, -142%);
 }
 
 @keyframes icon-fade {
-  from {opacity: 1;}
-  to {opacity: 0.25;}
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
 }
-  

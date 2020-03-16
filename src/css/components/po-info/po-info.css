@@ -26,7 +26,6 @@
       display: table-cell;
       padding: 0 8px 0 0;
     }
-
   }
 
   &-value {
@@ -41,9 +40,7 @@
       /* Usado por conta do espaçamento do grid system */
       padding: 0 !important;
     }
-
   }
-
 }
 
 .po-info-container-content {
@@ -51,7 +48,9 @@
   width: 100%;
 }
 
-.po-info-link, .po-info-link:link, .po-info-link:visited {
+.po-info-link,
+.po-info-link:link,
+.po-info-link:visited {
   color: var(--color-info-color-link);
   text-decoration: none;
 }
@@ -67,9 +66,7 @@
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-info-value {
     @apply --font-info-font-value-smaller;
   }
-
 }

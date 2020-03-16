@@ -133,11 +133,13 @@
   width: 7px;
 }
 
-.po-modal::-webkit-scrollbar-track, .po-modal-body::-webkit-scrollbar-track {
+.po-modal::-webkit-scrollbar-track,
+.po-modal-body::-webkit-scrollbar-track {
   display: none;
 }
 
-.po-modal::-webkit-scrollbar-thumb, .po-modal-body::-webkit-scrollbar-thumb {
+.po-modal::-webkit-scrollbar-thumb,
+.po-modal-body::-webkit-scrollbar-thumb {
   background-color: var(--color-modal-background-color-scrollbar);
   border-radius: 10px;
 }
@@ -156,7 +158,6 @@
 }
 
 @media screen and (max-width: 480px) {
-
   .po-modal-content {
     width: 90%;
   }
@@ -191,11 +192,9 @@
   .po-modal-auto {
     width: 90%;
   }
-
 }
 
 @media screen and (min-width: 481px) and (max-width: 960px) {
-
   .po-modal-content {
     width: 80%;
   }
@@ -207,5 +206,4 @@
   .po-modal-auto {
     width: auto;
   }
-
 }

@@ -235,4 +235,8 @@
     position: absolute;
     width: 100%;
   }
+
+  .po-dynamic-view.po-row {
+    display: block;
+  }
 }

@@ -1,5 +1,4 @@
 :root {
-
   --font-list-view-font-sm-actions {
     @apply --font-text;
   }
@@ -47,7 +46,7 @@
 }
 
 .po-list-view:nth-of-type(1) {
-  margin-top: 0
+  margin-top: 0;
 }
 
 .po-list-view-select {
@@ -178,7 +177,6 @@
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-list-view {
     margin-top: 8px;
   }
@@ -243,5 +241,4 @@
   .po-list-view-more-actions {
     right: 0;
   }
-
 }

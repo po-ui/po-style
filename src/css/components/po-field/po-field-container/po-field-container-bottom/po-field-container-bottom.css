@@ -51,9 +51,7 @@
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-field-container-icon-error {
     @apply --font-field-container-bottom-icon-error-smaller;
   }
-
 }

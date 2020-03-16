@@ -15,10 +15,8 @@
 }
 
 @media screen and (max-width: 768px) {
-
   /* Utilizado para ocultar todas as actions quando atingir a responsividade */
   .po-navbar-action {
-    display: none!important;
+    display: none !important;
   }
-
 }

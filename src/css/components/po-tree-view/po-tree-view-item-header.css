@@ -1,5 +1,4 @@
 :root {
-
   --font-tree-view-item-header-label-font-bold: {
     @apply --font-text-bold;
   }
@@ -7,7 +6,6 @@
   --font-tree-view-item-header-label-font-normal: {
     @apply --font-text;
   }
-
 }
 
 .po-tree-view-item-header {
@@ -41,14 +39,15 @@
 .po-tree-view-item-header-button-icon {
   display: block;
   transform: rotate(0deg);
-  transition: transform .3s cubic-bezier(.07,.88,.58,.92);
+  transition: transform 0.3s cubic-bezier(0.07, 0.88, 0.58, 0.92);
 }
 
 .po-tree-view-item-header-button-icon-transform {
   transform: rotate(180deg);
 }
 
-.po-tree-view-item-header-label, .po-tree-view-item-header-checkbox {
+.po-tree-view-item-header-label,
+.po-tree-view-item-header-checkbox {
   color: var(--color-tree-view-item-header-label-text-color);
   display: table-cell;
   vertical-align: top;
@@ -81,15 +80,12 @@
 }
 
 @media screen and (max-width: 360px) {
-
   .po-tree-view-item-header {
     padding: 16px 8px;
   }
-
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-tree-view-item .po-tree-view-item-header-checkbox .po-checkbox {
     @apply --font-tree-view-item-header-label-font-bold;
   }

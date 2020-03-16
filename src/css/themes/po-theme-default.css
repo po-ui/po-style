@@ -99,10 +99,10 @@
 
 :root {
   /* Cor do background da linha da tabela */
-  --color-primary-light-95: #FCF6F9;
+  --color-primary-light-95: #fcf6f9;
 
   /* Borda inferior da Table Header */
-  --color-primary-light-80: #F5DBE8;
+  --color-primary-light-80: #f5dbe8;
 
   /* Scroll (opacidade de 50%) */
   --color-primary-alpha-50: rgba(201, 53, 125, 0.5);
@@ -111,22 +111,22 @@
   --color-primary: #c9357d;
 
   /* Hover do Botão primário, Links, Cor da borda do botão secundário */
-  --color-primary-dark-20: #9D2C67;
+  --color-primary-dark-20: #9d2c67;
 
   /* Pressed do Botão primário, Links, Cor da borda do botão secundário */
-  --color-primary-dark-40: #8B255A;
+  --color-primary-dark-40: #8b255a;
 
   /* Secondary */
   --color-secondary: #8241a4;
 
-  --color-secondary-dark-20: #733B8E;
+  --color-secondary-dark-20: #733b8e;
 
-  --color-secondary-dark-40: #5E2E73;
+  --color-secondary-dark-40: #5e2e73;
 
   /* Overlay de Modal e Menu (70% de opacidade) */
   --color-secondary-dark-60-alpha-70: rgba(59, 28, 74, 0.7);
 
-  --color-secondary-dark-60: #3B1C4A;
+  --color-secondary-dark-60: #3b1c4a;
 
   /* Tertiary */
 
@@ -137,11 +137,11 @@
   --color-tertiary: #ffd464;
 
   /* Cor de gráficos, botão do disclaimer */
-  --color-tertiary-dark-5: #F4D069;
+  --color-tertiary-dark-5: #f4d069;
 
-  --color-tertiary-dark-40: #D2B25A;
+  --color-tertiary-dark-40: #d2b25a;
 
-  --color-tertiary-dark-60: #AC9249;
+  --color-tertiary-dark-60: #ac9249;
 
   --color-white: #ffffff;
 
@@ -191,7 +191,6 @@
   /* Background do Feedback de atenção */
   --color-warning: #ea9b3e;
 
-
   --color-danger-light-40: #cd5f58;
 
   /* Background do Feedback de erro, Borda de Input com erro */
@@ -208,9 +207,9 @@
 
   --color-transparent: transparent;
 
-/*------------------------------------*\
-  COLOR-PALETTE
-\*------------------------------------*/
+  /*------------------------------------*\
+    COLOR-PALETTE
+  \*------------------------------------*/
 
   /* Cores que podem ser utilizadas na coluna de labels, legenda e cor de icones do componente table, também utilizadas na tag e badge */
   --color-01: #0c9abe;
@@ -226,9 +225,9 @@
   --color-11: #00b28e;
   --color-12: #06a6a5;
 
-/*------------------------------------*\
-  FONT
-\*------------------------------------*/
+  /*------------------------------------*\
+    FONT
+  \*------------------------------------*/
 
   /**
    * Variáveis para definições de fontes. O PO utiliza as variantes *extra light*, *regular* e *bold* em seus componentes e, para cada uma delas,
@@ -237,7 +236,6 @@
   --font-family-theme: Roboto;
   --font-family-theme-bold: Roboto-Bold;
   --font-family-theme-extra-light: Roboto-Condensed-Light;
-
 }
 
 @font-face {
@@ -263,49 +261,49 @@
 }
 
 /*------------------------------------*\
-  COMPONENTS
+   COMPONENTS
 \*------------------------------------*/
 :root {
-/*------------------------------------*\
-  ACCORDION
-\*------------------------------------*/
+  /*------------------------------------*\
+    ACCORDION
+  \*------------------------------------*/
 
-/**
- * Accordion Item
- */
+  /**
+   * Accordion Item
+  */
   --color-accordion-item-border-color: var(--color-neutral-light-90);
 
-/**
- * Accordion Item Header
- */
+  /**
+   * Accordion Item Header
+  */
   --color-accordion-header-button-background-color: var(--color-white);
   --color-accordion-header-color-primary: var(--color-primary);
   --color-accordion-header-color-hover: var(--color-secondary);
 
-/**
- * Accordion Item Header Button
- */
- --color-accordion-item-header-button-background-color: var(--color-transparent);
- --color-accordion-item-header-button-focus: var(--color-secondary);
+  /**
+   * Accordion Item Header Button
+  */
+  --color-accordion-item-header-button-background-color: var(--color-transparent);
+  --color-accordion-item-header-button-focus: var(--color-secondary);
 
- /**
- * Accordion Item Body
- */
+  /**
+   * Accordion Item Body
+  */
   --color-accordion-item-body-color: var(--color-neutral);
 
-/*------------------------------------*\
-  AVATAR
-\*------------------------------------*/
+  /*------------------------------------*\
+    AVATAR
+  \*------------------------------------*/
 
   --color-avatar-background-color-avatar: var(--color-neutral);
 
-/*------------------------------------*\
-  BUTTON
-\*------------------------------------*/
+  /*------------------------------------*\
+    BUTTON
+  \*------------------------------------*/
 
-/**
- * Button Default
- */
+  /**
+   * Button Default
+  */
   --color-button-background-color: var(--color-transparent);
   --color-button-border: var(--color-secondary);
   --color-button-color: var(--color-secondary);
@@ -321,9 +319,9 @@
   --color-button-background-color-disabled: var(--color-transparent);
   --color-button-border-disabled: var(--color-neutral-light-60);
   --color-button-color-disabled: var(--color-neutral-light-60);
-/**
- * Button Primary
- */
+  /**
+   * Button Primary
+  */
   --color-button-background-color-primary: var(--color-tertiary);
   --color-button-border-primary: var(--color-tertiary);
   --color-button-color-primary: var(--color-neutral-dark-60);
@@ -339,9 +337,9 @@
   --color-button-background-color-primary-disabled: var(--color-neutral-light-60);
   --color-button-border-primary-disabled: var(--color-neutral-light-60);
   --color-button-color-primary-disabled: var(--color-white);
-/**
- * Button Danger
- */
+  /**
+   * Button Danger
+  */
   --color-button-background-color-danger: var(--color-transparent);
   --color-button-border-danger: var(--color-danger);
   --color-button-color-danger: var(--color-danger);
@@ -357,9 +355,9 @@
   --color-button-background-color-danger-disabled: var(--color-transparent);
   --color-button-border-danger-disabled: var(--color-neutral-light-60);
   --color-button-color-danger-disabled: var(--color-neutral-light-60);
-/**
- * Button Link
- */
+  /**
+   * Button Link
+  */
   --color-button-background-color-link: var(--color-transparent);
   --color-button-color-link: var(--color-primary);
 
@@ -372,19 +370,19 @@
   --color-button-background-color-link-disabled: var(--color-transparent);
   --color-button-color-link-disabled: var(--color-neutral-light-60);
 
-/*------------------------------------*\
-  BADGE
-\*------------------------------------*/
+  /*------------------------------------*\
+    BADGE
+  \*------------------------------------*/
 
   --color-badge-color: var(--color-white);
 
-/*------------------------------------*\
-  BREADCRUMB
-\*------------------------------------*/
+  /*------------------------------------*\
+    BREADCRUMB
+  \*------------------------------------*/
 
-/**
- * Breadcrumb
- */
+  /**
+   * Breadcrumb
+  */
   --color-breadcrumb-background-color-container: var(--color-white);
   --color-breadcrumb-border-color-container: var(--color-neutral-light-90);
 
@@ -392,15 +390,15 @@
   --color-breadcrumb-color-item-link-hover: var(--color-primary-dark-40);
   --color-breadcrumb-color-item-unclickable: var(--color-neutral);
   --color-breadcrumb-color-star-active: var(--color-warning);
-/**
- * Breadcrumb Dropdown
- */
+  /**
+   * Breadcrumb Dropdown
+  */
   --color-breadcrumb-background-color-dropdown: var(--color-white);
   --color-breadcrumb-background-color-dropdown-item-hover: var(--color-primary-light-95);
 
-/*------------------------------------*\
-  BUTTON GROUP
-\*------------------------------------*/
+  /*------------------------------------*\
+    BUTTON GROUP
+  \*------------------------------------*/
 
   --color-button-group-border-button: var(--color-primary);
   --color-button-group-border-button-disabled: var(--color-neutral-light-60);
@@ -422,9 +420,9 @@
   --color-button-group-border-neutral-disabled: var(--color-neutral-light-60);
   --color-button-group-color-neutral-disabled: var(--color-white);
 
-/*------------------------------------*\
-  CALENDAR
-\*------------------------------------*/
+  /*------------------------------------*\
+    CALENDAR
+  \*------------------------------------*/
 
   --color-calendar-background-color: var(--color-white);
   --color-calendar-arrow: var(--color-primary);
@@ -447,9 +445,9 @@
   --color-calendar-color-box-foreground-today: var(--color-primary);
   --color-calendar-color-box-foreground-disabled: var(--color-neutral-light-80);
 
-/*------------------------------------*\
-  CHART
-\*------------------------------------*/
+  /*------------------------------------*\
+    CHART
+  \*------------------------------------*/
 
   --color-chart-background-color: var(--color-white);
   --color-chart-legend-wrapper-scrollbar: var(--color-primary-alpha-50);
@@ -457,30 +455,30 @@
   /**
    * Chart Types
    */
-   --color-chart-gauge-base-path-color: var(--color-neutral-light-80);
-   --color-chart-gauge-text-content-focus: var(--color-secondary);
-   --color-chart-gauge-text-description-color: var(--color-neutral);
+  --color-chart-gauge-base-path-color: var(--color-neutral-light-80);
+  --color-chart-gauge-text-content-focus: var(--color-secondary);
+  --color-chart-gauge-text-description-color: var(--color-neutral);
 
-/*------------------------------------*\
-  CHECKBOX
-\*------------------------------------*/
+  /*------------------------------------*\
+    CHECKBOX
+  \*------------------------------------*/
 
---color-checkbox-background-color: var(--color-white);
---color-checkbox-background-color-active: var(--color-primary);
---color-checkbox-background-color-disabled: var(--color-neutral-light-90);
---color-checkbox-background-color-icon-disabled: var(--color-neutral-light-60);
---color-checkbox-box-shadow-color-focusable: var(--color-primary-dark-20);
+  --color-checkbox-background-color: var(--color-white);
+  --color-checkbox-background-color-active: var(--color-primary);
+  --color-checkbox-background-color-disabled: var(--color-neutral-light-90);
+  --color-checkbox-background-color-icon-disabled: var(--color-neutral-light-60);
+  --color-checkbox-box-shadow-color-focusable: var(--color-primary-dark-20);
 
---color-checkbox-border-input: var(--color-neutral-light-60);
---color-checkbox-border-input-active: var(--color-primary);
---color-checkbox-border-input-disabled: var(--color-neutral-light-60);
---color-checkbox-border-input-invalid: var(--color-danger);
+  --color-checkbox-border-input: var(--color-neutral-light-60);
+  --color-checkbox-border-input-active: var(--color-primary);
+  --color-checkbox-border-input-disabled: var(--color-neutral-light-60);
+  --color-checkbox-border-input-invalid: var(--color-danger);
 
---color-checkbox-color-active: var(--color-white);
+  --color-checkbox-color-active: var(--color-white);
 
-/*------------------------------------*\
-  CHECKBOX GROUP
-\*------------------------------------*/
+  /*------------------------------------*\
+    CHECKBOX GROUP
+  \*------------------------------------*/
 
   --color-checkbox-group-background-color: var(--color-white);
   --color-checkbox-group-background-color-active: var(--color-primary);
@@ -495,9 +493,9 @@
 
   --color-checkbox-group-color-active: var(--color-white);
 
-/*------------------------------------*\
-  COMBO
-\*------------------------------------*/
+  /*------------------------------------*\
+    COMBO
+  \*------------------------------------*/
 
   --color-combo-background-color: var(--color-white);
 
@@ -512,16 +510,16 @@
   --color-combo-color-selected: var(--color-white);
   --color-combo-background-color-selected-primary: var(--color-primary);
 
-/*------------------------------------*\
-  CONTAINER
-\*------------------------------------*/
+  /*------------------------------------*\
+    CONTAINER
+  \*------------------------------------*/
 
   --color-container-color-shadow: var(--color-neutral-light-90);
   --color-container-background-color-scrollbar: var(--color-primary);
 
-/*------------------------------------*\
-  DATEPICKER RANGE
-\*------------------------------------*/
+  /*------------------------------------*\
+    DATEPICKER RANGE
+  \*------------------------------------*/
 
   --color-datepicker-range-background-color-disabled: var(--color-neutral-light-90);
   --color-datepicker-range-border-text: var(--color-neutral-light-60);
@@ -530,9 +528,9 @@
   --color-datepicker-range-color-focused: var(--color-primary);
   --color-datepicker-range-color-text-error: var(--color-danger);
 
-/*------------------------------------*\
-  DISCLAIMER
-\*------------------------------------*/
+  /*------------------------------------*\
+    DISCLAIMER
+  \*------------------------------------*/
 
   --color-disclaimer-background-color-label: var(--color-tertiary);
   --color-disclaimer-background-color-label-danger: var(--color-danger);
@@ -543,24 +541,24 @@
   --color-disclaimer-background-color-remove: var(--color-tertiary-dark-5);
   --color-disclaimer-background-color-danger-remove: var(--color-danger-dark-5);
 
-/*------------------------------------*\
-  DISCLAIMER GROUP
-\*------------------------------------*/
+  /*------------------------------------*\
+    DISCLAIMER GROUP
+  \*------------------------------------*/
 
   --color-disclaimer-group-background-color: var(--color-white);
   --color-disclaimer-group-border-color: var(--color-neutral-light-90);
   --color-disclaimer-group-font-title: var(--color-neutral);
 
-/*------------------------------------*\
-  DIVIDER
-\*------------------------------------*/
+  /*------------------------------------*\
+    DIVIDER
+  \*------------------------------------*/
 
   --color-divider-label-color: var(--color-neutral-dark-60);
   --color-divider-line-color: var(--color-neutral-light-90);
 
-/*------------------------------------*\
-  DROPDOWN
-\*------------------------------------*/
+  /*------------------------------------*\
+    DROPDOWN
+  \*------------------------------------*/
 
   --color-dropdown-button-background-color: var(--color-transparent);
   --color-dropdown-button-color: var(--color-secondary);
@@ -572,32 +570,32 @@
   --color-dropdown-button-color-disabled: var(--color-neutral-light-60);
   --color-dropdown-button-border-color-disabled: var(--color-neutral-light-60);
 
-/*------------------------------------*\
-  FIELD CONTAINER
-\*------------------------------------*/
+  /*------------------------------------*\
+    FIELD CONTAINER
+  \*------------------------------------*/
 
   --color-field-container-color-title: var(--color-neutral);
   --color-field-container-color-opcional: var(--color-neutral);
   --color-field-container-color-help: var(--color-neutral);
 
-/*------------------------------------*\
-  FIELD CONTAINER BOTTOM
-\*------------------------------------*/
+  /*------------------------------------*\
+    FIELD CONTAINER BOTTOM
+  \*------------------------------------*/
 
   --color-field-container-bottom-color-text: var(--color-neutral-dark-60);
   --color-field-container-bottom-color-text-error: var(--color-danger);
 
-/*------------------------------------*\
-  FIELD ICON
-\*------------------------------------*/
+  /*------------------------------------*\
+    FIELD ICON
+  \*------------------------------------*/
 
   --color-field-icon-color: var(--color-primary);
   --color-field-icon-color-error: var(--color-danger);
   --color-field-icon-color-disabled: var(--color-neutral-light-60);
 
-/*------------------------------------*\
-  INFO
-\*------------------------------------*/
+  /*------------------------------------*\
+    INFO
+  \*------------------------------------*/
 
   --color-info-color-text-label: var(--color-neutral);
   --color-info-color-text-value: var(--color-neutral-dark-60);
@@ -606,9 +604,9 @@
   --color-info-color-link-hover: var(--color-primary-dark-20);
   --color-info-color-link-pressed: var(--color-primary-dark-40);
 
-/*------------------------------------*\
-  INPUT
-\*------------------------------------*/
+  /*------------------------------------*\
+    INPUT
+  \*------------------------------------*/
 
   --color-input-background-color-text: var(--color-white);
   --color-input-border-text: var(--color-neutral-light-60);
@@ -619,9 +617,9 @@
   --color-input-text-error: var(--color-danger);
   --color-input-text-placeholder: var(--color-neutral-light-40);
 
-/*------------------------------------*\
-  LIST VIEW
-\*------------------------------------*/
+  /*------------------------------------*\
+    LIST VIEW
+  \*------------------------------------*/
 
   --color-list-view-background-color: var(--color-white);
   --color-list-view-border: var(--color-neutral-light-90);
@@ -629,31 +627,31 @@
   --color-list-view-color-primary-hover: var(--color-primary-dark-20);
   --color-list-view-color-select-all-label: var(--color-neutral);
 
-/*------------------------------------*\
-  LOADING
-\*------------------------------------*/
+  /*------------------------------------*\
+   LOADING
+  \*------------------------------------*/
   --color-loading-color-label: var(--color-neutral);
   --color-loading-icon-color-neutral: var(--color-neutral-light-80);
   --color-loading-icon-color-primary: var(--color-primary);
 
-/*------------------------------------*\
-  LOADING OVERLAY
-\*------------------------------------*/
+  /*------------------------------------*\
+    LOADING OVERLAY
+  \*------------------------------------*/
 
   --color-loading-overlay-background-color-content: var(--color-white);
   --color-loading-overlay-box-shadow-content: var(--color-black-alpha-30);
 
-/*------------------------------------*\
-  LOOKUP
-\*------------------------------------*/
+  /*------------------------------------*\
+    LOOKUP
+  \*------------------------------------*/
 
   --color-lookup-search-background-color-text: var(--color-white);
   --color-lookup-search-border-text: var(--color-neutral-light-60);
   --color-lookup-search-border-text-focusable: var(--color-primary);
 
-/*------------------------------------*\
-  MENU
-\*------------------------------------*/
+  /*------------------------------------*\
+    MENU
+  \*------------------------------------*/
 
   --color-menu-color-menu-collapse-icon: var(--color-primary);
   --color-menu-color-menu-item-text: var(--color-primary);
@@ -673,13 +671,13 @@
 
   --color-menu-border-color-menu-item-selected: var(--color-danger-light-40);
   --color-menu-border-left-item: var(--color-transparent);
-  --color-menu-border-top-item-grouper-up-hover: var(--color-neutral-light-80) ;
-  --color-menu-border-top-logo: var(--color-neutral-light-80) ;
+  --color-menu-border-top-item-grouper-up-hover: var(--color-neutral-light-80);
+  --color-menu-border-top-logo: var(--color-neutral-light-80);
   --color-menu-border-top-collapse-button: var(--color-neutral-alpha-45);
 
-/*------------------------------------*\
-  MENU FILTER
-\*------------------------------------*/
+  /*------------------------------------*\
+   MENU FILTER
+  \*------------------------------------*/
 
   --color-menu-filter-color-icon: var(--color-primary);
   --color-menu-filter-color-text: var(--color-neutral-dark-60);
@@ -689,9 +687,9 @@
   --color-menu-filter-border: var(--color-neutral-alpha-45);
   --color-menu-filter-border-focusable: var(--color-neutral);
 
-/*------------------------------------*\
-  MENU PANEL
-\*------------------------------------*/
+  /*------------------------------------*\
+    MENU PANEL
+  \*------------------------------------*/
 
   --color-menu-panel-background-color-item-hover: var(--color-black-alpha-15);
   --color-menu-panel-background-color-item-selected: var(--color-neutral-light-80);
@@ -702,9 +700,9 @@
   --color-menu-panel-color-menu-item-text: var(--color-primary);
   --color-menu-panel-color-menu-item-selected: var(--color-neutral-dark-60);
 
-/*------------------------------------*\
-  MODAL
-\*------------------------------------*/
+  /*------------------------------------*\
+    MODAL
+  \*------------------------------------*/
 
   --color-modal-text-color-body: var(--color-neutral-dark-60);
   --color-modal-background-color-content: var(--color-white);
@@ -714,17 +712,17 @@
   --color-modal-color-title: var(--color-neutral);
   --color-modal-color-header-close-button: var(--color-primary);
 
-/*------------------------------------*\
-  MODAL PASSWORD RECOVERY
-\*------------------------------------*/
+  /*------------------------------------*\
+   MODAL PASSWORD RECOVERY
+  \*------------------------------------*/
 
   --color-modal-password-recovery-link-color: var(--color-primary);
   --color-modal-password-recovery-link-color-hover: var(--color-primary-dark-20);
   --color-modal-password-recovery-text-color: var(--color-neutral);
 
-/*------------------------------------*\
-  MULTISELECT
-\*------------------------------------*/
+  /*------------------------------------*\
+    MULTISELECT
+  \*------------------------------------*/
 
   --color-multiselect-background-color: var(--color-white);
   --color-multiselect-background-color-item-hover: var(--color-primary-light-95);
@@ -754,63 +752,63 @@
 
   --color-multiselect-disclaimer-background-color-disabled: var(--color-neutral-light-60);
 
-/*------------------------------------*\
-  NAVBAR
-\*------------------------------------*/
+  /*------------------------------------*\
+    NAVBAR
+  \*------------------------------------*/
 
   --color-navbar-color: var(--color-white);
 
-/*------------------------------------*\
-  NAVBAR ACTION
-\*------------------------------------*/
+  /*------------------------------------*\
+    NAVBAR ACTION
+  \*------------------------------------*/
 
   --color-navbar-action-color-content: var(--color-primary);
 
-/*------------------------------------*\
-  NAVBAR ACTION POPUP
-\*------------------------------------*/
+  /*------------------------------------*\
+    NAVBAR ACTION POPUP
+  \*------------------------------------*/
 
   --color-navbar-action-popup-color-content: var(--color-navbar-action-color-content);
 
-/*------------------------------------*\
-  NAVBAR ITEM
-\*------------------------------------*/
+  /*------------------------------------*\
+    NAVBAR ITEM
+  \*------------------------------------*/
 
   --color-navbar-item-color: var(--color-primary);
   --color-navbar-item-color-selected: var(--color-neutral);
   --color-navbar-item-color-shadow-selected: var(--color-danger-light-40);
 
-/*------------------------------------*\
-  NAVBAR ITEM NAVIGATION
-\*------------------------------------*/
+  /*------------------------------------*\
+    NAVBAR ITEM NAVIGATION
+  \*------------------------------------*/
 
   --color-navbar-item-navigation-color-icon: var(--color-primary);
   --color-navbar-item-navigation-color-icon-disabled: var(--color-neutral-light-80);
 
-/*------------------------------------*\
-  PAGE
-\*------------------------------------*/
+  /*------------------------------------*\
+   PAGE
+  \*------------------------------------*/
 
   --color-page-background-color-page: var(--color-white);
 
-/*------------------------------------*\
-  PAGE BACKGROUND
-\*------------------------------------*/
+  /*------------------------------------*\
+    PAGE BACKGROUND
+  \*------------------------------------*/
 
   --color-page-background-select-item-border-color: var(--color-neutral-light-90);
 
-/*------------------------------------*\
-  PAGE BLOCKED USER
-\*------------------------------------*/
+  /*------------------------------------*\
+    PAGE BLOCKED USER
+  \*------------------------------------*/
 
   --color-page-blocked-user-link-color: var(--color-primary);
   --color-page-blocked-user-link-color-hover: var(--color-primary-dark-20);
   --color-page-blocked-user-text-color: var(--color-neutral);
   --color-page--blocked-user-background-color: var(--color-neutral-light-98);
 
-/*------------------------------------*\
-  PAGE CHANGE PASSWORD
-\*------------------------------------*/
+  /*------------------------------------*\
+   PAGE CHANGE PASSWORD
+  \*------------------------------------*/
 
   --color-page-change-password-background-color-buttons: var(--color-neutral-light-98);
   --color-page-change-password-background-color-container: var(--color-white);
@@ -822,27 +820,27 @@
   --color-page-change-password-color-required-minus: var(--color-black-alpha-30);
   --color-page-change-password-color-required-text: var(--color-secondary-dark-60-alpha-70);
 
-/*------------------------------------*\
-  PAGE CONTENT
-\*------------------------------------*/
+  /*------------------------------------*\
+    PAGE CONTENT
+  \*------------------------------------*/
 
   --color-page-content-background-color-scrollbar: var(--color-primary);
 
-/*------------------------------------*\
-  PAGE HEADER
-\*------------------------------------*/
+  /*------------------------------------*\
+    PAGE HEADER
+  \*------------------------------------*/
 
   --color-page-header-color-title: var(--color-neutral);
 
-/*------------------------------------*\
-  PAGE LIST
-\*------------------------------------*/
+  /*------------------------------------*\
+    PAGE LIST
+  \*------------------------------------*/
 
   --color-page-list-color-link-text: var(--color-primary);
 
-/*------------------------------------*\
-  PAGE LOGIN
-\*------------------------------------*/
+  /*------------------------------------*\
+    PAGE LOGIN
+  \*------------------------------------*/
 
   --color-page-login-background-color: var(--color-neutral-light-98);
   --color-page-login-background-highlight-image: var(--color-neutral-light-90);
@@ -852,16 +850,16 @@
   --color-page-login-popover-color-attempts: var(--color-primary);
   --color-page-login-popover-color-title: var(--color-tertiary);
 
-/*------------------------------------*\
-  PAGE SLIDE
-\*------------------------------------*/
+  /*------------------------------------*\
+    PAGE SLIDE
+  \*------------------------------------*/
 
   --color-page-slide-close-button-color: var(--color-primary);
   --color-page-slide-body-text-color: var(--color-neutral-dark-60);
 
-/*------------------------------------*\
-  POPOVER
-\*------------------------------------*/
+  /*------------------------------------*\
+    POPOVER
+  \*------------------------------------*/
 
   --color-popover-background-color: var(--color-white);
   --color-popover-background-color-arrow: var(--color-white);
@@ -869,9 +867,9 @@
 
   --color-popover-color-text-title: var(--color-neutral);
 
-/*------------------------------------*\
-  POPUP
-\*------------------------------------*/
+  /*------------------------------------*\
+    POPUP
+  \*------------------------------------*/
 
   --color-popup-background-color-popup: var(--color-white);
   --color-popup-background-color-popup-item-hover: var(--color-primary-light-95);
@@ -886,9 +884,9 @@
   --color-popup-color-disabled: var(--color-neutral-light-80);
   --color-popup-color-item-selected: var(--color-white);
 
-/*------------------------------------*\
-  PROGRESS
-\*------------------------------------*/
+  /*------------------------------------*\
+   PROGRESS
+  \*------------------------------------*/
 
   --color-progress-color-info-icon: var(--color-primary);
   --color-progress-color-text: var(--color-neutral);
@@ -898,18 +896,18 @@
 
   --color-progress-border-color-info-icon-close: var(--color-secondary);
 
-/*------------------------------------*\
-  PROGRESS BAR
-\*------------------------------------*/
+  /*------------------------------------*\
+    PROGRESS BAR
+  \*------------------------------------*/
 
   --color-progress-bar-background-color-bar: var(--color-primary-light-80);
   --color-progress-bar-background-color-default: var(--color-primary);
   --color-progress-bar-background-color-success: var(--color-success);
   --color-progress-bar-background-color-error: var(--color-danger);
 
-/*------------------------------------*\
-  RADIO-GROUP
-\*------------------------------------*/
+  /*------------------------------------*\
+    RADIO-GROUP
+  \*------------------------------------*/
 
   --color-radio-group-background-color: var(--color-white);
   --color-radio-group-background-color-active: var(--color-primary);
@@ -922,9 +920,9 @@
   --color-radio-group-color-label-active: var(--color-white);
   --color-radio-group-color-text-disabled: var(--color-neutral-light-60);
 
-/*------------------------------------*\
-  RICH TEXT
-\*------------------------------------*/
+  /*------------------------------------*\
+    RICH TEXT
+  \*------------------------------------*/
 
   --color-rich-text-background-color-scrollbar: var(--color-primary-alpha-50);
 
@@ -940,9 +938,9 @@
 
   --color-rich-text-toolbar-background-color: var(--color-rich-text-body-background-color);
 
-/*------------------------------------*\
-  SELECT
-\*------------------------------------*/
+  /*------------------------------------*\
+    SELECT
+  \*------------------------------------*/
 
   --color-select-background-color: var(--color-white);
   --color-select-background-color-disabled: var(--color-neutral-light-90);
@@ -965,9 +963,9 @@
   --color-select-background-color-selected: var(--color-primary);
   --color-select-color-text-error: var(--color-danger);
 
-/*------------------------------------*\
-  SLIDE
-\*------------------------------------*/
+  /*------------------------------------*\
+    SLIDE
+  \*------------------------------------*/
 
   --color-slide-background-color-active-circle: var(--color-primary);
   --color-slide-background-color-arrow-circle: var(--color-white);
@@ -977,9 +975,9 @@
   --color-slide-box-shadow-arrow-circle: var(--color-black-alpha-15);
   --color-slide-box-shadow-wrapper: var(--color-black-alpha-30);
 
-/*------------------------------------*\
-  STEPPER
-\*------------------------------------*/
+  /*------------------------------------*\
+    STEPPER
+  \*------------------------------------*/
 
   --color-stepper-bar: var(--color-neutral-light-80);
   --color-stepper-circle-active: var(--color-neutral);
@@ -989,9 +987,9 @@
   --color-stepper-circle-error: var(--color-danger);
   --color-stepper-circle-icon: var(--color-white);
 
-/*------------------------------------*\
-  SWITCH
-\*------------------------------------*/
+  /*------------------------------------*\
+    SWITCH
+  \*------------------------------------*/
 
   --color-switch-background-color-container-on: var(--color-primary);
   --color-switch-background-color-container-off: var(--color-neutral-light-80);
@@ -1007,9 +1005,9 @@
 
   --color-switch-color-label: var(--color-neutral);
 
-/*------------------------------------*\
-  TAB BUTTON
-\*------------------------------------*/
+  /*------------------------------------*\
+    TAB BUTTON
+  \*------------------------------------*/
 
   --color-tab-button-box-shadow: var(--color-neutral-light-90);
   --color-tab-button-box-shadow-active: var(--color-secondary);
@@ -1017,9 +1015,9 @@
   --color-tab-button-color: var(--color-secondary);
   --color-tab-button-color-disabled: var(--color-neutral-light-60);
 
-/*------------------------------------*\
-  TAB DROPDOWN
-\*------------------------------------*/
+  /*------------------------------------*\
+    TAB DROPDOWN
+  \*------------------------------------*/
 
   --color-tab-dropdown-background-color-tab-dropdown-button-active: var(--color-primary);
   --color-tab-dropdown-background-color-tab-dropdown-button-disabled: var(--color-white);
@@ -1027,9 +1025,9 @@
 
   --color-tab-dropdown-color-tab-dropdown-button: var(--color-white);
 
-/*------------------------------------*\
-  TABLE
-\*------------------------------------*/
+  /*------------------------------------*\
+    TABLE
+  \*------------------------------------*/
 
   --color-table-background-color-action-hover: var(--color-primary-light-95);
   --color-table-background-color-actions: var(--color-white);
@@ -1065,18 +1063,18 @@
   --color-table-color-single-action-hover: var(--color-primary-dark-20);
   --color-table-color-text: var(--color-neutral-dark-60);
 
-/*------------------------------------*\
-  TABLE COLUMN LINK
-\*------------------------------------*/
+  /*------------------------------------*\
+    TABLE COLUMN LINK
+  \*------------------------------------*/
 
   --color-table-color-link: var(--color-primary);
   --color-table-color-link-disabled: var(--color-neutral-light-80);
   --color-table-color-link-hover: var(--color-primary-dark-20);
   --color-table-color-link-pressed: var(--color-primary-dark-40);
 
-/*------------------------------------*\
-  TABLE COLUMN MANAGER
-\*------------------------------------*/
+  /*------------------------------------*\
+    TABLE COLUMN MANAGER
+  \*------------------------------------*/
 
   --color-table-column-manager-body-color-background-scrollbar: var(--color-primary);
   --color-table-column-manager-border-color: var(--color-neutral-light-90);
@@ -1084,9 +1082,9 @@
   --color-table-column-manager-header-title: var(--color-neutral-dark-60);
   --color-table-column-manager-outline-color-focus: var(--color-secondary);
 
-/*------------------------------------*\
-  TAG
-\*------------------------------------*/
+  /*------------------------------------*\
+    TAG
+  \*------------------------------------*/
 
   --color-tag-border-color-dashed-focus: var(--color-secondary);
 
@@ -1101,7 +1099,7 @@
   --color-tag-background-color-info: var(--color-neutral);
   --color-tag-background-color-success: var(--color-success);
   --color-tag-background-color-warning: var(--color-warning);
-  --color-tag-background-color-white:var(--color-white);
+  --color-tag-background-color-white: var(--color-white);
 
   --color-tag-inverse-border-color-01: var(--color-01);
   --color-tag-inverse-border-color-02: var(--color-02);
@@ -1116,9 +1114,9 @@
   --color-tag-inverse-border-color-11: var(--color-11);
   --color-tag-inverse-border-color-12: var(--color-12);
 
-/*------------------------------------*\
-  TEXTAREA
-\*------------------------------------*/
+  /*------------------------------------*\
+    TEXTAREA
+  \*------------------------------------*/
 
   --color-textarea-background-color: var(--color-white);
   --color-textarea-border: var(--color-neutral-light-60);
@@ -1130,9 +1128,9 @@
   --color-textarea-text-error: var(--color-danger);
   --color-textarea-background-color-scrollbar: var(--color-primary);
 
-/*------------------------------------*\
-  TOOLBAR
-\*------------------------------------*/
+  /*------------------------------------*\
+    TOOLBAR
+  \*------------------------------------*/
 
   --color-toolbar-background-color-badge: var(--color-danger);
   --color-toolbar-background-color-toolbar: var(--color-white);
@@ -1143,16 +1141,16 @@
   --color-toolbar-color-default: var(--color-primary);
   --color-toolbar-color-title: var(--color-secondary);
 
-/*------------------------------------*\
-  TOOLTIP
-\*------------------------------------*/
+  /*------------------------------------*\
+   TOOLTIP
+  \*------------------------------------*/
 
   --color-tooltip-background-color-balloon: var(--color-neutral);
   --color-tooltip-color-text-balloon: var(--color-white);
 
-/*------------------------------------*\
-  TREEVIEW
-\*------------------------------------*/
+  /*------------------------------------*\
+    TREEVIEW
+  \*------------------------------------*/
 
   /** Tree View Item */
   --color-tree-view-item-border-bottom-color: var(--color-neutral-light-90);
@@ -1162,9 +1160,9 @@
   --color-tree-view-item-header-button-focus: var(--color-secondary);
   --color-tree-view-item-header-label-text-color: var(--color-neutral);
 
-/*------------------------------------*\
-  UPLOAD
-\*------------------------------------*/
+  /*------------------------------------*\
+    UPLOAD
+  \*------------------------------------*/
 
   --color-upload-color-text-filename-loading: var(--color-neutral-dark-60);
 
@@ -1181,7 +1179,7 @@
   --color-upload-color-pressed: var(--color-primary-dark-40);
 
   --color-upload-color-progress: var(--color-tertiary);
-  --color-upload-color-text-load: var( --color-white);
+  --color-upload-color-text-load: var(--color-white);
   --color-upload-background-color-success: var(--color-success);
   --color-upload-background-color-load-progress: var(--color-tertiary);
   --color-upload-background-color-error: var(--color-danger);
@@ -1204,9 +1202,9 @@
 
   --color-upload-file-restrictions-color-text: var(--color-neutral);
 
-/*------------------------------------*\
-  WIDGET
-\*------------------------------------*/
+  /*------------------------------------*\
+   WIDGET
+  \*------------------------------------*/
 
   --color-widget-color-action-active: var(--color-primary-dark-20);
   --color-widget-color-action-hover: var(--color-primary-dark-20);
@@ -1225,5 +1223,4 @@
   --color-widget-background-color-disabled: var(--color-neutral-light-90);
   --color-widget-background-color-scroll-disabled: var(--color-neutral-light-40);
   --color-widget-color-disabled: var(--color-neutral-light-40);
-
 }

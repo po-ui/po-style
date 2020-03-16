@@ -1,6 +1,6 @@
 :root {
   --font-loading-text: {
-    @apply --font-text-small:
+    @apply --font-text-small;
   }
 }
 
@@ -20,9 +20,7 @@
 }
 
 @media screen and (max-width: 479px) {
-
   .po-loading-label {
     display: none;
   }
-
 }

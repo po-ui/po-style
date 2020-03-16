@@ -29,7 +29,7 @@
   width: 0;
 }
 
-.po-checkbox-group-input+.po-checkbox-group-label:before {
+.po-checkbox-group-input + .po-checkbox-group-label:before {
   background-color: var(--color-checkbox-group-background-color);
   border: solid 1px var(--color-checkbox-group-border-input);
   border-radius: 2px;
@@ -46,8 +46,8 @@
   width: 20px;
 }
 
-.po-checkbox-group-input-checked+.po-checkbox-group-label:before,
-.po-checkbox-group-input-indeterminate+.po-checkbox-group-label:before {
+.po-checkbox-group-input-checked + .po-checkbox-group-label:before,
+.po-checkbox-group-input-indeterminate + .po-checkbox-group-label:before {
   background-color: var(--color-checkbox-group-background-color-active);
   border: solid 1px var(--color-checkbox-group-border-input-active);
   box-shadow: none;
@@ -67,12 +67,12 @@ po-checkbox-group.ng-invalid.ng-dirty .po-checkbox-group-input + .po-checkbox-gr
   color: var(--color-checkbox-group-background-color-icon-disabled);
 }
 
-.po-checkbox-group-input-checked+.po-checkbox-group-label:before {
-  content: '\e938';
+.po-checkbox-group-input-checked + .po-checkbox-group-label:before {
+  content: '\e93c';
 }
 
-.po-checkbox-group-input-indeterminate+.po-checkbox-group-label:before {
-  content: '\e929';
+.po-checkbox-group-input-indeterminate + .po-checkbox-group-label:before {
+  content: '\e939';
 }
 
 .po-checkbox-group-label:focus {
@@ -88,7 +88,6 @@ po-checkbox-group.ng-invalid.ng-dirty .po-checkbox-group-input + .po-checkbox-gr
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-checkbox-group-item {
     @apply --font-checkbox-group-label-smaller;
     line-height: 20px;
@@ -96,7 +95,7 @@ po-checkbox-group.ng-invalid.ng-dirty .po-checkbox-group-input + .po-checkbox-gr
     padding: 8px 8px 4px 0;
   }
 
-  .po-checkbox-group-input+.po-checkbox-group-label:before {
+  .po-checkbox-group-input + .po-checkbox-group-label:before {
     height: 18px;
     top: 10px;
     width: 18px;
@@ -106,9 +105,8 @@ po-checkbox-group.ng-invalid.ng-dirty .po-checkbox-group-input + .po-checkbox-gr
     margin-left: 26px;
   }
 
-  .po-checkbox-group-input-checked+.po-checkbox-group-label:before,
-  .po-checkbox-group-input-indeterminate+.po-checkbox-group-label:before {
+  .po-checkbox-group-input-checked + .po-checkbox-group-label:before,
+  .po-checkbox-group-input-indeterminate + .po-checkbox-group-label:before {
     line-height: 16px;
   }
-
 }

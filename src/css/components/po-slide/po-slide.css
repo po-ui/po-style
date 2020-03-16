@@ -30,7 +30,8 @@
   transform: translate(-70%, -40%) rotate(-45deg);
 }
 
-.po-slide-control-previous, .po-slide-control-next {
+.po-slide-control-previous,
+.po-slide-control-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

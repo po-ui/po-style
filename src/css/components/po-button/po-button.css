@@ -1,5 +1,4 @@
 :root {
-
   --font-button-font {
     @apply --font-text-large-bold;
   }
@@ -9,7 +8,6 @@
   }
 
   --shadow-button-box-shadow: var(--shadow-button);
-
 }
 
 .po-button {
@@ -22,6 +20,7 @@
   height: 44px;
   padding: 0 16px;
   text-align: center;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--color-button-background-color-hover);
@@ -39,6 +38,7 @@
     background-color: var(--color-button-background-color-disabled);
     border: solid 1px var(--color-button-border-disabled);
     color: var(--color-button-color-disabled);
+    cursor: default;
   }
 
   &-primary {
@@ -120,7 +120,10 @@
   }
 }
 
-[class*='po-xl-'], [class*='po-lg-'], [class*='po-md-'], [class*='po-sm-'] {
+[class*='po-xl-'],
+[class*='po-lg-'],
+[class*='po-md-'],
+[class*='po-sm-'] {
   > .po-button {
     width: 100%;
   }
@@ -144,13 +147,13 @@
   top: 3px;
 }
 
-.po-button .po-icon, .po-button-loading-icon {
+.po-button .po-icon,
+.po-button-loading-icon {
   display: inline-block;
   vertical-align: middle;
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-button {
     @apply --font-button-font-sm;
     height: 32px;
@@ -175,13 +178,10 @@
     top: 2px;
     width: 12px;
   }
-
 }
 
 @media print {
-
   .po-button {
     color-adjust: exact;
   }
-
 }

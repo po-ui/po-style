@@ -146,24 +146,21 @@
   padding-left: 1px;
 }
 
-.po-multiselect-checkbox-item-disabled .po-multiselect-checkbox-input+.po-multiselect-checkbox-label:before {
+.po-multiselect-checkbox-item-disabled .po-multiselect-checkbox-input + .po-multiselect-checkbox-label:before {
   background-color: var(--color-multiselect-background-color-checkbox-disabled);
   border: solid 1px var(--color-multiselect-border-checkbox-input-disabled);
   color: var(--color-multiselect-background-color-checkbox-icon-disabled);
 }
 
 .po-multiselect-checkbox-input-checked + .po-multiselect-checkbox-label:before {
-  content: '\e938';
+  content: '\e93c';
 }
 
 @media screen and (max-width: 1366px) {
-
   .po-multiselect-item {
     @apply --font-multiselect-text-small;
     padding: 7px 8px;
-
   }
-
 }
 
 .po-multiselect-field .po-disclaimer {

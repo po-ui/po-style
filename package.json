@@ -1,6 +1,6 @@
 {
   "name": "@portinari/style",
-  "version": "1.24.0",
+  "version": "1.28.0",
   "tag": "dev",
   "description": "Portinari Style",
   "author": "Portinari UI",
@@ -15,10 +15,17 @@
     "build:cli": "gulp build:cli",
     "build:icon": "node icon-generator",
     "watch": "gulp watch",
-    "dev": "http-server ./app-dist -o -c-1"
+    "dev": "http-server ./app-dist -o -c-1",
+    "release": "standard-version",
+    "format:fix": "pretty-quick --staged",
+    "format:check": "prettier --check --loglevel error \"src/**/*{.ts,.js,.json,.css,.scss,.html}\"",
+    "format:all": "prettier --write \"src/**/*{.ts,.js,.json,.css,.scss,.html}\""
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.4",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-angular": "^8.3.4",
+    "@commitlint/travis-cli": "^8.3.5",
+    "autoprefixer": "^9.7.4",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
     "gulp": "4.0.2",
@@ -26,14 +33,25 @@
     "gulp-copy": "^4.0.1",
     "gulp-minify": "^3.1.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^1.4.0",
+    "gulp-rename": "^2.0.0",
     "gulp-tap": "^2.0.0",
-    "http-server": "^0.11.1",
+    "http-server": "^0.12.1",
+    "husky": "^4.2.3",
     "postcss-apply": "^0.12.0",
     "postcss-custom-properties": "^9.0.2",
     "postcss-import": "^12.0.1",
-    "postcss-nested": "^4.1.2",
-    "xml2js": "^0.4.22",
-    "yargs": "^14.2.0"
+    "postcss-nested": "^4.2.1",
+    "standard-version": "^7.1.0",
+    "xml2js": "^0.4.23",
+    "yargs": "^15.1.0",
+    "prettier": "1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
+  "standard-version": {
+    "skip": {
+      "commit": true,
+      "tag": true,
+      "bump": true
+    }
   }
 }

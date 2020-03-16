@@ -45,16 +45,16 @@
 }
 
 .po-tab-dropdown-button-active {
-  background-color:var(--color-tab-dropdown-background-color-tab-dropdown-button-active);
-  color: var( --color-tab-dropdown-color-tab-dropdown-button);
+  background-color: var(--color-tab-dropdown-background-color-tab-dropdown-button-active);
+  color: var(--color-tab-dropdown-color-tab-dropdown-button);
 }
 
 .po-tab-dropdown-button .po-tab-button-active:hover {
-  background-color:var(--color-tab-dropdown-background-color-tab-dropdown-button-active);
+  background-color: var(--color-tab-dropdown-background-color-tab-dropdown-button-active);
 }
 
 .po-tab-dropdown-button .po-tab-button-disabled:hover {
-  background-color:var(--color-tab-dropdown-background-color-tab-dropdown-button-disabled);
+  background-color: var(--color-tab-dropdown-background-color-tab-dropdown-button-disabled);
 }
 
 .po-tab-dropdown-button .po-tab-button-label {

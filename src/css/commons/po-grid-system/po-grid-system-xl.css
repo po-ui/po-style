@@ -1,8 +1,9 @@
 @media (min-width: 1367px) {
-
   /* Classes para definição de visibilidade */
 
-  .po-visible-xl, [class*='po-visible-xl-'], [class*=' po-visible-xl-'] {
+  .po-visible-xl,
+  [class*='po-visible-xl-'],
+  [class*=' po-visible-xl-'] {
     display: block;
   }
 
@@ -16,7 +17,7 @@
     width: 8.33333333%;
   }
 
- .po-sm-2 {
+  .po-sm-2 {
     width: 16.66665%;
   }
 
@@ -64,7 +65,7 @@
     width: 8.33333333%;
   }
 
- .po-md-2 {
+  .po-md-2 {
     width: 16.66665%;
   }
 
@@ -112,12 +113,12 @@
     width: 8.33333333%;
   }
 
- .po-lg-2 {
+  .po-lg-2 {
     width: 16.66665%;
   }
 
   .po-lg-3 {
-    width: 25%
+    width: 25%;
   }
 
   .po-lg-4 {
@@ -146,7 +147,6 @@
 
   .po-lg-10 {
     width: 83.33333333%;
-
   }
 
   .po-lg-11 {
@@ -159,52 +159,63 @@
 
   /* Classes para definição do tamanho */
 
-  .po-xl-1, .po-visible-xl-1 {
+  .po-xl-1,
+  .po-visible-xl-1 {
     width: 8.33333333%;
   }
 
- .po-xl-2, .po-visible-xl-2 {
+  .po-xl-2,
+  .po-visible-xl-2 {
     width: 16.66665%;
   }
 
-  .po-xl-3, .po-visible-xl-3 {
+  .po-xl-3,
+  .po-visible-xl-3 {
     width: 25%;
   }
 
-  .po-xl-4, .po-visible-xl-4 {
+  .po-xl-4,
+  .po-visible-xl-4 {
     width: 33.33333%;
   }
 
-  .po-xl-5, .po-visible-xl-5 {
+  .po-xl-5,
+  .po-visible-xl-5 {
     width: 41.66666%;
   }
 
-  .po-xl-6, .po-visible-xl-6 {
+  .po-xl-6,
+  .po-visible-xl-6 {
     width: 50%;
   }
 
-  .po-xl-7, .po-visible-xl-7 {
+  .po-xl-7,
+  .po-visible-xl-7 {
     width: 58.33333333%;
   }
 
-  .po-xl-8, .po-visible-xl-8 {
+  .po-xl-8,
+  .po-visible-xl-8 {
     width: 66.66666667%;
   }
 
-  .po-xl-9, .po-visible-xl-9 {
+  .po-xl-9,
+  .po-visible-xl-9 {
     width: 75%;
   }
 
-  .po-xl-10, .po-visible-xl-10 {
+  .po-xl-10,
+  .po-visible-xl-10 {
     width: 83.33333333%;
-
   }
 
-  .po-xl-11, .po-visible-xl-11 {
+  .po-xl-11,
+  .po-visible-xl-11 {
     width: 91.66666667%;
   }
 
-  .po-xl-12, .po-visible-xl-12 {
+  .po-xl-12,
+  .po-visible-xl-12 {
     width: 100%;
   }
 }

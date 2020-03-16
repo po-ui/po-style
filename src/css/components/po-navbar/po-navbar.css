@@ -21,11 +21,9 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .po-navbar {
     padding: 0 16px;
   }
-
 }
 
 /*
@@ -77,7 +75,6 @@ po-navbar ~ .po-wrapper .po-page {
 }
 
 @media screen and (max-width: 1200px) {
-
   @keyframes menuPositionResponsive {
     0% {
       top: 56px;
@@ -99,7 +96,6 @@ po-navbar ~ .po-wrapper .po-page {
 }
 
 @media (min-width: 768px) {
-
   .po-navbar + po-menu {
     display: none;
   }
@@ -109,5 +105,12 @@ po-navbar ~ .po-wrapper .po-page {
   po-navbar + po-page-edit .po-page-header,
   po-navbar + po-page-default .po-page-header {
     margin-top: 56px;
+  }
+}
+
+@media print {
+  .po-navbar ~ po-menu,
+  .po-navbar {
+    display: none;
   }
 }

@@ -20,15 +20,12 @@
 }
 
 @media screen and (max-width: 1024px) {
-
   .po-page-content {
     padding: 8px;
   }
-
 }
 
 @media print {
-
   .po-page-content {
     overflow-y: visible;
   }

@@ -17,8 +17,8 @@
 .po-arrow-top,
 .po-arrow-top-left,
 .po-arrow-top-right {
-	height: var(--arrow-size);
-	position: absolute;
+  height: var(--arrow-size);
+  position: absolute;
   width: var(--arrow-size);
 }
 
@@ -37,18 +37,18 @@
 }
 
 .po-arrow-right,
-.po-arrow-left{
+.po-arrow-left {
   top: 50%;
 }
 
 .po-arrow-right-bottom,
 .po-arrow-left-bottom {
-  top: var(--arrow-position-final)
+  top: var(--arrow-position-final);
 }
 
 .po-arrow-right-top,
 .po-arrow-left-top {
-  top: var(--arrow-position-initial)
+  top: var(--arrow-position-initial);
 }
 
 .po-arrow-bottom,
@@ -69,7 +69,6 @@
 .po-arrow-top {
   left: calc(50% - var(--arrow-offset));
 }
-
 
 .po-arrow-top-left,
 .po-arrow-bottom-left {

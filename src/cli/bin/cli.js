@@ -26,8 +26,8 @@ program
   .command('build')
   .alias('b')
   .description('Build package for new theme')
-  .option("--fonts", "to copy custom fonts")
-  .option("--name", "name of file generated on build")
+  .option('--fonts', 'to copy custom fonts')
+  .option('--name', 'name of file generated on build')
   .action(options => command.build(options));
 
 program.parse(process.argv);

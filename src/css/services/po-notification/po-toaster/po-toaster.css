@@ -1,5 +1,4 @@
 :root {
-
   --color-toaster-color: var(--color-white);
 
   --color-toaster-background-color-success: var(--color-success);
@@ -20,19 +19,19 @@
   --shadow-toaster-box-shadow-bottom: var(--shadow-button);
 }
 
-.po-toaster-success{
+.po-toaster-success {
   background-color: var(--color-toaster-background-color-success);
 }
 
-.po-toaster-info{
+.po-toaster-info {
   background-color: var(--color-toaster-background-color-info);
 }
 
-.po-toaster-warning{
+.po-toaster-warning {
   background-color: var(--color-toaster-background-color-warning);
 }
 
-.po-toaster-error{
+.po-toaster-error {
   background-color: var(--color-toaster-background-color-error);
 }
 

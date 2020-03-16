@@ -75,7 +75,7 @@ po-rich-text.ng-invalid.ng-dirty .po-rich-text-body {
 /* Necessário para tratamento do placeholder no componente via css, o acesso no ts deve ser feito a partir da propriedade
 'data-placeholder' devido a não funcionar somente como 'placeholder', ao digitar um valor e apagar o conteúdo da tag fica
 com um <br>, será necessário tratar no keyup a remoção desse <br> para que funcione corretamente no firefox */
-div[data-placeholder]:not([data-placeholder=""]):empty::before {
+div[data-placeholder]:not([data-placeholder='']):empty::before {
   color: var(--color-rich-text-placeholder-color);
   content: attr(data-placeholder);
   display: block;

@@ -40,13 +40,10 @@
   display: none;
 }
 
-
 @media screen and (max-width: 1366px) {
-
   .po-container {
     padding: 8px;
   }
-
 }
 
 .po-container-no-padding {

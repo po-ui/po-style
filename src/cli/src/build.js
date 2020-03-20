@@ -21,7 +21,7 @@ async function command() {
   const cleanDirDist = () => del('./dist');
 
   const copyAssets = (assetType, custom = false) =>
-    src(`${custom ? './src/assets/' : './node_modules/@portinari/style/'}${assetType}/**/*.*`).pipe(
+    src(`${custom ? './src/assets/' : './node_modules/@po-ui/style/'}${assetType}/**/*.*`).pipe(
       dest(`./dist/${assetType}/`)
     );
 

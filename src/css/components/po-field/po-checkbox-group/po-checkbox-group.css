@@ -52,7 +52,7 @@
   border: solid 1px var(--color-checkbox-group-border-input-active);
   box-shadow: none;
   color: var(--color-checkbox-group-color-active);
-  font-family: 'PortinariIcon' !important;
+  font-family: 'PoIcon' !important;
   line-height: 18px;
   padding-left: 1px;
 }

@@ -1,13 +1,13 @@
 {
-  "name": "@portinari/style",
-  "version": "1.28.0",
+  "name": "@po-ui/style",
+  "version": "2.0.0-beta.1",
   "tag": "dev",
-  "description": "Portinari Style",
-  "author": "Portinari UI",
+  "description": "PO Style",
+  "author": "PO UI",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/portinariui/portinari-style"
+    "url": "https://github.com/po-ui/po-style"
   },
   "scripts": {
     "build": "gulp build && gulp build:cli",
@@ -38,12 +38,12 @@
     "http-server": "^0.12.1",
     "husky": "^4.2.3",
     "postcss-apply": "^0.12.0",
-    "postcss-custom-properties": "^9.0.2",
+    "postcss-custom-properties": "^9.1.1",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
     "standard-version": "^7.1.0",
     "xml2js": "^0.4.23",
-    "yargs": "^15.1.0",
+    "yargs": "^15.3.1",
     "prettier": "1.19.1",
     "pretty-quick": "^2.0.1"
   },

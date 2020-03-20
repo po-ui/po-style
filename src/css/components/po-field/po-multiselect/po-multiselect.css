@@ -141,7 +141,7 @@
   border: solid 1px var(--color-multiselect-border-checkbox-input-active);
   box-shadow: none;
   color: var(--color-multiselect-color-checkbox-active);
-  font-family: 'PortinariIcon' !important;
+  font-family: 'PoIcon' !important;
   line-height: 18px;
   padding-left: 1px;
 }

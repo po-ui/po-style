@@ -43,7 +43,7 @@ As definições de tamanhos disponíveis são:
 * `4` - `margin` ou `padding` com valor igual a `32px`; 
 * `5` - `margin` ou `padding` com valor igual a `40px`; 
 
-> Estas classes podem ser usadas instalando o `@portinari/style` do **PO**. Veja mais em [Como instalar o PO](/guides/how-install).
+> Estas classes podem ser usadas instalando o `@po-ui/style` do **PO**. Veja mais em [Como instalar o PO](/guides/how-install).
 
 ## Exemplos
 

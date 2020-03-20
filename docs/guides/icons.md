@@ -7,10 +7,10 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 ### Como Usar?
 
 ``` html
-<span class="po-icon po-icon-portinari"></span>
+<span class="po-icon po-icon-device-desktop"></span>
 ```
 
-<span style="font-size:50px;" class="po-icon po-icon-portinari po-icon-sample"></span>
+<span style="font-size:50px;" class="po-icon po-icon-device-desktop po-icon-sample"></span>
 
 ----------------------------------------
 

@@ -14,7 +14,7 @@ request('./components.json', function(response) {
 
 function setToolbarTitle() {
   var element = document.querySelector('.po-toolbar-title');
-  element.textContent = 'PORTINARI UI | CDN APP - ' + version;
+  element.textContent = 'PO UI | SAMPLE APP - ' + version;
 }
 
 function hideMenu() {

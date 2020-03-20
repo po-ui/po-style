@@ -13,14 +13,15 @@ const rename = require('gulp-rename');
 const tap = require('gulp-tap');
 
 const apply = require('postcss-apply');
-const customProperties = require('postcss-custom-properties')
+const customProperties = require('postcss-custom-properties');
 const importCss = require('postcss-import');
 const nested = require('postcss-nested');
 
 const distDirectory = 'style';
 
 const capitalize = string =>
-  string.split('-')
+  string
+    .split('-')
     .map(part => part.charAt(0).toUpperCase() + part.substring(1).toLowerCase())
     .join(' ');
 
@@ -37,18 +38,23 @@ const copyThemeAssets = () =>
 
 const copyThemePackageJson = () =>
   src('package.json')
-    .pipe(tap(file => {
-      const contents = JSON.parse(file.contents.toString());
+    .pipe(
+      tap(file => {
+        const contents = JSON.parse(file.contents.toString());
 
-      delete contents.devDependencies;
-      delete contents.scripts;
+        delete contents.devDependencies;
+        delete contents.scripts;
 
-      contents.name = `@portinari/style${argv.theme ? '-' + argv.theme : ''}`;
-      contents.description = `Portinari - Theme${argv.theme ? ' ' + capitalize(argv.theme) : ''}`;
+        contents.name = `@po-ui/style${argv.theme ? '-' + argv.theme : ''}`;
+        contents.description = `PO UI - Theme${argv.theme ? ' ' + capitalize(argv.theme) : ''}`;
 
-      file.contents = Buffer.from(JSON.stringify(contents, null, 2), 'utf-8');
-    }))
+        file.contents = Buffer.from(JSON.stringify(contents, null, 2), 'utf-8');
+      })
+    )
     .pipe(dest(`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/`));
+
+const copyThemeReadme = () =>
+  src('src/css/README.md').pipe(dest(`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/`));
 
 const copyThemeVariablesCss = () =>
   src(`./src/css/themes/po-theme-default.css`)
@@ -63,22 +69,26 @@ const prepareThemeCss = () => src('./src/**/*.css').pipe(dest('./.temp'));
 
 const buildThemeCss = modern =>
   src(`./.temp/css/index${modern ? '-modern' : ''}.css`)
-    .pipe(tap(file => {
-      const contents = file.contents.toString().replace(/\${theme}/, (argv.theme || 'default'));
+    .pipe(
+      tap(file => {
+        const contents = file.contents.toString().replace(/\${theme}/, argv.theme || 'default');
 
-      file.contents = Buffer.from(contents, 'utf-8');
-    }))
-    .pipe(postcss([
-      importCss(),
-      apply(),
-      nested(),
-      customProperties({
-        preserve: false,
-        warnings: true
-      }),
-      autoprefixer(),
-      cssnano()
-    ]))
+        file.contents = Buffer.from(contents, 'utf-8');
+      })
+    )
+    .pipe(
+      postcss([
+        importCss(),
+        apply(),
+        nested(),
+        customProperties({
+          preserve: false,
+          warnings: true
+        }),
+        autoprefixer(),
+        cssnano()
+      ])
+    )
     .pipe(rename(modern ? `css/po-theme-core.min.css` : `css/po-theme-default.min.css`))
     .on('error', err => {
       console.log(err.toString());
@@ -88,7 +98,7 @@ const buildThemeCss = modern =>
 
 const buildThemeVariablesCss = () =>
   src(`./.temp/css/themes/po-theme-${argv.theme ? argv.theme : 'default'}.css`)
-    .pipe(postcss([ cssnano() ]))
+    .pipe(postcss([cssnano()]))
     .pipe(rename(`po-theme-${argv.theme ? argv.theme : 'default'}-variables.min.css`))
     .on('error', err => {
       console.log(err.toString());
@@ -99,16 +109,14 @@ const buildThemeVariablesCss = () =>
 // Tarefa otimizada para desenvolvimento
 const buildDevThemeCss = () =>
   src('./.temp/css/index.css')
-    .pipe(tap(file => {
-      const contents = file.contents.toString().replace(/\${theme}/, (argv.theme || 'default'));
+    .pipe(
+      tap(file => {
+        const contents = file.contents.toString().replace(/\${theme}/, argv.theme || 'default');
 
-      file.contents = Buffer.from(contents, 'utf-8');
-    }))
-    .pipe(postcss([
-      importCss(),
-      apply(),
-      nested()
-    ]))
+        file.contents = Buffer.from(contents, 'utf-8');
+      })
+    )
+    .pipe(postcss([importCss(), apply(), nested()]))
     .pipe(rename(`css/po-theme-default.min.css`))
     .on('error', err => {
       console.log(err.toString());
@@ -121,7 +129,7 @@ const buildThemeCssLegacy = () => buildThemeCss(false);
 
 const buildTheme = series(
   cleanTemp,
-  parallel(copyThemeAssets, copyThemePackageJson, copyThemeVariablesCss, prepareThemeCss),
+  parallel(copyThemeAssets, copyThemePackageJson, copyThemeReadme, copyThemeVariablesCss, prepareThemeCss),
   parallel(buildThemeCssModern, buildThemeVariablesCss, buildThemeCssLegacy),
   cleanTemp
 );
@@ -140,21 +148,26 @@ const copyAppAssets = () => src('./src/app/assets/**/*.*').pipe(dest('./app-dist
 const copyAppComponents = () => src(['./src/css/**/*.html', './src/css/**/*.js']).pipe(dest('./app-dist/css'));
 
 const copyThemeToApp = () =>
-  src([`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/**/*.*`, '!./dist/*.json'])
-    .pipe(dest('./app-dist/assets/'));
+  src([`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/**/*.*`, '!./dist/*.json']).pipe(
+    dest('./app-dist/assets/')
+  );
 
 const buildAppJs = () =>
   src(['./src/app/js/*.js', '!./src/app/js/po-chart.js'])
     .pipe(concat('app.js'))
-    .pipe(minify({
-      ext: {
-        min: '.min.js'
-      },
-      noSource: true
-    }))
-    .pipe(tap(file => {
-      file.contents = Buffer.from(`var version = '${version}';` + file.contents.toString(), 'utf-8');
-    }))
+    .pipe(
+      minify({
+        ext: {
+          min: '.min.js'
+        },
+        noSource: true
+      })
+    )
+    .pipe(
+      tap(file => {
+        file.contents = Buffer.from(`var version = '${version}';` + file.contents.toString(), 'utf-8');
+      })
+    )
     .pipe(dest('./app-dist/js'));
 
 const buildApp = series(
@@ -165,9 +178,7 @@ const buildApp = series(
 );
 buildApp.displayName = 'build:app';
 
-const buildCli = () =>
-  src([`./src/cli/**/*.*`, '!./src/cli/node_modules/**/*.*'])
-    .pipe(dest('./dist/cli/'));
+const buildCli = () => src([`./src/cli/**/*.*`, '!./src/cli/node_modules/**/*.*']).pipe(dest('./dist/cli/'));
 buildCli.displayName = 'build:cli';
 
 /**
@@ -195,14 +206,14 @@ const watchers = () => {
   console.warn('   ║   Ao atualizar um arquivo CSS ou HTML a sua     ║');
   console.warn('   ║   aplicação será carregada automaticamente!     ║');
   console.warn('   ║                                                 ║');
-  console.warn('   ║   TEMA UTILIZADO: ' + configThemeName()      + '║');
+  console.warn('   ║   TEMA UTILIZADO: ' + configThemeName() + '║');
   console.warn('   ║                                                 ║');
   console.warn('   ╚═════════════════════════════════════════════════╝');
 
   watch('./src/**/*.html', copyAppComponents);
   watch('./src/**/*.css', series(prepareThemeCss, buildDevThemeCss, copyThemeToApp));
   watch('./src/**/*.js', buildAppJs);
-}
+};
 
 /**
  * ============================================================
@@ -218,7 +229,7 @@ exports.build = series(clean, buildTheme);
 // gulp build:app
 exports.buildApp = buildApp;
 
-// gulp build:app
+// gulp build:cli
 exports.buildCli = buildCli;
 
 // gulp

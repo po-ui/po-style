@@ -466,7 +466,7 @@
   border: solid 1px var(--color-table-border-selected-checkbox) !important;
   box-shadow: none;
   color: var(--color-table-color-select);
-  font-family: 'PortinariIcon' !important;
+  font-family: 'PoIcon' !important;
   line-height: 18px;
   padding-left: 1px;
 }

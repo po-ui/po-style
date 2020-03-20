@@ -44,7 +44,7 @@ tamanho igual a 1/12 do seu elemento pai.
 <div class="po-xl-1 po-lg-1 po-md-1 po-sm-1"></div>
 ```
 
-> Estas classes podem ser usadas instalando o `@portinari/style` do **PO**. Veja mais em [Como instalar o PO](/guides/how-install).
+> Estas classes podem ser usadas instalando o `@po-ui/style` do **PO**. Veja mais em [Como instalar o PO](/guides/how-install).
 
 ## Nomenclatura das classes e tamanhos das telas 
 
@@ -154,7 +154,7 @@ que quando a tela estiver pequena estas duas colunas terão a largura total do s
 Se a tela for redimensionada, as colunas irão mudar de tamanho. Desta mesma forma, pode-se determinar e estruturar diversos
 tamanhos de colunas para cada tamanho de tela.
 
-> Consulte o Style Guide da Portinari, para saber o número máximo de colunas por tamanho de tela.
+> Consulte o Style Guide do PO UI, para saber o número máximo de colunas por tamanho de tela.
 
 ## Classes visible e hidden
 

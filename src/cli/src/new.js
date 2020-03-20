@@ -32,7 +32,7 @@ async function command(themeName) {
     fs.mkdirSync(destination + '/src/assets/fonts', { recursive: true });
 
     fs.copyFileSync(
-      __dirname.replace('src', 'node_modules/@portinari/style/css/po-theme-default-variables.css'),
+      __dirname.replace('src', 'node_modules/@po-ui/style/css/po-theme-default-variables.css'),
       destination + '/src/po-theme-custom.css'
     );
 
@@ -47,7 +47,7 @@ async function command(themeName) {
         build: 'po-theme build'
       },
       devDependencies: {
-        '@portinari/style': '^1.11.0'
+        '@po-ui/style': '^2.0.0-beta.1'
       }
     };
 
@@ -55,7 +55,7 @@ async function command(themeName) {
 
     fs.writeFileSync(
       destination + '/src/index.css',
-      "@import '../../node_modules/@portinari/style/css/po-theme-core.min.css';" +
+      "@import '../../node_modules/@po-ui/style/css/po-theme-core.min.css';" +
         '\r\n\r\n' +
         "@import './po-theme-custom.css';"
     );

@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.0-beta.2](https://github.com/po-ui/po-style/compare/v2.0.0-beta.1...v2.0.0-beta.2) (2020-04-06)
+
+Compatibilidade com @portinari/portinari-ui@2.0.0-beta.2
+
+## [2.0.0-beta.1](https://github.com/po-ui/po-style/compare/v1.28.0...v2.0.0-beta.1) (2020-03-27)
+
+Compatibilidade com @portinari/portinari-ui@2.0.0-beta.1
+
 ## [1.28.0](https://github.com/po-ui/po-style/compare/v1.27.1...v1.28.0) (2020-03-06)
 
 Compatibilidade com @portinari/portinari-ui@1.28.0

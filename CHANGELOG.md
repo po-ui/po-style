@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0-rc.1](https://github.com/po-ui/po-style/compare/v2.0.0-beta.3...v2.0.0-rc.1) (2020-03-27)
+
+Compatibilidade com @po-ui/ng-components@2.0.0-rc.1
+
 ## [2.0.0-beta.3](https://github.com/po-ui/po-style/compare/v1.28.0...v2.0.0-beta.3) (2020-04-08)
 
 ### Features

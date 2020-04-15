@@ -1034,11 +1034,15 @@
   --color-table-background-color-scrollbar: var(--color-primary);
   --color-table-background-color-selected: var(--color-primary);
   --color-table-background-color-table: var(--color-white);
+  --color-table-background-color-radio: var(--color-white);
+  --color-table-background-color-radio-active: var(--color-primary);
 
   --color-table-border-footer-show-subtitle: var(--color-neutral-light-90);
   --color-table-border-select-checkbox: var(--color-neutral-light-60);
   --color-table-border-selected-checkbox: var(--color-primary);
   --color-table-border-rows: var(--color-neutral-light-90);
+  --color-table-border-select-radio: var(--color-neutral-light-60);
+  --color-table-border-select-radio-focusable: var(--color-primary-dark-20);
 
   --color-table-box-shadow-action: var(--color-black-alpha-30);
   --color-table-box-shadow-checkbox: var(--color-black-alpha-15);

@@ -44,6 +44,7 @@
   }
 
   --shadow-table-box-shadow-checkbox: var(--shadow-input);
+  --shadow-table-box-shadow-radio: var(--shadow-input);
 
   --table-row-height: 44px;
   --table-row-height-sm: 32px;
@@ -437,6 +438,44 @@
   width: 36px;
 }
 
+.po-table .po-table-radio {
+  appearance: none;
+  background-color: transparent;
+  height: 0px;
+  margin: 0;
+  outline: none;
+  position: absolute;
+  width: 0px;
+}
+
+.po-table-column-selectable .po-table-radio + .po-table-radio-label:before {
+  background-color: var(--color-table-background-color-radio);
+  border: solid 1px var(--color-table-border-select-radio);
+  border-radius: 50%;
+  box-shadow: var(--shadow-table-box-shadow-radio);
+  content: ' ';
+  display: inline-block;
+  height: 20px;
+  margin-right: 8px;
+  margin-top: -2px;
+  vertical-align: middle;
+  width: 20px;
+}
+
+.po-table-column-selectable .po-table-radio:focus + .po-table-radio-label:before {
+  border: solid 1px var(--color-table-border-select-radio-focusable) !important;
+}
+
+.po-table-column-selectable .po-table-radio-checked + .po-table-radio-label:before {
+  background-color: var(--color-table-background-color-radio-active);
+  border: 1px solid var(--color-table-background-color-radio-active);
+  color: var(--color-table-background-color-radio);
+  content: '\e93c';
+  font-family: 'PoIcon' !important;
+  line-height: 18px;
+  padding-left: 1px;
+}
+
 .po-table .po-table-checkbox {
   border: solid 1px var(--color-table-border-select-checkbox);
   border-radius: 2px;
@@ -658,6 +697,16 @@
   .po-table-header-column-manager-fixed-inner {
     height: 30px;
     padding-top: 4px;
+  }
+
+  .po-table-column-selectable .po-table-radio + .po-table-radio-label:before {
+    height: 18px;
+    top: 10px;
+    width: 18px;
+  }
+
+  .po-table-column-selectable .po-table-radio-checked + .po-table-radio-label:before {
+    line-height: 16px;
   }
 }
 

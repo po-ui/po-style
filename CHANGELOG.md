@@ -2,11 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/po-ui/po-style/compare/v2.0.0-rc.1...v2.0.0) (2020-04-17)
+
+### Features
+
+* **packages:** atualização do autoprefixer ([471c199](https://github.com/po-ui/po-style/commit/471c1991297097a058ea98444579468a4e745b6e))
+* **packages:** atualização do prettier para versão 2.0.2 ([34c279d](https://github.com/po-ui/po-style/commit/34c279d99c034360b07c6f8b1f46df570dfd412c))
+
+
+### Bug Fixes
+
+* **field-container:** corrige visualização no IE ([465e0ad](https://github.com/po-ui/po-style/commit/465e0ad1859c15d31a0968a19557dff47966925c))
+* **page-blocked-user:** corrige ellipsis em contacts ([e273fec](https://github.com/po-ui/po-style/commit/e273fec8f288df69888e3c2ea2da42b612138e0f))
+* **table:** define css para radio-button ([e8c1066](https://github.com/po-ui/po-style/commit/e8c106698d5848477ad2f0e5a5140bdb99efb79c))
+* **radio-group:** corrige sobreposição de texto ([fd679d8](https://github.com/po-ui/po-style/commit/fd679d8f23c0c64ffcfdd7ee83d4bfd268190547))
+
 ## [2.0.0-rc.1](https://github.com/po-ui/po-style/compare/v2.0.0-beta.3...v2.0.0-rc.1) (2020-03-27)
 
 Compatibilidade com @po-ui/ng-components@2.0.0-rc.1
 
-## [2.0.0-beta.3](https://github.com/po-ui/po-style/compare/v1.28.0...v2.0.0-beta.3) (2020-04-08)
+## [2.0.0-beta.3](https://github.com/po-ui/po-style/compare/v2.0.0-beta.2...v2.0.0-beta.3) (2020-04-08)
 
 ### Features
 

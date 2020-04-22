@@ -55,6 +55,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 
   <li>
     <a>
+      <span class="po-icon po-icon-anchor"></span>
+      <span>po-icon po-icon-anchor</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
       <span class="po-icon po-icon-archive"></span>
       <span>po-icon po-icon-archive</span>
     </a>
@@ -440,6 +447,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 
   <li>
     <a>
+      <span class="po-icon po-icon-handshake"></span>
+      <span>po-icon po-icon-handshake</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
       <span class="po-icon po-icon-hdd"></span>
       <span>po-icon po-icon-hdd</span>
     </a>
@@ -750,6 +764,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
     <a>
       <span class="po-icon po-icon-plus-circle"></span>
       <span>po-icon po-icon-plus-circle</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-print"></span>
+      <span>po-icon po-icon-print</span>
     </a>
   </li>
 

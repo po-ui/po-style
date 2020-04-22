@@ -18,6 +18,10 @@
   content: '\e942';
 }
 
+.po-icon.po-icon-anchor:before {
+  content: '\e995';
+}
+
 .po-icon.po-icon-archive:before {
   content: '\e943';
 }
@@ -238,6 +242,10 @@
   content: '\e95a';
 }
 
+.po-icon.po-icon-handshake:before {
+  content: '\e994';
+}
+
 .po-icon.po-icon-hdd:before {
   content: '\e95b';
 }
@@ -416,6 +424,10 @@
 
 .po-icon.po-icon-plus-circle:before {
   content: '\e96b';
+}
+
+.po-icon.po-icon-print:before {
+  content: '\e996';
 }
 
 .po-icon.po-icon-pushcart:before {

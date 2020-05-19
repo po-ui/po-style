@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/po-ui/po-style/compare/v2.1.1...v2.3.0) (2020-05-15)
+
+
+Compatibilidade com @po-ui/ng-components@2.3.0
+
+## [2.2.0](https://github.com/po-ui/po-style/compare/v2.1.1...v2.2.0) (2020-05-08)
+
+
+Compatibilidade com @po-ui/ng-components@2.2.0
+
+## [2.1.1](https://github.com/po-ui/po-style/compare/v2.1.0...v2.1.1) (2020-04-30)
+
+
+Compatibilidade com @po-ui/ng-components@2.1.0
+
+
+## [2.1.0](https://github.com/po-ui/po-style/compare/v2.0.0...v2.1.0) (2020-04-27)
+
+### Features
+
+* **icons:** adiciona novos ícones na biblioteca  ([9957eab](https://github.com/po-ui/po-style/commit/9957eab26629966c413b59049679f96006ec2ece))
+  - anchor
+  - print
+  - handshake
+
 ## [2.0.0](https://github.com/po-ui/po-style/compare/v1.28.0...v2.0.0) (2020-04-17)
 
 ### Features

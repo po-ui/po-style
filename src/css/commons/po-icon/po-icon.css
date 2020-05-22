@@ -42,6 +42,14 @@
   content: '\e915';
 }
 
+.po-icon.po-icon-attach:before {
+  content: '\e997';
+}
+
+.po-icon.po-icon-automatic-barrier:before {
+  content: '\e998';
+}
+
 .po-icon.po-icon-balance:before {
   content: '\e973';
 }
@@ -450,6 +458,10 @@
   content: '\e985';
 }
 
+.po-icon.po-icon-security-guard:before {
+  content: '\e999';
+}
+
 .po-icon.po-icon-server:before {
   content: '\e96d';
 }
@@ -472,6 +484,10 @@
 
 .po-icon.po-icon-social-github:before {
   content: '\e926';
+}
+
+.po-icon.po-icon-social-instagram:before {
+  content: '\e99a';
 }
 
 .po-icon.po-icon-social-twitter:before {
@@ -568,6 +584,10 @@
 
 .po-icon.po-icon-users:before {
   content: '\e979';
+}
+
+.po-icon.po-icon-video-call:before {
+  content: '\e99b';
 }
 
 .po-icon.po-icon-wallet:before {

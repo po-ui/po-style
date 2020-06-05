@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/po-ui/po-style/compare/v2.4.1...v2.5.0) (2020-06-05)
+
+### Features
+
+* **page-list:** adiciona tamanho no filtro  ([70dd8f1](https://github.com/po-ui/po-style/commit/70dd8f16afd60f769cddab6368f79a9375fed18b))
+
+
 ## [2.4.1](https://github.com/po-ui/po-style/compare/v2.4.0...v2.4.1) (2020-05-29)
 
 

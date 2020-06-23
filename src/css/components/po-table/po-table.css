@@ -592,7 +592,8 @@
   text-align: center;
 }
 
-.po-table-header-column-manager {
+.po-table-header-column-manager,
+.po-table-header-actions {
   max-width: 40px;
   min-width: 40px;
   width: 40px;

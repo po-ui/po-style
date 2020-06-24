@@ -74,6 +74,10 @@
   content: '\e974';
 }
 
+.po-icon.po-icon-calculator:before {
+  content: '\e99c';
+}
+
 .po-icon.po-icon-calendar:before {
   content: '\e916';
 }
@@ -506,8 +510,16 @@
   content: '\e90d';
 }
 
+.po-icon.po-icon-sort-ascending:before {
+  content: '\e99d';
+}
+
 .po-icon.po-icon-sort-desc:before {
   content: '\e90e';
+}
+
+.po-icon.po-icon-sort-descending:before {
+  content: '\e99e';
 }
 
 .po-icon.po-icon-star:before {

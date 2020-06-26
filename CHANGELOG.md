@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.8.0](https://github.com/po-ui/po-style/compare/v2.7.0...v2.8.0) (2020-06-26)
+
+### Features
+
+* **table:** Adiciona classe `po-table-header-actions` para omitir o gerenciador de colunas do po-table ([08181e2](https://github.com/po-ui/po-style/commit/08181e234b2562b8dabdcedfe7279b42d5386771))
+* **avatar:** adiciona exemplo clicável ([ac00226](https://github.com/po-ui/po-style/commit/ac00226baed3b119e12a79f58a4be22966dce0c9))
+* **icons:** adiciona novos ícones na biblioteca ([3630025](https://github.com/po-ui/po-style/commit/36300259b8298e32a0881b2b76b7375778bff4d3))
+ícones adicionados:
+  - calculator
+  - sort-ascending
+  - sort-descending
+
+
 ## [2.7.0](https://github.com/po-ui/po-style/compare/v2.6.0...v2.7.0) (2020-06-19)
 
 Compatibilidade com @po-ui/ng-components@2.7.0

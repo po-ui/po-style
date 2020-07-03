@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.9.0](https://github.com/po-ui/po-style/compare/v2.8.0...v2.9.0) (2020-07-03)
+
+### Features
+
+* **table:** adiciona sample de botão com loading na tabela ([bdba371](https://github.com/po-ui/po-style/commit/bdba3715f52e03a9735c993fb739c192b5c25871))
+
+
 ## [2.8.0](https://github.com/po-ui/po-style/compare/v2.7.0...v2.8.0) (2020-06-26)
 
 ### Features

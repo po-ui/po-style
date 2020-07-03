@@ -1,10 +1,11 @@
 language: node_js
 node_js:
- - "10.16.3"
+  - "10.16.3"
 
 branches:
   only:
     - master
+    - dev
 
 cache:
   npm: true

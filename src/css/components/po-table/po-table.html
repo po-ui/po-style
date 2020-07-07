@@ -6292,6 +6292,228 @@
     </div>
   </div>
 
+  <h4>Tabela com master-detail e posicionamento na direita, utilizando a diretiva 'p-table-row-template'</h4>
+  <div class="po-container-no-padding">
+    <div class="po-table-main-container">
+      <div class="po-table-wrapper">
+        <table class="po-table po-table-striped">
+          <thead>
+            <tr class="po-table-header">
+              <th class="po-table-header-ellipsis">
+                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
+              </th>
+              <th class="po-table-header-ellipsis po-table-column-right">
+                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+              </th>
+              <th class="po-table-header-ellipsis">
+                Classe
+              </th>
+              <th class="po-table-header-ellipsis po-table-column-right">
+                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              </th>
+              <th class="po-table-header-ellipsis po-table-column-right">
+                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              </th>
+              <th class="po-table-header-column-manager">
+                <div>
+                  <button class="po-table-header-column-manager-button po-icon po-icon-settings po-clickable"></button>
+                </div>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Argentina / Buenos Aires
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  13/02/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  233
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Primeira classe
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  1231234
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 600.00
+                </div>
+              </td>
+              <td class="po-table-column-detail-toggle">
+                <span class="po-icon po-icon-arrow-up po-clickable"></span>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="9" class="po-table-row-template-container">
+                <div class="po-font-title po-md-6">
+                  BRA
+                  <div class="po-font-subtitle">Internacional Airport Guarulhos</div>
+                </div>
+                <div class="po-font-title po-md-6">
+                  ARG
+                  <div class="po-font-subtitle">Internacional Airport Pistarini</div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <div class="po-info po-md-3">
+                  <span class="po-info-label">Comandante:</span>
+                  <span class="po-info-value">Arnold</span>
+                </div>
+                <div class="po-info po-md-3">
+                  <span class="po-info-label">Boeing:</span>
+                  <span class="po-info-value">747</span>
+                </div>
+                <div class="po-info po-md-3">
+                  <span class="po-info-label">Capacidade de pessoas:</span>
+                  <span class="po-info-value">853</span>
+                </div>
+                <div class="po-info po-md-3">
+                  <span class="po-info-label">Metros Quadrados:</span>
+                  <span class="po-info-value">478</span>
+                </div>
+              </td>
+            </tr>
+            <td class="po-table-column"></td>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Brasil / São Paulo
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  21/04/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  235
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  112234
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 300.00
+                </div>
+              </td>
+              <td class="po-table-column-detail-toggle">
+                <span class="po-icon po-icon-arrow-down po-clickable"></span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Chile / Santiago
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  01/05/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  230
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  12312
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 440.00
+                </div>
+              </td>
+              <!-- <td class="po-table-column"></td> -->
+              <td class="po-table-column-detail-toggle">
+                <span class="po-icon po-icon-arrow-down po-clickable"></span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Peru / Lima
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  08/05/2020
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  360
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  12789
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 635.00
+                </div>
+              </td>
+              <!-- <td class="po-table-column"></td> -->
+              <td class="po-table-column-detail-toggle">
+                <span class="po-icon po-icon-arrow-down po-clickable"></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
   <h4>Ordenação de dados</h4>
   <div class="po-container-no-padding">
     <div class="po-table-main-container">

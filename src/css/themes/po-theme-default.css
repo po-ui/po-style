@@ -842,6 +842,8 @@
     PAGE LOGIN
   \*------------------------------------*/
 
+  --color-page-login-header-product-name-color: var(--color-neutral);
+  --color-page-login-header-welcome-color: var(--color-secondary);
   --color-page-login-background-color: var(--color-neutral-light-98);
   --color-page-login-background-highlight-image: var(--color-neutral-light-90);
   --color-page-login-highlight-text-color: var(--color-white);

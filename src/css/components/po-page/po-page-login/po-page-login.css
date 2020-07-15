@@ -7,6 +7,22 @@
     @apply --font-title;
   }
 
+  --font-page-login-font-product-name: {
+    @apply --font-title;
+  }
+
+  --font-page-login-font-welcome: {
+    @apply --font-subtitle;
+  }
+
+  --font-page-login-font-product-name-responsive: {
+    @apply --font-subtitle;
+  }
+
+  --font-page-login-font-welcome-responsive: {
+    @apply --font-text-large-bold;
+  }
+
   --font-page-login-font-title-responsive: {
     @apply --font-subtitle;
   }
@@ -30,8 +46,8 @@
   display: table-cell;
   height: 100%;
   margin: 0 auto;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding-bottom: 24px;
+  padding-top: 24px;
   position: relative;
   vertical-align: middle;
   width: 50%;
@@ -51,9 +67,18 @@
   text-align: center;
 }
 
-.po-page-login-header-greeting,
 .po-page-login-header-title {
   @apply --font-page-login-font-title;
+}
+
+.po-page-login-header-product-name {
+  @apply --font-page-login-font-product-name;
+  color: var(--color-page-login-header-product-name-color);
+}
+
+.po-page-login-header-welcome {
+  @apply --font-page-login-font-welcome;
+  color: var(--color-page-login-header-welcome-color);
 }
 
 .po-page-login-recovery-link,
@@ -271,7 +296,6 @@
 }
 
 @media (max-width: 540px) {
-  .po-page-login-header-greeting,
   .po-page-login-header-title {
     @apply --font-page-login-font-title-responsive;
   }
@@ -279,10 +303,6 @@
   .po-page-login-panel .po-page-login-header {
     overflow: hidden;
     padding-bottom: 0;
-  }
-
-  .po-page-login-header-greeting {
-    display: none;
   }
 
   .po-page-login-panel-content {
@@ -312,6 +332,15 @@
 }
 
 @media (max-width: 320px) {
+  .po-page-login-header-product-name {
+    @apply --font-page-login-font-product-name-responsive;
+    padding: 0 8px;
+  }
+
+  .po-page-login-header-welcome {
+    @apply --font-page-login-font-welcome-responsive;
+  }
+
   .po-page-login-panel {
     padding-bottom: 0;
     padding-top: 0;
@@ -344,6 +373,7 @@
   }
 
   .po-page-login-panel-content {
-    padding: 32px 0 0;
+    margin-bottom: 28px;
+    padding: 16px 0 32px 0;
   }
 }

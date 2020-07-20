@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0-beta.1](https://github.com/po-ui/po-style/compare/v2.10.0...v3.0.0-beta.1) (2020-07-20)
+
+
+### Features
+
+* **page-login:** modifica apresentação do cabeçalho ([2d6802f](https://github.com/po-ui/po-style/commit/2d6802f04a9c440dee2737ff780355d7cc210bf3))
+* **table:** adiciona exemplo de tabela com detail customizado ([cf45d8b](https://github.com/po-ui/po-style/commit/cf45d8b37330a3af3822c5db191f119e0b9e1063))
+
 ## [2.10.0](https://github.com/po-ui/po-style/compare/v2.9.0...v2.10.0) (2020-07-13)
 
 Compatibilidade com @po-ui/ng-components@2.10.0

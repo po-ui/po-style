@@ -86,6 +86,10 @@
   content: '\e945';
 }
 
+.po-icon.po-icon-calendar-settings:before {
+  content: '\e99f';
+}
+
 .po-icon.po-icon-camera:before {
   content: '\e91b';
 }
@@ -112,6 +116,10 @@
 
 .po-icon.po-icon-clear-content:before {
   content: '\e949';
+}
+
+.po-icon.po-icon-clipboard:before {
+  content: '\e9a0';
 }
 
 .po-icon.po-icon-clock:before {
@@ -236,6 +244,50 @@
 
 .po-icon.po-icon-first-page:before {
   content: '\e924';
+}
+
+.po-icon.po-icon-fluig-archive:before {
+  content: '\e9a1';
+}
+
+.po-icon.po-icon-fluig-cancel:before {
+  content: '\e9a2';
+}
+
+.po-icon.po-icon-fluig-chevron-down:before {
+  content: '\e9a3';
+}
+
+.po-icon.po-icon-fluig-chevron-up:before {
+  content: '\e9a4';
+}
+
+.po-icon.po-icon-fluig-edit:before {
+  content: '\e9a5';
+}
+
+.po-icon.po-icon-fluig-more-vert:before {
+  content: '\e9a6';
+}
+
+.po-icon.po-icon-fluig-next-step:before {
+  content: '\e9a7';
+}
+
+.po-icon.po-icon-fluig-refresh:before {
+  content: '\e9a8';
+}
+
+.po-icon.po-icon-fluig-settings:before {
+  content: '\e9a9';
+}
+
+.po-icon.po-icon-fluig-trash:before {
+  content: '\e9aa';
+}
+
+.po-icon.po-icon-fluig-view:before {
+  content: '\e9ab';
 }
 
 .po-icon.po-icon-folder:before {
@@ -532,6 +584,10 @@
 
 .po-icon.po-icon-star-half:before {
   content: '\e982';
+}
+
+.po-icon.po-icon-steering-wheel:before {
+  content: '\e9ac';
 }
 
 .po-icon.po-icon-stock:before {

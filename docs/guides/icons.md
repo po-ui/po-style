@@ -174,6 +174,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 
   <li>
     <a>
+      <span class="po-icon po-icon-calendar-settings"></span>
+      <span>po-icon po-icon-calendar-settings</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
       <span class="po-icon po-icon-camera"></span>
       <span>po-icon po-icon-camera</span>
     </a>
@@ -218,6 +225,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
     <a>
       <span class="po-icon po-icon-clear-content"></span>
       <span>po-icon po-icon-clear-content</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-clipboard"></span>
+      <span>po-icon po-icon-clipboard</span>
     </a>
   </li>
 
@@ -435,6 +449,83 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
     <a>
       <span class="po-icon po-icon-first-page"></span>
       <span>po-icon po-icon-first-page</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-fluig-archive"></span>
+      <span>po-icon po-icon-fluig-archive</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-fluig-cancel"></span>
+      <span>po-icon po-icon-fluig-cancel</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-fluig-chevron-down"></span>
+      <span>po-icon po-icon-fluig-chevron-down</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-fluig-chevron-up"></span>
+      <span>po-icon po-icon-fluig-chevron-up</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-fluig-edit"></span>
+      <span>po-icon po-icon-fluig-edit</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-fluig-more-vert"></span>
+      <span>po-icon po-icon-fluig-more-vert</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-fluig-next-step"></span>
+      <span>po-icon po-icon-fluig-next-step</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-fluig-refresh"></span>
+      <span>po-icon po-icon-fluig-refresh</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-fluig-settings"></span>
+      <span>po-icon po-icon-fluig-settings</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-fluig-trash"></span>
+      <span>po-icon po-icon-fluig-trash</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-fluig-view"></span>
+      <span>po-icon po-icon-fluig-view</span>
     </a>
   </li>
 
@@ -953,6 +1044,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
     <a>
       <span class="po-icon po-icon-star-half"></span>
       <span>po-icon po-icon-star-half</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-steering-wheel"></span>
+      <span>po-icon po-icon-steering-wheel</span>
     </a>
   </li>
 

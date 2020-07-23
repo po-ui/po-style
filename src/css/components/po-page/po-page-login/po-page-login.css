@@ -31,8 +31,17 @@
     @apply --font-text-bold;
   }
 
+  --font-page-login-support: {
+    @apply --font-text-large-bold;
+  }
+
+  --font-page-login-support-responsive: {
+    @apply --font-text-small-bold;
+  }
+
   --shadow-page-login-popover-box-shadow: var(--shadow-popover);
   --shadow-page-login-popover-box-shadow-arrow: var(--shadow-popover-arrow);
+  --shadow-page-login-support: var(--shadow-card);
 }
 
 .po-page-login-container {
@@ -61,6 +70,31 @@
 .po-page-login-panel-content {
   margin-bottom: 60px;
   padding: 84px 0;
+}
+
+.po-page-login-support {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+  min-width: 92px;
+  height: 88px;
+  padding: 0 8px;
+  @apply --font-page-login-support;
+  background-color: var(--color-page-login-support-background-color);
+  color: var(--color-page-login-support-color);
+  border-radius: 3px;
+  border-color: transparent;
+  border-radius: 3px;
+  box-shadow: var(--shadow-page-login-support);
+  cursor: pointer;
+}
+
+.po-page-login-support span {
+  display: block;
+  padding-bottom: 8px;
+  text-align: center;
+  font-size: 24px;
 }
 
 .po-page-login-panel .po-page-login-header {
@@ -328,6 +362,19 @@
 
   .po-page-login-info-icon-container .po-tooltip {
     min-width: 200px;
+  }
+
+  .po-page-login-support {
+    position: fixed;
+    top: auto;
+    bottom: 24px;
+    min-width: 61px;
+    height: 56px;
+    @apply --font-page-login-support-responsive;
+  }
+
+  .po-page-login-support span {
+    padding-bottom: 0;
   }
 }
 

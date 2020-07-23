@@ -851,6 +851,8 @@
   --color-page-login-link-hover-color: var(--color-primary-dark-20);
   --color-page-login-popover-color-attempts: var(--color-primary);
   --color-page-login-popover-color-title: var(--color-tertiary);
+  --color-page-login-support-background-color: var(--color-white);
+  --color-page-login-support-color: var(--color-primary);
 
   /*------------------------------------*\
     POPOVER

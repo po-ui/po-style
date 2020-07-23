@@ -358,7 +358,6 @@
 .po-table-header-subtitle {
   max-width: 80px;
   min-width: 80px;
-  text-align: center;
   width: 80px;
 }
 
@@ -405,29 +404,36 @@
   padding: 0 4px;
 }
 
-.po-table-header-block {
-  display: block;
+.po-table-header-flex {
+  display: flex;
+  align-items: center;
 }
 
-.po-table-header-icon-ascending::after {
+.po-table-header-flex-right {
+  justify-content: flex-end;
+}
+
+.po-table-header-flex-center {
+  justify-content: center;
+}
+
+.po-table-header-icon-ascending::before,
+.po-table-header-icon-descending::before,
+.po-table-header-icon-unselected::before {
+  vertical-align: sub;
+  white-space: nowrap;
+}
+
+.po-table-header-icon-ascending::before {
   content: url('../images/order-ascending.svg');
-  float: right;
-  vertical-align: sub;
-  white-space: nowrap;
 }
 
-.po-table-header-icon-descending::after {
+.po-table-header-icon-descending::before {
   content: url('../images/order-descending.svg');
-  float: right;
-  vertical-align: sub;
-  white-space: nowrap;
 }
 
-.po-table-header-icon-unselected::after {
+.po-table-header-icon-unselected::before {
   content: url('../images/order-unselected.svg');
-  float: right;
-  vertical-align: sub;
-  white-space: nowrap;
 }
 
 .po-table .po-table-column-selectable {

@@ -86,6 +86,10 @@
   content: '\e945';
 }
 
+.po-icon.po-icon-calendar-settings:before {
+  content: '\e99f';
+}
+
 .po-icon.po-icon-camera:before {
   content: '\e91b';
 }
@@ -112,6 +116,10 @@
 
 .po-icon.po-icon-clear-content:before {
   content: '\e949';
+}
+
+.po-icon.po-icon-clipboard:before {
+  content: '\e9a0';
 }
 
 .po-icon.po-icon-clock:before {
@@ -532,6 +540,10 @@
 
 .po-icon.po-icon-star-half:before {
   content: '\e982';
+}
+
+.po-icon.po-icon-steering-wheel:before {
+  content: '\e9a1';
 }
 
 .po-icon.po-icon-stock:before {

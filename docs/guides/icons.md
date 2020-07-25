@@ -174,6 +174,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 
   <li>
     <a>
+      <span class="po-icon po-icon-calendar-settings"></span>
+      <span>po-icon po-icon-calendar-settings</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
       <span class="po-icon po-icon-camera"></span>
       <span>po-icon po-icon-camera</span>
     </a>
@@ -218,6 +225,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
     <a>
       <span class="po-icon po-icon-clear-content"></span>
       <span>po-icon po-icon-clear-content</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-clipboard"></span>
+      <span>po-icon po-icon-clipboard</span>
     </a>
   </li>
 
@@ -953,6 +967,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
     <a>
       <span class="po-icon po-icon-star-half"></span>
       <span>po-icon po-icon-star-half</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-steering-wheel"></span>
+      <span>po-icon po-icon-steering-wheel</span>
     </a>
   </li>
 

@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0-rc.1](https://github.com/po-ui/po-style/compare/v3.0.0-beta.1...v3.0.0-rc.1) (2020-07-27)
+
+
+### Features
+
+* **icons:** adiciona novos icones a biblioteca ([2d6802f](https://github.com/po-ui/po-style/commit/df342f9a3985e73b991d75b699282348a4f55b08))
+ícones adicionados:
+  - calendar-settings
+  - clipboard
+  - steering-wheel
+
+
+
 ## [3.0.0-beta.1](https://github.com/po-ui/po-style/compare/v2.10.0...v3.0.0-beta.1) (2020-07-20)
 
 

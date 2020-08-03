@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [3.0.0-rc.1](https://github.com/po-ui/po-style/compare/v3.0.0-beta.1...v3.0.0-rc.1) (2020-07-27)
+## [3.0.0](https://github.com/po-ui/po-style/compare/v2.10.0...v3.0.0) (2020-08-03)
 
 
 ### Features
@@ -12,16 +12,17 @@ All notable changes to this project will be documented in this file. See [standa
   - calendar-settings
   - clipboard
   - steering-wheel
-
-
-
-## [3.0.0-beta.1](https://github.com/po-ui/po-style/compare/v2.10.0...v3.0.0-beta.1) (2020-07-20)
-
-
-### Features
-
 * **page-login:** modifica apresentação do cabeçalho ([2d6802f](https://github.com/po-ui/po-style/commit/2d6802f04a9c440dee2737ff780355d7cc210bf3))
 * **table:** adiciona exemplo de tabela com detail customizado ([cf45d8b](https://github.com/po-ui/po-style/commit/cf45d8b37330a3af3822c5db191f119e0b9e1063))
+* **page-login:** adiciona botão de suporte ([428a27b](https://github.com/po-ui/po-style/commit/428a27b5cbbc05bdf5287d8f2eaef6f59be8203d))
+* **table:** adiciona exemplo show more com loading ([3a8f783](https://github.com/po-ui/po-style/commit/3a8f783f28bb79e2685ab454875bcf0b59353077))
+* **table:** implementa nova posição do icone sort ([7830833](https://github.com/po-ui/po-style/commit/783083391c843840520a43296c80cc44fff8ac82))
+
+
+### Bug Fixes
+
+* **list-view:** corrige alinhamento da caixa de seleção ([099894c](https://github.com/po-ui/po-style/commit/099894c13fc08c40c1d3fbec396acdb8c2cd9fac))
+
 
 ## [2.10.0](https://github.com/po-ui/po-style/compare/v2.9.0...v2.10.0) (2020-07-13)
 

@@ -1,0 +1,12 @@
+.po-git-actions-button-disabled {
+  border: solid 1px red;
+  color: red;
+  pointer-events: none;
+}
+
+.po-git-actions-icon {
+  font-size: 24px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}

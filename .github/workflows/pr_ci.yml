@@ -1,0 +1,39 @@
+# Nome do workflow, um repositório pode tem um ou mais workflows.
+name: CI
+
+# Define em quais situações esse workflow será executado
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# Os jobs são conjuntos de actions que são executados na mesma máquina virtual.
+# É possível ter mais de um job e assim executar ações paralelamente.
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    # As etapas do workflow são definidas nessa tag.
+    steps:
+
+    # Definição da action
+    - uses: actions/checkout@v2
+      # Parâmetros para a ação
+      with:
+        fetch-depth: 0
+
+    - uses: wagoid/commitlint-github-action@v2
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+
+
+    - uses: bahmutov/npm-install@v1
+      with:
+        useLockFile: false
+    # Executa um comando do projeto na máquina virtual
+    - run: npm run format:check

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/po-ui/po-style/compare/v3.0.0...v3.1.0) (2020-08-10)
+
+### Features
+
+* **build:** substituição do travis pelo github actions ([eb71645](https://github.com/po-ui/po-style/commit/eb71645932574ed05eabbbf58ede80d4f253ab88))
+
+* **build:** retirado dev para voltar para o fluxo de trabalho na master ([4e30c7c0](https://github.com/po-ui/po-style/commit/4e30c7c01528fd9132af889202f35e4de5269e3b))
+
+
 ## [3.0.0](https://github.com/po-ui/po-style/compare/v2.10.0...v3.0.0) (2020-08-03)
 
 

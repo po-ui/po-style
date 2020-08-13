@@ -12,7 +12,7 @@ on:
 # É possível ter mais de um job e assim executar ações paralelamente.
 jobs:
 
-  build:
+  commitlint_prettier:
 
     runs-on: ubuntu-latest
 
@@ -31,9 +31,23 @@ jobs:
       with:
         node-version: 12.x
 
-
-    - uses: bahmutov/npm-install@v1
-      with:
-        useLockFile: false
     # Executa um comando do projeto na máquina virtual
+    - run: npm i
     - run: npm run format:check
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    # Definição da action
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+
+    # Executa um comando do projeto na máquina virtual
+    - run: npm i
+    - run: npm run build

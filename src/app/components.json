@@ -62,6 +62,7 @@
       { "path": "./css/components/po-page/po-page-header/po-page-header.html", "title": "Po Page Header" },
       { "path": "./css/components/po-page/po-page-list/po-page-list.html", "title": "Po Page List" },
       { "path": "./css/components/po-page/po-page-login/po-page-login.html", "title": "Po Page Login" },
+      { "path": "./css/components/po-page/po-page-slide/po-page-slide.html", "title": "Po Page Slide" },
       { "path": "./css/components/po-field/po-password/po-password.html", "title": "Po Password" },
       { "path": "./css/components/po-popover/po-popover.html", "title": "Po Popover" },
       { "path": "./css/components/po-popup/po-popup.html", "title": "Po Popup" },

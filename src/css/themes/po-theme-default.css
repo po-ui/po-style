@@ -855,6 +855,13 @@
   --color-page-login-support-color: var(--color-primary);
 
   /*------------------------------------*\
+    PAGE SLIDE
+  \*------------------------------------*/
+
+  --color-page-slide-close-button-color: var(--color-primary);
+  --color-page-slide-body-text-color: var(--color-neutral-dark-60);
+
+  /*------------------------------------*\
     POPOVER
   \*------------------------------------*/
 

@@ -71,20 +71,20 @@
 
 <div class="container">
   <h4>Tipos de ordenação</h4>
-  <table style="border-spacing:10px;width:50%">
+  <table style="border-spacing: 10px; width: 50%;">
     <tr>
       <th>Ordenação ascendente</th>
       <th>Ordenação descendente</th>
       <th>Sem ordenação</th>
     </tr>
     <tr>
-      <td style="text-align:center">
+      <td style="text-align: center;">
         <span class="po-table-header-icon-ascending"></span>
       </td>
-      <td style="text-align:center">
+      <td style="text-align: center;">
         <span class="po-table-header-icon-descending"></span>
       </td>
-      <td style="text-align:center">
+      <td style="text-align: center;">
         <span class="po-table-header-icon-unselected"></span>
       </td>
     </tr>
@@ -98,22 +98,34 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -338,6 +350,255 @@
     </div>
   </div>
 
+  <h4>Tabela simples sem gerenciamento de coluna</h4>
+  <div class="po-container-no-padding">
+    <div class="po-table-main-container">
+      <div class="po-table-wrapper">
+        <table class="po-table">
+          <thead>
+            <tr class="po-table-header">
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Argentina / Buenos Aires
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  13/02/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  233
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Primeira classe
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  1231234
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 600.00
+                </div>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Brasil / São Paulo
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  21/04/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  235
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  112234
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 300.00
+                </div>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Brasil / São Paulo
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  21/04/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  235
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  112234
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 300.00
+                </div>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Brasil / São Paulo
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  21/04/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  235
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  112234
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 300.00
+                </div>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Brasil / São Paulo
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  21/04/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  235
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  112234
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 300.00
+                </div>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Chile / Santiago
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  01/05/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  230
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  12312
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 440.00
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
   <h4>Tabela simples com borda</h4>
   <div class="po-container po-container-no-shadow po-container-no-padding">
     <div class="po-table-main-container">
@@ -346,22 +607,34 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager po-table-header-column-manager-border">
                 <div>
@@ -490,22 +763,34 @@
             <tr class="po-table-header">
               <th class="po-table-header-master-detail"></th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager po-table-header-column-manager-border">
                 <div>
@@ -720,22 +1005,34 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager po-table-header-column-manager-border">
                 <div>
@@ -863,22 +1160,34 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -935,22 +1244,34 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -1093,22 +1414,34 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -1271,25 +1604,39 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Ícones</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Ícones</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -1302,7 +1649,7 @@
           <tbody class="po-table-group-row">
             <tr class="po-table-row">
               <td class="po-table-column-icons">
-                <span class="po-icon po-icon-portinari"></span>
+                <span class="po-icon po-icon-gift"></span>
               </td>
               <td class="po-table-column">
                 <div class="po-table-column-cell">
@@ -1340,7 +1687,7 @@
           <tbody class="po-table-group-row">
             <tr class="po-table-row">
               <td class="po-table-column-icons">
-                <span class="po-icon po-icon-portinari"></span>
+                <span class="po-icon po-icon-gift"></span>
                 <span class="po-icon po-icon po-icon-ok"></span>
                 <span class="po-icon po-icon-clock"></span>
               </td>
@@ -1380,7 +1727,7 @@
           <tbody class="po-table-group-row">
             <tr class="po-table-row">
               <td class="po-table-column-icons">
-                <span class="po-icon po-icon-portinari"></span>
+                <span class="po-icon po-icon-gift"></span>
                 <span class="po-icon po-icon po-icon-ok"></span>
                 <span class="po-icon po-icon po-icon-close"></span>
               </td>
@@ -1430,25 +1777,39 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Ícones</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Ícones</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -1632,25 +1993,39 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis po-table-header-subtitle">
-                <span class="po-table-header-ellipsis po-table-header-block">Status</span>
+                <div class="po-table-header-flex po-table-header-flex-center">
+                  <span class="po-table-header-ellipsis">Status</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -1809,25 +2184,39 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis po-table-header-subtitle">
-                <span class="po-table-header-ellipsis po-table-header-block">Status</span>
+                <div class="po-table-header-flex po-table-header-flex-center">
+                  <span class="po-table-header-ellipsis">Status</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -1986,10 +2375,14 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis po-table-header-subtitle">
-                <span class="po-table-header-ellipsis po-table-header-block">Cor</span>
+                <div class="po-table-header-flex po-table-header-flex-center">
+                  <span class="po-table-header-ellipsis">Cor</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Descrição</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Descrição</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -2243,7 +2636,7 @@
       </div>
     </div>
 
-    <div class="po-modal" style="display:none;">
+    <div class="po-modal" style="display: none;">
       <div class="po-modal-overlay">
         <div class="po-modal-container po-p-2">
           <div class="po-modal-vertical-align">
@@ -2336,25 +2729,39 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Status</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Status</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -2546,22 +2953,34 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -2698,25 +3117,39 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis po-table-header-subtitle">
-                <span class="po-table-header-ellipsis po-table-header-block">Status</span>
+                <div class="po-table-header-flex po-table-header-flex-center">
+                  <span class="po-table-header-ellipsis">Status</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -2894,45 +3327,49 @@
                   </th>
                   <th class="po-table-header-master-detail"></th>
                   <th class="po-table-header-ellipsis po-table-header-subtitle">
-                    <div class="po-table-header-fixed-inner po-table-header-subtitle">
+                    <div class="po-table-header-flex po-table-header-fixed-inner po-table-header-flex-center">
+                      <span class="po-table-header-ellipsis">Status</span>
                       <span class="po-table-header-icon-ascending"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Status</span>
                     </div>
                   </th>
                   <th class="po-table-header-ellipsis sample-po-table-column-width">
-                    <div class="po-table-header-fixed-inner sample-po-table-column-width">
+                    <div class="po-table-header-flex po-table-header-fixed-inner sample-po-table-column-width">
+                      <span class="po-table-header-ellipsis">Destino</span>
                       <span class="po-table-header-icon-unselected"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
                     </div>
                   </th>
                   <th class="po-table-header-ellipsis sample-po-table-column-width">
-                    <div class="po-table-header-fixed-inner sample-po-table-column-width">
+                    <div class="po-table-header-flex po-table-header-fixed-inner sample-po-table-column-width">
+                      <span class="po-table-header-ellipsis">Data</span>
                       <span class="po-table-header-icon-unselected"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-                    </div>
-                  </th>
-                  <th class="po-table-header-ellipsis po-table-column-right sample-po-table-column-width">
-                    <div class="po-table-header-fixed-inner sample-po-table-column-width">
-                      <span class="po-table-header-icon-unselected"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
                     </div>
                   </th>
                   <th class="po-table-header-ellipsis sample-po-table-column-width">
-                    <div class="po-table-header-fixed-inner sample-po-table-column-width">
+                    <div
+                      class="po-table-header-flex po-table-header-flex-right po-table-header-fixed-inner sample-po-table-column-width"
+                    >
+                      <span class="po-table-header-ellipsis">Poltrona</span>
                       <span class="po-table-header-icon-unselected"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Classe</span>
                     </div>
                   </th>
-                  <th class="po-table-header-ellipsis po-table-column-right sample-po-table-column-width">
-                    <div class="po-table-header-fixed-inner sample-po-table-column-width">
+                  <th class="po-table-header-ellipsis sample-po-table-column-width">
+                    <div class="po-table-header-flex po-table-header-fixed-inner sample-po-table-column-width">
+                      <span class="po-table-header-ellipsis">Classe</span>
                       <span class="po-table-header-icon-unselected"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
                     </div>
                   </th>
-                  <th class="po-table-header-ellipsis po-table-column-right sample-po-table-column-width">
-                    <div class="po-table-header-fixed-inner sample-po-table-column-width">
+                  <th class="po-table-header-ellipsis sample-po-table-column-width">
+                    <div class="po-table-header-flex po-table-header-fixed-inner sample-po-table-column-width">
+                      <span class="po-table-header-ellipsis">Código Passagem</span>
                       <span class="po-table-header-icon-unselected"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+                    </div>
+                  </th>
+                  <th class="po-table-header-ellipsis sample-po-table-column-width">
+                    <div
+                      class="po-table-header-flex po-table-header-flex-right po-table-header-fixed-inner sample-po-table-column-width"
+                    >
+                      <span class="po-table-header-ellipsis">Valor</span>
+                      <span class="po-table-header-icon-unselected"></span>
                     </div>
                   </th>
                   <th class="po-table-header-column-manager">
@@ -2961,12 +3398,12 @@
                       <span class="po-table-subtitle-circle po-color-11">1</span>
                     </div>
                   </td>
-                  <td class="po-table-column  sample-po-table-column-width">
+                  <td class="po-table-column sample-po-table-column-width">
                     <div class="po-table-column-cell">
                       Argentina / Buenos Aires
                     </div>
                   </td>
-                  <td class="po-table-column  sample-po-table-column-width">
+                  <td class="po-table-column sample-po-table-column-width">
                     <div class="po-table-column-cell">
                       13/02/2018
                     </div>
@@ -3252,45 +3689,51 @@
                 <tr>
                   <th class="po-table-header-master-detail"></th>
                   <th class="po-table-header-ellipsis po-table-header-subtitle">
-                    <div class="po-table-header-fixed-inner po-table-header-subtitle">
+                    <div class="po-table-header-flex po-table-header-fixed-inner po-table-header-flex-center">
+                      <span class="po-table-header-ellipsis">Status</span>
                       <span class="po-table-header-icon-ascending"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Status</span>
                     </div>
                   </th>
                   <th class="po-table-header-ellipsis sample-po-table-column-width-large">
-                    <div class="po-table-header-fixed-inner sample-po-table-column-width-large">
+                    <div class="po-table-header-flex po-table-header-fixed-inner sample-po-table-column-width-large">
+                      <span class="po-table-header-ellipsis">Destino</span>
                       <span class="po-table-header-icon-unselected"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
                     </div>
                   </th>
                   <th class="po-table-header-ellipsis sample-po-table-column-width-large">
-                    <div class="po-table-header-fixed-inner sample-po-table-column-width-large">
+                    <div class="po-table-header-flex po-table-header-fixed-inner sample-po-table-column-width-large">
+                      <span class="po-table-header-ellipsis">Data</span>
                       <span class="po-table-header-icon-unselected"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-                    </div>
-                  </th>
-                  <th class="po-table-header-ellipsis po-table-column-right sample-po-table-column-width-large">
-                    <div class="po-table-header-fixed-inner sample-po-table-column-width-large">
-                      <span class="po-table-header-icon-unselected"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
                     </div>
                   </th>
                   <th class="po-table-header-ellipsis sample-po-table-column-width-large">
-                    <div class="po-table-header-fixed-inner sample-po-table-column-width-large">
+                    <div
+                      class="po-table-header-flex po-table-header-flex-right po-table-header-fixed-inner sample-po-table-column-width-large"
+                    >
+                      <span class="po-table-header-ellipsis">Poltrona</span>
                       <span class="po-table-header-icon-unselected"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Classe</span>
                     </div>
                   </th>
-                  <th class="po-table-header-ellipsis po-table-column-right sample-po-table-column-width-large">
-                    <div class="po-table-header-fixed-inner sample-po-table-column-width-large">
+                  <th class="po-table-header-ellipsis sample-po-table-column-width-large">
+                    <div class="po-table-header-flex po-table-header-fixed-inner sample-po-table-column-width-large">
+                      <span class="po-table-header-ellipsis">Classe</span>
                       <span class="po-table-header-icon-unselected"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
                     </div>
                   </th>
-                  <th class="po-table-header-ellipsis po-table-column-right sample-po-table-column-width-large">
-                    <div class="po-table-header-fixed-inner sample-po-table-column-width-large">
+                  <th class="po-table-header-ellipsis sample-po-table-column-width-large">
+                    <div
+                      class="po-table-header-flex po-table-header-flex-right po-table-header-fixed-inner sample-po-table-column-width-large"
+                    >
+                      <span class="po-table-header-ellipsis">Código Passagem</span>
                       <span class="po-table-header-icon-unselected"></span>
-                      <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+                    </div>
+                  </th>
+                  <th class="po-table-header-ellipsis sample-po-table-column-width-large">
+                    <div
+                      class="po-table-header-flex po-table-header-flex-right po-table-header-fixed-inner sample-po-table-column-width-large"
+                    >
+                      <span class="po-table-header-ellipsis">Valor</span>
+                      <span class="po-table-header-icon-unselected"></span>
                     </div>
                   </th>
                   <th class="po-table-header-column-manager">
@@ -3313,12 +3756,12 @@
                       <span class="po-table-subtitle-circle po-color-11">1</span>
                     </div>
                   </td>
-                  <td class="po-table-column  sample-po-table-column-width-large">
+                  <td class="po-table-column sample-po-table-column-width-large">
                     <div class="po-table-column-cell">
                       Argentina / Buenos Aires
                     </div>
                   </td>
-                  <td class="po-table-column  sample-po-table-column-width-large">
+                  <td class="po-table-column sample-po-table-column-width-large">
                     <div class="po-table-column-cell">
                       13/02/2018
                     </div>
@@ -3559,22 +4002,34 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-single-action">
                 <div>
@@ -3753,22 +4208,34 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-single-action">
                 <div>
@@ -3957,22 +4424,34 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -4124,22 +4603,34 @@
             <tr class="po-table-header">
               <th class="po-table-column-selectable"></th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-header-number po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Classe</span>
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-header-number po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-header-number po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -4152,8 +4643,8 @@
           <tbody class="po-table-group-row">
             <tr class="po-table-row">
               <td class="po-table-column po-table-column-selectable">
-                <input type="radio" id="radio2" class="po-radio-group-input" />
-                <label class="po-radio-group-label po-clickable" for="radio2"></label>
+                <input type="radio" id="radio2" class="po-table-radio" />
+                <label class="po-table-radio-label po-clickable" for="radio2"></label>
               </td>
               <td class="po-table-column">
                 <div class="po-table-column-cell">
@@ -4193,8 +4684,8 @@
           <tbody class="po-table-group-row">
             <tr class="po-table-row">
               <td class="po-table-column po-table-column-selectable">
-                <input type="radio" id="radio1" class="po-radio-group-input" />
-                <label class="po-radio-group-label po-clickable" for="radio1"></label>
+                <input type="radio" id="radio1" class="po-table-radio" />
+                <label class="po-table-radio-label po-clickable" for="radio1"></label>
               </td>
               <td class="po-table-column">
                 Chile / Santiago
@@ -4232,8 +4723,176 @@
           <tbody class="po-table-group-row">
             <tr class="po-table-row">
               <td class="po-table-column po-table-column-selectable po-table-row-active">
-                <input type="radio" id="radio3" class="po-radio-group-input po-radio-group-input-checked" />
-                <label class="po-radio-group-label po-clickable" for="radio3"></label>
+                <input type="radio" id="radio3" class="po-table-radio po-table-radio-checked" />
+                <label class="po-table-radio-label po-clickable" for="radio3"></label>
+              </td>
+              <td class="po-table-column po-table-row-active">
+                <div class="po-table-column-cell">
+                  Argentina / Buenos Aires
+                </div>
+              </td>
+              <td class="po-table-column po-table-row-active">
+                <div class="po-table-column-cell">
+                  13/02/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right po-table-row-active">
+                <div class="po-table-column-cell">
+                  230
+                </div>
+              </td>
+              <td class="po-table-column po-table-row-active">
+                <div class="po-table-column-cell">
+                  Primeira classe
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right po-table-row-active">
+                <div class="po-table-column-cell">
+                  1231234
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right po-table-row-active">
+                <div class="po-table-column-cell">
+                  R$ 600.00
+                </div>
+              </td>
+              <td class="po-table-column-actions po-table-row-active">
+                <span class="po-icon po-icon-more"></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <h4>Tabela sem gerenciamento de colunas e com ações</h4>
+  <div class="po-container-no-padding">
+    <div class="po-table-main-container">
+      <div class="po-table-wrapper">
+        <table class="po-table">
+          <thead>
+            <tr class="po-table-header">
+              <th class="po-table-column-selectable"></th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
+              </th>
+              <th class="po-table-header-actions"></th>
+            </tr>
+          </thead>
+
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column po-table-column-selectable">
+                <input type="radio" id="radio2" class="po-table-radio" />
+                <label class="po-table-radio-label po-clickable" for="radio2"></label>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Brasil / São Paulo
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  21/04/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  235
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  112234
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 300.00
+                </div>
+              </td>
+              <td class="po-table-column-actions">
+                <span class="po-icon po-icon-more"></span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column po-table-column-selectable">
+                <input type="radio" id="radio1" class="po-table-radio" />
+                <label class="po-table-radio-label po-clickable" for="radio1"></label>
+              </td>
+              <td class="po-table-column">
+                Chile / Santiago
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  01/05/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  233
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  12312
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 440.00
+                </div>
+              </td>
+              <td class="po-table-column-actions">
+                <span class="po-icon po-icon-more"></span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column po-table-column-selectable po-table-row-active">
+                <input type="radio" id="radio3" class="po-table-radio po-table-radio-checked" />
+                <label class="po-table-radio-label po-clickable" for="radio3"></label>
               </td>
               <td class="po-table-column po-table-row-active">
                 <div class="po-table-column-cell">
@@ -4287,22 +4946,34 @@
                 <label class="po-table-checkbox-label" for="checkbox1"></label>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-header-number po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Classe</span>
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-header-number po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-header-number po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -4449,22 +5120,34 @@
             <tr class="po-table-header">
               <th class="po-table-header-master-detail"></th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -4682,22 +5365,34 @@
             <tr class="po-table-header">
               <th class="po-table-header-master-detail"></th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -4911,22 +5606,34 @@
             <tr class="po-table-header">
               <th class="po-table-header-master-detail"></th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -5156,22 +5863,34 @@
               </th>
               <th class="po-table-header-master-detail"></th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -5431,22 +6150,34 @@
               </th>
               <th class="po-table-header-master-detail"></th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -5684,22 +6415,34 @@
             <tr class="po-table-header">
               <th class="po-table-header-master-detail"></th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -5899,6 +6642,240 @@
     </div>
   </div>
 
+  <h4>Tabela com master-detail e posicionamento na direita, utilizando a diretiva 'p-table-row-template'</h4>
+  <div class="po-container-no-padding">
+    <div class="po-table-main-container">
+      <div class="po-table-wrapper">
+        <table class="po-table po-table-striped">
+          <thead>
+            <tr class="po-table-header">
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
+              </th>
+              <th class="po-table-header-column-manager">
+                <div>
+                  <button class="po-table-header-column-manager-button po-icon po-icon-settings po-clickable"></button>
+                </div>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Argentina / Buenos Aires
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  13/02/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  233
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Primeira classe
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  1231234
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 600.00
+                </div>
+              </td>
+              <td class="po-table-column-detail-toggle">
+                <span class="po-icon po-icon-arrow-up po-clickable"></span>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="9" class="po-table-row-template-container">
+                <div class="po-font-title po-md-6">
+                  BRA
+                  <div class="po-font-subtitle">Internacional Airport Guarulhos</div>
+                </div>
+                <div class="po-font-title po-md-6">
+                  ARG
+                  <div class="po-font-subtitle">Internacional Airport Pistarini</div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <div class="po-info po-md-3">
+                  <span class="po-info-label">Comandante:</span>
+                  <span class="po-info-value">Arnold</span>
+                </div>
+                <div class="po-info po-md-3">
+                  <span class="po-info-label">Boeing:</span>
+                  <span class="po-info-value">747</span>
+                </div>
+                <div class="po-info po-md-3">
+                  <span class="po-info-label">Capacidade de pessoas:</span>
+                  <span class="po-info-value">853</span>
+                </div>
+                <div class="po-info po-md-3">
+                  <span class="po-info-label">Metros Quadrados:</span>
+                  <span class="po-info-value">478</span>
+                </div>
+              </td>
+            </tr>
+            <td class="po-table-column"></td>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Brasil / São Paulo
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  21/04/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  235
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  112234
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 300.00
+                </div>
+              </td>
+              <td class="po-table-column-detail-toggle">
+                <span class="po-icon po-icon-arrow-down po-clickable"></span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Chile / Santiago
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  01/05/2018
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  230
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  12312
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 440.00
+                </div>
+              </td>
+              <!-- <td class="po-table-column"></td> -->
+              <td class="po-table-column-detail-toggle">
+                <span class="po-icon po-icon-arrow-down po-clickable"></span>
+              </td>
+            </tr>
+          </tbody>
+          <tbody class="po-table-group-row">
+            <tr class="po-table-row">
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Peru / Lima
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  08/05/2020
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  360
+                </div>
+              </td>
+              <td class="po-table-column">
+                <div class="po-table-column-cell">
+                  Econômica
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  12789
+                </div>
+              </td>
+              <td class="po-table-column po-table-column-right">
+                <div class="po-table-column-cell">
+                  R$ 635.00
+                </div>
+              </td>
+              <!-- <td class="po-table-column"></td> -->
+              <td class="po-table-column-detail-toggle">
+                <span class="po-icon po-icon-arrow-down po-clickable"></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
   <h4>Ordenação de dados</h4>
   <div class="po-container-no-padding">
     <div class="po-table-main-container">
@@ -5907,28 +6884,40 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis po-clickable">
-                <span class="po-table-header-icon-ascending"></span>
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                  <span class="po-table-header-icon-ascending"></span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis po-clickable">
-                <span class="po-table-header-icon-unselected"></span>
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-header-number po-clickable po-table-column-right">
-                <span class="po-table-header-icon-unselected"></span>
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                  <span class="po-table-header-icon-unselected"></span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis po-clickable">
-                <span class="po-table-header-icon-unselected"></span>
-                <span class="po-table-header-ellipsis po-table-header-block">Classe</span>
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                  <span class="po-table-header-icon-unselected"></span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-header-number po-clickable po-table-column-right">
-                <span class="po-table-header-icon-unselected"></span>
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis po-clickable">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                  <span class="po-table-header-icon-unselected"></span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-header-number po-clickable po-table-column-right">
-                <span class="po-table-header-icon-unselected"></span>
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis po-clickable">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                  <span class="po-table-header-icon-unselected"></span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis po-clickable">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                  <span class="po-table-header-icon-unselected"></span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -6062,25 +7051,39 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis po-clickable">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis po-clickable">
-                <span class="po-table-header-ellipsis po-table-header-block">Descrição</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Descrição</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis po-clickable">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-header-number po-clickable po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis po-clickable">
-                <span class="po-table-header-ellipsis po-table-header-block">Classe</span>
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-header-number po-clickable po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis po-clickable">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-header-number po-clickable po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis po-clickable">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis po-clickable">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -6248,22 +7251,34 @@
             <thead>
               <tr class="po-table-header">
                 <th class="po-table-header-ellipsis">
-                  <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Destino</span>
+                  </div>
                 </th>
                 <th class="po-table-header-ellipsis">
-                  <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-                </th>
-                <th class="po-table-header-ellipsis po-table-column-right">
-                  <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Data</span>
+                  </div>
                 </th>
                 <th class="po-table-header-ellipsis">
-                  Classe
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Poltrona</span>
+                  </div>
                 </th>
-                <th class="po-table-header-ellipsis po-table-column-right">
-                  <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Classe</span>
+                  </div>
                 </th>
-                <th class="po-table-header-ellipsis po-table-column-right">
-                  <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Código Passagem</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Valor</span>
+                  </div>
                 </th>
                 <th class="po-table-header-column-manager">
                   <div>
@@ -6516,22 +7531,34 @@
             <thead>
               <tr class="po-table-header">
                 <th class="po-table-header-ellipsis">
-                  <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Destino</span>
+                  </div>
                 </th>
                 <th class="po-table-header-ellipsis">
-                  <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-                </th>
-                <th class="po-table-header-ellipsis po-table-column-right">
-                  <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Data</span>
+                  </div>
                 </th>
                 <th class="po-table-header-ellipsis">
-                  Classe
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Poltrona</span>
+                  </div>
                 </th>
-                <th class="po-table-header-ellipsis po-table-column-right">
-                  <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Classe</span>
+                  </div>
                 </th>
-                <th class="po-table-header-ellipsis po-table-column-right">
-                  <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Código Passagem</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Valor</span>
+                  </div>
                 </th>
                 <th class="po-table-header-column-manager">
                   <div>
@@ -6611,22 +7638,34 @@
             <thead>
               <tr class="po-table-header">
                 <th class="po-table-header-ellipsis">
-                  <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Destino</span>
+                  </div>
                 </th>
                 <th class="po-table-header-ellipsis">
-                  <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-                </th>
-                <th class="po-table-header-ellipsis po-table-column-right">
-                  <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Data</span>
+                  </div>
                 </th>
                 <th class="po-table-header-ellipsis">
-                  Classe
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Poltrona</span>
+                  </div>
                 </th>
-                <th class="po-table-header-ellipsis po-table-column-right">
-                  <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Classe</span>
+                  </div>
                 </th>
-                <th class="po-table-header-ellipsis po-table-column-right">
-                  <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Código Passagem</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Valor</span>
+                  </div>
                 </th>
               </tr>
             </thead>
@@ -6646,7 +7685,7 @@
     </div>
   </div>
 
-  <h4>Tabela com botão de "Mostrar mais resultados" com loading</h4>
+  <h4>Tabela com loading, com botão de "Mostrar mais resultados"</h4>
   <div class="po-container-no-padding">
     <div class="po-table-container-relative">
       <div class="po-table-overlay">
@@ -6673,22 +7712,34 @@
             <thead>
               <tr class="po-table-header">
                 <th class="po-table-header-ellipsis">
-                  <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Destino</span>
+                  </div>
                 </th>
                 <th class="po-table-header-ellipsis">
-                  <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-                </th>
-                <th class="po-table-header-ellipsis po-table-column-right">
-                  <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Data</span>
+                  </div>
                 </th>
                 <th class="po-table-header-ellipsis">
-                  Classe
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Poltrona</span>
+                  </div>
                 </th>
-                <th class="po-table-header-ellipsis po-table-column-right">
-                  <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Classe</span>
+                  </div>
                 </th>
-                <th class="po-table-header-ellipsis po-table-column-right">
-                  <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Código Passagem</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Valor</span>
+                  </div>
                 </th>
                 <th class="po-table-header-column-manager">
                   <div>
@@ -6820,6 +7871,376 @@
     </div>
   </div>
 
+  <h4>Tabela e botão de "Mostrar mais resultados" com loading</h4>
+  <div class="po-container-no-padding">
+    <div class="po-table-container-relative">
+      <div class="po-table-overlay">
+        <div class="po-table-overlay-content">
+          <div class="po-loading">
+            <div class="po-loading-icon">
+              <span class="po-loading-icon-bar po-loading-icon-bar-1"></span>
+              <span class="po-loading-icon-bar po-loading-icon-bar-2"></span>
+              <span class="po-loading-icon-bar po-loading-icon-bar-3"></span>
+              <span class="po-loading-icon-bar po-loading-icon-bar-4"></span>
+              <span class="po-loading-icon-bar po-loading-icon-bar-5"></span>
+              <span class="po-loading-icon-bar po-loading-icon-bar-6"></span>
+              <span class="po-loading-icon-bar po-loading-icon-bar-7"></span>
+              <span class="po-loading-icon-bar po-loading-icon-bar-8"></span>
+            </div>
+            <span class="po-loading-label">Carregando</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="po-table-main-container">
+        <div class="po-table-wrapper">
+          <table class="po-table">
+            <thead>
+              <tr class="po-table-header">
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Destino</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Data</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Poltrona</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Classe</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Código Passagem</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Valor</span>
+                  </div>
+                </th>
+                <th class="po-table-header-column-manager">
+                  <div>
+                    <button
+                      class="po-table-header-column-manager-button po-icon po-icon-settings po-clickable"
+                    ></button>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody class="po-table-group-row">
+              <tr class="po-table-row">
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    Argentina / Buenos Aires
+                  </div>
+                </td>
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    13/02/2018
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    233
+                  </div>
+                </td>
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    Primeira classe
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    1231234
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    R$ 600.00
+                  </div>
+                </td>
+                <td class="po-table-column"></td>
+              </tr>
+            </tbody>
+            <tbody class="po-table-group-row">
+              <tr class="po-table-row">
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    Brasil / São Paulo
+                  </div>
+                </td>
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    21/04/2018
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    235
+                  </div>
+                </td>
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    Econômica
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    112234
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    R$ 300.00
+                  </div>
+                </td>
+                <td class="po-table-column"></td>
+              </tr>
+            </tbody>
+            <tbody class="po-table-group-row">
+              <tr class="po-table-row">
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    Chile / Santiago
+                  </div>
+                </td>
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    01/05/2018
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    230
+                  </div>
+                </td>
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    Econômica
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    12312
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    R$ 440.00
+                  </div>
+                </td>
+                <td class="po-table-column"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="po-row po-table-footer-show-more">
+      <button disabled type="button" class="po-button po-offset-xl-4 po-offset-lg-4 po-offset-md-3 po-lg-4 po-md-6">
+        <div class="po-button-loading-icon">
+          <div class="po-loading-icon po-loading-icon-neutral-color">
+            <span class="po-loading-icon-bar po-loading-icon-bar-1"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-2"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-3"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-4"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-5"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-6"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-7"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-8"></span>
+          </div>
+        </div>
+        Carregar mais resultados
+      </button>
+    </div>
+  </div>
+
+  <h4>Tabela sem loading e botão "Mostrar mais resultados" com loading</h4>
+  <div class="po-container-no-padding">
+    <div class="po-table-container-relative">
+      <div class="po-table-main-container">
+        <div class="po-table-wrapper">
+          <table class="po-table">
+            <thead>
+              <tr class="po-table-header">
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Destino</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Data</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Poltrona</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex">
+                    <span class="po-table-header-ellipsis">Classe</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Código Passagem</span>
+                  </div>
+                </th>
+                <th class="po-table-header-ellipsis">
+                  <div class="po-table-header-flex po-table-header-flex-right">
+                    <span class="po-table-header-ellipsis">Valor</span>
+                  </div>
+                </th>
+                <th class="po-table-header-column-manager">
+                  <div>
+                    <button
+                      class="po-table-header-column-manager-button po-icon po-icon-settings po-clickable"
+                    ></button>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody class="po-table-group-row">
+              <tr class="po-table-row">
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    Argentina / Buenos Aires
+                  </div>
+                </td>
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    13/02/2018
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    233
+                  </div>
+                </td>
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    Primeira classe
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    1231234
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    R$ 600.00
+                  </div>
+                </td>
+                <td class="po-table-column"></td>
+              </tr>
+            </tbody>
+            <tbody class="po-table-group-row">
+              <tr class="po-table-row">
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    Brasil / São Paulo
+                  </div>
+                </td>
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    21/04/2018
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    235
+                  </div>
+                </td>
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    Econômica
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    112234
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    R$ 300.00
+                  </div>
+                </td>
+                <td class="po-table-column"></td>
+              </tr>
+            </tbody>
+            <tbody class="po-table-group-row">
+              <tr class="po-table-row">
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    Chile / Santiago
+                  </div>
+                </td>
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    01/05/2018
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    230
+                  </div>
+                </td>
+                <td class="po-table-column">
+                  <div class="po-table-column-cell">
+                    Econômica
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    12312
+                  </div>
+                </td>
+                <td class="po-table-column po-table-column-right">
+                  <div class="po-table-column-cell">
+                    R$ 440.00
+                  </div>
+                </td>
+                <td class="po-table-column"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="po-row po-table-footer-show-more">
+      <button disabled type="button" class="po-button po-offset-xl-4 po-offset-lg-4 po-offset-md-3 po-lg-4 po-md-6">
+        <div class="po-button-loading-icon">
+          <div class="po-loading-icon po-loading-icon-neutral-color">
+            <span class="po-loading-icon-bar po-loading-icon-bar-1"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-2"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-3"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-4"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-5"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-6"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-7"></span>
+            <span class="po-loading-icon-bar po-loading-icon-bar-8"></span>
+          </div>
+        </div>
+        Carregar mais resultados
+      </button>
+    </div>
+  </div>
+
   <h4>Tabela com o mouse posicionado sobre o column manager</h4>
   <div class="po-container-no-padding">
     <div class="po-table-main-container">
@@ -6828,22 +8249,34 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -6979,22 +8412,34 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
-              </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                Classe
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Código Passagem</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Classe</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Código Passagem</span>
+                </div>
+              </th>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Valor</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>
@@ -7219,13 +8664,19 @@
           <thead>
             <tr class="po-table-header">
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Destino</span>
+                </div>
               </th>
               <th class="po-table-header-ellipsis">
-                <span class="po-table-header-ellipsis po-table-header-block">Data</span>
+                <div class="po-table-header-flex">
+                  <span class="po-table-header-ellipsis">Data</span>
+                </div>
               </th>
-              <th class="po-table-header-ellipsis po-table-column-right">
-                <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+              <th class="po-table-header-ellipsis">
+                <div class="po-table-header-flex po-table-header-flex-right">
+                  <span class="po-table-header-ellipsis">Poltrona</span>
+                </div>
               </th>
               <th class="po-table-header-column-manager">
                 <div>

@@ -28,7 +28,7 @@
 }
 
 .po-menu-panel-logo {
-  background: url('../images/portinari-logo-menu-panel.svg') no-repeat 50% 50%;
+  background: url('../images/po-logo-menu-panel.svg') no-repeat 50% 50%;
   height: var(--menu-panel-logo-height);
 }
 

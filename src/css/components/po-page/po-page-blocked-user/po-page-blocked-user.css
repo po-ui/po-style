@@ -51,16 +51,13 @@
 
 .po-page-blocked-user-contact-content-inline {
   display: block;
-  overflow: hidden;
   text-align: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%;
 }
 
 .po-page-blocked-user-contact-group-item {
   display: inline-block;
   position: relative;
+  width: 100%;
 }
 
 .po-page-blocked-user-contact-icon {
@@ -70,7 +67,12 @@
 }
 
 .po-page-blocked-user-contact-text {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
   padding-left: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .po-page-blocked-user-image {

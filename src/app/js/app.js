@@ -3,7 +3,7 @@ var menuElement = document.querySelector('.po-menu');
 var titleElement = document.querySelector('.po-cdn-app-content > header > h1');
 var routerContentElement = document.querySelector('.router-content');
 
-request('./components.json', function(response) {
+request('./components.json', function (response) {
   setToolbarTitle();
 
   createMenu(JSON.parse(response));
@@ -14,7 +14,7 @@ request('./components.json', function(response) {
 
 function setToolbarTitle() {
   var element = document.querySelector('.po-toolbar-title');
-  element.textContent = 'PORTINARI UI | CDN APP - ' + version;
+  element.textContent = 'PO UI | SAMPLE APP - ' + version;
 }
 
 function hideMenu() {
@@ -33,7 +33,7 @@ function loadInitialPage() {
   window.location.search
     .replace('?', '') // Remove o "?" do ínicio dos query parameters
     .split('&') // Separa os parametros
-    .forEach(function(param) {
+    .forEach(function (param) {
       var name = param.split('=')[0];
       var value = param.split('=')[1];
 
@@ -203,7 +203,7 @@ function execScript(url) {
 function request(url, success) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url);
-  xhr.onload = function() {
+  xhr.onload = function () {
     if (xhr.status === 200) {
       success(xhr.responseText);
     } else {

@@ -7,6 +7,22 @@
     @apply --font-title;
   }
 
+  --font-page-login-font-product-name: {
+    @apply --font-title;
+  }
+
+  --font-page-login-font-welcome: {
+    @apply --font-subtitle;
+  }
+
+  --font-page-login-font-product-name-responsive: {
+    @apply --font-subtitle;
+  }
+
+  --font-page-login-font-welcome-responsive: {
+    @apply --font-text-large-bold;
+  }
+
   --font-page-login-font-title-responsive: {
     @apply --font-subtitle;
   }
@@ -15,8 +31,17 @@
     @apply --font-text-bold;
   }
 
+  --font-page-login-support: {
+    @apply --font-text-large-bold;
+  }
+
+  --font-page-login-support-responsive: {
+    @apply --font-text-small-bold;
+  }
+
   --shadow-page-login-popover-box-shadow: var(--shadow-popover);
   --shadow-page-login-popover-box-shadow-arrow: var(--shadow-popover-arrow);
+  --shadow-page-login-support: var(--shadow-card);
 }
 
 .po-page-login-container {
@@ -30,8 +55,8 @@
   display: table-cell;
   height: 100%;
   margin: 0 auto;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding-bottom: 24px;
+  padding-top: 24px;
   position: relative;
   vertical-align: middle;
   width: 50%;
@@ -47,13 +72,47 @@
   padding: 84px 0;
 }
 
+.po-page-login-support {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+  min-width: 92px;
+  height: 88px;
+  padding: 0 8px;
+  @apply --font-page-login-support;
+  background-color: var(--color-page-login-support-background-color);
+  color: var(--color-page-login-support-color);
+  border-radius: 3px;
+  border-color: transparent;
+  border-radius: 3px;
+  box-shadow: var(--shadow-page-login-support);
+  cursor: pointer;
+}
+
+.po-page-login-support span {
+  display: block;
+  padding-bottom: 8px;
+  text-align: center;
+  font-size: 24px;
+}
+
 .po-page-login-panel .po-page-login-header {
   text-align: center;
 }
 
-.po-page-login-header-greeting,
 .po-page-login-header-title {
   @apply --font-page-login-font-title;
+}
+
+.po-page-login-header-product-name {
+  @apply --font-page-login-font-product-name;
+  color: var(--color-page-login-header-product-name-color);
+}
+
+.po-page-login-header-welcome {
+  @apply --font-page-login-font-welcome;
+  color: var(--color-page-login-header-welcome-color);
 }
 
 .po-page-login-recovery-link,
@@ -271,7 +330,6 @@
 }
 
 @media (max-width: 540px) {
-  .po-page-login-header-greeting,
   .po-page-login-header-title {
     @apply --font-page-login-font-title-responsive;
   }
@@ -279,10 +337,6 @@
   .po-page-login-panel .po-page-login-header {
     overflow: hidden;
     padding-bottom: 0;
-  }
-
-  .po-page-login-header-greeting {
-    display: none;
   }
 
   .po-page-login-panel-content {
@@ -309,9 +363,31 @@
   .po-page-login-info-icon-container .po-tooltip {
     min-width: 200px;
   }
+
+  .po-page-login-support {
+    position: fixed;
+    top: auto;
+    bottom: 24px;
+    min-width: 61px;
+    height: 56px;
+    @apply --font-page-login-support-responsive;
+  }
+
+  .po-page-login-support span {
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 320px) {
+  .po-page-login-header-product-name {
+    @apply --font-page-login-font-product-name-responsive;
+    padding: 0 8px;
+  }
+
+  .po-page-login-header-welcome {
+    @apply --font-page-login-font-welcome-responsive;
+  }
+
   .po-page-login-panel {
     padding-bottom: 0;
     padding-top: 0;
@@ -344,6 +420,7 @@
   }
 
   .po-page-login-panel-content {
-    padding: 32px 0 0;
+    margin-bottom: 28px;
+    padding: 16px 0 32px 0;
   }
 }

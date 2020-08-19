@@ -1,13 +1,13 @@
 # Po Theme Cli
 
-Ferramenta que vai ajudar na criação de temas customizados para o [Portinari UI](https://portinari.io/).
+Ferramenta que vai ajudar na criação de temas customizados para o [PO UI](https://po-ui.io/).
 
 ## Instalação
 
 Faça a instalação global da ferramenta:
 
 ```
-npm install -g @portinari/theme-cli
+npm install -g @po-ui/theme-cli
 ```
 
 Você pode ver as opções disponíveis através do comando:
@@ -21,10 +21,10 @@ po-theme -help
 Navegue até o diretório que você deseja e execute o comando:
 
 ```
-po-theme new my-custom-portinari-theme
+po-theme new my-custom-po-theme
 ```
 
-Isso irá gerar um novo diretório com o nome `my-custom-portinari-theme` e com os arquivos iniciais
+Isso irá gerar um novo diretório com o nome `my-custom-po-theme` e com os arquivos iniciais
 para seu tema.
 
 Acesse o arquivo `src/po-theme-custom.css` e faça as customizações necessárias.
@@ -68,7 +68,7 @@ Configure o arquivo `angular.json` da aplicação conforme for mais conveniente 
 
 ``` json
 "styles": [
-  "node_modules/my-custom-portinari-theme/css/po-theme-custom.min.css",
+  "node_modules/my-custom-po-theme/css/po-theme-custom.min.css",
   "src/styles.css"
 ],
 ```
@@ -82,8 +82,8 @@ pode ficar sem os novos estilos publicados.
 
 ``` json
 "styles": [
-  "node_modules/my-custom-portinari-theme/css/po-theme-custom-variables.min.css",
-  "node_modules/@portinari/style/css/po-theme-core.min.css",
+  "node_modules/my-custom-po-theme/css/po-theme-custom-variables.min.css",
+  "node_modules/@po-ui/style/css/po-theme-core.min.css",
   "src/styles.css"
 ],
 ```
@@ -100,9 +100,9 @@ ter incompatibilidade com *browsers* antigos que não dão suporte a variáveis 
 
 ``` json
 "styles": [
-  "node_modules/@portinari/style/css/po-theme-default-variables.min.css",
-  "node_modules/my-custom-portinari-theme/css/po-theme-custom-variables.min.css",
-  "node_modules/@portinari/style/css/po-theme-core.min.css",
+  "node_modules/@po-ui/style/css/po-theme-default-variables.min.css",
+  "node_modules/my-custom-po-theme/css/po-theme-custom-variables.min.css",
+  "node_modules/@po-ui/style/css/po-theme-core.min.css",
   "src/styles.css"
 ],
 ```

@@ -8,18 +8,18 @@ const package = require('../package.json');
 program.version(package.version);
 
 program.on('--help', () => {
-  // Print PORTINARI
-  console.log('  ____   ___  ____ _____ ___ _   _    _    ____  ___  ');
-  console.log(' |  _ \\ / _ \\|  _ \\_   _|_ _| \\ | |  / \\  |  _ \\|_ _| ');
-  console.log(' | |_) | | | | |_) || |  | ||  \\| | / _ \\ | |_) || |  ');
-  console.log(' |  __/| |_| |  _ < | |  | || |\\  |/ ___ \\|  _ < | |  ');
-  console.log(' |_|    \\___/|_| \\_\\|_| |___|_| \\_/_/   \\_\\_| \\_\\___| ');
+  // Print PO UI
+  console.log('  ____     ___         _   _   ___   _   _  ');
+  console.log(' |  _ \\   / _ \\       | | | | |_ _| | | | | ');
+  console.log(' | |_) | | | | |      | | | |  | |  | | | | ');
+  console.log(' |  __/  | |_| |      | |_| |  | |  |_| |_| ');
+  console.log(' |_|      \\___/        \\___/  |___| (_) (_) ');
 });
 
 program
   .command('new <themeName>')
   .alias('n')
-  .description('Create a new theme for Portinari UI')
+  .description('Create a new theme for PO UI')
   .action(themeName => command.new(themeName));
 
 program

@@ -1,18 +1,18 @@
 [comment]: # (@label Customizando cores do tema padrão)
 [comment]: # (@link guides/colors-customization)
 
-A partir da versão 1.9.0, o **Portinari UI** permite que você customize suas cores padrões de maneira fácil, você pode alterar as cores de apenas um componente ou de todos de uma única vez, para isso você vai precisar apenas alterar 
+A partir da versão 1.9.0, o **PO UI** permite que você customize suas cores padrões de maneira fácil, você pode alterar as cores de apenas um componente ou de todos de uma única vez, para isso você vai precisar apenas alterar 
 os valores das variáveis usadas no CSS do tema padrão.
 
-### Como o tema do Portinari UI funciona
+### Como o tema do PO UI funciona
 
-Se você já tem uma aplicação que está usando o tema padrão do Portinari UI, você deve ter seu arquivo
+Se você já tem uma aplicação que está usando o tema padrão do PO UI, você deve ter seu arquivo
 `angular.json` configurado da seguinte maneira.
 
 ``` json
 "styles": [
-  // Arquivo com o tema do Portinari UI com as variáveis "compiladas"
-  "node_modules/@portinari/style/css/po-theme-default.min.css", 
+  // Arquivo com o tema do PO UI com as variáveis "compiladas"
+  "node_modules/@po-ui/style/css/po-theme-default.min.css", 
   "src/styles.css"
 ],
 ```
@@ -34,7 +34,7 @@ e resumidamente falando, o que aconteceu com esse arquivo foi o seguinte:
 
 ### Configurando sua aplicação para permitir customização das cores
 
-Para que seja possível fazer a customização das cores, o *package* `@portinari/style` passou a disponibilizar
+Para que seja possível fazer a customização das cores, o *package* `@po-ui/style` passou a disponibilizar
 os arquivos que contém as variáveis e o arquivo de estilo sem a *"compilação"* das variáveis, para isso
 você precisa carregar esses novos arquivos em seu projeto ao invés do arquivo que não permite a modificação
 das cores.
@@ -42,9 +42,9 @@ das cores.
 ``` json
 "styles": [
   // Arquivo de variáveis (tema padrão)
-  "node_modules/@portinari/style/css/po-theme-default-variables.min.css",
+  "node_modules/@po-ui/style/css/po-theme-default-variables.min.css",
   // Arquivo com os estilos sem as variáveis "compiladas"
-  "node_modules/@portinari/style/css/po-theme-core.min.css",
+  "node_modules/@po-ui/style/css/po-theme-core.min.css",
   "src/styles.css"
 ],
 ```
@@ -81,10 +81,10 @@ Caso você queira customizar todas as cores é possível usar algumas das variá
 verde e o scroll da página na cor vermelha.][components-custom-colors]
 
 Bom com isso você já consegue alterar todas as cores dos componentes e templates da sua aplicação que
-usam o Portinari UI.
+usam o PO UI.
 
 > Para saber quais as variáveis que você pode alterar, basta verificar o arquivo 
-`po-theme-default-variables.css` na pasta `node_modules/@portinari/style/css`, você vai encontrar
+`po-theme-default-variables.css` na pasta `node_modules/@po-ui/style/css`, você vai encontrar
 uma cópia exata do arquivo com todas as variáveis usadas pelo tema padrão.
 
 > Atenção: Para saber quais browsers dão suporte a variáveis você pode consultar a ferramenta 

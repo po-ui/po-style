@@ -1,5 +1,5 @@
 /**
- * @theme: portinari
+ * @theme: po-ui
  **/
 
 /**
@@ -842,6 +842,8 @@
     PAGE LOGIN
   \*------------------------------------*/
 
+  --color-page-login-header-product-name-color: var(--color-neutral);
+  --color-page-login-header-welcome-color: var(--color-secondary);
   --color-page-login-background-color: var(--color-neutral-light-98);
   --color-page-login-background-highlight-image: var(--color-neutral-light-90);
   --color-page-login-highlight-text-color: var(--color-white);
@@ -849,6 +851,8 @@
   --color-page-login-link-hover-color: var(--color-primary-dark-20);
   --color-page-login-popover-color-attempts: var(--color-primary);
   --color-page-login-popover-color-title: var(--color-tertiary);
+  --color-page-login-support-background-color: var(--color-white);
+  --color-page-login-support-color: var(--color-primary);
 
   /*------------------------------------*\
     PAGE SLIDE
@@ -1041,11 +1045,15 @@
   --color-table-background-color-scrollbar: var(--color-primary);
   --color-table-background-color-selected: var(--color-primary);
   --color-table-background-color-table: var(--color-white);
+  --color-table-background-color-radio: var(--color-white);
+  --color-table-background-color-radio-active: var(--color-primary);
 
   --color-table-border-footer-show-subtitle: var(--color-neutral-light-90);
   --color-table-border-select-checkbox: var(--color-neutral-light-60);
   --color-table-border-selected-checkbox: var(--color-primary);
   --color-table-border-rows: var(--color-neutral-light-90);
+  --color-table-border-select-radio: var(--color-neutral-light-60);
+  --color-table-border-select-radio-focusable: var(--color-primary-dark-20);
 
   --color-table-box-shadow-action: var(--color-black-alpha-30);
   --color-table-box-shadow-checkbox: var(--color-black-alpha-15);

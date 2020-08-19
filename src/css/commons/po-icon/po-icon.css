@@ -18,6 +18,10 @@
   content: '\e942';
 }
 
+.po-icon.po-icon-anchor:before {
+  content: '\e995';
+}
+
 .po-icon.po-icon-archive:before {
   content: '\e943';
 }
@@ -36,6 +40,14 @@
 
 .po-icon.po-icon-arrow-up:before {
   content: '\e915';
+}
+
+.po-icon.po-icon-attach:before {
+  content: '\e997';
+}
+
+.po-icon.po-icon-automatic-barrier:before {
+  content: '\e998';
 }
 
 .po-icon.po-icon-balance:before {
@@ -62,12 +74,20 @@
   content: '\e974';
 }
 
+.po-icon.po-icon-calculator:before {
+  content: '\e99c';
+}
+
 .po-icon.po-icon-calendar:before {
   content: '\e916';
 }
 
 .po-icon.po-icon-calendar-ok:before {
   content: '\e945';
+}
+
+.po-icon.po-icon-calendar-settings:before {
+  content: '\e99f';
 }
 
 .po-icon.po-icon-camera:before {
@@ -96,6 +116,10 @@
 
 .po-icon.po-icon-clear-content:before {
   content: '\e949';
+}
+
+.po-icon.po-icon-clipboard:before {
+  content: '\e9a0';
 }
 
 .po-icon.po-icon-clock:before {
@@ -236,6 +260,10 @@
 
 .po-icon.po-icon-grid:before {
   content: '\e95a';
+}
+
+.po-icon.po-icon-handshake:before {
+  content: '\e994';
 }
 
 .po-icon.po-icon-hdd:before {
@@ -418,6 +446,10 @@
   content: '\e96b';
 }
 
+.po-icon.po-icon-print:before {
+  content: '\e996';
+}
+
 .po-icon.po-icon-pushcart:before {
   content: '\e98e';
 }
@@ -436,6 +468,10 @@
 
 .po-icon.po-icon-search:before {
   content: '\e985';
+}
+
+.po-icon.po-icon-security-guard:before {
+  content: '\e999';
 }
 
 .po-icon.po-icon-server:before {
@@ -462,6 +498,10 @@
   content: '\e926';
 }
 
+.po-icon.po-icon-social-instagram:before {
+  content: '\e99a';
+}
+
 .po-icon.po-icon-social-twitter:before {
   content: '\e93e';
 }
@@ -478,8 +518,16 @@
   content: '\e90d';
 }
 
+.po-icon.po-icon-sort-ascending:before {
+  content: '\e99d';
+}
+
 .po-icon.po-icon-sort-desc:before {
   content: '\e90e';
+}
+
+.po-icon.po-icon-sort-descending:before {
+  content: '\e99e';
 }
 
 .po-icon.po-icon-star:before {
@@ -492,6 +540,10 @@
 
 .po-icon.po-icon-star-half:before {
   content: '\e982';
+}
+
+.po-icon.po-icon-steering-wheel:before {
+  content: '\e9a1';
 }
 
 .po-icon.po-icon-stock:before {
@@ -556,6 +608,10 @@
 
 .po-icon.po-icon-users:before {
   content: '\e979';
+}
+
+.po-icon.po-icon-video-call:before {
+  content: '\e99b';
 }
 
 .po-icon.po-icon-wallet:before {

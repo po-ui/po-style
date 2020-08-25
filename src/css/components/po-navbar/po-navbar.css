@@ -26,19 +26,6 @@
   }
 }
 
-/*
-Tratamento para utilizar o 'po-wrapper' para ajustar o espaçamento superior dos pages e menu.
-Irá funcionar colocando o 'po-navbar' precedendo e como irmão do 'po-wrapper' na estrutura padrão da aplicação po.
-<po-navbar></po-navbar>
-<po-wrapper>
-  <po-menu></po-menu>
-  <po-page-default></po-page-default>
-</po-wrapper>
-*/
-po-navbar ~ .po-wrapper {
-  margin-top: var(--navbar-height);
-}
-
 @keyframes menuPositionNormal {
   0% {
     top: 0px;
@@ -66,8 +53,17 @@ po-navbar .po-menu-mobile {
   z-index: 3;
 }
 
+/*
+  Tratamento para utilizar o 'po-wrapper' para ajustar o espaçamento superior dos pages e menu.
+  Irá funcionar colocando o 'po-navbar' precedendo e como irmão do 'po-wrapper' na estrutura padrão da aplicação po.
+  <po-navbar></po-navbar>
+  <po-wrapper>
+    <po-menu></po-menu>
+    <po-page-default></po-page-default>
+  </po-wrapper>
+*/
 po-navbar ~ .po-wrapper {
-  height: calc(100vh - var(--navbar-height));
+  padding-top: var(--navbar-height);
 }
 
 po-navbar ~ .po-wrapper .po-page {

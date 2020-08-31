@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.4.0](https://github.com/po-ui/po-style/compare/v3.3.0...v3.4.0) (2020-08-31)
+
+### Bug Fixes
+
+* **navbar** corrige scrollbar vertical desnecessário ([1b448f]https://github.com/po-ui/po-style/commit/1b448f24c0c133d7003cd9a618ba431186d98b62))
+
 ## [3.3.0](https://github.com/po-ui/po-style/compare/v3.2.0...v3.3.0) (2020-08-24)
 
 Compatibilidade com @po-ui/ng-components@3.3.0

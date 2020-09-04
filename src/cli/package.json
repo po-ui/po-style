@@ -1,7 +1,6 @@
 {
   "name": "@po-ui/theme-cli",
   "version": "3.0.0",
-  "tag": "dev",
   "description": "po cli theme",
   "bin": {
     "po-theme": "bin/cli.js"

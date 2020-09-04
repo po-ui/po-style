@@ -1,0 +1,33 @@
+name: Run publish @po-ui/style
+on:
+  create:
+    tags:
+    - v**
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+        registry-url: 'https://registry.npmjs.org'
+
+    - run: npm install
+    - run: npm run build
+
+    - name: Get package.json version
+      id: package-version
+      uses: martinbeentjes/npm-get-version-action@master
+
+    - name: Run publish with -next
+      run: npm publish dist/style --tag next
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    - name: Add "latest" tag
+      if: (!contains(github.ref, '-next') && !contains(github.ref, '-rc'))
+      run: npm dist-tags add @po-ui/style@${{ steps.package-version.outputs.current-version}}
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

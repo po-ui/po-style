@@ -35,7 +35,7 @@
 }
 
 .po-input-double-icon-right {
-  padding-right: 68px;
+  padding-right: 68px !important;
 }
 
 /* Desabilita o clean field e o reveal do IE 10+ */
@@ -97,6 +97,6 @@ po-url.ng-invalid.ng-dirty .po-input {
   }
 
   .po-input-double-icon-right {
-    padding-right: 52px;
+    padding-right: 52px !important;
   }
 }

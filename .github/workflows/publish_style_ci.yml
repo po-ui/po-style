@@ -1,8 +1,6 @@
 name: Run publish @po-ui/style
 on:
-  create:
-    tags:
-    - v**
+  workflow_dispatch:
 
 jobs:
   build:
@@ -27,7 +25,7 @@ jobs:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     - name: Add "latest" tag
-      if: (!contains(github.ref, '-next') && !contains(github.ref, '-rc'))
+      if: (!contains(steps.package-version.outputs.current-version, '-next') && !contains(steps.package-version.outputs.current-version, '-rc'))
       run: npm dist-tags add @po-ui/style@${{ steps.package-version.outputs.current-version}}
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

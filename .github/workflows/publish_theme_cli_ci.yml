@@ -29,6 +29,6 @@ jobs:
 
     - name: Add "latest" tag
       if: (!contains(steps.package-version.outputs.current-version, '-next') && !contains(steps.package-version.outputs.current-version, '-rc'))
-      run: npm dist-tags add @nicoleoliveira/voce-que-lute-theme-cli@${{ steps.package-version.outputs.current-version}}
+      run: npm dist-tags add @po-ui/theme-cli@${{ steps.package-version.outputs.current-version}}
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

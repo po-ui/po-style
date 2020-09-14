@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.6.0](https://github.com/po-ui/po-style/compare/v3.5.0...v3.6.0) (2020-09-14)
+
+
+### Features
+
+* **combo:** adiciona estilo para utilizar a propriedade p-clean ([b5cf25f](https://github.com/po-ui/po-style/commit/b5cf25f31d61ce592aac224a58d4eab7fa2e8672)), closes [#152](https://github.com/po-ui/po-style/issues/152)
+* **page-slide:** adiciona estilo para o componente po-page-slide ([f9c0baf](https://github.com/po-ui/po-style/commit/f9c0bafda4be7fe0a7fdb74cbdabc12ca2f11bf4))
+
 ## [3.5.0](https://github.com/po-ui/po-style/compare/v3.4.0...v3.5.0) (2020-09-08)
 
 Compatibilidade com @po-ui/ng-components@3.5.0

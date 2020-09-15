@@ -648,6 +648,7 @@
   --color-lookup-search-background-color-text: var(--color-white);
   --color-lookup-search-border-text: var(--color-neutral-light-60);
   --color-lookup-search-border-text-focusable: var(--color-primary);
+  --color-lookup-advanced-search-link-color-text: var(--color-primary);
 
   /*------------------------------------*\
     MENU

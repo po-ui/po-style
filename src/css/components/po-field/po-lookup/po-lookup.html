@@ -95,7 +95,7 @@
       <div class="po-md-4">
         <div class="po-field-container">
           <div class="po-field-container-title">
-            <span class="po-field-title">Campo normal</span>
+            <span class="po-field-title">Campo normal e lookup com busca avançada</span>
           </div>
 
           <div class="po-field-container-content ng-valid">
@@ -103,7 +103,7 @@
             <div class="po-field-icon-container-right">
               <span
                 class="po-icon po-field-icon po-icon-search"
-                onClick="document.getElementById('table').classList.remove('po-invisible');"
+                onClick="document.getElementById('advancedFilter').classList.remove('po-invisible');"
               ></span>
             </div>
           </div>
@@ -238,13 +238,13 @@
               </div>
               <div class="po-modal-body">
                 <!-- INICIO - CONTEUDO DA MODAL -->
-                <div class="po-lookup-header po-md-6 po-pull-right">
-                  <div class="po-field-container-content ng-valid">
-                    <input type="text" class="po-input po-input-icon-right" value="" placeholder="Digite o nome" />
-
+                <div class="po-lookup-header po-pull-right">
+                  <div class="po-lookup-filter-content ng-valid">
                     <div class="po-field-icon-container-right">
                       <span class="po-icon po-field-icon po-icon-search"></span>
                     </div>
+
+                    <input type="text" class="po-input po-input-icon-right" value="" placeholder="Digite o nome" />
                   </div>
                 </div>
 
@@ -406,6 +406,269 @@
                     onClick="document.getElementById('table').classList.add('po-invisible');"
                   >
                     Selecionar
+                  </button>
+                </po-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL COM BUSCA AVANÇADA -->
+    <div id="advancedFilter" class="po-modal po-lookup-modal po-invisible">
+      <div class="po-modal-overlay">
+        <div class="po-modal-container po-p-2">
+          <div class="po-modal-vertical-align">
+            <div tabindex="-1" class="po-modal-content po-modal-lg">
+              <div class="po-modal-header">
+                <div class="po-modal-title">
+                  <a
+                    class="po-modal-header-close-button"
+                    tabindex="0"
+                    onClick="document.getElementById('advancedFilter').classList.add('po-invisible');"
+                  >
+                    <span class="po-icon po-icon-close"></span>
+                  </a>
+                  Selecione um destino
+                </div>
+              </div>
+              <div class="po-modal-body">
+                <!-- INICIO - CONTEUDO DA MODAL -->
+                <div class="po-lookup-header po-pull-right">
+                  <div class="po-lookup-filter-content ng-valid">
+                    <div class="po-field-icon-container-right">
+                      <span class="po-icon po-field-icon po-icon-search"></span>
+                    </div>
+
+                    <input type="text" class="po-input po-input-icon-right" value="" placeholder="Digite o nome" />
+                  </div>
+
+                  <div class="po-lookup-advanced-search">
+                    <span
+                      class="po-lookup-advanced-search-link"
+                      onClick="document.getElementById('modalAdvancedFilter').classList.remove('po-invisible');document.getElementById('advancedFilter').classList.add('po-invisible');"
+                      tabindex="0"
+                      href="#"
+                    >
+                      Busca avançada
+                    </span>
+                  </div>
+                </div>
+
+                <!-- DISCLAIMER -->
+                <div class="po-page-list-disclaimer-group po-md-12">
+                  <div class="po-disclaimer-group">
+                    <div class="po-disclaimer-group-title">Apresentando resultados filtrados por:</div>
+                    <div class="po-disclaimer-group-disclaimer-align">
+                      <div class="po-disclaimer po-clickable">
+                        <span tabindex="0" class="po-disclaimer-label po-disclaimer-label-danger">Remover todos</span>
+                      </div>
+                    </div>
+                    <div class="po-disclaimer-group-disclaimer-align">
+                      <div class="po-disclaimer">
+                        <span class="po-disclaimer-label">Econômica</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="po-row">
+                  <div class="po-lg-12">
+                    <div class="po-container-no-padding">
+                      <div class="po-table-main-container">
+                        <div class="po-table-wrapper">
+                          <table class="po-table">
+                            <thead>
+                              <tr class="po-table-header">
+                                <th class="po-table-column-selectable"></th>
+                                <th class="po-table-header-ellipsis">
+                                  <span class="po-table-header-ellipsis po-table-header-block">Destino</span>
+                                </th>
+                                <th class="po-table-header-ellipsis po-table-header-number po-table-column-right">
+                                  <span class="po-table-header-ellipsis po-table-header-block">Poltrona</span>
+                                </th>
+                                <th class="po-table-header-ellipsis">
+                                  <span class="po-table-header-ellipsis po-table-header-block">Classe</span>
+                                </th>
+                                <th class="po-table-header-ellipsis po-table-header-number po-table-column-right">
+                                  <span class="po-table-header-ellipsis po-table-header-block">Valor</span>
+                                </th>
+                              </tr>
+                            </thead>
+
+                            <tbody class="po-table-group-row">
+                              <tr class="po-table-row">
+                                <td class="po-table-column po-table-column-selectable">
+                                  <input type="radio" id="radio2" class="po-table-radio" />
+                                  <label class="po-table-radio-label po-clickable" for="radio2"></label>
+                                </td>
+                                <td class="po-table-column">
+                                  Brasil / São Paulo
+                                </td>
+                                <td class="po-table-column po-table-column-right">
+                                  235
+                                </td>
+                                <td class="po-table-column">
+                                  Econômica
+                                </td>
+                                <td class="po-table-column po-table-column-right">
+                                  R$ 300.00
+                                </td>
+                              </tr>
+                            </tbody>
+                            <tbody class="po-table-group-row">
+                              <tr class="po-table-row">
+                                <td class="po-table-column po-table-column-selectable">
+                                  <input type="radio" id="radio1" class="po-table-radio" />
+                                  <label class="po-table-radio-label po-clickable" for="radio1"></label>
+                                </td>
+                                <td class="po-table-column">
+                                  Chile / Santiago
+                                </td>
+                                <td class="po-table-column po-table-column-right">
+                                  233
+                                </td>
+                                <td class="po-table-column">
+                                  Econômica
+                                </td>
+                                <td class="po-table-column po-table-column-right">
+                                  R$ 440.00
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="po-row po-table-footer-show-more">
+                        <button
+                          type="button"
+                          name="button"
+                          class="po-button po-offset-xl-4 po-offset-lg-4 po-offset-md-3 po-lg-4 po-md-6"
+                        >
+                          Carregar mais resultados
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- FINAL - CONTEUDO DA MODAL -->
+              </div>
+              <div class="po-modal-footer">
+                <po-button>
+                  <button
+                    class="po-button"
+                    type="button"
+                    onClick="document.getElementById('advancedFilter').classList.add('po-invisible');"
+                  >
+                    Cancelar
+                  </button>
+                </po-button>
+                <po-button class="po-button-modal-first-action">
+                  <button
+                    class="po-button po-button-primary"
+                    type="button"
+                    onClick="document.getElementById('advancedFilter').classList.add('po-invisible');"
+                  >
+                    Selecionar
+                  </button>
+                </po-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL DA BUSCA AVANÇADA -->
+    <div id="modalAdvancedFilter" class="po-modal po-invisible">
+      <div class="po-modal-overlay">
+        <div class="po-modal-container po-p-2">
+          <div class="po-modal-vertical-align">
+            <div tabindex="-1" class="po-modal-content po-modal-md">
+              <div class="po-modal-header">
+                <div class="po-modal-title">
+                  <a
+                    class="po-modal-header-close-button"
+                    tabindex="0"
+                    onClick="document.getElementById('modalAdvancedFilter').classList.add('po-invisible');document.getElementById('advancedFilter').classList.remove('po-invisible');"
+                  >
+                    <span class="po-icon po-icon-close"></span>
+                  </a>
+                  Busca Avançada
+                </div>
+              </div>
+
+              <div class="po-modal-body">
+                <div class="po-row">
+                  <div class="container po-xl-4 po-lg-4 po-md-12 po-sm-12 po-xs-12">
+                    <div class="po-field-container">
+                      <div class="po-field-container-title">
+                        <span class="po-field-title">Destino</span>
+                      </div>
+
+                      <div class="po-field-container-content ng-valid">
+                        <input type="text" class="po-input" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container po-xl-8 po-lg-8 po-md-12 po-sm-12 po-xs-12">
+                    <div class="po-field-container">
+                      <div class="po-field-container-title">
+                        <span class="po-field-title">Poltrona</span>
+                      </div>
+
+                      <div class="po-field-container-content ng-valid">
+                        <input type="text" class="po-input" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="po-row">
+                  <div class="container po-xl-6 po-lg-6 po-md-12 po-sm-12 po-xs-12">
+                    <div class="po-field-container">
+                      <div class="po-field-container-title">
+                        <span class="po-field-title">Classe</span>
+                      </div>
+
+                      <div class="po-field-container-content ng-valid">
+                        <input type="text" class="po-input" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="container po-xl-6 po-lg-6 po-md-12 po-sm-12 po-xs-12">
+                    <div class="po-field-container">
+                      <div class="po-field-container-title">
+                        <span class="po-field-title">Valor</span>
+                      </div>
+
+                      <div class="po-field-container-content ng-valid">
+                        <input type="text" class="po-input" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="po-modal-footer">
+                <po-button>
+                  <button
+                    class="po-button"
+                    type="button"
+                    onClick="document.getElementById('advancedFilter').classList.remove('po-invisible');document.getElementById('modalAdvancedFilter').classList.add('po-invisible');"
+                  >
+                    Cancelar
+                  </button>
+                </po-button>
+                <po-button class="po-button-modal-first-action">
+                  <button
+                    class="po-button po-button-primary"
+                    type="button"
+                    onClick="document.getElementById('advancedFilter').classList.remove('po-invisible');document.getElementById('modalAdvancedFilter').classList.add('po-invisible');"
+                  >
+                    Buscar
                   </button>
                 </po-button>
               </div>

@@ -880,6 +880,7 @@
   --color-popup-background-color-popup-item-selected: var(--color-primary);
   --color-popup-background-color-popup-item-selected-hover: var(--color-primary-dark-20);
   --color-popup-background-color-popup-item-selected-disabled: var(--color-neutral-light-60);
+  --color-popup-background-color-scrollbar: var(--color-primary);
 
   --color-popup-border-color-separator: var(--color-neutral-light-90);
 

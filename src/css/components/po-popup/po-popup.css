@@ -20,6 +20,26 @@
   z-index: 3;
 }
 
+.po-popup-container {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.po-popup-container::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+.po-popup-container::-webkit-scrollbar-thumb {
+  background-color: var(--color-popup-background-color-scrollbar);
+  border-radius: 10px;
+}
+
+.po-popup-container::-webkit-scrollbar-track {
+  display: none;
+}
+
 .po-popup-arrow {
   background-color: var(--color-popup-background-color-popup);
   box-shadow: var(--shadow-popup-box-shadow-popup-arrow);

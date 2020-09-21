@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.7.0](https://github.com/po-ui/po-style/compare/v3.6.0...v3.7.0) (2020-09-21)
+
+
+### Features
+
+* **popup:** adiciona altura máxima no elemento ([cbfb19](https://github.com/po-ui/po-style/commit/cbfb19aebd4c0913ecaa5ffab40048a3c9a3816f))
+
+
 ## [3.6.0](https://github.com/po-ui/po-style/compare/v3.5.0...v3.6.0) (2020-09-14)
 
 

@@ -4,16 +4,24 @@
   --navbar-height: 56px;
 }
 
+po-navbar {
+  /* grid-area: navbar; */
+
+  /* grid-area: 1 / 1 / 1 / 3; */
+  /* height: 56px;; */
+
+  order: 0;
+  /* flex: 1; */
+}
+
 .po-navbar {
   background-color: var(--color-navbar-color);
   display: table;
   height: var(--navbar-height);
-  left: 0;
   padding: 0 24px;
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 3;
+
+  /* grid-area: navbar; */
 }
 
 .po-navbar-shadow {
@@ -48,9 +56,6 @@ po-navbar .po-menu {
 po-navbar ~ .po-wrapper .po-menu-mobile,
 po-navbar .po-menu-mobile {
   background-color: var(--color-navbar-color);
-  position: fixed;
-  top: 12px;
-  z-index: 3;
 }
 
 /*
@@ -62,9 +67,9 @@ po-navbar .po-menu-mobile {
     <po-page-default></po-page-default>
   </po-wrapper>
 */
-po-navbar ~ .po-wrapper {
+/* po-navbar ~ .po-wrapper {
   padding-top: var(--navbar-height);
-}
+} */
 
 po-navbar ~ .po-wrapper .po-page {
   height: calc(100vh - var(--navbar-height));
@@ -92,10 +97,6 @@ po-navbar ~ .po-wrapper .po-page {
 }
 
 @media (min-width: 768px) {
-  .po-navbar + po-menu {
-    display: none;
-  }
-
   po-navbar + po-page-list .po-page-header,
   po-navbar + po-page-detail .po-page-header,
   po-navbar + po-page-edit .po-page-header,

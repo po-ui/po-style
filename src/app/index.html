@@ -12,38 +12,257 @@
   </head>
 
   <body>
-    <div class="po-cdn-app main">
-      <!-- Menu responsivo -->
-      <div class="po-menu-overlay" onclick="hideMenu()"></div>
-      <div class="po-menu-mobile" onclick="showMenuResponsive()">
-        <span class="po-icon po-icon-menu po-clickable"></span>
-      </div>
-      <!-- Menu do CDN App -->
-      <nav class="po-cdn-app-menu po-menu">
-        <div class="po-menu-header">
-          <div class="po-menu-header-container-logo">
-            <a href="/">
-              <img class="po-menu-logo" src="./assets/images/po.png" />
-            </a>
+    <div class="po-wrapper">
+      <header class="po-navbar">
+        <div class="po-navbar-logo">
+          <a href="./">
+            <img class="po-navbar-logo-image" src="./assets/images/po.png" alt="LOGO" />
+          </a>
+        </div>
+
+        <nav class="po-navbar-items po-navbar-hidden">
+          <ul class="po-navbar-items-container">
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 1</a>
+            </li>
+            <li class="po-navbar-item po-clickable po-navbar-item-selected">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item selecionado</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 3</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 4</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 5</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 6</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 7</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 8</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 9</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 10</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 11</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 12</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 13</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 14</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 15</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 16</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 17</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 18</a>
+            </li>
+            <li class="po-navbar-item po-clickable">
+              <a href="#" class="po-navbar-item-link" tabindex="0">item 19</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="po-navbar-item-navigation po-navbar-hidden">
+          <div class="po-navbar-item-navigation-icon po-navbar-item-navigation-icon-disabled">
+            <span class="po-icon po-icon-arrow-left"></span>
+          </div>
+          <div class="po-navbar-item-navigation-icon po-clickable" tabindex="0">
+            <span class="po-icon po-icon-arrow-right"></span>
           </div>
         </div>
 
-        <div class="po-menu-body po-menu-container-sample">
+        <ul class="po-navbar-actions">
+          <li class="po-navbar-action">
+            <div class="po-navbar-action-content po-clickable" tabindex="0">
+              <span class="po-icon po-icon-notification"></span>
+            </div>
+          </li>
+          <li class="po-navbar-action">
+            <div class="po-navbar-action-content po-clickable" tabindex="0">
+              <span class="po-icon po-icon-help"></span>
+            </div>
+          </li>
+          <li class="po-navbar-action">
+            <div class="po-navbar-action-content po-clickable" tabindex="0">
+              <span class="po-icon po-icon-user"></span>
+            </div>
+          </li>
+
+          <li class="po-navbar-action-popup">
+            <div class="po-navbar-action-popup-content po-clickable" tabindex="0">
+              <span class="po-icon po-icon-user"></span>
+            </div>
+          </li>
+        </ul>
+      </header>
+
+      <!-- <div class="po-menu-mobile">
+        <span class="po-icon po-icon-menu"> </span>
+      </div> -->
+      <div class="po-menu">
+        <div class="po-menu-header"></div>
+
+        <nav class="po-menu-body">
           <!-- Inner e outer para esconder scroll -->
           <div class="po-menu-outer">
-            <div class="po-menu-inner"></div>
+            <div class="po-menu-inner">
+              <div class="po-menu-item-wrapper">
+                <div class="po-menu-item-first">
+                  <!-- classe aplicada no primeiro item do menu para remover borda -->
+                  <a href="#" class="po-menu-item-link">
+                    <div class="po-menu-item">Início</div>
+                  </a>
+                </div>
+              </div>
+              <div class="po-menu-item-wrapper">
+                <div>
+                  <!-- classe que representa uma tag de item de menu -->
+                  <a href="#" class="po-menu-item-link">
+                    <div class="po-menu-item">Livros</div>
+                  </a>
+                </div>
+              </div>
+              <div class="po-menu-item-wrapper">
+                <div>
+                  <a href="#" class="po-menu-item-link">
+                    <div class="po-menu-item">Celulares</div>
+                  </a>
+                </div>
+              </div>
+              <div class="po-menu-item-wrapper">
+                <div>
+                  <a href="#" class="po-menu-item-link">
+                    <div class="po-menu-item po-menu-item-selected">Games</div>
+                  </a>
+                </div>
+              </div>
+              <div class="po-menu-item-wrapper">
+                <div>
+                  <a href="#" class="po-menu-item-link">
+                    <div class="po-menu-item">Informática</div>
+                  </a>
+                </div>
+              </div>
+              <div class="po-menu-item-wrapper">
+                <div>
+                  <a href="#" class="po-menu-item-link">
+                    <div class="po-menu-item">Gadgets</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="po-toolbar po-toolbar-position">
+        <div class="po-toolbar-title">PO UI - ANGULAR FRAMEWORK</div>
+        <div class="po-toolbar-group-icon">
+          <div class="po-toolbar-notification po-clickable">
+            <span class="po-icon po-icon-notification po-toolbar-icon"></span>
+            <div class="po-toolbar-notification-badge">0</div>
+          </div>
+          <div class="po-toolbar-profile po-clickable">
+            <div class="po-avatar po-avatar-xs">
+              <img alt="" class="po-avatar-image" />
+            </div>
           </div>
         </div>
-      </nav>
-      <div class="po-cdn-app-toolbar po-toolbar">
-        <div class="po-toolbar-title"></div>
       </div>
-      <div class="po-cdn-app-content">
-        <header>
-          <h1></h1>
-        </header>
 
-        <section class="router-content"></section>
+      <div class="po-page">
+        <div class="po-page-header">
+          <!-- Título -->
+          <h1 class="po-page-header-title">
+            Título da Página
+          </h1>
+
+          <!-- Operações -->
+          <div class="po-page-header-actions">
+            <button class="po-button">
+              <span class="po-button-label">Ação 2</span>
+            </button>
+            <button class="po-button po-button-primary">
+              <span class="po-icon po-icon-gift"></span>
+              <span class="po-button-label">Ação 1</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="po-page-content">
+          <section>
+            <h3>Style</h3>
+            <p>padding: 8px</p>
+            <p>height: 100%</p>
+            <p>overflow-y: auto</p>
+          </section>
+
+          <section>
+            <h3>Content</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Orci phasellus egestas tellus rutrum tellus. Arcu non odio euismod lacinia at quis
+              risus sed vulputate. Sed felis eget velit aliquet sagittis id consectetur purus ut. Suspendisse potenti
+              nullam ac tortor vitae. Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Facilisis leo
+              vel fringilla est ullamcorper. Ut pharetra sit amet aliquam id diam. Eget lorem dolor sed viverra ipsum.
+              Integer vitae justo eget magna fermentum iaculis eu. Sed sed risus pretium quam. Lacus viverra vitae
+              congue eu consequat ac felis donec etc.
+            </p>
+
+            <h3>Content</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Orci phasellus egestas tellus rutrum tellus. Arcu non odio euismod lacinia at quis
+              risus sed vulputate. Sed felis eget velit aliquet sagittis id consectetur purus ut. Suspendisse potenti
+              nullam ac tortor vitae. Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Facilisis leo
+              vel fringilla est ullamcorper. Ut pharetra sit amet aliquam id diam. Eget lorem dolor sed viverra ipsum.
+              Integer vitae justo eget magna fermentum iaculis eu. Sed sed risus pretium quam. Lacus viverra vitae
+              congue eu consequat ac felis donec etc.
+            </p>
+
+            <h3>Content</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Orci phasellus egestas tellus rutrum tellus. Arcu non odio euismod lacinia at quis
+              risus sed vulputate. Sed felis eget velit aliquet sagittis id consectetur purus ut. Suspendisse potenti
+              nullam ac tortor vitae. Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Facilisis leo
+              vel fringilla est ullamcorper. Ut pharetra sit amet aliquam id diam. Eget lorem dolor sed viverra ipsum.
+              Integer vitae justo eget magna fermentum iaculis eu. Sed sed risus pretium quam. Lacus viverra vitae
+              congue eu consequat ac felis donec etc.
+            </p>
+
+            <h3>Content</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Orci phasellus egestas tellus rutrum tellus. Arcu non odio euismod lacinia at quis
+              risus sed vulputate. Sed felis eget velit aliquet sagittis id consectetur purus ut. Suspendisse potenti
+              nullam ac tortor vitae. Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Facilisis leo
+              vel fringilla est ullamcorper. Ut pharetra sit amet aliquam id diam. Eget lorem dolor sed viverra ipsum.
+              Integer vitae justo eget magna fermentum iaculis eu. Sed sed risus pretium quam. Lacus viverra vitae
+              congue eu consequat ac felis donec etc.
+            </p>
+          </section>
+        </div>
       </div>
     </div>
 

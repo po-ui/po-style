@@ -1,6 +1,12 @@
-.po-page-content {
-  max-height: 100%;
+po-page-content {
+  flex: 1 1 auto;
+  min-height: 0px;
   overflow-y: auto;
+}
+
+.po-page-content {
+  /* max-height: 100%; */
+  /* overflow-y: auto; */
   padding: 16px;
   position: relative;
   width: 100%;

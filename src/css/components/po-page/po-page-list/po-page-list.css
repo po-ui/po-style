@@ -25,6 +25,15 @@
   --filter-input-variable-size-smaller: calc(100% - (var(--filter-search-width-smaller)));
 }
 
+po-page-list {
+  /* grid-area: 3 / 2 / 3 / 3;
+  display: block;
+  grid-area: page; */
+  height: 100vh;
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
 .po-page-list-operations {
   margin-bottom: 16px;
 }

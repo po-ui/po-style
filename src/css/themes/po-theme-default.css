@@ -451,6 +451,9 @@
 
   --color-chart-background-color: var(--color-white);
   --color-chart-legend-wrapper-scrollbar: var(--color-primary-alpha-50);
+  --color-chart-axis-stroke: var(--color-neutral-light-80);
+  --color-chart-legend-text: var(--color-neutral);
+  --color-chart-axis-label-text: var(--color-neutral-dark-60);
 
   /**
    * Chart Types
@@ -458,6 +461,8 @@
   --color-chart-gauge-base-path-color: var(--color-neutral-light-80);
   --color-chart-gauge-text-content-focus: var(--color-secondary);
   --color-chart-gauge-text-description-color: var(--color-neutral);
+
+  --color-chart-line-point-fill: var(--color-white);
 
   /*------------------------------------*\
     CHECKBOX

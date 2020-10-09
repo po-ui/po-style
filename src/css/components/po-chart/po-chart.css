@@ -83,11 +83,49 @@ po-chart-legend {
   position: relative;
   top: 4px;
   width: 16px;
+  border-radius: 2px;
 }
 
 .po-chart-legend-text {
   @apply --font-chart-legend-text;
   display: inline-block;
+  color: var(--color-chart-legend-text);
+}
+
+/* po-chart-axis */
+
+.po-chart-axis-path {
+  stroke: var(--color-chart-axis-stroke);
+  stroke-width: 0.5;
+}
+
+.po-chart-axis-x-label,
+.po-chart-axis-y-label {
+  font-size: 12px;
+  color: var(--color-chart-axis-label-text);
+}
+
+.po-chart-axis-x-label {
+  text-anchor: end;
+}
+
+.po-chart-axis-y-label {
+  text-anchor: middle;
+}
+
+/* po-chart-line */
+
+.po-chart-line-path,
+.po-chart-line-point {
+  stroke-width: 2;
+}
+
+.po-chart-line-path {
+  fill: none;
+}
+
+.po-chart-line-point {
+  fill: var(--color-chart-line-point-fill);
 }
 
 @media screen and (min-width: 1024px) {
@@ -98,7 +136,7 @@ po-chart-legend {
   .po-chart-legend {
     display: block;
     margin: 0 auto;
-    padding-top: 24px;
+    padding-top: 16px;
     text-align: center;
   }
 

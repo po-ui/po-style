@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.10.0](https://github.com/po-ui/po-style/compare/v3.9.0...v3.10.0) (2020-10-13)
+
+Compatibilidade com @po-ui/ng-components@3.10.0
+
 ## [3.9.0](https://github.com/po-ui/po-style/compare/v3.8.0...v3.9.0) (2020-10-05)
 
 ### Features

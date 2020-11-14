@@ -44,8 +44,9 @@
   padding: 12px 16px 8px 16px;
   position: fixed;
   left: 0;
-  width: 100%;
   z-index: 1050;
+  border-radius: 3px;
+  display: flex;
 }
 
 .po-toaster-bottom {
@@ -55,15 +56,41 @@
 .po-toaster-message {
   float: left;
   text-align: left;
-}
-
-.po-toaster-message > .po-icon {
-  @apply --font-toaster-icon;
-  padding-right: 10px;
+  flex-grow: 1;
 }
 
 .po-toaster-action {
   cursor: pointer;
   float: right;
   text-align: right;
+  align-self: center;
+  text-decoration: underline;
+  flex-grow: 0;
+}
+
+.po-toaster-icon {
+  float: left;
+  text-align: left;
+  @apply --font-toaster-icon;
+  padding-right: 16px;
+  flex-grow: 0;
+  align-self: center;
+}
+
+.po-toaster-row {
+  flex-direction: row;
+}
+
+@media (min-width: 961px) {
+  .po-toaster {
+    left: 25%;
+    right: 25%;
+  }
+}
+
+@media (max-width: 960px) {
+  .po-toaster {
+    left: 8px;
+    right: 8px;
+  }
 }

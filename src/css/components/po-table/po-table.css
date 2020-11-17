@@ -99,7 +99,6 @@
   background-color: var(--color-table-background-color-overlay-content);
   border-radius: 3px;
   box-shadow: 0 1px 4px 0 var(--color-table-box-shadow-overlay-content);
-  display: table;
   height: 90%;
   left: 50%;
   max-height: 104px;

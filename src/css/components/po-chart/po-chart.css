@@ -121,7 +121,14 @@ po-chart-legend {
 }
 
 .po-chart-line-path {
+  animation: chartLinePathAnimate 0.7s linear forwards;
   fill: none;
+}
+
+@keyframes chartLinePathAnimate {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .po-chart-line-point {

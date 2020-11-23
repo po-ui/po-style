@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.14.0](https://github.com/po-ui/po-style/compare/v3.13.0...v3.14.0) (2020-11-23)
+
+* **table:** corrige tamanho do loading no Chrome ([1d4d274](https://github.com/po-ui/po-style/commit/1d4d274ca5aaeffafbd98837c7d6d1b677469a0c))
+* **chart:** define animação para gráfico de linha ([4702445](https://github.com/po-ui/po-style/commit/4702445bb1f481889712b42ced019bb2ebec5458))
+
 ## [3.13.0](https://github.com/po-ui/po-style/compare/v3.12.0...v3.13.0) (2020-11-16)
 
 * **notification:** atualiza espaçamentos para notificações com ações ([eb2008213](https://github.com/po-ui/po-style/commit/eb20082135bad664fe5976ae81373af1b99ed98e))

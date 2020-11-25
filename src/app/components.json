@@ -77,6 +77,7 @@
       { "path": "./css/components/po-tabs/po-tabs.html", "title": "Po Tabs" },
       { "path": "./css/components/po-tag/po-tag.html", "title": "Po Tag" },
       { "path": "./css/components/po-field/po-textarea/po-textarea.html", "title": "Po Text Area" },
+      { "path": "./css/components/po-timeline/po-timeline.html", "title": "Po Timeline" },
       { "path": "./css/components/po-toolbar/po-toolbar.html", "title": "Po Toolbar" },
       { "path": "./css/components/po-tooltip/po-tooltip.html", "title": "Po Tooltip" },
       { "path": "./css/components/po-tree-view/po-tree-view.html", "title": "Po Tree View" },

@@ -15,17 +15,17 @@
     "build:icon": "node icon-generator",
     "watch": "gulp watch",
     "dev": "http-server ./app-dist -o -c-1",
-    "release": "standard-version",
+    "release": "standard-version --preset angular",
     "format:fix": "pretty-quick --staged",
     "format:check": "prettier --check --loglevel error \"src/**/*{.ts,.js,.json,.css,.scss,.html}\"",
     "format:all": "prettier --write \"src/**/*{.ts,.js,.json,.css,.scss,.html}\""
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.1.1",
-    "@commitlint/config-angular": "^9.1.1",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-angular": "^11.0.0",
     "autoprefixer": "^9.8.6",
     "cssnano": "^4.1.10",
-    "del": "^5.1.0",
+    "del": "^6.0.0",
     "gulp": "4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-copy": "^4.0.1",
@@ -39,17 +39,16 @@
     "postcss-custom-properties": "^9.1.1",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.3",
-    "standard-version": "^8.0.2",
+    "standard-version": "^9.0.0",
     "xml2js": "^0.4.23",
-    "yargs": "^15.4.1",
-    "prettier": "2.0.5",
-    "pretty-quick": "^2.0.1"
+    "yargs": "^16.1.1",
+    "prettier": "2.2.0",
+    "pretty-quick": "^3.1.0"
   },
   "standard-version": {
     "skip": {
       "commit": true,
-      "tag": true,
-      "bump": true
+      "tag": true
     }
   }
 }

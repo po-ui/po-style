@@ -65,9 +65,9 @@
   top: 0;
   bottom: -40px;
   position: absolute;
-  width: 4px;
+  width: 0.25rem;
   background-color: var(--color-divider-line-color);
-  left: 50%;
+  left: calc(50% - 0.01rem);
   margin-left: -1.5px;
   content: ' ';
 }

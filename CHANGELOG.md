@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [4.0.0-rc.1](https://github.com/po-ui/po-style/compare/v3.14.0...v4.0.0) (2020-11-30)
+
+
+### Features
+
+* **package:** atualiza as dependências ([74e2767](https://github.com/po-ui/po-style/commit/74e2767eb8eae7865861835cea38b252f5d1b43a))
+
+Compatibilidade com @po-ui/ng-components@4.0.0-rc.1
+
 ## [3.14.0](https://github.com/po-ui/po-style/compare/v3.13.0...v3.14.0) (2020-11-23)
 
 * **table:** corrige tamanho do loading no Chrome ([1d4d274](https://github.com/po-ui/po-style/commit/1d4d274ca5aaeffafbd98837c7d6d1b677469a0c))

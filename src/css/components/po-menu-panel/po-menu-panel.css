@@ -1,6 +1,8 @@
 :root {
   --menu-panel-logo-height: 50px;
   --menu-panel-collapsed-logo-height: 64px;
+  --menu-panel-width: 56px;
+  --po-menu-panel-logo-spacing: 8px;
 }
 
 .po-menu-panel {
@@ -18,7 +20,13 @@
   height: 100px;
   max-height: calc(100vh - var(--menu-panel-logo-height));
   min-height: calc(100vh - var(--menu-panel-logo-height));
-  width: 56px;
+  width: var(--menu-panel-width);
+}
+
+.po-menu-panel-logo-container {
+  position: relative;
+  height: var(--menu-panel-logo-height);
+  width: var(--menu-panel-width);
 }
 
 .po-menu-panel-inner {
@@ -28,8 +36,14 @@
 }
 
 .po-menu-panel-logo {
-  background: url('../images/po-logo-menu-panel.svg') no-repeat 50% 50%;
-  height: var(--menu-panel-logo-height);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: calc(var(--menu-panel-logo-height) - var(--po-menu-panel-logo-spacing));
+  max-width: calc(var(--menu-panel-width) - var(--po-menu-panel-logo-spacing));
+  margin: 0;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .po-collapsed-menu .po-menu-panel-logo {

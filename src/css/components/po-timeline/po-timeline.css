@@ -209,6 +209,10 @@
   margin-bottom: 0;
 }
 
+.po-timeline-body p {
+  word-break: break-word;
+}
+
 .po-timeline-body > p + p {
   margin-top: 5px;
 }

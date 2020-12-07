@@ -2,14 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-# [4.0.0-rc.1](https://github.com/po-ui/po-style/compare/v3.14.0...v4.0.0) (2020-11-30)
-
+# [4.0.0](https://github.com/po-ui/po-style/compare/v3.14.0...v4.0.0) (2020-12-07)
 
 ### Features
 
+* **chart:** estilo para gráficos do tipo Bar ([83a2416](https://github.com/po-ui/po-style/commit/83a24163920bd2829c198d26d059f619e820e5ec))
+* **menu-panel:** permite customização da logomarca ([e8c6f97](https://github.com/po-ui/po-style/commit/e8c6f97cd983b5de5f7ded9e9c45ed5fe30eb594))
 * **package:** atualiza as dependências ([74e2767](https://github.com/po-ui/po-style/commit/74e2767eb8eae7865861835cea38b252f5d1b43a))
 
-Compatibilidade com @po-ui/ng-components@4.0.0-rc.1
 
 ## [3.14.0](https://github.com/po-ui/po-style/compare/v3.13.0...v3.14.0) (2020-11-23)
 

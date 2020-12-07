@@ -1,6 +1,6 @@
 {
   "name": "@po-ui/theme-cli",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "po cli theme",
   "bin": {
     "po-theme": "bin/cli.js"
@@ -12,7 +12,7 @@
     "url": "https://github.com/po-ui/po-style"
   },
   "dependencies": {
-    "@po-ui/style": "^3.0.0",
+    "@po-ui/style": "^4.0.0",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
     "gulp": "4.0.2",

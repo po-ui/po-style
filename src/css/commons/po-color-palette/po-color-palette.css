@@ -1,49 +1,61 @@
 .po-color-01 {
   background-color: var(--color-01);
+  fill: var(--color-01);
 }
 
 .po-color-02 {
   background-color: var(--color-02);
+  fill: var(--color-02);
 }
 
 .po-color-03 {
   background-color: var(--color-03);
+  fill: var(--color-03);
 }
 
 .po-color-04 {
   background-color: var(--color-04);
+  fill: var(--color-04);
 }
 
 .po-color-05 {
   background-color: var(--color-05);
+  fill: var(--color-05);
 }
 
 .po-color-06 {
   background-color: var(--color-06);
+  fill: var(--color-06);
 }
 
 .po-color-07 {
   background-color: var(--color-07);
+  fill: var(--color-07);
 }
 
 .po-color-08 {
   background-color: var(--color-08);
+  fill: var(--color-08);
 }
 
 .po-color-09 {
   background-color: var(--color-09);
+  fill: var(--color-09);
 }
 
 .po-color-10 {
   background-color: var(--color-10);
+  fill: var(--color-10);
 }
 
 .po-color-11 {
   background-color: var(--color-11);
+  fill: var(--color-11);
 }
 
 .po-color-12 {
   background-color: var(--color-12);
+  fill: var(--color-12);
 }
 
 .po-text-color-01 {

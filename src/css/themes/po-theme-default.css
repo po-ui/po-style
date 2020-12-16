@@ -31,6 +31,7 @@
  * Field Container.............variáveis do Field Container.
  * Field Container Bottom......variáveis do Field Container Bottom.
  * Field Icon..................variáveis do Field Icon.
+ * Gauge.......................variáveis do Gauge.
  * Info........................variáveis do Info.
  * Input.......................variáveis do Input.
  * List View...................variáveis do List View.
@@ -597,6 +598,17 @@
   --color-field-icon-color: var(--color-primary);
   --color-field-icon-color-error: var(--color-danger);
   --color-field-icon-color-disabled: var(--color-neutral-light-60);
+
+  /*------------------------------------*\
+    GAUGE
+  \*------------------------------------*/
+
+  --color-gauge-base-color: var(--color-neutral-light-80);
+  --color-gauge-description-text-color: var(--color-neutral);
+  --color-gauge-description-bottom-focus: var(--color-secondary);
+  --color-gauge-legend-scrollbar: var(--color-primary-alpha-50);
+  --color-gauge-legend-text: var(--color-neutral);
+  --color-gauge-pointer-color: var(--color-neutral);
 
   /*------------------------------------*\
     INFO

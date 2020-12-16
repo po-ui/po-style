@@ -1,0 +1,182 @@
+:root {
+  --shadow-gauge-box-shadow: var(--shadow-card);
+
+  --font-gauge-title: {
+    @apply --font-text-large;
+  }
+
+  --font-gauge-legend-text: {
+    @apply --font-text-small;
+  }
+
+  --font-gauge-description-text-bold: {
+    @apply --font-text-bold;
+  }
+
+  --font-gauge-description-text-italic: {
+    @apply --font-text-small-italic;
+  }
+
+  --font-gauge-description-value-text: {
+    @apply --font-subtitle;
+  }
+
+  --gauge-padding: 24px;
+}
+
+.po-gauge-wrapper {
+  background: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: var(--gauge-padding);
+  position: relative;
+}
+
+po-gauge-title,
+po-gauge-description,
+po-gauge-svg,
+po-gauge-legend {
+  display: block;
+}
+
+/* PO-GAUGE-TITLE */
+
+.po-gauge-title {
+  @apply --font-gauge-title;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+
+/* PO-GAUGE-DESCRIPTION */
+
+.po-gauge-description {
+  text-align: center;
+}
+
+.po-gauge-description-upper-text {
+  @apply --font-gauge-description-text-bold;
+  margin-bottom: 8px;
+}
+
+.po-gauge-description-text {
+  color: var(--color-gauge-description-text-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.po-gauge-description-bottom {
+  margin: 0 auto;
+  max-width: 80%;
+  position: absolute;
+  bottom: var(--gauge-padding);
+  left: 0;
+  right: 0;
+}
+
+.po-gauge-description-bottom:focus {
+  outline: 2px dashed var(--color-gauge-description-bottom-focus);
+}
+
+.po-gauge-description-bottom-value {
+  @apply --font-gauge-description-value-text;
+  padding-bottom: 12px;
+}
+
+.po-gauge-description-bottom-text {
+  @apply --font-gauge-description-text-italic;
+  padding: 0 8px;
+}
+
+/* PO-GAUGE-SVG */
+
+po-gauge-svg {
+  flex-grow: 1;
+  max-height: 100%;
+}
+
+.po-gauge-svg {
+  display: block;
+  overflow: visible;
+}
+
+/* PO-GAUGE-BASE-PATH */
+.po-gauge-base {
+  fill: var(--color-gauge-base-color);
+}
+
+/* PO-GAUGE-POINTER */
+.po-gauge-pointer,
+.po-gauge-pointer-circle {
+  fill: var(--color-gauge-pointer-color);
+}
+
+.po-gauge-pointer {
+  transform: rotate(0deg);
+  transform-origin: 50% 96%;
+  transition: transform 0.6s ease-out;
+}
+
+/* PO-GAUGE-LEGEND */
+
+.po-gauge-legend {
+  display: flex;
+  max-height: 136px;
+  overflow-y: auto;
+}
+
+.po-gauge-legend::-webkit-scrollbar {
+  width: 7px;
+}
+
+.po-gauge-legend::-webkit-scrollbar-track {
+  display: none;
+}
+
+.po-gauge-legend::-webkit-scrollbar-thumb {
+  background-color: var(--color-gauge-legend-scrollbar);
+  border-radius: 2px;
+}
+
+.po-gauge-legend-item {
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+
+.po-gauge-legend-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.po-gauge-legend-square {
+  height: 16px;
+  margin-right: 8px;
+  width: 16px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 2px;
+}
+
+.po-gauge-legend-text {
+  @apply --font-gauge-legend-text;
+  color: var(--color-gauge-legend-text);
+  margin-left: 24px;
+  padding-top: 48px;
+}
+
+@media screen and (min-width: 1024px) {
+  .po-gauge-title {
+    padding-bottom: var(--gauge-padding);
+  }
+
+  .po-gauge-legend {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .po-gauge-legend-item:not(:last-child) {
+    margin-right: var(--gauge-padding);
+  }
+}

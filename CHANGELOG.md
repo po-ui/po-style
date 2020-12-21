@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/po-ui/po-style/compare/v4.1.0...v4.2.0) (2020-12-21)
+
+
+### Features
+
+* **gauge:** estilos para o componente `po-gauge` ([4fb3182](https://github.com/po-ui/po-style/commit/4fb3182))
+
+
+
 ## [4.1.0](https://github.com/po-ui/po-style/compare/v4.0.0...v4.1.0) (2020-12-14)
 
 Compatibilidade com @po-ui/ng-components@4.1.0

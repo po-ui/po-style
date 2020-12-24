@@ -37,7 +37,7 @@
 .po-chart-svg-element {
   display: block;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: visible;
 }
 
 po-chart-legend {

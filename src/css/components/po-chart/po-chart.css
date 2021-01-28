@@ -93,6 +93,12 @@ po-chart-legend {
   color: var(--color-chart-legend-text);
 }
 
+.po-chart-label {
+  font-size: 11px;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
 /* po-chart-axis */
 
 .po-chart-axis-path {

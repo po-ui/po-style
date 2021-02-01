@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [4.4.0](https://github.com/po-ui/po-style/compare/v4.3.0...v4.4.0) (2021-02-01)
+
+
+### Features
+
+* **style:** estilo para label em gráficos do tipo Donut ([0419f99](https://github.com/po-ui/po-style/commit/0419f99add9230d8732a2e8973cfffad7578d972))
+
+
+
 # [4.3.0](https://github.com/po-ui/po-style/compare/v4.2.0...v4.3.0) (2020-12-30)
 
 

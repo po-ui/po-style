@@ -1,3 +1,15 @@
+.po-icon.po-icon-a11y-elderly:before {
+  content: '\e9a2';
+}
+
+.po-icon.po-icon-a11y-pregnant:before {
+  content: '\e9a3';
+}
+
+.po-icon.po-icon-a11y-wheelchair:before {
+  content: '\e9a4';
+}
+
 .po-icon.po-icon-agro-business:before {
   content: '\e91a';
 }
@@ -250,6 +262,14 @@
   content: '\e958';
 }
 
+.po-icon.po-icon-food:before {
+  content: '\e9a6';
+}
+
+.po-icon.po-icon-food-menu:before {
+  content: '\e9a5';
+}
+
 .po-icon.po-icon-gas:before {
   content: '\e97d';
 }
@@ -422,6 +442,10 @@
   content: '\e968';
 }
 
+.po-icon.po-icon-payment:before {
+  content: '\e9a7';
+}
+
 .po-icon.po-icon-pdf:before {
   content: '\e900';
 }
@@ -436,6 +460,10 @@
 
 .po-icon.po-icon-pin:before {
   content: '\e906';
+}
+
+.po-icon.po-icon-pix-logo:before {
+  content: '\e9a8';
 }
 
 .po-icon.po-icon-plus:before {
@@ -612,6 +640,10 @@
 
 .po-icon.po-icon-video-call:before {
   content: '\e99b';
+}
+
+.po-icon.po-icon-waiter:before {
+  content: '\e9a9';
 }
 
 .po-icon.po-icon-wallet:before {

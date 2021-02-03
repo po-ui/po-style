@@ -20,6 +20,27 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 
   <li>
     <a>
+      <span class="po-icon po-icon-a11y-elderly"></span>
+      <span>po-icon po-icon-a11y-elderly</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-a11y-pregnant"></span>
+      <span>po-icon po-icon-a11y-pregnant</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-a11y-wheelchair"></span>
+      <span>po-icon po-icon-a11y-wheelchair</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
       <span class="po-icon po-icon-agro-business"></span>
       <span>po-icon po-icon-agro-business</span>
     </a>
@@ -461,6 +482,20 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 
   <li>
     <a>
+      <span class="po-icon po-icon-food"></span>
+      <span>po-icon po-icon-food</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-food-menu"></span>
+      <span>po-icon po-icon-food-menu</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
       <span class="po-icon po-icon-gas"></span>
       <span>po-icon po-icon-gas</span>
     </a>
@@ -762,6 +797,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 
   <li>
     <a>
+      <span class="po-icon po-icon-payment"></span>
+      <span>po-icon po-icon-payment</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
       <span class="po-icon po-icon-pdf"></span>
       <span>po-icon po-icon-pdf</span>
     </a>
@@ -785,6 +827,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
     <a>
       <span class="po-icon po-icon-pin"></span>
       <span>po-icon po-icon-pin</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-pix-logo"></span>
+      <span>po-icon po-icon-pix-logo</span>
     </a>
   </li>
 
@@ -1093,6 +1142,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
     <a>
       <span class="po-icon po-icon-video-call"></span>
       <span>po-icon po-icon-video-call</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-waiter"></span>
+      <span>po-icon po-icon-waiter</span>
     </a>
   </li>
 

@@ -59,7 +59,7 @@
   box-sizing: content-box;
   color: var(--color-select-color-primary);
   cursor: pointer;
-  height: 24px;
+  height: 22px;
   overflow: hidden;
   padding: 10px 44px 10px 16px;
   position: relative;
@@ -141,7 +141,7 @@
 @media screen and (max-width: 1366px) {
   .po-select-button {
     @apply --font-select-text-smaller;
-    height: 16px;
+    height: 14px;
     line-height: 16px;
     padding: 8px 32px 8px 8px;
   }

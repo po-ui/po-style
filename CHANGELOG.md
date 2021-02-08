@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [4.5.0](https://github.com/po-ui/po-style/compare/v4.4.0...v4.5.0) (2021-02-08)
+
+
+### Bug Fixes
+
+* **select:** padroniza a altura do campo ([8cfe799](https://github.com/po-ui/po-style/commit/8cfe799f005d66205cef31dd010ca06427bc70fa))
+
+
+### Features
+
+* **icons:** adiciona novos ícones a biblioteca ([a6b6c66](https://github.com/po-ui/po-style/commit/a6b6c661d8ba68beeae78f857dd7cf5f5f348ab1))
+
+
+
 # [4.4.0](https://github.com/po-ui/po-style/compare/v4.3.0...v4.4.0) (2021-02-01)
 
 

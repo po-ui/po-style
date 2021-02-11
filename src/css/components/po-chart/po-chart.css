@@ -117,14 +117,6 @@ po-chart-legend {
   text-anchor: end;
 }
 
-.po-chart-axis-y-label:first-child {
-  text-anchor: start;
-}
-
-.po-chart-axis-y-label:last-child {
-  text-anchor: end;
-}
-
 .po-chart-axis-y-label,
 .po-chart-axis-y-label.po-chart-centered-label {
   text-anchor: middle;

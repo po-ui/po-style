@@ -15,6 +15,7 @@
   box-shadow: var(--shadow-widget-box-shadow);
   padding: 24px;
   width: 100%;
+  overflow: hidden;
 }
 
 .po-chart-header {

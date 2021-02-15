@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.6.0"></a>
+# [4.6.0](https://github.com/po-ui/po-style/compare/v4.5.0...v4.6.0) (2021-02-15)
+
+
+### Features
+
+* **chart:** centraliza labels do eixo y ([7ff5f8d](https://github.com/po-ui/po-style/commit/7ff5f8d))
+* **chart:** corrige resize do gráfico com elementos externos ([f0c313f](https://github.com/po-ui/po-style/commit/f0c313f))
+
+
+
 # [4.5.0](https://github.com/po-ui/po-style/compare/v4.4.0...v4.5.0) (2021-02-08)
 
 

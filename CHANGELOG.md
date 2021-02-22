@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [4.7.0](https://github.com/po-ui/po-style/compare/v4.6.0...v4.7.0) (2021-02-22)
+
+
+### Features
+
+* **chart:** novas classes para definição de borda ([3984bfe](https://github.com/po-ui/po-style/commit/3984bfe565797d40a90f611052330ce187d3d823))
+
+
+
 <a name="4.6.0"></a>
 # [4.6.0](https://github.com/po-ui/po-style/compare/v4.5.0...v4.6.0) (2021-02-15)
 

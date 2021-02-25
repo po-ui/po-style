@@ -434,6 +434,14 @@
   content: '\e93c';
 }
 
+.po-icon.po-icon-pallet-full:before {
+  content: '\e9aa';
+}
+
+.po-icon.po-icon-pallet-partial:before {
+  content: '\e9ab';
+}
+
 .po-icon.po-icon-parameters:before {
   content: '\e967';
 }

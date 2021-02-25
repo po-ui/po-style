@@ -783,6 +783,20 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 
   <li>
     <a>
+      <span class="po-icon po-icon-pallet-full"></span>
+      <span>po-icon po-icon-pallet-full</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-pallet-partial"></span>
+      <span>po-icon po-icon-pallet-partial</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
       <span class="po-icon po-icon-parameters"></span>
       <span>po-icon po-icon-parameters</span>
     </a>

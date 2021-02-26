@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [4.8.0](https://github.com/po-ui/po-style/compare/v4.7.0...v4.8.0) (2021-02-26)
+
+
+### Features
+
+* **icons:** adiciona novos icones a biblioteca ([3966b45](https://github.com/po-ui/po-style/commit/3966b4560218c59b956faebf367d24ab591495f1))
+ícones adicionados:
+  - pallet-full
+  - pallet-partial
+
+
 # [4.7.0](https://github.com/po-ui/po-style/compare/v4.6.0...v4.7.0) (2021-02-22)
 
 

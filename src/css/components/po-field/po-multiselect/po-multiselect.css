@@ -21,6 +21,24 @@
   z-index: 1000;
 }
 
+.po-multiselect-input,
+.po-multiselect-search-input {
+  outline: none;
+}
+
+.po-multiselect-input:focus,
+.po-multiselect-search-input:focus {
+  border: solid 1px var(--color-multiselect-border-field-focus);
+}
+
+.po-multiselect-input:hover {
+  border: solid 1px var(--color-multiselect-border-field-focus);
+}
+
+.po-multiselect-input {
+  color: var(--color-multiselect-color-primary);
+}
+
 .po-multiselect-container-loading {
   height: 80px;
 }
@@ -77,10 +95,6 @@
   width: 100%;
 
   &.po-multiselect-show {
-    & > .po-input {
-      border: solid 1px var(--color-multiselect-border-field-focus) !important;
-    }
-
     & .po-multiselect-container {
       background-color: var(--color-multiselect-background-color) !important;
       display: block;

@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.9.0"></a>
+# [4.9.0](https://github.com/po-ui/po-style/compare/v4.8.0...v4.9.0) (2021-03-08)
+
+
+### Features
+
+* **grid-system:** adiciona classes para espaçamento após o campo ([0c8e613](https://github.com/po-ui/po-style/commit/0c8e613))
+* **multiselect:** adiciona estilo ao posicionar mouse sobre o campo ([10619a5](https://github.com/po-ui/po-style/commit/10619a5))
+
+
+
 # [4.8.0](https://github.com/po-ui/po-style/compare/v4.7.0...v4.8.0) (2021-02-26)
 
 

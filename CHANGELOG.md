@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [4.10.0](https://github.com/po-ui/po-style/compare/v4.9.0...v4.10.0) (2021-03-15)
+
+
+### Features
+
+* **colors:** Paleta de cores para textos ([43568a5](https://github.com/po-ui/po-style/commit/43568a503084edacf0c494ba46f7385c4d681d0f))
+
+
+
 <a name="4.9.0"></a>
 # [4.9.0](https://github.com/po-ui/po-style/compare/v4.8.0...v4.9.0) (2021-03-08)
 

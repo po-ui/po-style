@@ -19,8 +19,8 @@
   display: inline-block;
   height: 44px;
   padding: 0 16px;
-  text-align: center;
   cursor: pointer;
+  text-align: center;
 
   &:hover {
     background-color: var(--color-button-background-color-hover);
@@ -129,12 +129,16 @@
   }
 }
 
+.po-button-icon {
+  vertical-align: middle;
+}
+
 .po-button-label {
   display: inline;
   vertical-align: middle;
 }
 
-.po-button .po-icon:not(.po-button-loading-icon) ~ .po-button-label {
+.po-button .po-button-icon:not(.po-button-loading-icon) ~ .po-button-label {
   padding-left: 4px;
 }
 
@@ -143,14 +147,22 @@
   padding-right: 8px;
 }
 
-.po-button-loading-icon .po-loading-icon {
-  top: 3px;
+.po-button .po-button-icon ~ .po-button-label {
+  padding-left: 4px;
 }
 
-.po-button .po-icon,
+.po-button-loading-icon .po-loading-icon {
+  top: 0.3rem;
+}
+
+.po-button .po-button-icon .po-icon,
 .po-button-loading-icon {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: -0.05rem;
+}
+
+.po-button .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) {
+  vertical-align: -0.1rem;
 }
 
 @media screen and (max-width: 1366px) {
@@ -158,25 +170,27 @@
     @apply --font-button-font-sm;
     height: 32px;
     padding: 0 8px;
+    line-height: 1rem;
   }
 
-  .po-button .po-icon:not(.po-button-loading-icon) ~ .po-button-label {
+  .po-button .po-button-icon:not(.po-button-loading-icon) ~ .po-button-label {
     padding-left: 2px;
   }
 
-  .po-button .po-icon::before {
+  .po-button .po-button-icon::before {
     display: inline-block;
     overflow: hidden;
   }
 
-  .po-button-loading-icon {
-    padding-top: 4px;
-  }
-
   .po-button-loading-icon .po-loading-icon {
     height: 12px;
-    top: 2px;
+    top: 0.125rem;
     width: 12px;
+  }
+
+  .po-button .po-button-icon .po-icon,
+  .po-button-loading-icon {
+    vertical-align: -0.1rem;
   }
 }
 

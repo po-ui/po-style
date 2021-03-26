@@ -118,8 +118,18 @@ po-chart-legend {
 }
 
 .po-chart-axis-y-label,
-.po-chart-axis-y-label.po-chart-centered-label {
+.po-chart-axis-y-label.po-chart-centered-label,
+.po-chart-axis-y-label.po-chart-centered-label:first-child,
+.po-chart-axis-y-label.po-chart-centered-label:last-child {
   text-anchor: middle;
+}
+
+.po-chart-axis-y-label:first-child {
+  text-anchor: start;
+}
+
+.po-chart-axis-y-label:last-child {
+  text-anchor: end;
 }
 
 /* po-chart-line */
@@ -132,6 +142,22 @@ po-chart-legend {
 .po-chart-line-path {
   animation: chartLinePathAnimate 0.7s linear forwards;
   fill: none;
+}
+
+.po-chart-path {
+  fill-opacity: 0.15;
+}
+
+.po-chart-active-path {
+  fill-opacity: 0.75;
+}
+
+.po-chart-line-point {
+  opacity: 0;
+}
+
+.po-chart-active-point {
+  opacity: 1;
 }
 
 @keyframes chartLinePathAnimate {

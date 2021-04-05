@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [4.12.0](https://github.com/po-ui/po-style/compare/v4.11.0...v4.12.0) (2021-04-05)
+
+
+### Features
+
+* **chart:** Define opacidade para gráfico do tipo `area` ([36ac152](https://github.com/po-ui/po-style/commit/36ac15226e33356d1d3c492170cbc1689a345196))
+
+
+
 <a name="4.11.0"></a>
 ## [4.11.0](https://github.com/po-ui/po-style/compare/v4.10.1...v4.11.0) (2021-03-29)
 

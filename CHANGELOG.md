@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [4.14.0](https://github.com/po-ui/po-style/compare/v4.13.0...v4.14.0) (2021-04-19)
+
+
+### Features
+
+* **button:** adiciona compatibilidade com outras fontes de ícones ([49de91c](https://github.com/po-ui/po-style/commit/49de91c1993dd8db697c8a27288a3f70ecc89277))
+
+
+
 ## [4.13.0](https://github.com/po-ui/po-style/compare/v4.12.0...v4.13.0) (2021-04-12)
 
 Compatibilidade com @po-ui/ng-components@4.13.0

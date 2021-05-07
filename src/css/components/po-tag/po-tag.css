@@ -82,14 +82,11 @@
   padding: 0 8px 0 0;
 }
 
-.po-tag .po-icon {
+.po-tag-icon {
   @apply --font-tag-font-icon;
   display: table-cell;
   vertical-align: middle;
-}
-
-.po-tag .po-icon::before {
-  margin: 0 4px 0 -2px;
+  padding-right: 4px;
 }
 
 .po-tag-danger {

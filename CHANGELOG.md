@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [4.16.0](https://github.com/po-ui/po-style/compare/v4.15.0...v4.16.0) (2021-05-10)
+
+
+### Features
+
+* **tag:** atualiza configurações para ícone no componente ([c48e8f5](https://github.com/po-ui/po-style/commit/c48e8f5759acf513e87806b93fa34ed1fc5594ce))
+
+
+
 ## [4.15.0](https://github.com/po-ui/po-style/compare/v4.14.0...v4.15.0) (2021-04-26)
 
 Compatibilidade com @po-ui/ng-components@4.15.0

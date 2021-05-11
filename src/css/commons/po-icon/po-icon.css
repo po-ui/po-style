@@ -194,6 +194,10 @@
   content: '\e94f';
 }
 
+.po-icon.po-icon-doc-xls:before {
+  content: '\e9ac';
+}
+
 .po-icon.po-icon-document:before {
   content: '\e921';
 }
@@ -500,6 +504,14 @@
 
 .po-icon.po-icon-sale:before {
   content: '\e933';
+}
+
+.po-icon.po-icon-screen-full:before {
+  content: '\e9ad';
+}
+
+.po-icon.po-icon-screen-minimize:before {
+  content: '\e9ae';
 }
 
 .po-icon.po-icon-search:before {

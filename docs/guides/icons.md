@@ -363,6 +363,13 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 
   <li>
     <a>
+      <span class="po-icon po-icon-doc-xls"></span>
+      <span>po-icon po-icon-doc-xls</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
       <span class="po-icon po-icon-document"></span>
       <span>po-icon po-icon-document</span>
     </a>
@@ -897,6 +904,20 @@ O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
     <a>
       <span class="po-icon po-icon-sale"></span>
       <span>po-icon po-icon-sale</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-screen-full"></span>
+      <span>po-icon po-icon-screen-full</span>
+    </a>
+  </li>
+
+  <li>
+    <a>
+      <span class="po-icon po-icon-screen-minimize"></span>
+      <span>po-icon po-icon-screen-minimize</span>
     </a>
   </li>
 

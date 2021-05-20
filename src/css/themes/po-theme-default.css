@@ -438,11 +438,14 @@
   --color-calendar-text-box-background-active: var(--color-neutral-dark-60);
 
   --color-calendar-background-color-box-background-selected: var(--color-tertiary);
-  --color-calendar-background-color-box-background-today: var(--color-primary-light-80);
+  --color-calendar-background-color-box-background-range: var(--color-primary-light-80);
   --color-calendar-background-color-box-background-today-hover: var(--color-neutral-light-80);
+
+  --color-calendar-background-color-border-today: var(--color-primary);
 
   --color-calendar-color-box-foreground: var(--color-neutral);
   --color-calendar-color-box-foreground-selected: var(--color-neutral-dark-60);
+  --color-calendar-color-box-foreground-range: var(--color-primary);
   --color-calendar-color-box-foreground-today: var(--color-primary);
   --color-calendar-color-box-foreground-disabled: var(--color-neutral-light-80);
 

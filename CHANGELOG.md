@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [4.17.0](https://github.com/po-ui/po-style/compare/v4.16.1...v4.17.0) (2021-05-24)
+
+
+### Features
+
+* **calendar:** adiciona estilos para permitir modo range ([730c9f2](https://github.com/po-ui/po-style/commit/730c9f21d7e3edfe437060f14231b46de90386b7))
+* **fields:** inclui seletor para uso de outras fontes de ícones ([3d4883b](https://github.com/po-ui/po-style/commit/3d4883b4e77f34ccfae8f9742204c67b2a98d791))
+* **icons:** adiciona novos icones a biblioteca ([669b014](https://github.com/po-ui/po-style/commit/669b01457696d67cce62e1a4e705099eade2eecc))
+- doc-xls
+- screen-full
+- screen-minimize
+
+
+
 ## [4.16.1](https://github.com/po-ui/po-style/compare/v4.16.0...v4.16.1) (2021-05-17)
 
 Compatibilidade com @po-ui/ng-components@4.16.1

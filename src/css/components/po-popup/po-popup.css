@@ -71,6 +71,11 @@
   color: var(--color-popup-color-default);
 }
 
+.po-popup-icon-item.po-icon > :first-child:not(.po-fonts-icon):not(.po-icon) {
+  line-height: 1rem;
+  vertical-align: text-top;
+}
+
 .po-popup-item-disabled {
   color: var(--color-popup-color-disabled);
   cursor: default !important;

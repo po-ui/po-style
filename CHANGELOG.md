@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.1.0](https://github.com/po-ui/po-style/compare/v5.0.0...v5.1.0) (2021-06-14)
+
+
+### Features
+
+* **popup:** adiciona possibilidade de informar outras fontes de ícones ([ebaa732](https://github.com/po-ui/po-style/commit/ebaa7321a2e514dcc4457899601e416b2bbf0e4d))
+
+
+
 # [5.0.0](https://github.com/po-ui/po-style/compare/v5.0.0-rc.1...v5.0.0) (2021-06-07)
 
 Compatibilidade com @po-ui/ng-components@5.0.0

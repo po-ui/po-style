@@ -66,6 +66,11 @@
   width: 80px;
 }
 
+.po-calendar-range-picker {
+  position: fixed;
+  z-index: 1000;
+}
+
 po-datepicker-range.ng-invalid.ng-dirty .po-field-icon {
   color: var(--color-datepicker-range-color-text-error) !important;
 }

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.2.0](https://github.com/po-ui/po-style/compare/v5.1.0...v5.2.0) (2021-06-21)
+
+
+### Features
+
+* **datepicker-range:** adiciona estilo para calendario range ([1470b44](https://github.com/po-ui/po-style/commit/1470b44d3caed3415e53149ae78b116ffb565dc6))
+
+
+
 # [5.1.0](https://github.com/po-ui/po-style/compare/v5.0.0...v5.1.0) (2021-06-14)
 
 

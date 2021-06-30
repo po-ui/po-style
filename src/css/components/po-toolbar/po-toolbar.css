@@ -50,6 +50,11 @@
   vertical-align: middle;
 }
 
+.po-toolbar-icon > :first-child:not(.po-fonts-icon):not(.po-icon) {
+  line-height: 1rem;
+  vertical-align: middle;
+}
+
 .po-toolbar-notification-badge {
   @apply --font-toolbar-font-bagde;
   background-color: var(--color-toolbar-background-color-badge);

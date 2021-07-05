@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.3.0](https://github.com/po-ui/po-style/compare/v5.2.1...v5.3.0) (2021-07-05)
+
+
+### Features
+
+* **toolbar:** adiciona estilo para centralizar icones de outras fontes ([a3b9c81](https://github.com/po-ui/po-style/commit/a3b9c812d6cffdfe5dc453b59c0d8a5dcfbac9f2))
+
+
+
 # [5.2.1](https://github.com/po-ui/po-style/compare/v5.2.0...v5.2.1) (2021-06-28)
 
 Compatibilidade com @po-ui/ng-components@5.2.1

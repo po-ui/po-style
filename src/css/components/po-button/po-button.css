@@ -1,3 +1,97 @@
+ani-button[kind='secondary'] {
+  --text-color: var(--color-action-default);
+  --border-color: var(--color-action-default);
+
+  /* hover */
+  --text-color-hover: var(--color-brand-01-darkest);
+  --background-hover: var(--color-brand-01-lighter);
+  --border-color-hover: var(--color-brand-01-darkest);
+
+  /* focused */
+  --outline-color-focused: var(--color-action-focus);
+
+  /* pressed */
+  --text-color-pressed: var(--color-brand-01-darkest);
+  --background-pressed: var(--color-brand-01-light);
+  --border-color-pressed: var(--color-action-pressed);
+  --outline-color-focused: var(--color-action-focus);
+
+  /* disabled */
+  --text-color-disabled: var(--color-neutral-light-30);
+  --border-color-disabled: var(--color-action-disabled);
+  --outline-color-focused: var(--color-action-focus);
+}
+
+ani-button[kind='secondary'][danger='true'] {
+  --text-color: var(--color-feedback-negative-dark);
+  --border-color: var(--color-feedback-negative-dark);
+
+  /* hover */
+  --text-color-hover: var(--color-feedback-negative-darkest);
+  --background-hover: var(--color-feedback-negative-lighter);
+  --border-color-hover: var(--color-feedback-negative-darkest);
+
+  /* focused */
+  --outline-color-focused: var(--color-action-focus);
+
+  /* pressed */
+  --text-color-pressed: var(--color-feedback-negative-darkest);
+  --background-pressed: var(--color-feedback-negative-light);
+  --border-color-pressed: var(--color-feedback-negative-darkest);
+  --outline-color-focused: var(--color-action-focus);
+
+  /* disabled */
+  --text-color-disabled: var(--color-neutral-light-30);
+  --border-color-disabled: var(--color-action-disabled);
+  --outline-color-focused: var(--color-action-focus);
+}
+
+html {
+  --color-action-default: #ffd464;
+  --color-action-hover: #efc043;
+  --color-action-pressed: #d39f17;
+  --color-action-disabled: #b6bdbf;
+  --color-action-focus: #8241a4;
+  --color-brand-01-lightest: #f2eaf6;
+  --color-brand-01-lighter: #d9c2e5;
+  --color-brand-01-light: #bd94d1;
+  --color-brand-01-base: #8241a4;
+  --color-brand-01-dark: #5b1c7d;
+  --color-brand-01-darker: #400e58;
+  --color-brand-01-darkest: #260538;
+  --color-brand-02-lightest: #fcf0f6;
+  --color-brand-02-lighter: #f7cee2;
+  --color-brand-02-light: #e993b9;
+  --color-brand-02-base: #b92f72;
+  --color-brand-02-dark: #95235a;
+  --color-brand-02-darker: #761947;
+  --color-brand-02-darkest: #520a2d;
+  --color-brand-03-lightest: #fffcf0;
+  --color-brand-03-lighter: #fef0cd;
+  --color-brand-03-light: #ffe297;
+  --color-brand-03-base: #ffd464;
+  --color-brand-03-dark: #efc043;
+  --color-brand-03-darker: #d39f17;
+  --color-brand-03-darkest: #4e360e;
+  --color-neutral-dark-70: #4a5c60;
+  --color-neutral-dark-80: #2c3739;
+  --color-neutral-dark-90: #1d2426;
+  --color-neutral-dark-95: #0b0e0e;
+  --color-neutral-light-10: #eceeee;
+  --color-neutral-light-20: #dadedf;
+  --color-neutral-light-30: #b6bdbf;
+  --color-neutral-light-00: #fff;
+  --color-neutral-light-05: #fbfbfb;
+  --color-neutral-mid-40: #9da7a9;
+  --color-neutral-mid-60: #6e7c7f;
+  --font-family-heading: Roboto;
+  --font-family-text: Roboto;
+  --font-family-code: Monospace;
+  --font-weight-extra-light: 200;
+  --text-transform-normal: normal;
+  --text-transform-uppercase: uppercase;
+}
+
 :root {
   --font-button-font {
     @apply --font-text-large-bold;

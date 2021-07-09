@@ -1,25 +1,7 @@
-ani-button[size='small'] {
-  --font-size: var(--font-size-sm);
-  --line-height: var(--line-height-xl);
-  --spacing-squish: var(--spacing-squish-xs);
-}
-
-ani-button[size='large'] {
-  --font-size: var(--font-size-default);
-  --line-height: var(--line-height-4xl);
-  --spacing-squish: var(--spacing-squish-lg);
-}
-
 ani-button[kind='primary'] {
   --text-color: var(--color-neutral-dark-90);
   --background: var(--color-action-default);
-  --shadow: var(--shadow-none);
-
-  /* hover */
-  --background-hover: var(--color-action-hover);
-
-  /* pressed */
-  --background-pressed: var(--color-action-pressed);
+  --shadow: var(--shadow-md);
 }
 
 ani-button[kind='secondary'] {
@@ -27,11 +9,18 @@ ani-button[kind='secondary'] {
   --border-color: var(--color-brand-01-base);
 
   /* pressed */
-  --text-color-pressed: var(--color-brand-01-darkest);
-  --background-pressed: var(--color-brand-01-light);
   --border-color-pressed: var(--color-brand-01-darkest);
 }
 
 ani-button[kind='tertiary'] {
   --text-color: var(--color-brand-01-base);
+}
+
+@media screen and (max-width: 1366px) {
+  ani-button {
+    --font-size: var(--font-size-sm);
+    --line-height: 24px;
+
+    --spacing-squish: var(--spacing-squish-xs);
+  }
 }

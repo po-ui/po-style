@@ -1,3 +1,8 @@
+ani-button {
+  --font-family: Roboto-Bold;
+  --line-height: 150%;
+}
+
 ani-button[kind='primary'] {
   --text-color: var(--color-neutral-dark-90);
   --background: var(--color-action-default);
@@ -19,8 +24,8 @@ ani-button[kind='tertiary'] {
 @media screen and (max-width: 1366px) {
   ani-button {
     --font-size: var(--font-size-sm);
-    --line-height: 24px;
+    --line-height: 100%;
 
-    --spacing-squish: var(--spacing-squish-xs);
+    --spacing-squish: var(--spacing-squish-sm);
   }
 }

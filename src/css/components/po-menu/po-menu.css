@@ -308,11 +308,17 @@
 }
 
 .po-menu-icon-item {
+  display: inline-block;
   font-size: var(--menu-icon);
   left: 16px; /* necessário para funcionar corretamente no FIREFOX */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  line-height: 1;
+}
+
+.po-menu-icon-item > :first-child:not(.po-fonts-icon):not(.po-icon) {
+  line-height: 2rem;
 }
 
 .po-collapsed-menu .po-menu .po-menu-icon-item {

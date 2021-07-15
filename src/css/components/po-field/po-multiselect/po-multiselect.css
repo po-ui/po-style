@@ -39,6 +39,33 @@
   color: var(--color-multiselect-color-primary);
 }
 
+.po-multiselect-input-auto {
+  min-height: 44px;
+  height: unset;
+}
+
+.po-multiselect-input-static {
+  overflow-y: hidden;
+}
+
+.po-multiselect-input.po-multiselect-input-auto {
+  padding: 6px 44px 6px 4px;
+}
+
+.po-multiselect-input-auto .po-multiselect-input-disclaimer {
+  display: inline-block;
+  padding: 2px 4px;
+}
+
+.po-multiselect-input.po-multiselect-input-static {
+  padding: 4px 44px 4px 4px;
+}
+
+.po-multiselect-input-static .po-multiselect-input-disclaimer {
+  display: inline-block;
+  padding: 4px;
+}
+
 .po-multiselect-container-loading {
   height: 80px;
 }
@@ -109,24 +136,26 @@
   }
 }
 
-.po-multiselect-field {
-  height: 24px;
-  margin-right: 32px;
-  overflow: hidden;
-  position: absolute;
-  top: calc(50% - 12px);
-
-  &.po-multiselect-field-disabled {
-    .po-disclaimer-label {
-      background-color: var(--color-multiselect-disclaimer-background-color-disabled);
-      color: var(--color-multiselect-color-text-disabled);
-    }
-  }
+.po-multiselect-input-disabled {
+  background-color: var(--color-input-border-text-disabled);
+  border: solid 1px var(--color-input-border-text);
+  color: var(--color-input-color-disabled);
+  pointer-events: none;
 }
 
-.po-multiselect-placeholder {
-  line-height: 26px;
-  padding-left: 7px;
+.po-multiselect-input-disabled .po-disclaimer-label {
+  background-color: var(--color-multiselect-disclaimer-background-color-disabled);
+  color: var(--color-multiselect-color-text-disabled);
+}
+
+.po-multiselect-input-placeholder {
+  display: inline-block;
+  padding: 3px 8px;
+  line-height: 24px;
+}
+
+.po-multiselect-input-static .po-multiselect-input-placeholder {
+  padding: 5px 8px;
 }
 
 .po-multiselect-checkbox-input {
@@ -175,8 +204,25 @@
     @apply --font-multiselect-text-small;
     padding: 7px 8px;
   }
-}
 
-.po-multiselect-field .po-disclaimer {
-  margin-left: 8px;
+  .po-multiselect-input-auto {
+    min-height: 32px;
+    height: unset;
+  }
+
+  .po-multiselect-input-auto .po-multiselect-input-disclaimer,
+  .po-multiselect-input-static .po-multiselect-input-disclaimer {
+    padding: 2px;
+  }
+
+  .po-input.po-multiselect-input,
+  .po-input.po-multiselect-input.po-multiselect-input-static {
+    padding: 1px;
+    padding-right: 32px;
+  }
+
+  .po-multiselect-input-placeholder,
+  .po-multiselect-input-static .po-multiselect-input-placeholder {
+    padding: 2px 8px;
+  }
 }

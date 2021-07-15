@@ -34,6 +34,7 @@
 @import './po-table';
 @import './po-tabs';
 @import './po-tag';
+@import './po-timeline';
 @import './po-toolbar';
 @import './po-tooltip';
 @import './po-tree-view';

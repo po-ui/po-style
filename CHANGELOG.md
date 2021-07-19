@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.5.0](https://github.com/po-ui/po-style/compare/v5.4.0...v5.5.0) (2021-07-19)
+
+
+### Features
+
+* **menu:** inclui seletor para possibilitar outras fontes de ícones ([79fe76a](https://github.com/po-ui/po-style/commit/79fe76af52f5099fa0d09a2adca38c08b8b1d69e))
+* **multiselect:** adiciona estilos para a funcionalidade auto ajustavel ([91da4cb](https://github.com/po-ui/po-style/commit/91da4cb3b640e34c835ed89162c610fca177ec7a))
+
+
+
 ## [5.4.0](https://github.com/po-ui/po-style/compare/v5.3.0...v5.4.0) (2021-07-12)
 
 Compatibilidade com @po-ui/ng-components@5.4.0

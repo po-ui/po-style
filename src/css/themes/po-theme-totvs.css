@@ -1,0 +1,49 @@
+html {
+  --color-action-default: #0c9abe;
+  --color-action-hover: #0a7d99;
+  --color-action-pressed: #096d86;
+  --color-action-disabled: #b6bdbf;
+  --color-action-focus: #1d2426;
+  --color-brand-01-lightest: #19c5f0;
+  --color-brand-01-lighter: #0fbbe6;
+  --color-brand-01-light: #0dabd3;
+  --color-brand-01-base: #0c9abe;
+  --color-brand-01-dark: #0b8cad;
+  --color-brand-01-darker: #0a7d99;
+  --color-brand-01-darkest: #096d86;
+  --color-brand-02-lightest: #12a4e2;
+  --color-brand-02-lighter: #1196d0;
+  --color-brand-02-light: #0f89bd;
+  --color-brand-02-base: #0d729c;
+  --color-brand-02-dark: #0c6d97;
+  --color-brand-02-darker: #0b6084;
+  --color-brand-02-darkest: #095271;
+  --color-brand-03-lightest: #56cfdc;
+  --color-brand-03-lighter: #45cad9;
+  --color-brand-03-light: #34c5d5;
+  --color-brand-03-base: #29b6c5;
+  --color-brand-03-dark: #26abba;
+  --color-brand-03-darker: #239ca9;
+  --color-brand-03-darkest: #1f8c98;
+  --color-neutral-dark-70: #4a5c60;
+  --color-neutral-dark-80: #2c3739;
+  --color-neutral-dark-90: #1d2426;
+  --color-neutral-dark-95: #0b0e0e;
+  --color-neutral-light-10: #eceeee;
+  --color-neutral-light-20: #dadedf;
+  --color-neutral-light-30: #b6bdbf;
+  --color-neutral-light-00: #fff;
+  --color-neutral-light-05: #fbfbfb;
+  --color-neutral-mid-40: #9da7a9;
+  --color-neutral-mid-60: #6e7c7f;
+  --font-family-heading: Nunito;
+  --font-family-text: Nunito;
+  --font-family-code: Monospace;
+  --font-weight-extra-light: 200;
+  --text-transform-normal: normal;
+  --text-transform-uppercase: uppercase;
+}
+
+po-button[p-type='primary'] {
+  --p-text-color: var(--color-neutral-light-10);
+}

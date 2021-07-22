@@ -8,6 +8,42 @@
   }
 
   --shadow-button-box-shadow: var(--shadow-button);
+
+  /* --custom-background-color: var(--color-button-background-color-primary) */
+}
+
+ani-button {
+  --font-family: NunitoSans-Bold;
+  --line-height: 150%;
+}
+
+ani-button[kind='primary'] {
+  --text-color: var(--p-text-color, --color-neutral-dark-90);
+  /* --text-color: var(--color-neutral-light-10); po-ui */
+  /* --background: var(--p-background, --color-button-background-color-primary, --color-action-default); */
+  --background: var(--color-action-default);
+  --shadow: var(--shadow-md);
+}
+
+ani-button[kind='secondary'] {
+  --text-color: var(--color-brand-01-base);
+  --border-color: var(--color-brand-01-base);
+
+  /* pressed */
+  --border-color-pressed: var(--color-brand-01-darkest);
+}
+
+ani-button[kind='tertiary'] {
+  --text-color: var(--color-brand-01-base);
+}
+
+@media screen and (max-width: 1366px) {
+  ani-button {
+    --font-size: var(--font-size-sm);
+    --line-height: 110%;
+
+    --spacing-squish: var(--spacing-squish-sm);
+  }
 }
 
 .po-button {
@@ -131,6 +167,7 @@
 
 .po-button-icon {
   vertical-align: middle;
+  padding-right: 2px;
 }
 
 .po-button-label {

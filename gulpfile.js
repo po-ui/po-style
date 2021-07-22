@@ -68,7 +68,7 @@ const copyThemeVariablesCss = () =>
 const prepareThemeCss = () => src('./src/**/*.css').pipe(dest('./.temp'));
 
 const buildThemeAnimalia = () =>
-  src(['./src/css/themes/po-theme-animalia.css', './dist/style/css/po-theme-default.min.css'])
+  src(['./src/css/themes/po-theme-totvs.css', './dist/style/css/po-theme-default.min.css'])
     .pipe(concat('po-theme-animalia.css'))
     .pipe(dest(`./dist/${distDirectory}/css`));
 

@@ -41,7 +41,7 @@
   color: var(--color-toaster-color);
   min-height: 24px;
   overflow: auto;
-  padding: 12px 16px 8px 16px;
+  padding: 10px 16px 8px 16px;
   position: fixed;
   left: 0;
   z-index: 1050;
@@ -59,13 +59,25 @@
   flex-grow: 1;
 }
 
-.po-toaster-action {
+.po-toaster-action,
+.po-toaster-close {
+  align-self: center;
   cursor: pointer;
   float: right;
-  text-align: right;
-  align-self: center;
-  text-decoration: underline;
   flex-grow: 0;
+}
+
+.po-toaster-action {
+  text-decoration: underline;
+}
+
+.po-toaster-close {
+  background: transparent;
+  border: 0;
+  color: var(--color-toaster-color);
+  font-size: 24px;
+  line-height: 24px;
+  margin-left: 16px;
 }
 
 .po-toaster-icon {

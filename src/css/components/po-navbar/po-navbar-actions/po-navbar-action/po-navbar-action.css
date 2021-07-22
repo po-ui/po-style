@@ -12,6 +12,12 @@
   margin: 0 0 0 16px;
   padding-top: 4px;
   text-align: center;
+  vertical-align: middle;
+  line-height: 1rem;
+}
+
+.po-navbar-action-content > :first-child:not(.po-fonts-icon):not(.po-icon) {
+  line-height: 2rem;
 }
 
 @media screen and (max-width: 768px) {

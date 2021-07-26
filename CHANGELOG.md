@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.6.0](https://github.com/po-ui/po-style/compare/v5.5.0...v5.6.0) (2021-07-26)
+
+
+### Features
+
+* **notification:** adiciona estilo para botão fechar ([d65cd19](https://github.com/po-ui/po-style/commit/d65cd196a8484d5616368135cbea697760176009))
+
+
+
 # [5.5.0](https://github.com/po-ui/po-style/compare/v5.4.0...v5.5.0) (2021-07-19)
 
 

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.7.0](https://github.com/po-ui/po-style/compare/v5.6.0...v5.7.0) (2021-08-02)
+
+
+### Features
+
+* **navbar:** adiciona estilo para centralizar icones de outras fontes ([a4d8044](https://github.com/po-ui/po-style/commit/a4d8044a13c238684807c39f71c1d8accdcf84fd))
+
+
+
 # [5.6.0](https://github.com/po-ui/po-style/compare/v5.5.0...v5.6.0) (2021-07-26)
 
 

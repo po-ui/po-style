@@ -106,3 +106,20 @@
     right: 8px;
   }
 }
+
+.po-toaster {
+  opacity: 0;
+  transition-property: opacity, bottom, top;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.po-toaster-invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.po-toaster-visible {
+  opacity: 1;
+  pointer-events: auto;
+}

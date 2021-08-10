@@ -67,7 +67,8 @@
 }
 
 .po-multiselect-container-loading {
-  height: 80px;
+  padding: 36px 0px;
+  position: relative;
 }
 
 .po-multiselect-container-no-data {

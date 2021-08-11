@@ -53,23 +53,6 @@
   border-left: 1px solid var(--color-neutral-light-90);
 }
 
-.po-calendar-mobile {
-  left: calc(50% - (var(--po-calendar-width) / 2));
-  position: fixed !important;
-  top: calc(50% - 145px);
-  z-index: 11;
-}
-
-.po-calendar-overlay {
-  background-color: var(--color-calendar-background-color-mobile-overlay);
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 11;
-}
-
 .po-calendar-header {
   min-height: 40px;
   overflow: hidden;

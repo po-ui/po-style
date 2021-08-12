@@ -268,12 +268,18 @@
   width: 50px;
 }
 
-.po-table-column-icons .po-icon {
+.po-table-column-icons .po-icon,
+.po-table-column-icons .po-fonts-icon,
+.po-table-icon-content > :first-child:not(.po-fonts-icon):not(.po-icon) {
   margin-right: 14px;
 }
 
 .po-table-column-icons .po-icon.po-icon-more {
   font-size: 24px;
+}
+
+.po-table-icon-content > :first-child:not(.po-fonts-icon):not(.po-icon) {
+  line-height: 1.6;
 }
 
 .po-table-footer {
@@ -701,8 +707,14 @@
     line-height: 24px;
   }
 
-  .po-table-column-icons .po-icon {
+  .po-table-column-icons .po-icon,
+  .po-table-column-icons .po-fonts-icon,
+  .po-table-icon-content > :first-child:not(.po-fonts-icon):not(.po-icon) {
     margin-right: 6px;
+  }
+
+  .po-table-icon-content > :first-child:not(.po-fonts-icon):not(.po-icon) {
+    line-height: 1.8;
   }
 
   .po-table-footer-show-more {

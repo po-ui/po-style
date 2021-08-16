@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.9.0](https://github.com/po-ui/po-style/compare/v5.8.0...v5.9.0) (2021-08-16)
+
+
+### Features
+
+* **multiselect:** ajusta exibição do loading interno ([adad019](https://github.com/po-ui/po-style/commit/adad019c0341f6160e237adb437b63fb9a42f2ee))
+* **notification:** insere animação fade-in/out para o componente ([48ed4f8](https://github.com/po-ui/po-style/commit/48ed4f8c296a89e9c21af2c631b13eef044d6fee))
+* **table:** adiciona compatibilidade com outras fontes de ícones ([ae20661](https://github.com/po-ui/po-style/commit/ae2066177c655a23f704e5fc5ad0264ed2932441))
+
+
+
 # [5.8.0](https://github.com/po-ui/po-style/compare/v5.7.0...v5.8.0) (2021-08-09)
 
 

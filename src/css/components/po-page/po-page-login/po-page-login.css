@@ -267,6 +267,14 @@
   text-align: center;
 }
 
+.po-page-login-button-dynamic {
+  width: 100% !important;
+}
+
+.po-page-login-field-size-dynamic {
+  width: 100% !important;
+}
+
 @media (max-width: 1366px) {
   .po-page-login-field-size {
     width: calc(100% - 21px);
@@ -376,6 +384,15 @@
   .po-page-login-support span {
     padding-bottom: 0;
   }
+
+  .po-page-login-info-field-dynamic {
+    width: 100%;
+  }
+
+  .po-page-login-info-icon-container-dynamic {
+    padding: 0;
+    width: 0;
+  }
 }
 
 @media (max-width: 320px) {
@@ -422,5 +439,19 @@
   .po-page-login-panel-content {
     margin-bottom: 28px;
     padding: 16px 0 32px 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .po-page-login-info-icon-container {
+    width: 34px;
+  }
+
+  .po-page-login-password-popover-container {
+    width: 34px;
+  }
+
+  .po-page-login-field-size {
+    width: calc(100% - 34px);
   }
 }

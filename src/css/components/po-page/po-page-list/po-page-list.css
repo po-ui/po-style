@@ -25,10 +25,6 @@
   --filter-input-variable-size-smaller: calc(100% - (var(--filter-search-width-smaller)));
 }
 
-.po-page-list-operations {
-  margin-bottom: 16px;
-}
-
 .po-page-list-actions {
   width: 100%;
   z-index: 1;
@@ -41,7 +37,7 @@
 
 .po-page-list-filter-wrapper {
   float: right;
-  margin-top: -58px;
+  margin-top: -48px;
 }
 
 .po-page-list-filter-search {
@@ -69,6 +65,7 @@
 .po-page-filter-content {
   display: inline-block;
   width: var(--filter-content-width);
+  padding: 0px;
 }
 
 .po-page-filter-input-variable-size {
@@ -89,10 +86,6 @@
     display: block;
   }
 
-  .po-page-list-operations {
-    margin-bottom: 8px;
-  }
-
   .po-page-filter-content {
     width: var(--filter-content-width-smaller);
   }
@@ -106,16 +99,12 @@
   }
 
   .po-page-list-filter-wrapper {
-    margin-top: -48px;
-  }
-
-  .po-page-list-actions {
-    margin-bottom: 8px;
+    margin-top: -32px;
   }
 
   .po-page-list-actions .po-button,
   .po-page-list-actions .po-dropdown {
-    margin: 4px 2px 0 0;
+    margin: 4px 4px 0 0;
   }
 
   .po-page-list-filter-search {
@@ -133,7 +122,7 @@
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 480px) {
   .po-page-list-actions,
   .po-page-list-actions .po-button,
   .po-page-list-actions .po-dropdown,
@@ -145,7 +134,7 @@
   }
 
   .po-page-list-actions {
-    margin-bottom: 48px;
+    margin-bottom: 40px;
   }
 
   .po-page-filter-content {

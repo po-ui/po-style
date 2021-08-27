@@ -151,7 +151,7 @@
   width: 80px;
 }
 
-.po-calendar-box-background {
+.po-calendar-content .po-calendar-box-background {
   background-color: var(--color-calendar-background-color-box-background-normal);
   cursor: pointer;
 
@@ -164,12 +164,17 @@
     color: var(--color-calendar-text-box-background-active);
   }
 
-  &-in-range {
-    background-color: var(--color-calendar-background-color-box-background-range);
+  &-in-range,
+  &-hover {
+    border-radius: 0;
     cursor: pointer;
+    line-height: 26px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2px 0;
+    width: 36px;
 
     &-disabled {
-      background-color: var(--color-calendar-background-color-box-background-disabled);
       pointer-events: none;
     }
   }
@@ -206,7 +211,7 @@
   }
 }
 
-.po-calendar-box-foreground {
+.po-calendar-content .po-calendar-box-foreground {
   color: var(--color-calendar-color-box-foreground);
 
   &-selected {
@@ -220,10 +225,14 @@
   }
 
   &-in-range {
+    background-color: var(--color-calendar-background-color-box-background-range);
     color: var(--color-calendar-color-box-foreground-range);
+    display: block;
     font-family: var(--font-family-bold);
+    width: 100%;
 
     &-disabled {
+      background-color: var(--color-calendar-background-color-box-background-disabled);
       color: var(--color-calendar-color-box-foreground-disabled);
       pointer-events: none;
     }
@@ -244,6 +253,13 @@
   &-disabled {
     color: var(--color-calendar-color-box-foreground-disabled);
     pointer-events: none;
+  }
+
+  &-hover {
+    background-color: var(--color-calendar-background-color-box-background-hover);
+    color: var(--color-calendar-color-box-foreground);
+    display: block;
+    width: 100%;
   }
 }
 

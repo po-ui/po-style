@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.11.0](https://github.com/po-ui/po-style/compare/v5.10.0...v5.11.0) (2021-08-30)
+
+
+### Features
+
+* **calendar:** aplica estilo quando o mouse estiver sobre as datas que irão compor o range ([b576209](https://github.com/po-ui/po-style/commit/b57620964b48efab299a970248cdb6f88e4f4f61))
+
+
+
 ## [5.10.0](https://github.com/po-ui/po-style/compare/v5.9.0...v5.10.0) (2021-08-23)
 
 Compatibilidade com @po-ui/ng-components@5.10.0

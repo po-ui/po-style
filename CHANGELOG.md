@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.12.0](https://github.com/po-ui/po-style/compare/v5.11.0...v5.12.0) (2021-09-06)
+
+
+### Features
+
+* **page-login:** adiciona classes para posicionamento dos fields ([92f8f5d](https://github.com/po-ui/po-style/commit/92f8f5d912cd95ccafc0096b45bae4cdd92ac620))
+
+
+
 # [5.11.0](https://github.com/po-ui/po-style/compare/v5.10.0...v5.11.0) (2021-08-30)
 
 

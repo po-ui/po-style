@@ -83,7 +83,8 @@ po-url.ng-invalid.ng-dirty .po-input {
 
 @media screen and (max-width: 1366px) {
   .po-input {
-    @apply --font-input-text-smaller;
+    /* @apply --font-input-text-smaller; */
+    @apply --font-input-text;
     height: 32px;
     padding: 0 8px;
   }

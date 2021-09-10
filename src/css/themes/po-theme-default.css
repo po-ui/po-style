@@ -1,5 +1,5 @@
 /**
- * @theme: Totvs Default Theme
+ * @theme: po-ui
  **/
 
 /**
@@ -7,9 +7,12 @@
  *
  * COMMONS
  * Common......................configurações.
- * Color.......................variáveis globais de cores.
+ * Color Legacy................variáveis globais de cores.
  * Color Palette...............variáveis da peleta de cores.
  * Font........................variáveis de fontes.
+ *
+ * ANIMALIADS
+ * design tokens...............tema do PO UI no AnimaliaDS.
  *
  * COMPONENTS
  * Accordion...................variáveis do Accordion.
@@ -20,7 +23,6 @@
  * Button Group................variáveis do Button Group.
  * Calendar....................variáveis do Calendar.
  * Chart.......................variáveis do Chart.
- * Checkbox....................variáveis do Checkbox.
  * Checkbox Group..............variáveis do Checkbox Group.
  * Combo.......................variáveis do Combo.
  * Container...................variáveis do Container.
@@ -70,10 +72,12 @@
  * Tab Dropdown................variáveis do Tab Dropdown.
  * Table.......................variáveis do Table.
  * Table Column Link...........variáveis do Table Column Link.
+ * Table Column Manager .......variáveis do Table Column Manager.
  * Tag.........................variáveis do Tag.
  * Textarea....................variáveis do Textarea.
  * Toolbar.....................variáveis do Toolbar.
  * Tooltip.....................variáveis do Tooltip.
+ * Tree View...................variáveis do Tree View.
  * Upload......................variáveis do Upload.
  * Widget......................variáveis do Widget.
  */
@@ -94,122 +98,68 @@
 }
 
 /*------------------------------------*\
-  COLOR
+  COLOR LEGACY
 \*------------------------------------*/
 
 :root {
-  /* Cor do background da linha da tabela */
-  --color-primary-light-95: #f3fafc;
-
-  /* Borda inferior da Table Header */
-  --color-primary-light-80: #ceeaf2;
-
-  /* Scroll (opacidade de 50%) */
-  --color-primary-alpha-50: rgba(12, 154, 190, 0.5);
-
-  /* Botão primário, Links, Cor da borda do input selecionado, Cor da borda do botão secundário */
-  --color-primary: #0c9abe;
-
-  /* Hover do Botão primário, Links, Cor da borda do botão secundário */
-  --color-primary-dark-20: #097b98;
-
-  /* Pressed do Botão primário, Links, Cor da borda do botão secundário */
-  --color-primary-dark-40: #075c72;
-
-  /* Secondary */
-  --color-secondary: #0d729c;
-
-  --color-secondary-dark-20: #0a5b7c;
-
-  --color-secondary-dark-40: #07445d;
-
-  /* Overlay de Modal e Menu (70% de opacidade) */
-  --color-secondary-dark-60-alpha-70: rgba(5, 45, 62, 0.7);
-
-  --color-secondary-dark-60: #052d3e;
-
-  /* Tertiary */
-
-  /* Cor do background da linha de arquivo em carregamento (Upload) */
-  --color-tertiary-light-90: #eaf7f9;
-
-  /* Borda esquerda do menu lateral selecionado, Tab selecionada, Card em destaque */
-  --color-tertiary: #29b6c5;
-
-  /* Cor de gráficos, botão do disclaimer */
-  --color-tertiary-dark-5: #26acba;
-
-  --color-tertiary-dark-40: #186d76;
-
-  --color-tertiary-dark-60: #10484e;
-
-  --color-white: #ffffff;
-
-  --color-white-alpha-30: rgba(255, 255, 255, 0.3);
-
-  /* Background da página, Background da linha selecionada */
-  --color-neutral-light-98: #fbfbfb;
-
-  /* Borda inferior de item de tabela, Base do Slider, Background do Input inativo */
-  --color-neutral-light-90: #eceeee;
-
-  /* Step inativo, Base Switch desligado */
-  --color-neutral-light-80: #dadedf;
-
-  /* Ícone desabilitado, Slider desabilitado, Borda de input */
-  --color-neutral-light-60: #b6bdbf;
-
-  /* Texto do Placeholder */
-  --color-neutral-light-40: #9da7a9;
-
-  /* Borda superior do itens do menu (45% de opacidade) */
-  --color-neutral-alpha-45: rgba(74, 92, 96, 0.45);
-
-  /* Background do Feedback, Pill de informação */
-  --color-neutral: #4a5c60;
-
-  /* Usar em menu: Área do logo, Background do menu */
-  --color-neutral-dark-40: #2c3739;
-
-  /* Texto */
-  --color-neutral-dark-60: #1d2426;
-
-  /* Usar em sombras (10% de opacidade) */
-  --color-black-alpha-10: rgba(0, 0, 0, 0.1);
-
-  /* Usar em menu: Hover - Background de item de menu (15% de opacidade) */
-  --color-black-alpha-15: rgba(0, 0, 0, 0.15);
-
-  /* Usar em menu: Background dos itens de segundo nível (30% de opacidade) */
-  --color-black-alpha-30: rgba(0, 0, 0, 0.3);
-
-  --color-black: #000000;
-
-  /* Background do Feedback de sucesso */
-  --color-success: #00b28e;
-
-  /* Background do Feedback de atenção */
-  --color-warning: #ea9b3e;
-
-  --color-danger-light-40: #dc918c;
-
-  /* Background do Feedback de erro, Borda de Input com erro */
-  --color-danger: #c64840;
-
-  /* Background disclaimer danger */
-  --color-danger-dark-5: #bb443c;
-
-  /* Hover para botão danger */
-  --color-danger-dark-20: #9e3933;
-
-  /* Estilo ativo para botão danger */
-  --color-danger-dark-40: #762b26;
-
-  --color-transparent: transparent;
+  --color-primary-light-95: #fcf6f9; /* OK - Cor do background da linha da tabela */
+  --color-primary-light-80: #f5dbe8; /* OK - Borda inferior da Table Header */
+  --color-primary-alpha-50: rgba(201, 53, 125, 0.5); /* ****NÃO***** Scroll (opacidade de 50%) */
+  --color-primary: #c9357d; /* OK - Botão primário, Links, Cor da borda do input selecionado, Cor da borda do botão secundário */
+  --color-primary-dark-20: #9d2c67; /* OK - Hover do Botão primário, Links, Cor da borda do botão secundário */
+  --color-primary-dark-40: #8b255a; /* OK - Pressed do Botão primário, Links, Cor da borda do botão secundário */
+  --color-secondary: #8241a4; /* OK */
+  --color-secondary-dark-20: #733b8e; /* OK */
+  --color-secondary-dark-40: #5e2e73; /* OK */
+  --color-secondary-dark-60-alpha-70: rgba(59, 28, 74, 0.7); /* ****NÃO*** Overlay de Modal e Menu (70% de opacidade) */
+  --color-secondary-dark-60: #3b1c4a; /* OK */
+  --color-tertiary-light-90: #fffaef; /* OK - Cor do background da linha de arquivo em carregamento (Upload) */
+  --color-tertiary: #ffd464; /* OK - Borda esquerda do menu lateral selecionado, Tab selecionada, Card em destaque */
+  --color-tertiary-dark-5: #f4d069; /* OK - Cor de gráficos, botão do disclaimer */
+  --color-tertiary-dark-40: #d2b25a; /* OK */
+  --color-tertiary-dark-60: #ac9249; /* OK */
+  --color-white: #ffffff; /* OK */
+  --color-white-alpha-30: rgba(255, 255, 255, 0.3); /* ******NÃO****** */
+  --color-neutral-light-98: #fbfbfb; /* OK - Background da página, Background da linha selecionada */
+  --color-neutral-light-90: #eceeee; /* OK - Borda inferior de item de tabela, Base do Slider, Background do Input inativo */
+  --color-neutral-light-80: #dadedf; /* OK - Step inativo, Base Switch desligado */
+  --color-neutral-light-60: #b6bdbf; /* OK - Ícone desabilitado, Slider desabilitado, Borda de input */
+  --color-neutral-light-40: #9da7a9; /* OK - Texto do Placeholder */
+  --color-neutral-alpha-45: rgba(
+    74,
+    92,
+    96,
+    0.45
+  ); /* *******NÃo******* Borda superior do itens do menu (45% de opacidade) */
+  --color-neutral: #4a5c60; /* OK - Background do Feedback, Pill de informação */
+  --color-neutral-dark-40: #2c3739; /* OK - Usar em menu: Área do logo, Background do menu */
+  --color-neutral-dark-60: #1d2426; /* OK - Texto */
+  --color-black-alpha-10: rgba(0, 0, 0, 0.1); /* **NÃO** Usar em sombras (10% de opacidade)-->>>>> NÃO EXISTE */
+  --color-black-alpha-15: rgba(
+    0,
+    0,
+    0,
+    0.15
+  ); /* *****NÃO******** Usar em menu: Hover - Background de item de menu (15% de opacidade) */
+  --color-black-alpha-30: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* *****NÃO******** Usar em menu: Background dos itens de segundo nível (30% de opacidade) */
+  --color-black: #000000; /* OK */
+  --color-success: #00b28e; /* *****NÃO******** Background do Feedback de sucesso */
+  --color-warning: #ea9b3e; /* *****NÃO******** Background do Feedback de atenção */
+  --color-danger-light-40: #cd5f58; /* *****NÃO******** */
+  --color-danger: #c64840; /* *****NÃO******** Background do Feedback de erro, Borda de Input com erro */
+  --color-danger-dark-5: #bb443c; /* *****NÃO******** Background disclaimer danger */
+  --color-danger-dark-20: #9e3933; /* *****NÃO******** Hover para botão danger */
+  --color-danger-dark-40: #762b26; /* *****NÃO******** Estilo ativo para botão danger */
+  --color-transparent: transparent; /* *****NÃO******** */
 
   /*------------------------------------*\
-  COLOR-PALETTE
-\*------------------------------------*/
+    COLOR-PALETTE
+  \*------------------------------------*/
 
   /* Cores que podem ser utilizadas na coluna de labels, legenda e cor de icones do componente table, também utilizadas na tag e badge */
   --color-01: #0c9abe;
@@ -226,120 +176,181 @@
   --color-12: #06a6a5;
 
   /*------------------------------------*\
-  FONT
-\*------------------------------------*/
+    FONT
+  \*------------------------------------*/
 
   /**
-   * Variáveis para definições de fontes. O THF utiliza as variantes *extra light*, *regular* e *bold* em seus componentes e, para cada uma delas,
+   * Variáveis para definições de fontes. O PO utiliza as variantes *extra light*, *regular* e *bold* em seus componentes e, para cada uma delas,
    * é atribuído um @font-face específico. Os nomes elencados no `font-family` no @font-face devem ser os mesmos atribuídos como valor para as variáveis.
    */
-  --font-family-theme: NunitoSans;
-  --font-family-theme-bold: NunitoSans-Bold;
-  --font-family-theme-extra-light: NunitoSans-ExtraLight;
+  --font-family-theme: Roboto;
+  --font-family-theme-bold: Roboto-Bold;
+  --font-family-theme-extra-light: Roboto-Condensed-Light;
 }
 
 @font-face {
-  font-family: 'NunitoSans';
-  src: url('./../fonts/Nunito_Sans/NunitoSans-Regular.ttf');
-  font-weight: 400;
+  font-family: 'Roboto';
+  src: url('./../fonts/Roboto/Roboto-Regular.ttf');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NunitoSans-Bold';
-  src: url('./../fonts/Nunito_Sans/NunitoSans-Bold.ttf');
-  font-weight: 700;
+  font-family: 'Roboto-Condensed-Light';
+  src: url('./../fonts/Roboto/Roboto-Light.ttf');
+  font-weight: 300;
   font-style: normal;
+  font-stretch: condensed;
 }
 
 @font-face {
-  font-family: 'NunitoSans-ExtraLight';
-  src: url('./../fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf');
-  font-weight: 200;
+  font-family: 'Roboto-Bold';
+  src: url('./../fonts/Roboto/Roboto-Bold.ttf');
+  font-weight: bold;
   font-style: normal;
 }
 
 /*------------------------------------*\
-  COMPONENTS
+   ANIMALIADS
+\*------------------------------------*/
+/*------------------------------------*\
+   TOKENS - THEME PO UI - ANIMALIADS
+\*------------------------------------*/
+html {
+  --color-action-default: var(--color-tertiary, #ffd464);
+  --color-action-hover: var(--color-tertiary-dark-5, #efc043);
+  --color-action-pressed: var(--color-tertiary-dark-40, #d39f17);
+  --color-action-disabled: var(--color-neutral-light-60, #b6bdbf);
+  --color-action-focus: var(--color-secondary-dark-60, #260538);
+  --color-brand-01-lightest: #f2eaf6;
+  --color-brand-01-lighter: #d9c2e5;
+  --color-brand-01-light: #bd94d1;
+  --color-brand-01-base: var(--color-secondary, #8241a4);
+  --color-brand-01-dark: var(--color-secondary-dark-20, #5b1c7d);
+  --color-brand-01-darker: var(--color-secondary-dark-40, #400e58);
+  --color-brand-01-darkest: var(--color-secondary-dark-60, #260538);
+  --color-brand-02-lightest: var(--color-primary-light-95, #fcf0f6);
+  --color-brand-02-lighter: var(--color-primary-light-80, #f7cee2);
+  --color-brand-02-light: #e993b9;
+  --color-brand-02-base: var(--color-primary, #b92f72);
+  --color-brand-02-dark: #95235a;
+  --color-brand-02-darker: #761947;
+  --color-brand-02-darkest: #520a2d;
+  --color-brand-03-lightest: var(--color-tertiary-light-90, #fffcf0);
+  --color-brand-03-lighter: #fef0cd;
+  --color-brand-03-light: #ffe297;
+  --color-brand-03-base: var(--color-tertiary, #ffd464);
+  --color-brand-03-dark: var(--color-tertiary-dark-5, #efc043);
+  --color-brand-03-darker: var(--color-tertiary-dark-40, #d39f17);
+  --color-brand-03-darkest: #4e360e;
+  --color-neutral-dark-70: var(--color-neutral, #4a5c60);
+  --color-neutral-dark-80: var(--color-neutral-dark-40, #2c3739);
+  --color-neutral-dark-90: var(--color-neutral-dark-60, #1d2426);
+  --color-neutral-dark-95: var(--color-black, #0b0e0e);
+  --color-neutral-light-10: var(--color-neutral-light-90, #eceeee);
+  --color-neutral-light-20: var(--color-neutral-light-80, #dadedf);
+  --color-neutral-light-30: var(--color-neutral-light-60, #b6bdbf);
+  --color-neutral-light-00: var(--color-white, #fff);
+  --color-neutral-light-05: var(--color-neutral-light-98, #fbfbfb);
+  --color-neutral-mid-40: var(--color-neutral-light-40, #9da7a9);
+  --color-neutral-mid-60: #6e7c7f;
+  --font-family-heading: Roboto;
+  --font-family-text: Roboto;
+  --font-family-code: Monospace;
+  --font-weight-extra-light: 200;
+  --text-transform-normal: normal;
+  --text-transform-uppercase: uppercase;
+}
+
+/*------------------------------------*\
+   COMPONENTS
 \*------------------------------------*/
 :root {
   /*------------------------------------*\
-  ACCORDION
-\*------------------------------------*/
+    ACCORDION
+  \*------------------------------------*/
 
   /**
- * Accordion Item
- */
+   * Accordion Item
+  */
   --color-accordion-item-border-color: var(--color-neutral-light-90);
 
   /**
-* Accordion Item Header
-*/
+   * Accordion Item Header
+  */
   --color-accordion-header-button-background-color: var(--color-white);
   --color-accordion-header-color-primary: var(--color-primary);
   --color-accordion-header-color-hover: var(--color-secondary);
 
   /**
-* Accordion Item Header Button
-*/
+   * Accordion Item Header Button
+  */
   --color-accordion-item-header-button-background-color: var(--color-transparent);
   --color-accordion-item-header-button-focus: var(--color-secondary);
 
   /**
-* Accordion Item Body
-*/
+   * Accordion Item Body
+  */
   --color-accordion-item-body-color: var(--color-neutral);
 
   /*------------------------------------*\
-  AVATAR
-\*------------------------------------*/
+    AVATAR
+  \*------------------------------------*/
 
   --color-avatar-background-color-avatar: var(--color-neutral);
 
   /*------------------------------------*\
-  BUTTON
-\*------------------------------------*/
+    BUTTON
+  \*------------------------------------*/
 
   /**
- * Button Default
- */
-  --color-button-background-color: var(--color-transparent);
-  --color-button-border: var(--color-primary);
-  --color-button-color: var(--color-primary);
+   * Button Default
+  */
+  --color-button-background-color: var(
+    --color-transparent
+  ); /* não será mais possível customizar, prop não customizável no animália */
+  --color-button-border: var(
+    --color-brand-01-base
+  ); /* alterado  ---- manter como estava antes e alterar o fonte no button.css */
+  --color-button-color: red; /* alterado - usar esse como exemplo */
 
-  --color-button-background-color-hover: var(--color-transparent);
-  --color-button-border-hover: var(--color-primary-dark-20);
-  --color-button-color-hover: var(--color-primary-dark-20);
+  --color-button-background-color-hover: var(--color-transparent); /* existe no animalia */
+  --color-button-border-hover: var(--color-secondary-dark-20); /* existe no animalia */
+  --color-button-color-hover: var(--color-secondary-dark-20); /* existe no animalia */
 
-  --color-button-background-color-pressed: var(--color-transparent);
-  --color-button-border-pressed: var(--color-primary-dark-40);
-  --color-button-color-pressed: var(--color-primary-dark-40);
+  --color-button-background-color-pressed: var(--color-transparent); /* existe no animalia */
+  --color-button-border-pressed: var(--color-brand-01-darkest); /* alterado */
+  --color-button-color-pressed: var(--color-secondary-dark-40); /* existe no animalia */
 
-  --color-button-background-color-disabled: var(--color-transparent);
-  --color-button-border-disabled: var(--color-neutral-light-60);
-  --color-button-color-disabled: var(--color-neutral-light-60);
+  --color-button-background-color-disabled: var(
+    --color-transparent
+  ); /* não será mais possível customizar, prop não customizável no animália */
+  --color-button-border-disabled: var(--color-neutral-light-60); /* existe no animalia */
+  --color-button-color-disabled: var(--color-neutral-light-60); /* existe no animalia */
   /**
- * Button Primary
- */
-  --color-button-background-color-primary: var(--color-brand-01-base);
-  --color-button-border-primary: var(--color-primary);
-  --color-button-color-primary: var(--color-white);
+   * Button Primary
+  */
+  --color-button-background-color-primary: var(--color-action-default); /* alterado */
+  --color-button-border-primary: var(--color-tertiary);
+  --color-button-color-primary: var(--color-neutral-dark-90); /* alterado */
 
-  --color-button-background-color-primary-hover: var(--color-primary-dark-20);
-  --color-button-border-primary-hover: var(--color-primary-dark-20);
-  --color-button-color-primary-hover: var(--color-white);
+  --color-button-background-color-primary-hover: var(--color-tertiary-dark-40);
+  --color-button-border-primary-hover: var(--color-tertiary-dark-40);
+  --color-button-color-primary-hover: var(--color-neutral-dark-60);
 
-  --color-button-background-color-primary-pressed: var(--color-primary-dark-40);
-  --color-button-border-primary-pressed: var(--color-primary-dark-40);
-  --color-button-color-primary-pressed: var(--color-white);
+  --color-button-background-color-primary-pressed: var(--color-tertiary-dark-60);
+  --color-button-border-primary-pressed: var(--color-tertiary-dark-60);
+  --color-button-color-primary-pressed: var(--color-neutral-dark-60);
 
   --color-button-background-color-primary-disabled: var(--color-neutral-light-60);
   --color-button-border-primary-disabled: var(--color-neutral-light-60);
   --color-button-color-primary-disabled: var(--color-white);
   /**
- * Button Danger
- */
-  --color-button-background-color-danger: var(--color-transparent);
+   * Button Danger
+  */
+  --color-button-background-color-danger: var(
+    --color-transparent
+  ); /* existem 2 tipos de danger no animaliads o secondary e o primary no primary é possível customizar*/
   --color-button-border-danger: var(--color-danger);
   --color-button-color-danger: var(--color-danger);
 
@@ -355,33 +366,33 @@
   --color-button-border-danger-disabled: var(--color-neutral-light-60);
   --color-button-color-danger-disabled: var(--color-neutral-light-60);
   /**
- * Button Link
- */
-  --color-button-background-color-link: var(--color-transparent);
-  --color-button-color-link: var(--color-primary);
+   * Button Link
+  */
+  --color-button-background-color-link: var(--color-transparent); /* não está aplicando e avaliar necessidade */
+  --color-button-color-link: var(--color-brand-02-base); /* alterado */
 
-  --color-button-background-color-link-hover: var(--color-transparent);
-  --color-button-color-link-hover: var(--color-primary-dark-20);
+  --color-button-background-color-link-hover: var(--color-primary-light-80); /* alterado */
+  --color-button-color-link-hover: var(--color-brand-02-darkest); /* alterado */
 
-  --color-button-background-color-link-pressed: var(--color-transparent);
-  --color-button-color-link-pressed: var(--color-primary-dark-40);
+  --color-button-background-color-link-pressed: var(--color-brand-02-light); /* alterado */
+  --color-button-color-link-pressed: var(--color-brand-02-darkest); /* alterado */
 
-  --color-button-background-color-link-disabled: var(--color-transparent);
-  --color-button-color-link-disabled: var(--color-neutral-light-60);
+  --color-button-background-color-link-disabled: var(--color-transparent); /* não está aplicando */
+  --color-button-color-link-disabled: var(--color-neutral-light-60); /* não está aplicando */
 
   /*------------------------------------*\
-  BADGE
-\*------------------------------------*/
+    BADGE
+  \*------------------------------------*/
 
   --color-badge-color: var(--color-white);
 
   /*------------------------------------*\
-  BREADCRUMB
-\*------------------------------------*/
+    BREADCRUMB
+  \*------------------------------------*/
 
   /**
- * Breadcrumb
- */
+   * Breadcrumb
+  */
   --color-breadcrumb-background-color-container: var(--color-white);
   --color-breadcrumb-border-color-container: var(--color-neutral-light-90);
 
@@ -390,14 +401,14 @@
   --color-breadcrumb-color-item-unclickable: var(--color-neutral);
   --color-breadcrumb-color-star-active: var(--color-warning);
   /**
- * Breadcrumb Dropdown
- */
+   * Breadcrumb Dropdown
+  */
   --color-breadcrumb-background-color-dropdown: var(--color-white);
   --color-breadcrumb-background-color-dropdown-item-hover: var(--color-primary-light-95);
 
   /*------------------------------------*\
-  BUTTON GROUP
-\*------------------------------------*/
+    BUTTON GROUP
+  \*------------------------------------*/
 
   --color-button-group-border-button: var(--color-primary);
   --color-button-group-border-button-disabled: var(--color-neutral-light-60);
@@ -420,8 +431,8 @@
   --color-button-group-color-neutral-disabled: var(--color-white);
 
   /*------------------------------------*\
-  CALENDAR
-\*------------------------------------*/
+    CALENDAR
+  \*------------------------------------*/
 
   --color-calendar-background-color: var(--color-white);
   --color-calendar-arrow: var(--color-primary);
@@ -433,7 +444,7 @@
   --color-calendar-background-color-box-background-disabled: var(--color-neutral-light-60);
   --color-calendar-background-color-box-background-active: var(--color-tertiary);
   --color-calendar-background-color-mobile-overlay: var(--color-secondary-dark-60-alpha-70);
-  --color-calendar-text-box-background-active: var(--color-white);
+  --color-calendar-text-box-background-active: var(--color-neutral-dark-60);
 
   --color-calendar-background-color-box-background-selected: var(--color-tertiary);
   --color-calendar-background-color-box-background-range: var(--color-primary-light-80);
@@ -442,14 +453,14 @@
   --color-calendar-background-color-border-today: var(--color-primary);
 
   --color-calendar-color-box-foreground: var(--color-neutral);
-  --color-calendar-color-box-foreground-selected: var(--color-white);
+  --color-calendar-color-box-foreground-selected: var(--color-neutral-dark-60);
   --color-calendar-color-box-foreground-range: var(--color-primary);
   --color-calendar-color-box-foreground-today: var(--color-primary);
   --color-calendar-color-box-foreground-disabled: var(--color-neutral-light-80);
 
   /*------------------------------------*\
-  CHART
-\*------------------------------------*/
+    CHART
+  \*------------------------------------*/
 
   --color-chart-background-color: var(--color-white);
   --color-chart-legend-wrapper-scrollbar: var(--color-primary-alpha-50);
@@ -467,8 +478,8 @@
   --color-chart-line-point-fill: var(--color-white);
 
   /*------------------------------------*\
-  CHECKBOX
-\*------------------------------------*/
+    CHECKBOX
+  \*------------------------------------*/
 
   --color-checkbox-background-color: var(--color-white);
   --color-checkbox-background-color-active: var(--color-primary);
@@ -484,8 +495,8 @@
   --color-checkbox-color-active: var(--color-white);
 
   /*------------------------------------*\
-  CHECKBOX GROUP
-\*------------------------------------*/
+    CHECKBOX GROUP
+  \*------------------------------------*/
 
   --color-checkbox-group-background-color: var(--color-white);
   --color-checkbox-group-background-color-active: var(--color-primary);
@@ -501,8 +512,8 @@
   --color-checkbox-group-color-active: var(--color-white);
 
   /*------------------------------------*\
-  COMBO
-\*------------------------------------*/
+    COMBO
+  \*------------------------------------*/
 
   --color-combo-background-color: var(--color-white);
 
@@ -518,15 +529,15 @@
   --color-combo-background-color-selected-primary: var(--color-primary);
 
   /*------------------------------------*\
-  CONTAINER
-\*------------------------------------*/
+    CONTAINER
+  \*------------------------------------*/
 
   --color-container-color-shadow: var(--color-neutral-light-90);
   --color-container-background-color-scrollbar: var(--color-primary);
 
   /*------------------------------------*\
-  DATEPICKER RANGE
-\*------------------------------------*/
+    DATEPICKER RANGE
+  \*------------------------------------*/
 
   --color-datepicker-range-background-color-disabled: var(--color-neutral-light-90);
   --color-datepicker-range-border-text: var(--color-neutral-light-60);
@@ -536,73 +547,73 @@
   --color-datepicker-range-color-text-error: var(--color-danger);
 
   /*------------------------------------*\
-  DISCLAIMER
-\*------------------------------------*/
+    DISCLAIMER
+  \*------------------------------------*/
 
   --color-disclaimer-background-color-label: var(--color-tertiary);
   --color-disclaimer-background-color-label-danger: var(--color-danger);
 
-  --color-disclaimer-color-text: var(--color-white);
+  --color-disclaimer-color-text: var(--color-neutral-dark-60);
   --color-disclaimer-color-text-danger: var(--color-white);
 
   --color-disclaimer-background-color-remove: var(--color-tertiary-dark-5);
   --color-disclaimer-background-color-danger-remove: var(--color-danger-dark-5);
 
   /*------------------------------------*\
-  DISCLAIMER GROUP
-\*------------------------------------*/
+    DISCLAIMER GROUP
+  \*------------------------------------*/
 
   --color-disclaimer-group-background-color: var(--color-white);
   --color-disclaimer-group-border-color: var(--color-neutral-light-90);
   --color-disclaimer-group-font-title: var(--color-neutral);
 
   /*------------------------------------*\
-  DIVIDER
-\*------------------------------------*/
+    DIVIDER
+  \*------------------------------------*/
 
-  --color-divider-label-color: var(--color-tertiary);
+  --color-divider-label-color: var(--color-neutral-dark-60);
   --color-divider-line-color: var(--color-neutral-light-90);
 
   /*------------------------------------*\
-  DROPDOWN
-\*------------------------------------*/
+    DROPDOWN
+  \*------------------------------------*/
 
   --color-dropdown-button-background-color: var(--color-transparent);
-  --color-dropdown-button-color: var(--color-primary);
-  --color-dropdown-button-border-color: var(--color-primary);
+  --color-dropdown-button-color: var(--color-secondary);
+  --color-dropdown-button-border-color: var(--color-secondary);
 
-  --color-dropdown-button-color-hover: var(--color-primary-dark-20);
-  --color-dropdown-button-border-color-hover: var(--color-primary-dark-20);
+  --color-dropdown-button-color-hover: var(--color-secondary-dark-20);
+  --color-dropdown-button-border-color-hover: var(--color-secondary-dark-20);
 
   --color-dropdown-button-color-disabled: var(--color-neutral-light-60);
   --color-dropdown-button-border-color-disabled: var(--color-neutral-light-60);
 
   /*------------------------------------*\
-  FIELD CONTAINER
-\*------------------------------------*/
+    FIELD CONTAINER
+  \*------------------------------------*/
 
   --color-field-container-color-title: var(--color-neutral);
   --color-field-container-color-opcional: var(--color-neutral);
   --color-field-container-color-help: var(--color-neutral);
 
   /*------------------------------------*\
-  FIELD CONTAINER BOTTOM
-\*------------------------------------*/
+    FIELD CONTAINER BOTTOM
+  \*------------------------------------*/
 
-  --color-field-container-bottom-color-text: var(--color-black);
+  --color-field-container-bottom-color-text: var(--color-neutral-dark-60);
   --color-field-container-bottom-color-text-error: var(--color-danger);
 
   /*------------------------------------*\
-  FIELD ICON
-\*------------------------------------*/
+    FIELD ICON
+  \*------------------------------------*/
 
   --color-field-icon-color: var(--color-primary);
   --color-field-icon-color-error: var(--color-danger);
   --color-field-icon-color-disabled: var(--color-neutral-light-60);
 
   /*------------------------------------*\
-  GAUGE
-\*------------------------------------*/
+    GAUGE
+  \*------------------------------------*/
 
   --color-gauge-base-color: var(--color-neutral-light-80);
   --color-gauge-description-text-color: var(--color-neutral);
@@ -612,8 +623,8 @@
   --color-gauge-pointer-color: var(--color-neutral);
 
   /*------------------------------------*\
-  INFO
-\*------------------------------------*/
+    INFO
+  \*------------------------------------*/
 
   --color-info-color-text-label: var(--color-neutral);
   --color-info-color-text-value: var(--color-neutral-dark-60);
@@ -623,8 +634,8 @@
   --color-info-color-link-pressed: var(--color-primary-dark-40);
 
   /*------------------------------------*\
-  INPUT
-\*------------------------------------*/
+    INPUT
+  \*------------------------------------*/
 
   --color-input-background-color-text: var(--color-white);
   --color-input-border-text: var(--color-neutral-light-60);
@@ -636,8 +647,8 @@
   --color-input-text-placeholder: var(--color-neutral-light-40);
 
   /*------------------------------------*\
-  LIST VIEW
-\*------------------------------------*/
+    LIST VIEW
+  \*------------------------------------*/
 
   --color-list-view-background-color: var(--color-white);
   --color-list-view-border: var(--color-neutral-light-90);
@@ -646,23 +657,22 @@
   --color-list-view-color-select-all-label: var(--color-neutral);
 
   /*------------------------------------*\
-  LOADING
-\*------------------------------------*/
-
+   LOADING
+  \*------------------------------------*/
   --color-loading-color-label: var(--color-neutral);
   --color-loading-icon-color-neutral: var(--color-neutral-light-80);
   --color-loading-icon-color-primary: var(--color-primary);
 
   /*------------------------------------*\
-  LOADING OVERLAY
-\*------------------------------------*/
+    LOADING OVERLAY
+  \*------------------------------------*/
 
   --color-loading-overlay-background-color-content: var(--color-white);
   --color-loading-overlay-box-shadow-content: var(--color-black-alpha-30);
 
   /*------------------------------------*\
-  LOOKUP
-\*------------------------------------*/
+    LOOKUP
+  \*------------------------------------*/
 
   --color-lookup-search-background-color-text: var(--color-white);
   --color-lookup-search-border-text: var(--color-neutral-light-60);
@@ -670,59 +680,59 @@
   --color-lookup-advanced-search-link-color-text: var(--color-primary);
 
   /*------------------------------------*\
-  MENU
-\*------------------------------------*/
+    MENU
+  \*------------------------------------*/
 
   --color-menu-color-menu-collapse-icon: var(--color-primary);
   --color-menu-color-menu-item-text: var(--color-primary);
-  --color-menu-color-menu-item-selected: var(--color-white);
-  --color-menu-color-menu-sub-item-text: var(--color-primary);
-  --color-menu-color-menu-sub-item-selected: var(--color-white);
+  --color-menu-color-menu-item-selected: var(--color-primary);
+  --color-menu-color-menu-sub-item-text: var(--color-danger-light-40);
+  --color-menu-color-menu-sub-item-selected: var(--color-neutral-dark-60);
   --color-menu-color-menu-responsive: var(--color-primary);
 
-  --color-menu-background-color-item-grouper-up-hover: var(--color-black-alpha-15);
+  --color-menu-background-color-item-grouper-up-hover: var(--color-neutral-light-98);
   --color-menu-background-color-item-hover: var(--color-black-alpha-15);
-  --color-menu-background-color-item-selected: var(--color-black-alpha-30);
-  --color-menu-background-color-menu: var(--color-neutral-dark-40);
+  --color-menu-background-color-item-selected: var(--color-neutral-light-80);
+  --color-menu-background-color-menu: var(--color-white);
   --color-menu-background-color-menu-responsive-overlay: var(--color-secondary-dark-60-alpha-70);
   --color-menu-background-color-responsive: var(--color-neutral-light-98);
-  --color-menu-background-color-sub-items: var(--color-black-alpha-15);
-  --color-menu-background-color-sub-item-selected: var(--color-black-alpha-30);
+  --color-menu-background-color-sub-items: var(--color-neutral-light-98);
+  --color-menu-background-color-sub-item-selected: var(--color-neutral-light-80);
 
-  --color-menu-border-color-menu-item-selected: var(--color-tertiary);
+  --color-menu-border-color-menu-item-selected: var(--color-danger-light-40);
   --color-menu-border-left-item: var(--color-transparent);
-  --color-menu-border-top-item-grouper-up-hover: var(--color-neutral-alpha-45);
-  --color-menu-border-top-logo: var(--color-neutral-alpha-45);
+  --color-menu-border-top-item-grouper-up-hover: var(--color-neutral-light-80);
+  --color-menu-border-top-logo: var(--color-neutral-light-80);
   --color-menu-border-top-collapse-button: var(--color-neutral-alpha-45);
 
   /*------------------------------------*\
-  MENU FILTER
-\*------------------------------------*/
+   MENU FILTER
+  \*------------------------------------*/
 
   --color-menu-filter-color-icon: var(--color-primary);
-  --color-menu-filter-color-text: var(--color-white);
+  --color-menu-filter-color-text: var(--color-neutral-dark-60);
 
-  --color-menu-filter-background-color: var(--color-black-alpha-30);
+  --color-menu-filter-background-color: var(--color-neutral-light-98);
 
   --color-menu-filter-border: var(--color-neutral-alpha-45);
   --color-menu-filter-border-focusable: var(--color-neutral);
 
   /*------------------------------------*\
-  MENU PANEL
-\*------------------------------------*/
+    MENU PANEL
+  \*------------------------------------*/
 
   --color-menu-panel-background-color-item-hover: var(--color-black-alpha-15);
-  --color-menu-panel-background-color-item-selected: var(--color-black-alpha-30);
-  --color-menu-panel-background-color-menu: var(--color-neutral-dark-40);
+  --color-menu-panel-background-color-item-selected: var(--color-neutral-light-80);
+  --color-menu-panel-background-color-menu: var(--color-white);
 
-  --color-menu-panel-border-top-logo: var(--color-neutral-alpha-45);
+  --color-menu-panel-border-top-logo: var(--color-neutral-light-80);
 
   --color-menu-panel-color-menu-item-text: var(--color-primary);
-  --color-menu-panel-color-menu-item-selected: var(--color-white);
+  --color-menu-panel-color-menu-item-selected: var(--color-neutral-dark-60);
 
   /*------------------------------------*\
-  MODAL
-\*------------------------------------*/
+    MODAL
+  \*------------------------------------*/
 
   --color-modal-text-color-body: var(--color-neutral-dark-60);
   --color-modal-background-color-content: var(--color-white);
@@ -733,16 +743,16 @@
   --color-modal-color-header-close-button: var(--color-primary);
 
   /*------------------------------------*\
-  MODAL PASSWORD RECOVERY
-\*------------------------------------*/
+   MODAL PASSWORD RECOVERY
+  \*------------------------------------*/
 
   --color-modal-password-recovery-link-color: var(--color-primary);
   --color-modal-password-recovery-link-color-hover: var(--color-primary-dark-20);
   --color-modal-password-recovery-text-color: var(--color-neutral);
 
   /*------------------------------------*\
-  MULTISELECT
-\*------------------------------------*/
+    MULTISELECT
+  \*------------------------------------*/
 
   --color-multiselect-background-color: var(--color-white);
   --color-multiselect-background-color-item-hover: var(--color-primary-light-95);
@@ -757,7 +767,7 @@
 
   --color-multiselect-color-primary: var(--color-primary);
   --color-multiselect-color-text-error: var(--color-danger);
-  --color-multiselect-color-text-disabled: var(--color-primary);
+  --color-multiselect-color-text-disabled: var(--color-white);
 
   --color-multiselect-background-color-checkbox: var(--color-white);
   --color-multiselect-background-color-checkbox-active: var(--color-primary);
@@ -773,53 +783,53 @@
   --color-multiselect-disclaimer-background-color-disabled: var(--color-neutral-light-60);
 
   /*------------------------------------*\
-  NAVBAR
-\*------------------------------------*/
+    NAVBAR
+  \*------------------------------------*/
 
   --color-navbar-color: var(--color-white);
 
   /*------------------------------------*\
-  NAVBAR ACTION
-\*------------------------------------*/
+    NAVBAR ACTION
+  \*------------------------------------*/
 
   --color-navbar-action-color-content: var(--color-primary);
 
   /*------------------------------------*\
-  NAVBAR ACTION POPUP
-\*------------------------------------*/
+    NAVBAR ACTION POPUP
+  \*------------------------------------*/
 
   --color-navbar-action-popup-color-content: var(--color-navbar-action-color-content);
 
   /*------------------------------------*\
-  NAVBAR ITEM
-\*------------------------------------*/
+    NAVBAR ITEM
+  \*------------------------------------*/
 
   --color-navbar-item-color: var(--color-primary);
   --color-navbar-item-color-selected: var(--color-neutral);
-  --color-navbar-item-color-shadow-selected: var(--color-primary);
+  --color-navbar-item-color-shadow-selected: var(--color-danger-light-40);
 
   /*------------------------------------*\
-  NAVBAR ITEM NAVIGATION
-\*------------------------------------*/
+    NAVBAR ITEM NAVIGATION
+  \*------------------------------------*/
 
   --color-navbar-item-navigation-color-icon: var(--color-primary);
   --color-navbar-item-navigation-color-icon-disabled: var(--color-neutral-light-80);
 
   /*------------------------------------*\
-  PAGE
-\*------------------------------------*/
+   PAGE
+  \*------------------------------------*/
 
-  --color-page-background-color-page: var(--color-neutral-light-98);
+  --color-page-background-color-page: var(--color-white);
 
   /*------------------------------------*\
-  PAGE BACKGROUND
-\*------------------------------------*/
+    PAGE BACKGROUND
+  \*------------------------------------*/
 
   --color-page-background-select-item-border-color: var(--color-neutral-light-90);
 
   /*------------------------------------*\
-  PAGE BLOCKED USER
-\*------------------------------------*/
+    PAGE BLOCKED USER
+  \*------------------------------------*/
 
   --color-page-blocked-user-link-color: var(--color-primary);
   --color-page-blocked-user-link-color-hover: var(--color-primary-dark-20);
@@ -827,8 +837,8 @@
   --color-page--blocked-user-background-color: var(--color-neutral-light-98);
 
   /*------------------------------------*\
-  PAGE CHANGE PASSWORD
-\*------------------------------------*/
+   PAGE CHANGE PASSWORD
+  \*------------------------------------*/
 
   --color-page-change-password-background-color-buttons: var(--color-neutral-light-98);
   --color-page-change-password-background-color-container: var(--color-white);
@@ -841,29 +851,29 @@
   --color-page-change-password-color-required-text: var(--color-secondary-dark-60-alpha-70);
 
   /*------------------------------------*\
-  PAGE CONTENT
-\*------------------------------------*/
+    PAGE CONTENT
+  \*------------------------------------*/
 
   --color-page-content-background-color-scrollbar: var(--color-primary);
 
   /*------------------------------------*\
-  PAGE HEADER
-\*------------------------------------*/
+    PAGE HEADER
+  \*------------------------------------*/
 
   --color-page-header-color-title: var(--color-neutral);
 
   /*------------------------------------*\
-  PAGE LIST
-\*------------------------------------*/
+    PAGE LIST
+  \*------------------------------------*/
 
   --color-page-list-color-link-text: var(--color-primary);
 
   /*------------------------------------*\
-  PAGE LOGIN
-\*------------------------------------*/
+    PAGE LOGIN
+  \*------------------------------------*/
 
   --color-page-login-header-product-name-color: var(--color-neutral);
-  --color-page-login-header-welcome-color: var(--color-tertiary);
+  --color-page-login-header-welcome-color: var(--color-secondary);
   --color-page-login-background-color: var(--color-neutral-light-98);
   --color-page-login-background-highlight-image: var(--color-neutral-light-90);
   --color-page-login-highlight-text-color: var(--color-white);
@@ -882,8 +892,8 @@
   --color-page-slide-body-text-color: var(--color-neutral-dark-60);
 
   /*------------------------------------*\
-  POPOVER
-\*------------------------------------*/
+    POPOVER
+  \*------------------------------------*/
 
   --color-popover-background-color: var(--color-white);
   --color-popover-background-color-arrow: var(--color-white);
@@ -892,8 +902,8 @@
   --color-popover-color-text-title: var(--color-neutral);
 
   /*------------------------------------*\
-  POPUP
-\*------------------------------------*/
+    POPUP
+  \*------------------------------------*/
 
   --color-popup-background-color-popup: var(--color-white);
   --color-popup-background-color-popup-item-hover: var(--color-primary-light-95);
@@ -910,8 +920,8 @@
   --color-popup-color-item-selected: var(--color-white);
 
   /*------------------------------------*\
-  PROGRESS
-\*------------------------------------*/
+   PROGRESS
+  \*------------------------------------*/
 
   --color-progress-color-info-icon: var(--color-primary);
   --color-progress-color-text: var(--color-neutral);
@@ -922,17 +932,17 @@
   --color-progress-border-color-info-icon-close: var(--color-secondary);
 
   /*------------------------------------*\
-  PROGRESS BAR
-\*------------------------------------*/
+    PROGRESS BAR
+  \*------------------------------------*/
 
-  --color-progress-bar-background-color-bar: var(--color-tertiary-light-90);
-  --color-progress-bar-background-color-default: var(--color-tertiary);
+  --color-progress-bar-background-color-bar: var(--color-primary-light-80);
+  --color-progress-bar-background-color-default: var(--color-primary);
   --color-progress-bar-background-color-success: var(--color-success);
   --color-progress-bar-background-color-error: var(--color-danger);
 
   /*------------------------------------*\
-  RADIO-GROUP
-\*------------------------------------*/
+    RADIO-GROUP
+  \*------------------------------------*/
 
   --color-radio-group-background-color: var(--color-white);
   --color-radio-group-background-color-active: var(--color-primary);
@@ -946,26 +956,31 @@
   --color-radio-group-color-text-disabled: var(--color-neutral-light-60);
 
   /*------------------------------------*\
-  RICH TEXT
-\*------------------------------------*/
+    RICH TEXT
+  \*------------------------------------*/
+
+  --color-rich-text-background-color-scrollbar: var(--color-primary-alpha-50);
 
   --color-rich-text-body-background-color: var(--color-white);
-  --color-rich-text-background-color-scrollbar: var(--color-primary-alpha-50);
-  --color-rich-text-placeholder-color: var(--color-neutral-light-40);
-  --color-rich-text-body-text-error: var(--color-danger);
   --color-rich-text-body-border-error: var(--color-danger);
+
+  --color-rich-text-body-text-error: var(--color-danger);
+  --color-rich-text-body-text-link: var(--color-primary);
+  --color-rich-text-body-text-link-hover: var(--color-primary-dark-20);
   --color-rich-text-body-text-selected-color: var(--color-primary-light-80);
+
+  --color-rich-text-placeholder-color: var(--color-neutral-light-40);
 
   --color-rich-text-toolbar-background-color: var(--color-rich-text-body-background-color);
 
   /*------------------------------------*\
-  SELECT
-\*------------------------------------*/
+    SELECT
+  \*------------------------------------*/
 
   --color-select-background-color: var(--color-white);
   --color-select-background-color-disabled: var(--color-neutral-light-90);
 
-  --color-select-background-color-item-hover: var(--color-primary-light-95); /* Vericar com equipe de UX */
+  --color-select-background-color-item-hover: var(--color-primary-light-95);
   --color-select-background-color-scrollbar: var(--color-primary-alpha-50);
 
   --color-select-border-button: var(--color-neutral-light-60);
@@ -984,8 +999,8 @@
   --color-select-color-text-error: var(--color-danger);
 
   /*------------------------------------*\
-  SLIDE
-\*------------------------------------*/
+    SLIDE
+  \*------------------------------------*/
 
   --color-slide-background-color-active-circle: var(--color-primary);
   --color-slide-background-color-arrow-circle: var(--color-white);
@@ -996,8 +1011,8 @@
   --color-slide-box-shadow-wrapper: var(--color-black-alpha-30);
 
   /*------------------------------------*\
-  STEPPER
-\*------------------------------------*/
+    STEPPER
+  \*------------------------------------*/
 
   --color-stepper-bar: var(--color-neutral-light-80);
   --color-stepper-circle-active: var(--color-neutral);
@@ -1008,8 +1023,8 @@
   --color-stepper-circle-icon: var(--color-white);
 
   /*------------------------------------*\
-  SWITCH
-\*------------------------------------*/
+    SWITCH
+  \*------------------------------------*/
 
   --color-switch-background-color-container-on: var(--color-primary);
   --color-switch-background-color-container-off: var(--color-neutral-light-80);
@@ -1026,18 +1041,18 @@
   --color-switch-color-label: var(--color-neutral);
 
   /*------------------------------------*\
-  TAB BUTTON
-\*------------------------------------*/
+    TAB BUTTON
+  \*------------------------------------*/
 
   --color-tab-button-box-shadow: var(--color-neutral-light-90);
-  --color-tab-button-box-shadow-active: var(--color-tertiary);
+  --color-tab-button-box-shadow-active: var(--color-secondary);
 
-  --color-tab-button-color: var(--color-primary);
+  --color-tab-button-color: var(--color-secondary);
   --color-tab-button-color-disabled: var(--color-neutral-light-60);
 
   /*------------------------------------*\
-  TAB DROPDOWN
-\*------------------------------------*/
+    TAB DROPDOWN
+  \*------------------------------------*/
 
   --color-tab-dropdown-background-color-tab-dropdown-button-active: var(--color-primary);
   --color-tab-dropdown-background-color-tab-dropdown-button-disabled: var(--color-white);
@@ -1046,8 +1061,8 @@
   --color-tab-dropdown-color-tab-dropdown-button: var(--color-white);
 
   /*------------------------------------*\
-  TABLE
-\*------------------------------------*/
+    TABLE
+  \*------------------------------------*/
 
   --color-table-background-color-action-hover: var(--color-primary-light-95);
   --color-table-background-color-actions: var(--color-white);
@@ -1088,8 +1103,8 @@
   --color-table-color-text: var(--color-neutral-dark-60);
 
   /*------------------------------------*\
-TABLE COLUMN LINK
-\*------------------------------------*/
+    TABLE COLUMN LINK
+  \*------------------------------------*/
 
   --color-table-color-link: var(--color-primary);
   --color-table-color-link-disabled: var(--color-neutral-light-80);
@@ -1097,8 +1112,8 @@ TABLE COLUMN LINK
   --color-table-color-link-pressed: var(--color-primary-dark-40);
 
   /*------------------------------------*\
-TABLE COLUMN MANAGER
-\*------------------------------------*/
+    TABLE COLUMN MANAGER
+  \*------------------------------------*/
 
   --color-table-column-manager-body-color-background-scrollbar: var(--color-primary);
   --color-table-column-manager-border-color: var(--color-neutral-light-90);
@@ -1107,8 +1122,8 @@ TABLE COLUMN MANAGER
   --color-table-column-manager-outline-color-focus: var(--color-secondary);
 
   /*------------------------------------*\
-  TAG
-\*------------------------------------*/
+    TAG
+  \*------------------------------------*/
 
   --color-tag-border-color-dashed-focus: var(--color-secondary);
 
@@ -1139,8 +1154,8 @@ TABLE COLUMN MANAGER
   --color-tag-inverse-border-color-12: var(--color-12);
 
   /*------------------------------------*\
-  TEXTAREA
-\*------------------------------------*/
+    TEXTAREA
+  \*------------------------------------*/
 
   --color-textarea-background-color: var(--color-white);
   --color-textarea-border: var(--color-neutral-light-60);
@@ -1153,28 +1168,28 @@ TABLE COLUMN MANAGER
   --color-textarea-background-color-scrollbar: var(--color-primary);
 
   /*------------------------------------*\
-  TOOLBAR
-\*------------------------------------*/
+    TOOLBAR
+  \*------------------------------------*/
 
   --color-toolbar-background-color-badge: var(--color-danger);
-  --color-toolbar-background-color-toolbar: var(--color-neutral-light-98);
+  --color-toolbar-background-color-toolbar: var(--color-white);
 
   --color-toolbar-border-color-separator: var(--color-neutral-light-90);
 
   --color-toolbar-color-badge-text: var(--color-white);
   --color-toolbar-color-default: var(--color-primary);
-  --color-toolbar-color-title: var(--color-tertiary);
+  --color-toolbar-color-title: var(--color-secondary);
 
   /*------------------------------------*\
-  TOOLTIP
-\*------------------------------------*/
+   TOOLTIP
+  \*------------------------------------*/
 
   --color-tooltip-background-color-balloon: var(--color-neutral);
   --color-tooltip-color-text-balloon: var(--color-white);
 
   /*------------------------------------*\
-  TREEVIEW
-\*------------------------------------*/
+    TREEVIEW
+  \*------------------------------------*/
 
   /** Tree View Item */
   --color-tree-view-item-border-bottom-color: var(--color-neutral-light-90);
@@ -1185,10 +1200,10 @@ TABLE COLUMN MANAGER
   --color-tree-view-item-header-label-text-color: var(--color-neutral);
 
   /*------------------------------------*\
-  UPLOAD
-\*------------------------------------*/
+    UPLOAD
+  \*------------------------------------*/
 
-  --color-upload-color-text-filename-loading: var(--color-white);
+  --color-upload-color-text-filename-loading: var(--color-neutral-dark-60);
 
   --color-upload-background-color-disabled: var(--color-white);
   --color-upload-border-disabled: var(--color-neutral-light-60);
@@ -1227,15 +1242,15 @@ TABLE COLUMN MANAGER
   --color-upload-file-restrictions-color-text: var(--color-neutral);
 
   /*------------------------------------*\
-  WIDGET
-\*------------------------------------*/
+   WIDGET
+  \*------------------------------------*/
 
   --color-widget-color-action-active: var(--color-primary-dark-20);
   --color-widget-color-action-hover: var(--color-primary-dark-20);
   --color-widget-color-action: var(--color-primary);
   --color-widget-color-default: var(--color-neutral);
   --color-widget-color-title-action: var(--color-primary);
-  --color-widget-color-widget-primary: var(--color-white);
+  --color-widget-color-widget-primary: var(--color-neutral-dark-60);
 
   --color-widget-background-color: var(--color-white);
   --color-widget-primary-background-color: var(--color-tertiary);

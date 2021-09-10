@@ -4,7 +4,6 @@
    * https://app.zeplin.io/project/57bf4724a09dd68b60e7316f/screen/59692cf47108e9b042301c81
    */
   --shadow-modal: 0 4px 16px 0 var(--color-black-alpha-30);
-  --shadow-button: 0 4px 8px 0 var(--color-black-alpha-15);
   --shadow-header: 0 1px 2px 0 var(--color-black-alpha-30);
   --shadow-card: 0 1px 4px 0 var(--color-black-alpha-30);
   --shadow-container: 0 1px 4px 0 var(--color-black-alpha-30);
@@ -29,10 +28,6 @@
 
 .po-shadow-modal {
   box-shadow: var(--shadow-modal);
-}
-
-.po-shadow-button {
-  box-shadow: var(--shadow-button);
 }
 
 .po-shadow-header {

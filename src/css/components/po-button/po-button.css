@@ -1,158 +1,37 @@
-:root {
-  --font-button-font {
-    @apply --font-text-large-bold;
-  }
-
-  --font-button-font-sm {
-    @apply --font-text-bold;
-  }
-
-  --shadow-button-box-shadow: var(--shadow-button);
-
-  /* --custom-background-color: var(--color-button-background-color-primary) */
-}
-
 ani-button {
-  --font-family: NunitoSans-Bold;
-  --line-height: 150%;
+  --font-family: Roboto-Bold; /* necessário poi hoje nossos arquivos de font são separados */
+  --line-height: 150%; /* necessário para manter a altura do botão do PO UI */
 }
 
 ani-button[kind='primary'] {
-  --text-color: var(--p-text-color, --color-neutral-dark-90);
-  /* --text-color: var(--color-neutral-light-10); po-ui */
-  /* --background: var(--p-background, --color-button-background-color-primary, --color-action-default); */
-  --background: var(--color-action-default);
-  --shadow: var(--shadow-md);
+  --text-color: var(
+    --color-button-color-primary
+  ); /* customização APENAS do que é diferente do default aplicado no tema */
+  --background: var(--color-button-background-color-primary);
+  --shadow: var(--shadow-md); /* token do animália */
 }
 
 ani-button[kind='secondary'] {
-  --text-color: var(--color-brand-01-base);
-  --border-color: var(--color-brand-01-base);
+  --text-color: var(--color-button-color, --color-brand-01-base); /* VER USAR ESSE COMO REFERENCIA*/
+  --border-color: var(--color-button-border);
 
   /* pressed */
-  --border-color-pressed: var(--color-brand-01-darkest);
+  --border-color-pressed: var(--color-button-border-pressed);
 }
 
 ani-button[kind='tertiary'] {
-  --text-color: var(--color-brand-01-base);
+  --text-color: var(--color-button-color-link);
+  --background-hover: var(--color-button-background-color-link-hover);
+  --text-color-hover: var(--color-button-color-link-hover);
+  --text-color-pressed: var(--color-button-color-link-pressed);
+  --background-pressed: var(--color-button-background-color-link-pressed);
 }
 
 @media screen and (max-width: 1366px) {
   ani-button {
     --font-size: var(--font-size-sm);
     --line-height: 110%;
-
     --spacing-squish: var(--spacing-squish-sm);
-  }
-}
-
-.po-button {
-  @apply --font-button-font;
-  background-color: var(--color-button-background-color);
-  border: solid 1px var(--color-button-border);
-  border-radius: 3px;
-  color: var(--color-button-color);
-  display: inline-block;
-  height: 44px;
-  padding: 0 16px;
-  cursor: pointer;
-  text-align: center;
-
-  &:hover {
-    background-color: var(--color-button-background-color-hover);
-    border: solid 1px var(--color-button-border-hover);
-    color: var(--color-button-color-hover);
-  }
-
-  &:active {
-    background-color: var(--color-button-background-color-pressed);
-    border: solid 1px var(--color-button-border-pressed);
-    color: var(--color-button-color-pressed);
-  }
-
-  &:disabled {
-    background-color: var(--color-button-background-color-disabled);
-    border: solid 1px var(--color-button-border-disabled);
-    color: var(--color-button-color-disabled);
-    cursor: default;
-  }
-
-  &-primary {
-    box-shadow: var(--shadow-button-box-shadow);
-    background-color: var(--color-button-background-color-primary);
-    border: solid 1px var(--color-button-border-primary);
-    color: var(--color-button-color-primary);
-
-    &:hover {
-      background-color: var(--color-button-background-color-primary-hover);
-      border: solid 1px var(--color-button-border-primary-hover);
-      color: var(--color-button-color-primary-hover);
-    }
-
-    &:active {
-      background-color: var(--color-button-background-color-primary-pressed);
-      border: solid 1px var(--color-button-border-primary-pressed);
-      color: var(--color-button-color-primary-pressed);
-    }
-
-    &:disabled {
-      background-color: var(--color-button-background-color-primary-disabled);
-      border: solid 1px var(--color-button-border-primary-disabled);
-      color: var(--color-button-color-primary-disabled);
-    }
-  }
-
-  &-danger {
-    background-color: var(--color-button-background-color-danger);
-    border: solid 1px var(--color-button-border-danger);
-    color: var(--color-button-color-danger);
-
-    &:hover {
-      background-color: var(--color-button-background-color-danger-hover);
-      border: solid 1px var(--color-button-border-danger-hover);
-      color: var(--color-button-color-danger-hover);
-    }
-
-    &:active {
-      background-color: var(--color-button-background-color-danger-pressed);
-      border: solid 1px var(--color-button-border-danger-pressed);
-      color: var(--color-button-color-danger-pressed);
-    }
-
-    &:disabled {
-      background-color: var(--color-button-background-color-danger-disabled);
-      border: solid 1px var(--color-button-border-danger-disabled);
-      color: var(--color-button-color-danger-disabled);
-    }
-  }
-
-  &-link {
-    background-color: var(--color-button-background-color-link);
-    border: none;
-    color: var(--color-button-color-link);
-
-    &:hover {
-      background-color: var(--color-button-background-color-link-hover);
-      border: none;
-      color: var(--color-button-color-link-hover);
-    }
-
-    &:active {
-      background-color: var(--color-button-background-color-link-pressed);
-      border: none;
-      color: var(--color-button-color-link-pressed);
-    }
-
-    &:disabled {
-      background-color: var(--color-button-background-color-link-disabled);
-      border: none;
-      color: var(--color-button-color-link-disabled);
-    }
-  }
-
-  &-sm {
-    @apply --font-button-font-sm;
-    height: 36px;
   }
 }
 
@@ -161,7 +40,7 @@ ani-button[kind='tertiary'] {
 [class*='po-md-'],
 [class*='po-sm-'] {
   > .po-button {
-    width: 100%;
+    width: 100%; /* não é suficiente para funcionar o grid-system */
   }
 }
 
@@ -203,11 +82,10 @@ ani-button[kind='tertiary'] {
 }
 
 @media screen and (max-width: 1366px) {
-  .po-button {
-    @apply --font-button-font-sm;
-    height: 32px;
-    padding: 0 8px;
-    line-height: 1rem;
+  ani-button {
+    --font-size: var(--font-size-sm);
+    --line-height: 110%;
+    --spacing-squish: var(--spacing-squish-sm);
   }
 
   .po-button .po-button-icon:not(.po-button-loading-icon) ~ .po-button-label {

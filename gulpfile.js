@@ -68,9 +68,7 @@ const copyThemeVariablesCss = () =>
 const prepareThemeCss = () => src('./src/**/*.css').pipe(dest('./.temp'));
 
 const buildThemeAnimalia = () =>
-  src(['./src/css/themes/po-theme-totvs.css', './dist/style/css/po-theme-default.min.css'])
-    .pipe(concat('po-theme-animalia.css'))
-    .pipe(dest(`./dist/${distDirectory}/css`));
+  src(['./dist/style/css/po-theme-default.min.css']).pipe(dest(`./dist/${distDirectory}/css`));
 
 const buildThemeCss = modern =>
   src(`./.temp/css/index${modern ? '-modern' : ''}.css`)
@@ -87,7 +85,7 @@ const buildThemeCss = modern =>
         apply(),
         nested(),
         customProperties({
-          preserve: false,
+          preserve: true,
           warnings: true
         }),
         autoprefixer(),

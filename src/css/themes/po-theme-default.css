@@ -11,9 +11,6 @@
  * Color Palette...............variáveis da peleta de cores.
  * Font........................variáveis de fontes.
  *
- * ANIMALIADS
- * design tokens...............tema do PO UI no AnimaliaDS.
- *
  * COMPONENTS
  * Accordion...................variáveis do Accordion.
  * Avatar......................variáveis do Avatar.
@@ -93,69 +90,63 @@
 :root {
   --color-wrapper-menu-panel-color-background: var(--color-white);
   --color-overlay-background-color-overlay: var(--color-secondary-dark-60-alpha-70);
-
   --color-hr-border-top: var(--color-neutral-light-90);
 }
 
 /*------------------------------------*\
-  COLOR LEGACY
+  COLOR
 \*------------------------------------*/
 
 :root {
-  --color-primary-light-95: #fcf6f9; /* OK - Cor do background da linha da tabela */
-  --color-primary-light-80: #f5dbe8; /* OK - Borda inferior da Table Header */
-  --color-primary-alpha-50: rgba(201, 53, 125, 0.5); /* ****NÃO***** Scroll (opacidade de 50%) */
-  --color-primary: #c9357d; /* OK - Botão primário, Links, Cor da borda do input selecionado, Cor da borda do botão secundário */
-  --color-primary-dark-20: #9d2c67; /* OK - Hover do Botão primário, Links, Cor da borda do botão secundário */
-  --color-primary-dark-40: #8b255a; /* OK - Pressed do Botão primário, Links, Cor da borda do botão secundário */
-  --color-secondary: #8241a4; /* OK */
-  --color-secondary-dark-20: #733b8e; /* OK */
-  --color-secondary-dark-40: #5e2e73; /* OK */
-  --color-secondary-dark-60-alpha-70: rgba(59, 28, 74, 0.7); /* ****NÃO*** Overlay de Modal e Menu (70% de opacidade) */
-  --color-secondary-dark-60: #3b1c4a; /* OK */
-  --color-tertiary-light-90: #fffaef; /* OK - Cor do background da linha de arquivo em carregamento (Upload) */
-  --color-tertiary: #ffd464; /* OK - Borda esquerda do menu lateral selecionado, Tab selecionada, Card em destaque */
-  --color-tertiary-dark-5: #f4d069; /* OK - Cor de gráficos, botão do disclaimer */
-  --color-tertiary-dark-40: #d2b25a; /* OK */
-  --color-tertiary-dark-60: #ac9249; /* OK */
-  --color-white: #ffffff; /* OK */
-  --color-white-alpha-30: rgba(255, 255, 255, 0.3); /* ******NÃO****** */
-  --color-neutral-light-98: #fbfbfb; /* OK - Background da página, Background da linha selecionada */
-  --color-neutral-light-90: #eceeee; /* OK - Borda inferior de item de tabela, Base do Slider, Background do Input inativo */
-  --color-neutral-light-80: #dadedf; /* OK - Step inativo, Base Switch desligado */
-  --color-neutral-light-60: #b6bdbf; /* OK - Ícone desabilitado, Slider desabilitado, Borda de input */
-  --color-neutral-light-40: #9da7a9; /* OK - Texto do Placeholder */
-  --color-neutral-alpha-45: rgba(
-    74,
-    92,
-    96,
-    0.45
-  ); /* *******NÃo******* Borda superior do itens do menu (45% de opacidade) */
-  --color-neutral: #4a5c60; /* OK - Background do Feedback, Pill de informação */
-  --color-neutral-dark-40: #2c3739; /* OK - Usar em menu: Área do logo, Background do menu */
-  --color-neutral-dark-60: #1d2426; /* OK - Texto */
-  --color-black-alpha-10: rgba(0, 0, 0, 0.1); /* **NÃO** Usar em sombras (10% de opacidade)-->>>>> NÃO EXISTE */
-  --color-black-alpha-15: rgba(
-    0,
-    0,
-    0,
-    0.15
-  ); /* *****NÃO******** Usar em menu: Hover - Background de item de menu (15% de opacidade) */
+  --color-primary-light-95: #fcf6f9; /* Cor do background da linha da tabela */
+  --color-primary-light-80: #f5dbe8; /* Borda inferior da Table Header */
+  --color-primary-light-60: #e993b9; /* NOVA VARIÁVEL melhoria de UX pressed do background do button link */
+  --color-primary-alpha-50: rgba(201, 53, 125, 0.5); /* Scroll (opacidade de 50%) */
+  --color-primary: #c9357d; /* Botão primário, Links, Cor da borda do input selecionado, Cor da borda do botão secundário */
+  --color-primary-dark-20: #9d2c67; /* Hover do Botão primário, Links, Cor da borda do botão secundário */
+  --color-primary-dark-40: #8b255a; /* Pressed do Botão primário, Links, Cor da borda do botão secundário */
+  --color-secondary-light-80: #d9c2e5; /* NOVA VARIÁVEL melhoria de UX hover do background do button default */
+  --color-secondary-light-60: #bd94d1; /* NOVA VARIÁVEL melhoria de UX pressed do background do button default */
+  --color-secondary: #8241a4;
+  --color-secondary-dark-20: #733b8e;
+  --color-secondary-dark-40: #5e2e73;
+  --color-secondary-dark-60-alpha-70: rgba(59, 28, 74, 0.7); /* Overlay de Modal e Menu (70% de opacidade) */
+  --color-secondary-dark-60: #3b1c4a;
+  --color-tertiary-light-90: #fffaef; /* Cor do background da linha de arquivo em carregamento (Upload) */
+  --color-tertiary: #ffd464; /* Borda esquerda do menu lateral selecionado, Tab selecionada, Card em destaque */
+  --color-tertiary-dark-5: #f4d069; /* Cor de gráficos, botão do disclaimer */
+  --color-tertiary-dark-40: #d2b25a;
+  --color-tertiary-dark-60: #ac9249;
+  --color-white: #ffffff;
+  --color-white-alpha-30: rgba(255, 255, 255, 0.3);
+  --color-neutral-light-98: #fbfbfb; /* Background da página, Background da linha selecionada */
+  --color-neutral-light-90: #eceeee; /* Borda inferior de item de tabela, Base do Slider, Background do Input inativo */
+  --color-neutral-light-80: #dadedf; /* Step inativo, Base Switch desligado */
+  --color-neutral-light-60: #b6bdbf; /* Ícone desabilitado, Slider desabilitado, Borda de input */
+  --color-neutral-light-40: #9da7a9; /* Texto do Placeholder */
+  --color-neutral-alpha-45: rgba(74, 92, 96, 0.45); /* Borda superior do itens do menu (45% de opacidade) */
+  --color-neutral: #4a5c60; /* Background do Feedback, Pill de informação */
+  --color-neutral-dark-40: #2c3739; /* Usar em menu: Área do logo, Background do menu */
+  --color-neutral-dark-60: #1d2426; /* Texto */
+  --color-black-alpha-10: rgba(0, 0, 0, 0.1); /* Usar em sombras (10% de opacidade)-->>>>> NÃO EXISTE */
+  --color-black-alpha-15: rgba(0, 0, 0, 0.15); /* Usar em menu: Hover - Background de item de menu (15% de opacidade) */
   --color-black-alpha-30: rgba(
     0,
     0,
     0,
     0.3
-  ); /* *****NÃO******** Usar em menu: Background dos itens de segundo nível (30% de opacidade) */
-  --color-black: #000000; /* OK */
-  --color-success: #00b28e; /* *****NÃO******** Background do Feedback de sucesso */
-  --color-warning: #ea9b3e; /* *****NÃO******** Background do Feedback de atenção */
-  --color-danger-light-40: #cd5f58; /* *****NÃO******** */
-  --color-danger: #c64840; /* *****NÃO******** Background do Feedback de erro, Borda de Input com erro */
-  --color-danger-dark-5: #bb443c; /* *****NÃO******** Background disclaimer danger */
-  --color-danger-dark-20: #9e3933; /* *****NÃO******** Hover para botão danger */
-  --color-danger-dark-40: #762b26; /* *****NÃO******** Estilo ativo para botão danger */
-  --color-transparent: transparent; /* *****NÃO******** */
+  ); /* Usar em menu: Background dos itens de segundo nível (30% de opacidade) */
+  --color-black: #000000;
+  --color-success: #00b28e; /* Background do Feedback de sucesso */
+  --color-warning: #ea9b3e; /* Background do Feedback de atenção */
+  --color-danger-light-80: #e3aeab; /* NOVA VARIÁVEL melhoria de UX hover do background do button danger */
+  --color-danger-light-60: #d58581; /* NOVA VARIÁVEL melhoria de UX pressed do background do button danger */
+  --color-danger-light-40: #cd5f58;
+  --color-danger: #c64840; /* Background do Feedback de erro, Borda de Input com erro */
+  --color-danger-dark-5: #bb443c; /* Background disclaimer danger */
+  --color-danger-dark-20: #9e3933; /* Hover para botão danger */
+  --color-danger-dark-40: #762b26; /* Estilo ativo para botão danger */
+  --color-transparent: transparent;
 
   /*------------------------------------*\
     COLOR-PALETTE
@@ -211,58 +202,6 @@
 }
 
 /*------------------------------------*\
-   ANIMALIADS
-\*------------------------------------*/
-/*------------------------------------*\
-   TOKENS - THEME PO UI - ANIMALIADS
-\*------------------------------------*/
-html {
-  --color-action-default: var(--color-tertiary, #ffd464);
-  --color-action-hover: var(--color-tertiary-dark-5, #efc043);
-  --color-action-pressed: var(--color-tertiary-dark-40, #d39f17);
-  --color-action-disabled: var(--color-neutral-light-60, #b6bdbf);
-  --color-action-focus: var(--color-secondary-dark-60, #260538);
-  --color-brand-01-lightest: #f2eaf6;
-  --color-brand-01-lighter: #d9c2e5;
-  --color-brand-01-light: #bd94d1;
-  --color-brand-01-base: var(--color-secondary, #8241a4);
-  --color-brand-01-dark: var(--color-secondary-dark-20, #5b1c7d);
-  --color-brand-01-darker: var(--color-secondary-dark-40, #400e58);
-  --color-brand-01-darkest: var(--color-secondary-dark-60, #260538);
-  --color-brand-02-lightest: var(--color-primary-light-95, #fcf0f6);
-  --color-brand-02-lighter: var(--color-primary-light-80, #f7cee2);
-  --color-brand-02-light: #e993b9;
-  --color-brand-02-base: var(--color-primary, #b92f72);
-  --color-brand-02-dark: #95235a;
-  --color-brand-02-darker: #761947;
-  --color-brand-02-darkest: #520a2d;
-  --color-brand-03-lightest: var(--color-tertiary-light-90, #fffcf0);
-  --color-brand-03-lighter: #fef0cd;
-  --color-brand-03-light: #ffe297;
-  --color-brand-03-base: var(--color-tertiary, #ffd464);
-  --color-brand-03-dark: var(--color-tertiary-dark-5, #efc043);
-  --color-brand-03-darker: var(--color-tertiary-dark-40, #d39f17);
-  --color-brand-03-darkest: #4e360e;
-  --color-neutral-dark-70: var(--color-neutral, #4a5c60);
-  --color-neutral-dark-80: var(--color-neutral-dark-40, #2c3739);
-  --color-neutral-dark-90: var(--color-neutral-dark-60, #1d2426);
-  --color-neutral-dark-95: var(--color-black, #0b0e0e);
-  --color-neutral-light-10: var(--color-neutral-light-90, #eceeee);
-  --color-neutral-light-20: var(--color-neutral-light-80, #dadedf);
-  --color-neutral-light-30: var(--color-neutral-light-60, #b6bdbf);
-  --color-neutral-light-00: var(--color-white, #fff);
-  --color-neutral-light-05: var(--color-neutral-light-98, #fbfbfb);
-  --color-neutral-mid-40: var(--color-neutral-light-40, #9da7a9);
-  --color-neutral-mid-60: #6e7c7f;
-  --font-family-heading: Roboto;
-  --font-family-text: Roboto;
-  --font-family-code: Monospace;
-  --font-weight-extra-light: 200;
-  --text-transform-normal: normal;
-  --text-transform-uppercase: uppercase;
-}
-
-/*------------------------------------*\
    COMPONENTS
 \*------------------------------------*/
 :root {
@@ -306,79 +245,85 @@ html {
   /**
    * Button Default
   */
-  --color-button-background-color: var(
-    --color-transparent
-  ); /* não será mais possível customizar, prop não customizável no animália */
-  --color-button-border: var(
-    --color-brand-01-base
-  ); /* alterado  ---- manter como estava antes e alterar o fonte no button.css */
-  --color-button-color: red; /* alterado - usar esse como exemplo */
+  --color-button-background-color: var(--color-transparent); /* -> NÃO POSSUI CUSTOMIZAÇÃO NO ANIMALIA */
+  --color-button-border: var(--color-secondary); /* OK */
+  --color-button-color: var(--color-secondary); /* OK */
 
-  --color-button-background-color-hover: var(--color-transparent); /* existe no animalia */
-  --color-button-border-hover: var(--color-secondary-dark-20); /* existe no animalia */
-  --color-button-color-hover: var(--color-secondary-dark-20); /* existe no animalia */
+  /* --color-button-background-color-hover: var(--color-transparent); OK modificado abaixo*/
+  --color-button-background-color-hover: var(--color-secondary-light-80); /* OK melhoria de UX */
+  /* --color-button-border-hover: var(--color-secondary-dark-20); OK MELHORIA DE UX */
+  --color-button-border-hover: var(--color-secondary-dark-40); /* OK MELHORIA DE UX */
+  --color-button-color-hover: var(--color-secondary-dark-40); /* OK MELHORIA DE UX */
 
-  --color-button-background-color-pressed: var(--color-transparent); /* existe no animalia */
-  --color-button-border-pressed: var(--color-brand-01-darkest); /* alterado */
-  --color-button-color-pressed: var(--color-secondary-dark-40); /* existe no animalia */
+  /* --color-button-background-color-pressed: var(--color-transparent); OK modificado abaixo */
+  --color-button-background-color-pressed: var(--color-secondary-light-60); /* OK melhoria de UX */
+  /* --color-button-border-pressed: var(--color-secondary-dark-40); OK MELHORIA DE UX */
+  --color-button-border-pressed: var(--color-secondary-dark-60); /* OK MELHORIA DE UX */
+  --color-button-color-pressed: var(--color-secondary-dark-60); /* OK MELHORIA DE UX */
 
-  --color-button-background-color-disabled: var(
-    --color-transparent
-  ); /* não será mais possível customizar, prop não customizável no animália */
-  --color-button-border-disabled: var(--color-neutral-light-60); /* existe no animalia */
-  --color-button-color-disabled: var(--color-neutral-light-60); /* existe no animalia */
+  --color-button-background-color-disabled: var(--color-transparent); /* -> NÃO POSSUI CUSTOMIZAÇÃO NO ANIMALIA */
+  --color-button-border-disabled: var(--color-neutral-light-60); /* OK */
+  --color-button-color-disabled: var(--color-neutral-light-60); /* OK */
   /**
    * Button Primary
   */
-  --color-button-background-color-primary: var(--color-action-default); /* alterado */
-  --color-button-border-primary: var(--color-tertiary);
-  --color-button-color-primary: var(--color-neutral-dark-90); /* alterado */
+  --color-button-background-color-primary: var(--color-tertiary); /* -> NÃO POSSUI CUSTOMIZAÇÃO NO ANIMALIA */
+  --color-button-border-primary: var(--color-tertiary); /* -> NÃO POSSUI CUSTOMIZAÇÃO NO ANIMALIA */
+  --color-button-color-primary: var(--color-neutral-dark-60); /* OK */
 
-  --color-button-background-color-primary-hover: var(--color-tertiary-dark-40);
-  --color-button-border-primary-hover: var(--color-tertiary-dark-40);
-  --color-button-color-primary-hover: var(--color-neutral-dark-60);
+  --color-button-background-color-primary-hover: var(--color-tertiary-dark-40); /* OK */
+  --color-button-border-primary-hover: var(--color-tertiary-dark-40); /* -> NÃO POSSUI CUSTOMIZAÇÃO NO ANIMALIA */
+  --color-button-color-primary-hover: var(--color-neutral-dark-60); /* OK */
 
-  --color-button-background-color-primary-pressed: var(--color-tertiary-dark-60);
-  --color-button-border-primary-pressed: var(--color-tertiary-dark-60);
-  --color-button-color-primary-pressed: var(--color-neutral-dark-60);
+  --color-button-background-color-primary-pressed: var(--color-tertiary-dark-60); /* OK */
+  --color-button-border-primary-pressed: var(--color-tertiary-dark-60); /* -> NÃO POSSUI CUSTOMIZAÇÃO NO ANIMALIA */
+  --color-button-color-primary-pressed: var(--color-neutral-dark-60); /* OK */
 
-  --color-button-background-color-primary-disabled: var(--color-neutral-light-60);
-  --color-button-border-primary-disabled: var(--color-neutral-light-60);
-  --color-button-color-primary-disabled: var(--color-white);
+  --color-button-background-color-primary-disabled: var(--color-neutral-light-60); /* OK */
+  --color-button-border-primary-disabled: var(--color-neutral-light-60); /* -> NÃO POSSUI CUSTOMIZAÇÃO NO ANIMALIA */
+  /* --color-button-color-primary-disabled: var(--color-white); VER COM O JHONY POIS MUDARÁ A COR DO NOSSO TEMA POR QUESTÃO DE ACESSIBILIDADE */
+  --color-button-color-primary-disabled: var(--color-neutral); /* OK MELHORIA DE UX ****** */
   /**
    * Button Danger
   */
   --color-button-background-color-danger: var(
     --color-transparent
-  ); /* existem 2 tipos de danger no animaliads o secondary e o primary no primary é possível customizar*/
-  --color-button-border-danger: var(--color-danger);
-  --color-button-color-danger: var(--color-danger);
+  ); /* -> NÃO POSSUI CUSTOMIZAÇÃO NO ANIMALIA SOMENTE SE QUISERMOS USAR O PRIMARY DANGER*/
+  --color-button-border-danger: var(--color-danger); /* OK */
+  --color-button-color-danger: var(--color-danger); /* OK */
 
-  --color-button-background-color-danger-hover: var(--color-transparent);
-  --color-button-border-danger-hover: var(--color-danger-dark-20);
-  --color-button-color-danger-hover: var(--color-danger-dark-20);
+  /* --color-button-background-color-danger-hover: var(--color-transparent); OK MELHORIA UX*/
+  --color-button-background-color-danger-hover: var(--color-danger-light-80); /* OK */
+  /* --color-button-border-danger-hover: var(--color-danger-dark-20); /* OK MELHORIA UX*/
+  --color-button-border-danger-hover: var(--color-danger-dark-40); /* OK MELHORIA UX*/
+  --color-button-color-danger-hover: var(--color-danger-dark-40); /* OK MELHORIA UX*/
 
-  --color-button-background-color-danger-pressed: var(--color-transparent);
-  --color-button-border-danger-pressed: var(--color-danger-dark-40);
-  --color-button-color-danger-pressed: var(--color-danger-dark-40);
+  /* --color-button-background-color-danger-pressed: var(--color-transparent); /* OK MELHORIA UX*/
+  --color-button-background-color-danger-pressed: var(--color-danger-light-60); /* OK */
+  --color-button-border-danger-pressed: var(--color-danger-dark-40); /* OK */
+  --color-button-color-danger-pressed: var(--color-danger-dark-40); /* OK */
 
-  --color-button-background-color-danger-disabled: var(--color-transparent);
-  --color-button-border-danger-disabled: var(--color-neutral-light-60);
-  --color-button-color-danger-disabled: var(--color-neutral-light-60);
+  --color-button-background-color-danger-disabled: var(
+    --color-transparent
+  ); /* -> NÃO POSSUI CUSTOMIZAÇÃO NO ANIMALIA SOMENTE SE QUISERMOS USAR O PRIMARY DANGER*/
+  --color-button-border-danger-disabled: var(--color-neutral-light-60); /* OK */
+  --color-button-color-danger-disabled: var(--color-neutral-light-60); /* OK */
   /**
    * Button Link
   */
-  --color-button-background-color-link: var(--color-transparent); /* não está aplicando e avaliar necessidade */
-  --color-button-color-link: var(--color-brand-02-base); /* alterado */
+  --color-button-background-color-link: var(--color-transparent); /* -> NÃO POSSUI CUSTOMIZAÇÃO NO ANIMALIA */
+  --color-button-color-link: var(--color-primary); /* OK */
 
-  --color-button-background-color-link-hover: var(--color-primary-light-80); /* alterado */
-  --color-button-color-link-hover: var(--color-brand-02-darkest); /* alterado */
+  /* --color-button-background-color-link-hover: var(--color-transparent);  OK MELHORIA DE UX ****** */
+  --color-button-background-color-link-hover: var(--color-primary-light-80); /* OK MELHORIA DE UX ****** */
+  --color-button-color-link-hover: var(--color-primary-dark-20); /* OK */
 
-  --color-button-background-color-link-pressed: var(--color-brand-02-light); /* alterado */
-  --color-button-color-link-pressed: var(--color-brand-02-darkest); /* alterado */
+  /* --color-button-background-color-link-pressed: var(--color-transparent); MELHORIA DE UX ****** */
+  --color-button-background-color-link-pressed: var(--color-primary-light-60); /* MELHORIA DE UX ****** */
+  --color-button-color-link-pressed: var(--color-primary-dark-40); /* OK MELHORIA DE UX */
 
-  --color-button-background-color-link-disabled: var(--color-transparent); /* não está aplicando */
-  --color-button-color-link-disabled: var(--color-neutral-light-60); /* não está aplicando */
+  --color-button-background-color-link-disabled: var(--color-transparent); /* -> NÃO POSSUI CUSTOMIZAÇÃO NO ANIMALIA */
+  --color-button-color-link-disabled: var(--color-neutral-light-60); /* OK */
 
   /*------------------------------------*\
     BADGE

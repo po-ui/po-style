@@ -1,38 +1,85 @@
 ani-button {
-  --font-family: Roboto-Bold; /* necessário poi hoje nossos arquivos de font são separados */
-  --line-height: 150%; /* necessário para manter a altura do botão do PO UI */
+  --font-family: var(--font-family-theme-bold, Roboto-Bold);
+  --line-height: 150%;
 }
 
 ani-button[kind='primary'] {
-  --text-color: var(
-    --color-button-color-primary
-  ); /* customização APENAS do que é diferente do default aplicado no tema */
-  --background: var(--color-button-background-color-primary);
-  --shadow: var(--shadow-md); /* token do animália */
-}
+  --shadow: var(--shadow-md);
 
-ani-button[kind='secondary'] {
-  --text-color: var(--color-button-color, --color-brand-01-base); /* VER USAR ESSE COMO REFERENCIA*/
-  --border-color: var(--color-button-border);
+  /* default */
+  --text-color: var(--color-button-color-primary, --color-neutral-dark-90);
+  --background: var(--color-button-background-color-primary, --color-action-default);
+
+  /* hover */
+  --text-color-hover: var(--color-button-color-primary-hover, --color-neutral-dark-90);
+  --background-hover: var(--color-button-background-color-primary-hover, --color-action-hover);
 
   /* pressed */
-  --border-color-pressed: var(--color-button-border-pressed);
+  --text-color-pressed: var(--color-button-color-primary-pressed, --color-neutral-dark-90);
+  --background-pressed: var(--color-button-background-color-primary-pressed, --color-action-pressed);
+
+  /* disabled */
+  --text-color-disabled: var(--color-button-color-primary-disabled, --color-neutral-dark-70);
+  --background-disabled: var(--color-button-background-color-primary-disabled, --color-action-disabled);
 }
 
+/* po-button type:default */
+ani-button[kind='secondary'] {
+  /* default */
+  --text-color: var(--color-button-color, --color-brand-01-base);
+  --border-color: var(--color-button-border, --color-brand-01-base);
+
+  /* hover */
+  --text-color-hover: var(--color-button-color-hover, --color-brand-01-darkest);
+  --background-hover: var(--color-button-background-color-hover, --color-brand-01-lighter);
+  --border-color-hover: var(--color-button-border-hover, --color-brand-01-darkest);
+
+  /* pressed */
+  --text-color-pressed: var(--color-button-color-pressed, --color-brand-01-darkest);
+  --background-pressed: var(--color-button-background-color-pressed, --color-brand-01-light);
+  --border-color-pressed: var(--color-button-border-pressed, --color-brand-01-darkest);
+
+  /* disabled */
+  --text-color-disabled: var(--color-button-color-disabled, --color-neutral-light-30);
+  --border-color-disabled: var(--color-button-border-disabled, --color-neutral-light-30);
+}
+
+/* po-button type:link */
 ani-button[kind='tertiary'] {
-  --text-color: var(--color-button-color-link);
-  --background-hover: var(--color-button-background-color-link-hover);
-  --text-color-hover: var(--color-button-color-link-hover);
-  --text-color-pressed: var(--color-button-color-link-pressed);
-  --background-pressed: var(--color-button-background-color-link-pressed);
+  /* default */
+  --text-color: var(--color-button-color-link, --color-brand-02-base);
+
+  /* hover */
+  --text-color-hover: var(--color-button-color-link-hover, --color-brand-02-darkest);
+  --background-hover: var(--color-button-background-color-link-hover, --color-brand-02-lighter);
+
+  /* pressed */
+  --text-color-pressed: var(--color-button-color-link-pressed, --color-brand-02-darkest);
+  --background-pressed: var(--color-button-background-color-link-pressed, --color-brand-02-light);
+
+  /* disabled */
+  --text-color-disabled: var(--color-button-color-link-disabled, --color-neutral-light-30);
 }
 
-@media screen and (max-width: 1366px) {
-  ani-button {
-    --font-size: var(--font-size-sm);
-    --line-height: 110%;
-    --spacing-squish: var(--spacing-squish-sm);
-  }
+/* po-button type:danger */
+ani-button[kind='secondary'][danger='true'] {
+  /* default */
+  --text-color: var(--color-button-color-danger, --color-feedback-negative-dark);
+  --border-color: var(--color-button-border-danger, --color-feedback-negative-dark);
+
+  /* hover */
+  --text-color-hover: var(--color-button-color-danger-hover, --color-feedback-negative-darkest);
+  --background-hover: var(--color-button-background-color-danger-hover, --color-feedback-negative-lighter);
+  --border-color-hover: var(--color-button-border-danger-hover, --color-feedback-negative-darkest);
+
+  /* pressed */
+  --text-color-pressed: var(--color-button-color-danger-pressed, --color-feedback-negative-darkest);
+  --background-pressed: var(--color-button-background-color-danger-pressed, --color-feedback-negative-light);
+  --border-color-pressed: var(--color-button-border-danger-pressed, --color-feedback-negative-darkest);
+
+  /* disabled */
+  --text-color-disabled: var(--color-button-color-danger-disabled, --color-neutral-light-30);
+  --border-color-disabled: var(--color-button-border-danger-disabled, --color-action-disabled);
 }
 
 [class*='po-xl-'],

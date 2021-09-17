@@ -105,6 +105,9 @@
   /* Borda inferior da Table Header */
   --color-primary-light-80: #f5dbe8;
 
+  /* Pressed do background do button link */
+  --color-primary-light-60: #e993b9;
+
   /* Scroll (opacidade de 50%) */
   --color-primary-alpha-50: rgba(201, 53, 125, 0.5);
 
@@ -365,7 +368,7 @@
   --color-button-background-color-link-hover: var(--color-transparent);
   --color-button-color-link-hover: var(--color-primary-dark-20);
 
-  --color-button-background-color-link-pressed: var(--color-transparent);
+  --color-button-background-color-link-pressed: var(--color-primary-light-60); /* MELHORIA DE UX */
   --color-button-color-link-pressed: var(--color-primary-dark-40);
 
   --color-button-background-color-link-disabled: var(--color-transparent);

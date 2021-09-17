@@ -105,6 +105,9 @@
   /* Borda inferior da Table Header */
   --color-primary-light-80: #f5dbe8;
 
+  /* Pressed do background do button link */
+  --color-primary-light-60: #e993b9;
+
   /* Scroll (opacidade de 50%) */
   --color-primary-alpha-50: rgba(201, 53, 125, 0.5);
 
@@ -118,6 +121,12 @@
   --color-primary-dark-40: #8b255a;
 
   /* Secondary */
+  /* Cor do background no hover do button default*/
+  --color-secondary-light-80: #d9c2e5;
+
+  /* Cor do background no pressed do button default*/
+  --color-secondary-light-60: #bd94d1;
+
   --color-secondary: #8241a4;
 
   --color-secondary-dark-20: #733b8e;
@@ -191,6 +200,12 @@
 
   /* Background do Feedback de atenção */
   --color-warning: #ea9b3e;
+
+  /* Cor do background no hover do button type danger */
+  --color-danger-light-80: #e3aeab;
+
+  /* Cor do background no pressed do button type danger */
+  --color-danger-light-60: #d58581;
 
   --color-danger-light-40: #cd5f58;
 
@@ -309,11 +324,11 @@
   --color-button-border: var(--color-secondary);
   --color-button-color: var(--color-secondary);
 
-  --color-button-background-color-hover: var(--color-transparent);
+  --color-button-background-color-hover: var(--color-secondary-light-80);
   --color-button-border-hover: var(--color-secondary-dark-20);
   --color-button-color-hover: var(--color-secondary-dark-20);
 
-  --color-button-background-color-pressed: var(--color-transparent);
+  --color-button-background-color-pressed: var(--color-secondary-light-60);
   --color-button-border-pressed: var(--color-secondary-dark-40);
   --color-button-color-pressed: var(--color-secondary-dark-40);
 
@@ -345,11 +360,11 @@
   --color-button-border-danger: var(--color-danger);
   --color-button-color-danger: var(--color-danger);
 
-  --color-button-background-color-danger-hover: var(--color-transparent);
+  --color-button-background-color-danger-hover: var(--color-danger-light-80);
   --color-button-border-danger-hover: var(--color-danger-dark-20);
   --color-button-color-danger-hover: var(--color-danger-dark-20);
 
-  --color-button-background-color-danger-pressed: var(--color-transparent);
+  --color-button-background-color-danger-pressed: var(--color-danger-light-60);
   --color-button-border-danger-pressed: var(--color-danger-dark-40);
   --color-button-color-danger-pressed: var(--color-danger-dark-40);
 
@@ -365,7 +380,7 @@
   --color-button-background-color-link-hover: var(--color-transparent);
   --color-button-color-link-hover: var(--color-primary-dark-20);
 
-  --color-button-background-color-link-pressed: var(--color-primary-light-60);
+  --color-button-background-color-link-pressed: var(--color-primary-light-60); /* MELHORIA DE UX */
   --color-button-color-link-pressed: var(--color-primary-dark-40);
 
   --color-button-background-color-link-disabled: var(--color-transparent);

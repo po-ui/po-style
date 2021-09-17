@@ -20,6 +20,10 @@
     "format:check": "prettier --check --loglevel error \"src/**/*{.ts,.js,.json,.css,.scss,.html}\"",
     "format:all": "prettier --write \"src/**/*{.ts,.js,.json,.css,.scss,.html}\""
   },
+  "dependencies": {
+    "@animaliads/animalia-brand": "^1.0.0",
+    "@animaliads/css-tokens": "^1.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-angular": "^11.0.0",

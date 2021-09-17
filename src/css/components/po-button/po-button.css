@@ -86,8 +86,8 @@ ani-button[kind='secondary'][danger='true'] {
 [class*='po-lg-'],
 [class*='po-md-'],
 [class*='po-sm-'] {
-  > .po-button {
-    width: 100%; /* não é suficiente para funcionar o grid-system */
+  > ani-button {
+    width: 100%;
   }
 }
 

@@ -180,7 +180,8 @@
   width: 20px;
 }
 
-.po-multiselect-checkbox-input-checked + .po-multiselect-checkbox-label:before {
+.po-multiselect-checkbox-input-checked + .po-multiselect-checkbox-label:before,
+.po-multiselect-checkbox-input-indeterminate + .po-multiselect-checkbox-label:before {
   background-color: var(--color-multiselect-background-color-checkbox-active);
   border: solid 1px var(--color-multiselect-border-checkbox-input-active);
   box-shadow: none;
@@ -198,6 +199,10 @@
 
 .po-multiselect-checkbox-input-checked + .po-multiselect-checkbox-label:before {
   content: '\e93c';
+}
+
+.po-multiselect-checkbox-input-indeterminate + .po-multiselect-checkbox-label:before {
+  content: '\e939';
 }
 
 @media screen and (max-width: 1366px) {

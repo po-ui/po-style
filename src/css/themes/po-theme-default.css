@@ -121,6 +121,9 @@
   --color-primary-dark-40: #8b255a;
 
   /* Secondary */
+  /* Cor do background no hover do button default*/
+  --color-secondary-light-80: #d9c2e5;
+
   --color-secondary: #8241a4;
 
   --color-secondary-dark-20: #733b8e;
@@ -312,7 +315,7 @@
   --color-button-border: var(--color-secondary);
   --color-button-color: var(--color-secondary);
 
-  --color-button-background-color-hover: var(--color-transparent);
+  --color-button-background-color-hover: var(--color-secondary-light-80);
   --color-button-border-hover: var(--color-secondary-dark-20);
   --color-button-color-hover: var(--color-secondary-dark-20);
 

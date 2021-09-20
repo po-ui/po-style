@@ -320,7 +320,6 @@
   /**
    * Button Default
   */
-  --color-button-background-color: var(--color-transparent);
   --color-button-border: var(--color-secondary);
   --color-button-color: var(--color-secondary);
 

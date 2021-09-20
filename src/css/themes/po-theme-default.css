@@ -352,7 +352,7 @@
 
   --color-button-background-color-primary-disabled: var(--color-neutral-light-60);
   --color-button-border-primary-disabled: var(--color-neutral-light-60);
-  --color-button-color-primary-disabled: var(--color-white);
+  --color-button-color-primary-disabled: var(--color-neutral);
   /**
    * Button Danger
   */

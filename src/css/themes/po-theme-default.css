@@ -361,7 +361,7 @@
   --color-button-color-danger: var(--color-danger);
 
   --color-button-background-color-danger-hover: var(--color-danger-light-80);
-  --color-button-border-danger-hover: var(--color-danger-dark-20);
+  --color-button-border-danger-hover: var(--color-danger-dark-40);
   --color-button-color-danger-hover: var(--color-danger-dark-20);
 
   --color-button-background-color-danger-pressed: var(--color-danger-light-60);

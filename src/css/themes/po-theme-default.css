@@ -337,7 +337,6 @@
    * Button Primary
   */
   --color-button-background-color-primary: var(--color-tertiary);
-  --color-button-border-primary: var(--color-tertiary);
   --color-button-color-primary: var(--color-neutral-dark-60);
 
   --color-button-background-color-primary-hover: var(--color-tertiary-dark-40);

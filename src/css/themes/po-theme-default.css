@@ -361,7 +361,6 @@
   --color-button-border-danger-pressed: var(--color-danger-dark-40);
   --color-button-color-danger-pressed: var(--color-danger-dark-40);
 
-  --color-button-background-color-danger-disabled: var(--color-transparent);
   --color-button-border-danger-disabled: var(--color-neutral-light-60);
   --color-button-color-danger-disabled: var(--color-neutral-light-60);
   /**

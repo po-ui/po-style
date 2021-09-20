@@ -1,7 +1,3 @@
-:root {
-  --shadow-button-group-box-shadow: var(--shadow-button);
-}
-
 .po-button-group-container {
   display: flex;
   width: 100%;
@@ -11,18 +7,20 @@
   padding: 0;
 }
 
-.po-button-group-container .po-button-group .po-button {
-  border-radius: 0;
+.po-button-group-container .po-button-group ani-button.po-button {
+  --border-radius: var(--border-radius-none);
 }
 
-.po-button-group-container .po-button-group:first-child .po-button {
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
+.po-button-group-container .po-button-group:first-child ani-button.po-button {
+  --border-radius: var(--border-radius-md) 0 0 var(--border-radius-md);
 }
 
-.po-button-group-container .po-button-group:last-child .po-button {
-  border-bottom-right-radius: 3px;
-  border-top-right-radius: 3px;
+.po-button-group-container .po-button-group:last-child ani-button.po-button {
+  --border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+}
+
+.po-button-group-container .po-button-group:only-child ani-button.po-button {
+  --border-radius: var(--border-radius-md);
 }
 
 .po-button-group-container .po-button-group + .po-button-group {
@@ -45,26 +43,38 @@
   z-index: 4;
 }
 
-.po-button-group-container .po-button-group.po-button-group-button-selected .po-button {
-  background-color: var(--color-button-group-background-selected);
-  border: solid 1px var(--color-button-group-border-selected);
-  color: var(--color-button-group-color-selected);
+.po-button-group-container .po-button-group.po-button-group-button-selected ani-button[kind='primary'].po-button {
+  /* default */
+  --color: var(--color-button-group-background-selected, var(--color-neutral-dark-70));
+  --text-color: var(--color-button-group-color-selected, var(--color-neutral-light-00));
+
+  /* hover */
+  --color-hover: var(--color-button-group-background-color-neutral-hover, var(--color-neutral-dark-80));
+
+  /* pressed */
+  --color-pressed: var(--color-button-group-background-color-neutral-pressed);
+  --text-color-pressed: var(--color-button-group-color-neutral-pressed);
+
+  /* disabled */
+  --color-disabled: var(--color-button-group-background-color-neutral-disabled, var(--color-action-disabled));
+  --text-color-disabled: var(--color-button-group-color-neutral-disabled);
 }
 
-.po-button-group-container .po-button-group.po-button-group-button-selected:hover .po-button {
-  background-color: var(--color-button-group-background-color-neutral-hover);
-  border: solid 1px var(--color-button-group-background-color-neutral-hover);
-  color: var(--color-button-group-color-neutral-hover);
-}
+.po-button-group-container .po-button-group.po-button-group-button-selected ani-button[kind='secondary'].po-button {
+  /* default */
+  --color: var(--color-button-group-border-selected, var(--color-neutral-dark-70));
+  --text-color: var(--color-button-group-color-selected, var(--color-neutral-light-00));
 
-.po-button-group-container .po-button-group.po-button-group-button-selected .po-button:active {
-  background-color: var(--color-button-group-background-color-neutral-pressed);
-  border: solid 1px var(--color-button-group-border-neutral-pressed);
-  color: var(--color-button-group-color-neutral-pressed);
-}
+  /* hover */
+  --background-hover: var(--color-button-group-background-color-neutral-hover, var(--color-neutral-dark-80));
+  --border-color-hover: var(--color-button-group-border-neutral-hover, var(--color-neutral-dark-80));
 
-.po-button-group-container .po-button-group.po-button-group-button-selected .po-button:disabled {
-  background-color: var(--color-button-group-background-color-neutral-disabled);
-  border: solid 1px var(--color-button-group-border-neutral-disabled);
-  color: var(--color-button-group-color-neutral-disabled);
+  /* pressed */
+  --background-pressed: var(--color-button-group-background-color-neutral-pressed);
+  --color-pressed: var(--color-button-group-border-neutral-pressed);
+  --text-color-pressed: var(--color-button-group-color-neutral-pressed);
+
+  /* disabled */
+  --border-color-disabled: var(--color-button-group-border-neutral-disabled);
+  --text-color-disabled: var(--color-button-group-color-neutral-disabled);
 }

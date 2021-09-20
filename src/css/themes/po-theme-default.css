@@ -350,7 +350,6 @@
   /**
    * Button Danger
   */
-  --color-button-background-color-danger: var(--color-transparent);
   --color-button-border-danger: var(--color-danger);
   --color-button-color-danger: var(--color-danger);
 

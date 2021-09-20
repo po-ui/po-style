@@ -326,7 +326,7 @@
 
   --color-button-background-color-hover: var(--color-secondary-light-80);
   --color-button-border-hover: var(--color-secondary-dark-40);
-  --color-button-color-hover: var(--color-secondary-dark-20);
+  --color-button-color-hover: var(--color-secondary-dark-40);
 
   --color-button-background-color-pressed: var(--color-secondary-light-60);
   --color-button-border-pressed: var(--color-secondary-dark-40);

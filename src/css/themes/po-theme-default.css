@@ -201,6 +201,9 @@
   /* Background do Feedback de atenção */
   --color-warning: #ea9b3e;
 
+  /* Cor do background no hover do button type danger */
+  --color-danger-light-80: #e3aeab;
+
   --color-danger-light-40: #cd5f58;
 
   /* Background do Feedback de erro, Borda de Input com erro */
@@ -354,7 +357,7 @@
   --color-button-border-danger: var(--color-danger);
   --color-button-color-danger: var(--color-danger);
 
-  --color-button-background-color-danger-hover: var(--color-transparent);
+  --color-button-background-color-danger-hover: var(--color-danger-light-80);
   --color-button-border-danger-hover: var(--color-danger-dark-20);
   --color-button-color-danger-hover: var(--color-danger-dark-20);
 

@@ -374,7 +374,6 @@
   --color-button-background-color-link-pressed: var(--color-primary-light-60);
   --color-button-color-link-pressed: var(--color-primary-dark-40);
 
-  --color-button-background-color-link-disabled: var(--color-transparent);
   --color-button-color-link-disabled: var(--color-neutral-light-60);
 
   /*------------------------------------*\

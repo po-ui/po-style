@@ -330,7 +330,7 @@
 
   --color-button-background-color-pressed: var(--color-secondary-light-60);
   --color-button-border-pressed: var(--color-secondary-dark-60);
-  --color-button-color-pressed: var(--color-secondary-dark-40);
+  --color-button-color-pressed: var(--color-secondary-dark-60);
 
   --color-button-background-color-disabled: var(--color-transparent);
   --color-button-border-disabled: var(--color-neutral-light-60);

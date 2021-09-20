@@ -366,7 +366,6 @@
   /**
    * Button Link
   */
-  --color-button-background-color-link: var(--color-transparent);
   --color-button-color-link: var(--color-primary);
 
   --color-button-background-color-link-hover: var(--color-primary-light-80);

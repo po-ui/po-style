@@ -380,7 +380,7 @@
   --color-button-background-color-link-hover: var(--color-primary-light-80);
   --color-button-color-link-hover: var(--color-primary-dark-20);
 
-  --color-button-background-color-link-pressed: var(--color-primary-light-60); /* MELHORIA DE UX */
+  --color-button-background-color-link-pressed: var(--color-primary-light-60);
   --color-button-color-link-pressed: var(--color-primary-dark-40);
 
   --color-button-background-color-link-disabled: var(--color-transparent);

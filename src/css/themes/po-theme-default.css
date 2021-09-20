@@ -325,12 +325,12 @@
   --color-button-color: var(--color-secondary);
 
   --color-button-background-color-hover: var(--color-secondary-light-80);
-  --color-button-border-hover: var(--color-secondary-dark-20);
-  --color-button-color-hover: var(--color-secondary-dark-20);
+  --color-button-border-hover: var(--color-secondary-dark-40);
+  --color-button-color-hover: var(--color-secondary-dark-40);
 
   --color-button-background-color-pressed: var(--color-secondary-light-60);
-  --color-button-border-pressed: var(--color-secondary-dark-40);
-  --color-button-color-pressed: var(--color-secondary-dark-40);
+  --color-button-border-pressed: var(--color-secondary-dark-60);
+  --color-button-color-pressed: var(--color-secondary-dark-60);
 
   --color-button-background-color-disabled: var(--color-transparent);
   --color-button-border-disabled: var(--color-neutral-light-60);
@@ -352,7 +352,7 @@
 
   --color-button-background-color-primary-disabled: var(--color-neutral-light-60);
   --color-button-border-primary-disabled: var(--color-neutral-light-60);
-  --color-button-color-primary-disabled: var(--color-white);
+  --color-button-color-primary-disabled: var(--color-neutral);
   /**
    * Button Danger
   */
@@ -361,8 +361,8 @@
   --color-button-color-danger: var(--color-danger);
 
   --color-button-background-color-danger-hover: var(--color-danger-light-80);
-  --color-button-border-danger-hover: var(--color-danger-dark-20);
-  --color-button-color-danger-hover: var(--color-danger-dark-20);
+  --color-button-border-danger-hover: var(--color-danger-dark-40);
+  --color-button-color-danger-hover: var(--color-danger-dark-40);
 
   --color-button-background-color-danger-pressed: var(--color-danger-light-60);
   --color-button-border-danger-pressed: var(--color-danger-dark-40);
@@ -377,7 +377,7 @@
   --color-button-background-color-link: var(--color-transparent);
   --color-button-color-link: var(--color-primary);
 
-  --color-button-background-color-link-hover: var(--color-transparent);
+  --color-button-background-color-link-hover: var(--color-primary-light-80);
   --color-button-color-link-hover: var(--color-primary-dark-20);
 
   --color-button-background-color-link-pressed: var(--color-primary-light-60); /* MELHORIA DE UX */

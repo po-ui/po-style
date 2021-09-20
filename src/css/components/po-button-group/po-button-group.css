@@ -11,18 +11,16 @@
   padding: 0;
 }
 
-.po-button-group-container .po-button-group .po-button {
-  border-radius: 0;
+.po-button-group-container .po-button-group ani-button.po-button {
+  --border-radius: var(--border-radius-none);
 }
 
-.po-button-group-container .po-button-group:first-child .po-button {
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
+.po-button-group-container .po-button-group:first-child ani-button.po-button {
+  --border-radius: 4px 0 0 4px; /* tentar arrumar deixando com os design-tokens */
 }
 
-.po-button-group-container .po-button-group:last-child .po-button {
-  border-bottom-right-radius: 3px;
-  border-top-right-radius: 3px;
+.po-button-group-container .po-button-group:last-child ani-button.po-button {
+  --border-radius: 0 4px 4px 0; /* tentar arrumar deixando com os design-tokens */
 }
 
 .po-button-group-container .po-button-group + .po-button-group {

@@ -377,7 +377,7 @@
   --color-button-background-color-link: var(--color-transparent);
   --color-button-color-link: var(--color-primary);
 
-  --color-button-background-color-link-hover: var(--color-transparent);
+  --color-button-background-color-link-hover: var(--color-primary-light-80);
   --color-button-color-link-hover: var(--color-primary-dark-20);
 
   --color-button-background-color-link-pressed: var(--color-primary-light-60); /* MELHORIA DE UX */

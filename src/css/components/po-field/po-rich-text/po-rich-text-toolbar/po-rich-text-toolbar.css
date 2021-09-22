@@ -36,10 +36,10 @@
 }
 
 /* Necessário para fixar a altura do po-button pois o mesmo tem tratamento para responsividade */
-.po-rich-text-toolbar .po-button-group > .po-button {
-  font-size: 16px;
-  height: var(--rich-text-toolbar-button-group-height);
-  padding: 0;
+.po-rich-text-toolbar .po-button-group > ani-button.po-button {
+  --font-size: var(--font-size-default);
+  --line-height: 110%;
+  --spacing-squish: 0;
 }
 
 /* Seletor necessário para sobrepor o padding 0 */
@@ -49,10 +49,22 @@
 }
 
 .po-rich-text-toolbar-color-picker-button {
-  font-size: 16px;
-  height: 32px;
+  font-size: var(--font-size-default);
+  height: 36px;
   padding: 0;
-  width: 32px;
+  width: 36px;
+  width: 36px;
+  border: 2px solid var(--color-button-border, --color-brand-01-base);
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.po-rich-text-toolbar-color-picker-button:hover {
+  background-color: var(--color-button-background-color-hover, --color-brand-01-lighter);
+}
+
+.po-rich-text-toolbar-color-picker-button:active {
+  background-color: var(--color-button-background-color-pressed, --color-brand-01-light);
 }
 
 .po-rich-text-toolbar-color-picker-container {

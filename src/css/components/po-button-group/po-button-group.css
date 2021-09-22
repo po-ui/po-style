@@ -16,11 +16,11 @@
 }
 
 .po-button-group-container .po-button-group:first-child ani-button.po-button {
-  --border-radius: 4px 0 0 4px; /* tentar arrumar deixando com os design-tokens */
+  --border-radius: 4px 0 0 4px;
 }
 
 .po-button-group-container .po-button-group:last-child ani-button.po-button {
-  --border-radius: 0 4px 4px 0; /* tentar arrumar deixando com os design-tokens */
+  --border-radius: 0 4px 4px 0;
 }
 
 .po-button-group-container .po-button-group + .po-button-group {
@@ -43,26 +43,29 @@
   z-index: 4;
 }
 
-.po-button-group-container .po-button-group.po-button-group-button-selected .po-button {
-  background-color: var(--color-button-group-background-selected);
-  border: solid 1px var(--color-button-group-border-selected);
-  color: var(--color-button-group-color-selected);
+.po-button-group-container .po-button-group.po-button-group-button-selected ani-button[kind='primary'] {
+  --background: var(--color-button-group-background-selected, --color-neutral-dark-70);
+  --background-disabled: var(--color-button-group-background-color-neutral-disabled, --color-action-disabled);
 }
 
-.po-button-group-container .po-button-group.po-button-group-button-selected:hover .po-button {
-  background-color: var(--color-button-group-background-color-neutral-hover);
-  border: solid 1px var(--color-button-group-background-color-neutral-hover);
-  color: var(--color-button-group-color-neutral-hover);
+.po-button-group-container .po-button-group.po-button-group-button-selected ani-button[kind='secondary'] {
+  --border-color: var(--color-button-group-border-selected, --color-neutral-dark-70);
+  --text-color: var(--color-button-group-color-selected, --color-neutral-light-00);
 }
 
-.po-button-group-container .po-button-group.po-button-group-button-selected .po-button:active {
-  background-color: var(--color-button-group-background-color-neutral-pressed);
-  border: solid 1px var(--color-button-group-border-neutral-pressed);
-  color: var(--color-button-group-color-neutral-pressed);
+.po-button-group-container .po-button-group.po-button-group-button-selected:hover ani-button[kind='secondary'] {
+  --background-hover: var(--color-button-group-background-color-neutral-hover, --color-neutral-dark-80);
+  --border-color-hover: var(--color-button-group-border-neutral-hover, --color-neutral-dark-80);
+  --text-color-hover: var(--color-button-group-color-neutral-hover, --color-neutral-light-00);
 }
 
-.po-button-group-container .po-button-group.po-button-group-button-selected .po-button:disabled {
-  background-color: var(--color-button-group-background-color-neutral-disabled);
-  border: solid 1px var(--color-button-group-border-neutral-disabled);
-  color: var(--color-button-group-color-neutral-disabled);
+.po-button-group-container .po-button-group.po-button-group-button-selected ani-button[kind='secondary']:active {
+  --background-pressed: var(--color-button-group-background-color-neutral-pressed);
+  --border-color-pressed: var(--color-button-group-border-neutral-pressed);
+  --text-color-pressed: var(--color-button-group-color-neutral-pressed);
+}
+
+.po-button-group-container .po-button-group.po-button-group-button-selected ani-button[kind='secondary']:disabled {
+  --border-color-disabled: var(--color-button-group-border-neutral-disabled);
+  --text-color-disabled: var(--color-button-group-color-neutral-disabled);
 }

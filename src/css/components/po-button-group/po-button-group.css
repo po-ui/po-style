@@ -43,29 +43,40 @@
   z-index: 4;
 }
 
-.po-button-group-container .po-button-group.po-button-group-button-selected ani-button[kind='primary'] {
+.po-button-group-container .po-button-group.po-button-group-button-selected ani-button[kind='primary'].po-button {
+  /* default */
   --background: var(--color-button-group-background-selected, --color-neutral-dark-70);
+  --text-color: var(--color-button-group-color-selected, --color-neutral-light-00);
+
+  /* hover */
+  --background-hover: var(--color-button-group-background-color-neutral-hover, --color-neutral-dark-80);
+  --text-color-hover: var(--color-button-group-color-neutral-hover, --color-neutral-light-00);
+
+  /* pressed */
+  --background-pressed: var(--color-button-group-background-color-neutral-pressed);
+  --text-color-pressed: var(--color-button-group-color-neutral-pressed);
+
+  /* disabled */
   --background-disabled: var(--color-button-group-background-color-neutral-disabled, --color-action-disabled);
+  --text-color-disabled: var(--color-button-group-color-neutral-disabled);
 }
 
-.po-button-group-container .po-button-group.po-button-group-button-selected ani-button[kind='secondary'] {
+.po-button-group-container .po-button-group.po-button-group-button-selected ani-button[kind='secondary'].po-button {
+  /* default */
   --border-color: var(--color-button-group-border-selected, --color-neutral-dark-70);
   --text-color: var(--color-button-group-color-selected, --color-neutral-light-00);
-}
 
-.po-button-group-container .po-button-group.po-button-group-button-selected:hover ani-button[kind='secondary'] {
+  /* hover */
   --background-hover: var(--color-button-group-background-color-neutral-hover, --color-neutral-dark-80);
   --border-color-hover: var(--color-button-group-border-neutral-hover, --color-neutral-dark-80);
   --text-color-hover: var(--color-button-group-color-neutral-hover, --color-neutral-light-00);
-}
 
-.po-button-group-container .po-button-group.po-button-group-button-selected ani-button[kind='secondary']:active {
+  /* pressed */
   --background-pressed: var(--color-button-group-background-color-neutral-pressed);
   --border-color-pressed: var(--color-button-group-border-neutral-pressed);
   --text-color-pressed: var(--color-button-group-color-neutral-pressed);
-}
 
-.po-button-group-container .po-button-group.po-button-group-button-selected ani-button[kind='secondary']:disabled {
+  /* disabled */
   --border-color-disabled: var(--color-button-group-border-neutral-disabled);
   --text-color-disabled: var(--color-button-group-color-neutral-disabled);
 }

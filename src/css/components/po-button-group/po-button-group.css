@@ -24,7 +24,7 @@
 }
 
 .po-button-group-container .po-button-group + .po-button-group {
-  margin-left: -1px;
+  margin-left: -2px;
 }
 
 .po-button-group-container .po-button-group:not(.po-button-group-disabled) {

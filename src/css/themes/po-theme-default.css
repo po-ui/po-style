@@ -406,9 +406,6 @@
     BUTTON GROUP
   \*------------------------------------*/
 
-  --color-button-group-border-button: var(--color-primary);
-  --color-button-group-border-button-disabled: var(--color-neutral-light-60);
-
   --color-button-group-background-selected: var(--color-neutral);
   --color-button-group-border-selected: var(--color-neutral);
   --color-button-group-color-selected: var(--color-white);

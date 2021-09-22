@@ -1,10 +1,5 @@
 :root {
-  --font-rich-text-toolbar-button-icon {
-    @apply --font-subtitle;
-  }
-
-  --rich-text-toolbar-button-group-height: 32px;
-  --rich-text-toolbar-button-group-width: 32px;
+  --rich-text-toolbar-button-group-width: 28px;
 
   --rich-text-toolbar-min-height: 64px;
 
@@ -36,10 +31,8 @@
 }
 
 /* Necessário para fixar a altura do po-button pois o mesmo tem tratamento para responsividade */
-.po-rich-text-toolbar .po-button-group > .po-button {
-  font-size: 16px;
-  height: var(--rich-text-toolbar-button-group-height);
-  padding: 0;
+.po-rich-text-toolbar .po-button-group > ani-button.po-button {
+  --padding: 0;
 }
 
 /* Seletor necessário para sobrepor o padding 0 */
@@ -49,10 +42,20 @@
 }
 
 .po-rich-text-toolbar-color-picker-button {
-  font-size: 16px;
-  height: 32px;
+  max-height: 28px;
+  max-width: 28px;
   padding: 0;
-  width: 32px;
+  border: 2px solid var(--color-button-border, var(--color-brand-01-base));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.po-rich-text-toolbar-color-picker-button:hover {
+  background-color: var(--color-button-background-color-hover, var(--color-brand-01-lighter));
+}
+
+.po-rich-text-toolbar-color-picker-button:active {
+  background-color: var(--color-button-background-color-pressed, var(--color-brand-01-light));
 }
 
 .po-rich-text-toolbar-color-picker-container {
@@ -61,17 +64,16 @@
 
 /* Altera o tamanho do ícone dos po-buttons para respeitar o tamanho definido pela UX */
 .po-rich-text-toolbar .po-button-group .po-icon {
-  @apply --font-rich-text-toolbar-button-icon;
-  height: var(--rich-text-toolbar-button-group-height);
+  line-height: 100%;
+  font-size: 22px;
 }
 
 .po-rich-text-toolbar-color-picker-input {
   background-color: transparent;
   border: none;
-  height: 32px;
-  padding: 8px;
-  vertical-align: middle;
-  width: 30px;
+  height: 24px;
+  padding: 2.5px;
+  width: 24px;
 }
 
 .po-rich-text-toolbar-color-picker-input::-webkit-color-swatch-wrapper {

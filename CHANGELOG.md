@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.14.0](https://github.com/po-ui/po-style/compare/v5.13.0...v5.14.0) (2021-09-27)
+
+### Features
+
+* **multiselect:** adiciona estilo de campo indeterminate ([5a90db8](https://github.com/po-ui/po-style/commit/5a90db86ea002938242ed4edbc78e2f8757b6a59))
+
+
+
 # [5.13.1](https://github.com/po-ui/po-style/compare/v5.13.0...v5.13.1) (2021-09-20)
 
 

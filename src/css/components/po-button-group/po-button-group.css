@@ -12,11 +12,11 @@
 }
 
 .po-button-group-container .po-button-group:first-child ani-button.po-button {
-  --border-radius: 4px 0 0 4px;
+  --border-radius: var(--border-radius-md) 0 0 var(--border-radius-md);
 }
 
 .po-button-group-container .po-button-group:last-child ani-button.po-button {
-  --border-radius: 0 4px 4px 0;
+  --border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
 }
 
 .po-button-group-container .po-button-group:only-child ani-button.po-button {

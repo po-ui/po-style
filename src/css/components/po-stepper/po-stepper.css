@@ -60,8 +60,8 @@
 
 .po-stepper-vertical .po-stepper-step {
   display: table;
-  height: 5.5em;
-  min-height: 5.5em;
+  height: 5.6em;
+  min-height: 5.6em;
   padding-left: 16px;
 }
 
@@ -74,6 +74,7 @@
 
 .po-stepper-circle {
   @apply --font-stepper-circle-content;
+  padding: 3px;
   border: 2px solid;
   border-radius: 50%;
   height: 24px;
@@ -98,12 +99,6 @@
   transform: translate(-50%, -50%);
 }
 
-.po-stepper-step-active .po-stepper-circle,
-.po-stepper-step-active .po-stepper-label {
-  border-color: var(--color-stepper-circle-active);
-  color: var(--color-stepper-circle-active);
-}
-
 .po-stepper-step-default .po-stepper-circle,
 .po-stepper-step-default .po-stepper-label {
   border-color: var(--color-stepper-circle-default);
@@ -116,41 +111,13 @@
   color: var(--color-stepper-circle-disabled);
 }
 
-.po-stepper-step-done .po-stepper-circle,
-.po-stepper-step-done .po-stepper-label {
-  border-color: var(--color-stepper-circle-done);
-  color: var(--color-stepper-circle-done);
-}
-
 .po-stepper-step-error .po-stepper-circle,
 .po-stepper-step-error .po-stepper-label {
   border-color: var(--color-stepper-circle-error);
   color: var(--color-stepper-circle-error);
 }
 
-.po-stepper-step-active .po-stepper-circle-with-icon {
-  background-color: var(--color-stepper-circle-active);
-}
-
-.po-stepper-step-default .po-stepper-circle-with-icon {
-  background-color: var(--color-stepper-circle-default);
-}
-
-.po-stepper-step-disabled .po-stepper-circle-with-icon {
-  background-color: var(--color-stepper-circle-disabled);
-}
-
-.po-stepper-step-done .po-stepper-circle-with-icon {
-  background-color: var(--color-stepper-circle-done);
-}
-
-.po-stepper-step-error .po-stepper-circle-with-icon {
-  background-color: var(--color-stepper-circle-error);
-}
-
-.po-stepper-step-active,
-.po-stepper-step-default,
-.po-stepper-step-done {
+.po-stepper-step-default {
   cursor: pointer;
 }
 
@@ -239,8 +206,33 @@
   font-size: 32px;
 }
 
-.po-stepper-circle .po-stepper-circle-content.po-icon {
-  color: var(--color-stepper-circle-icon);
+.po-stepper-circle-active {
+  border-radius: 50%;
+  background: var(--color-stepper-circle-active);
+  width: 100%;
+  height: 100%;
+}
+
+.po-stepper-step-error .po-stepper-circle-active {
+  background: var(--color-stepper-circle-error);
+}
+
+.po-stepper-step-disabled .po-stepper-step-bar-right,
+.po-stepper-step-disabled .po-stepper-step-bar-left {
+  border-top: 2px dashed var(--color-stepper-bar-disabled);
+}
+
+.po-stepper-step-disabled .po-stepper-step-bar-top,
+.po-stepper-step-disabled .po-stepper-step-bar-bottom {
+  border-left: 2px dashed var(--color-stepper-bar-disabled);
+}
+
+.po-stepper-step-dashed-border {
+  border-top: 2px dashed var(--color-stepper-bar-disabled);
+}
+
+.po-stepper-step-dashed-border-vertical {
+  border-left: 2px dashed var(--color-stepper-bar-disabled);
 }
 
 @media print {

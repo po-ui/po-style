@@ -1005,13 +1005,12 @@
     STEPPER
   \*------------------------------------*/
 
-  --color-stepper-bar: var(--color-neutral-light-80);
-  --color-stepper-circle-active: var(--color-neutral);
+  --color-stepper-bar: var(--color-neutral);
+  --color-stepper-bar-disabled: var(--color-neutral-light-40);
+  --color-stepper-circle-active: var(--color-primary);
   --color-stepper-circle-default: var(--color-primary);
   --color-stepper-circle-disabled: var(--color-neutral-light-60);
-  --color-stepper-circle-done: var(--color-success);
   --color-stepper-circle-error: var(--color-danger);
-  --color-stepper-circle-icon: var(--color-white);
 
   /*------------------------------------*\
     SWITCH

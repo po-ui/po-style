@@ -28,11 +28,12 @@
 .po-page-list-actions {
   width: 100%;
   z-index: 1;
+  padding-top: 8px;
 }
 
 .po-page-list-actions .po-button,
 .po-page-list-actions .po-dropdown {
-  margin: 8px 8px 0 0;
+  margin-right: 4px;
 }
 
 .po-page-list-filter-wrapper {
@@ -107,7 +108,7 @@
 
   .po-page-list-actions .po-button,
   .po-page-list-actions .po-dropdown {
-    margin: 4px 4px 0 0;
+    margin-right: -2px;
   }
 
   .po-page-list-filter-search {

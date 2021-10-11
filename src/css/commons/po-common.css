@@ -121,14 +121,8 @@
   width: calc(100% - var(--collapsed-menu-width));
 }
 
-.po-wrapper .po-page-header,
-.po-wrapper-menu-panel .po-page-header {
-  padding-top: 16px;
-}
-
 .po-wrapper .po-page .po-page-content,
 .po-wrapper-menu-panel .po-page .po-page-content {
-  padding: 20px 16px 10px 16px;
   transition: width 0.2s ease;
   white-space: normal;
   width: 100%;

@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.16.0](https://github.com/po-ui/po-style/compare/v5.15.0...v5.16.0) (2021-10-11)
+
+
+### Features
+
+* **page:** ajustes de espaçamento no cabeçalho ([a41fe0f](https://github.com/po-ui/po-style/commit/a41fe0fdfa56188e5a41cc2d91b7c1a4851cf892))
+* **stepper:** altera estilo do componente ([a76a324](https://github.com/po-ui/po-style/commit/a76a324f891e8d7a5b4c4765e353992f7d6f27ce))
+
+
+
 ## [5.15.0](https://github.com/po-ui/po-style/compare/v5.14.0...v5.15.0) (2021-10-04)
 
 Compatibilidade com @po-ui/ng-components@5.15.0

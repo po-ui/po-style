@@ -46,7 +46,7 @@
   height: var(--po-calendar-height);
   overflow: hidden;
   user-select: none;
-  display: inline-block;
+  display: inline-flex;
 }
 
 .po-calendar-range po-calendar-wrapper + po-calendar-wrapper .po-calendar-wrapper {
@@ -267,4 +267,10 @@
 .po-calendar-box-foreground-today-disabled {
   border-radius: 3px;
   padding: 2px;
+}
+
+@media screen and (max-width: 599.33px) {
+  .po-calendar-range {
+    width: var(--po-calendar-width);
+  }
 }

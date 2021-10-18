@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.17.0](https://github.com/po-ui/po-style/compare/v5.16.0...v5.17.0) (2021-10-18)
+
+
+### Bug Fixes
+
+* **datepicker-range:** corrige calendário ao abrir nas extremidades ([9cd28ed](https://github.com/po-ui/po-style/commit/9cd28ede67b3e63881816bae6f74767ba2df9f37))
+
+
+
 # [5.16.0](https://github.com/po-ui/po-style/compare/v5.15.0...v5.16.0) (2021-10-11)
 
 

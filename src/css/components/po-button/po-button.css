@@ -2,80 +2,34 @@ ani-button {
   --font-family: var(--font-family-theme-bold, Roboto-Bold);
 }
 
-/* po-button type:primary */
-ani-button[kind='primary'] {
+ani-button {
   /* default */
-  --text-color: var(--color-button-color-primary, var(--color-neutral-dark-90));
-  --color: var(--color-button-background-color-primary, var(--color-action-default));
+  --text-color: var(--color-button-color, var(--color-neutral-light-00));
+  --color: var(--color-button-border, var(--color-action-default));
 
   /* hover */
-  --color-hover: var(--color-button-background-color-primary-hover, var(--color-action-hover));
+  --color-hover: var(--color-button-background-color-hover, var(--color-action-hover));
 
   /* pressed */
-  --text-color-pressed: var(--color-button-color-primary-pressed, var(--color-neutral-dark-90));
-  --color-pressed: var(--color-button-background-color-primary-pressed, var(--color-action-pressed));
+  --text-color-pressed: var(--color-button-color-pressed, var(--color-neutral-light-00));
+  --color-pressed: var(--color-button-background-color-pressed, var(--color-action-pressed));
 
   /* disabled */
-  --text-color-disabled: var(--color-button-color-primary-disabled, var(--color-neutral-dark-70));
-  --color-disabled: var(--color-button-background-color-primary-disabled, var(--color-action-disabled));
-}
+  --text-color-disabled: var(--color-button-color-disabled, var(--color-neutral-dark-70));
+  --color-disabled: var(--color-button-background-color-disabled, var(--color-action-disabled));
 
-/* po-button type:default */
-ani-button[kind='secondary'] {
-  /* default */
-  --text-color: var(--color-button-color, var(--color-brand-01-base));
-  --color: var(--color-button-border, var(--color-brand-01-base));
-
-  /* hover */
-  --background-hover: var(--color-button-background-color-hover, var(--color-brand-01-lighter));
-  --border-color-hover: var(--color-button-border-hover, var(--color-brand-01-darkest));
-
-  /* pressed */
-  --text-color-pressed: var(--color-button-color-pressed, var(--color-brand-01-darkest));
-  --background-pressed: var(--color-button-background-color-pressed, var(--color-brand-01-light));
-  --color-pressed: var(--color-button-border-pressed, var(--color-brand-01-darkest));
-
-  /* disabled */
-  --text-color-disabled: var(--color-button-color-disabled, var(--color-neutral-light-30));
-  --color-disabled: var(--color-button-border-disabled, var(--color-neutral-light-30));
-}
-
-/* po-button type:link */
-ani-button[kind='tertiary'] {
-  /* default */
-  --text-color: var(--color-button-color-link, var(--color-brand-02-base));
-  --color: var(--color-button-color-link, var(--color-brand-02-base));
-
-  /* hover */
-  --background-hover: var(--color-button-background-color-link-hover, var(--color-brand-02-lighter));
-  --border-color-hover: var(--color-button-color-link-hover, var(--color-brand-02-base));
-
-  /* pressed */
-  --color-pressed: var(--color-button-color-link-pressed, var(--color-brand-02-darkest));
-  --background-pressed: var(--color-button-background-color-link-pressed, var(--color-brand-02-light));
-
-  /* disabled */
-  --text-color-disabled: var(--color-button-color-link-disabled, var(--color-action-disabled));
-}
-
-/* po-button type:danger */
-ani-button[kind='secondary'][danger='true'] {
-  /* default */
+  /* danger */
   --color-danger: var(--color-button-color-danger, var(--color-feedback-negative-dark));
 
-  /* hover */
+  /* hover danger*/
   --background-danger-hover: var(--color-button-background-color-danger-hover, var(--color-feedback-negative-lighter));
   --border-color-danger-hover: var(--color-button-border-danger-hover, var(--color-feedback-negative-darkest));
 
-  /* pressed */
+  /* pressed danger*/
   --background-danger-pressed: var(
     --color-button-background-color-danger-pressed,
     var(--color-feedback-negative-light)
   );
-
-  /* disabled */
-  --text-color-disabled: var(--color-button-color-danger-disabled, var(--color-neutral-light-30));
-  --border-color-disabled: var(--color-button-border-danger-disabled, var(--color-action-disabled));
 }
 
 [class*='po-xl-'],

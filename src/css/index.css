@@ -1,5 +1,4 @@
 @import './themes/po-theme-${theme}.css';
-@import './themes/po-theme-animaliads.css';
 
 @import './commons';
 @import './components';

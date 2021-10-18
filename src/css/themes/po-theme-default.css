@@ -84,6 +84,56 @@
 \*------------------------------------*/
 
 /*------------------------------------*\
+  ANIMALIADS - PO UI THEME
+\*------------------------------------*/
+
+html {
+  --color-action-default: #8241a4;
+  --color-action-hover: #5b1c7d;
+  --color-action-pressed: #400e58;
+  --color-action-disabled: #b6bdbf;
+  --color-action-focus: #260538;
+  --color-brand-01-lightest: #f2eaf6;
+  --color-brand-01-lighter: #d9c2e5;
+  --color-brand-01-light: #bd94d1;
+  --color-brand-01-base: #8241a4;
+  --color-brand-01-dark: #5b1c7d;
+  --color-brand-01-darker: #400e58;
+  --color-brand-01-darkest: #260538;
+  --color-brand-02-lightest: #fcf0f6;
+  --color-brand-02-lighter: #f7cee2;
+  --color-brand-02-light: #e993b9;
+  --color-brand-02-base: #b92f72;
+  --color-brand-02-dark: #95235a;
+  --color-brand-02-darker: #761947;
+  --color-brand-02-darkest: #520a2d;
+  --color-brand-03-lightest: #fffcf0;
+  --color-brand-03-lighter: #fef0cd;
+  --color-brand-03-light: #ffe297;
+  --color-brand-03-base: #ffd464;
+  --color-brand-03-dark: #efc043;
+  --color-brand-03-darker: #d39f17;
+  --color-brand-03-darkest: #4e360e;
+  --color-neutral-dark-70: #4a5c60;
+  --color-neutral-dark-80: #2c3739;
+  --color-neutral-dark-90: #1d2426;
+  --color-neutral-dark-95: #0b0e0e;
+  --color-neutral-light-10: #eceeee;
+  --color-neutral-light-20: #dadedf;
+  --color-neutral-light-30: #b6bdbf;
+  --color-neutral-light-00: #fff;
+  --color-neutral-light-05: #fbfbfb;
+  --color-neutral-mid-40: #9da7a9;
+  --color-neutral-mid-60: #6e7c7f;
+  --font-family-heading: Roboto;
+  --font-family-text: Roboto;
+  --font-family-code: Monospace;
+  --font-weight-extra-light: 200;
+  --text-transform-normal: normal;
+  --text-transform-uppercase: uppercase;
+}
+
+/*------------------------------------*\
   COMMON
 \*------------------------------------*/
 
@@ -320,56 +370,33 @@
   /**
    * Button Default
   */
-  --color-button-border: var(--color-secondary);
-  --color-button-color: var(--color-secondary);
 
+  /* default */
+  --color-button-border: var(--color-secondary);
+  --color-button-color: var(--color-white);
+
+  /* hover */
   --color-button-background-color-hover: var(--color-secondary-light-80);
   --color-button-border-hover: var(--color-secondary-dark-40);
 
+  /* pressed */
   --color-button-background-color-pressed: var(--color-secondary-light-60);
-  --color-button-border-pressed: var(--color-secondary-dark-60);
   --color-button-color-pressed: var(--color-secondary-dark-60);
 
-  --color-button-border-disabled: var(--color-neutral-light-60);
+  /* disabled */
+  --color-button-border-disabled: var(--color-neutral-light-40);
   --color-button-color-disabled: var(--color-neutral-light-60);
-  /**
-   * Button Primary
-  */
-  --color-button-background-color-primary: var(--color-tertiary);
-  --color-button-color-primary: var(--color-neutral-dark-60);
 
-  --color-button-background-color-primary-hover: var(--color-tertiary-dark-40);
-
-  --color-button-background-color-primary-pressed: var(--color-tertiary-dark-60);
-  --color-button-color-primary-pressed: var(--color-neutral-dark-60);
-
-  --color-button-background-color-primary-disabled: var(--color-neutral-light-60);
-  --color-button-color-primary-disabled: var(--color-neutral);
-  /**
-   * Button Danger
-  */
+  /* danger default */
   --color-button-background-color-danger: var(--color-transparent);
   --color-button-color-danger: var(--color-danger);
 
+  /* danger hover */
   --color-button-background-color-danger-hover: var(--color-danger-light-80);
   --color-button-border-danger-hover: var(--color-danger-dark-40);
 
+  /* danger pressed */
   --color-button-background-color-danger-pressed: var(--color-danger-light-60);
-
-  --color-button-border-danger-disabled: var(--color-neutral-light-60);
-  --color-button-color-danger-disabled: var(--color-neutral-light-60);
-  /**
-   * Button Link
-  */
-  --color-button-color-link: var(--color-primary);
-
-  --color-button-background-color-link-hover: var(--color-primary-light-80);
-  --color-button-color-link-hover: var(--color-primary-dark-20);
-
-  --color-button-background-color-link-pressed: var(--color-primary-light-60);
-  --color-button-color-link-pressed: var(--color-primary-dark-40);
-
-  --color-button-color-link-disabled: var(--color-neutral-light-60);
 
   /*------------------------------------*\
     BADGE
@@ -1247,4 +1274,10 @@
   --color-widget-background-color-disabled: var(--color-neutral-light-90);
   --color-widget-background-color-scroll-disabled: var(--color-neutral-light-40);
   --color-widget-color-disabled: var(--color-neutral-light-40);
+}
+
+html {
+  ani-button {
+    --color: red;
+  }
 }

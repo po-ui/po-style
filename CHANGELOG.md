@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.18.0](https://github.com/po-ui/po-style/compare/v5.17.0...v5.18.0) (2021-10-25)
+
+
+### Features
+
+* **lookup:** adiciona estilo para míltipla seleção ([6c85a78](https://github.com/po-ui/po-style/commit/6c85a780f9a779be4bec34a7cfb655c859941809))
+
+
+
 ## [5.17.0](https://github.com/po-ui/po-style/compare/v5.16.0...v5.17.0) (2021-10-18)
 
 

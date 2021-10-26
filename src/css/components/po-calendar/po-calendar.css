@@ -15,10 +15,15 @@
     @apply --font-text;
   }
 
+  --font-calendar-button {
+    @apply --font-text-large-bold;
+  }
+
   --shadow-calendar-box-shadow: var(--shadow-card);
 
   --po-calendar-width: 288px;
-  --po-calendar-height: 288px;
+  --po-calendar-height: 320px;
+  --po-calendar-range-height: 288px;
 }
 
 .po-calendar {
@@ -43,7 +48,7 @@
   background-color: var(--color-calendar-background-color);
   border-radius: 3px;
   box-shadow: var(--shadow-calendar-box-shadow);
-  height: var(--po-calendar-height);
+  height: var(--po-calendar-range-height);
   overflow: hidden;
   user-select: none;
   display: inline-flex;
@@ -267,6 +272,32 @@
 .po-calendar-box-foreground-today-disabled {
   border-radius: 3px;
   padding: 2px;
+}
+
+.po-calendar-footer {
+  overflow: hidden;
+  position: absolute;
+  top: 279px;
+  width: var(--po-calendar-width);
+}
+
+.po-calendar-footer .po-calendar-footer-today {
+  text-align: center;
+}
+
+.po-calendar-footer .po-calendar-footer-today .po-calendar-footer-today-button {
+  @apply --font-calendar-button;
+  background: transparent;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.po-calendar-footer .po-calendar-footer-today .po-calendar-footer-today-button:disabled {
+  color: var(--color-neutral-light-60);
+  pointer-events: none;
 }
 
 @media screen and (max-width: 599.33px) {

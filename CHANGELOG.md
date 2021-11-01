@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.19.0](https://github.com/po-ui/po-style/compare/v5.18.0...v5.19.0) (2021-11-01)
+
+
+### Features
+
+* **calendar:** adiciona botão `hoje` ([ba43a9a](https://github.com/po-ui/po-style/commit/ba43a9a8a5fd9b0ab131943ef929a74a93782a6c))
+
+
+
 # [5.18.0](https://github.com/po-ui/po-style/compare/v5.17.0...v5.18.0) (2021-10-25)
 
 

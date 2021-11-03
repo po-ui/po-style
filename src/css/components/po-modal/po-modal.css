@@ -146,14 +146,17 @@
 
 .po-modal-footer {
   background-color: var(--color-modal-background-color-footer);
-  float: right;
   overflow: auto;
   padding: 24px 8px;
-  text-align: right;
   width: 100%;
 }
 
-.po-modal-footer .po-button {
+.po-modal-footer-align-right {
+  text-align: right;
+  float: right;
+}
+
+.po-modal-footer-align-right .po-button {
   margin-left: 12px;
 }
 
@@ -205,5 +208,9 @@
 
   .po-modal-auto {
     width: auto;
+  }
+
+  .po-modal-footer-default {
+    float: left;
   }
 }

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [5.20.0](https://github.com/po-ui/po-style/compare/v5.19.0...v5.20.0) (2021-11-05)
+
+
+### Features
+
+* **modal-footer:** adiciona estilo para o novo componente ([ef5e11c](https://github.com/po-ui/po-style/commit/ef5e11c1574b9b2a0d92cc5a44635ccc1c09f9c6))
+
+
+
 # [5.19.0](https://github.com/po-ui/po-style/compare/v5.18.0...v5.19.0) (2021-11-01)
 
 

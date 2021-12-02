@@ -457,9 +457,6 @@
   /**
    * Chart Types
    */
-  --color-chart-gauge-base-path-color: var(--color-neutral-light-80);
-  --color-chart-gauge-text-content-focus: var(--color-secondary);
-  --color-chart-gauge-text-description-color: var(--color-neutral);
 
   --color-chart-line-point-fill: var(--color-white);
 

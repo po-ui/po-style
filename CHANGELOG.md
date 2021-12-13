@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.22.2](https://github.com/po-ui/po-style/compare/v5.22.1...v5.22.2) (2021-12-13)
+
+Compatibilidade com @po-ui/ng-components@5.22.2
+
+
 ## [5.22.1](https://github.com/po-ui/po-style/compare/v5.22.0...v5.22.1) (2021-11-29)
 
 Compatibilidade com @po-ui/ng-components@5.22.1

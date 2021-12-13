@@ -1,6 +1,7 @@
 {
   "name": "@po-ui/style",
-  "version": "5.22.1",
+  "version": "5.22.2",
+  "tag": "v5-lts",
   "description": "PO Style",
   "author": "PO UI",
   "license": "MIT",

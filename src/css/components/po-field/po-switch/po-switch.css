@@ -22,12 +22,12 @@ ani-switch {
   --track-unchecked: var(--color-switch-background-color-container-off, var(--color-neutral-light-20));
 
   --color-checked-disabled: var(--color-switch-background-color-button-disabled, var(--color-action-disabled));
-  --color-unchecked-disabled: var(--color-switch-background-color-container-disabled, var(--color-neutral-light-20));
+  --color-unchecked-disabled: var(--color-neutral-light-20);
 
   --color-checked-hover: var(--color-brand-02-dark);
   --color-unchecked-hover: var(--color-brand-02-lightest);
 
-  --border-color: var(--color-switch-color-label, var(--color-neutral-light-00));
+  --border-color: var(--color-neutral-dark-70);
   --color-checked-hover: var(--color-brand-02-dark);
   --color-unchecked-hover: var(--color-brand-02-lightest);
   --outline-color-focused: var(--color-switch-box-shadow-color-focusable, var(--color-action-focus));

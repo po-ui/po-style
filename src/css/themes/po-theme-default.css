@@ -1008,17 +1008,18 @@
     SWITCH
   \*------------------------------------*/
 
-  --color-switch-background-color-container-on: var(--color-primary);
+  --color-switch-background-color-container-on: var(--color-primary-light-80);
   --color-switch-background-color-container-off: var(--color-neutral-light-80);
   --color-switch-background-color-container-disabled: var(--color-neutral-light-80);
   --color-switch-box-shadow-color-focusable: var(--color-primary-dark-20);
 
-  --color-switch-background-color-button: var(--color-white);
-  --color-switch-background-color-button-disabled: var(--color-neutral-light-40);
+  --color-switch-background-color-button: var(--color-primary);
+  --color-switch-background-color-button-disabled: var(--color-neutral-light-60);
 
-  --color-switch-color-icon-on: var(--color-primary);
-  --color-switch-color-icon-off: var(--color-neutral-light-80);
-  --color-switch-color-icon-disabled: var(--color-neutral-light-80);
+  --color-switch-color-icon-on: var(--color-white);
+
+  --color-switch-color-icon-off: var(--color-neutral-light-40);
+  --color-switch-color-icon-disabled: var(--color-primary-light-80);
 
   --color-switch-color-label: var(--color-neutral);
 

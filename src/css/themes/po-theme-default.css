@@ -1018,9 +1018,6 @@
 
   --color-switch-color-icon-on: var(--color-white);
 
-  --color-switch-color-icon-off: var(--color-neutral-light-40);
-  --color-switch-color-icon-disabled: var(--color-primary-light-80);
-
   --color-switch-color-label: var(--color-neutral);
 
   /*------------------------------------*\

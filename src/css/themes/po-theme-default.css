@@ -1136,9 +1136,9 @@
     TEXTAREA
   \*------------------------------------*/
 
-  --color-textarea-background-color: var(--color-white);
-  --color-textarea-border: var(--color-neutral-light-60);
-  --color-textarea-background-color-disabled: var(--color-neutral-light-90);
+  --color-textarea-background-color: var(--color-neutral-light-98);
+  --color-textarea-border: var(--color-neutral);
+  --color-textarea-background-color-disabled: var(--color-neutral-light-80);
   --color-textarea-border-color-disabled: var(--color-neutral-light-90);
   --color-textarea-border-focusable: var(--color-primary);
   --color-textarea-color-error: var(--color-danger);

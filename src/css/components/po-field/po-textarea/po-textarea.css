@@ -18,58 +18,16 @@
   --shadow-textarea-box-shadow: var(--shadow-input);
 }
 
-.po-textarea {
-  @apply --font-textarea-text;
-  border: solid 1px var(--color-textarea-border) !important;
-  border-radius: 3px;
-  box-shadow: var(--shadow-textarea-box-shadow);
-  background-color: var(--color-textarea-background-color);
-  display: block;
-  padding: 8px 16px;
-  resize: none;
-  width: 100%;
+ani-textarea {
+  --color: var(--color-textarea-border, var(--color-neutral-dark-70));
+  --background: var(--color-textarea-background-color, var(--color-neutral-light-05));
+  --color-hover: var(--color-brand-02-dark);
+  --background-hover: var(--color-brand-02-lightest);
+  --color-focused: var(--color-textarea-border-focusable, var(--color-brand-02-base));
+  --color-disabled: var(--color-textarea-color-disabled, var(--color-action-disabled));
+  --background-disabled: var(--color-textarea-background-color-disabled, var(--color-neutral-light-20));
 }
 
-.po-textarea:disabled {
-  background-color: var(--color-textarea-background-color-disabled);
-  border: solid 1px var(--color-textarea-border-color-disabled);
-  color: var(--color-textarea-color-disabled);
-}
-
-.ng-valid .po-textarea:focus {
-  border: solid 1px var(--color-textarea-border-focusable) !important;
-  outline: none;
-}
-
-.po-textarea-label-error {
-  @apply --font-textarea-error-text;
-  color: var(--color-textarea-color-error);
-  display: block;
-  height: 20px;
-  margin-top: 2px;
-  padding-left: 2px;
-  text-align: left;
-}
-
-.po-textarea-label-error .po-textarea-label-error-icon {
-  @apply --font-textarea-error-message;
-  padding-bottom: 2px;
-  vertical-align: middle;
-  width: 16px;
-}
-
-.po-textarea::-webkit-scrollbar {
-  width: 7px;
-}
-
-.po-textarea::-webkit-scrollbar-thumb {
-  background-color: var(--color-textarea-background-color-scrollbar);
-  border-radius: 2px;
-}
-
-@media screen and (max-width: 1366px) {
-  .po-textarea {
-    @apply --font-textarea-text-smaller;
-    padding: 4px 8px;
-  }
+po-textarea.ng-invalid.ng-dirty ani-textarea {
+  --color: var(--color-textarea-color-error, var(--color-feedback-negative-base));
 }

@@ -1143,7 +1143,6 @@
   --color-textarea-border-focusable: var(--color-primary);
   --color-textarea-color-error: var(--color-danger);
   --color-textarea-color-disabled: var(--color-neutral-light-60);
-  --color-textarea-text-error: var(--color-danger);
   --color-textarea-background-color-scrollbar: var(--color-primary);
 
   /*------------------------------------*\

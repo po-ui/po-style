@@ -60,6 +60,11 @@
 
 .po-rich-text-toolbar-color-picker-container {
   display: flex;
+  margin-right: -0.05em;
+}
+
+.po-rich-text-toolbar-color-picker-container ani-button[kind='secondary'] {
+  width: 1.8em;
 }
 
 /* Altera o tamanho do ícone dos po-buttons para respeitar o tamanho definido pela UX */
@@ -71,9 +76,10 @@
 .po-rich-text-toolbar-color-picker-input {
   background-color: transparent;
   border: none;
-  height: 24px;
-  padding: 2.5px;
-  width: 24px;
+  height: 1.5em;
+  padding: 0.05em 0.1em 0.1em 0em;
+  width: 1.5em;
+  margin: 0.15em 0em 0em -0.3em;
 }
 
 .po-rich-text-toolbar-color-picker-input::-webkit-color-swatch-wrapper {

@@ -335,12 +335,12 @@
   /**
    * Button Primary
   */
-  --color-button-background-color-primary: var(--color-tertiary);
-  --color-button-color-primary: var(--color-neutral-dark-60);
+  --color-button-background-color-primary: var(--color-secondary);
+  --color-button-color-primary: var(--color-white);
 
-  --color-button-background-color-primary-hover: var(--color-tertiary-dark-40);
+  --color-button-background-color-primary-hover: var(--color-secondary-dark-40);
 
-  --color-button-background-color-primary-pressed: var(--color-tertiary-dark-60);
+  --color-button-background-color-primary-pressed: var(--color-secondary-dark-60);
   --color-button-color-primary-pressed: var(--color-neutral-dark-60);
 
   --color-button-background-color-primary-disabled: var(--color-neutral-light-60);
@@ -361,13 +361,13 @@
   /**
    * Button Link
   */
-  --color-button-color-link: var(--color-primary);
+  --color-button-color-link: var(--color-secondary);
 
-  --color-button-background-color-link-hover: var(--color-primary-light-80);
-  --color-button-color-link-hover: var(--color-primary-dark-20);
+  --color-button-background-color-link-hover: var(--color-secondary-light-80);
+  --color-button-color-link-hover: var(--color-secondary-dark-20);
 
-  --color-button-background-color-link-pressed: var(--color-primary-light-60);
-  --color-button-color-link-pressed: var(--color-primary-dark-40);
+  --color-button-background-color-link-pressed: var(--color-secondary-light-60);
+  --color-button-color-link-pressed: var(--color-secondary-dark-40);
 
   --color-button-color-link-disabled: var(--color-neutral-light-60);
 

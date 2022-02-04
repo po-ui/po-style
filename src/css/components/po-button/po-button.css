@@ -78,6 +78,25 @@ ani-button[kind='secondary'][danger='true'] {
   --border-color-disabled: var(--color-button-border-danger-disabled, var(--color-action-disabled));
 }
 
+ani-button[kind='primary'][danger='true'] {
+  /* default */
+  --color-danger: var(--color-button-color-danger, var(--color-feedback-negative-dark));
+
+  /* hover */
+  --background-danger-hover: var(--color-button-background-color-danger-hover, var(--color-feedback-negative-lighter));
+  --border-color-danger-hover: var(--color-button-border-danger-hover, var(--color-feedback-negative-darkest));
+
+  /* pressed */
+  --background-danger-pressed: var(
+    --color-button-background-color-danger-pressed,
+    var(--color-feedback-negative-light)
+  );
+
+  /* disabled */
+  --text-color-disabled: var(--color-neutral-dark-70, var(--color-neutral-light-30));
+  --border-color-disabled: var(--color-button-border-danger-disabled, var(--color-action-disabled));
+}
+
 [class*='po-xl-'],
 [class*='po-lg-'],
 [class*='po-md-'],

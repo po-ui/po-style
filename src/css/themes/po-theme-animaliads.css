@@ -1,9 +1,4 @@
 html {
-  --color-action-default: #ffd464;
-  --color-action-hover: #efc043;
-  --color-action-pressed: #d39f17;
-  --color-action-disabled: #b6bdbf;
-  --color-action-focus: #260538;
   --color-brand-01-lightest: #f2eaf6;
   --color-brand-01-lighter: #d9c2e5;
   --color-brand-01-light: #bd94d1;
@@ -36,6 +31,11 @@ html {
   --color-neutral-light-05: #fbfbfb;
   --color-neutral-mid-40: #9da7a9;
   --color-neutral-mid-60: #6e7c7f;
+  --color-action-default: var(--color-brand-01-base);
+  --color-action-hover: var(--color-brand-01-dark);
+  --color-action-pressed: var(--color-brand-01-darker);
+  --color-action-disabled: var(--color-neutral-light-30);
+  --color-action-focus: var(--color-brand-01-darkest);
   --font-family-heading: Roboto;
   --font-family-text: Roboto;
   --font-family-code: Monospace;

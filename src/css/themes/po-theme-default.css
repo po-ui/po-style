@@ -960,23 +960,23 @@
     SELECT
   \*------------------------------------*/
 
-  --color-select-background-color: var(--color-white);
-  --color-select-background-color-disabled: var(--color-neutral-light-90);
+  --color-select-background-color: var(--color-neutral-light-98);
+  --color-select-background-color-disabled: var(--color-neutral-light-80);
 
-  --color-select-background-color-item-hover: var(--color-primary-light-95);
+  --color-select-background-color-item-hover: var(--color-primary-dark-20);
   --color-select-background-color-scrollbar: var(--color-primary-alpha-50);
 
   --color-select-border-button: var(--color-neutral-light-60);
   --color-select-border-button-error: var(--color-danger);
   --color-select-border-button-disabled: var(--color-neutral-light-60);
-  --color-select-border-button-hover: var(--color-primary);
+  --color-select-border-button-hover: var(--color-primary-light-95);
   --color-select-border-button-focus: var(--color-primary);
 
   --color-select-button-disabled: var(--color-neutral-light-60);
   --color-select-button-focus: var(--color-primary);
 
-  --color-select-color-primary: var(--color-primary);
-  --color-select-color-selected: var(--color-white);
+  --color-select-color-primary: var(--color-neutral);
+  --color-select-color-selected: var(--color-neutral-dark-60);
   --color-select-background-color-unselected: var(--color-white);
   --color-select-background-color-selected: var(--color-primary);
   --color-select-color-text-error: var(--color-danger);

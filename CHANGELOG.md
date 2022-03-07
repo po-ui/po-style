@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [6.5.0](https://github.com/po-ui/po-style/compare/v6.4.0...v6.5.0) (2022-03-07)
+
+
+### Features
+
+* **menu:** melhora acessibilidade no menu ([120da08](https://github.com/po-ui/po-style/commit/120da0822deb1231cd7172b406cb8984c32d4cf4))
+
+
+
 ## [6.4.0](https://github.com/po-ui/po-style/compare/v6.3.0...v6.4.0) (2022-02-14)
 
 Compatibilidade com @po-ui/ng-components@6.4.0

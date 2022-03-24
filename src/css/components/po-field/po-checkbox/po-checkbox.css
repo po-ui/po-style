@@ -30,8 +30,8 @@
 }
 
 .po-checkbox-input + .po-checkbox-label:before {
-  background-color: var(--color-checkbox-background-color);
-  border: solid 1px var(--color-checkbox-border-input);
+  background-color: var(--color-checkbox-background-color, var(--color-unchecked));
+  border: solid 1px var(--color-checkbox-border-input, var(--border-color));
   border-radius: 2px;
   box-shadow: var(--shadow-checkbox-box-shadow-input);
   content: ' ';
@@ -47,8 +47,8 @@
 
 .po-checkbox-input-checked + .po-checkbox-label:before,
 .po-checkbox-input-indeterminate + .po-checkbox-label:before {
-  background-color: var(--color-checkbox-background-color-active);
-  border: solid 1px var(--color-checkbox-border-input-active);
+  background-color: var(--color-checkbox-background-color-active, var(--color-checked));
+  border: solid 1px transparent;
   box-shadow: none;
   color: var(--color-checkbox-color-active);
   font-family: 'PoIcon' !important;

@@ -28,20 +28,8 @@
   --color-brand-01-dark: #5b1c7d;
   --color-brand-01-darker: #400e58;
   --color-brand-01-darkest: #260538;
-  --color-brand-02-lightest: #fcf0f6;
-  --color-brand-02-lighter: #f7cee2;
-  --color-brand-02-light: #e993b9;
   --color-brand-02-base: #b92f72;
-  --color-brand-02-dark: #95235a;
-  --color-brand-02-darker: #761947;
-  --color-brand-02-darkest: #520a2d;
-  --color-brand-03-lightest: #fffcf0;
-  --color-brand-03-lighter: #fef0cd;
-  --color-brand-03-light: #ffe297;
   --color-brand-03-base: #ffd464;
-  --color-brand-03-dark: #efc043;
-  --color-brand-03-darker: #d39f17;
-  --color-brand-03-darkest: #4e360e;
   --color-neutral-dark-70: #4a5c60;
   --color-neutral-dark-80: #2c3739;
   --color-neutral-dark-90: #1d2426;
@@ -115,4 +103,18 @@ po-button[size='small'] {
   --font-size: var(--font-size-sm);
   --line-height: var(--line-height-none);
   --padding: 0 0.5em;
+}
+
+po-checkbox {
+  --border-color: var(--color-neutral-dark-70);
+  --color-unchecked: var(--color-neutral-light-00);
+  --color-checked: var(--color-action-default);
+
+  --color-hover: var(--color-action-hover);
+  --shadow-color-hover: var(--color-brand-01-lighter);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-unchecked-disabled: var(--color-action-disabled);
+  --color-checked-disabled: var(--color-neutral-dark-70);
 }

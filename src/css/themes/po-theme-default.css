@@ -120,6 +120,8 @@
   /* Secondary */
   --color-secondary-light-20: #d9c2e5;
 
+  --color-secondary-light-40: #bd94d1;
+
   --color-secondary: #753399;
 
   --color-secondary-dark-20: #5b1c7d;
@@ -179,6 +181,8 @@
   /* Texto */
   --color-neutral-dark-60: #1d2426;
 
+  --color-neutral-dark-70: #4a5c60;
+
   /* Usar em sombras (10% de opacidade) */
   --color-black-alpha-10: rgba(0, 0, 0, 0.1);
 
@@ -196,21 +200,28 @@
   /* Background do Feedback de atenção */
   --color-warning: #ea9b3e;
 
-  --color-danger-light-40: #cd5f58;
+  --color-danger-light-05: #f6e6e5;
+
+  --color-danger-light-20: #e3aeab;
+
+  --color-danger-light-40: #d58581;
 
   /* Background do Feedback de erro, Borda de Input com erro */
-  --color-danger: #c64840;
+  --color-danger: #be3e37;
 
   /* Background disclaimer danger */
-  --color-danger-dark-5: #bb443c;
+  --color-danger-dark-5: #9b2d27;
 
   /* Hover para botão danger */
   --color-danger-dark-20: #9e3933;
 
   /* Estilo ativo para botão danger */
-  --color-danger-dark-40: #762b26;
+  --color-danger-dark-40: #4a1512;
 
   --color-transparent: transparent;
+
+  /* Cor padrão para o focus */
+  --color-outline-focused: #260538;
 
   /*------------------------------------*\
     COLOR-PALETTE
@@ -312,10 +323,11 @@
   --color-button-background-color: var(--color-transparent);
   --color-button-border: var(--color-secondary);
   --color-button-color: var(--color-secondary);
+  --color-button-box-shadow: 0, 0, 0, rgb(255, 255, 255);
 
-  --color-button-background-color-hover: var(--color-transparent);
-  --color-button-border-hover: var(--color-secondary-dark-20);
-  --color-button-color-hover: var(--color-secondary-dark-20);
+  --color-button-background-color-hover: var(--color-secondary-light-20);
+  --color-button-border-hover: var(--color-secondary-dark-80);
+  --color-button-color-hover: var(--color-secondary-dark-80);
 
   --color-button-background-color-pressed: var(--color-transparent);
   --color-button-border-pressed: var(--color-secondary-dark-40);
@@ -327,33 +339,30 @@
   /**
    * Button Primary
   */
-  --color-button-background-color-primary: var(--color-tertiary);
-  --color-button-border-primary: var(--color-tertiary);
-  --color-button-color-primary: var(--color-neutral-dark-60);
+  --color-button-background-color-primary: var(--color-secondary);
+  --color-button-border-primary: var(--color-transparent);
+  --color-button-color-primary: var(--color-white);
 
-  --color-button-background-color-primary-hover: var(--color-tertiary-dark-40);
-  --color-button-border-primary-hover: var(--color-tertiary-dark-40);
-  --color-button-color-primary-hover: var(--color-neutral-dark-60);
+  --color-button-background-color-primary-hover: var(--color-secondary-dark-20);
+  --color-button-color-primary-hover: var(--color-white);
 
-  --color-button-background-color-primary-pressed: var(--color-tertiary-dark-60);
-  --color-button-border-primary-pressed: var(--color-tertiary-dark-60);
-  --color-button-color-primary-pressed: var(--color-neutral-dark-60);
+  --color-button-background-color-primary-pressed: var(--color-secondary-dark-40);
+  --color-button-color-primary-pressed: var(--color-white);
 
   --color-button-background-color-primary-disabled: var(--color-neutral-light-60);
-  --color-button-border-primary-disabled: var(--color-neutral-light-60);
-  --color-button-color-primary-disabled: var(--color-white);
+  --color-button-color-primary-disabled: var(--color-neutral-dark-70);
   /**
    * Button Danger
   */
   --color-button-background-color-danger: var(--color-transparent);
-  --color-button-border-danger: var(--color-danger);
-  --color-button-color-danger: var(--color-danger);
+  --color-button-border-danger: var(--color-danger-dark-5);
+  --color-button-color-danger: var(--color-danger-dark-5);
 
-  --color-button-background-color-danger-hover: var(--color-transparent);
-  --color-button-border-danger-hover: var(--color-danger-dark-20);
-  --color-button-color-danger-hover: var(--color-danger-dark-20);
+  --color-button-background-color-danger-hover: var(--color-danger-light-20);
+  --color-button-border-danger-hover: var(--color-danger-dark-40);
+  --color-button-color-danger-hover: var(--color-danger-dark-40);
 
-  --color-button-background-color-danger-pressed: var(--color-transparent);
+  --color-button-background-color-danger-pressed: var(--color-danger-light-40);
   --color-button-border-danger-pressed: var(--color-danger-dark-40);
   --color-button-color-danger-pressed: var(--color-danger-dark-40);
 
@@ -364,13 +373,14 @@
    * Button Link
   */
   --color-button-background-color-link: var(--color-transparent);
-  --color-button-color-link: var(--color-primary);
+  --color-button-color-link: var(--color-secondary);
+  --color-button-border-color-link: var(--color-transparent);
 
-  --color-button-background-color-link-hover: var(--color-transparent);
-  --color-button-color-link-hover: var(--color-primary-dark-20);
+  --color-button-background-color-link-hover: var(--color-secondary-light-20);
+  --color-button-color-link-hover: var(--color-secondary-dark-80);
 
-  --color-button-background-color-link-pressed: var(--color-transparent);
-  --color-button-color-link-pressed: var(--color-primary-dark-40);
+  --color-button-background-color-link-pressed: var(--color-secondary-light-40);
+  --color-button-color-link-pressed: var(--color-secondary-dark-80);
 
   --color-button-background-color-link-disabled: var(--color-transparent);
   --color-button-color-link-disabled: var(--color-neutral-light-60);

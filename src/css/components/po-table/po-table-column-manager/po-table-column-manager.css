@@ -67,6 +67,11 @@ po-table-column-manager .po-popover .po-popover-content {
   border-radius: 2px;
 }
 
+.po-table-column-manager-body {
+  scrollbar-color: var(--color-table-background-color-scrollbar) transparent;
+  scrollbar-width: thin;
+}
+
 .po-table-column-manager-footer {
   border-top: 1px solid var(--color-table-column-manager-border-color);
   height: 44px;

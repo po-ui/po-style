@@ -58,6 +58,7 @@
 
 .po-table-wrapper {
   display: table;
+  table-layout: fixed;
   width: 100%;
 }
 
@@ -129,36 +130,40 @@
   padding-right: 8px;
 }
 
-.po-table-header-fixed-columns-pixels {
-  width: auto;
+.po-table-header-fixed-columns-pixels .po-table-header-fixed {
+  padding-right: 10px;
 }
 
 .po-table-container {
-  padding-top: var(--table-row-height);
   position: relative;
-  word-break: break-all;
+  display: flex;
+  flex-direction: column;
 }
 
 .po-table-container-fixed-inner {
   height: 100%;
   overflow-y: auto;
+  overflow-x: auto;
+}
+
+.po-table-container-fixed-inner .po-table {
+  table-layout: fixed;
 }
 
 .po-table-header-fixed {
   border-bottom: 2px solid var(--color-table-box-shadow-header);
-  height: var(--table-row-height);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
+}
+
+.po-table-header-fixed.po-table-header {
+  height: auto;
+  min-height: var(--table-row-height-sm);
+  overflow: hidden;
 }
 
 .po-table-header-fixed-inner {
   @apply --font-table-text-bold;
   color: var(--color-table-color-header);
-  margin-top: 8px;
-  position: absolute;
-  top: 0;
+  margin-top: 6px;
 }
 
 /* table row */
@@ -174,10 +179,13 @@
   background-color: var(--color-table-background-color-active) !important;
 }
 
+.po-table .po-table-group-row .po-table-row:not(.po-table-row-no-data) {
+  border-bottom: 1px solid var(--color-table-border-rows);
+}
+
 /* table column */
 .po-table-column-detail {
   @apply --font-table-text;
-  border-bottom: 1px solid var(--color-table-border-rows);
 }
 
 .po-table-row-template-container {
@@ -190,10 +198,15 @@
 }
 
 .po-table .po-table-column {
-  border-bottom: 1px solid var(--color-table-border-rows);
   color: var(--color-table-color-text);
   padding: 0 8px;
   text-align: left;
+}
+
+.po-table .po-table-column:empty {
+  max-width: 40px;
+  min-width: 40px;
+  width: 40px;
 }
 
 .po-table .po-table-column-right {
@@ -207,6 +220,12 @@
 .po-table .po-table-column-cell {
   display: inline-block;
   vertical-align: middle;
+}
+
+.po-table .po-table-column-empty {
+  max-width: 40px;
+  min-width: 40px;
+  width: 40px;
 }
 
 .po-table-header-single-action {
@@ -243,7 +262,6 @@
 
 .po-table-column-actions {
   @apply --font-table-action;
-  border-bottom: 1px solid var(--color-table-border-rows);
   color: var(--color-table-color-header);
   cursor: default;
   max-width: 40px;
@@ -259,7 +277,6 @@
 
 .po-table-column-icons {
   @apply --font-table-icons;
-  border-bottom: 1px solid var(--color-table-border-rows);
   color: var(--color-table-color-header);
   min-width: 50px;
   padding: 0 8px;
@@ -296,16 +313,13 @@
   width: 100%;
 }
 
-.po-container .po-table-group-row:last-child .po-table-column,
-.po-container .po-table-group-row:last-child .po-table-column-icons,
-.po-container .po-table-group-row:last-child .po-table-column-actions,
-.po-container .po-table-group-row:last-child .po-table-column-detail-toggle {
-  border-bottom: none;
-}
-
 .po-container .po-table-group-row:last-child .po-table-row + tr:not(.po-table-row) .po-table-column-detail {
   border-bottom: none;
   border-top: 1px solid var(--color-table-border-rows);
+}
+
+.po-container .po-table .po-table-group-row:last-child .po-table-row {
+  border-bottom: none;
 }
 
 .po-table-footer-show-subtitle {
@@ -422,6 +436,12 @@
   padding: 0 4px;
 }
 
+.po-table-header .po-table,
+.po-table-header + div .po-table {
+  table-layout: fixed;
+  word-break: break-word;
+}
+
 .po-table-header-flex {
   display: flex;
   align-items: center;
@@ -460,6 +480,11 @@
   max-width: 36px;
   text-align: center;
   width: 36px;
+}
+
+.po-table .po-table-column-selectable .po-table-header-fixed-inner {
+  margin-top: 4px;
+  padding-right: 0;
 }
 
 .po-table .po-table-radio {
@@ -554,20 +579,12 @@
   height: var(--table-row-height);
 }
 
+.po-table-detail-row > td {
+  border-bottom: 1px solid var(--color-table-border-rows);
+}
+
 .po-table-striped .po-table-master-detail .po-table-detail-row:nth-child(even) {
   background-color: var(--color-table-background-color-row-strip);
-}
-
-.po-table-master-detail .po-table-detail-row:last-child .po-table-column.po-table-column-selectable,
-.po-table-master-detail .po-table-detail-row:last-child .po-table-column-master-detail,
-.po-table-master-detail .po-table-detail-row:last-child .po-table-column-master-detail-space,
-.po-table-master-detail .po-table-detail-row:last-child .po-table-column-master-detail-space-checkbox {
-  border-bottom: none;
-}
-
-.po-table-column-master-detail-space,
-.po-table-column-master-detail-space-checkbox {
-  border-bottom: 1px solid var(--color-table-border-rows);
 }
 
 .po-table-column-master-detail-space {
@@ -580,18 +597,13 @@
 
 .po-table-column-detail-toggle {
   text-align: center;
-  border-bottom: 1px solid var(--color-table-border-rows);
 }
 
 .po-table-header-master-detail,
 .po-table-column-detail-toggle {
-  max-width: 35px;
-  min-width: 35px;
-  width: 35px;
-}
-
-.po-table-column-master-detail {
-  border-bottom: 1px solid var(--color-table-border-rows);
+  max-width: 40px;
+  min-width: 40px;
+  width: 40px;
 }
 
 .po-table-column-detail-toggle .po-icon-arrow-down,
@@ -611,6 +623,12 @@
 .po-table-container-fixed-inner::-webkit-scrollbar-thumb,
 .po-table-main-container::-webkit-scrollbar-thumb {
   background-color: var(--color-table-background-color-scrollbar);
+}
+
+.po-table-container-fixed-inner,
+.po-table-main-container {
+  scrollbar-color: var(--color-table-background-color-scrollbar) transparent;
+  scrollbar-width: thin;
 }
 
 .po-table-header-column-manager,
@@ -639,9 +657,6 @@
 .po-table-header-column-manager-fixed-inner {
   height: 42px;
   padding-top: 8px;
-  position: absolute;
-  right: 0;
-  top: 0;
   width: 40px;
 }
 
@@ -694,10 +709,6 @@
     height: var(--table-row-height-sm);
   }
 
-  .po-table-container {
-    padding-top: var(--table-row-height-sm);
-  }
-
   .po-table-column-icons {
     @apply --font-table-icons-sm;
   }
@@ -743,6 +754,14 @@
 
   .po-table-column-selectable .po-table-radio-checked + .po-table-radio-label:before {
     line-height: 16px;
+  }
+
+  .po-table-header-fixed-columns-pixels .po-table-container {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow: hidden;
   }
 }
 

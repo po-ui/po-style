@@ -118,16 +118,20 @@
   --color-primary-dark-40: #8b255a;
 
   /* Secondary */
-  --color-secondary: #8241a4;
+  --color-secondary-light-20: #d9c2e5;
 
-  --color-secondary-dark-20: #733b8e;
+  --color-secondary: #753399;
 
-  --color-secondary-dark-40: #5e2e73;
+  --color-secondary-dark-20: #5b1c7d;
+
+  --color-secondary-dark-40: #400e58;
 
   /* Overlay de Modal e Menu (70% de opacidade) */
   --color-secondary-dark-60-alpha-70: rgba(59, 28, 74, 0.7);
 
   --color-secondary-dark-60: #3b1c4a;
+
+  --color-secondary-dark-80: #260538;
 
   /* Tertiary */
 
@@ -470,15 +474,17 @@
   \*------------------------------------*/
 
   --color-checkbox-background-color: var(--color-white);
-  --color-checkbox-background-color-active: var(--color-primary);
-  --color-checkbox-background-color-disabled: var(--color-neutral-light-90);
-  --color-checkbox-background-color-icon-disabled: var(--color-neutral-light-60);
-  --color-checkbox-box-shadow-color-focusable: var(--color-primary-dark-20);
+  --color-checkbox-background-color-active: var(--color-secondary);
+  --color-checkbox-background-color-disabled: var(--color-neutral-light-60);
+  --color-checkbox-background-color-icon-disabled: var(--color-white);
+  --color-checkbox-box-shadow-color-focusable: var(--color-secondary-dark-80);
 
-  --color-checkbox-border-input: var(--color-neutral-light-60);
-  --color-checkbox-border-input-active: var(--color-primary);
-  --color-checkbox-border-input-disabled: var(--color-neutral-light-60);
+  --color-checkbox-border-input: var(--color-neutral);
+  --color-checkbox-border-input-active: var(--color-secondary-dark-20);
+  --color-checkbox-border-input-disabled: var(--color-neutral);
   --color-checkbox-border-input-invalid: var(--color-danger);
+  --color-checkbox-background-color-active-disabled: var(--color-neutral);
+  --color-checkbox-hover-active: var(--color-secondary-light-20);
 
   --color-checkbox-color-active: var(--color-white);
 

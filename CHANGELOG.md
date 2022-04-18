@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [6.9.0](https://github.com/po-ui/po-style/compare/v6.8.0...v6.9.0) (2022-04-18)
+
+
+### Features
+
+* **table:** fixa scroll vertical ([817475d](https://github.com/po-ui/po-style/commit/817475de44b1e48fc858502d7667e6169cc72457))
+
+
+
 # [6.8.0](https://github.com/po-ui/po-style/compare/v6.7.0...v6.8.0) (2022-04-04)
 
 

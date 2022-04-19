@@ -414,8 +414,7 @@
   /*------------------------------------*\
     BUTTON GROUP
   \*------------------------------------*/
-
-  --color-button-group-border-button: var(--color-primary);
+  --color-button-group-border-button: var(--color-secondary);
   --color-button-group-border-button-disabled: var(--color-neutral-light-60);
 
   --color-button-group-background-selected: var(--color-neutral);
@@ -423,17 +422,17 @@
   --color-button-group-color-selected: var(--color-white);
 
   --color-button-group-background-color-neutral-hover: var(--color-neutral-dark-40);
-  --color-button-group-border-button-hover: var(--color-button-border-primary-hover);
+  --color-button-group-border-button-hover: var(--color-secondary-dark-80);
   --color-button-group-border-neutral-hover: var(--color-neutral-dark-40);
   --color-button-group-color-neutral-hover: var(--color-white);
 
-  --color-button-group-background-color-neutral-pressed: var(--color-neutral-dark-60);
-  --color-button-group-border-neutral-pressed: var(--color-neutral-dark-60);
-  --color-button-group-color-neutral-pressed: var(--color-white);
+  --color-button-group-background-color-neutral-pressed: var(--color-transparent);
+  --color-button-group-border-neutral-pressed: var(--color-secondary-dark-40);
+  --color-button-group-color-neutral-pressed: var(--color-secondary-dark-40);
 
-  --color-button-group-background-color-neutral-disabled: var(--color-neutral-light-60);
+  --color-button-group-background-color-neutral-disabled: var(--color-transparent);
   --color-button-group-border-neutral-disabled: var(--color-neutral-light-60);
-  --color-button-group-color-neutral-disabled: var(--color-white);
+  --color-button-group-color-neutral-disabled: var(--color-neutral-light-60);
 
   /*------------------------------------*\
     CALENDAR

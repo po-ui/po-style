@@ -53,7 +53,7 @@
 
 .po-button-group-container .po-button-group.po-button-group-button-selected:hover .po-button {
   background-color: var(--color-button-group-background-color-neutral-hover);
-  border-color: var(--color-button-group-background-color-neutral-hover);
+  border-color: var(--color-button-group-border-neutral-hover);
   color: var(--color-button-group-color-neutral-hover);
 }
 

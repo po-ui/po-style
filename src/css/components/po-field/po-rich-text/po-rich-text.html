@@ -130,90 +130,56 @@
       <!-- PO-RICH-TEXT-BODY - Final -->
 
       <!-- PO-RICH-TEXT-TOOLBAR - Início -->
-      <div class="po-rich-text-toolbar">
+      <div class="po-rich-text-toolbar" #toolbarElement>
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-bold"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-italic"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-underline"></span>
-              </button>
-            </div>
-          </div>
+          <po-button-group [p-small]="true" p-toggle="multiple" [p-buttons]="formatButtons"> </po-button-group>
         </div>
 
-        <div class="po-rich-text-toolbar-button-align">
+        <div *ngIf="!isInternetExplorer" class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
-            <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button">
-              <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" />
+            <button
+              class="po-button po-text-ellipsis po-button-group po-rich-text-toolbar-color-picker-button po-button-sm"
+              [disabled]="readonly"
+              [p-tooltip]="literals.textColor"
+              [attr.aria-label]="literals.textColor"
+            >
+              <input
+                #colorPickerInput
+                class="po-rich-text-toolbar-color-picker-input"
+                type="color"
+                [disabled]="readonly"
+                (change)="changeTextColor($event.target.value)"
+                [attr.aria-label]="literals.textColor"
+              />
             </button>
           </div>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-left"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-center"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-right"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-justify"></span>
-              </button>
-            </div>
-          </div>
+          <po-button-group [p-small]="true" p-toggle="single" [p-buttons]="alignButtons"> </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-list"></span>
-              </button>
-            </div>
-          </div>
+          <po-button-group [p-small]="true" p-toggle="single" [p-buttons]="listButtons"> </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-link"></span>
-              </button>
-            </div>
-          </div>
+          <po-button-group [p-small]="true" [p-buttons]="linkButtons"> </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon po-icon-picture"></span>
-              </button>
-            </div>
-          </div>
+          <po-button-group [p-small]="true" [p-buttons]="mediaButtons"> </po-button-group>
         </div>
       </div>
+
+      <po-rich-text-image-modal #richTextImageModal (p-command)="emitCommand($event)"> </po-rich-text-image-modal>
+
+      <po-rich-text-link-modal
+        #richTextLinkModal
+        (p-command)="emitCommand($event)"
+        (p-link-editing)="emitLinkEditing($event)"
+      >
+      </po-rich-text-link-modal>
       <!-- PO-RICH-TEXT-TOOLBAR - Final -->
     </div>
     <!-- PO-RICH-TEXT - Final -->

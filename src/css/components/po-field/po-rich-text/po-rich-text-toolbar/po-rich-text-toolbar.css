@@ -33,6 +33,7 @@
 /* Aplica a largura fixa em cada botão do po-button-group */
 .po-rich-text-toolbar .po-button-group {
   width: var(--rich-text-toolbar-button-group-width);
+  padding: inherit;
 }
 
 /* Necessário para fixar a altura do po-button pois o mesmo tem tratamento para responsividade */
@@ -61,17 +62,15 @@
 
 /* Altera o tamanho do ícone dos po-buttons para respeitar o tamanho definido pela UX */
 .po-rich-text-toolbar .po-button-group .po-icon {
-  @apply --font-rich-text-toolbar-button-icon;
-  height: var(--rich-text-toolbar-button-group-height);
+  font-size: 1.5em;
 }
 
 .po-rich-text-toolbar-color-picker-input {
   background-color: transparent;
   border: none;
-  height: 32px;
-  padding: 8px;
+  padding: 10%;
   vertical-align: middle;
-  width: 30px;
+  width: 100%;
 }
 
 .po-rich-text-toolbar-color-picker-input::-webkit-color-swatch-wrapper {

@@ -142,12 +142,19 @@
 
 .po-table-container-fixed-inner {
   height: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: auto;
 }
 
 .po-table-container-fixed-inner .po-table {
   table-layout: fixed;
+}
+
+.po-table-container-fixed-inner .cdk-virtual-scroll-orientation-vertical::-webkit-scrollbar {
+  border-radius: 2px;
+  height: 4px;
+  opacity: 0.5;
+  width: 4px;
 }
 
 .po-table-header-fixed {
@@ -156,7 +163,7 @@
 
 .po-table-header-fixed.po-table-header {
   height: auto;
-  min-height: var(--table-row-height-sm);
+  min-height: var(--table-row-height);
   overflow: hidden;
 }
 
@@ -669,6 +676,17 @@
   border: none;
 }
 
+/* scrollbar do cdk */
+.cdk-virtual-scroll-orientation-vertical::-webkit-scrollbar-thumb {
+  background-color: var(--color-table-background-color-scrollbar);
+}
+
+.cdk-virtual-scroll-orientation-vertical,
+.po-table-main-container {
+  scrollbar-color: var(--color-table-background-color-scrollbar) transparent;
+  scrollbar-width: thin;
+}
+
 @media screen and (max-width: 1366px) {
   .po-table,
   .po-table-master-detail {
@@ -762,6 +780,10 @@
     flex-direction: column;
     flex: 1 1 auto;
     overflow: hidden;
+  }
+
+  .po-table-header-fixed.po-table-header {
+    min-height: var(--table-row-height-sm);
   }
 }
 

@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [6.10.0](https://github.com/po-ui/po-style/compare/v6.9.0...v6.10.0) (2022-05-02)
+
+
+### Features
+
+* **button-group:** inclui nova definição de estilo ([b43a83c](https://github.com/po-ui/po-style/commit/b43a83c3602ac9d44fed25c7d5e25bb9041b6abb))
+
+* **button:** inclui nova definição de estilo ([816a12c](https://github.com/po-ui/po-style/commit/816a12c21b89585fd0f46523f64a50400b6cb98f))
+
+* **rich-text:** inclui nova definição de estilo ([e74e38c](https://github.com/po-ui/po-style/commit/e74e38c6a9919de65be9831be8bfd08822a7a42b))
+
+
+
 # [6.9.0](https://github.com/po-ui/po-style/compare/v6.8.0...v6.9.0) (2022-04-18)
 
 

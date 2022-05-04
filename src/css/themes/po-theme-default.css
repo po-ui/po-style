@@ -77,6 +77,9 @@
  * Tree View...................variáveis do Tree View.
  * Upload......................variáveis do Upload.
  * Widget......................variáveis do Widget.
+ *
+ * SERVICES
+ * Toaster.....................variáveis do Toaster.
  */
 
 /*------------------------------------*\
@@ -183,6 +186,8 @@
 
   --color-neutral-dark-70: #4a5c60;
 
+  --color-neutral-dark-90: #1d1d30;
+
   /* Usar em sombras (10% de opacidade) */
   --color-black-alpha-10: rgba(0, 0, 0, 0.1);
 
@@ -197,9 +202,22 @@
   /* Background do Feedback de sucesso */
   --color-success: #00b28e;
 
+  --color-feedback-positive-lightest: #def7ed;
+
+  --color-feedback-positive-lighter: #7ecead;
+
+  --color-feedback-positive-base: #107048;
+
   /* Background do Feedback de atenção */
   --color-warning: #ea9b3e;
 
+  --color-feedback-warning-lightest: #fcf6e3;
+
+  --color-feedback-warning-lighter: #f7dd97;
+
+  --color-feedback-warning-base: #efba2a;
+
+  /* Background do Feedback de erro */
   --color-danger-light-05: #f6e6e5;
 
   --color-danger-light-20: #e3aeab;
@@ -208,6 +226,13 @@
 
   /* Background do Feedback de erro, Borda de Input com erro */
   --color-danger: #be3e37;
+
+  /* Background do Feedback de informação */
+  --color-feedback-info-lightest: #e3e9f7;
+
+  --color-feedback-info-lighter: #b0c1e8;
+
+  --color-feedback-info-base: #23489f;
 
   /* Background disclaimer danger */
   --color-danger-dark-5: #9b2d27;
@@ -1261,4 +1286,45 @@
   --color-widget-background-color-disabled: var(--color-neutral-light-90);
   --color-widget-background-color-scroll-disabled: var(--color-neutral-light-40);
   --color-widget-color-disabled: var(--color-neutral-light-40);
+}
+
+/*------------------------------------*\
+  SERVICES
+\*------------------------------------*/
+:root {
+  /*------------------------------------*\
+    TOASTER
+  \*------------------------------------*/
+
+  /**
+   * Toaster Item Success
+   */
+  --color-toaster-background-color-success: var(--color-feedback-positive-lightest);
+  --color-toaster-border-color-success: var(--color-feedback-positive-lighter);
+  --color-toaster-icon-background-color-success: var(--color-feedback-positive-base);
+  --color-toaster-icon-color-success: var(--color-white);
+
+  /**
+   * Toaster Item Warning
+   */
+  --color-toaster-background-color-warning: var(--color-feedback-warning-lightest);
+  --color-toaster-border-color-warning: var(--color-feedback-warning-lighter);
+  --color-toaster-icon-background-color-warning: var(--color-feedback-warning-base);
+  --color-toaster-icon-color-warning: var(--color-neutral-dark-90);
+
+  /**
+   * Toaster Item Error
+   */
+  --color-toaster-background-color-error: var(--color-danger-light-05);
+  --color-toaster-border-color-error: var(--color-danger-light-20);
+  --color-toaster-icon-background-color-error: var(--color-danger);
+  --color-toaster-icon-color-error: var(--color-white);
+
+  /**
+   * Toaster Item Info
+   */
+  --color-toaster-background-color-info: var(--color-feedback-info-lightest);
+  --color-toaster-border-color-info: var(--color-feedback-info-lighter);
+  --color-toaster-icon-background-color-info: var(--color-feedback-info-base);
+  --color-toaster-icon-color-info: var(--color-white);
 }

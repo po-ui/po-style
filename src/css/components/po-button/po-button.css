@@ -245,6 +245,6 @@
 
 @media print {
   .po-button {
-    color-adjust: exact;
+    print-color-adjust: exact;
   }
 }

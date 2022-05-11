@@ -53,6 +53,6 @@
 @media print {
   .po-disclaimer-label,
   .po-disclaimer-remove {
-    color-adjust: exact;
+    print-color-adjust: exact;
   }
 }

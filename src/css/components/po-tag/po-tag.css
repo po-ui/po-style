@@ -179,6 +179,6 @@
 
 @media print {
   .po-tag {
-    color-adjust: exact;
+    print-color-adjust: exact;
   }
 }

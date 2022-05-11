@@ -1,11 +1,3 @@
-:root {
-  display: inline-block;
-  cursor: pointer;
-
-  --width-md: 24px;
-  --width-lg: 32px;
-}
-
 .po-checkbox {
   width: 24px;
   height: 24px;
@@ -20,7 +12,7 @@
   border-radius: 4px;
   min-width: 24px;
   min-height: 24px;
-
+  cursor: pointer;
   position: relative;
   font-family: PoIcon !important;
 }
@@ -67,14 +59,6 @@
   background-color: var(--color-checkbox-background-color-active-disabled);
 }
 
-:host([disabled]) {
-  cursor: not-allowed;
-}
-
-:host([disabled='false']) {
-  cursor: pointer;
-}
-
 .container-po-checkbox {
   display: flex;
   min-height: 32px;
@@ -84,6 +68,10 @@
 .po-checkbox-label {
   margin-left: 0.5rem;
   cursor: pointer;
+}
+
+.po-checkbox[aria-disabled='true'] ~ .po-checkbox-label {
+  cursor: not-allowed;
 }
 
 .po-checkbox[aria-checked='true']:before {

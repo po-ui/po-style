@@ -781,6 +781,6 @@
 
   .po-table-subtitle-circle,
   .po-table-column-label {
-    color-adjust: exact;
+    print-color-adjust: exact;
   }
 }

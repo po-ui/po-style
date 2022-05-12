@@ -82,7 +82,7 @@ const buildThemeCss = modern =>
         apply(),
         nested(),
         customProperties({
-          preserve: false,
+          preserve: true,
           warnings: true
         }),
         autoprefixer(),

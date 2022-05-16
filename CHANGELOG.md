@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.11.0](https://github.com/po-ui/po-style/compare/v6.10.1...v6.11.0) (2022-05-16)
+
+
+### Bug Fixes
+
+* **style:** corrige cursor pointer e warnings ([025a614](https://github.com/po-ui/po-style/commit/025a61489515bc54d08a7497d8d12d3e59f2d65c))
+
+
+
 ## [6.10.1](https://github.com/po-ui/po-style/compare/v6.10.0...v6.10.1) (2022-05-09)
 
 Compatibilidade com @po-ui/ng-components@6.10.1

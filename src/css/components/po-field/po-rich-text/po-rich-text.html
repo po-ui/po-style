@@ -24,99 +24,139 @@
       <!-- PO-RICH-TEXT-TOOLBAR - Início -->
       <div class="po-rich-text-toolbar">
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-bold"></span>
-              </button>
+          <po-button-group p-toggle="multiple">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-button-default po-text-ellipsis po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-bold"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-italic"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-underline"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-italic"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-underline"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
-            <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button">
-              <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" />
+            <button
+              class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+              tabindex="-1"
+            >
+              <input type="color" class="po-rich-text-toolbar-color-picker-input" />
             </button>
           </div>
         </div>
-
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-left"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group po-button-group-button-selected">
+                <button
+                  type="button"
+                  class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-left"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-center"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-right"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-justify"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-center"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-right"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-justify"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-list"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-list"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-link"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-link"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon po-icon-picture"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-picture"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
       </div>
-
-      <!-- PO-RICH-TEXT-TOOLBAR - Final -->
     </div>
-    <!-- PO-RICH-TEXT - Final -->
   </div>
-  <div class="po-field-container-bottom"></div>
+  <!-- PO-RICH-TEXT-TOOLBAR - Final -->
 </div>
+<!-- PO-RICH-TEXT - Final -->
+<div class="po-field-container-bottom"></div>
 <!-- PO-FIELD-CONTAINER - Final -->
 
 <hr />
-
 <!-- PO-FIELD-CONTAINER - Início -->
 <div class="po-field-container">
   <div class="po-field-container-title"></div>
@@ -138,7 +178,7 @@
         <div *ngIf="!isInternetExplorer" class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
             <button
-              class="po-button po-text-ellipsis po-button-group po-rich-text-toolbar-color-picker-button po-button-sm"
+              class="po-button po-button-default po-text-ellipsis po-button-group po-rich-text-toolbar-color-picker-button po-button-sm"
               [disabled]="readonly"
               [p-tooltip]="literals.textColor"
               [attr.aria-label]="literals.textColor"
@@ -235,86 +275,128 @@
       <!-- PO-RICH-TEXT-TOOLBAR - Início -->
       <div class="po-rich-text-toolbar">
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-bold"></span>
-              </button>
+          <po-button-group p-toggle="multiple">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-button-default po-text-ellipsis po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-bold"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group po-button-group-button-selected">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-italic"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-underline"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-italic"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-underline"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
-            <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button">
-              <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" />
+            <button
+              class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+              tabindex="-1"
+            >
+              <input type="color" class="po-rich-text-toolbar-color-picker-input" />
             </button>
           </div>
         </div>
-
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-left"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-left"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-center"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group po-button-group-button-selected">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-right"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-justify"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-center"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-right"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-justify"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-list"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-list"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-link"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-link"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon po-icon-picture"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-picture"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
       </div>
       <!-- PO-RICH-TEXT-TOOLBAR - Final -->
@@ -372,86 +454,128 @@
       <!-- PO-RICH-TEXT-TOOLBAR - Início -->
       <div class="po-rich-text-toolbar">
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-bold"></span>
-              </button>
+          <po-button-group p-toggle="multiple">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-button-default po-text-ellipsis po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-bold"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-italic"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group po-button-group-button-selected">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-underline"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-italic"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-underline"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
-            <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button">
-              <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" />
+            <button
+              class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+              tabindex="-1"
+            >
+              <input type="color" class="po-rich-text-toolbar-color-picker-input" />
             </button>
           </div>
         </div>
-
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-left"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-left"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-center"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-right"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group po-button-group-button-selected">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-justify"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-center"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-right"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-justify"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-list"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-list"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-link"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-link"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon po-icon-picture"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-picture"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
       </div>
       <!-- PO-RICH-TEXT-TOOLBAR - Final -->
@@ -485,86 +609,128 @@
       <!-- PO-RICH-TEXT-TOOLBAR - Início -->
       <div class="po-rich-text-toolbar">
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-bold"></span>
-              </button>
+          <po-button-group p-toggle="multiple">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-button-default po-text-ellipsis po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-bold"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-italic"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-underline"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-italic"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-underline"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
-            <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button">
-              <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" />
+            <button
+              class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+              tabindex="-1"
+            >
+              <input type="color" class="po-rich-text-toolbar-color-picker-input" />
             </button>
           </div>
         </div>
-
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-left"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-left"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-center"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-right"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-justify"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-center"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-right"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-justify"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-list"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group po-button-group-button-selected">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-list"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-link"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-link"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon po-icon-picture"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-picture"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
       </div>
       <!-- PO-RICH-TEXT-TOOLBAR - Final -->
@@ -593,90 +759,128 @@
       <!-- PO-RICH-TEXT-TOOLBAR - Início -->
       <div class="po-rich-text-toolbar">
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-bold"></span>
-              </button>
+          <po-button-group p-toggle="multiple">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-button-default po-text-ellipsis po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-bold"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-italic"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-underline"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-italic"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-underline"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
-            <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button">
-              <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" />
+            <button
+              class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+              tabindex="-1"
+            >
+              <input type="color" class="po-rich-text-toolbar-color-picker-input" />
             </button>
           </div>
         </div>
-
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-left"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-left"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-center"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-right"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-justify"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-center"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-right"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-justify"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-list"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-list"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-link"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-link"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button
-                type="button"
-                class="po-button po-text-ellipsis"
-                onClick="document.getElementsByClassName('po-modal')[0].style.display = 'block';"
-              >
-                <span class="po-icon po-icon po-icon-picture"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group po-button-group-button-selected">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-picture"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
       </div>
 
@@ -706,90 +910,128 @@
       <!-- PO-RICH-TEXT-TOOLBAR - Início -->
       <div class="po-rich-text-toolbar">
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-bold"></span>
-              </button>
+          <po-button-group p-toggle="multiple">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-button-default po-text-ellipsis po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-bold"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-italic"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-underline"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-italic"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-underline"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
-            <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button">
-              <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" />
+            <button
+              class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+              tabindex="-1"
+            >
+              <input type="color" class="po-rich-text-toolbar-color-picker-input" />
             </button>
           </div>
         </div>
-
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-left"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-left"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-center"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-right"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-justify"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-center"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-right"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-justify"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-list"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-list"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-link"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-link"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button
-                type="button"
-                class="po-button po-text-ellipsis"
-                onClick="document.getElementsByClassName('po-modal')[1].style.display = 'block';"
-              >
-                <span class="po-icon po-icon po-icon-picture"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group po-button-group-button-selected">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-picture"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
       </div>
 
@@ -821,90 +1063,128 @@
       <!-- PO-RICH-TEXT-TOOLBAR - Início -->
       <div class="po-rich-text-toolbar">
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-bold"></span>
-              </button>
+          <po-button-group p-toggle="multiple">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-button-default po-text-ellipsis po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-bold"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-italic"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-underline"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-italic"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-underline"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
-            <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button">
-              <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" />
+            <button
+              class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+              tabindex="-1"
+            >
+              <input type="color" class="po-rich-text-toolbar-color-picker-input" />
             </button>
           </div>
         </div>
-
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-left"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group po-button-group-button-selected">
+                <button
+                  type="button"
+                  class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-left"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-center"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-right"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-justify"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-center"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-right"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-justify"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-list"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-list"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-link"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-link"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group po-button-group-button">
-              <button
-                type="button"
-                class="po-button po-text-ellipsis"
-                onClick="document.getElementsByClassName('po-modal')[1].style.display = 'block';"
-              >
-                <span class="po-icon po-icon po-icon-picture"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-picture"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
       </div>
 
@@ -936,90 +1216,128 @@
       <!-- PO-RICH-TEXT-TOOLBAR - Início -->
       <div class="po-rich-text-toolbar">
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-bold"></span>
-              </button>
+          <po-button-group p-toggle="multiple">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-button-default po-text-ellipsis po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-bold"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-italic"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-underline"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-italic"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-underline"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
-            <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button">
-              <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" />
+            <button
+              class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+              tabindex="-1"
+            >
+              <input type="color" class="po-rich-text-toolbar-color-picker-input" />
             </button>
           </div>
         </div>
-
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-left"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-left"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group po-button-group-button-selected">
+                <button class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-center"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-right"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-justify"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-center"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-right"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-justify"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-list"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-list"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-link"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-link"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button
-                type="button"
-                class="po-button po-text-ellipsis"
-                onClick="document.getElementsByClassName('po-modal')[1].style.display = 'block';"
-              >
-                <span class="po-icon po-icon po-icon-picture"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-picture"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
       </div>
 
@@ -1051,90 +1369,128 @@
       <!-- PO-RICH-TEXT-TOOLBAR - Início -->
       <div class="po-rich-text-toolbar">
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-bold"></span>
-              </button>
+          <po-button-group p-toggle="multiple">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-button-default po-text-ellipsis po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-bold"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-italic"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-underline"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-italic"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-underline"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
-            <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button">
-              <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" />
+            <button
+              class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+              tabindex="-1"
+            >
+              <input type="color" class="po-rich-text-toolbar-color-picker-input" />
             </button>
           </div>
         </div>
-
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-left"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-left"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-center"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group po-button-group-button-selected">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-right"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-justify"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-center"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-right"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-justify"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-list"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-list"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-link"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-link"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button
-                type="button"
-                class="po-button po-text-ellipsis"
-                onClick="document.getElementsByClassName('po-modal')[1].style.display = 'block';"
-              >
-                <span class="po-icon po-icon po-icon-picture"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-picture"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
       </div>
       <!-- PO-RICH-TEXT-TOOLBAR - Final -->
@@ -1165,86 +1521,128 @@
       <!-- PO-RICH-TEXT-TOOLBAR - Início -->
       <div class="po-rich-text-toolbar">
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-bold"></span>
-              </button>
+          <po-button-group p-toggle="multiple">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-button-default po-text-ellipsis po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-bold"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-italic"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-underline"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-italic"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-text-underline"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
-            <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button">
-              <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" />
+            <button
+              class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+              tabindex="-1"
+            >
+              <input type="color" class="po-rich-text-toolbar-color-picker-input" />
             </button>
           </div>
         </div>
-
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-left"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-left"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-center"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-right"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-justify"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-center"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-right"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-align-justify"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-list"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm po-rich-text-toolbar-color-picker-button"
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-list"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon-link"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group po-button-group-button-selected">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-link"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis">
-                <span class="po-icon po-icon po-icon-picture"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-picture"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
       </div>
 
@@ -1280,86 +1678,166 @@
       <!-- PO-RICH-TEXT-TOOLBAR - Início -->
       <div class="po-rich-text-toolbar">
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis" disabled>
-                <span class="po-icon po-icon-text-bold"></span>
-              </button>
+          <po-button-group p-toggle="multiple">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-button-default po-text-ellipsis po-button-sm"
+                  disabled
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-bold"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm"
+                  disabled
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-italic"></i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm"
+                  disabled
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-text-underline"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis" disabled>
-                <span class="po-icon po-icon-text-italic"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis" disabled>
-                <span class="po-icon po-icon-text-underline"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
           <div class="po-rich-text-toolbar-color-picker-container">
-            <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button" disabled>
-              <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" disabled />
+            <button
+              class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+              disabled
+              tabindex="-1"
+            >
+              <input type="color" class="po-rich-text-toolbar-color-picker-input" />
             </button>
           </div>
         </div>
-
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group po-button-group-button-selected">
-              <button type="button" class="po-button po-text-ellipsis" disabled>
-                <span class="po-icon po-icon-align-left"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                  disabled
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-left"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button class="po-button po-text-ellipsis po-button-default po-button-sm" disabled tabindex="-1">
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-center"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm"
+                  disabled
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-right"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm"
+                  disabled
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i class="po-icon po-icon-align-justify"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis" disabled>
-                <span class="po-icon po-icon-align-center"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis" disabled>
-                <span class="po-icon po-icon-align-right"></span>
-              </button>
-            </div>
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis" disabled>
-                <span class="po-icon po-icon-align-justify"></span>
-              </button>
-            </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis" disabled>
-                <span class="po-icon po-icon-list"></span>
-              </button>
+          <po-button-group p-toggle="single">
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm po-rich-text-toolbar-color-picker-button"
+                  disabled
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-list"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis" disabled>
-                <span class="po-icon po-icon-link"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm"
+                  disabled
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-link"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
 
         <div class="po-rich-text-toolbar-button-align">
-          <div class="po-button-group-container">
-            <div class="po-sm-12 po-button-group">
-              <button type="button" class="po-button po-text-ellipsis" disabled>
-                <span class="po-icon po-icon po-icon-picture"></span>
-              </button>
+          <po-button-group>
+            <div class="po-button-group-container">
+              <po-button class="po-sm-12 po-button-group">
+                <button
+                  type="button"
+                  class="po-button po-text-ellipsis po-button-default po-button-sm"
+                  disabled
+                  tabindex="-1"
+                >
+                  <po-icon class="po-button-icon">
+                    <i aria-hidden="true" class="po-icon po-icon-picture"> </i>
+                  </po-icon>
+                </button>
+              </po-button>
             </div>
-          </div>
+          </po-button-group>
         </div>
       </div>
       <!-- PO-RICH-TEXT-TOOLBAR - Final -->
@@ -1389,86 +1867,128 @@
         <!-- PO-RICH-TEXT-TOOLBAR - Início -->
         <div class="po-rich-text-toolbar">
           <div class="po-rich-text-toolbar-button-align">
-            <div class="po-button-group-container">
-              <div class="po-sm-12 po-button-group">
-                <button type="button" class="po-button po-text-ellipsis">
-                  <span class="po-icon po-icon-text-bold"></span>
-                </button>
+            <po-button-group p-toggle="multiple">
+              <div class="po-button-group-container">
+                <po-button class="po-sm-12 po-button-group">
+                  <button type="button" class="po-button po-button-default po-text-ellipsis po-button-sm" tabindex="-1">
+                    <po-icon class="po-button-icon">
+                      <i aria-hidden="true" class="po-icon po-icon-text-bold"></i>
+                    </po-icon>
+                  </button>
+                </po-button>
+                <po-button class="po-sm-12 po-button-group">
+                  <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                    <po-icon class="po-button-icon">
+                      <i aria-hidden="true" class="po-icon po-icon-text-italic"></i>
+                    </po-icon>
+                  </button>
+                </po-button>
+                <po-button class="po-sm-12 po-button-group">
+                  <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                    <po-icon class="po-button-icon">
+                      <i aria-hidden="true" class="po-icon po-icon-text-underline"> </i>
+                    </po-icon>
+                  </button>
+                </po-button>
               </div>
-              <div class="po-sm-12 po-button-group">
-                <button type="button" class="po-button po-text-ellipsis">
-                  <span class="po-icon po-icon-text-italic"></span>
-                </button>
-              </div>
-              <div class="po-sm-12 po-button-group">
-                <button type="button" class="po-button po-text-ellipsis">
-                  <span class="po-icon po-icon-text-underline"></span>
-                </button>
-              </div>
-            </div>
+            </po-button-group>
           </div>
 
           <div class="po-rich-text-toolbar-button-align">
             <div class="po-rich-text-toolbar-color-picker-container">
-              <button class="po-button po-text-ellipsis po-rich-text-toolbar-color-picker-button">
-                <input class="po-rich-text-toolbar-color-picker-input" type="color" value="#000000" />
+              <button
+                class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                tabindex="-1"
+              >
+                <input type="color" class="po-rich-text-toolbar-color-picker-input" />
               </button>
             </div>
           </div>
-
           <div class="po-rich-text-toolbar-button-align">
-            <div class="po-button-group-container">
-              <div class="po-sm-12 po-button-group po-button-group-button-selected">
-                <button type="button" class="po-button po-text-ellipsis">
-                  <span class="po-icon po-icon-align-left"></span>
-                </button>
+            <po-button-group p-toggle="single">
+              <div class="po-button-group-container">
+                <po-button class="po-sm-12 po-button-group">
+                  <button
+                    type="button"
+                    class="po-button po-button-default po-button-sm po-text-ellipsis po-rich-text-toolbar-color-picker-button"
+                    tabindex="-1"
+                  >
+                    <po-icon class="po-button-icon">
+                      <i class="po-icon po-icon-align-left"> </i>
+                    </po-icon>
+                  </button>
+                </po-button>
+
+                <po-button class="po-sm-12 po-button-group">
+                  <button class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                    <po-icon class="po-button-icon">
+                      <i class="po-icon po-icon-align-center"> </i>
+                    </po-icon>
+                  </button>
+                </po-button>
+
+                <po-button class="po-sm-12 po-button-group">
+                  <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                    <po-icon class="po-button-icon">
+                      <i class="po-icon po-icon-align-right"> </i>
+                    </po-icon>
+                  </button>
+                </po-button>
+                <po-button class="po-sm-12 po-button-group">
+                  <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                    <po-icon class="po-button-icon">
+                      <i class="po-icon po-icon-align-justify"> </i>
+                    </po-icon>
+                  </button>
+                </po-button>
               </div>
-              <div class="po-sm-12 po-button-group">
-                <button type="button" class="po-button po-text-ellipsis">
-                  <span class="po-icon po-icon-align-center"></span>
-                </button>
-              </div>
-              <div class="po-sm-12 po-button-group">
-                <button type="button" class="po-button po-text-ellipsis">
-                  <span class="po-icon po-icon-align-right"></span>
-                </button>
-              </div>
-              <div class="po-sm-12 po-button-group">
-                <button type="button" class="po-button po-text-ellipsis">
-                  <span class="po-icon po-icon-align-justify"></span>
-                </button>
-              </div>
-            </div>
+            </po-button-group>
           </div>
 
           <div class="po-rich-text-toolbar-button-align">
-            <div class="po-button-group-container">
-              <div class="po-sm-12 po-button-group">
-                <button type="button" class="po-button po-text-ellipsis">
-                  <span class="po-icon po-icon-list"></span>
-                </button>
+            <po-button-group p-toggle="single">
+              <div class="po-button-group-container">
+                <po-button class="po-sm-12 po-button-group">
+                  <button
+                    type="button"
+                    class="po-button po-text-ellipsis po-button-default po-button-sm po-rich-text-toolbar-color-picker-button"
+                    tabindex="-1"
+                  >
+                    <po-icon class="po-button-icon">
+                      <i aria-hidden="true" class="po-icon po-icon-list"> </i>
+                    </po-icon>
+                  </button>
+                </po-button>
               </div>
-            </div>
+            </po-button-group>
           </div>
 
           <div class="po-rich-text-toolbar-button-align">
-            <div class="po-button-group-container">
-              <div class="po-sm-12 po-button-group">
-                <button type="button" class="po-button po-text-ellipsis">
-                  <span class="po-icon po-icon-link"></span>
-                </button>
+            <po-button-group>
+              <div class="po-button-group-container">
+                <po-button class="po-sm-12 po-button-group">
+                  <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                    <po-icon class="po-button-icon">
+                      <i aria-hidden="true" class="po-icon po-icon-link"> </i>
+                    </po-icon>
+                  </button>
+                </po-button>
               </div>
-            </div>
+            </po-button-group>
           </div>
 
           <div class="po-rich-text-toolbar-button-align">
-            <div class="po-button-group-container">
-              <div class="po-sm-12 po-button-group">
-                <button type="button" class="po-button po-text-ellipsis">
-                  <span class="po-icon po-icon po-icon-picture"></span>
-                </button>
+            <po-button-group>
+              <div class="po-button-group-container">
+                <po-button class="po-sm-12 po-button-group">
+                  <button type="button" class="po-button po-text-ellipsis po-button-default po-button-sm" tabindex="-1">
+                    <po-icon class="po-button-icon">
+                      <i aria-hidden="true" class="po-icon po-icon-picture"> </i>
+                    </po-icon>
+                  </button>
+                </po-button>
               </div>
-            </div>
+            </po-button-group>
           </div>
         </div>
         <!-- PO-RICH-TEXT-TOOLBAR - Final -->

@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [6.12.0](https://github.com/po-ui/po-style/compare/v6.11.0...v6.12.0) (2022-05-30)
+
+
+### Features
+
+* **table:** adiciona po-checkbox na po-table ([7b84ff8](https://github.com/po-ui/po-style/commit/7b84ff8ebbebedfe296eb3d88639705cb4482d1c))
+* **table:** implementa virtual scroll ([b93b3a2](https://github.com/po-ui/po-style/commit/b93b3a27a4ae34b85ecb501a04c20d6703205643))
+* **toaster:** aplica estilo e acessibilidade ([a2ee025](https://github.com/po-ui/po-style/commit/a2ee025d4e67702258d3c856e492b4859cca218e))
+
+
+
 ## [6.11.0](https://github.com/po-ui/po-style/compare/v6.10.1...v6.11.0) (2022-05-16)
 
 

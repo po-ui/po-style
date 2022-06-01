@@ -63,6 +63,39 @@
       background-color: var(--color-button-background-color-disabled);
       cursor: not-allowed;
     }
+
+    &.po-button-danger {
+      color: var(--color-button-color-danger);
+      background-color: var(--color-button-background-color-danger);
+      border-color: var(--color-button-color-danger);
+
+      &:enabled:hover {
+        background-color: var(--color-button-background-color-danger-hover);
+        border-color: var(--color-button-border-danger-hover);
+
+        color: var(--color-button-color-danger-hover);
+        cursor: pointer;
+      }
+
+      &:enabled:active {
+        background-color: var(--color-button-background-color-danger-pressed);
+
+        border-color: var(--color-button-border-danger-pressed);
+        color: var(--color-button-color-danger-pressed);
+        outline-color: var(--color-outline-focused);
+        outline-width: 0.25em;
+        outline-style: solid;
+        outline-offset: 0.125em;
+        cursor: pointer;
+      }
+
+      &:disabled {
+        color: var(--color-button-color-disabled);
+        border-color: var(--color-button-border-disabled);
+        background-color: var(--color-button-background-color-disabled);
+        cursor: not-allowed;
+      }
+    }
   }
 
   &-primary {
@@ -95,40 +128,24 @@
       color: var(--color-button-color-primary-disabled);
       cursor: not-allowed;
     }
-  }
 
-  &-danger {
-    color: var(--color-button-color-danger);
-    background-color: var(--color-button-background-color-danger);
+    &.po-button-danger {
+      background-color: var(--color-button-primary-background-color-danger);
+      border-color: transparent;
 
-    border-color: var(--color-button-color-danger);
+      &:enabled:hover {
+        background-color: var(--color-button-primary-background-color-danger-hover);
+      }
 
-    &:hover {
-      background-color: var(--color-button-background-color-danger-hover);
-      border-color: var(--color-button-border-danger-hover);
+      &:enabled:active {
+        background-color: var(--color-button-primary-background-color-danger-pressed);
+      }
 
-      color: var(--color-button-color-danger-hover);
-      cursor: pointer;
-    }
-
-    &:enabled:active {
-      background-color: var(--color-button-background-color-danger-pressed);
-
-      border-color: var(--color-button-border-danger-pressed);
-      color: var(--color-button-color-danger-pressed);
-      outline-color: var(--color-outline-focused);
-      outline-width: 0.25em;
-      outline-style: solid;
-      outline-offset: 0.125em;
-      cursor: pointer;
-    }
-
-    &:disabled {
-      color: var(--color-button-color-danger-disabled);
-      border-color: var(--color-button-border-danger-disabled);
-      cursor: not-allowed;
-
-      background-color: var(--color-button-background-color-danger-disabled);
+      &:disabled {
+        background-color: var(--color-button-background-color-primary-disabled);
+        color: var(--color-button-color-primary-disabled);
+        cursor: not-allowed;
+      }
     }
   }
 
@@ -198,10 +215,6 @@
 
 .po-button .po-button-icon ~ .po-button-label {
   padding-left: 4px;
-}
-
-.po-button-loading-icon .po-loading-icon {
-  top: 0.1rem;
 }
 
 .po-button .po-button-icon .po-icon,

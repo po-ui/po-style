@@ -234,6 +234,9 @@
 
   --color-feedback-info-base: #23489f;
 
+  /* Background do Feedback de erro */
+  --color-feedback-negative-darker: #72211d;
+
   /* Background disclaimer danger */
   --color-danger-dark-5: #9b2d27;
 
@@ -376,8 +379,16 @@
 
   --color-button-background-color-primary-disabled: var(--color-neutral-light-60);
   --color-button-color-primary-disabled: var(--color-neutral-dark-70);
+
   /**
-   * Button Danger
+   * Button Danger primary
+  */
+  --color-button-primary-background-color-danger: var(--color-danger-dark-5);
+  --color-button-primary-background-color-danger-hover: var(--color-feedback-negative-darker);
+  --color-button-primary-background-color-danger-pressed: var(--color-danger-dark-40);
+
+  /**
+   * Button Danger secondary
   */
   --color-button-background-color-danger: var(--color-transparent);
   --color-button-border-danger: var(--color-danger-dark-5);

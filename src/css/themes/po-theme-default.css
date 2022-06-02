@@ -59,6 +59,7 @@
  * Page Login..................variáveis do Page Login.
  * Popover.....................variáveis do Popover.
  * Popup.......................variáveis do Popup.
+ * Radio.......................variáveis do Radio.
  * Radio Group.................variáveis do Radio Group.
  * Rich Text...................variáveis do Rich Text.
  * Select......................variáveis do Select.
@@ -964,6 +965,23 @@
   --color-progress-bar-background-color-default: var(--color-primary);
   --color-progress-bar-background-color-success: var(--color-success);
   --color-progress-bar-background-color-error: var(--color-danger);
+
+  /*------------------------------------*\
+    RADIO
+  \*------------------------------------*/
+
+  --color-radio-background-color: var(--color-white);
+  --color-radio-background-color-active: var(--color-secondary);
+  --color-radio-background-color-disabled: var(--color-neutral-light-60);
+  --color-radio-box-shadow-color-focusable: var(--color-secondary-dark-80);
+
+  --color-radio-border-input: var(--color-neutral-dark-70);
+  --color-radio-border-input-active: var(--color-secondary);
+  --color-radio-border-input-disabled: var(--color-neutral-dark-70);
+  --color-radio-border-input-invalid: var(--danger-color);
+  --color-radio-hover-active: var(--color-secondary-light-20);
+
+  --color-radio-color-active: var(--color-secondary);
 
   /*------------------------------------*\
     RADIO-GROUP

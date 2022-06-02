@@ -8,6 +8,7 @@
 @import './po-input/po-input.css';
 @import './po-lookup/po-lookup.css';
 @import './po-multiselect/po-multiselect.css';
+@import './po-radio/po-radio.css';
 @import './po-radio-group/po-radio-group.css';
 @import './po-rich-text';
 @import './po-select/po-select.css';

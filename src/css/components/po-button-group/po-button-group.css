@@ -13,6 +13,7 @@
 
 .po-button-group-container .po-button-group .po-button {
   border-radius: 0;
+  white-space: nowrap;
 }
 
 .po-button-group-container .po-button-group:first-child .po-button {

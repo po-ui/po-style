@@ -91,14 +91,49 @@ po-table-column-manager .po-popover .po-popover-content {
   outline: dashed 2px var(--color-table-column-manager-outline-color-focus);
 }
 
+.po-container-arrows-columns-manager {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  margin-left: auto;
+}
+
+.po-container-icons-arrows-columns-manager {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0 1.5px;
+  margin-left: auto;
+}
+
+.po-container-icons-arrows-columns-manager .po-icon {
+  font-size: 25px;
+}
+
+.po-table-column-manager-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.po-container-icons-arrows-columns-manager .po-button,
+.po-container-icons-arrows-columns-manager .po-button:not(.po-button-sm) {
+  padding: 0 !important;
+}
+
 @media screen and (max-width: 768px) {
   .po-table-column-manager-body {
     max-height: 144px;
+  }
+  .po-container-icons-arrows-columns-manager {
+    padding: 0;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1366px) {
   .po-table-column-manager-body {
     max-height: 272px;
+  }
+
+  .po-container-icons-arrows-columns-manager {
+    padding: 0;
   }
 }

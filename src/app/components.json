@@ -67,6 +67,7 @@
       { "path": "./css/components/po-popover/po-popover.html", "title": "Po Popover" },
       { "path": "./css/components/po-popup/po-popup.html", "title": "Po Popup" },
       { "path": "./css/components/po-progress/po-progress.html", "title": "Po Progress" },
+      { "path": "./css/components/po-field/po-radio/po-radio.html", "title": "Po Radio" },
       { "path": "./css/components/po-field/po-radio-group/po-radio-group.html", "title": "Po Radio Group" },
       { "path": "./css/components/po-field/po-rich-text/po-rich-text.html", "title": "Po Rich Text" },
       { "path": "./css/components/po-field/po-select/po-select.html", "title": "Po Select" },

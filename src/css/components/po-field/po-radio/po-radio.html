@@ -1,0 +1,155 @@
+<style>
+  .container {
+    margin-top: 8px;
+  }
+
+  .table-sample-po-radio td,
+  .table-sample-po-checkbox-group th {
+    padding: 8px;
+  }
+
+  .table-sample-po-radio th,
+  .table-sample-po-radio td:first-child {
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
+
+<article>
+  <section>
+    <div class="container">
+      <h4>Estados do po-radio</h4>
+
+      <table class="table-sample-po-radio">
+        <tr>
+          <th></th>
+          <th>Checked</th>
+          <th>Unchecked</th>
+        </tr>
+        <tr>
+          <td>Enabled</td>
+          <td>
+            <div class="po-radio-container">
+              <input type="radio" class="po-radio" id="radioElement" size="medium" name="radio" aria-checked="true" />
+              <label class="po-radio-label">Enable Checked</label>
+            </div>
+          </td>
+          <td>
+            <div class="po-radio-container">
+              <input type="radio" class="po-radio" id="radioElement" size="medium" name="radio" />
+              <label class="po-radio-label">Enable Unchecked</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Disabled</td>
+          <td>
+            <div class="po-radio-container">
+              <input
+                type="radio"
+                class="po-radio"
+                id="radioElement"
+                size="medium"
+                name="radio"
+                aria-checked="true"
+                aria-disabled="true"
+                disabled
+              />
+              <label class="po-radio-label po-radio-label-disabled">Disabled Checked</label>
+            </div>
+          </td>
+          <td>
+            <div class="po-radio-container">
+              <input
+                type="radio"
+                class="po-radio"
+                id="radioElement"
+                size="medium"
+                name="radio"
+                aria-disabled="true"
+                disabled
+              />
+              <label class="po-radio-label po-radio-label-disabled">Disabled Unchecked</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Enabled Large</td>
+          <td>
+            <div class="po-radio-container">
+              <input
+                type="radio"
+                class="po-radio po-radio-large"
+                id="radioElement"
+                size="medium"
+                name="radio"
+                aria-checked="true"
+              />
+              <label class="po-radio-label">Enable Checked</label>
+            </div>
+          </td>
+          <td>
+            <div class="po-radio-container">
+              <input type="radio" class="po-radio po-radio-large" id="radioElement" size="medium" name="radio" />
+              <label class="po-radio-label">Enable Unchecked</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Disabled Large</td>
+          <td>
+            <div class="po-radio-container">
+              <input
+                type="radio"
+                class="po-radio po-radio-large"
+                id="radioElement"
+                size="medium"
+                name="radio"
+                aria-checked="true"
+                aria-disabled="true"
+                disabled
+              />
+              <label class="po-radio-label po-radio-label-disabled">Disabled Checked</label>
+            </div>
+          </td>
+          <td>
+            <div class="po-radio-container">
+              <input
+                type="radio"
+                class="po-radio po-radio-large"
+                id="radioElement"
+                size="medium"
+                name="radio"
+                aria-disabled="true"
+                disabled
+              />
+              <label class="po-radio-label po-radio-label-disabled">Disabled Unchecked</label>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div class="container">
+        <h4>Po Radio Group com label contendo muitos caracteres</h4>
+        <div class="po-radio-container">
+          <input type="radio" class="po-radio" id="radioElement" size="medium" name="radio" />
+          <label class="po-radio-label"
+            >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat."</label
+          >
+        </div>
+        <div class="po-radio-container">
+          <input type="radio" class="po-radio" id="radioElement" size="medium" name="radio" aria-checked="true" />
+          <label class="po-radio-label"
+            >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum."</label
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</article>

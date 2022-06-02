@@ -1,0 +1,133 @@
+:root {
+  --border-width-none: none;
+  --border-width-sm: 1px;
+  --border-width-md: 2px;
+  --border-width-lg: 4px;
+  --border-width-xl: 8px;
+
+  --width-md: 24px;
+  --width-lg: 32px;
+
+  --offset-checked: 5px;
+
+  --circle-width-md: calc(var(--width-md) - 12px);
+  --circle-width-lg: calc(var(--width-lg) - 12px);
+
+  --background-radial-md: radial-gradient(
+    var(--circle-width-md) circle at 10px 10px,
+    var(--color-radio-background-color-active) 50%,
+    transparent 57%
+  );
+
+  --background-radial-lg: radial-gradient(
+    var(--circle-width-lg) circle at 14px 14px,
+    var(--color-radio-background-color-active) 50%,
+    transparent 54.2%
+  );
+
+  --background-radial-md-disabled: radial-gradient(
+    var(--circle-width-md) circle at 10px 10px,
+    var(--color-radio-border-input-disabled) 50%,
+    transparent 57%
+  );
+
+  --background-radial-lg-disabled: radial-gradient(
+    var(--circle-width-lg) circle at 14px 14px,
+    var(--color-radio-border-input-disabled) 50%,
+    transparent 54.2%
+  );
+}
+
+.po-radio-container {
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  min-width: var(--width-md);
+  min-height: var(--width-md);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-width: 2px;
+}
+.po-radio {
+  background-color: var(--color-radio-background-color);
+  border-color: var(--color-radio-border-input);
+  -webkit-appearance: none;
+  appearance: none;
+  align-self: flex-start;
+  border-width: var(--border-width-md);
+  border-style: solid;
+  border-radius: 100%;
+  background-clip: content-box;
+  cursor: pointer;
+  margin: 0;
+  width: var(--width-md);
+  height: var(--width-md);
+  min-width: var(--width-md);
+  min-height: var(--width-md);
+}
+
+.po-radio-large {
+  width: var(--width-lg);
+  height: var(--width-lg);
+  min-width: var(--width-lg);
+  min-height: var(--width-lg);
+}
+
+.po-radio:hover {
+  box-shadow: 0 0 0 var(--border-width-lg) var(--color-radio-hover-active);
+  border-color: var(--color-radio-box-shadow-color-focusable);
+}
+
+[aria-disabled='true'].po-radio,
+[aria-disabled='true'].po-radio label {
+  cursor: not-allowed;
+}
+
+[aria-disabled='true'].po-radio {
+  box-shadow: none;
+}
+
+[aria-checked='true'].po-radio {
+  background: var(--background-radial-md);
+  background-color: var(--color-radio-background-color);
+  border-color: var(--color-radio-color-active);
+  padding: 4px;
+}
+
+[aria-checked='true'].po-radio-large {
+  background: var(--background-radial-lg);
+  background-color: var(--color-radio-background-color);
+}
+
+[aria-disabled='true'].po-radio {
+  background-color: var(--color-radio-background-color-disabled);
+  border-color: var(--color-radio-border-input-disabled);
+}
+
+[aria-checked='true'][aria-disabled='true'].po-radio {
+  background: var(--background-radial-md-disabled);
+  background-color: var(--color-radio-background-color-disabled);
+}
+
+[aria-disabled='true'][aria-checked='true'].po-radio-large {
+  background: var(--background-radial-lg-disabled);
+  background-color: var(--color-radio-background-color-disabled);
+}
+
+.po-radio:focus-visible {
+  outline-color: var(--color-radio-box-shadow-color-focusable);
+
+  outline-width: var(--border-width-lg);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.po-radio-label {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.po-radio-label-disabled {
+  cursor: not-allowed;
+}

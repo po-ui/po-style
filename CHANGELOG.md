@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.12.1](https://github.com/po-ui/po-style/compare/v6.12.0...v6.12.1) (2022-06-06)
+
+
+### Bug Fixes
+
+* **button-group:** corrige quebra de linha ([9c2d683](https://github.com/po-ui/po-style/commit/9c2d6839b446f56ed70a63d643c32aa76f4f2c3c))
+
+
+
 # [6.12.0](https://github.com/po-ui/po-style/compare/v6.11.0...v6.12.0) (2022-05-30)
 
 

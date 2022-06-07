@@ -180,10 +180,6 @@
   margin-left: 0;
 }
 
-.po-checkbox-group-input + .po-checkbox-group-label.po-list-view-selectable-label:before {
-  position: static;
-}
-
 @media screen and (max-width: 1366px) {
   .po-list-view {
     margin-top: 8px;

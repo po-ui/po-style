@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [6.13.0](https://github.com/po-ui/po-style/compare/v6.12.1...v6.13.0) (2022-06-13)
+
+
+### Features
+
+* **button:** inclui estilo kind `primary danger` ([34cfb3b](https://github.com/po-ui/po-style/commit/34cfb3b6fc9d0fc8874dc2df968a6191cc14fc61))
+* **list-view:** adiciona po-checkbox no `po-list-view` ([7c71045](https://github.com/po-ui/po-style/commit/7c71045f67d16cfe672d6dcdf6d5d20581aab0bd))
+* **radio:** cria novo componente `po-radio` ([f644c72](https://github.com/po-ui/po-style/commit/f644c72d7010e710da78e0d4994fa9a0e363c3cc))
+* **table:** insere estilo das setas do gerenciador ([307d188](https://github.com/po-ui/po-style/commit/307d188b36267217b95d853d7ec351938d374dfb))
+
+
+
 ## [6.12.1](https://github.com/po-ui/po-style/compare/v6.12.0...v6.12.1) (2022-06-06)
 
 

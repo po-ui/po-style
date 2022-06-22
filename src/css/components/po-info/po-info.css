@@ -6,10 +6,6 @@
   --font-info-font-value: {
     @apply --font-text-large;
   }
-
-  --font-info-font-value-smaller: {
-    @apply --font-text;
-  }
 }
 
 .po-info {
@@ -63,10 +59,4 @@
 
 .po-info-link:active {
   color: var(--color-info-color-link-pressed);
-}
-
-@media screen and (max-width: 1366px) {
-  .po-info-value {
-    @apply --font-info-font-value-smaller;
-  }
 }

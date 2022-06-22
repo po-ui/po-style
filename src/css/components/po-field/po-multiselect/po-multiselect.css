@@ -5,10 +5,6 @@
   --font-multiselect-text: {
     @apply --font-text-large;
   }
-
-  --font-multiselect-text-small: {
-    @apply --font-text;
-  }
 }
 
 .po-multiselect-container {
@@ -203,32 +199,4 @@
 
 .po-multiselect-checkbox-input-indeterminate + .po-multiselect-checkbox-label:before {
   content: '\e939';
-}
-
-@media screen and (max-width: 1366px) {
-  .po-multiselect-item {
-    @apply --font-multiselect-text-small;
-    padding: 7px 8px;
-  }
-
-  .po-multiselect-input-auto {
-    min-height: 32px;
-    height: unset;
-  }
-
-  .po-multiselect-input-auto .po-multiselect-input-disclaimer,
-  .po-multiselect-input-static .po-multiselect-input-disclaimer {
-    padding: 2px;
-  }
-
-  .po-input.po-multiselect-input,
-  .po-input.po-multiselect-input.po-multiselect-input-static {
-    padding: 1px;
-    padding-right: 32px;
-  }
-
-  .po-multiselect-input-placeholder,
-  .po-multiselect-input-static .po-multiselect-input-placeholder {
-    padding: 2px 8px;
-  }
 }

@@ -277,7 +277,7 @@
 
 @media (max-width: 1366px) {
   .po-page-login-field-size {
-    width: calc(100% - 21px);
+    width: calc(100% - 29px);
   }
 
   .po-page-login-info-icon-container {
@@ -289,7 +289,7 @@
   }
 
   .po-page-login-password-popover-container {
-    width: 21px;
+    width: 29px;
   }
 
   .po-page-login-popover-container {
@@ -333,7 +333,7 @@
   }
 
   .po-page-login-password-popover-container {
-    width: 21px;
+    width: 29px;
   }
 }
 
@@ -361,7 +361,7 @@
   }
 
   .po-page-login-field-size {
-    width: calc(100% - 21px);
+    width: calc(100% - 29px);
   }
 
   .po-page-login-button.po-page-login-field-size {

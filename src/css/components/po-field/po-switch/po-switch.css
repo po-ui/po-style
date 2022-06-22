@@ -3,15 +3,8 @@
     @apply --font-text-large;
   }
 
-  --font-switch-text-smaller: {
-    @apply --font-text;
-  }
-
   --switch-container-height: 28px;
   --switch-container-width: 52px;
-
-  --switch-container-height-sm: 24px;
-  --switch-container-width-sm: 44px;
 }
 
 .po-switch-container {
@@ -106,41 +99,6 @@
 .po-switch-content {
   display: inline-block;
   margin-top: 8px;
-}
-
-@media screen and (max-width: 1366px) {
-  .po-switch-label {
-    @apply --font-switch-text-smaller;
-  }
-
-  .po-switch-button-off > .po-icon-close,
-  .po-switch-button-on > .po-icon-ok {
-    bottom: 2px;
-    font-size: 14px;
-    top: unset;
-  }
-
-  .po-switch-button-on {
-    left: 24px;
-  }
-
-  .po-switch-button {
-    height: 16px;
-    width: 16px;
-  }
-
-  .po-switch-container {
-    height: var(--switch-container-height-sm);
-    width: var(--switch-container-width-sm);
-  }
-
-  .po-switch-label {
-    top: unset;
-  }
-
-  .po-switch-content {
-    margin-top: 4px;
-  }
 }
 
 @media print {

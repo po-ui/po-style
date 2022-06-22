@@ -3,20 +3,12 @@
     @apply --font-text-large;
   }
 
-  --font-combo-text-smaller: {
-    @apply --font-text;
-  }
-
   --font-combo-group-title: {
     @apply --font-text-small;
   }
 
   --font-combo-text-bold: {
     @apply --font-text-bold;
-  }
-
-  --font-combo-text-sm-bold {
-    @apply --font-text-small-bold;
   }
 
   --shadow-combo-box-shadow-content: var(--shadow-card);
@@ -99,20 +91,4 @@ po-combo.ng-invalid.ng-dirty .po-input {
 .po-combo-no-data {
   @apply --font-combo-text-bold;
   padding: 36px 0;
-}
-
-@media screen and (max-width: 1366px) {
-  .po-combo-item {
-    @apply --font-combo-text-smaller;
-  }
-
-  .po-combo-item-title,
-  .po-combo-item {
-    padding: 7px 8px;
-  }
-
-  .po-combo-no-data {
-    @apply --font-combo-text-sm-bold;
-    padding: 40px 0;
-  }
 }

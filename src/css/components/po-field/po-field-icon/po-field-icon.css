@@ -2,10 +2,6 @@
   --font-field-icon: {
     @apply --font-subtitle;
   }
-
-  --font-field-icon-small {
-    @apply --font-text-large;
-  }
 }
 
 .po-field-icon-container-left,
@@ -64,18 +60,4 @@ po-password.ng-invalid.ng-dirty .po-field-icon,
 po-select.ng-invalid.ng-dirty .po-field-icon,
 po-url.ng-invalid.ng-dirty .po-field-icon {
   color: var(--color-field-icon-color-error) !important;
-}
-
-@media screen and (max-width: 1366px) {
-  .po-field-icon,
-  .po-field-icon-disabled {
-    @apply --font-field-icon-small;
-  }
-
-  .po-field-icon-container-left .po-field-icon > .po-icon,
-  .po-field-icon-container-left .po-field-icon > .po-fonts-icon,
-  .po-field-icon-container-left .po-field-icon > :first-child:not(.po-fonts-icon):not(.po-icon) {
-    vertical-align: middle;
-    line-height: 1.65rem;
-  }
 }

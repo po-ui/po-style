@@ -27,7 +27,7 @@
   padding-top: 3px;
   text-align: center;
   vertical-align: middle;
-  width: 20px;
+  width: 10px;
 }
 
 .po-datepicker-range-icon .po-icon-calendar {
@@ -63,7 +63,7 @@
 .po-datepicker-range-start-date {
   display: table-cell;
   vertical-align: middle;
-  width: 80px;
+  width: 90px;
 }
 
 .po-calendar-range-picker {
@@ -79,18 +79,4 @@ po-datepicker-range.ng-invalid.ng-dirty .po-input {
   border: 1px solid var(--color-datepicker-range-border-text-error) !important;
   color: var(--color-datepicker-range-color-text-error);
   outline: none;
-}
-
-@media screen and (min-width: 1367px) {
-  .po-datepicker-range-field {
-    padding: 0 8px 0 16px !important;
-  }
-
-  .po-datepicker-range-icon {
-    width: 28px;
-  }
-
-  .po-datepicker-range-start-date {
-    width: 90px;
-  }
 }

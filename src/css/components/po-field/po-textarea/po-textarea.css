@@ -3,10 +3,6 @@
     @apply --font-text-large;
   }
 
-  --font-textarea-text-smaller: {
-    @apply --font-text;
-  }
-
   --font-textarea-error-message: {
     @apply --font-text-bold;
   }
@@ -65,11 +61,4 @@
 .po-textarea::-webkit-scrollbar-thumb {
   background-color: var(--color-textarea-background-color-scrollbar);
   border-radius: 2px;
-}
-
-@media screen and (max-width: 1366px) {
-  .po-textarea {
-    @apply --font-textarea-text-smaller;
-    padding: 4px 8px;
-  }
 }

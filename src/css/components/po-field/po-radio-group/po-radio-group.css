@@ -1,9 +1,5 @@
 :root {
   --shadow-radio-group-input-default: var(--shadow-input);
-
-  --font-radio-group-label-smaller: {
-    @apply --font-text;
-  }
 }
 
 .po-radio-group-item {
@@ -66,26 +62,4 @@
 
 po-radio-group.ng-invalid.ng-dirty .po-radio-group-input + .po-radio-group-label:before {
   border: solid 1px var(--color-radio-group-border-color-input-error);
-}
-
-@media screen and (max-width: 1366px) {
-  .po-radio-group-item {
-    @apply --font-radio-group-label-smaller;
-    min-height: 32px;
-    padding: 4px 8px 4px 0;
-  }
-
-  .po-radio-group-input + .po-radio-group-label:before {
-    height: 18px;
-    top: 10px;
-    width: 18px;
-  }
-
-  .po-radio-group-input-checked + .po-radio-group-label:before {
-    line-height: 16px;
-  }
-
-  .po-radio-group-label {
-    margin-left: 32px;
-  }
 }

@@ -3,10 +3,6 @@
     @apply --font-text-large;
   }
 
-  --font-input-text-smaller: {
-    @apply --font-text;
-  }
-
   --shadow-input-box-shadow-input: var(--shadow-input);
 }
 
@@ -79,24 +75,4 @@ po-url.ng-invalid.ng-dirty .po-input {
 .po-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
-}
-
-@media screen and (max-width: 1366px) {
-  .po-input {
-    @apply --font-input-text-smaller;
-    height: 32px;
-    padding: 0 8px;
-  }
-
-  .po-input-icon-left {
-    padding-left: 32px;
-  }
-
-  .po-input-icon-right {
-    padding-right: 32px;
-  }
-
-  .po-input-double-icon-right {
-    padding-right: 52px !important;
-  }
 }

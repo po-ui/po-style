@@ -1,9 +1,5 @@
 :root {
   --shadow-checkbox-group-box-shadow-input: var(--shadow-input);
-
-  --font-checkbox-group-label-smaller: {
-    @apply --font-text;
-  }
 }
 
 .po-checkbox-group-item {
@@ -85,28 +81,4 @@ po-checkbox-group.ng-invalid.ng-dirty .po-checkbox-group-input + .po-checkbox-gr
 
 .po-checkbox-group-content {
   display: inline;
-}
-
-@media screen and (max-width: 1366px) {
-  .po-checkbox-group-item {
-    @apply --font-checkbox-group-label-smaller;
-    line-height: 20px;
-    min-height: 32px;
-    padding: 8px 8px 4px 0;
-  }
-
-  .po-checkbox-group-input + .po-checkbox-group-label:before {
-    height: 18px;
-    top: 10px;
-    width: 18px;
-  }
-
-  .po-checkbox-group-label {
-    margin-left: 26px;
-  }
-
-  .po-checkbox-group-input-checked + .po-checkbox-group-label:before,
-  .po-checkbox-group-input-indeterminate + .po-checkbox-group-label:before {
-    line-height: 16px;
-  }
 }

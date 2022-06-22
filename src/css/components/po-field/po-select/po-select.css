@@ -3,10 +3,6 @@
     @apply --font-text-large;
   }
 
-  --font-select-text-smaller: {
-    @apply --font-text;
-  }
-
   --shadow-select-box-shadow-button: var(--shadow-input);
   --shadow-select-box-shadow-content: var(--shadow-card);
 }
@@ -136,18 +132,4 @@
   position: absolute;
   width: 96%;
   z-index: 1;
-}
-
-@media screen and (max-width: 1366px) {
-  .po-select-button {
-    @apply --font-select-text-smaller;
-    height: 14px;
-    line-height: 16px;
-    padding: 8px 32px 8px 8px;
-  }
-
-  .po-select-item {
-    @apply --font-select-text-smaller;
-    padding: 8px;
-  }
 }

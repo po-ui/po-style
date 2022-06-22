@@ -227,35 +227,6 @@
   vertical-align: -0.1rem;
 }
 
-@media screen and (max-width: 1366px) {
-  .po-button,
-  .po-button:not(.po-button-sm) {
-    font-size: 0.875rem;
-    min-height: 2rem !important;
-    padding: 0 0.5rem;
-    line-height: 100%;
-  }
-
-  .po-button .po-button-icon:not(.po-button-loading-icon) ~ .po-button-label {
-    padding-left: 2px;
-  }
-
-  .po-button .po-button-icon::before {
-    display: inline-block;
-    overflow: hidden;
-  }
-
-  .po-button-loading-icon .po-loading-icon {
-    height: 12px;
-    width: 12px;
-  }
-
-  .po-button .po-button-icon .po-icon,
-  .po-button-loading-icon {
-    vertical-align: -0.1rem;
-  }
-}
-
 @media print {
   .po-button {
     print-color-adjust: exact;

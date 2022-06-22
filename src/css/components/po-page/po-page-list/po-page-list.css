@@ -101,10 +101,6 @@
     width: 100%;
   }
 
-  .po-page-list-filter-wrapper {
-    margin-top: -32px;
-  }
-
   .po-page-list-actions .po-button,
   .po-page-list-actions .po-dropdown {
     margin: 4px 4px 0 0;
@@ -119,7 +115,6 @@
   }
 
   .po-page-list-filter-search-link {
-    @apply --font-page-list-link-text-smaller;
     max-height: 32px;
   }
 }
@@ -136,11 +131,11 @@
   }
 
   .po-page-list-actions {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 
   .po-page-list-disclaimer-group {
-    margin-top: 48px;
+    margin-top: 56px;
   }
 
   .po-page-filter-content {

@@ -60,11 +60,12 @@ po-toaster {
 }
 
 .po-toaster-message {
-  padding: 1rem;
-
   @apply --font-toaster-message;
 
-  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   flex-grow: 1;
   flex-wrap: wrap;
   align-items: center;
@@ -74,14 +75,26 @@ po-toaster {
 
 .po-toaster-actions {
   padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  display: flex;
+  width: 100%;
+}
+
+.po-toaster-action {
+  display: flex;
+}
+
+.po-toaster-action po-button {
+  align-self: flex-start;
+}
+
+.po-toaster-close {
+  padding-top: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
 
   display: flex;
-}
-
-.po-toaster-actions po-button {
-  align-self: flex-start;
 }
 
 .po-toaster-divider {
@@ -92,7 +105,7 @@ po-toaster {
   width: auto;
 }
 
-.po-toaster-close po-icon {
+.po-toaster-button-close po-icon {
   @apply --font-toaster-icon;
 
   display: flex;
@@ -165,6 +178,28 @@ po-toaster {
 @media screen and (max-width: 960px) {
   .po-toaster {
     width: 90%;
+  }
+  .po-toaster-icon {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .po-toaster-message {
+    padding-bottom: 0rem;
+  }
+
+  .po-toaster-actions {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    display: inline-block;
+  }
+
+  .po-toaster-action {
+    display: inherit;
+  }
+  .po-toaster-action po-button {
+    float: right;
   }
 }
 

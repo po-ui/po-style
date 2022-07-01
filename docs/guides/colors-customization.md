@@ -87,9 +87,12 @@ usam o PO UI.
 `po-theme-default-variables.css` na pasta `node_modules/@po-ui/style/css`, você vai encontrar
 uma cópia exata do arquivo com todas as variáveis usadas pelo tema padrão.
 
+> Para customização do componenete `po-button` verificar [variáveis customizaveis][var-customized] na aba de customização.
+
 > Atenção: Para saber quais browsers dão suporte a variáveis você pode consultar a ferramenta 
 [Can I use][can-i-use].
 
 [button-black]: ./assets/graphics/theme/button-black.png
 [components-custom-colors]: ./assets/graphics/theme/components-custom-colors.png
 [can-i-use]: https://caniuse.com/#search=CSS%20Variables
+[var-customized]: https://doc.animaliads.io/docs/components/button/#live-demo

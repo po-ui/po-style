@@ -13,7 +13,6 @@ const rename = require('gulp-rename');
 const tap = require('gulp-tap');
 
 const apply = require('postcss-apply');
-const customProperties = require('postcss-custom-properties');
 const importCss = require('postcss-import');
 const nested = require('postcss-nested');
 
@@ -76,19 +75,7 @@ const buildThemeCss = modern =>
         file.contents = Buffer.from(contents, 'utf-8');
       })
     )
-    .pipe(
-      postcss([
-        importCss(),
-        apply(),
-        nested(),
-        customProperties({
-          preserve: false,
-          warnings: true
-        }),
-        autoprefixer(),
-        cssnano()
-      ])
-    )
+    .pipe(postcss([importCss(), apply(), nested(), autoprefixer(), cssnano()]))
     .pipe(rename(modern ? `css/po-theme-core.min.css` : `css/po-theme-default.min.css`))
     .on('error', err => {
       console.log(err.toString());

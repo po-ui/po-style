@@ -67,13 +67,6 @@
   padding-left: 28px;
 }
 
-.po-tree-view-item-header-checkbox .po-checkbox {
-  height: unset;
-  max-height: unset;
-  min-height: unset;
-  padding: 0;
-}
-
 .po-tree-view-item-header-checkbox .po-checkbox .po-checkbox-label:before {
   padding-left: 2px;
   top: 3px;

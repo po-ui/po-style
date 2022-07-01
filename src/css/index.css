@@ -1,3 +1,4 @@
+@import './themes/po-global-tokens.css';
 @import './themes/po-theme-${theme}.css';
 
 @import './commons';

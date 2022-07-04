@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [14.0.0-next.0](https://github.com/po-ui/po-style/compare/v6.14.0...14.0.0-next.0) (2022-07-04)
+
+
+### Code Refactoring
+
+* **components:** remove redimensionamentos conforme direcionamento para acessibilidade ([Ver mais](https://animaliads.notion.site/Bot-o-fb3a921e8ba54bd38b39758c24613368)) ([2669bec](https://github.com/po-ui/po-style/commit/2669bec0b95437ccaa5b7374e1e02d328a917eb5))
+
+
+### Features
+
+* **toaster:** implementa para pequenas resoluções ([843d5fe](https://github.com/po-ui/po-style/commit/843d5fef2fe3c0360656692e8f9b219f8bc7085b))
+
+* **tree-view:** ajusta estilo do `po-checkbox` ([44dfed0](https://github.com/po-ui/po-style/commit/44dfed0dd4be6303ebe9ff2b76830c9cd1ab64c7))
+
+
+### BREAKING CHANGES
+
+* **components:** removida a função @media screen
+
+Foi removida a função @media screen por questões de acessibilidade.
+([Ver mais](https://animaliads.notion.site/Bot-o-fb3a921e8ba54bd38b39758c24613368))
+
+
 ## [6.14.0](https://github.com/po-ui/po-style/compare/v6.13.1...v6.14.0) (2022-06-27)
 
 Compatibilidade com @po-ui/ng-components@6.14.0

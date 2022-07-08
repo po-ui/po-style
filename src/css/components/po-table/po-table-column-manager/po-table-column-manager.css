@@ -101,7 +101,7 @@ po-table-column-manager .po-popover .po-popover-content {
 .po-container-icons-arrows-columns-manager {
   display: flex;
   flex-direction: row;
-  padding: 10px 0 1.5px;
+  padding: 6px 0;
   margin-left: auto;
 }
 
@@ -116,24 +116,18 @@ po-table-column-manager .po-popover .po-popover-content {
 
 .po-container-icons-arrows-columns-manager .po-button,
 .po-container-icons-arrows-columns-manager .po-button:not(.po-button-sm) {
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {
   .po-table-column-manager-body {
     max-height: 144px;
   }
-  .po-container-icons-arrows-columns-manager {
-    padding: 0;
-  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1366px) {
   .po-table-column-manager-body {
     max-height: 272px;
-  }
-
-  .po-container-icons-arrows-columns-manager {
-    padding: 0;
   }
 }

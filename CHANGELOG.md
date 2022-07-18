@@ -2,13 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-# [14.0.0-rc.0](https://github.com/po-ui/po-style/compare/v14.0.0-next.0...v14.0.0-rc.0) (2022-07-11)
+# [14.0.0](https://github.com/po-ui/po-style/compare/v6.14.0...v14.0.0) (2022-07-18)
 
-Compatibilidade com @po-ui/ng-components@14.0.0-rc.0
 
-# [14.0.0-next.0](https://github.com/po-ui/po-style/compare/v6.14.0...14.0.0-next.0) (2022-07-04)
+### Bug Fixes
 
-Compatibilidade com @po-ui/ng-components@14.0.0-next.0
+* **table:** corrige quebra de colunas ([e2c105d](https://github.com/po-ui/po-style/commit/e2c105d3841f1197cf89d66866d2e6282d3719c5))
+
 
 ### Code Refactoring
 
@@ -16,6 +16,8 @@ Compatibilidade com @po-ui/ng-components@14.0.0-next.0
 
 
 ### Features
+
+* **button:** inclui global e brand tokens ([052e9f8](https://github.com/po-ui/po-style/commit/052e9f8ac9972501a99e0cbcd93550025f3ab100))
 
 * **toaster:** implementa para pequenas resoluções ([843d5fe](https://github.com/po-ui/po-style/commit/843d5fef2fe3c0360656692e8f9b219f8bc7085b))
 

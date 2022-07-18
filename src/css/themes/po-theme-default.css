@@ -391,37 +391,31 @@ po-button {
 
   /* danger */
   --text-color-danger: var(--color-neutral-light-00);
-  --color-button-danger: var(--color-danger-dark-5); /*Deprecated v16.x.x utilizar --color-feedback-negative-dark*/
+  --color-button-danger: var(--color-danger-dark-5);
   --color-danger-hover: var(--color-feedback-negative-darker);
-  --color-danger-pressed: var(--color-danger-dark-40); /*Deprecated v16.x.x utilizar --color-feedback-negative-darkest*/
-  --background-danger-hover: var(
-    --color-danger-light-20
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-lighter*/
-  --border-color-danger-hover: var(
-    --color-danger-dark-40
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-darkest*/
-  --background-danger-pressed: var(
-    --color-danger-light-05
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-light*/
+  --color-danger-pressed: var(--color-danger-dark-40);
+  --background-danger-hover: var(--color-danger-light-20);
+  --border-color-danger-hover: var(--color-danger-dark-40);
+  --background-danger-pressed: var(--color-danger-light-05);
   --background-color-button-danger: var(--color-transparent);
 
-  --text-color: var(--color-white); /*Deprecated v16.x.x utilizar --color-neutral-light-00*/
-  --color: var(--color-secondary); /*Deprecated v16.x.x utilizar --color-action-default*/
+  --text-color: var(--color-white);
+  --color: var(--color-secondary);
   --background-color: var(--color-transparent);
   --border-color: var(--color-transparent);
   --shadow: var(--shadow-none);
 
   /* hover */
   --color-hover: var(--color-action-hover);
-  --background-hover: var(--color-secondary-light-20); /*Deprecated v16.x.x utilizar --color-brand-01-lighter*/
-  --border-color-hover: var(--color-secondary-dark-80); /*Deprecated v16.x.x utilizar --color-brand-01-darkest)*/
+  --background-hover: var(--color-secondary-light-20);
+  --border-color-hover: var(--color-secondary-dark-80);
 
   /* focused */
-  --outline-color-focused: var(--color-outline-focused); /*Deprecated v16.x.x utilizar --color-action-focus*/
+  --outline-color-focused: var(--color-outline-focused);
 
   /* pressed */
   --color-pressed: var(--color-action-pressed);
-  --background-pressed: var(--color-secondary-light-40); /*Deprecated v16.x.x utilizar --color-brand-01-light*/
+  --background-pressed: var(--color-secondary-light-40);
 
   /* disabled */
   --text-color-disabled: var(--color-neutral-dark-70);

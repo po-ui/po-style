@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [14.1.0](https://github.com/po-ui/po-style/compare/v14.0.0...v14.1.0) (2022-07-25)
+
+
+### Bug Fixes
+
+* **rich-text:** corrige o alinhamento dos botões ([ffda8d4](https://github.com/po-ui/po-style/commit/ffda8d452f58291caee2e9aab174f5d436489334))
+
+
+
 # [14.0.0](https://github.com/po-ui/po-style/compare/v6.14.0...v14.0.0) (2022-07-18)
 
 

@@ -120,6 +120,10 @@ po-table-column-manager .po-popover .po-popover-content {
   padding: 0;
 }
 
+.po-checkbox-group-column-manager .po-checkbox-group-item {
+  padding: 0 2rem 2rem 0 !important;
+}
+
 @media screen and (max-width: 768px) {
   .po-table-column-manager-body {
     max-height: 144px;

@@ -8,11 +8,6 @@
     padding: 0 10px;
     text-align: left;
   }
-
-  .table-sample-po-checkbox-group th,
-  .table-sample-po-checkbox-group td:first-child {
-    font-weight: bold;
-  }
 </style>
 
 <article>
@@ -22,40 +17,37 @@
 
       <table class="table-sample-po-checkbox-group">
         <tr>
-          <th></th>
-          <th>True</th>
-          <th>False</th>
-          <th>Indeterminate</th>
-          <th>Required</th>
-        </tr>
+          <td>
+            <div class="po-field-container-content po-checkbox-group-content">
+              <div class="po-checkbox-group-item">
+                <div class="container-po-checkbox">
+                  <span tabindex="0" aria-checked="false" aria-disabled="false" class="po-checkbox" role="checkbox">
+                  </span>
 
-        <tr>
-          <td>Enable</td>
-          <td>
-            <div class="po-field-container-content po-checkbox-group-content">
-              <div class="po-checkbox-group-item">
-                <input
-                  class="po-input po-checkbox-group-input po-checkbox-group-input-checked"
-                  checked
-                  type="checkbox"
-                />
-                <label tabindex="0" class="po-checkbox-group-label po-clickable">Enable True</label>
+                  <label class="po-checkbox-label"> False Enabled</label>
+                </div>
               </div>
             </div>
           </td>
           <td>
             <div class="po-field-container-content po-checkbox-group-content">
               <div class="po-checkbox-group-item">
-                <input class="po-input po-checkbox-group-input" type="checkbox" />
-                <label tabindex="0" class="po-checkbox-group-label po-clickable">Enable False</label>
+                <div class="container-po-checkbox">
+                  <span tabindex="0" aria-checked="true" class="po-checkbox" role="checkbox"> </span>
+
+                  <label class="po-checkbox-label"> True Enabled</label>
+                </div>
               </div>
             </div>
           </td>
           <td>
             <div class="po-field-container-content po-checkbox-group-content">
               <div class="po-checkbox-group-item">
-                <input class="po-input po-checkbox-group-input po-checkbox-group-input-indeterminate" type="checkbox" />
-                <label tabindex="0" class="po-checkbox-group-label po-clickable">Enable Indeterminate</label>
+                <div class="container-po-checkbox">
+                  <span aria-checked="true" aria-disabled="true" class="po-checkbox" role="checkbox"> </span>
+
+                  <label class="po-checkbox-label" tabindex="-1"> True Disabled</label>
+                </div>
               </div>
             </div>
           </td>
@@ -63,54 +55,46 @@
             <po-checkbox-group class="ng-invalid ng-dirty">
               <div class="po-field-container-content po-checkbox-group-content">
                 <div class="po-checkbox-group-item">
-                  <input class="po-input po-checkbox-group-input" />
-                  <label tabindex="0" class="po-checkbox-group-label po-clickable">Enable Required</label>
+                  <div class="container-po-checkbox">
+                    <span aria-checked="false" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox">
+                    </span>
+
+                    <label class="po-checkbox-label"> Enabled Required</label>
+                  </div>
                 </div>
               </div>
             </po-checkbox-group>
           </td>
-        </tr>
+          <td>
+            <div class="po-field-container-content po-checkbox-group-content">
+              <div class="po-checkbox-group-item">
+                <div class="container-po-checkbox">
+                  <span aria-checked="false" aria-disabled="true" class="po-checkbox" role="checkbox"> </span>
 
-        <tr>
-          <td>Disable</td>
-          <td>
-            <div class="po-field-container-content po-checkbox-group-content po-checkbox-group-item-disabled">
-              <div class="po-checkbox-group-item po-checkbox-group-item-disabled">
-                <input
-                  class="po-input po-checkbox-group-input po-checkbox-group-input-checked"
-                  checked
-                  type="checkbox"
-                  disabled
-                />
-                <label tabindex="0" class="po-checkbox-group-label">Disabled True</label>
+                  <label class="po-checkbox-label" tabindex="-1"> False Disabled</label>
+                </div>
               </div>
             </div>
           </td>
           <td>
-            <div class="po-field-container-content po-checkbox-group-content po-checkbox-group-item-disabled">
-              <div class="po-checkbox-group-item po-checkbox-group-item-disabled">
-                <input class="po-input po-checkbox-group-input" type="checkbox" disabled />
-                <label tabindex="0" class="po-checkbox-group-label">Disabled False</label>
+            <div class="po-field-container-content po-checkbox-group-content">
+              <div class="po-checkbox-group-item">
+                <div class="container-po-checkbox">
+                  <span aria-checked="mixed" aria-disabled="true" class="po-checkbox" role="checkbox"> </span>
+
+                  <label class="po-checkbox-label" tabindex="-1"> Indeterminate Disabled</label>
+                </div>
               </div>
             </div>
           </td>
           <td>
-            <div class="po-field-container-content po-checkbox-group-content po-checkbox-group-item-disabled">
-              <div class="po-checkbox-group-item po-checkbox-group-item-disabled">
-                <input
-                  class="po-input po-checkbox-group-input po-checkbox-group-input-indeterminate"
-                  type="checkbox"
-                  disabled
-                />
-                <label tabindex="0" class="po-checkbox-group-label">Disabled Indeterminate</label>
-              </div>
-            </div>
-          </td>
-          <td>
-            <div class="po-field-container-content po-checkbox-group-content po-checkbox-group-item-disabled">
-              <div class="po-checkbox-group-item po-checkbox-group-item-disabled">
-                <input class="po-input po-checkbox-group-input" type="checkbox" disabled />
-                <label tabindex="0" class="po-checkbox-group-label">Disabled Required</label>
+            <div class="po-field-container-content po-checkbox-group-content">
+              <div class="po-checkbox-group-item">
+                <div class="container-po-checkbox">
+                  <span aria-checked="mixed" aria-disabled="false" class="po-checkbox" role="checkbox"> </span>
+
+                  <label class="po-checkbox-label" tabindex="-1"> Indeterminate Enabled</label>
+                </div>
               </div>
             </div>
           </td>
@@ -128,68 +112,51 @@
         <div class="po-field-container-content po-checkbox-group-content">
           <div class="po-row po-pt-1 po-pb-1">
             <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 1</label>
-            </div>
+              <div class="container-po-checkbox po-pb-3 po-md-6">
+                <span aria-checked="true" aria-disabled="true" class="po-checkbox" role="checkbox"> </span>
 
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input po-checkbox-group-input-checked" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 2</label>
-            </div>
+                <label class="po-checkbox-label" tabindex="-1"> Opção 1</label>
+              </div>
+              <div class="container-po-checkbox po-pb-3 po-md-6">
+                <span aria-checked="true" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox">
+                </span>
 
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 3</label>
-            </div>
+                <label class="po-checkbox-label"> Opção 2</label>
+              </div>
+              <div class="container-po-checkbox po-pb-3 po-md-6">
+                <span aria-checked="mixed" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox">
+                </span>
 
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 4</label>
-            </div>
+                <label class="po-checkbox-label"> Opção 3</label>
+              </div>
+              <div class="container-po-checkbox po-pb-3 po-md-6">
+                <span aria-checked="false" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox">
+                </span>
 
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 5</label>
-            </div>
+                <label class="po-checkbox-label"> Opção 4</label>
+              </div>
+              <div class="container-po-checkbox po-pb-3 po-md-6">
+                <span aria-checked="false" aria-disabled="true" class="po-checkbox" role="checkbox"> </span>
 
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 6</label>
-            </div>
+                <label class="po-checkbox-label" tabindex="-1"> Opção 5</label>
+              </div>
+              <div class="container-po-checkbox po-pb-3 po-md-6">
+                <span aria-checked="mixed" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox">
+                </span>
 
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input po-checkbox-group-input-checked" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 7</label>
-            </div>
+                <label class="po-checkbox-label"> Opção 6</label>
+              </div>
+              <div class="container-po-checkbox po-pb-3 po-md-6">
+                <span aria-checked="mixed" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox">
+                </span>
 
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 8</label>
-            </div>
+                <label class="po-checkbox-label"> Opção 7</label>
+              </div>
+              <div class="container-po-checkbox po-pb-3 po-md-6">
+                <span aria-checked="true" aria-disabled="true" class="po-checkbox" role="checkbox"> </span>
 
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 9</label>
-            </div>
-
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input po-checkbox-group-input-checked" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 10</label>
-            </div>
-
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 11</label>
-            </div>
-
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 12</label>
-            </div>
-
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label tabindex="0" class="po-checkbox-group-label po-clickable">Opção 13</label>
+                <label class="po-checkbox-label" tabindex="-1"> Opção 8</label>
+              </div>
             </div>
           </div>
         </div>
@@ -207,24 +174,28 @@
 
         <div class="po-field-container-content po-checkbox-group-content">
           <div class="po-row po-pt-1 po-pb-1">
-            <div class="po-checkbox-group-item po-md-6 po-checkbox-group-item-disabled">
-              <input class="po-input po-checkbox-group-input" type="checkbox" disabled />
-              <label tabindex="0" class="po-checkbox-group-label">Opção 1</label>
+            <div class="container-po-checkbox po-pb-3 po-md-6">
+              <span aria-checked="false" aria-disabled="true" class="po-checkbox" role="checkbox"> </span>
+
+              <label class="po-checkbox-label" tabindex="-1"> Opção 1</label>
             </div>
 
-            <div class="po-checkbox-group-item po-md-6 po-checkbox-group-item-disabled">
-              <input class="po-input po-checkbox-group-input" type="checkbox" disabled />
-              <label tabindex="0" class="po-checkbox-group-label">Opção 2</label>
+            <div class="container-po-checkbox po-pb-3 po-md-6">
+              <span aria-checked="false" aria-disabled="true" class="po-checkbox" role="checkbox"> </span>
+
+              <label class="po-checkbox-label" tabindex="-1"> Opção 2</label>
             </div>
 
-            <div class="po-checkbox-group-item po-md-6 po-checkbox-group-item-disabled">
-              <input class="po-input po-checkbox-group-input" type="checkbox" disabled />
-              <label tabindex="0" class="po-checkbox-group-label">Opção 3</label>
+            <div class="container-po-checkbox po-pb-3 po-md-6">
+              <span aria-checked="false" aria-disabled="true" class="po-checkbox" role="checkbox"> </span>
+
+              <label class="po-checkbox-label" tabindex="-1"> Opção 3</label>
             </div>
 
-            <div class="po-checkbox-group-item po-md-6 po-checkbox-group-item-disabled">
-              <input class="po-input po-checkbox-group-input" type="checkbox" disabled />
-              <label tabindex="0" class="po-checkbox-group-label">Opção 4</label>
+            <div class="container-po-checkbox po-pb-3 po-md-6">
+              <span aria-checked="false" aria-disabled="true" class="po-checkbox" role="checkbox"> </span>
+
+              <label class="po-checkbox-label" tabindex="-1"> Opção 4</label>
             </div>
           </div>
         </div>
@@ -238,24 +209,28 @@
 
         <div class="po-field-container-content po-checkbox-group-content">
           <div class="po-row po-pt-1 po-pb-1">
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label class="po-checkbox-group-label po-clickable">Opção 1</label>
+            <div class="container-po-checkbox po-pb-3 po-md-6">
+              <span aria-checked="false" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox"> </span>
+
+              <label class="po-checkbox-label"> Opção 1</label>
             </div>
 
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label class="po-checkbox-group-label po-clickable">Opção 2</label>
+            <div class="container-po-checkbox po-pb-3 po-md-6">
+              <span aria-checked="false" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox"> </span>
+
+              <label class="po-checkbox-label"> Opção 2</label>
             </div>
 
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label class="po-checkbox-group-label po-clickable">Opção 3</label>
+            <div class="container-po-checkbox po-pb-3 po-md-6">
+              <span aria-checked="false" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox"> </span>
+
+              <label class="po-checkbox-label"> Opção 3</label>
             </div>
 
-            <div class="po-checkbox-group-item po-md-6">
-              <input class="po-input po-checkbox-group-input" type="checkbox" />
-              <label class="po-checkbox-group-label po-clickable">Opção 4</label>
+            <div class="container-po-checkbox po-pb-3 po-md-6">
+              <span aria-checked="false" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox"> </span>
+
+              <label class="po-checkbox-label"> Opção 4</label>
             </div>
           </div>
         </div>
@@ -270,24 +245,32 @@
 
           <div class="po-field-container-content po-checkbox-group-content">
             <div class="po-row po-pt-1 po-pb-1">
-              <div class="po-checkbox-group-item po-md-6">
-                <input class="po-input po-checkbox-group-input" type="checkbox" />
-                <label class="po-checkbox-group-label po-clickable">Opção 1</label>
+              <div class="container-po-checkbox po-pb-3 po-md-6">
+                <span aria-checked="false" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox">
+                </span>
+
+                <label class="po-checkbox-label"> Opção 1</label>
               </div>
 
-              <div class="po-checkbox-group-item po-md-6">
-                <input class="po-input po-checkbox-group-input" type="checkbox" />
-                <label class="po-checkbox-group-label po-clickable">Opção 2</label>
+              <div class="container-po-checkbox po-pb-3 po-md-6">
+                <span aria-checked="false" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox">
+                </span>
+
+                <label class="po-checkbox-label"> Opção 2</label>
               </div>
 
-              <div class="po-checkbox-group-item po-md-6">
-                <input class="po-input po-checkbox-group-input" type="checkbox" />
-                <label class="po-checkbox-group-label po-clickable">Opção 3</label>
+              <div class="container-po-checkbox po-pb-3 po-md-6">
+                <span aria-checked="false" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox">
+                </span>
+
+                <label class="po-checkbox-label"> Opção 3</label>
               </div>
 
-              <div class="po-checkbox-group-item po-md-6">
-                <input class="po-input po-checkbox-group-input" type="checkbox" />
-                <label class="po-checkbox-group-label po-clickable">Opção 4</label>
+              <div class="container-po-checkbox po-pb-3 po-md-6">
+                <span aria-checked="false" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox">
+                </span>
+
+                <label class="po-checkbox-label"> Opção 4</label>
               </div>
             </div>
           </div>
@@ -304,43 +287,55 @@
           <div class="po-field-container-content po-checkbox-group-content">
             <div class="po-row po-pt-1 po-pb-1">
               <div class="po-checkbox-group-item po-md-6">
-                <input class="po-input po-checkbox-group-input" type="checkbox" />
-                <label class="po-checkbox-group-label po-clickable">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat."
-                </label>
+                <div class="container-po-checkbox po-pb-3 po-md-6">
+                  <span aria-checked="false" aria-disabled="true" class="po-checkbox" role="checkbox"> </span>
+
+                  <label class="po-checkbox-label" tabindex="-1">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat."</label
+                  >
+                </div>
               </div>
 
               <div class="po-checkbox-group-item po-md-6">
-                <input class="po-input po-checkbox-group-input" type="checkbox" />
-                <label class="po-checkbox-group-label po-clickable">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum."
-                </label>
+                <div class="container-po-checkbox po-pb-3 po-md-6">
+                  <span aria-checked="false" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox">
+                  </span>
+
+                  <label class="po-checkbox-label">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat."</label
+                  >
+                </div>
               </div>
 
               <div class="po-checkbox-group-item po-md-6">
-                <input class="po-input po-checkbox-group-input" type="checkbox" />
-                <label class="po-checkbox-group-label po-clickable">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum."
-                </label>
+                <div class="container-po-checkbox po-pb-3 po-md-6">
+                  <span aria-checked="true" tabindex="0" aria-disabled="false" class="po-checkbox" role="checkbox">
+                  </span>
+
+                  <label class="po-checkbox-label">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</label
+                  >
+                </div>
               </div>
 
               <div class="po-checkbox-group-item po-md-6">
-                <input class="po-input po-checkbox-group-input" type="checkbox" />
-                <label class="po-checkbox-group-label po-clickable">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat."
-                </label>
+                <div class="container-po-checkbox po-pb-3 po-md-6">
+                  <span aria-checked="true" aria-disabled="true" class="po-checkbox" role="checkbox"> </span>
+
+                  <label class="po-checkbox-label" tabindex="-1">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat."</label
+                  >
+                </div>
               </div>
             </div>
           </div>

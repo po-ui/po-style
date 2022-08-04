@@ -4,20 +4,8 @@
 
 .po-checkbox-group-item {
   min-height: 44px;
-  padding: 10px 8px 10px 0;
+  padding: 0 var(--spacing-md) var(--spacing-md) 0;
   position: relative;
-}
-
-.po-checkbox-group-input {
-  border-radius: 2px;
-  box-shadow: var(--shadow-checkbox-group-box-shadow-input);
-  position: absolute;
-  visibility: hidden;
-}
-
-.po-checkbox-group-label {
-  display: block;
-  margin-left: 28px;
 }
 
 .po-checkbox-group-item .po-checkbox-group-input {
@@ -25,58 +13,16 @@
   width: 0;
 }
 
-.po-checkbox-group-input + .po-checkbox-group-label:before {
-  background-color: var(--color-checkbox-group-background-color);
-  border: solid 1px var(--color-checkbox-group-border-input);
-  border-radius: 2px;
-  box-shadow: var(--shadow-checkbox-group-box-shadow-input);
-  content: ' ';
-  display: inline-block;
-  height: 20px;
-  left: 0;
-  margin-right: 8px;
-  margin-top: -2px;
-  position: absolute;
-  top: 12px;
-  vertical-align: middle;
-  width: 20px;
+ul.po-list-checkbox-group {
+  list-style: none;
 }
 
-.po-checkbox-group-input-checked + .po-checkbox-group-label:before,
-.po-checkbox-group-input-indeterminate + .po-checkbox-group-label:before {
-  background-color: var(--color-checkbox-group-background-color-active);
-  border: solid 1px var(--color-checkbox-group-border-input-active);
-  box-shadow: none;
-  color: var(--color-checkbox-group-color-active);
-  font-family: 'PoIcon' !important;
-  line-height: 18px;
-  padding-left: 1px;
+li.po-checkbox-group-item {
+  list-style: none;
 }
 
-po-checkbox-group.ng-invalid.ng-dirty .po-checkbox-group-input + .po-checkbox-group-label:before {
-  border: solid 1px var(--color-checkbox-group-border-input-invalid);
-}
-
-.po-checkbox-group-input:disabled + .po-checkbox-group-label:before {
-  background-color: var(--color-checkbox-group-background-color-disabled);
-  border: solid 1px var(--color-checkbox-group-border-input-disabled) !important;
-  color: var(--color-checkbox-group-background-color-icon-disabled);
-}
-
-.po-checkbox-group-input-checked + .po-checkbox-group-label:before {
-  content: '\e93c';
-}
-
-.po-checkbox-group-input-indeterminate + .po-checkbox-group-label:before {
-  content: '\e939';
-}
-
-.po-checkbox-group-label:focus {
-  outline: none;
-}
-
-.po-checkbox-group-label:focus::before {
-  box-shadow: inset 0 0 0 1px var(--color-checkbox-group-box-shadow-color-focusable);
+po-checkbox-group.ng-invalid.ng-dirty .po-checkbox:not([aria-disabled='true']) {
+  border: solid 2px var(--color-checkbox-group-border-input-invalid);
 }
 
 .po-checkbox-group-content {

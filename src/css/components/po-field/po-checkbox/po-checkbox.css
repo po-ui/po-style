@@ -61,7 +61,7 @@
 
 .container-po-checkbox {
   display: flex;
-  min-height: 32px;
+  min-height: 24px;
   align-items: center;
 }
 

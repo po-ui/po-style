@@ -129,6 +129,7 @@
   cursor: pointer;
   display: table-cell;
   text-decoration: none;
+  vertical-align: middle;
 }
 
 .po-list-view-title-no-link {
@@ -215,8 +216,6 @@
   }
 
   .po-list-view-actions .po-button {
-    @apply --font-list-view-font-sm-button;
-    height: 24px;
     margin-left: 4px;
   }
 

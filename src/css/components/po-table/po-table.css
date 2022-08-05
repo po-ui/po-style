@@ -642,9 +642,15 @@
 }
 
 .po-table-header-column-manager-button {
+  background-color: transparent;
+  border: none;
   color: var(--color-table-color-header);
   font-size: 16px;
   padding: 6px;
+}
+
+.po-table-header-column-manager-button:enabled:active {
+  outline: none;
 }
 
 .po-table-header-column-manager-button:focus {
@@ -661,11 +667,6 @@
 
 .po-table-header-column-manager-border {
   border-left: 1px solid var(--color-table-column-manager-border-color);
-}
-
-.po-table-header-column-manager-button {
-  background-color: transparent;
-  border: none;
 }
 
 /* scrollbar do cdk */

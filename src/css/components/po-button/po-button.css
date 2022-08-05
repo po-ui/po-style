@@ -5,7 +5,7 @@
   line-height: var(--line-height, var(--line-height-none));
   border-radius: var(--border-radius, var(--border-radius-md));
   border-width: var(--border-width, var(--border-width-md));
-  padding: var(--padding, 0 0.5rem);
+  padding: var(--padding, 0 1em);
 
   letter-spacing: var(--letter-spacing-auto);
   border-style: solid;
@@ -143,6 +143,12 @@ button[p-kind='tertiary']:disabled {
   color: var(--color-button-color-link-disabled, var(--color-disabled));
 
   background-color: var(--color-button-background-color-link-disabled, var(--background-color-disabled));
+}
+
+button[p-size='large'] {
+  padding: var(--padding, 0 1.5em);
+
+  min-height: 3.5em;
 }
 
 [class*='po-xl-'],

@@ -387,7 +387,7 @@ po-button {
   --line-height: var(--line-height-none);
   --border-radius: var(--border-radius-md);
   --border-width: var(--border-width-md);
-  --padding: 0 0.5rem;
+  --padding: 0 1em;
 
   /* danger */
   --text-color-danger: var(--color-neutral-light-00);

@@ -3,8 +3,8 @@
     @apply --font-subtitle;
   }
 
-  --rich-text-toolbar-button-group-height: 32px;
-  --rich-text-toolbar-button-group-width: 32px;
+  --rich-text-toolbar-button-group-height: 44px;
+  --rich-text-toolbar-button-group-width: 44px;
 
   --rich-text-toolbar-min-height: 64px;
 
@@ -52,9 +52,9 @@
 
 .po-rich-text-toolbar-color-picker-button {
   font-size: 16px;
-  height: 32px;
+  height: 44px;
   padding: 0;
-  width: 32px;
+  width: 44px;
 }
 
 .po-rich-text-toolbar-color-picker-container {
@@ -69,6 +69,7 @@
 .po-rich-text-toolbar-color-picker-input {
   background-color: transparent;
   border: none;
+  height: 100%;
   padding: 10%;
   vertical-align: middle;
   width: 100%;
@@ -80,4 +81,5 @@
 
 .po-rich-text-toolbar-color-picker-input::-webkit-color-swatch {
   border: none;
+  border-radius: var(--border-radius, var(--border-radius-md));
 }

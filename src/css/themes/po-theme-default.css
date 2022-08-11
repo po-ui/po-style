@@ -337,7 +337,7 @@
 }
 
 /*------------------------------------*\
-   COMPONENTS
+  COMPONENTS
 \*------------------------------------*/
 :root {
   /*------------------------------------*\
@@ -375,8 +375,8 @@
 }
 
 /*------------------------------------*\
-    BUTTON
-  \*------------------------------------*/
+  BUTTON
+\*------------------------------------*/
 
 /* -------------------------------------------------------- */
 
@@ -805,7 +805,7 @@ po-button {
   --color-list-view-color-select-all-label: var(--color-neutral);
 
   /*------------------------------------*\
-   LOADING
+    LOADING
   \*------------------------------------*/
   --color-loading-color-label: var(--color-neutral);
   --color-loading-icon-color-neutral: var(--color-neutral-light-80);
@@ -854,7 +854,7 @@ po-button {
   --color-menu-border-top-collapse-button: var(--color-neutral-alpha-45);
 
   /*------------------------------------*\
-   MENU FILTER
+    MENU FILTER
   \*------------------------------------*/
 
   --color-menu-filter-color-icon: var(--color-primary);
@@ -891,7 +891,7 @@ po-button {
   --color-modal-color-header-close-button: var(--color-primary);
 
   /*------------------------------------*\
-   MODAL PASSWORD RECOVERY
+    MODAL PASSWORD RECOVERY
   \*------------------------------------*/
 
   --color-modal-password-recovery-link-color: var(--color-primary);
@@ -964,7 +964,7 @@ po-button {
   --color-navbar-item-navigation-color-icon-disabled: var(--color-neutral-light-80);
 
   /*------------------------------------*\
-   PAGE
+    PAGE
   \*------------------------------------*/
 
   --color-page-background-color-page: var(--color-white);
@@ -985,7 +985,7 @@ po-button {
   --color-page--blocked-user-background-color: var(--color-neutral-light-98);
 
   /*------------------------------------*\
-   PAGE CHANGE PASSWORD
+    PAGE CHANGE PASSWORD
   \*------------------------------------*/
 
   --color-page-change-password-background-color-buttons: var(--color-neutral-light-98);
@@ -1068,7 +1068,7 @@ po-button {
   --color-popup-color-item-selected: var(--color-white);
 
   /*------------------------------------*\
-   PROGRESS
+    PROGRESS
   \*------------------------------------*/
 
   --color-progress-color-info-icon: var(--color-primary);
@@ -1185,24 +1185,52 @@ po-button {
   --color-stepper-circle-default: var(--color-primary);
   --color-stepper-circle-disabled: var(--color-neutral-light-60);
   --color-stepper-circle-error: var(--color-danger);
+}
 
-  /*------------------------------------*\
-    SWITCH
-  \*------------------------------------*/
+/*------------------------------------*\
+  SWITCH
+\*------------------------------------*/
 
-  --color-switch-background-color-container-on: var(--color-primary);
-  --color-switch-background-color-container-off: var(--color-neutral-light-80);
-  --color-switch-background-color-container-disabled: var(--color-neutral-light-80);
-  --color-switch-box-shadow-color-focusable: var(--color-primary-dark-20);
+po-switch {
+  --color-unchecked: var(--color-white);
+  --border-color: var(--color-neutral-dark-70);
+  --track-unchecked: var(--color-neutral-light-80);
 
-  --color-switch-background-color-button: var(--color-white);
-  --color-switch-background-color-button-disabled: var(--color-neutral-light-40);
+  --color-checked: var(--color-secondary);
+  --track-checked: var(--color-secondary-light-40);
 
-  --color-switch-color-icon-on: var(--color-primary);
-  --color-switch-color-icon-off: var(--color-neutral-light-80);
-  --color-switch-color-icon-disabled: var(--color-neutral-light-80);
+  --color-unchecked-hover: var(--color-brand-01-lightest);
+  --color-checked-hover: var(--color-action-hover);
 
-  --color-switch-color-label: var(--color-neutral);
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-unchecked-disabled: var(--color-neutral-light-80);
+  --color-checked-disabled: var(--color-action-disabled);
+}
+
+:root {
+  --color-switch-background-color-container-on: var(--track-checked); /*Deprecated v16.x.x utilizar --track-checked */
+  --color-switch-background-color-container-off: var(
+    --track-unchecked
+  ); /*Deprecated v16.x.x utilizar --track-unchecked */
+  --color-switch-background-color-container-disabled: var(
+    --track-unchecked
+  ); /*Deprecated v16.x.x utilizar --track-unchecked */
+
+  --color-switch-box-shadow-color-focusable: var(
+    --outline-color-focused
+  ); /*Deprecated v16.x.x utilizar --outline-color-focused*/
+
+  --color-switch-background-color-button: var(--color-unchecked); /*Deprecated v16.x.x utilizar --color-unchecked */
+  --color-switch-background-color-button-disabled: var(
+    --color-unchecked-disabled
+  ); /*Deprecated v16.x.x utilizar --color-neutral-light-40 */
+
+  --color-switch-color-icon-on: var(--color-unchecked); /*Deprecated v16.x.x utilizar --color-unchecked */
+  --color-switch-color-icon-off: var(--color-unchecked); /*Deprecated v16.x.x */
+  --color-switch-color-icon-disabled: var(--color-unchecked); /*Deprecated v16.x.x */
+
+  --color-switch-color-label: var(--color-neutral-dark-70); /*Deprecated v16.x.x utilizar --color-neutral-dark-70 */
 
   /*------------------------------------*\
     TAB BUTTON
@@ -1345,7 +1373,7 @@ po-button {
   --color-toolbar-color-title: var(--color-secondary);
 
   /*------------------------------------*\
-   TOOLTIP
+    TOOLTIP
   \*------------------------------------*/
 
   --color-tooltip-background-color-balloon: var(--color-neutral);
@@ -1406,7 +1434,7 @@ po-button {
   --color-upload-file-restrictions-color-text: var(--color-neutral);
 
   /*------------------------------------*\
-   WIDGET
+    WIDGET
   \*------------------------------------*/
 
   --color-widget-color-action-active: var(--color-primary-dark-20);

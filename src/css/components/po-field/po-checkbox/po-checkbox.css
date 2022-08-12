@@ -26,12 +26,17 @@
   outline: none;
 }
 
-.po-checkbox:focus-visible {
+.po-checkbox-outline:focus-visible {
   outline-color: var(--color-checkbox-box-shadow-color-focusable);
 
   outline-width: 4px;
   outline-style: solid;
   outline-offset: 2px;
+}
+
+.po-checkbox-outline {
+  display: flex;
+  align-items: center;
 }
 
 [aria-checked='true'].po-checkbox,
@@ -66,7 +71,7 @@
 }
 
 .po-checkbox-label {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   cursor: pointer;
 }
 

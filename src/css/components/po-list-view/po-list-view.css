@@ -82,6 +82,11 @@
   padding-left: 24px;
 }
 
+.po-list-view-select + .po-list-view-title-link {
+  padding-left: 0.5rem;
+  vertical-align: bottom;
+}
+
 .po-list-view-main-content {
   height: 100%;
   overflow-x: hidden;

@@ -1,65 +1,15 @@
-:root {
-  --shadow-radio-group-input-default: var(--shadow-input);
+.po-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--spacing-xs) 0;
+  row-gap: var(--spacing-md);
+  width: 100%;
 }
 
 .po-radio-group-item {
-  min-height: 44px;
-  padding: 10px 8px 10px 0;
-  position: relative;
+  padding: 0 var(--spacing-md) 0 0;
 }
 
-.po-radio-group-label {
-  display: block;
-  margin-left: 34px;
-}
-
-.po-radio-group-input {
-  appearance: none;
-  background-color: transparent;
-  height: 0px;
-  margin: 0;
-  outline: none;
-  position: absolute;
-  width: 0px;
-}
-
-.po-radio-group-input + .po-radio-group-label:before {
-  background-color: var(--color-radio-group-background-color);
-  box-shadow: var(--shadow-radio-group-input-default);
-  border: solid 1px var(--color-radio-group-border-color);
-  border-radius: 50%;
-  content: ' ';
-  display: inline-block;
-  left: 0;
-  height: 20px;
-  margin-top: -2px;
-  margin-right: 8px;
-  position: absolute;
-  top: 12px;
-  vertical-align: middle;
-  width: 20px;
-}
-
-.po-radio-group-input:focus + .po-radio-group-label:before {
-  border: solid 1px var(--color-radio-group-border-color-focusable) !important;
-}
-
-.po-radio-group-input-checked + .po-radio-group-label:before {
-  background-color: var(--color-radio-group-background-color-active);
-  border: 1px solid var(--color-radio-group-background-color-active);
-  color: var(--color-radio-group-color-label-active);
-  content: '\e93c';
-  font-family: 'PoIcon' !important;
-  line-height: 18px;
-  padding-left: 1px;
-}
-
-.po-radio-group-input:disabled + .po-radio-group-label:before {
-  background-color: var(--color-radio-group-background-color-input-disabled);
-  border: solid 1px var(--color-radio-group-border-color) !important;
-  color: var(--color-radio-group-color-text-disabled);
-}
-
-po-radio-group.ng-invalid.ng-dirty .po-radio-group-input + .po-radio-group-label:before {
-  border: solid 1px var(--color-radio-group-border-color-input-error);
+po-radio-group.ng-invalid.ng-dirty input[type='radio']:not([disabled]) {
+  border: solid var(--border-width-md) var(--color-feedback-negative-base);
 }

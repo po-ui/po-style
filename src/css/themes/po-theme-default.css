@@ -160,22 +160,28 @@
   --color-primary-dark-40: #8b255a;
 
   /* Secondary */
-  --color-secondary-light-20: var(--color-brand-01-lighter); /*Deprecated v16.x.x utilizar --color-brand-01-lighter*/
+  --color-secondary-light-20: var(--color-brand-01-lighter);
+  /*Deprecated v16.x.x utilizar --color-brand-01-lighter*/
 
-  --color-secondary-light-40: var(--color-brand-01-light); /*Deprecated v16.x.x utilizar --color-brand-01-light*/
+  --color-secondary-light-40: var(--color-brand-01-light);
+  /*Deprecated v16.x.x utilizar --color-brand-01-light*/
 
-  --color-secondary: var(--color-action-default); /*Deprecated v16.x.x utilizar --color-action-default*/
+  --color-secondary: var(--color-action-default);
+  /*Deprecated v16.x.x utilizar --color-action-default*/
 
-  --color-secondary-dark-20: var(--color-brand-01-dark); /*Deprecated v16.x.x utilizar --color-brand-01-dark*/
+  --color-secondary-dark-20: var(--color-brand-01-dark);
+  /*Deprecated v16.x.x utilizar --color-brand-01-dark*/
 
-  --color-secondary-dark-40: var(--color-brand-01-darker); /*Deprecated v16.x.x utilizar --color-brand-01-darker*/
+  --color-secondary-dark-40: var(--color-brand-01-darker);
+  /*Deprecated v16.x.x utilizar --color-brand-01-darker*/
 
   /* Overlay de Modal e Menu (70% de opacidade) */
   --color-secondary-dark-60-alpha-70: rgba(59, 28, 74, 0.7);
 
   --color-secondary-dark-60: #3b1c4a;
 
-  --color-secondary-dark-80: var(--color-brand-01-darkest); /*Deprecated v16.x.x utilizar --color-brand-01-darkest*/
+  --color-secondary-dark-80: var(--color-brand-01-darkest);
+  /*Deprecated v16.x.x utilizar --color-brand-01-darkest*/
 
   /* Tertiary */
 
@@ -183,7 +189,8 @@
   --color-tertiary-light-90: #fffaef;
 
   /* Borda esquerda do menu lateral selecionado, Tab selecionada, Card em destaque */
-  --color-tertiary: var(--color-brand-03-base); /*Deprecated v16.x.x utilizar --color-brand-03-base*/
+  --color-tertiary: var(--color-brand-03-base);
+  /*Deprecated v16.x.x utilizar --color-brand-03-base*/
 
   /* Cor de gráficos, botão do disclaimer */
   --color-tertiary-dark-5: #f4d069;
@@ -192,24 +199,30 @@
 
   --color-tertiary-dark-60: #ac9249;
 
-  --color-white: var(--color-neutral-light-00); /*Deprecated v16.x.x utilizar --color-neutral-light-00*/
+  --color-white: var(--color-neutral-light-00);
+  /*Deprecated v16.x.x utilizar --color-neutral-light-00*/
 
   --color-white-alpha-30: rgba(255, 255, 255, 0.3);
 
   /* Background da página, Background da linha selecionada */
-  --color-neutral-light-98: var(--color-neutral-light-05); /*Deprecated v16.x.x utilizar --color-neutral-light-05*/
+  --color-neutral-light-98: var(--color-neutral-light-05);
+  /*Deprecated v16.x.x utilizar --color-neutral-light-05*/
 
   /* Borda inferior de item de tabela, Base do Slider, Background do Input inativo */
-  --color-neutral-light-90: var(--color-neutral-light-10); /*Deprecated v16.x.x utilizar --color-neutral-light-10*/
+  --color-neutral-light-90: var(--color-neutral-light-10);
+  /*Deprecated v16.x.x utilizar --color-neutral-light-10*/
 
   /* Step inativo, Base Switch desligado */
-  --color-neutral-light-80: var(--color-neutral-light-20); /*Deprecated v16.x.x utilizar --color-neutral-light-20*/
+  --color-neutral-light-80: var(--color-neutral-light-20);
+  /*Deprecated v16.x.x utilizar --color-neutral-light-20*/
 
   /* Ícone desabilitado, Slider desabilitado, Borda de input */
-  --color-neutral-light-60: var(--color-neutral-light-30); /*Deprecated v16.x.x utilizar --color-neutral-light-30*/
+  --color-neutral-light-60: var(--color-neutral-light-30);
+  /*Deprecated v16.x.x utilizar --color-neutral-light-30*/
 
   /* Texto do Placeholder */
-  --color-neutral-light-40: var(--color-neutral-mid-40); /*Deprecated v16.x.x utilizar --color-neutral-mid-40*/
+  --color-neutral-light-40: var(--color-neutral-mid-40);
+  /*Deprecated v16.x.x utilizar --color-neutral-mid-40*/
 
   /* Borda superior do itens do menu (45% de opacidade) */
   --color-neutral-alpha-45: rgba(74, 92, 96, 0.45);
@@ -218,10 +231,12 @@
   --color-neutral: #4a5c60;
 
   /* Usar em menu: Área do logo, Background do menu */
-  --color-neutral-dark-40: var(--color-neutral-dark-80); /*Deprecated v16.x.x utilizar --color-neutral-dark-80*/
+  --color-neutral-dark-40: var(--color-neutral-dark-80);
+  /*Deprecated v16.x.x utilizar --color-neutral-dark-80*/
 
   /* Texto */
-  --color-neutral-dark-60: var(--color-neutral-dark-90); /*Deprecated v16.x.x utilizar --color-neutral-dark-90*/
+  --color-neutral-dark-60: var(--color-neutral-dark-90);
+  /*Deprecated v16.x.x utilizar --color-neutral-dark-90*/
 
   --color-neutral-dark-90: #1d1d30;
 
@@ -243,38 +258,35 @@
   --color-warning: #ea9b3e;
 
   /* Background do Feedback de erro */
-  --color-danger-light-05: var(
-    --color-feedback-negative-light
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-lightest*/
+  --color-danger-light-05: var(--color-feedback-negative-light);
+  /*Deprecated v16.x.x utilizar --color-feedback-negative-lightest*/
 
-  --color-danger-light-20: var(
-    --color-feedback-negative-lighter
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-lighter*/
+  --color-danger-light-20: var(--color-feedback-negative-lighter);
+  /*Deprecated v16.x.x utilizar --color-feedback-negative-lighter*/
 
-  --color-danger-light-40: var(
-    --color-feedback-negative-light
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-light*/
+  --color-danger-light-40: var(--color-feedback-negative-light);
+  /*Deprecated v16.x.x utilizar --color-feedback-negative-light*/
 
   /* Background do Feedback de erro, Borda de Input com erro */
-  --color-danger: var(--color-feedback-negative-base); /*Deprecated v16.x.x utilizar --color-feedback-negative-base*/
+  --color-danger: var(--color-feedback-negative-base);
+  /*Deprecated v16.x.x utilizar --color-feedback-negative-base*/
 
   /* Background disclaimer danger */
-  --color-danger-dark-5: var(
-    --color-feedback-negative-dark
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-dark*/
+  --color-danger-dark-5: var(--color-feedback-negative-dark);
+  /*Deprecated v16.x.x utilizar --color-feedback-negative-dark*/
 
   /* Hover para botão danger */
   --color-danger-dark-20: #9e3933;
 
   /* Estilo ativo para botão danger */
-  --color-danger-dark-40: var(
-    --color-feedback-negative-darkest
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-darkest*/
+  --color-danger-dark-40: var(--color-feedback-negative-darkest);
+  /*Deprecated v16.x.x utilizar --color-feedback-negative-darkest*/
 
   --color-transparent: transparent;
 
   /* Cor padrão para o focus */
-  --color-outline-focused: var(--color-action-focus); /*Deprecated v16.x.x utilizar --color-action-focus*/
+  --color-outline-focused: var(--color-action-focus);
+  /*Deprecated v16.x.x utilizar --color-action-focus*/
 
   /*------------------------------------*\
     COLOR-PALETTE
@@ -430,107 +442,117 @@ po-button {
   */
 
 :root {
-  --color-button-background-color: var(--background-color); /*Deprecated v16.x.x utilizar --background-color*/
-  --color-button-border: var(--color); /*Deprecated v16.x.x utilizar --color*/
-  --color-button-color: var(--color); /*Deprecated v16.x.x utilizar --color*/
+  --color-button-background-color: var(--background-color);
+  /*Deprecated v16.x.x utilizar --background-color*/
+  --color-button-border: var(--color);
+  /*Deprecated v16.x.x utilizar --color*/
+  --color-button-color: var(--color);
+  /*Deprecated v16.x.x utilizar --color*/
   --color-button-box-shadow: var(--shadow);
 
-  --color-button-background-color-hover: var(--background-hover); /*Deprecated v16.x.x utilizar --background-hover*/
-  --color-button-border-hover: var(--border-color-hover); /*Deprecated v16.x.x utilizar --border-color-hover*/
-  --color-button-color-hover: var(--border-color-hover); /*Deprecated v16.x.x utilizar --border-color-hover*/
+  --color-button-background-color-hover: var(--background-hover);
+  /*Deprecated v16.x.x utilizar --background-hover*/
+  --color-button-border-hover: var(--border-color-hover);
+  /*Deprecated v16.x.x utilizar --border-color-hover*/
+  --color-button-color-hover: var(--border-color-hover);
+  /*Deprecated v16.x.x utilizar --border-color-hover*/
 
-  --color-button-background-color-pressed: var(
-    --background-pressed
-  ); /*Deprecated v16.x.x utilizar --background-pressed*/
-  --color-button-border-pressed: var(--border-color-hover); /*Deprecated v16.x.x utilizar --border-color-pressed*/
-  --color-button-color-pressed: var(--border-color-hover); /*Deprecated v16.x.x utilizar --border-color-hover*/
+  --color-button-background-color-pressed: var(--background-pressed);
+  /*Deprecated v16.x.x utilizar --background-pressed*/
+  --color-button-border-pressed: var(--border-color-hover);
+  /*Deprecated v16.x.x utilizar --border-color-pressed*/
+  --color-button-color-pressed: var(--border-color-hover);
+  /*Deprecated v16.x.x utilizar --border-color-hover*/
 
-  --color-button-background-color-disabled: var(
-    --background-color-disabled
-  ); /*Deprecated v16.x.x utilizar --background-color-disabled*/
-  --color-button-border-disabled: var(--color-disabled); /*Deprecated v16.x.x utilizar --border-color-disabled*/
-  --color-button-color-disabled: var(--color-disabled); /*Deprecated v16.x.x utilizar --color-disabled*/
+  --color-button-background-color-disabled: var(--background-color-disabled);
+  /*Deprecated v16.x.x utilizar --background-color-disabled*/
+  --color-button-border-disabled: var(--color-disabled);
+  /*Deprecated v16.x.x utilizar --border-color-disabled*/
+  --color-button-color-disabled: var(--color-disabled);
+  /*Deprecated v16.x.x utilizar --color-disabled*/
   /**
   * Button Primary
   */
-  --color-button-background-color-primary: var(--color); /*Deprecated v16.x.x utilizar --background-color*/
-  --color-button-border-primary: var(--border-color); /*Deprecated v16.x.x utilizar --border-color*/
-  --color-button-color-primary: var(--text-color); /*Deprecated v16.x.x utilizar --color*/
+  --color-button-background-color-primary: var(--color);
+  /*Deprecated v16.x.x utilizar --background-color*/
+  --color-button-border-primary: var(--border-color);
+  /*Deprecated v16.x.x utilizar --border-color*/
+  --color-button-color-primary: var(--text-color);
+  /*Deprecated v16.x.x utilizar --color*/
 
-  --color-button-background-color-primary-hover: var(--color-hover); /*Deprecated v16.x.x utilizar --color-hover*/
-  --color-button-color-primary-hover: var(--text-color); /*Deprecated v16.x.x utilizar --text-color*/
+  --color-button-background-color-primary-hover: var(--color-hover);
+  /*Deprecated v16.x.x utilizar --color-hover*/
+  --color-button-color-primary-hover: var(--text-color);
+  /*Deprecated v16.x.x utilizar --text-color*/
 
-  --color-button-background-color-primary-pressed: var(--color-pressed); /*Deprecated v16.x.x utilizar --color-pressed*/
-  --color-button-color-primary-pressed: var(--text-color); /*Deprecated v16.x.x utilizar --color-pressed*/
+  --color-button-background-color-primary-pressed: var(--color-pressed);
+  /*Deprecated v16.x.x utilizar --color-pressed*/
+  --color-button-color-primary-pressed: var(--text-color);
+  /*Deprecated v16.x.x utilizar --color-pressed*/
 
-  --color-button-background-color-primary-disabled: var(
-    --color-disabled
-  ); /*Deprecated v16.x.x utilizar --background-color-disabled*/
-  --color-button-color-primary-disabled: var(--text-color-disabled); /*Deprecated v16.x.x utilizar --color-disabled*/
+  --color-button-background-color-primary-disabled: var(--color-disabled);
+  /*Deprecated v16.x.x utilizar --background-color-disabled*/
+  --color-button-color-primary-disabled: var(--text-color-disabled);
+  /*Deprecated v16.x.x utilizar --color-disabled*/
 
   /**
   * Button Danger primary
   */
-  --color-button-primary-background-color-danger: var(
-    --color-button-danger
-  ); /*Deprecated v16.x.x utilizar --background-color-danger*/
-  --color-button-primary-background-color-danger-hover: var(
-    --color-danger-hover
-  ); /*Deprecated v16.x.x utilizar --color-danger-hover*/
-  --color-button-primary-background-color-danger-pressed: var(
-    --color-danger-pressed
-  ); /*Deprecated v16.x.x utilizar --background-color-danger-pressed*/
+  --color-button-primary-background-color-danger: var(--color-button-danger);
+  /*Deprecated v16.x.x utilizar --background-color-danger*/
+  --color-button-primary-background-color-danger-hover: var(--color-danger-hover);
+  /*Deprecated v16.x.x utilizar --color-danger-hover*/
+  --color-button-primary-background-color-danger-pressed: var(--color-danger-pressed);
+  /*Deprecated v16.x.x utilizar --background-color-danger-pressed*/
 
   /**
   * Button Danger secondary
   */
-  --color-button-background-color-danger: var(
-    --background-color-button-danger
-  ); /*Deprecated v16.x.x utilizar --background-color-danger*/
-  --color-button-border-danger: var(--color-button-danger); /*Deprecated v16.x.x utilizar --border-color-danger*/
-  --color-button-color-danger: var(--color-button-danger); /*Deprecated v16.x.x utilizar --color-danger*/
+  --color-button-background-color-danger: var(--background-color-button-danger);
+  /*Deprecated v16.x.x utilizar --background-color-danger*/
+  --color-button-border-danger: var(--color-button-danger);
+  /*Deprecated v16.x.x utilizar --border-color-danger*/
+  --color-button-color-danger: var(--color-button-danger);
+  /*Deprecated v16.x.x utilizar --color-danger*/
 
-  --color-button-background-color-danger-hover: var(
-    --background-danger-hover
-  ); /*Deprecated v16.x.x utilizar --background-danger-hover*/
-  --color-button-border-danger-hover: var(
-    --border-color-danger-hover
-  ); /*Deprecated v16.x.x utilizar --border-color-danger-hover*/
-  --color-button-color-danger-hover: var(
-    --border-color-danger-hover
-  ); /*Deprecated v16.x.x utilizar --color-danger-hover*/
+  --color-button-background-color-danger-hover: var(--background-danger-hover);
+  /*Deprecated v16.x.x utilizar --background-danger-hover*/
+  --color-button-border-danger-hover: var(--border-color-danger-hover);
+  /*Deprecated v16.x.x utilizar --border-color-danger-hover*/
+  --color-button-color-danger-hover: var(--border-color-danger-hover);
+  /*Deprecated v16.x.x utilizar --color-danger-hover*/
 
-  --color-button-background-color-danger-pressed: var(
-    --background-danger-pressed
-  ); /*Deprecated v16.x.x utilizar --background-danger-pressed*/
-  --color-button-border-danger-pressed: var(
-    --border-color-danger-hover
-  ); /*Deprecated v16.x.x utilizar --border-color-danger-hover*/
-  --color-button-color-danger-pressed: var(
-    --border-color-danger-hover
-  ); /*Deprecated v16.x.x utilizar --border-color-danger-hover*/
+  --color-button-background-color-danger-pressed: var(--background-danger-pressed);
+  /*Deprecated v16.x.x utilizar --background-danger-pressed*/
+  --color-button-border-danger-pressed: var(--border-color-danger-hover);
+  /*Deprecated v16.x.x utilizar --border-color-danger-hover*/
+  --color-button-color-danger-pressed: var(--border-color-danger-hover);
+  /*Deprecated v16.x.x utilizar --border-color-danger-hover*/
 
   /**
   * Button Link
   */
-  --color-button-background-color-link: var(--background-color); /*Deprecated v16.x.x utilizar --background-color*/
-  --color-button-color-link: var(--color); /*Deprecated v16.x.x utilizar --color*/
-  --color-button-border-color-link: var(--border-color); /*Deprecated v16.x.x utilizar --border-color*/
+  --color-button-background-color-link: var(--background-color);
+  /*Deprecated v16.x.x utilizar --background-color*/
+  --color-button-color-link: var(--color);
+  /*Deprecated v16.x.x utilizar --color*/
+  --color-button-border-color-link: var(--border-color);
+  /*Deprecated v16.x.x utilizar --border-color*/
 
-  --color-button-background-color-link-hover: var(
-    --background-hover
-  ); /*Deprecated v16.x.x utilizar --background-color-hover*/
-  --color-button-color-link-hover: var(--border-color-hover); /*Deprecated v16.x.x utilizar --border-color-hover*/
+  --color-button-background-color-link-hover: var(--background-hover);
+  /*Deprecated v16.x.x utilizar --background-color-hover*/
+  --color-button-color-link-hover: var(--border-color-hover);
+  /*Deprecated v16.x.x utilizar --border-color-hover*/
 
-  --color-button-background-color-link-pressed: var(
-    --background-color-pressed
-  ); /*Deprecated v16.x.x utilizar --background-color-pressed*/
-  --color-button-color-link-pressed: var(--color-pressed); /*Deprecated v16.x.x utilizar --color-pressed*/
+  --color-button-background-color-link-pressed: var(--background-color-pressed);
+  /*Deprecated v16.x.x utilizar --background-color-pressed*/
+  --color-button-color-link-pressed: var(--color-pressed);
+  /*Deprecated v16.x.x utilizar --color-pressed*/
 
-  --color-button-background-color-link-disabled: var(
-    --background-color-disabled
-  ); /*Deprecated v16.x.x utilizar --background-color-disabled*/
-  --color-button-color-link-disabled: var(--color-disabled); /*Deprecated v16.x.x utilizar --color-disabled*/
+  --color-button-background-color-link-disabled: var(--background-color-disabled);
+  /*Deprecated v16.x.x utilizar --background-color-disabled*/
+  --color-button-color-link-disabled: var(--color-disabled);
+  /*Deprecated v16.x.x utilizar --color-disabled*/
 
   /*------------------------------------*\
     BADGE
@@ -1087,38 +1109,51 @@ po-button {
   --color-progress-bar-background-color-default: var(--color-primary);
   --color-progress-bar-background-color-success: var(--color-success);
   --color-progress-bar-background-color-error: var(--color-danger);
+}
 
-  /*------------------------------------*\
-    RADIO
-  \*------------------------------------*/
+/*------------------------------------*\
+  RADIO
+\*------------------------------------*/
+po-radio {
+  --color-unchecked: var(--color-white);
+  --border-color: var(--color-neutral-dark-70);
 
-  --color-radio-background-color: var(--color-white);
-  --color-radio-background-color-active: var(--color-secondary);
-  --color-radio-background-color-disabled: var(--color-neutral-light-60);
-  --color-radio-box-shadow-color-focusable: var(--color-secondary-dark-80);
+  /* hover */
+  --shadow-color-hover: var(--color-secondary-light-20);
+  --color-hover: var(--color-secondary-dark-20);
 
-  --color-radio-border-input: var(--color-neutral-dark-70);
-  --color-radio-border-input-active: var(--color-secondary);
-  --color-radio-border-input-disabled: var(--color-neutral-dark-70);
-  --color-radio-border-input-invalid: var(--danger-color);
-  --color-radio-hover-active: var(--color-secondary-light-20);
+  /* focus */
+  --outline-color-focused: var(--color-secondary-dark-80);
 
-  --color-radio-color-active: var(--color-secondary);
+  /* checked */
+  --color-checked: var(--color-secondary);
 
+  /* disabled */
+  --color-unchecked-disabled: var(--color-neutral-light-60);
+  --color-checked-disabled: var(--color-neutral-dark-70);
+}
+
+:root {
   /*------------------------------------*\
     RADIO-GROUP
   \*------------------------------------*/
 
-  --color-radio-group-background-color: var(--color-white);
-  --color-radio-group-background-color-active: var(--color-primary);
-  --color-radio-group-background-color-input-disabled: var(--color-neutral-light-90);
+  --color-radio-group-background-color: var(--color-unchecked); /* Deprecated v16.x.x utilizar --color-unchecked */
+  --color-radio-group-background-color-active: var(--color-checked); /* Deprecated v16.x.x utilizar --color-checked */
+  --color-radio-group-background-color-input-disabled: var(
+    --color-unchecked-disabled
+  ); /* Deprecated v16.x.x utilizar --color-unchecked-disabled */
 
-  --color-radio-group-border-color: var(--color-neutral-light-60);
-  --color-radio-group-border-color-focusable: var(--color-primary-dark-20);
+  --color-radio-group-border-color: var(--border-color); /* Deprecated v16.x.x utilizar --border-color */
+  --color-radio-group-border-color-focusable: var(
+    --outline-color-focused
+  ); /* Deprecated v16.x.x utilizar --outline-color-focused */
   --color-radio-group-border-color-input-error: var(--color-danger);
 
   --color-radio-group-color-label-active: var(--color-white);
-  --color-radio-group-color-text-disabled: var(--color-neutral-light-60);
+  --color-radio-group-color-text-disabled: var(
+    --color-checked-disabled
+  ); /* Deprecated v16.x.x utilizar --color-checked-disabled */
 
   /*------------------------------------*\
     RICH TEXT

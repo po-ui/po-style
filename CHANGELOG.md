@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [14.3.0](https://github.com/po-ui/po-style/compare/v14.2.1...v14.3.0) (2022-08-22)
+
+
+### Features
+
+* **button:** adiciona a propriedade `p-size` ([2353749](https://github.com/po-ui/po-style/commit/2353749d6be252abd1edaf977126b29d40da36c4))
+* **button:** deprecia a propriedade `p-small` ([4690910](https://github.com/po-ui/po-style/commit/4690910a0494b5c09df4509622751c5a922a88f0))
+* **checkbox-group:** reutiliza checkbox com novas definições ([29aca44](https://github.com/po-ui/po-style/commit/29aca44512076cfbcfa03e17742e61cdfa8db9ee))
+* **checkbox:** altera posicionamento e outline ([8e66139](https://github.com/po-ui/po-style/commit/8e66139455c276c50a77312a731df2984a9b9929))
+* **list-view:** altera padding do titulo ([0c2ad58](https://github.com/po-ui/po-style/commit/0c2ad5875ba8cac55d213935729675b84d441431))
+* **table:** altera posicionamento do checkbox-group ([d9ed909](https://github.com/po-ui/po-style/commit/d9ed909401ac88d1df30bc3b72bc0e1d06fcbd69))
+
+
+
 ## [14.2.1](https://github.com/po-ui/po-style/compare/v14.2.0...v14.2.1) (2022-08-15)
 
 Compatibilidade com @po-ui/ng-components@14.2.1

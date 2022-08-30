@@ -130,6 +130,19 @@
   padding-right: 8px;
 }
 
+.po-table-container-fixed-inner .cdk-virtual-scroll-viewport {
+  display: inherit;
+  position: relative;
+  contain: none;
+  transform: none !important;
+}
+
+.po-table-container-fixed-inner .cdk-virtual-scroll-content-wrapper {
+  transform: none !important;
+  position: sticky;
+  contain: none;
+}
+
 .po-table-header-fixed-columns-pixels .po-table-header-fixed {
   padding-right: 10px;
 }

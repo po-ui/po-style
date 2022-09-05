@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [14.4.0](https://github.com/po-ui/po-style/compare/v14.3.1...v14.4.0) (2022-09-05)
+
+
+### Code Refactoring
+
+* **switch:** remove variáveis ([f42308b](https://github.com/po-ui/po-style/commit/f42308be035d438b48e2c3a41ff48e6c0706421a))
+
+
+### Features
+
+* **switch:** aplica estilo definido pelo DS ([b4542c6](https://github.com/po-ui/po-style/commit/b4542c61ada50005a58546bce8945d5faae09d21))
+
+
+### BREAKING CHANGES
+
+* **switch:** removidas as variáveis:
+
+--color-switch-color-icon-off - não possui mais ícone no modo 'desligado'.
+--color-switch-color-icon-disabled - não é possível mais customizar a cor do ícone desabilitado.
+
+
+
 ## [14.3.1](https://github.com/po-ui/po-style/compare/v14.3.0...v14.3.1) (2022-08-29)
 
 Compatibilidade com @po-ui/ng-components@14.3.1

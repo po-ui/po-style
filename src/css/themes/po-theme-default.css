@@ -258,8 +258,9 @@
   --color-warning: #ea9b3e;
 
   /* Background do Feedback de erro */
-  --color-danger-light-05: var(--color-feedback-negative-light);
-  /*Deprecated v16.x.x utilizar --color-feedback-negative-lightest*/
+  --color-danger-light-05: var(
+    --color-feedback-negative-lightest
+  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-lightest*/
 
   --color-danger-light-20: var(--color-feedback-negative-lighter);
   /*Deprecated v16.x.x utilizar --color-feedback-negative-lighter*/
@@ -1198,31 +1199,59 @@ po-radio {
   --color-rich-text-placeholder-color: var(--color-neutral-light-40);
 
   --color-rich-text-toolbar-background-color: var(--color-rich-text-body-background-color);
+}
 
-  /*------------------------------------*\
-    SELECT
-  \*------------------------------------*/
+/*------------------------------------*\
+  SELECT
+\*------------------------------------*/
 
-  --color-select-background-color: var(--color-white);
-  --color-select-background-color-disabled: var(--color-neutral-light-90);
+po-select {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
 
-  --color-select-background-color-item-hover: var(--color-primary-light-95);
-  --color-select-background-color-scrollbar: var(--color-primary-alpha-50);
+  --text-color-empty: var(--color-neutral-light-60);
+  --color: var(--color-neutral-dark-70);
+  --background: var(--color-neutral-light-98);
+  --padding-horizontal: 0.5em;
+  --padding-vertical: 0.7em;
 
-  --color-select-border-button: var(--color-neutral-light-60);
-  --color-select-border-button-error: var(--color-danger);
-  --color-select-border-button-disabled: var(--color-neutral-light-60);
-  --color-select-border-button-hover: var(--color-primary);
-  --color-select-border-button-focus: var(--color-primary);
+  --text-color: var(--color-neutral-dark-60);
 
-  --color-select-button-disabled: var(--color-neutral-light-60);
-  --color-select-button-focus: var(--color-primary);
+  --color-hover: var(--color-secondary-dark-20);
+  --background-hover: var(--color-brand-01-lightest);
 
-  --color-select-color-primary: var(--color-primary);
-  --color-select-color-selected: var(--color-white);
-  --color-select-background-color-unselected: var(--color-white);
-  --color-select-background-color-selected: var(--color-primary);
-  --color-select-color-text-error: var(--color-danger);
+  --color-focused: var(--color-secondary);
+  --outline-color-focused: var(--color-outline-focused);
+
+  --color-disabled: var(--color-neutral-light-60);
+  --background-disabled: var(--color-neutral-light-80);
+}
+
+:root {
+  --color-select-background-color: var(--background); /* Deprecated v16.x.x utilizar --background */
+  --color-select-background-color-disabled: var(
+    --background-disabled
+  ); /* Deprecated v16.x.x utilizar --background-disabled */
+
+  --color-select-background-color-item-hover: var(--color-primary-light-95); /* Deprecated */
+  --color-select-background-color-scrollbar: var(--color-primary-alpha-50); /* Deprecated */
+
+  --color-select-border-button: var(--color); /* Deprecated v16.x.x utilizar --color */
+  --color-select-border-button-error: var(--color-danger); /* Deprecated v16.x.x utilizar --color-danger */
+  --color-select-border-button-disabled: var(--color-disabled); /* Deprecated v16.x.x utilizar --color-disabled */
+  --color-select-border-button-hover: var(--color-hover); /* Deprecated v16.x.x utilizar --color-hover */
+  --color-select-border-button-focus: var(--color-focused); /* Deprecated v16.x.x utilizar --color-focused */
+
+  --color-select-button-disabled: var(--color-disabled); /* Deprecated */
+  --color-select-button-hover: var(--background-hover); /* Deprecated v16.x.x utilizar --background-hover */
+  --color-select-button-focus: var(--outline-color-focused); /* Deprecated v16.x.x utilizar --outline-color-focused */
+
+  --color-select-color-primary: var(--text-color); /* Deprecated v16.x.x utilizar --text-color */
+  --color-select-color-selected: var(--color-white); /* Deprecated */
+  --color-select-background-color-unselected: var(--color-white); /* Deprecated */
+  --color-select-background-color-selected: var(--color-primary); /* Deprecated */
+  --color-select-color-text-error: var(--color-danger); /* Deprecated v16.x.x utilizar --color-danger */
+  --color-select-color-text-empty: var(--text-color-empty); /* Deprecated v16.x.x utilizar --text-color-empty */
 
   /*------------------------------------*\
     SLIDE

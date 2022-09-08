@@ -687,11 +687,11 @@ po-button {
     DATEPICKER RANGE
   \*------------------------------------*/
 
-  --color-datepicker-range-background-color-disabled: var(--color-neutral-light-90);
+  --color-datepicker-range-background-color-disabled: var(--color-neutral-light-80);
   --color-datepicker-range-border-text: var(--color-neutral-light-60);
   --color-datepicker-range-border-text-error: var(--color-danger);
   --color-datepicker-range-color-disabled: var(--color-neutral-light-60);
-  --color-datepicker-range-color-focused: var(--color-primary);
+  --color-datepicker-range-color-focused: var(--color-secondary);
   --color-datepicker-range-color-text-error: var(--color-danger);
 
   /*------------------------------------*\
@@ -780,19 +780,49 @@ po-button {
   --color-info-color-link: var(--color-primary);
   --color-info-color-link-hover: var(--color-primary-dark-20);
   --color-info-color-link-pressed: var(--color-primary-dark-40);
-
-  /*------------------------------------*\
+}
+/*------------------------------------*\
     INPUT
   \*------------------------------------*/
 
-  --color-input-background-color-text: var(--color-white);
-  --color-input-border-text: var(--color-neutral-light-60);
-  --color-input-border-text-disabled: var(--color-neutral-light-90);
-  --color-input-border-text-focusable: var(--color-primary);
+po-input,
+po-url,
+po-login,
+po-email,
+po-password,
+po-combo,
+po-lookup,
+po-decimal,
+po-number,
+po-multiselect,
+po-datepicker,
+po-datepicker-range,
+div.po-lookup-filter-content input.po-input {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --text-color-placeholder: var(--color-neutral-light-60);
+  --color: var(--color-neutral-dark-70);
+  --background: var(--color-neutral-light-98);
+  --padding: 0 0.5rem;
+  --text-color: var(--color-neutral-dark-60);
+  --color-hover: var(--color-secondary-dark-20);
+  --background-hover: var(--color-brand-01-lightest);
+  --color-focused: var(--color-secondary);
+  --outline-color-focused: var(--color-outline-focused);
+  --color-disabled: var(--color-neutral-light-60);
+  --background-disabled: var(--color-neutral-light-80);
+  --text-color-disabled: var(--color-neutral-dark-70);
+}
+
+:root {
+  --color-input-background-color-text: var(--background);
+  --color-input-border-text: var(--color-disabled);
+  --color-input-border-text-disabled: var(--background-disabled);
+  --color-input-border-text-focusable: var(--color-focused);
   --color-input-border-text-error: var(--color-danger);
-  --color-input-color-disabled: var(--color-neutral-light-60);
+  --color-input-color-disabled: var(--text-color-disabled);
   --color-input-text-error: var(--color-danger);
-  --color-input-text-placeholder: var(--color-neutral-light-40);
+  --color-input-text-placeholder: var(--text-color-placeholder);
 
   /*------------------------------------*\
     LIST VIEW
@@ -908,7 +938,7 @@ po-button {
 
   --color-multiselect-border-field: var(--color-neutral-light-60);
   --color-multiselect-border-field-error: var(--color-danger);
-  --color-multiselect-border-field-focus: var(--color-primary);
+  --color-multiselect-border-field-focus: var(--color-secondary-dark-20);
   --color-multiselect-border-search: var(--color-neutral-light-80);
 
   --color-multiselect-color-field-focus: var(--color-primary);

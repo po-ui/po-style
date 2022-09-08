@@ -32,6 +32,7 @@
 
 .po-lookup-filter-content {
   padding: 8px 0;
+  margin-right: 6px;
   position: relative;
   display: inline-block;
   width: var(--filter-content-width);

@@ -1,55 +1,73 @@
-:root {
-  --font-input-text: {
-    @apply --font-text-large;
-  }
-
-  --shadow-input-box-shadow-input: var(--shadow-input);
-}
-
 .po-input {
-  @apply --font-input-text;
-  appearance: textfield;
-  background-color: var(--color-input-background-color-text);
-  border: solid 1px var(--color-input-border-text);
-  border-radius: 3px;
-  box-shadow: var(--shadow-input-box-shadow-input);
-  height: 44px;
-  padding: 0 16px;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  background-color: var(--color-input-background-color-text, var(--background));
+  padding: var(--padding, 0 0.5em);
+  border: 1px solid var(--color-input-border-text, var(--color));
+  border-radius: 4px;
+  min-height: 2.75em;
+  box-sizing: border-box;
   width: 100%;
 }
 
-.po-input::placeholder {
-  color: var(--color-input-text-placeholder);
-}
-
-.po-input-icon-left {
-  padding-left: 44px;
-}
-
-.po-input-icon-right {
+.po-input.po-input-icon-right {
   padding-right: 44px;
 }
 
-.po-input-double-icon-right {
-  padding-right: 68px !important;
+.po-input::placeholder {
+  color: var(--color-input-text-placeholder, var(--text-color-placeholder));
 }
 
-/* Desabilita o clean field e o reveal do IE 10+ */
+.po-input.po-input-icon-left {
+  padding-left: 44px;
+}
+
+.po-input:hover {
+  border-color: var(--color-hover);
+  background-color: var(--background-hover);
+}
+
+.po-input:focus {
+  border-color: var(--color-input-border-text-focusable, var(--color-focused));
+  outline-color: var(--outline-color-focused);
+  outline-width: 4px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.po-input:read-only {
+  border-color: var(--color-neutral-light-30);
+  background-color: var(--color-neutral-light-05);
+  color: var(--color-neutral-dark-70);
+  cursor: text;
+}
+
+.po-field-icon.po-icon-input:not(.po-icon-eye-off),
+po-clean.po-icon-input span.po-field-icon {
+  color: var(--color-brand-01-dark) !important;
+}
+
+.po-input:disabled,
+.po-input[disabled='true'] {
+  border-color: var(--color-input-border-text, var(--color-disabled));
+  background-color: var(--color-input-border-text-disabled, var(--background-disabled));
+  color: var(--color-input-color-disabled, var(--text-color-disabled));
+  cursor: not-allowed;
+}
+
+.po-field-icon.po-icon-input:not(.po-icon-eye-off),
+po-clean.po-icon-input span.po-field-icon {
+  color: var(--color-brand-01-dark) !important;
+}
+
+.po-icon-input-disabled {
+  color: var(--color-field-icon-color-disabled);
+}
+
 .po-input::-ms-clear,
 .po-input::-ms-reveal {
   display: none;
-}
-
-.po-input:disabled {
-  background-color: var(--color-input-border-text-disabled);
-  border: solid 1px var(--color-input-border-text);
-  color: var(--color-input-color-disabled);
-  pointer-events: none;
-}
-
-.ng-valid .po-input:focus {
-  border: solid 1px var(--color-input-border-text-focusable) !important;
-  outline: none;
 }
 
 po-combo.ng-invalid.ng-dirty .po-input,

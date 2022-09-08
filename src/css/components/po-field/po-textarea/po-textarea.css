@@ -1,64 +1,58 @@
-:root {
-  --font-textarea-text: {
-    @apply --font-text-large;
-  }
+.po-textarea {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  border-color: var(--color-textarea-border, var(--color));
+  background: var(--color-textarea-background-color, var(--background));
+  color: var(--text-color);
 
-  --font-textarea-error-message: {
-    @apply --font-text-bold;
-  }
-
-  --font-textarea-error-text: {
-    @apply --font-text-small;
-  }
-
-  --shadow-textarea-box-shadow: var(--shadow-input);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-md);
+  padding: var(--spacing-squish-sm);
+  border-radius: var(--border-radius-md);
+  border-width: var(--border-width-sm);
+  border-style: solid;
+  width: 100%;
+  box-sizing: border-box;
+  resize: both;
 }
 
-.po-textarea {
-  @apply --font-textarea-text;
-  border: solid 1px var(--color-textarea-border) !important;
-  border-radius: 3px;
-  box-shadow: var(--shadow-textarea-box-shadow);
-  background-color: var(--color-textarea-background-color);
-  display: block;
-  padding: 8px 16px;
-  resize: none;
-  width: 100%;
+.po-textarea::placeholder {
+  color: var(--text-color-placeholder);
+}
+
+.po-textarea:hover {
+  border-color: var(--color-hover);
+  background: var(--background-hover);
+}
+
+.po-textarea:focus-visible {
+  border-color: var(--color-textarea-border-focusable, var(--color-focused));
+  outline-color: var(--outline-color-focused);
+
+  outline-width: var(--border-width-lg);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.po-textarea:read-only {
+  color: var(--text-color-readonly);
+
+  border-color: var(--color-disabled);
+  background: var(--color-textarea-background-color, var(--background));
+  cursor: text;
 }
 
 .po-textarea:disabled {
-  background-color: var(--color-textarea-background-color-disabled);
-  border: solid 1px var(--color-textarea-border-color-disabled);
-  color: var(--color-textarea-color-disabled);
+  border-color: var(--color-textarea-border-color-disabled, var(--color-disabled));
+  background: var(--color-textarea-background-color-disabled, var(--background-disabled));
+
+  color: var(--input-text);
+  cursor: not-allowed;
 }
 
-.ng-valid .po-textarea:focus {
-  border: solid 1px var(--color-textarea-border-focusable) !important;
-  outline: none;
-}
+po-textarea.ng-invalid.ng-dirty .po-textarea {
+  border-color: var(--color-textarea-color-error, var(--color-error));
 
-.po-textarea-label-error {
-  @apply --font-textarea-error-text;
-  color: var(--color-textarea-color-error);
-  display: block;
-  height: 20px;
-  margin-top: 2px;
-  padding-left: 2px;
-  text-align: left;
-}
-
-.po-textarea-label-error .po-textarea-label-error-icon {
-  @apply --font-textarea-error-message;
-  padding-bottom: 2px;
-  vertical-align: middle;
-  width: 16px;
-}
-
-.po-textarea::-webkit-scrollbar {
-  width: 7px;
-}
-
-.po-textarea::-webkit-scrollbar-thumb {
-  background-color: var(--color-textarea-background-color-scrollbar);
-  border-radius: 2px;
+  background: var(--color-textarea-background-color, var(--background));
+  cursor: text;
 }

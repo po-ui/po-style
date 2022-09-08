@@ -1424,20 +1424,48 @@ po-switch {
   --color-tag-inverse-border-color-10: var(--color-10);
   --color-tag-inverse-border-color-11: var(--color-11);
   --color-tag-inverse-border-color-12: var(--color-12);
-
-  /*------------------------------------*\
+}
+/*------------------------------------*\
     TEXTAREA
   \*------------------------------------*/
+po-textarea {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
 
-  --color-textarea-background-color: var(--color-white);
-  --color-textarea-border: var(--color-neutral-light-60);
-  --color-textarea-background-color-disabled: var(--color-neutral-light-90);
-  --color-textarea-border-color-disabled: var(--color-neutral-light-90);
-  --color-textarea-border-focusable: var(--color-primary);
-  --color-textarea-color-error: var(--color-danger);
-  --color-textarea-color-disabled: var(--color-neutral-light-60);
-  --color-textarea-text-error: var(--color-danger);
-  --color-textarea-background-color-scrollbar: var(--color-primary);
+  --text-color-placeholder: var(--color-neutral-light-60);
+  --color: var(--color-neutral-dark-70);
+  --background: var(--color-neutral-light-98);
+
+  --text-color: var(--color-neutral-dark-60);
+
+  --color-hover: var(--color-secondary-dark-20);
+  --background-hover: var(--color-brand-01-lightest);
+
+  --color-focused: var(--color-secondary);
+
+  --outline-color-focused: var(--color-outline-focused);
+
+  --color-disabled: var(--color-neutral-light-60);
+  --background-disabled: var(--color-neutral-light-80);
+
+  --text-color-readonly: var(--color-neutral-dark-70);
+
+  --color-error: var(--color-danger);
+}
+:root {
+  --color-textarea-background-color: var(---background); /* Deprecated v16.x.x utilizar ---background */
+  --color-textarea-border: var(--color); /* Deprecated v16.x.x utilizar --color */
+  --color-textarea-background-color-disabled: var(
+    --background-disabled
+  ); /* Deprecated v16.x.x utilizar --background-disabled */
+  --color-textarea-border-color-disabled: var(--color-disabled); /* Deprecated v16.x.x utilizar --color-disabled */
+  --color-textarea-border-focusable: var(--color-focused); /* Deprecated v16.x.x utilizar --color-focused */
+
+  --color-textarea-color-error: var(--color-error); /* Deprecated v16.x.x utilizar --color-error */
+
+  --color-textarea-color-disabled: var(--text-color); /* Deprecated */
+  --color-textarea-text-error: var(--color-error); /* Deprecated */
+  --color-textarea-background-color-scrollbar: var(--color-primary); /* Deprecated */
 
   /*------------------------------------*\
     TOOLBAR

@@ -80,11 +80,10 @@ po-lookup.ng-invalid.ng-dirty .po-input,
 po-multiselect.ng-invalid.ng-dirty .po-multiselect-input,
 po-number.ng-invalid.ng-dirty .po-input,
 po-password.ng-invalid.ng-dirty .po-input,
-po-textarea.ng-invalid.ng-dirty .po-textarea,
+po-select.ng-invalid.ng-dirty .po-select-button,
 po-upload.ng-invalid.ng-dirty .po-upload-button button,
 po-url.ng-invalid.ng-dirty .po-input {
   border: solid 1px var(--color-input-border-text-error) !important;
-  outline: none;
   color: var(--color-input-text-error);
 }
 

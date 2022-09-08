@@ -1,4 +1,21 @@
 <style>
+  :root {
+    --font-family: var(--font-family-theme);
+    --font-size: var(--font-size-default);
+    --text-color-placeholder: var(--color-neutral-light-30);
+    --color: var(--color-neutral-dark-70);
+    --background: var(--color-neutral-light-05);
+    --padding: 0 0.5rem;
+    --text-color: var(--color-neutral-dark-90);
+    --color-hover: var(--color-action-hover);
+    --background-hover: var(--color-brand-01-lightest);
+    --color-focused: var(--color-action-default);
+    --outline-color-focused: var(--color-action-focus);
+    --color-disabled: var(--color-action-disabled);
+    --background-disabled: var(--color-neutral-light-20);
+    --text-color-disabled: var(--color-neutral-dark-70);
+  }
+
   div.ng-invalid.ng-dirty .po-input {
     border: solid 1px #c64840 !important;
     outline: none;
@@ -23,7 +40,7 @@
 
           <div class="po-field-container-content">
             <div class="po-field-icon-container-left">
-              <span class="po-icon po-field-icon po-icon-user"></span>
+              <span class="po-icon po-field-icon po-icon-user po-icon-input"></span>
             </div>
             <input type="text" class="po-input po-input-icon-left" placeholder="Insira seu login" />
           </div>
@@ -41,7 +58,7 @@
 
           <div class="po-field-container-content">
             <div class="po-field-icon-container-left">
-              <span class="po-icon po-icon-user po-field-icon"></span>
+              <span class="po-icon po-icon-user po-field-icon po-icon-input"></span>
             </div>
             <input type="text" class="po-input po-input-icon-left po-input-icon-right" value="dev@po-ui.com" />
             <div class="po-field-icon-container-right">
@@ -89,7 +106,7 @@
 
           <div class="po-field-container-content">
             <div class="po-field-icon-container-left">
-              <span class="po-icon po-field-icon po-icon-user"></span>
+              <span class="po-icon po-field-icon po-icon-user po-icon-input"></span>
             </div>
             <input type="text" class="po-input po-input-icon-left" placeholder="Insira seu login" />
           </div>
@@ -145,7 +162,7 @@
 
           <div class="po-field-container-content">
             <div class="po-field-icon-container-left">
-              <span class="po-icon po-field-icon po-icon-user"></span>
+              <span class="po-icon po-field-icon po-icon-user po-icon-input"></span>
             </div>
             <input type="text" class="po-input po-input-icon-left" placeholder="Insira seu login" />
           </div>
@@ -160,7 +177,7 @@
 
           <div class="po-field-container-content ng-valid">
             <div class="po-field-icon-container-left">
-              <span class="po-icon po-icon-user po-field-icon"></span>
+              <span class="po-icon po-icon-user po-field-icon po-icon-input"></span>
             </div>
             <input type="text" class="po-input po-input-icon-left" value="dev@po-ui.com" />
           </div>

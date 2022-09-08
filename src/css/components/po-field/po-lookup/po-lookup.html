@@ -1,4 +1,21 @@
 <style>
+  :root {
+    --font-family: var(--font-family-theme);
+    --font-size: var(--font-size-default);
+    --text-color-placeholder: var(--color-neutral-light-30);
+    --color: var(--color-neutral-dark-70);
+    --background: var(--color-neutral-light-05);
+    --padding: 0 0.5rem;
+    --text-color: var(--color-neutral-dark-90);
+    --color-hover: var(--color-action-hover);
+    --background-hover: var(--color-brand-01-lightest);
+    --color-focused: var(--color-action-default);
+    --outline-color-focused: var(--color-action-focus);
+    --color-disabled: var(--color-action-disabled);
+    --background-disabled: var(--color-neutral-light-20);
+    --text-color-disabled: var(--color-neutral-dark-70);
+  }
+
   div.ng-invalid.ng-dirty .po-input {
     border: solid 1px #c64840 !important;
     outline: none;
@@ -33,7 +50,7 @@
             <input type="text" class="po-input po-input-icon-right" value="" placeholder="Digite o nome" />
             <div class="po-field-icon-container-right">
               <span
-                class="po-icon po-field-icon po-icon-search"
+                class="po-icon po-field-icon po-icon-search po-icon-input"
                 onClick="document.getElementById('loading').classList.remove('po-invisible');"
               ></span>
             </div>
@@ -55,7 +72,7 @@
 
             <div class="po-field-icon-container-right">
               <span
-                class="po-icon po-field-icon po-icon-search"
+                class="po-icon po-field-icon po-icon-search po-icon-input"
                 onClick="document.getElementById('table').classList.remove('po-invisible');"
               ></span>
             </div>
@@ -102,7 +119,7 @@
             <input type="text" class="po-input po-input-icon-right" value="" placeholder="Digite o nome" />
             <div class="po-field-icon-container-right">
               <span
-                class="po-icon po-field-icon po-icon-search"
+                class="po-icon po-field-icon po-icon-search po-icon-input"
                 onClick="document.getElementById('advancedFilter').classList.remove('po-invisible');"
               ></span>
             </div>
@@ -166,7 +183,7 @@
             <input type="text" class="po-input po-input-icon-right" placeholder="Digite o nome" />
             <div class="po-field-icon-container-right">
               <span
-                class="po-icon po-field-icon po-icon-search"
+                class="po-icon po-field-icon po-icon-search po-icon-input"
                 onClick="document.getElementById('table').classList.remove('po-invisible');"
               ></span>
             </div>
@@ -185,7 +202,7 @@
             <input type="text" class="po-input po-input-icon-right" value="PO" />
             <div class="po-field-icon-container-right">
               <span
-                class="po-icon po-field-icon po-icon-search"
+                class="po-icon po-field-icon po-icon-search po-icon-input"
                 onClick="document.getElementById('table').classList.remove('po-invisible');"
               ></span>
             </div>

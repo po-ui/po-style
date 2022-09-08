@@ -11,14 +11,28 @@
 }
 
 .po-datepicker-range-field-disabled {
-  background-color: var(--color-datepicker-range-background-color-disabled) !important;
+  background-color: var(--color-datepicker-range-background-color-disabled);
   border: solid 1px var(--color-datepicker-range-border-text);
   color: var(--color-datepicker-range-color-disabled);
   pointer-events: none;
 }
 
-.po-datepicker-range-field-focused {
-  border: solid 1px var(--color-datepicker-range-color-focused) !important;
+.po-date-picker-container-disabled {
+  cursor: not-allowed !important;
+}
+
+div.po-datepicker-range-field-focused {
+  border-color: var(--color-datepicker-range-color-focused) !important;
+  outline-color: var(--color-action-focus);
+
+  outline-width: 4px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.po-datepicker-range-field:hover {
+  border-color: var(--color-action-hover) !important;
+  background-color: var(--color-brand-01-lightest) !important;
 }
 
 .po-datepicker-range-icon {

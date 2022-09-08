@@ -1,4 +1,21 @@
 <style>
+  :root {
+    --font-family: var(--font-family-theme);
+    --font-size: var(--font-size-default);
+    --text-color-placeholder: var(--color-neutral-light-30);
+    --color: var(--color-neutral-dark-70);
+    --background: var(--color-neutral-light-05);
+    --padding: 0 0.5rem;
+    --text-color: var(--color-neutral-dark-90);
+    --color-hover: var(--color-action-hover);
+    --background-hover: var(--color-brand-01-lightest);
+    --color-focused: var(--color-action-default);
+    --outline-color-focused: var(--color-action-focus);
+    --color-disabled: var(--color-action-disabled);
+    --background-disabled: var(--color-neutral-light-20);
+    --text-color-disabled: var(--color-neutral-dark-70);
+  }
+
   .po-combo-container {
     position: relative;
   }
@@ -16,7 +33,7 @@
           <div class="po-field-container-content ng-valid">
             <input type="text" class="po-input po-input-icon-right" value="São Paulo" />
             <div class="po-field-icon-container-right">
-              <span class="po-icon po-field-icon po-icon-arrow-down"></span>
+              <span class="po-icon po-field-icon po-icon-arrow-down po-icon-input"></span>
             </div>
           </div>
           <div class="po-field-container-bottom"></div>
@@ -31,13 +48,13 @@
           <div class="po-field-help">Texto de ajuda</div>
           <div class="po-field-container-content ng-valid">
             <div class="po-field-icon-container-left">
-              <span class="po-icon po-field-icon po-icon-gift"></span>
+              <span class="po-icon po-field-icon po-icon-gift po-icon-input"></span>
             </div>
 
             <input type="text" class="po-input po-input-double-icon-right po-input-icon-left" value="Joinville" />
             <div class="po-field-icon-container-right">
-              <span class="po-icon po-field-icon po-icon-close"></span>
-              <span class="po-icon po-field-icon po-icon-arrow-down"></span>
+              <span class="po-icon po-field-icon po-icon-close po-icon-input"></span>
+              <span class="po-icon po-field-icon po-icon-arrow-down po-icon-input"></span>
             </div>
           </div>
           <div class="po-field-container-bottom"></div>
@@ -52,7 +69,7 @@
           <div class="po-field-container-content ng-valid">
             <input type="text" class="po-input po-input-icon-right" placeholder="Sem label e sem help" />
             <div class="po-field-icon-container-right">
-              <span class="po-icon po-field-icon po-icon-arrow-down"></span>
+              <span class="po-icon po-field-icon po-icon-arrow-down po-icon-input"></span>
             </div>
           </div>
           <div class="po-field-container-bottom"></div>
@@ -64,7 +81,7 @@
           <div class="po-field-container-title"></div>
           <div class="po-field-container-content ng-valid">
             <div class="po-field-icon-container-left">
-              <span class="po-icon po-field-icon po-icon-company"></span>
+              <span class="po-icon po-field-icon po-icon-company po-icon-input"></span>
             </div>
 
             <input
@@ -73,7 +90,7 @@
               placeholder="Sem label, sem help e com ícone"
             />
             <div class="po-field-icon-container-right">
-              <span class="po-icon po-field-icon po-icon-arrow-down"></span>
+              <span class="po-icon po-field-icon po-icon-arrow-down po-icon-input"></span>
             </div>
           </div>
           <div class="po-field-container-bottom"></div>
@@ -185,7 +202,7 @@
             <input type="text" class="po-input po-input-icon-right" value="São Paulo" />
 
             <div class="po-field-icon-container-right">
-              <span class="po-icon po-field-icon po-icon-arrow-up"></span>
+              <span class="po-icon po-field-icon po-icon-arrow-up po-icon-input"></span>
             </div>
           </div>
 
@@ -222,7 +239,7 @@
           <div class="po-field-container-content ng-valid">
             <input type="text" class="po-input po-input-icon-right" value="São Paulo" />
             <div class="po-field-icon-container-right">
-              <span class="po-icon po-field-icon po-icon-arrow-up"></span>
+              <span class="po-icon po-field-icon po-icon-arrow-up po-icon-input"></span>
             </div>
           </div>
 
@@ -262,7 +279,7 @@
             <input type="text" class="po-input po-input-icon-right" value="São Paulo" />
 
             <div class="po-field-icon-container-right">
-              <span class="po-icon po-field-icon po-icon-arrow-up"></span>
+              <span class="po-icon po-field-icon po-icon-arrow-up po-icon-input"></span>
             </div>
           </div>
 
@@ -289,7 +306,7 @@
           <div class="po-field-container-content ng-valid">
             <input type="text" class="po-input po-input-icon-right" value="São Paulo" />
             <div class="po-field-icon-container-right">
-              <span class="po-icon po-field-icon po-icon-arrow-up"></span>
+              <span class="po-icon po-field-icon po-icon-arrow-up po-icon-input"></span>
             </div>
           </div>
 
@@ -341,7 +358,7 @@
           <div class="po-field-container-content ng-valid">
             <input type="text" class="po-input po-input-icon-right" value="São Paulo" />
             <div class="po-field-icon-container-right">
-              <span class="po-icon po-field-icon po-icon-arrow-up"></span>
+              <span class="po-icon po-field-icon po-icon-arrow-up po-icon-input"></span>
             </div>
           </div>
           <div class="po-combo-container">

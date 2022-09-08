@@ -277,15 +277,15 @@
 
 @media (max-width: 1366px) {
   .po-page-login-field-size {
-    width: calc(100% - 29px);
+    width: calc(100% - 32px);
   }
 
   .po-page-login-info-icon-container {
-    padding-left: 5px;
+    padding-left: 8px;
   }
 
   .po-page-login-password-popover-container {
-    width: 29px;
+    width: 32px;
   }
 
   .po-page-login-popover-container {

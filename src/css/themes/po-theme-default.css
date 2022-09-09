@@ -1233,23 +1233,16 @@ po-select {
     --background-disabled
   ); /* Deprecated v16.x.x utilizar --background-disabled */
 
-  --color-select-background-color-item-hover: var(--color-primary-light-95); /* Deprecated */
-  --color-select-background-color-scrollbar: var(--color-primary-alpha-50); /* Deprecated */
-
   --color-select-border-button: var(--color); /* Deprecated v16.x.x utilizar --color */
   --color-select-border-button-error: var(--color-danger); /* Deprecated v16.x.x utilizar --color-danger */
   --color-select-border-button-disabled: var(--color-disabled); /* Deprecated v16.x.x utilizar --color-disabled */
   --color-select-border-button-hover: var(--color-hover); /* Deprecated v16.x.x utilizar --color-hover */
   --color-select-border-button-focus: var(--color-focused); /* Deprecated v16.x.x utilizar --color-focused */
 
-  --color-select-button-disabled: var(--color-disabled); /* Deprecated */
   --color-select-button-hover: var(--background-hover); /* Deprecated v16.x.x utilizar --background-hover */
   --color-select-button-focus: var(--outline-color-focused); /* Deprecated v16.x.x utilizar --outline-color-focused */
 
   --color-select-color-primary: var(--text-color); /* Deprecated v16.x.x utilizar --text-color */
-  --color-select-color-selected: var(--color-white); /* Deprecated */
-  --color-select-background-color-unselected: var(--color-white); /* Deprecated */
-  --color-select-background-color-selected: var(--color-primary); /* Deprecated */
   --color-select-color-text-error: var(--color-danger); /* Deprecated v16.x.x utilizar --color-danger */
   --color-select-color-text-empty: var(--text-color-empty); /* Deprecated v16.x.x utilizar --text-color-empty */
 

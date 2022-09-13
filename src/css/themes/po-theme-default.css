@@ -1463,10 +1463,6 @@ po-textarea {
 
   --color-textarea-color-error: var(--color-error); /* Deprecated v16.x.x utilizar --color-error */
 
-  --color-textarea-color-disabled: var(--text-color); /* Deprecated */
-  --color-textarea-text-error: var(--color-error); /* Deprecated */
-  --color-textarea-background-color-scrollbar: var(--color-primary); /* Deprecated */
-
   /*------------------------------------*\
     TOOLBAR
   \*------------------------------------*/

@@ -47,8 +47,8 @@
 }
 
 .po-button-group-container .po-button-group.po-button-group-button-selected .po-button {
-  background-color: var(--color-button-group-background-selected);
-  border-color: var(--color-button-group-border-selected);
+  background-color: var(--color-button-group-background-selected, var(--color-brand-01-darker));
+  border-color: var(--color-button-group-border-selected, var(--color-brand-01-darker));
   color: var(--color-button-group-color-selected);
 }
 
@@ -59,8 +59,8 @@
 }
 
 .po-button-group-container .po-button-group.po-button-group-button-selected .po-button:active {
-  background-color: var(--color-button-group-background-color-neutral-pressed);
-  border-color: var(--color-button-group-border-neutral-pressed);
+  background-color: var(--color-button-group-background-color-neutral-pressed, var(--color-brand-01-darker));
+  border-color: var(--color-button-group-border-neutral-pressed, var(--color-brand-01-darker));
   color: var(--color-button-group-color-neutral-pressed);
   outline-color: var(--color-outline-focused);
   outline-width: 0.25em;

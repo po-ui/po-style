@@ -585,17 +585,17 @@ po-button {
   /*------------------------------------*\
     BUTTON GROUP
   \*------------------------------------*/
-  --color-button-group-background-selected: var(--color-neutral);
-  --color-button-group-border-selected: var(--color-neutral);
+  --color-button-group-background-selected: var(--color-secondary-dark-40);
+  --color-button-group-border-selected: var(--color-secondary-dark-40);
   --color-button-group-color-selected: var(--color-white);
 
-  --color-button-group-background-color-neutral-hover: var(--color-neutral-dark-40);
-  --color-button-group-border-button-hover: var(--color-secondary-dark-80);
-  --color-button-group-border-neutral-hover: var(--color-secondary-dark-80);
+  --color-button-group-background-color-neutral-hover: var(--color-secondary-dark-20);
+  --color-button-group-border-button-hover: var(--color-secondary-dark-20);
+  --color-button-group-border-neutral-hover: var(--color-secondary-dark-20);
   --color-button-group-color-neutral-hover: var(--color-white);
 
-  --color-button-group-background-color-neutral-pressed: var(--color-neutral-dark-60);
-  --color-button-group-border-neutral-pressed: var(--color-neutral-dark-60);
+  --color-button-group-background-color-neutral-pressed: var(--color-secondary-dark-40);
+  --color-button-group-border-neutral-pressed: var(--color-secondary-dark-40);
   --color-button-group-color-neutral-pressed: var(--color-white);
 
   --color-button-group-background-color-neutral-disabled: var(--color-transparent);

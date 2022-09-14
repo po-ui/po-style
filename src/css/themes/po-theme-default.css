@@ -1149,12 +1149,6 @@ po-radio {
   --color-radio-group-border-color-focusable: var(
     --outline-color-focused
   ); /* Deprecated v16.x.x utilizar --outline-color-focused */
-  --color-radio-group-border-color-input-error: var(--color-danger);
-
-  --color-radio-group-color-label-active: var(--color-white);
-  --color-radio-group-color-text-disabled: var(
-    --color-checked-disabled
-  ); /* Deprecated v16.x.x utilizar --color-checked-disabled */
 
   /*------------------------------------*\
     RICH TEXT

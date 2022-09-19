@@ -5,8 +5,7 @@
 
   .table-sample-po-checkbox td,
   .table-sample-po-checkbox th {
-    padding: 0 10px;
-    text-align: left;
+    padding: 8px;
   }
 
   .table-sample-po-checkbox th,
@@ -21,53 +20,162 @@
       <h4>Estados do po-checkbox</h4>
 
       <table class="table-sample-po-checkbox">
-        <div class="container-po-checkbox">
-          <span aria-checked="true" class="po-checkbox" role="checkbox" tabindex="0"> </span>
+        <tr>
+          <th></th>
+          <th>Checked</th>
+          <th>Unchecked</th>
+          <th>Indeterminate / Mixed</th>
+        </tr>
+        <tr>
+          <td>Enabled</td>
+          <td>
+            <div class="container-po-checkbox">
+              <div role="checkbox" class="po-checkbox-outline">
+                <span aria-checked="true" class="po-checkbox" tabindex="0"> </span>
 
-          <label class="po-checkbox-label"> True </label>
-        </div>
+                <label class="po-checkbox-label"> True </label>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="container-po-checkbox">
+              <div role="checkbox" class="po-checkbox-outline">
+                <span aria-checked="false" class="po-checkbox" tabindex="0"> </span>
 
-        <div class="container-po-checkbox">
-          <span aria-checked="false" class="po-checkbox" role="checkbox" tabindex="0"> </span>
+                <label class="po-checkbox-label"> False </label>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="container-po-checkbox">
+              <div role="checkbox" class="po-checkbox-outline">
+                <span aria-checked="mixed" class="po-checkbox" tabindex="0"> </span>
 
-          <label class="po-checkbox-label"> False </label>
-        </div>
-        <div class="container-po-checkbox">
-          <span aria-checked="mixed" class="po-checkbox" role="checkbox" tabindex="0"> </span>
+                <label class="po-checkbox-label"> Indeterminate / Mixed </label>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Disabled</td>
+          <td>
+            <div class="container-po-checkbox">
+              <div role="checkbox" class="po-checkbox-outline">
+                <span aria-checked="true" class="po-checkbox" aria-disabled="true" tabindex="-1"> </span>
 
-          <label class="po-checkbox-label"> Indeterminate </label>
-        </div>
+                <label class="po-checkbox-label"> True </label>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="container-po-checkbox">
+              <div role="checkbox" class="po-checkbox-outline">
+                <span aria-checked="false" class="po-checkbox" aria-disabled="true" tabindex="-1"> </span>
 
-        <div class="container-po-checkbox">
-          <span aria-checked="false" class="po-checkbox" role="checkbox" aria-disabled="true" tabindex="-1"> </span>
+                <label class="po-checkbox-label"> False </label>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="container-po-checkbox">
+              <div role="checkbox" class="po-checkbox-outline">
+                <span aria-checked="mixed" class="po-checkbox" aria-disabled="true" tabindex="0"> </span>
 
-          <label class="po-checkbox-label"> Disabled </label>
-        </div>
-        <div class="container-po-checkbox">
-          <span aria-checked="true" class="po-checkbox" role="checkbox" aria-disabled="true" tabindex="-1"> </span>
+                <label class="po-checkbox-label"> Indeterminate / Mixed </label>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Enabled Large</td>
+          <td>
+            <div class="container-po-checkbox">
+              <div role="checkbox" p-size="large" class="po-checkbox-outline">
+                <span aria-checked="true" class="po-checkbox" tabindex="0"> </span>
 
-          <label class="po-checkbox-label"> Disabled checked </label>
-        </div>
-        <div class="container-po-checkbox">
-          <span aria-checked="mixed" class="po-checkbox" role="checkbox" aria-disabled="true" tabindex="0"> </span>
+                <label class="po-checkbox-label"> True </label>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="container-po-checkbox">
+              <div role="checkbox" p-size="large" class="po-checkbox-outline">
+                <span aria-checked="false" class="po-checkbox" tabindex="0"> </span>
 
-          <label class="po-checkbox-label"> Indeterminate checked </label>
-        </div>
+                <label class="po-checkbox-label"> False </label>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="container-po-checkbox">
+              <div role="checkbox" p-size="large" class="po-checkbox-outline">
+                <span aria-checked="mixed" class="po-checkbox" tabindex="0"> </span>
+
+                <label class="po-checkbox-label"> Indeterminate </label>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Disabled Large</td>
+          <td>
+            <div class="container-po-checkbox">
+              <div role="checkbox" p-size="large" class="po-checkbox-outline">
+                <span aria-checked="true" class="po-checkbox" role="checkbox" aria-disabled="true" tabindex="-1">
+                </span>
+
+                <label class="po-checkbox-label"> True </label>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="container-po-checkbox">
+              <div role="checkbox" p-size="large" class="po-checkbox-outline">
+                <span aria-checked="false" class="po-checkbox" role="checkbox" aria-disabled="true" tabindex="-1">
+                </span>
+
+                <label class="po-checkbox-label"> False </label>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="container-po-checkbox">
+              <div role="checkbox" p-size="large" class="po-checkbox-outline">
+                <span aria-checked="mixed" class="po-checkbox" role="checkbox" aria-disabled="true" tabindex="0">
+                </span>
+
+                <label class="po-checkbox-label"> Indeterminate / Mixed </label>
+              </div>
+            </div>
+          </td>
+        </tr>
       </table>
     </div>
 
     <div class="container">
-      <h4>Utilizando o po-checkbox-group com label muito grande</h4>
-      <br />
+      <h4 class="po-mb-2">Utilizando o po-checkbox-group com label muito grande</h4>
       <div class="po-checkbox-group-item po-md-6">
         <div class="container-po-checkbox">
-          <span aria-checked="true" class="po-checkbox" role="checkbox" tabindex="0"> </span>
+          <span aria-checked="true" class="po-checkbox" tabindex="0"> </span>
 
           <label class="po-checkbox-label">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat."
           </label>
+        </div>
+      </div>
+      <div class="po-checkbox-group-item po-md-6">
+        <div class="container-po-checkbox">
+          <div role="checkbox" p-size="large" class="po-checkbox-outline">
+            <span aria-checked="true" class="po-checkbox" tabindex="0"> </span>
+
+            <label class="po-checkbox-label">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat."
+            </label>
+          </div>
         </div>
       </div>
     </div>

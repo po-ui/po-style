@@ -18,6 +18,13 @@
   align-self: flex-start;
 }
 
+[p-size='large'] .po-checkbox {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+}
+
 .po-checkbox:hover {
   border-color: var(--color-checkbox-border-input-active);
   box-shadow: 0 0 0 4px var(--color-checkbox-hover-active);
@@ -72,7 +79,7 @@
 }
 
 .po-checkbox-label {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   cursor: pointer;
 }
 

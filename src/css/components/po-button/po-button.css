@@ -11,6 +11,7 @@
   border-style: solid;
   min-height: 2.75em;
   cursor: pointer;
+  min-width: 2.75em;
 }
 
 button[p-kind='primary'] {

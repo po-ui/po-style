@@ -6,7 +6,7 @@
 
 po-table-column-manager .po-popover {
   min-height: unset;
-  width: 248px;
+  width: 270px;
 }
 
 po-table-column-manager .po-popover .po-popover-content {
@@ -54,7 +54,8 @@ po-table-column-manager .po-popover .po-popover-content {
 .po-table-column-manager-body {
   max-height: 368px;
   overflow-y: auto;
-  padding: 0 16px;
+  padding: 8px 16px;
+  display: grid;
 }
 
 .po-table-column-manager-body::-webkit-scrollbar {
@@ -95,13 +96,11 @@ po-table-column-manager .po-popover .po-popover-content {
   display: flex;
   flex-direction: column;
   padding: 8px 0;
-  margin-left: auto;
 }
 
 .po-container-icons-arrows-columns-manager {
   display: flex;
   flex-direction: row;
-  padding: 6px 0;
   margin-left: auto;
 }
 
@@ -109,9 +108,19 @@ po-table-column-manager .po-popover .po-popover-content {
   font-size: 25px;
 }
 
-.po-table-column-manager-body {
+.po-table-list-manager-item {
   display: flex;
-  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.po-table-list-manager-container {
+  list-style-type: none;
+}
+
+.po-table-list-manager-item .po-checkbox-outline {
+  padding: 6px 0;
+  margin: 4px 0;
 }
 
 .po-container-icons-arrows-columns-manager .po-button,

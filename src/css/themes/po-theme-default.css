@@ -819,7 +819,8 @@ po-number,
 po-multiselect,
 po-datepicker,
 po-datepicker-range,
-div.po-lookup-filter-content input.po-input {
+div.po-lookup-filter-content input.po-input,
+input.po-input {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-default);
   --text-color-placeholder: var(--color-neutral-light-60);

@@ -2,6 +2,46 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [14.5.0](https://github.com/po-ui/po-style/compare/v14.4.0...v14.5.0) (2022-09-26)
+
+
+### Bug Fixes
+
+* **checkbox:** ajusta a posição do checkbox ([b804bd0](https://github.com/po-ui/po-style/commit/b804bd00b549d1d76e79148ad8b01fe693494645))
+* **radio:** corrige os tokens do `po-radio` ([bd3de34](https://github.com/po-ui/po-style/commit/bd3de34e7b5106fce228e2663a1fafe3cc37583f))
+* **table:** corrige posicionamento do gerenciador ([6ab30b7](https://github.com/po-ui/po-style/commit/6ab30b74a9236bd0e4517d01ce45fb350cf81f53))
+
+
+### Features
+
+* **fields:** inclui definições do AnimaliaDS ([e09b084](https://github.com/po-ui/po-style/commit/e09b08430fe62000876a635f76e76e92fc31e3ee))
+* **radiogroup:** aplica estilo definido pelo DS ([dfc6e13](https://github.com/po-ui/po-style/commit/dfc6e13320530016237272c05e57df9def14a1ee))
+* **select:** aplica estilo e acessibilidade definidos pelo DS ([c38f3b0](https://github.com/po-ui/po-style/commit/c38f3b04c88c20e12b740d3cc5907f6f476e4874))
+* **textarea:** aplica estilo e acessibilidade definidos pelo DS ([c655f42](https://github.com/po-ui/po-style/commit/c655f4288e5b512f77be8b1efcc6e347ab0e65a6))
+
+
+### BREAKING CHANGES
+
+* **textarea:** removidas as variáveis
+
+--color-textarea-color-disabled - não é possível mais customizar a cor de desabilitado
+--color-textarea-text-error - não é possível customizar a cor do texto de erro
+--color-textarea-background-color-scrollbar - não é possível mais customizar a cor do scrollbar
+* **select:** removidas as variáveis:
+
+--color-select-background-color-item-hover - não é possível mais customizar o efeito de hover no item.
+--color-select-background-color-scrollbar - não é possível mais customizar a cor da barra de rolagem.
+--color-select-button-disabled - não é mais necessário pois já se aplica à --color-select-background-color-disabled.
+--color-select-color-selected - não é possível mais customizar a cor do item selecionado.
+--color-select-background-color-unselected - não é possível mais customizar o select sem item selecionado.
+--color-select-background-color-selected - não é possível mais customiza o select com item selecionado.
+* **radiogroup:** removidas as variáveis:
+
+--color-radio-group-border-color-input-error: var(--color-danger) - não é possível mais customizar por essa propriedade;
+--color-radio-group-color-label-active: var(--color-white) - não é possível mais customizar por essa propriedade;
+
+
+
 # [14.4.0](https://github.com/po-ui/po-style/compare/v14.3.1...v14.4.0) (2022-09-05)
 
 

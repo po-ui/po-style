@@ -590,7 +590,6 @@ po-button {
   --color-button-group-color-selected: var(--color-white);
 
   --color-button-group-background-color-neutral-hover: var(--color-secondary-dark-20);
-  --color-button-group-border-button-hover: var(--color-secondary-dark-20);
   --color-button-group-border-neutral-hover: var(--color-secondary-dark-20);
   --color-button-group-color-neutral-hover: var(--color-white);
 

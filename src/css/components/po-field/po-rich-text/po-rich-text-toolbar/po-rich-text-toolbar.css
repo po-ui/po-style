@@ -19,16 +19,17 @@
   border-radius: 0 0 3px 3px;
   border-top: none;
   display: flex;
+  flex-wrap: wrap;
+  gap: 1em 0.75em;
   min-height: var(--rich-text-toolbar-min-height);
   min-width: var(--rich-text-toolbar-min-width);
-  padding: 16px 0 0 16px;
+  padding: 1em;
   width: 100%;
 }
 
 /* Necessário para alinhar os grupos dos botões, deverá ser aplicado na tag do componente 'po-button-group' */
 .po-rich-text-toolbar-button-align {
   display: inline-block;
-  padding: 0 12px 16px 0;
 }
 
 /* Aplica a largura fixa em cada botão do po-button-group */

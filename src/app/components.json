@@ -32,6 +32,7 @@
       { "path": "./css/components/po-grid/po-grid.html", "title": "Po Grid" },
       { "path": "./css/components/po-info/po-info.html", "title": "Po Info" },
       { "path": "./css/components/po-field/po-input/po-input.html", "title": "Po Input" },
+      { "path": "./css/components/po-link/po-link.html", "title": "Po Link" },
       { "path": "./css/components/po-list-view/po-list-view.html", "title": "Po List View" },
       { "path": "./css/components/po-loading/po-loading.html", "title": "Po Loading" },
       { "path": "./css/components/po-loading-overlay/po-loading-overlay.html", "title": "Po Loading Overlay" },

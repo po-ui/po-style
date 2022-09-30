@@ -23,11 +23,11 @@
 }
 
 .po-icon.po-icon-align-left:before {
-  content: '\e941';
+  content: '\e942';
 }
 
 .po-icon.po-icon-align-right:before {
-  content: '\e942';
+  content: '\e941';
 }
 
 .po-icon.po-icon-anchor:before {

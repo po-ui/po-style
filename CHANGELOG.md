@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [14.7.0](https://github.com/po-ui/po-style/compare/v14.6.0...v14.7.0) (2022-10-10)
+
+
+### Bug Fixes
+
+* **button:** remove outline em botão nativo ([0fc1b45](https://github.com/po-ui/po-style/commit/0fc1b45615be011523811f33721ff15fbb6f4a58))
+* **icon:** ajuste na iconografia ([fb8793c](https://github.com/po-ui/po-style/commit/fb8793c7f4cf2226e2ee566b87d433afe7a8a28d))
+* **rich-text:** ajustes na toolbar ([00a6c53](https://github.com/po-ui/po-style/commit/00a6c53ec96a4dea524164d86926eadb9a3386ad))
+
+
+### Features
+
+* **checkbox:** inclui p-size: large ([905f119](https://github.com/po-ui/po-style/commit/905f119b39ef1e0c1ac54e65f4405f1031b2ed5d))
+* **link:** cria novo componente po-link ([510a768](https://github.com/po-ui/po-style/commit/510a7685ebe3705a217fe884522f6ffd80ab6c25))
+
+
+
 # [14.6.0](https://github.com/po-ui/po-style/compare/v14.5.0...v14.6.0) (2022-10-03)
 
 

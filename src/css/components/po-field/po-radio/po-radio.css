@@ -44,7 +44,7 @@ po-radio {
   cursor: pointer;
 }
 
-.po-radio label[focus] {
+.po-radio-focus label {
   outline-color: var(--color-radio-group-border-color-focusable, var(--outline-color-focused));
 
   outline-width: var(--border-width-lg);

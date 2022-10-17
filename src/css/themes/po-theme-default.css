@@ -239,8 +239,6 @@
   --color-neutral-dark-60: var(--color-neutral-dark-90);
   /*Deprecated v16.x.x utilizar --color-neutral-dark-90*/
 
-  --color-neutral-dark-90: #1d1d30;
-
   /* Usar em sombras (10% de opacidade) */
   --color-black-alpha-10: rgba(0, 0, 0, 0.1);
 
@@ -259,9 +257,8 @@
   --color-warning: #ea9b3e;
 
   /* Background do Feedback de erro */
-  --color-danger-light-05: var(
-    --color-feedback-negative-lightest
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-lightest*/
+  --color-danger-light-05: var(--color-feedback-negative-lightest);
+  /*Deprecated v16.x.x utilizar --color-feedback-negative-lightest*/
 
   --color-danger-light-20: var(--color-feedback-negative-lighter);
   /*Deprecated v16.x.x utilizar --color-feedback-negative-lighter*/
@@ -763,8 +760,10 @@ po-button {
     FIELD CONTAINER
   \*------------------------------------*/
 
-  --color-field-container-color-title: var(--color-neutral);
-  --color-field-container-color-opcional: var(--color-neutral);
+  --color-field-container-color-title: var(--text-color); /* Deprecated v16.x.x utilizar --text-color */
+  --color-field-container-color-opcional: var(
+    --text-color-required
+  ); /* Deprecated v16.x.x utilizar --text-color-required */
   --color-field-container-color-help: var(--color-neutral);
 
   /*------------------------------------*\
@@ -804,9 +803,10 @@ po-button {
   --color-info-color-link-hover: var(--color-primary-dark-20);
   --color-info-color-link-pressed: var(--color-primary-dark-40);
 }
+
 /*------------------------------------*\
-    INPUT
-  \*------------------------------------*/
+  INPUT
+\*------------------------------------*/
 
 po-input,
 po-url,
@@ -850,8 +850,30 @@ input.po-input {
 }
 
 /*------------------------------------*\
-    LINK
-  \*------------------------------------*/
+  LABEL
+\*------------------------------------*/
+po-label {
+  /* basic */
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
+  --text-color: var(--color-neutral-dark-60);
+
+  /* field */
+  --font-weight-field: var(--font-weight-semibold);
+
+  /* required */
+  --text-color-required: var(--color-neutral-dark-70);
+  --font-size-required: var(--font-size-sm);
+  --line-height-required: var(--line-height-sm);
+
+  /* disabled */
+  --text-color-disabled: var(--color-neutral-mid-60);
+}
+
+/*------------------------------------*\
+  LINK
+\*------------------------------------*/
 
 po-link {
   --font-family: var(--font-family-theme);
@@ -864,8 +886,8 @@ po-link {
 }
 
 /*------------------------------------*\
-    LIST VIEW
-  \*------------------------------------*/
+  LIST VIEW
+\*------------------------------------*/
 :root {
   --color-list-view-background-color: var(--color-white);
   --color-list-view-border: var(--color-neutral-light-90);
@@ -1186,16 +1208,17 @@ po-radio {
     RADIO-GROUP
   \*------------------------------------*/
 
-  --color-radio-group-background-color: var(--color-unchecked); /* Deprecated v16.x.x utilizar --color-unchecked */
-  --color-radio-group-background-color-active: var(--color-checked); /* Deprecated v16.x.x utilizar --color-checked */
-  --color-radio-group-background-color-input-disabled: var(
-    --color-unchecked-disabled
-  ); /* Deprecated v16.x.x utilizar --color-unchecked-disabled */
+  --color-radio-group-background-color: var(--color-unchecked);
+  /* Deprecated v16.x.x utilizar --color-unchecked */
+  --color-radio-group-background-color-active: var(--color-checked);
+  /* Deprecated v16.x.x utilizar --color-checked */
+  --color-radio-group-background-color-input-disabled: var(--color-unchecked-disabled);
+  /* Deprecated v16.x.x utilizar --color-unchecked-disabled */
 
-  --color-radio-group-border-color: var(--border-color); /* Deprecated v16.x.x utilizar --border-color */
-  --color-radio-group-border-color-focusable: var(
-    --outline-color-focused
-  ); /* Deprecated v16.x.x utilizar --outline-color-focused */
+  --color-radio-group-border-color: var(--border-color);
+  /* Deprecated v16.x.x utilizar --border-color */
+  --color-radio-group-border-color-focusable: var(--outline-color-focused);
+  /* Deprecated v16.x.x utilizar --outline-color-focused */
 
   /*------------------------------------*\
     RICH TEXT
@@ -1243,23 +1266,33 @@ po-select {
 }
 
 :root {
-  --color-select-background-color: var(--background); /* Deprecated v16.x.x utilizar --background */
-  --color-select-background-color-disabled: var(
-    --background-disabled
-  ); /* Deprecated v16.x.x utilizar --background-disabled */
+  --color-select-background-color: var(--background);
+  /* Deprecated v16.x.x utilizar --background */
+  --color-select-background-color-disabled: var(--background-disabled);
+  /* Deprecated v16.x.x utilizar --background-disabled */
 
-  --color-select-border-button: var(--color); /* Deprecated v16.x.x utilizar --color */
-  --color-select-border-button-error: var(--color-danger); /* Deprecated v16.x.x utilizar --color-danger */
-  --color-select-border-button-disabled: var(--color-disabled); /* Deprecated v16.x.x utilizar --color-disabled */
-  --color-select-border-button-hover: var(--color-hover); /* Deprecated v16.x.x utilizar --color-hover */
-  --color-select-border-button-focus: var(--color-focused); /* Deprecated v16.x.x utilizar --color-focused */
+  --color-select-border-button: var(--color);
+  /* Deprecated v16.x.x utilizar --color */
+  --color-select-border-button-error: var(--color-danger);
+  /* Deprecated v16.x.x utilizar --color-danger */
+  --color-select-border-button-disabled: var(--color-disabled);
+  /* Deprecated v16.x.x utilizar --color-disabled */
+  --color-select-border-button-hover: var(--color-hover);
+  /* Deprecated v16.x.x utilizar --color-hover */
+  --color-select-border-button-focus: var(--color-focused);
+  /* Deprecated v16.x.x utilizar --color-focused */
 
-  --color-select-button-hover: var(--background-hover); /* Deprecated v16.x.x utilizar --background-hover */
-  --color-select-button-focus: var(--outline-color-focused); /* Deprecated v16.x.x utilizar --outline-color-focused */
+  --color-select-button-hover: var(--background-hover);
+  /* Deprecated v16.x.x utilizar --background-hover */
+  --color-select-button-focus: var(--outline-color-focused);
+  /* Deprecated v16.x.x utilizar --outline-color-focused */
 
-  --color-select-color-primary: var(--text-color); /* Deprecated v16.x.x utilizar --text-color */
-  --color-select-color-text-error: var(--color-danger); /* Deprecated v16.x.x utilizar --color-danger */
-  --color-select-color-text-empty: var(--text-color-empty); /* Deprecated v16.x.x utilizar --text-color-empty */
+  --color-select-color-primary: var(--text-color);
+  /* Deprecated v16.x.x utilizar --text-color */
+  --color-select-color-text-error: var(--color-danger);
+  /* Deprecated v16.x.x utilizar --color-danger */
+  --color-select-color-text-empty: var(--text-color-empty);
+  /* Deprecated v16.x.x utilizar --text-color-empty */
 
   /*------------------------------------*\
     SLIDE
@@ -1307,25 +1340,25 @@ po-switch {
 }
 
 :root {
-  --color-switch-background-color-container-on: var(--track-checked); /*Deprecated v16.x.x utilizar --track-checked */
-  --color-switch-background-color-container-off: var(
-    --track-unchecked
-  ); /*Deprecated v16.x.x utilizar --track-unchecked */
-  --color-switch-background-color-container-disabled: var(
-    --track-unchecked
-  ); /*Deprecated v16.x.x utilizar --track-unchecked */
+  --color-switch-background-color-container-on: var(--track-checked);
+  /*Deprecated v16.x.x utilizar --track-checked */
+  --color-switch-background-color-container-off: var(--track-unchecked);
+  /*Deprecated v16.x.x utilizar --track-unchecked */
+  --color-switch-background-color-container-disabled: var(--track-unchecked);
+  /*Deprecated v16.x.x utilizar --track-unchecked */
 
-  --color-switch-box-shadow-color-focusable: var(
-    --outline-color-focused
-  ); /*Deprecated v16.x.x utilizar --outline-color-focused*/
+  --color-switch-box-shadow-color-focusable: var(--outline-color-focused);
+  /*Deprecated v16.x.x utilizar --outline-color-focused*/
 
-  --color-switch-background-color-button: var(--color-unchecked); /*Deprecated v16.x.x utilizar --color-unchecked */
-  --color-switch-background-color-button-disabled: var(
-    --color-unchecked-disabled
-  ); /*Deprecated v16.x.x utilizar --color-unchecked-disabled */
+  --color-switch-background-color-button: var(--color-unchecked);
+  /*Deprecated v16.x.x utilizar --color-unchecked */
+  --color-switch-background-color-button-disabled: var(--color-unchecked-disabled);
+  /*Deprecated v16.x.x utilizar --color-unchecked-disabled */
 
-  --color-switch-color-icon-on: var(--color-unchecked); /*Deprecated v16.x.x utilizar --color-unchecked */
-  --color-switch-color-label: var(--color-neutral-dark-70); /*Deprecated v16.x.x utilizar --color-neutral-dark-70 */
+  --color-switch-color-icon-on: var(--color-unchecked);
+  /*Deprecated v16.x.x utilizar --color-unchecked */
+  --color-switch-color-label: var(--color-neutral-dark-70);
+  /*Deprecated v16.x.x utilizar --color-neutral-dark-70 */
 
   /*------------------------------------*\
     TAB BUTTON
@@ -1440,9 +1473,10 @@ po-switch {
   --color-tag-inverse-border-color-11: var(--color-11);
   --color-tag-inverse-border-color-12: var(--color-12);
 }
+
 /*------------------------------------*\
-    TEXTAREA
-  \*------------------------------------*/
+  TEXTAREA
+\*------------------------------------*/
 po-textarea {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-default);
@@ -1467,16 +1501,21 @@ po-textarea {
 
   --color-error: var(--color-danger);
 }
-:root {
-  --color-textarea-background-color: var(---background); /* Deprecated v16.x.x utilizar ---background */
-  --color-textarea-border: var(--color); /* Deprecated v16.x.x utilizar --color */
-  --color-textarea-background-color-disabled: var(
-    --background-disabled
-  ); /* Deprecated v16.x.x utilizar --background-disabled */
-  --color-textarea-border-color-disabled: var(--color-disabled); /* Deprecated v16.x.x utilizar --color-disabled */
-  --color-textarea-border-focusable: var(--color-focused); /* Deprecated v16.x.x utilizar --color-focused */
 
-  --color-textarea-color-error: var(--color-error); /* Deprecated v16.x.x utilizar --color-error */
+:root {
+  --color-textarea-background-color: var(---background);
+  /* Deprecated v16.x.x utilizar ---background */
+  --color-textarea-border: var(--color);
+  /* Deprecated v16.x.x utilizar --color */
+  --color-textarea-background-color-disabled: var(--background-disabled);
+  /* Deprecated v16.x.x utilizar --background-disabled */
+  --color-textarea-border-color-disabled: var(--color-disabled);
+  /* Deprecated v16.x.x utilizar --color-disabled */
+  --color-textarea-border-focusable: var(--color-focused);
+  /* Deprecated v16.x.x utilizar --color-focused */
+
+  --color-textarea-color-error: var(--color-error);
+  /* Deprecated v16.x.x utilizar --color-error */
 
   /*------------------------------------*\
     TOOLBAR

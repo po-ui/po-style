@@ -1,0 +1,42 @@
+po-label {
+  display: block;
+}
+
+.po-label {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--color-field-container-color-title, var(--text-color));
+  font-weight: var(--font-weight-normal);
+
+  text-align: left;
+}
+
+.po-label[p-field='true'] {
+  font-weight: var(--font-weight-field);
+
+  padding-right: var(--spacing-xs);
+}
+
+.po-label:empty {
+  padding-right: 0;
+}
+
+.po-label-disabled,
+.po-label-disabled + .po-label-requirement {
+  color: var(--text-color-disabled);
+}
+
+.po-label-requirement {
+  color: var(--color-field-container-color-opcional, var(--text-color-required));
+  font-size: var(--font-size-required);
+  line-height: var(--line-height-required);
+}
+
+.po-label-requirement::after {
+  content: ')';
+}
+
+.po-label-requirement::before {
+  content: '(';
+}

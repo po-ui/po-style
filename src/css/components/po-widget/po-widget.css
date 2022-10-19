@@ -17,14 +17,23 @@
 .po-widget,
 .po-widget-primary {
   background-size: cover;
-  border-radius: 3px;
-  box-shadow: var(--shadow-widget-box-shadow);
+  border-radius: var(--border-radius);
+  border: solid var(--border-width) var(--color-neutral-light-90);
+  border-color: var(--border-color);
   display: inline-block;
   width: 100%;
+
+  &:focus-visible {
+    outline-color: var(--outline-color-focused);
+    outline-width: var(--border-width-lg);
+    outline-style: solid;
+    outline-offset: 2px;
+    border-color: var(--color-focused);
+  }
 }
 
 .po-widget {
-  background-color: var(--color-widget-background-color);
+  background-color: var(--color-widget-background-color, var(--background));
 }
 
 .po-widget-primary {
@@ -56,7 +65,7 @@
 .po-widget-primary .po-widget-header {
   @apply --font-widget-font-title;
   height: auto;
-  padding: 13px 16px;
+  padding: var(--padding);
   text-align: left;
 }
 
@@ -100,6 +109,16 @@
   border-top: 1px solid var(--color-widget-border-color-footer);
 }
 
+.po-widget.po-clickable,
+.po-widget-primary.po-clickable {
+  box-shadow: var(--shadow);
+
+  &:hover {
+    border-color: var(--border-color-hover);
+    box-shadow: var(--shadow-hover);
+  }
+}
+
 .po-widget-primary .po-widget-footer {
   border-top: 1px solid var(--color-widget-border-color-footer-primary);
 }
@@ -112,7 +131,7 @@
 .po-widget .po-widget-action,
 .po-widget-primary .po-widget-action {
   display: block;
-  padding: 8px 0;
+  padding: var(--padding);
   text-align: center;
   text-decoration: none;
 
@@ -133,6 +152,10 @@
   }
 }
 
+.po-widget-disabled {
+  background-color: var(--color-widget-background-color-disabled) !important;
+}
+
 .po-widget-disabled,
 .po-widget-disabled .po-widget-header,
 .po-widget-disabled .po-widget-body,
@@ -141,9 +164,9 @@
 .po-widget-disabled .po-clickable,
 .po-widget-disabled .po-widget-title-action,
 .po-widget-disabled .po-widget-primary {
-  background-color: var(--color-widget-background-color-disabled);
-  color: var(--color-widget-color-disabled);
-  cursor: default;
+  color: var(--color-widget-color-disabled) !important;
+  cursor: not-allowed !important;
+  border: none !important;
 }
 
 .po-widget-disabled .po-container::-webkit-scrollbar-thumb {
@@ -153,6 +176,6 @@
 @media screen and (max-width: 1366px) {
   .po-widget-header,
   .po-widget-primary .po-widget-header {
-    padding: 13px 8px;
+    padding: var(--padding);
   }
 }

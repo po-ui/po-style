@@ -1551,11 +1551,31 @@ po-textarea {
   --color-upload-drag-drop-area-color-disabled: var(--color-neutral-light-60);
 
   --color-upload-file-restrictions-color-text: var(--color-neutral);
-
-  /*------------------------------------*\
+}
+/*------------------------------------*\
     WIDGET
   \*------------------------------------*/
 
+po-widget {
+  --padding: 1em;
+  --border-radius: var(--border-radius-md);
+  --border-color: var(--color-neutral-light-80);
+  --background: var(--color-white);
+  --border-width: var(--border-width-sm);
+  --shadow: var(--shadow-md);
+
+  --background-selected: var(--color-brand-01-lightest);
+  --border-color-selected: var(--color-secondary);
+
+  --border-color-hover: var(--color-secondary-dark-20);
+  --shadow-hover: var(--shadow-lg);
+
+  --color-focused: var(--color-secondary);
+  --outline-color-focused: var(--color-outline-focused);
+  --shadow: var(--shadow-sm);
+}
+
+:root {
   --color-widget-color-action-active: var(--color-primary-dark-20);
   --color-widget-color-action-hover: var(--color-primary-dark-20);
   --color-widget-color-action: var(--color-primary);
@@ -1563,10 +1583,10 @@ po-textarea {
   --color-widget-color-title-action: var(--color-primary);
   --color-widget-color-widget-primary: var(--color-neutral-dark-60);
 
-  --color-widget-background-color: var(--color-white);
+  --color-widget-background-color: var(--background) /* Deprecated v16.x.x utilizar --background */;
   --color-widget-primary-background-color: var(--color-tertiary);
 
-  --border-widget-border-no-shadow: solid 1px var(--color-neutral-light-90);
+  --border-widget-border-no-shadow: solid var(--border-width) var(--color-neutral-light-90);
   --color-widget-border-color-footer: var(--color-neutral-light-90);
   --color-widget-border-color-footer-primary: var(--color-white-alpha-30);
 

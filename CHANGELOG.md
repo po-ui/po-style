@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [14.8.0](https://github.com/po-ui/po-style/compare/v14.7.1...v14.8.0) (2022-10-24)
+
+
+### Features
+
+* **label:** novo componente po-label ([bf7a936](https://github.com/po-ui/po-style/commit/bf7a93695521f005ca2a6e198a25265d3a7e1a9d))
+* **radio-group:** remove propriedade outline ([1c8e943](https://github.com/po-ui/po-style/commit/1c8e9430b06abf76ace60e6e4e3c3176d55dee3b))
+* **widget:** implementa definições do AnimaliaDS ([9f9b4b8](https://github.com/po-ui/po-style/commit/9f9b4b8dd4ab3f52d752dee4eb9a24c452da4813))
+
+
+
 ## [14.7.1](https://github.com/po-ui/po-style/compare/v14.7.0...v14.7.1) (2022-10-17)
 
 Compatibilidade com @po-ui/ng-components@14.7.1

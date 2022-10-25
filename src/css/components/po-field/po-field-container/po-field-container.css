@@ -15,3 +15,8 @@
   @apply --font-field-container-font-help;
   color: var(--color-field-container-color-help);
 }
+
+.po-field-container-title {
+  display: flex;
+  width: 100%;
+}

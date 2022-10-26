@@ -7,11 +7,46 @@
 .po-divider-label {
   @apply --font-divider-font;
   color: var(--color-divider-label-color);
+  margin-bottom: 4px;
+  padding-left: 0.2em;
 }
 
 .po-divider {
-  border: 0;
-  border-bottom: 1px solid var(--color-divider-line-color);
   margin-bottom: 16px;
   padding: 8px 0;
+}
+
+.po-divider[p-size='small'] svg {
+  height: var(--border-width-sm);
+}
+
+.po-divider[p-size='medium'] svg {
+  height: var(--border-width-md);
+}
+
+.po-divider[p-size='large'] svg {
+  height: var(--border-width-lg);
+}
+
+.po-divider[p-size='small'] line {
+  stroke-width: var(--border-width-sm);
+}
+
+.po-divider[p-size='medium'] line {
+  stroke-width: var(--border-width-md);
+}
+
+.po-divider[p-size='large'] line {
+  stroke-width: var(--border-width-lg);
+}
+
+.po-divider svg {
+  display: block;
+  width: 100%;
+}
+
+.po-divider line {
+  fill: var(--color-divider-line-color, var(--color));
+  stroke: var(--color-divider-line-color, var(--color));
+  stroke-linecap: var(--stroke-linecap);
 }

@@ -734,13 +734,20 @@ po-button {
   --color-disclaimer-group-background-color: var(--color-white);
   --color-disclaimer-group-border-color: var(--color-neutral-light-90);
   --color-disclaimer-group-font-title: var(--color-neutral);
+}
 
+po-divider {
+  --color: var(--color-neutral-light-40);
+  --stroke-linecap: round;
+}
+
+:root {
   /*------------------------------------*\
     DIVIDER
   \*------------------------------------*/
 
   --color-divider-label-color: var(--color-neutral-dark-60);
-  --color-divider-line-color: var(--color-neutral-light-90);
+  --color-divider-line-color: var(--color); /*Deprecated v16.x.x utilizar --color*/
 
   /*------------------------------------*\
     DROPDOWN

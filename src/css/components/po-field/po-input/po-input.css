@@ -86,9 +86,3 @@ po-url.ng-invalid.ng-dirty .po-input {
   border: solid 1px var(--color-input-border-text-error) !important;
   color: var(--color-input-text-error);
 }
-
-.po-input::-webkit-outer-spin-button,
-.po-input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}

@@ -706,14 +706,11 @@ po-container {
   --border-width: var(--border-width-sm);
   --padding: 1em;
 }
-:root {
-  --color-container-color-shadow: var(--color-neutral-light-90);
-  --color-container-background-color-scrollbar: var(--color-primary);
 
-  /*------------------------------------*\
+/*------------------------------------*\
 DATEPICKER RANGE
 \*------------------------------------*/
-
+:root {
   --color-datepicker-range-background-color-disabled: var(--color-neutral-light-80);
   --color-datepicker-range-border-text: var(--color-neutral-light-60);
   --color-datepicker-range-border-text-error: var(--color-danger);

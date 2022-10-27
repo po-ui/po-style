@@ -695,17 +695,24 @@ po-button {
   --color-combo-color-primary: var(--color-primary);
   --color-combo-color-selected: var(--color-white);
   --color-combo-background-color-selected-primary: var(--color-primary);
-
-  /*------------------------------------*\
+}
+/*------------------------------------*\
     CONTAINER
   \*------------------------------------*/
-
+po-container {
+  --border-radius: var(--border-radius-md);
+  --background: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-20);
+  --border-width: var(--border-width-sm);
+  --padding: 1em;
+}
+:root {
   --color-container-color-shadow: var(--color-neutral-light-90);
   --color-container-background-color-scrollbar: var(--color-primary);
 
   /*------------------------------------*\
-    DATEPICKER RANGE
-  \*------------------------------------*/
+DATEPICKER RANGE
+\*------------------------------------*/
 
   --color-datepicker-range-background-color-disabled: var(--color-neutral-light-80);
   --color-datepicker-range-border-text: var(--color-neutral-light-60);

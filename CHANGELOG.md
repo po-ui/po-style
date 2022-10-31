@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [14.8.1](https://github.com/po-ui/po-style/compare/v14.8.0...v14.8.1) (2022-10-31)
+
+
+### Bug Fixes
+
+* **select:** corrige renderização de conteúdo ([19f1780](https://github.com/po-ui/po-style/commit/19f1780b49b56340e6b2c390ba8e8fbccf1d09e0))
+* **select:** corrige sobreposição  do conteúdo do select ([85ba7cb](https://github.com/po-ui/po-style/commit/85ba7cb66549c0c3917a3037369af0eaf7990eb9))
+
+
+
 # [14.8.0](https://github.com/po-ui/po-style/compare/v14.7.1...v14.8.0) (2022-10-24)
 
 

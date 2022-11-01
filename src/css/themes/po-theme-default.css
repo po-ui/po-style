@@ -1440,7 +1440,36 @@ po-switch {
   --color-table-column-manager-close-button-color: var(--color-primary);
   --color-table-column-manager-header-title: var(--color-neutral-dark-60);
   --color-table-column-manager-outline-color-focus: var(--color-secondary);
+}
 
+po-tag {
+  --border-radius: var(--border-radius-pill);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-sm);
+  --line-height: var(--line-height-sm);
+
+  /* neutral */
+  --color-neutral: var(--color-neutral-light-90);
+  --text-color-neutral: var(--color-neutral-dark-40);
+
+  /* positive */
+  --color-positive: var(--color-feedback-positive-lightest);
+  --text-color-positive: var(--color-feedback-positive-dark);
+
+  /* negative */
+  --color-negative: var(--color-danger-light-05);
+  --text-color-negative: var(--color-feedback-negative-darker);
+
+  /* warning */
+  --color-tag-warning: var(--color-feedback-warning-lightest);
+  --text-color-warning: var(--color-feedback-warning-darkest);
+
+  /* info */
+  --color-info: var(--color-feedback-info-lightest);
+  --text-color-info: var(--color-feedback-info-dark);
+}
+
+:root {
   /*------------------------------------*\
     TAG
   \*------------------------------------*/
@@ -1448,16 +1477,16 @@ po-switch {
   --color-tag-border-color-dashed-focus: var(--color-secondary);
 
   --color-tag-color: var(--color-white);
-  --color-tag-color-danger: var(--color-danger);
-  --color-tag-color-info: var(--color-neutral);
-  --color-tag-color-success: var(--color-success);
-  --color-tag-color-warning: var(--color-warning);
+  --color-tag-color-danger: var(--text-color-negative); /*Deprecated v16.x.x utilizar --text-color-negative*/
+  --color-tag-color-info: var(--text-color-info); /*Deprecated v16.x.x utilizar --text-color-info*/
+  --color-tag-color-success: var(--text-color-positive); /*Deprecated v16.x.x utilizar --text-color-positive*/
+  --color-tag-color-warning: var(--text-color-warning); /*Deprecated v16.x.x utilizar --text-color-warning*/
   --color-tag-color-text-label: var(--color-neutral);
 
-  --color-tag-background-color-danger: var(--color-danger);
-  --color-tag-background-color-info: var(--color-neutral);
-  --color-tag-background-color-success: var(--color-success);
-  --color-tag-background-color-warning: var(--color-warning);
+  --color-tag-background-color-danger: var(--color-negative); /*Deprecated v16.x.x utilizar --color-negative*/
+  --color-tag-background-color-info: var(--color-info); /*Deprecated v16.x.x utilizar --color-info*/
+  --color-tag-background-color-success: var(--color-positive); /*Deprecated v16.x.x utilizar --color-positive*/
+  --color-tag-background-color-warning: var(--color-tag-warning); /*Deprecated v16.x.x utilizar --color-tag-warning*/
   --color-tag-background-color-white: var(--color-white);
 
   --color-tag-inverse-border-color-01: var(--color-01);

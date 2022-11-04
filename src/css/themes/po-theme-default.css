@@ -1474,9 +1474,6 @@ po-tag {
     TAG
   \*------------------------------------*/
 
-  --color-tag-border-color-dashed-focus: var(--color-secondary);
-
-  --color-tag-color: var(--color-white);
   --color-tag-color-danger: var(--text-color-negative); /*Deprecated v16.x.x utilizar --text-color-negative*/
   --color-tag-color-info: var(--text-color-info); /*Deprecated v16.x.x utilizar --text-color-info*/
   --color-tag-color-success: var(--text-color-positive); /*Deprecated v16.x.x utilizar --text-color-positive*/

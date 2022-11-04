@@ -29,7 +29,6 @@
 
   align-items: center;
   border-width: var(--border-width-sm);
-  color: var(--color-tag-color);
   display: flex;
   gap: 0.25em;
   height: 1.5em;

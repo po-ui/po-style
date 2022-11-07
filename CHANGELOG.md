@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [14.9.0](https://github.com/po-ui/po-style/compare/v14.8.1...v14.9.0) (2022-11-07)
+
+
+### Code Refactoring
+
+* **container:** remove variáveis ([e5cf1ef](https://github.com/po-ui/po-style/commit/e5cf1ef1f4ed657dbeb4f3196d17fcb32807bccb))
+* **tag:** remove variáveis ([f1e9190](https://github.com/po-ui/po-style/commit/f1e919099af0879d662e143166d879a03c2b392d))
+
+
+### Features
+
+* **container:** implementa definições do AnimaliaDS ([ae4ae2c](https://github.com/po-ui/po-style/commit/ae4ae2ce6d7e41ad946acb85352e48e12797a26a))
+* **divider:** aplica estilo definido pelo DS ([40befb6](https://github.com/po-ui/po-style/commit/40befb68710c2361a31aa68dfbb099087a713093))
+* **number:** implementa definições do AnimaliaDS ([d7969a6](https://github.com/po-ui/po-style/commit/d7969a6528a399891e1b2fb49d06ef4fbf854666))
+* **po-image:** adiciona estilo ao componente ([805635d](https://github.com/po-ui/po-style/commit/805635da489b1df69fc0226a710188751a62f823))
+* **tag:** aplica estilo definido pelo DS ([da2320b](https://github.com/po-ui/po-style/commit/da2320babf36a011029980ebc554197bab449f51))
+
+
+### BREAKING CHANGES
+
+* **tag:** removidas as variáveis:
+
+--color-tag-border-color-dashed-focus
+--color-tag-color
+* **container:** removidas as variáveis:
+
+--color-container-color-shadow - não existe mais shadow no container
+--color-container-background-color-scrollbar - foi removida estilização da scrollbar por acessibilidade
+
+
+
 ## [14.8.1](https://github.com/po-ui/po-style/compare/v14.8.0...v14.8.1) (2022-10-31)
 
 

@@ -9,6 +9,8 @@
   padding: 8px 0;
   position: relative;
   width: 100%;
+  display: flex;
+  gap: var(--spacing-xs);
 }
 
 .po-field-help {
@@ -18,5 +20,10 @@
 
 .po-field-container-title {
   display: flex;
+  width: 100%;
+}
+
+.po-field-container-input {
+  position: relative;
   width: 100%;
 }

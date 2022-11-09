@@ -29,3 +29,7 @@
   top: 0;
   z-index: 11;
 }
+
+.po-datepicker-button .po-icon-calendar {
+  font-size: 1.5rem;
+}

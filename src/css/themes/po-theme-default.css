@@ -717,19 +717,45 @@ DATEPICKER RANGE
   --color-datepicker-range-color-disabled: var(--color-neutral-light-60);
   --color-datepicker-range-color-focused: var(--color-secondary);
   --color-datepicker-range-color-text-error: var(--color-danger);
+}
 
-  /*------------------------------------*\
-    DISCLAIMER
-  \*------------------------------------*/
+/*------------------------------------*\
+  DISCLAIMER
+\*------------------------------------*/
+po-disclaimer {
+  --border-radius: var(--border-radius-pill);
 
-  --color-disclaimer-background-color-label: var(--color-tertiary);
-  --color-disclaimer-background-color-label-danger: var(--color-danger);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-sm);
+  --line-height: var(--line-height-sm);
 
-  --color-disclaimer-color-text: var(--color-neutral-dark-60);
-  --color-disclaimer-color-text-danger: var(--color-white);
+  --color-neutral: var(--color-neutral-light-90);
+  --text-color-neutral: var(--color-neutral-dark-40);
 
-  --color-disclaimer-background-color-remove: var(--color-tertiary-dark-5);
-  --color-disclaimer-background-color-danger-remove: var(--color-danger-dark-5);
+  --color: var(--color-brand-01-lightest);
+  --border-color: var(--color-secondary-light-20);
+  --color-icon: var(--color-secondary);
+  --text-color: var(--color-neutral-dark-80);
+
+  --color-hover: var(--color-secondary-light-20);
+  --outline-color-focused: var(--color-secondary-dark-80);
+}
+
+:root {
+  --color-disclaimer-background-color-label: var(--color); /*Deprecated v16.x.x utilizar --color */
+  --color-disclaimer-background-color-label-danger: var(
+    --color-danger-light-05
+  ); /*Deprecated v16.x.x utilizar --color-danger-light-05 */
+
+  --color-disclaimer-color-text: var(--text-color); /*Deprecated v16.x.x utilizar --text-color */
+  --color-disclaimer-color-text-danger: var(
+    --color-feedback-negative-darker
+  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-darker */
+
+  --color-disclaimer-background-color-remove: var(--color); /*Deprecated v16.x.x utilizar --color */
+  --color-disclaimer-background-color-danger-remove: var(
+    --color-danger-light-05
+  ); /*Deprecated v16.x.x utilizar --color-danger-light-05 */
 
   /*------------------------------------*\
     DISCLAIMER GROUP

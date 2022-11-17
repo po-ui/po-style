@@ -1,53 +1,99 @@
-:root {
-  --font-disclaimer-font-label: {
-    @apply --font-text-small-bold;
-  }
-
-  --font-disclaimer-font-remove: {
-    @apply --font-text-bold;
-  }
-
-  --disclaimer-height: 24px;
-  --disclaimer-border-radius: 3px;
-}
-
 .po-disclaimer {
-  display: inline-flex;
+  align-items: center;
+  border-color: var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--color-disclaimer-background-color-label, var(--color));
+  border-style: solid;
+  border-width: var(--border-width-sm);
+  display: flex;
+  gap: 0.25em;
+  justify-content: center;
+  max-width: 15em;
+  min-height: 1.5em;
+  padding-left: var(--spacing-xs);
 }
 
-.po-disclaimer .po-disclaimer-label,
-.po-disclaimer .po-disclaimer-remove {
-  @apply --font-disclaimer-font-label;
-  color: var(--color-disclaimer-color-text);
-  display: inline-block;
-  height: var(--disclaimer-height);
-  line-height: var(--disclaimer-height);
-  padding: 0 8px;
+.po-disclaimer > * {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.po-disclaimer .po-disclaimer-label {
-  background-color: var(--color-disclaimer-background-color-label);
-  border-radius: var(--disclaimer-border-radius);
-  vertical-align: middle;
-
-  &-danger {
-    background-color: var(--color-disclaimer-background-color-label-danger);
-    color: var(--color-disclaimer-color-text-danger);
-  }
+.po-disclaimer-label,
+.po-disclaimer-remove {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height);
+  overflow: hidden;
+  text-align: left;
 }
 
-.po-disclaimer .po-disclaimer-remove {
-  @apply --font-disclaimer-font-remove;
-  background-color: var(--color-disclaimer-background-color-remove);
-  border-bottom-right-radius: var(--disclaimer-border-radius);
-  border-top-right-radius: var(--disclaimer-border-radius);
-  margin-left: -2px;
-  vertical-align: top;
+.po-disclaimer-label span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
-  &-danger {
-    background-color: var(--color-disclaimer-background-color-danger-remove);
-    color: var(--color-disclaimer-color-text-danger);
-  }
+.po-disclaimer-remove {
+  background-color: var(--color-disclaimer-background-color-remove, var(--color));
+  border-bottom-right-radius: var(--border-radius);
+  border-left-color: var(--border-color);
+  border-left-style: solid;
+  border-left-width: var(--border-width-sm);
+  border-top-right-radius: var(--border-radius);
+  color: var(--color-disclaimer-color-text, var(--color-icon));
+  min-width: 1.5625em;
+  overflow: hidden;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+
+.po-disclaimer-remove-danger {
+  background-color: var(--color-disclaimer-background-color-danger-remove);
+  color: var(--color-disclaimer-color-text-danger);
+  border-left-color: var(--color-feedback-negative-darker);
+}
+
+.po-disclaimer-label span {
+  color: var(--color-disclaimer-color-text, var(--text-color));
+}
+
+.po-disclaimer-remove:active,
+.po-disclaimer-remove:focus-visible {
+  outline-color: var(--outline-color-focused);
+  outline-style: solid;
+  outline-width: var(--border-width-lg);
+}
+
+.po-disclaimer-remove:hover {
+  background-color: var(--color-hover);
+}
+
+.po-disclaimer-remove-all {
+  padding-right: 0.5em;
+}
+
+.po-disclaimer-danger {
+  background-color: var(--color-disclaimer-background-color-label-danger);
+  border-color: var(--color-feedback-negative-darker);
+}
+
+.po-disclaimer-danger > .po-disclaimer-label > span {
+  color: var(--color-disclaimer-color-text-danger);
+}
+
+.po-disclaimer-remove-danger:hover {
+  background-color: var(--color-danger-light-20);
+}
+
+.po-disclaimer-danger:active,
+.po-disclaimer-danger:focus-visible {
+  outline-color: var(--outline-color-focused);
+  outline-style: solid;
+  outline-width: var(--border-width-lg);
+  outline-offset: 2px;
 }
 
 @media print {

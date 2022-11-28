@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [14.11.0](https://github.com/po-ui/po-style/compare/v14.10.0...v14.11.0) (2022-11-28)
+
+
+### Bug Fixes
+
+* **datepicker:** ajuste estrutural ([950670d](https://github.com/po-ui/po-style/commit/950670de6ba34d48c49e0c8d507ace85717c1146)), closes [#1551](https://github.com/po-ui/po-style/issues/1551)
+
+
+
 # [14.10.0](https://github.com/po-ui/po-style/compare/v14.9.1...v14.10.0) (2022-11-21)
 
 

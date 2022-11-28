@@ -9,6 +9,9 @@
   padding: 8px 0;
   position: relative;
   width: 100%;
+}
+
+.po-field-container-content-datepicker {
   display: flex;
   gap: var(--spacing-xs);
 }

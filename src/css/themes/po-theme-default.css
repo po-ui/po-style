@@ -1570,9 +1570,18 @@ po-textarea {
   /*------------------------------------*\
     TOOLTIP
   \*------------------------------------*/
+}
 
-  --color-tooltip-background-color-balloon: var(--color-neutral);
-  --color-tooltip-color-text-balloon: var(--color-white);
+.po-tooltip {
+  --color: var(--color-neutral-dark-40);
+  --border-radius: var(--border-radius-md);
+  --font-family: var(--font-family-theme);
+  --text-color: var(--color-white);
+}
+
+:root {
+  --color-tooltip-background-color-balloon: var(--color); /* Deprecated v16.x.x utilizar --color */
+  --color-tooltip-color-text-balloon: var(--text-color); /* Deprecated v16.x.x utilizar --text-color*/
 
   /*------------------------------------*\
     TREEVIEW

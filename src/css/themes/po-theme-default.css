@@ -797,18 +797,31 @@ po-divider {
     FIELD CONTAINER
   \*------------------------------------*/
 
-  --color-field-container-color-title: var(--text-color); /* Deprecated v16.x.x utilizar --text-color */
-  --color-field-container-color-opcional: var(
-    --text-color-required
-  ); /* Deprecated v16.x.x utilizar --text-color-required */
-  --color-field-container-color-help: var(--color-neutral);
+  --color-field-container-color-title: var(--text-color);
+  /* Deprecated v16.x.x utilizar --text-color */
+  --color-field-container-color-opcional: var(--text-color-required);
+  /* Deprecated v16.x.x utilizar --text-color-required */
+}
 
+po-field-container-bottom {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-sm);
+  --line-height: var(--line-height-md);
+  --text-color-help: var(--color-neutral-dark-90);
+
+  --text-color-help-disabled: var(--color-neutral-mid-60);
+
+  --text-color-error: var(--color-feedback-negative-dark);
+  --color-icon-error: var(--color-feedback-negative-base);
+}
+
+:root {
   /*------------------------------------*\
     FIELD CONTAINER BOTTOM
   \*------------------------------------*/
 
-  --color-field-container-bottom-color-text: var(--color-neutral-dark-60);
-  --color-field-container-bottom-color-text-error: var(--color-danger);
+  --color-field-container-bottom-color-text-error: var(--text-color-error);
+  --color-field-container-color-help: var(--text-color-help);
 
   /*------------------------------------*\
     FIELD ICON

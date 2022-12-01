@@ -13,34 +13,39 @@
 }
 
 .po-field-container-bottom {
-  color: var(--color-field-container-bottom-color-text-error);
   display: block;
+  line-height: var(--line-height);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+
+  font-weight: var(--font-weight-normal);
+  text-align: left;
+}
+
+.po-field-container-bottom-disabled .po-field-container-help {
+  color: var(--text-color-help-disabled);
 }
 
 .po-field-container-bottom-text-error {
-  @apply --font-field-container-bottom-text-error;
+  display: flex;
+  gap: var(--spacing-xs);
+  color: var(--color-field-container-bottom-color-text-error, var(--text-color-error));
 }
 
-.po-field-container-icon-error {
-  @apply --font-field-container-bottom-icon-error;
-  line-height: 24px;
-  vertical-align: top;
+.po-field-container-bottom-text-error .po-icon {
+  color: var(--color-icon-error);
+  display: inline-flex;
+  font-size: 1rem;
 }
 
-.po-field-container-error-container {
-  display: block;
-  margin-top: 4px;
+.po-field-container-bottom-help-text {
+  color: var(--color-field-container-color-help, var(--text-color-help));
 }
 
 .po-field-container-error-item {
   display: block;
   margin-bottom: 12px;
   position: relative;
-}
-
-.po-field-container-error-text {
-  display: block;
-  margin-left: 24px;
 }
 
 .po-field-container-error-item .po-icon-exclamation {
@@ -50,8 +55,17 @@
   transform: translateY(-50%);
 }
 
-@media screen and (max-width: 1366px) {
-  .po-field-container-icon-error {
-    @apply --font-field-container-bottom-icon-error-smaller;
-  }
+.po-field-container-icon-error {
+  line-height: 24px;
+  vertical-align: top;
+}
+
+.po-field-container-error-container {
+  display: block;
+  margin-top: 4px;
+}
+
+.po-field-container-error-text {
+  display: block;
+  margin-left: 24px;
 }

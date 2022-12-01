@@ -1,24 +1,15 @@
-:root {
-  --font-field-container-font-help: {
-    @apply --font-text-small;
-  }
-}
-
 /* Classe que possibilita colocar o botão de clean na mesma linha, */
 .po-field-container-content {
   padding: 8px 0;
   position: relative;
   width: 100%;
+  display: flex;
+  gap: var(--spacing-xs);
 }
 
 .po-field-container-content-datepicker {
   display: flex;
   gap: var(--spacing-xs);
-}
-
-.po-field-help {
-  @apply --font-field-container-font-help;
-  color: var(--color-field-container-color-help);
 }
 
 .po-field-container-title {

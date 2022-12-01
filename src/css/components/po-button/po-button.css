@@ -1,3 +1,7 @@
+po-button {
+  display: inline-block;
+}
+
 .po-button {
   font-family: var(--font-family);
   font-weight: var(--font-weight, var(--font-weight-bold));

@@ -1,9 +1,3 @@
-:root {
-  --font-switch-label {
-    @apply --font-text-large;
-  }
-}
-
 .po-switch {
   display: flex;
   align-items: center;
@@ -66,12 +60,6 @@
   color: var(--color-switch-color-icon-on, var(--color-unchecked));
 }
 
-.po-switch-label {
-  @apply --font-switch-label;
-  color: var(--color-switch-color-label, var(--color-neutral-dark-70));
-  cursor: pointer;
-}
-
 [aria-checked='true'] .po-switch-toggle {
   background-color: var(--color-switch-background-color-button, var(--color-checked));
   border-color: transparent;
@@ -95,10 +83,6 @@
   background-color: var(--color-switch-background-color-button-disabled, var(--color-unchecked-disabled));
 
   border-color: var(--color-switch-background-color-button-disabled, var(--color-checked-disabled));
-}
-
-[aria-disabled='true'] + .po-switch-label {
-  cursor: not-allowed;
 }
 
 [aria-checked='true'][aria-disabled='true'] .po-switch-track {

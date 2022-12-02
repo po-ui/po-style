@@ -1394,8 +1394,6 @@ po-switch {
 
   --color-switch-color-icon-on: var(--color-unchecked);
   /*Deprecated v16.x.x utilizar --color-unchecked */
-  --color-switch-color-label: var(--color-neutral-dark-70);
-  /*Deprecated v16.x.x utilizar --color-neutral-dark-70 */
 
   /*------------------------------------*\
     TAB BUTTON

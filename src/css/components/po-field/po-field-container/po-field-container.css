@@ -3,8 +3,6 @@
   padding: 8px 0;
   position: relative;
   width: 100%;
-  display: flex;
-  gap: var(--spacing-xs);
 }
 
 .po-field-container-content-datepicker {

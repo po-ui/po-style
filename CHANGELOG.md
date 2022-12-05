@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [14.12.0](https://github.com/po-ui/po-style/compare/v14.11.0...v14.12.0) (2022-12-05)
+
+
+### Code Refactoring
+
+* **switch:** remove variavel `--color-switch-color-label` ([266b3d0](https://github.com/po-ui/po-style/commit/266b3d00258e5aeec4768dd49097e5f98a4471ff))
+
+
+### Features
+
+* **disclaimer:** implementa definições Animalia DS ([f7ac404](https://github.com/po-ui/po-style/commit/f7ac40488661c4eadae94be687ac9377f9512675))
+* **fields:** implementa definições do AnimaliaDS ([525c353](https://github.com/po-ui/po-style/commit/525c353f77b41aee667476b7a87652d5807ed706))
+* **switch:** ajusta posicionamento ([0a554cc](https://github.com/po-ui/po-style/commit/0a554cc3f0f6db795f7d4bc221307776399a2d4f))
+* **tooltip:** implementa definições do AnimaliaDS ([a0ed10c](https://github.com/po-ui/po-style/commit/a0ed10c3dff5dada3b8e4911feaf8f9ed61e1ed9))
+
+
+### BREAKING CHANGES
+
+* **switch:** removida variavel `--color-switch-color-label`
+
+Foi removida a variavel `--color-switch-color-label` do po-switch pois ela não é mais utilizada, não sendo mais possivel customizar a cor da `label on` e `label off`. Pode ser customizada atraves da label.
+
+
+
 ## [14.11.0](https://github.com/po-ui/po-style/compare/v14.10.0...v14.11.0) (2022-11-28)
 
 

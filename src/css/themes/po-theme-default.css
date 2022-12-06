@@ -936,6 +936,51 @@ po-link {
 }
 
 /*------------------------------------*\
+  LISTBOX
+\*------------------------------------*/
+
+po-popup po-listbox {
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --border-color: var(--color-neutral-light-80);
+  --background: var(--color-white);
+  --shadow: var(--shadow-md);
+}
+
+/*------------------------------------*\
+  ITEM LIST
+\*------------------------------------*/
+
+po-popup po-item-list {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
+
+  /* action */
+  --font-weight: var(--font-weight-bold);
+  --color: var(--color-secondary);
+
+  --color-hover: var(--color-secondary-dark-80);
+  --background-hover: var(--color-secondary-light-20);
+
+  --outline-color-focused: var(--color-outline-focused);
+
+  --background-pressed: var(--color-secondary-light-40);
+
+  --color-disabled: var(--color-action-disabled);
+
+  /* option e check */
+  --color-option: var(--color-neutral-dark-60);
+
+  --font-weight-selected: var(--font-weight-bold);
+  --background-selected: var(--color-brand-01-lightest);
+}
+
+po-popup po-item-list:is([p-type='option'], [p-type='check']) {
+  --font-weight: var(--font-weight-normal);
+}
+
+/*------------------------------------*\
   LIST VIEW
 \*------------------------------------*/
 :root {
@@ -1194,19 +1239,28 @@ po-link {
     POPUP
   \*------------------------------------*/
 
-  --color-popup-background-color-popup: var(--color-white);
-  --color-popup-background-color-popup-item-hover: var(--color-primary-light-95);
-  --color-popup-background-color-popup-item-selected: var(--color-primary);
-  --color-popup-background-color-popup-item-selected-hover: var(--color-primary-dark-20);
+  --color-popup-background-color-popup: var(--background); /*Deprecated v16.x.x utilizar --background */
+  --color-popup-background-color-popup-item-hover: var(
+    --background-hover
+  ); /*Deprecated v16.x.x utilizar --background-hover */
+  --color-popup-background-color-popup-item-selected: var(
+    --background-selected
+  ); /* Deprecated v16.x.x utilizar --background-selected */
+
+  --color-popup-background-color-popup-item-selected-hover: var(
+    --background-hover
+  ); /* Deprecated v16.x.x utilizar --background-hover */
   --color-popup-background-color-popup-item-selected-disabled: var(--color-neutral-light-60);
+
   --color-popup-background-color-scrollbar: var(--color-primary);
 
-  --color-popup-border-color-separator: var(--color-neutral-light-90);
-
-  --color-popup-color-danger: var(--color-danger);
-  --color-popup-color-default: var(--color-primary);
-  --color-popup-color-disabled: var(--color-neutral-light-80);
-  --color-popup-color-item-selected: var(--color-white);
+  --color-popup-border-color-separator: var(
+    --color-neutral-light-90
+  ); /*Deprecated v16.x.x utilizar --color-neutral-light-90 */
+  --color-popup-color-danger: var(--color-danger); /*Deprecated v16.x.x utilizar --color-danger */
+  --color-popup-color-default: var(--color); /*Deprecated v16.x.x utilizar --color */
+  --color-popup-color-disabled: var(--color-disabled); /*Deprecated v16.x.x utilizar --color-disabled */
+  --color-popup-color-item-selected: var(--color-option); /*Deprecated v16.x.x utilizar --color-option */
 
   /*------------------------------------*\
     PROGRESS

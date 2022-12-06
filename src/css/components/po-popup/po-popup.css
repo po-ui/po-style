@@ -46,10 +46,6 @@
   z-index: -1;
 }
 
-.po-popup-icon-item {
-  padding-right: 4px;
-}
-
 .po-popup-item-danger,
 .po-popup-item-default {
   @apply --font-popup-font-item;

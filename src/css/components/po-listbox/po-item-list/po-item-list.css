@@ -1,0 +1,103 @@
+.po-item-list {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-align: left;
+  background-color: transparent;
+  min-height: 2.75em;
+  display: flex;
+  align-items: center;
+  padding-inline: var(--spacing-sm);
+  gap: var(--spacing-xs);
+}
+
+/* estilo na ação de click dos itens */
+:active:is(.po-item-list__action, .po-item-list__option):not(.po-item-list__disabled, .po-item-list__danger) {
+  background-color: var(--background-pressed);
+  color: var(--color-hover);
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--border-width-md);
+  outline-style: solid;
+  outline-offset: -2px;
+
+  cursor: pointer;
+}
+
+/* item no modo desabilitado */
+.po-item-list__disabled:is(.po-item-list__action, .po-item-list__check, .po-item-list__option) {
+  color: var(--color-popup-color-disabled, var(--color-disabled));
+  cursor: not-allowed;
+}
+
+/* item no modo hover */
+:hover:is(.po-item-list__action, .po-item-list__check, .po-item-list__option):not(.po-item-list__disabled, .po-item-list__danger) {
+  background-color: var(--color-popup-background-color-popup-item-hover, var(--background-hover));
+  cursor: pointer;
+}
+
+:hover:is(.po-item-list__check-selected:hover, .po-item-list__option-selected:hover):not(.po-item-list__disabled) {
+  background-color: var(--color-popup-background-color-popup-item-hover, var(--background-hover));
+  font-weight: var(--font-weight-selected);
+
+  cursor: pointer;
+}
+
+/* item do tipo option ou check */
+:is(.po-item-list__check, .po-item-list__option) {
+  font-weight: var(--font-weight);
+  color: var(--color-option);
+}
+
+:is(.po-item-list__check-selected, .po-item-list__option-selected) {
+  font-weight: var(--font-weight-selected);
+  background-color: var(--color-popup-background-color-popup-item-selected, var(--background-selected));
+}
+
+/* item do tipo action */
+.po-item-list__action {
+  font-weight: var(--font-weight);
+  color: var(--color-popup-color-default, var(--color));
+}
+
+.po-item-list__action:hover:not(.po-item-list__disabled, .po-item-list__danger) {
+  color: var(--color-hover);
+}
+
+.po-item-list__check:active {
+  background-color: var(--background-pressed);
+  cursor: pointer;
+}
+
+.po-item-list__danger:not(.po-item-list__disabled) {
+  color: var(--color-popup-color-danger, var(--color-danger));
+  cursor: pointer;
+}
+
+.po-item-list__danger:hover:not(.po-item-list__disabled) {
+  background-color: var(--color-danger-light-20);
+  color: var(--color-danger);
+}
+
+.po-item-list__selected:not(.po-item-list__danger) {
+  background-color: var(--color-popup-background-color-popup-item-selected, var(--background-selected));
+  color: var(--color-popup-color-item-selected, var(--color-option));
+}
+
+.po-item-list__selected:not(.po-item-list__danger):hover {
+  background-color: var(--color-popup-background-color-popup-item-selected-hover, var(--background-hover));
+}
+
+.po-item-list__selected.po-item-list__danger {
+  background-color: var(--color-danger-light-20);
+}
+
+.po-item-list__separator {
+  border-top: 1px solid var(--color-popup-border-color-separator, var(--color-neutral-light-90));
+}
+
+.cdk-option:focus-visible {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--border-width-md);
+  outline-style: solid;
+  outline-offset: -2px;
+}

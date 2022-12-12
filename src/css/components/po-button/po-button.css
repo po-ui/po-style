@@ -45,8 +45,7 @@ po-button {
   outline-offset: 2px;
 }
 
-.po-button[p-kind='secondary'],
-.po-button[p-type='default'] {
+.po-button[p-kind='secondary'] {
   color: var(--color-button-color, var(--color));
   border-color: var(--color-button-border, var(--color));
 
@@ -54,22 +53,19 @@ po-button {
   box-shadow: var(--color-button-box-shadow, var(--shadow));
 }
 
-.po-button[p-kind='secondary']:hover,
-.po-button[p-type='default']:hover {
+.po-button[p-kind='secondary']:hover {
   background-color: var(--color-button-background-color-hover, var(--background-hover));
   border-color: var(--color-button-border-hover, var(--border-color-hover));
   color: var(--color-button-color-hover, var(--border-color-hover));
 }
 
-.po-button[p-kind='secondary']:enabled:active,
-.po-button[p-type='default']:enabled:active {
+.po-button[p-kind='secondary']:enabled:active {
   background-color: var(--color-button-background-color-pressed, var(--background-pressed));
   border-color: var(--color-button-border-pressed, var(--border-color-hover));
   color: var(--color-button-color-pressed, var(--border-color-hover));
 }
 
-.po-button[p-kind='tertiary'],
-.po-button[p-type='link'] {
+.po-button[p-kind='tertiary'] {
   color: var(--color-button-color-link, var(--color));
 
   background-color: var(--color-button-background-color-link, var(--background-color));
@@ -83,8 +79,7 @@ po-button {
   background-color: var(--color-button-background-color-link-hover, var(--background-hover));
 }
 
-.po-button[p-kind='tertiary']:enabled:active,
-.po-button[p-type='link']:enabled:active {
+.po-button[p-kind='tertiary']:enabled:active {
   background-color: var(--color-button-background-color-link-pressed, var(--background-pressed));
   color: var(--color-button-color-link-pressed, var(--color-pressed));
 }
@@ -136,8 +131,7 @@ po-button {
   background-color: var(--color-button-background-color-primary-disabled, var(--color-disabled));
 }
 
-.po-button[p-kind='secondary']:disabled,
-.po-button[p-type='danger']:disabled {
+.po-button[p-kind='secondary']:disabled {
   color: var(--color-button-color-disabled, var(--color-disabled));
   border-color: var(--color-button-border-disabled, var(--color-disabled));
 

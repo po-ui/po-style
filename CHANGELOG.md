@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [15.0.0-next.0](https://github.com/po-ui/po-style/compare/v14.12.2...v15.0.0-next.0) (2022-12-19)
+
+
+### Code Refactoring
+
+* **button:** remove a propriedade p-type ([c21b862](https://github.com/po-ui/po-style/commit/c21b862f01ed4b3ef13b15e9f9fb39a580fcde09))
+
+
+### BREAKING CHANGES
+
+* **button:** removida propriedade p-type
+
+Foi removida a propriedade p-type do po-button pois a mesma foi depreciada na versão 15.x.x. Utilizar p-kind no lugar.
+
+
+
 ## [14.12.2](https://github.com/po-ui/po-style/compare/v14.12.1...v14.12.2) (2022-12-12)
 
 Compatibilidade com @po-ui/ng-components@14.12.2

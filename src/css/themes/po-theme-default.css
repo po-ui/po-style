@@ -407,7 +407,7 @@ po-button {
   --color-danger-pressed: var(--color-danger-dark-40);
   --background-danger-hover: var(--color-danger-light-20);
   --border-color-danger-hover: var(--color-danger-dark-40);
-  --background-danger-pressed: var(--color-danger-light-05);
+  --background-danger-pressed: var(--color-danger-light-40);
   --background-color-button-danger: var(--color-transparent);
 
   --text-color: var(--color-white);

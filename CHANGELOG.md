@@ -2,8 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-# [15.0.0-next.1](https://github.com/po-ui/po-style/compare/v14.12.2...v15.0.0-next.1) (2022-12-19)
+# [15.0.0-rc.0](https://github.com/po-ui/po-style/compare/v14.12.2...v15.0.0-rc.0) (2023-01-16)
 
+
+### Bug Fixes
+
+* **button:** corrige background-danger-pressed ([b4db305](https://github.com/po-ui/po-style/commit/b4db30565f7bdee4a19f9d7bbeb3c4fbc29837a3))
 
 
 ### Code Refactoring

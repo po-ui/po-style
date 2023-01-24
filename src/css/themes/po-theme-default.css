@@ -1694,7 +1694,6 @@ po-widget {
 
   --color-focused: var(--color-secondary);
   --outline-color-focused: var(--color-outline-focused);
-  --shadow: var(--shadow-sm);
 }
 
 :root {

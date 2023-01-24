@@ -10,16 +10,15 @@
   --font-widget-font-footer {
     @apply --font-text-bold;
   }
-
-  --shadow-widget-box-shadow: var(--shadow-card);
 }
 
 .po-widget,
 .po-widget-primary {
   background-size: cover;
   border-radius: var(--border-radius);
-  border: solid var(--border-width) var(--color-neutral-light-90);
   border-color: var(--border-color);
+  border-width: var(--border-width);
+  border-style: solid;
   display: inline-block;
   width: 100%;
 
@@ -41,7 +40,6 @@
 }
 
 .po-widget-no-shadow {
-  border: var(--border-widget-border-no-shadow);
   box-shadow: none;
 }
 
@@ -109,14 +107,15 @@
   border-top: 1px solid var(--color-widget-border-color-footer);
 }
 
-.po-widget.po-clickable,
-.po-widget-primary.po-clickable {
-  box-shadow: var(--shadow);
+.po-widget.po-clickable:hover,
+.po-widget-primary.po-clickable:hover {
+  border-color: var(--border-color-hover);
+  box-shadow: var(--shadow-hover);
+}
 
-  &:hover {
-    border-color: var(--border-color-hover);
-    box-shadow: var(--shadow-hover);
-  }
+.po-widget.po-clickable:not(.po-widget-no-shadow),
+.po-widget-primary.po-clickable:not(.po-widget-no-shadow) {
+  box-shadow: var(--shadow);
 }
 
 .po-widget-primary .po-widget-footer {

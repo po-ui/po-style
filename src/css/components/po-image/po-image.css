@@ -2,4 +2,15 @@
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  position: static !important;
+}
+
+.po-container-image {
+  position: relative;
+}
+
+.po-container-image .po-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.0.1](https://github.com/po-ui/po-style/compare/v15.0.0...v15.0.1) (2023-01-30)
+
+
+### Bug Fixes
+
+* **widget:** corrige borda sendo apagada com p-no-shadow ([d972ae1](https://github.com/po-ui/po-style/commit/d972ae19d4a867bf92cc6a6c8f44943f8ac786f9))
+
+
+
 # [15.0.0](https://github.com/po-ui/po-style/compare/v14.12.2...v15.0.0) (2023-01-20)
 
 Compatibilidade com @po-ui/ng-components@15.0.0

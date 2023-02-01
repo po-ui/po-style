@@ -23,6 +23,10 @@
   padding-left: 44px;
 }
 
+.po-input-double-icon-right {
+  padding-right: 68px !important;
+}
+
 .po-input:hover {
   border-color: var(--color-hover);
   background-color: var(--background-hover);

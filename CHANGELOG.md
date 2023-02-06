@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [15.1.0](https://github.com/po-ui/po-style/compare/v15.0.1...v15.1.0) (2023-02-06)
+
+
+### Features
+
+* **image:** implementa diretiva NgOptimizedImage ([effb65d](https://github.com/po-ui/po-style/commit/effb65df9e8664d7d4967b978bbbe7606bc25538))
+
+
+
 ## [15.0.1](https://github.com/po-ui/po-style/compare/v15.0.0...v15.0.1) (2023-01-30)
 
 

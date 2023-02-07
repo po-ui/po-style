@@ -15,6 +15,10 @@
   padding-right: 44px;
 }
 
+.po-input-double-icon-right {
+  padding-right: 68px !important;
+}
+
 .po-input::placeholder {
   color: var(--color-input-text-placeholder, var(--text-color-placeholder));
 }

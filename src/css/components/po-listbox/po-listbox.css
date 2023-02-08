@@ -2,15 +2,18 @@
   border-radius: var(--border-radius);
   border-width: var(--border-width);
   border-color: var(--border-color);
-  background-color: var(--color-popup-background-color-popup, var(--background));
+  background-color: var(--background);
   box-shadow: var(--shadow);
 
   border-style: solid;
-  z-index: 1000;
 
-  overflow-y: auto;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1000;
 }
 
 .po-listbox-list {
   list-style: none;
+  max-height: inherit;
+  overflow-y: auto;
 }

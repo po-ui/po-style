@@ -25,18 +25,18 @@
 
 /* item no modo desabilitado */
 .po-item-list__disabled:is(.po-item-list__action, .po-item-list__check, .po-item-list__option) {
-  color: var(--color-popup-color-disabled, var(--color-disabled));
+  color: var(--color-disabled);
   cursor: not-allowed;
 }
 
 /* item no modo hover */
 :hover:is(.po-item-list__action, .po-item-list__check, .po-item-list__option):not(.po-item-list__disabled, .po-item-list__danger) {
-  background-color: var(--color-popup-background-color-popup-item-hover, var(--background-hover));
+  background-color: var(--background-hover);
   cursor: pointer;
 }
 
 :hover:is(.po-item-list__check-selected:hover, .po-item-list__option-selected:hover):not(.po-item-list__disabled) {
-  background-color: var(--color-popup-background-color-popup-item-hover, var(--background-hover));
+  background-color: var(--background-hover);
   font-weight: var(--font-weight-selected);
 
   cursor: pointer;
@@ -50,13 +50,13 @@
 
 :is(.po-item-list__check-selected, .po-item-list__option-selected) {
   font-weight: var(--font-weight-selected);
-  background-color: var(--color-popup-background-color-popup-item-selected, var(--background-selected));
+  background-color: var(--background-selected);
 }
 
 /* item do tipo action */
 .po-item-list__action {
   font-weight: var(--font-weight);
-  color: var(--color-popup-color-default, var(--color));
+  color: var(--color);
 }
 
 .po-item-list__action:hover:not(.po-item-list__disabled, .po-item-list__danger) {
@@ -69,7 +69,7 @@
 }
 
 .po-item-list__danger:not(.po-item-list__disabled) {
-  color: var(--color-popup-color-danger, var(--color-danger));
+  color: var(--color-danger);
   cursor: pointer;
 }
 
@@ -79,12 +79,12 @@
 }
 
 .po-item-list__selected:not(.po-item-list__danger) {
-  background-color: var(--color-popup-background-color-popup-item-selected, var(--background-selected));
-  color: var(--color-popup-color-item-selected, var(--color-option));
+  background-color: var(--background-selected);
+  color: var(--color-option);
 }
 
 .po-item-list__selected:not(.po-item-list__danger):hover {
-  background-color: var(--color-popup-background-color-popup-item-selected-hover, var(--background-hover));
+  background-color: var(--background-hover);
 }
 
 .po-item-list__selected.po-item-list__danger {
@@ -92,7 +92,7 @@
 }
 
 .po-item-list__separator {
-  border-top: 1px solid var(--color-popup-border-color-separator, var(--color-neutral-light-90));
+  border-top: 1px solid var(--color-neutral-light-90);
 }
 
 .cdk-option:focus-visible {

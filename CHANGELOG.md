@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.1.1](https://github.com/po-ui/po-style/compare/v15.1.0...v15.1.1) (2023-02-13)
+
+
+### Bug Fixes
+
+* **combo:** corrige texto sobrepondo o `clean` ([f2ff575](https://github.com/po-ui/po-style/commit/f2ff575748dce30a50fafba2c7656bf88582dc1e))
+
+
+
 # [15.1.0](https://github.com/po-ui/po-style/compare/v15.0.1...v15.1.0) (2023-02-06)
 
 

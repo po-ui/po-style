@@ -2,7 +2,7 @@
   height: 100%;
 }
 
-.po-page-background-main-logo {
+.po-page-background-main-logo-image {
   display: block;
   height: auto;
   left: 0;
@@ -104,7 +104,7 @@
 }
 
 @media (max-width: 540px) {
-  .po-page-background-main-logo {
+  .po-page-background-main-logo-image {
     height: auto;
     max-height: 32px;
     max-width: 160px;
@@ -125,7 +125,7 @@
     max-width: 40px;
   }
 
-  .po-page-background-main-logo,
+  .po-page-background-main-logo-image,
   .po-page-background-secondary-logo {
     bottom: 8px;
   }

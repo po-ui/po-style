@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [15.2.0](https://github.com/po-ui/po-style/compare/v15.1.1...v15.2.0) (2023-02-27)
+
+
+### Code Refactoring
+
+* **popup:** remove variáveis ([ae054f1](https://github.com/po-ui/po-style/commit/ae054f1df259cd8874069ee39e0ed91394699166))
+
+
+### Features
+
+* **popup:** implementa novo componente interno `po-listbox` ([57a69f3](https://github.com/po-ui/po-style/commit/57a69f3be53a476ce75ec515295151274bdd9a80))
+
+
+### BREAKING CHANGES
+
+* **popup:** removidas as variáveis:
+
+- `--color-popup-background-color-scrollbar` - não é mais possível customizar a cor do scrollbar.
+- `--color-popup-background-color-popup-item-selected-disabled` - não é mais possível customizar o background do item selecionado e desabilitado.
+
+
+
 ## [15.1.1](https://github.com/po-ui/po-style/compare/v15.1.0...v15.1.1) (2023-02-13)
 
 

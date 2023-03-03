@@ -6,8 +6,6 @@
   --font-modal-title: {
     @apply --font-subtitle;
   }
-
-  --shadow-modal-content: var(--shadow-modal);
 }
 
 .po-modal {
@@ -29,13 +27,14 @@
 }
 
 .po-modal-overlay {
-  background-color: var(--color-modal-color-overlay);
   display: block;
   /* este calculo resolve o problema do item po-modal/9684, no menu-html não ocupava o espaço todo disponivel. */
   height: calc(100% + 1px);
   overflow-y: auto;
   position: fixed;
   width: 100%;
+  background: var(--color-modal-color-overlay, var(--color-overlay));
+  opacity: var(--opacity-overlay);
 }
 
 .po-modal-vertical-align {
@@ -45,14 +44,15 @@
 }
 
 .po-modal-content {
-  background-color: var(--color-modal-background-color-content);
-  border-radius: 3px;
-  box-shadow: var(--shadow-modal-content);
+  background-color: var(--color-modal-background-color-content, var(--background));
+  border: solid;
+  border-radius: var(--border-radius);
+  border-width: var(--border-width);
+  border-color: var(--border-color);
+  box-shadow: var(--shadow-modal-content, var(--shadow));
   display: inline-block;
   margin: 0 auto;
-  padding: 0 8px;
   position: relative;
-  max-width: 768px;
   text-align: left;
 }
 
@@ -78,86 +78,81 @@
 
 .po-modal-auto {
   width: auto;
+  max-width: 70%;
 }
 
 .po-modal-header {
   @apply --font-modal-title;
   border: 0;
   max-width: 100%;
-  padding: 21px 8px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid var(--color-divider);
+  display: flex;
+  justify-content: space-between;
+}
+
+.po-modal-header .po-icon.po-icon-close:before {
+  font-size: 2rem;
+}
+
+.po-modal-header .po-button {
+  padding: 0;
+  margin: 0;
 }
 
 .po-modal-title {
-  color: var(--color-modal-color-title);
-  max-width: 736px;
-  padding-right: 24px;
+  color: var(--color-neutral);
+  display: flex;
+  align-items: center;
+  padding-right: var(--spacing-md);
+}
+
+.po-modal-title po-icon {
+  line-height: 0px;
+  padding-right: var(--spacing-xs);
 }
 
 .po-modal-auto .po-modal-title {
   max-width: 100%;
 }
 
-.po-modal-header-close-button {
-  border-radius: 1px;
-  color: var(--color-modal-color-header-close-button);
-  cursor: pointer;
-  position: absolute;
-  right: 16px;
-  text-decoration: none;
-  top: 21px;
-  width: 24px;
-}
-
 .po-modal-body {
   @apply --font-modal-body;
-  color: var(--color-modal-text-color-body);
-  margin: 8px;
-  max-width: 736px;
+  color: var(--color-neutral-dark-60);
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: auto;
   text-align: left;
+  max-height: calc(80vh - 101px);
+  padding: var(--spacing-md) var(--spacing-2xl) var(--spacing-2xl) var(--spacing-md);
 }
 
 .po-modal-auto .po-modal-body {
   max-width: none;
 }
 
-.po-modal-body::-webkit-scrollbar {
-  border-radius: 2px;
-  height: 4px;
-  opacity: 0.5;
-  width: 4px;
-}
-
-.po-modal::-webkit-scrollbar {
-  width: 7px;
-}
-
-.po-modal::-webkit-scrollbar-track,
-.po-modal-body::-webkit-scrollbar-track {
-  display: none;
-}
-
-.po-modal::-webkit-scrollbar-thumb,
-.po-modal-body::-webkit-scrollbar-thumb {
-  background-color: var(--color-modal-background-color-scrollbar);
-  border-radius: 10px;
-}
-
 .po-modal-footer {
-  background-color: var(--color-modal-background-color-footer);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
   overflow: auto;
-  padding: 24px 8px;
   width: 100%;
-}
-
-.po-modal-footer-align-right {
-  text-align: right;
-  float: right;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-top: 1px solid var(--color-divider);
 }
 
 .po-modal-footer-align-right .po-button {
   margin-left: 12px;
+}
+
+.po-modal-footer-basic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.po-modal-footer-basic .po-button {
+  margin-left: 0px;
 }
 
 @media screen and (max-width: 480px) {
@@ -165,35 +160,25 @@
     width: 90%;
   }
 
-  .po-modal-header-close-button {
-    right: 16px;
-    top: 8px;
+  .po-modal-sm {
+    width: 90%;
   }
 
-  .po-modal-footer {
-    padding: 16px 0;
-    text-align: center;
+  .po-modal-md {
+    width: 90%;
   }
 
-  .po-modal-footer .po-button {
-    margin: 0 6px;
-    padding-left: 0;
-    padding-right: 0;
-    white-space: nowrap;
-    width: calc(50% - 16px);
+  .po-modal-lg {
+    width: 90%;
   }
 
-  .po-modal-footer .po-button-modal-first-action:only-child .po-button {
-    width: calc(100% - 16px);
-  }
-
-  .po-modal-header {
-    padding: 8px;
-    width: 100%;
+  .po-modal-xl {
+    width: 90%;
   }
 
   .po-modal-auto {
     width: 90%;
+    max-width: none;
   }
 }
 
@@ -212,5 +197,49 @@
 
   .po-modal-footer-default {
     float: left;
+  }
+
+  .po-modal-sm {
+    width: 80%;
+  }
+
+  .po-modal-md {
+    width: 80%;
+  }
+
+  .po-modal-lg {
+    width: 80%;
+  }
+
+  .po-modal-xl {
+    width: 80%;
+  }
+
+  .po-modal-auto {
+    width: auto;
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 961px) {
+  .po-modal-sm {
+    width: 40%;
+  }
+
+  .po-modal-md {
+    width: 50%;
+  }
+
+  .po-modal-lg {
+    width: 60%;
+  }
+
+  .po-modal-xl {
+    width: 70%;
+  }
+
+  .po-modal-auto {
+    width: auto;
+    max-width: 70%;
   }
 }

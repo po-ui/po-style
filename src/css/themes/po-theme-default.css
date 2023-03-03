@@ -1063,13 +1063,25 @@ po-item-list:is([p-type='option'], [p-type='check']) {
 
   --color-menu-panel-color-menu-item-text: var(--color-primary);
   --color-menu-panel-color-menu-item-selected: var(--color-neutral-dark-60);
+}
 
-  /*------------------------------------*\
+po-modal {
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --border-color: var(--color-neutral-light-80);
+  --background: var(--color-white);
+  --shadow: var(--shadow-md);
+  --color-overlay: var(--color-neutral-dark-40);
+  --opacity-overlay: 0.7;
+  --color-divider: var(--color-neutral-light-80);
+}
+/*------------------------------------*\
     MODAL
   \*------------------------------------*/
-
-  --color-modal-background-color-content: var(--color-white);
-  --color-modal-color-overlay: var(--color-secondary-dark-60-alpha-70);
+:root {
+  --color-modal-background-color-content: var(--background); /*Deprecated v16.x.x utilizar --background*/
+  --color-modal-color-overlay: var(--color-overlay); /*Deprecated v16.x.x utilizar --color-overlay*/
+  --shadow-modal-content: var(--shadow); /*Deprecated v16.x.x utilizar --shadow*/
 
   /*------------------------------------*\
     MODAL PASSWORD RECOVERY

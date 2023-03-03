@@ -1068,13 +1068,8 @@ po-item-list:is([p-type='option'], [p-type='check']) {
     MODAL
   \*------------------------------------*/
 
-  --color-modal-text-color-body: var(--color-neutral-dark-60);
   --color-modal-background-color-content: var(--color-white);
-  --color-modal-background-color-footer: var(--color-white);
-  --color-modal-background-color-scrollbar: var(--color-primary);
   --color-modal-color-overlay: var(--color-secondary-dark-60-alpha-70);
-  --color-modal-color-title: var(--color-neutral);
-  --color-modal-color-header-close-button: var(--color-primary);
 
   /*------------------------------------*\
     MODAL PASSWORD RECOVERY

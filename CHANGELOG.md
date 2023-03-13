@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [15.3.0](https://github.com/po-ui/po-style/compare/v15.2.0...v15.3.0) (2023-03-13)
+
+
+### Code Refactoring
+
+* **modal:** remove variável não utilizada ([3d88894](https://github.com/po-ui/po-style/commit/3d888940f653ad780d71b8266b34c276cccf0530))
+
+
+### Features
+
+* **modal:** implementa definições do AnimaliaDS ([9ed4849](https://github.com/po-ui/po-style/commit/9ed48492663f826e6b1cad4f9deb8a9f32e410c7))
+
+
+### BREAKING CHANGES
+
+* **modal:** removidas as variáveis:
+
+- `color-modal-text-color-body` : customização da cor do texto do corpo do modal.
+- `color-modal-background-color-footer` : customização da cor do footer.
+- `color-modal-background-color-scrollbar` : customização da cor do scrollbar.
+- `color-modal-color-title` : customização da cor do titulo.
+- `color-modal-color-header-close-button` : customização da cor do botão de fechar.
+
+
+
 # [15.2.0](https://github.com/po-ui/po-style/compare/v15.1.1...v15.2.0) (2023-02-27)
 
 

@@ -778,19 +778,49 @@ po-divider {
 
   --color-divider-label-color: var(--color-neutral-dark-60);
   --color-divider-line-color: var(--color); /*Deprecated v16.x.x utilizar --color*/
+}
 
+po-dropdown {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --font-weight: var(--font-weight-bold);
+  --line-height: var(--line-height-none);
+  --color: var(--color-secondary);
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-md);
+  --padding: 0 1em;
+
+  /* hover */
+  --color-hover: var(--color-secondary-dark-80);
+  --background-hover: var(--color-secondary-light-20);
+
+  /* focus */
+  --outline-color-focused: var(--color-outline-focused);
+
+  /* pressed */
+  --background-pressed: var(--color-secondary-light-40);
+
+  /* disabled */
+  --color-disabled: var(--color-action-disabled);
+}
+
+:root {
   /*------------------------------------*\
     DROPDOWN
   \*------------------------------------*/
 
-  --color-dropdown-button-color: var(--color-secondary);
-  --color-dropdown-button-border-color: var(--color-secondary);
+  --color-dropdown-button-color: var(--color); /* Deprecated v16.x.x utilizar --color */
+  --color-dropdown-button-border-color: var(--color); /* Deprecated v16.x.x utilizar --color */
 
-  --color-dropdown-button-color-hover: var(--color-secondary-dark-20);
-  --color-dropdown-button-border-color-hover: var(--color-secondary-dark-20);
+  --color-dropdown-button-color-hover: var(--color-hover); /* Deprecated v16.x.x utilizar --color-hover */
+  --color-dropdown-button-border-color-hover: var(--color-hover); /* Deprecated v16.x.x utilizar --color-hover */
 
-  --color-dropdown-button-color-disabled: var(--color-neutral-light-60);
-  --color-dropdown-button-border-color-disabled: var(--color-neutral-light-60);
+  --color-dropdown-button-color-disabled: var(
+    --color-disabled
+  ); /* Deprecated v16.x.x utilizar --color-action-disabled */
+  --color-dropdown-button-border-color-disabled: var(
+    --color-disabled
+  ); /* Deprecated v16.x.x utilizar --color-action-disabled */
 
   /*------------------------------------*\
     FIELD CONTAINER

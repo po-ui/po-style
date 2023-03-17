@@ -1,40 +1,68 @@
-:root {
-  --font-dropdown-font {
-    @apply --font-text-large-bold;
-  }
-}
-
 .po-dropdown {
-  @apply --font-dropdown-font;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
   display: inline-block;
   position: relative;
   width: inherit;
+  border-radius: var(--border-radius);
+}
+
+.po-dropdown[disabled='true'] {
+  cursor: not-allowed;
 }
 
 .po-dropdown-button {
-  background-color: var(--color-dropdown-button-background-color);
-  border: solid 1px var(--color-dropdown-button-border-color);
-  border-radius: 3px;
-  color: var(--color-dropdown-button-color);
+  background-color: transparent;
+  border: solid var(--border-width) var(--color-dropdown-button-border-color, var(--color));
+  border-radius: var(--border-radius);
+  color: var(--color-dropdown-button-color, var(--color));
   cursor: pointer;
   height: 44px;
-  padding: 8px 38px 8px 16px;
+  padding: var(--padding, 0 1em);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  &:hover {
-    border: solid 1px var(--color-dropdown-button-border-color-hover);
-    color: var(--color-dropdown-button-color-hover);
-  }
+.po-dropdown-button:hover {
+  border: solid var(--border-width) var(--color-dropdown-button-border-color-hover, var(--color-hover));
+  color: var(--color-dropdown-button-color-hover, var(--color-hover));
+  background-color: var(--background-hover);
+}
+
+.po-dropdown:focus:not(.po-dropdown[disabled='true']),
+.po-dropdown:enabled:active:not(.po-dropdown[disabled='true']) {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--border-width-lg);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.po-dropdown-button:enabled:active {
+  background-color: var(--background-pressed);
+}
+
+.po-dropdown-button:active {
+  background-color: var(--background-pressed);
 }
 
 .po-dropdown-button-disabled {
-  border: solid 1px var(--color-dropdown-button-border-color-disabled);
-  color: var(--color-dropdown-button-color-disabled);
+  border-color: var(--color-dropdown-button-border-color-disabled, var(--color-disabled));
+  color: var(--color-dropdown-button-color-disabled, var(--color-disabled));
   pointer-events: none;
+  cursor: not-allowed;
+}
+
+.po-dropdown-button-open,
+.po-dropdown-button-open:hover {
+  background-color: var(--background-pressed);
+  border: solid var(--border-width) var(--color-dropdown-button-border-color-hover, var(--color-hover));
+  color: var(--color-dropdown-button-color-hover, var(--color-hover));
 }
 
 .po-dropdown-icon {
-  font-size: 24px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
+  font-size: calc(var(--font-size) + 8px);
+  margin-left: 0.5em;
 }

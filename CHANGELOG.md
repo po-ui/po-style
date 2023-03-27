@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [15.5.0](https://github.com/po-ui/po-style/compare/v15.4.0...v15.5.0) (2023-03-27)
+
+Compatibilidade com @po-ui/ng-components@15.5.0
+
+### Code Refactoring
+
+* **dropdown:** remove variável não utilizada ([f5a342e](https://github.com/po-ui/po-style/commit/f5a342e57859b940f552394568498607d06f5017))
+
+
+### Features
+
+* **dropdown:** implementa definições do AnimaliaDS ([9d8ed1d](https://github.com/po-ui/po-style/commit/9d8ed1d9382d94a038a88211d7a24399562e3a46))
+* **table:** reutiliza o componente po-radio ([4319173](https://github.com/po-ui/po-style/commit/4319173d424cdacb786c113420cc4467fb0af27b))
+* **typography:** adiciona tipografia ([f2352b6](https://github.com/po-ui/po-style/commit/f2352b614e7d770fb8535f2d27ce473c5c41fe7a))
+
+
+### BREAKING CHANGES
+
+* **dropdown:** remove variáveis de customização de cores
+
+Remove variáveis para compatibilidade com @animaliads/dropdown e melhorias
+de acessibilidade, não sendo mais possível a customização.
+
+- `color-dropdown-button-background-color` : customização do background do dropdown
+
+
+
 ## [15.4.0](https://github.com/po-ui/po-style/compare/v15.3.0...v15.4.0) (2023-03-20)
 
 Compatibilidade com @po-ui/ng-components@15.4.0

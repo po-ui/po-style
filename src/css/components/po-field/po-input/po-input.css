@@ -40,16 +40,11 @@
   outline-offset: 2px;
 }
 
-.po-input:read-only {
+.po-input:read-only:not(div, :disabled) {
   border-color: var(--color-neutral-light-30);
   background-color: var(--color-neutral-light-05);
   color: var(--color-neutral-dark-70);
   cursor: text;
-}
-
-.po-field-icon.po-icon-input:not(.po-icon-eye-off),
-po-clean.po-icon-input span.po-field-icon {
-  color: var(--color-brand-01-dark) !important;
 }
 
 .po-input:disabled,
@@ -67,6 +62,7 @@ po-clean.po-icon-input span.po-field-icon {
 
 .po-icon-input-disabled {
   color: var(--color-field-icon-color-disabled);
+  cursor: not-allowed;
 }
 
 .po-input::-ms-clear,

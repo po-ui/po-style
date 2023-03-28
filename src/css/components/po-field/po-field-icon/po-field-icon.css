@@ -28,8 +28,11 @@
 }
 
 .po-field-icon {
-  color: var(--color-field-icon-color);
   cursor: pointer;
+}
+
+.po-field-icon:not(.po-icon-eye-off, .po-field-icon-disabled) {
+  color: var(--color-brand-01-dark);
 }
 
 .po-field-icon-container-left .po-field-icon > .po-icon,

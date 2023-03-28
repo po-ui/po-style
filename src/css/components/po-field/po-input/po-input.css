@@ -4,7 +4,7 @@
   color: var(--text-color);
   background-color: var(--color-input-background-color-text, var(--background));
   padding: var(--padding, 0 0.5em);
-  border: 1px solid var(--color-input-border-text, var(--color));
+  border: 1px solid var(--color-select-border-button, var(--color));
   border-radius: 4px;
   min-height: 2.75em;
   box-sizing: border-box;

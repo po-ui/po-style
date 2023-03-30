@@ -672,8 +672,6 @@ po-checkbox {
   /* Deprecated v16.x.x utilizar --color-checked */
   --color-checkbox-background-color-disabled: var(--color-unchecked-disabled);
   /* Deprecated v16.x.x utilizar --color-unchecked-disabled */
-  --color-checkbox-background-color-icon-disabled: var(--color-unchecked);
-  /* Deprecated v16.x.x utilizar --color-unchecked */
   --color-checkbox-box-shadow-color-focusable: var(--outline-color-focused);
   /* Deprecated v16.x.x utilizar --outline-color-focused */
 
@@ -690,25 +688,11 @@ po-checkbox {
   --color-checkbox-hover-active: var(--shadow-color-hover);
   /* Deprecated v16.x.x utilizar --shadow-color-hover */
 
-  --color-checkbox-color-active: var(--color-unchecked);
-  /* Deprecated v16.x.x utilizar --color-unchecked */
-
   /*------------------------------------*\
     CHECKBOX GROUP
   \*------------------------------------*/
 
-  --color-checkbox-group-background-color: var(--color-white);
-  --color-checkbox-group-background-color-active: var(--color-primary);
-  --color-checkbox-group-background-color-disabled: var(--color-neutral-light-90);
-  --color-checkbox-group-background-color-icon-disabled: var(--color-neutral-light-60);
-  --color-checkbox-group-box-shadow-color-focusable: var(--color-primary-dark-20);
-
-  --color-checkbox-group-border-input: var(--color-neutral-light-60);
-  --color-checkbox-group-border-input-active: var(--color-primary);
-  --color-checkbox-group-border-input-disabled: var(--color-neutral-light-60);
   --color-checkbox-group-border-input-invalid: var(--color-danger);
-
-  --color-checkbox-group-color-active: var(--color-white);
 
   /*------------------------------------*\
     COMBO

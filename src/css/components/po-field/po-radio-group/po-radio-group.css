@@ -8,6 +8,7 @@
 
 .po-radio-group-item {
   padding: 0 var(--spacing-md) 0 0;
+  display: inherit;
 }
 
 po-radio-group.ng-invalid.ng-dirty input[type='radio']:not([disabled]) {

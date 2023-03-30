@@ -229,7 +229,8 @@
   --color-neutral-alpha-45: rgba(74, 92, 96, 0.45);
 
   /* Background do Feedback, Pill de informação */
-  --color-neutral: #4a5c60;
+  --color-neutral: var(--color-neutral-dark-70);
+  /*Deprecated v16.x.x utilizar --color-neutral-dark-70*/
 
   /* Usar em menu: Área do logo, Background do menu */
   --color-neutral-dark-40: var(--color-neutral-dark-80);
@@ -642,25 +643,55 @@ po-button {
    */
 
   --color-chart-line-point-fill: var(--color-white);
+}
 
-  /*------------------------------------*\
+/*------------------------------------*\
     CHECKBOX
   \*------------------------------------*/
 
-  --color-checkbox-background-color: var(--color-white);
-  --color-checkbox-background-color-active: var(--color-secondary);
-  --color-checkbox-background-color-disabled: var(--color-neutral-light-60);
-  --color-checkbox-background-color-icon-disabled: var(--color-white);
-  --color-checkbox-box-shadow-color-focusable: var(--color-secondary-dark-80);
+po-checkbox {
+  --border-color: var(--color-neutral);
+  --color-unchecked: var(--color-white);
 
-  --color-checkbox-border-input: var(--color-neutral);
-  --color-checkbox-border-input-active: var(--color-secondary-dark-20);
-  --color-checkbox-border-input-disabled: var(--color-neutral);
+  --color-checked: var(--color-secondary);
+
+  --color-hover: var(--color-action-hover);
+  --shadow-color-hover: var(--color-secondary-light-20);
+
+  --outline-color-focused: var(--color-outline-focused);
+
+  --color-unchecked-disabled: var(--color-action-disabled);
+
+  --color-checked-disabled: var(--color-neutral);
+}
+
+:root {
+  --color-checkbox-background-color: var(--color-unchecked);
+  /* Deprecated v16.x.x utilizar --color-unchecked */
+  --color-checkbox-background-color-active: var(--color-checked);
+  /* Deprecated v16.x.x utilizar --color-checked */
+  --color-checkbox-background-color-disabled: var(--color-unchecked-disabled);
+  /* Deprecated v16.x.x utilizar --color-unchecked-disabled */
+  --color-checkbox-background-color-icon-disabled: var(--color-unchecked);
+  /* Deprecated v16.x.x utilizar --color-unchecked */
+  --color-checkbox-box-shadow-color-focusable: var(--outline-color-focused);
+  /* Deprecated v16.x.x utilizar --outline-color-focused */
+
+  --color-checkbox-border-input: var(--border-color);
+  /* Deprecated v16.x.x utilizar --border-color */
+  --color-checkbox-border-input-active: var(--color-hover);
+  /* Deprecated v16.x.x utilizar --border-color */
+  --color-checkbox-border-input-disabled: var(--color-checked-disabled);
+  /* Deprecated v16.x.x utilizar --color-hover */
   --color-checkbox-border-input-invalid: var(--color-danger);
-  --color-checkbox-background-color-active-disabled: var(--color-neutral);
-  --color-checkbox-hover-active: var(--color-secondary-light-20);
+  /* Deprecated v16.x.x utilizar --color-danger */
+  --color-checkbox-background-color-active-disabled: var(--color-checked-disabled);
+  /* Deprecated v16.x.x utilizar --color-checked-disabled */
+  --color-checkbox-hover-active: var(--shadow-color-hover);
+  /* Deprecated v16.x.x utilizar --shadow-color-hover */
 
-  --color-checkbox-color-active: var(--color-white);
+  --color-checkbox-color-active: var(--color-unchecked);
+  /* Deprecated v16.x.x utilizar --color-unchecked */
 
   /*------------------------------------*\
     CHECKBOX GROUP

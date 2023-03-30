@@ -3,8 +3,7 @@
 }
 
 .po-checkbox-group-item {
-  min-height: 44px;
-  padding: 0 var(--spacing-md) var(--spacing-md) 0;
+  padding: 0 var(--spacing-md) 0 0;
   position: relative;
 }
 
@@ -25,6 +24,8 @@ po-checkbox-group.ng-invalid.ng-dirty .po-checkbox:not([aria-disabled='true']) {
   border: solid 2px var(--color-checkbox-group-border-input-invalid);
 }
 
-.po-checkbox-group-content {
-  display: inline;
+.po-checkbox-group-content ul {
+  padding: var(--spacing-xs) 0;
+  row-gap: var(--spacing-md);
+  width: 100%;
 }

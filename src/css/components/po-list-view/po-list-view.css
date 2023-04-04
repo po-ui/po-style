@@ -38,17 +38,6 @@
   --list-view-main-header-height: 44px;
 }
 
-.po-list-view {
-  background-color: var(--color-list-view-background-color);
-  border: solid 1px var(--color-list-view-border);
-  border-radius: 3px;
-  margin-top: 16px;
-}
-
-.po-list-view:nth-of-type(1) {
-  margin-top: 0;
-}
-
 .po-list-view-select {
   display: table-cell;
   font-size: 16px;
@@ -190,10 +179,6 @@
 }
 
 @media screen and (max-width: 1366px) {
-  .po-list-view {
-    margin-top: 8px;
-  }
-
   .po-list-view-main-container-header,
   .po-list-view-main-container {
     margin-bottom: 8px;

@@ -90,6 +90,9 @@
 .po-list-view-main-content {
   height: 100%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .po-list-view-main-content::-webkit-scrollbar {
@@ -248,5 +251,9 @@
 
   .po-list-view-more-actions {
     right: 0;
+  }
+
+  .po-list-view-main-content {
+    gap: 0.5em;
   }
 }

@@ -2,6 +2,58 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [15.6.0](https://github.com/po-ui/po-style/compare/v15.5.1...v15.6.0) (2023-04-06)
+
+Compatibilidade com @po-ui/ng-components@15.6.0
+
+### Bug Fixes
+
+* **checkbox-group:** ajusta posicionamento do grupo ([bec8fdd](https://github.com/po-ui/po-style/commit/bec8fdd54ffaa74a6939bdffc0e351a6348c193f))
+* **radio-group:** ajusta posicionamento do grupo ([a4a02aa](https://github.com/po-ui/po-style/commit/a4a02aabc74ce5ebd2c309e52c1e3a61d95dd9c6))
+
+
+### Code Refactoring
+
+* **checkbox:** remove variáveis não utilizadas ([95e0084](https://github.com/po-ui/po-style/commit/95e0084d628830a6601ebeddc876b81b06bc3c07))
+* **list-view:** remove variável não utilizada ([555fbf2](https://github.com/po-ui/po-style/commit/555fbf21c010c8c9d6920887859d5dd21c02f0c3)), closes [#1594](https://github.com/po-ui/po-style/issues/1594)
+
+
+### Features
+
+* **checkbox:** implementa definições do AnimaliaDS ([b0b2dc9](https://github.com/po-ui/po-style/commit/b0b2dc966dc0ace73bef466050ad51f54aa8dcf9))
+* **list-view:** melhora contraste do componente ([5c69d49](https://github.com/po-ui/po-style/commit/5c69d492ea43665921c6ee7936003b504409e3e5)), closes [#1594](https://github.com/po-ui/po-style/issues/1594)
+
+
+### BREAKING CHANGES
+
+* **list-view:** remove variáveis de customização de cores
+
+- `--color-list-view-background-color`.
+- `--color-list-view-border`.
+
+Utilizar:
+- `--border-color`.
+- `--background`.
+* **checkbox:** remove variáveis de customização de cores
+
+Remove variáveis para compatibilidade com @animaliads/checkbox e melhorias
+de acessibilidade, não sendo mais possível a customização.
+
+- `--color-checkbox-color-active`: cor do ícone do checkbox selecionado ou indefinido
+- `--color-checkbox-background-color-icon-disabled`: cor do ícone do checkbox desabilitado
+
+- `--color-checkbox-group-background-color`: cor do checkbox não selecionado
+- `--color-checkbox-group-background-color-active`: cor do checkbox selecionado
+- `--color-checkbox-group-background-color-disabled`: cor do checkbox desabilitado
+- `--color-checkbox-group-background-color-icon-disabled`: cor do ícone do checkbox desabilitado
+- `--color-checkbox-group-box-shadow-color-focusable`: cor da sobra do checkbox focado
+- `--color-checkbox-group-border-input-active`: cor da borda do checkbox selecionado
+- `--color-checkbox-group-border-input-disabled`: cor da borda do checkbox desabilitado
+- `--color-checkbox-group-color-active`: cor do ícone do checkbox selecionado
+- `--color-checkbox-group-border-input`: cor da borda do checkbox não selecionado
+
+
+
 ## [15.5.1](https://github.com/po-ui/po-style/compare/v15.5.0...v15.5.1) (2023-04-03)
 
 

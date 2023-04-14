@@ -171,6 +171,7 @@
   margin-top: -2px;
   vertical-align: middle;
   width: 20px;
+  min-width: 20px;
 }
 
 .po-multiselect-checkbox-input-checked + .po-multiselect-checkbox-label:before,
@@ -196,4 +197,9 @@
 
 .po-multiselect-checkbox-input-indeterminate + .po-multiselect-checkbox-label:before {
   content: '\e939';
+}
+
+.po-multiselect-checkbox-label {
+  display: flex;
+  align-items: center;
 }

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.6.1](https://github.com/po-ui/po-style/compare/v15.6.0...v15.6.1) (2023-04-17)
+
+
+### Bug Fixes
+
+* **tooltip:** corrige quebra de linha ([3232e6e](https://github.com/po-ui/po-style/commit/3232e6e0a998d9e447296059926a4f93f1125865))
+
+
+
 # [15.6.0](https://github.com/po-ui/po-style/compare/v15.5.1...v15.6.0) (2023-04-06)
 
 Compatibilidade com @po-ui/ng-components@15.6.0

@@ -23,3 +23,11 @@
   color: var(--color-table-color-link-disabled);
   cursor: default;
 }
+
+.po-table-link-disabled {
+  pointer-events: none;
+}
+
+.po-table-link-disabled po-link {
+  --text-color: var(--color-table-color-link-disabled, var(--color-neutral-light-40));
+}

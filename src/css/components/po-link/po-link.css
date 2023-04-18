@@ -1,32 +1,42 @@
 .po-link {
-  font-family: var(--font-family);
   color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: inherit;
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-auto);
-  text-decoration: underline;
-  font-size: inherit;
   line-height: inherit;
+  text-decoration: underline;
 }
-.po-link:visited {
-  color: var(--text-color-visited);
+
+.po-link:is(button) {
+  background: none;
+  border: none;
+  padding: 0;
 }
+
 .po-link:hover {
   color: var(--text-color-hover);
   cursor: pointer;
   text-decoration: none;
 }
+
 .po-link:focus {
   outline-color: var(--outline-color-focused);
-  outline-width: var(--border-width-lg);
-  outline-style: solid;
   outline-offset: 2px;
+  outline-style: solid;
+  outline-width: var(--border-width-lg);
 }
+
 .po-link:active {
   color: var(--text-color-pressed);
-  outline-color: var(--outline-color-focused);
-  outline-width: var(--border-width-lg);
-  outline-style: solid;
-  outline-offset: 2px;
   cursor: pointer;
+  outline-color: var(--outline-color-focused);
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: var(--border-width-lg);
   text-decoration: none;
+}
+
+.po-link:visited {
+  color: var(--text-color-visited);
 }

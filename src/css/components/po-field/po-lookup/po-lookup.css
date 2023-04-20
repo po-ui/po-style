@@ -30,6 +30,10 @@
   overflow: hidden;
 }
 
+.po-lookup-container-table[data-multiple='true'] {
+  margin-block: var(--spacing-sm);
+}
+
 .po-lookup-filter-content {
   padding: 8px 0;
   margin-right: 6px;

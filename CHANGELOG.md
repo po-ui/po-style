@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [15.7.0](https://github.com/po-ui/po-style/compare/v15.6.1...v15.7.0) (2023-04-20)
+
+
+### Features
+
+* **multiselect:** permite utilizar template customizado ([bb8c247](https://github.com/po-ui/po-style/commit/bb8c247c92daf18ce774603300ec51f6a15636f0))
+
+* **table:** ajusta estilo do link na tabela([9a7df82](https://github.com/po-ui/po-style/commit/9a7df824a67a940677c32dd6878e92117969dbd7))
+
+
+
 ## [15.6.1](https://github.com/po-ui/po-style/compare/v15.6.0...v15.6.1) (2023-04-17)
 
 

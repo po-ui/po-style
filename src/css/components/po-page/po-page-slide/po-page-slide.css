@@ -30,7 +30,16 @@
 }
 
 .po-page-slide-overlay {
-  @apply --overlay-fixed;
+  background-color: var(--color-overlay);
+  opacity: var(--opacity-overlay);
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  content: '';
+  position: fixed;
 }
 
 .po-page-slide-container {
@@ -39,6 +48,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  z-index: 1000;
 }
 
 .po-page-slide-right {
@@ -77,34 +87,37 @@
 }
 
 .po-page-slide-content {
-  background-color: var(--color-page-background-color-page);
+  padding-inline: var(--spacing-md);
+  padding-block: var(--spacing-lg);
+
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+
   margin: 0 auto;
-  padding: 24px 12px 8px 24px;
   height: 100%;
 }
 
 .po-page-slide-header {
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25em;
   max-width: 100%;
   text-align: left;
-  height: 70px;
 }
 
-.po-page-slide-close-button {
-  background: transparent;
-  border: none;
-  color: var(--color-page-slide-close-button-color);
-  cursor: pointer;
-  font-size: 24px;
-  position: absolute;
-  top: 21px;
-  right: 16px;
-  width: 24px;
+.po-page-slide-header .po-icon {
+  font-size: 1.5rem;
 }
 
 .po-page-slide-title {
-  @apply --font-page-slide-title;
-  color: var(--color-page-header-color-title);
-  padding-right: 24px;
+  font-family: var(--font-family);
+  color: var(--color-title);
+  flex: 1 1 auto;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-md);
+  font-size: var(--font-size-default);
 }
 
 .po-page-slide-subtitle {
@@ -116,39 +129,14 @@
   color: var(--color-page-slide-body-text-color);
   overflow-x: hidden;
   overflow-y: auto;
-  padding-right: 8px;
   text-align: left;
   height: calc(100% - 70px); /* 100% - .po-page-slide-header */
   scroll-behavior: smooth;
-  scrollbar-width: thin;
-}
-
-.po-page-slide-body::-webkit-scrollbar {
-  width: 7px;
-}
-
-.po-page-slide-body::-webkit-scrollbar-track {
-  display: none;
-}
-
-.po-page-slide-body::-webkit-scrollbar-thumb {
-  background-color: var(--color-page-content-background-color-scrollbar);
-  border-radius: 10px;
 }
 
 @media screen and (max-width: 480px) {
-  .po-page-slide-header {
-    padding: 8px;
-    width: 100%;
-  }
-
   .po-page-slide-auto {
     width: 90%;
-  }
-
-  .po-page-slide-close-button {
-    right: 16px;
-    top: 8px;
   }
 }
 

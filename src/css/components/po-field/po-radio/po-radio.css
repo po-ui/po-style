@@ -34,17 +34,17 @@ po-radio {
   display: inline-block;
 }
 
-.po-radio label {
+.po-radio > label {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
 }
 
-.po-radio label * {
+.po-radio > label * {
   cursor: pointer;
 }
 
-.po-radio-focus label {
+.po-radio-focus > label {
   outline-color: var(--color-radio-group-border-color-focusable, var(--outline-color-focused));
 
   outline-width: var(--border-width-lg);

@@ -133,7 +133,7 @@
 .po-modal-footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: flex-end;
   overflow: auto;
   width: 100%;
   padding: var(--spacing-sm) var(--spacing-md);
@@ -147,7 +147,7 @@
 .po-modal-footer-basic {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 1rem;
 }
 

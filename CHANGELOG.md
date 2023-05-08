@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.7.1](https://github.com/po-ui/po-style/compare/v15.7.0...v15.7.1) (2023-05-08)
+
+
+### Bug Fixes
+
+* **modal:** ajusta propriedade CSS ([a27037b](https://github.com/po-ui/po-style/commit/a27037beebfa39ca2de672e4f5dfe1f3c8ae755c))
+* **radio:** ajusta `outline do focus` ([d899db6](https://github.com/po-ui/po-style/commit/d899db68b0498c50cac09e66f1c9e9adfe704a03))
+
+
+
 # [15.7.0](https://github.com/po-ui/po-style/compare/v15.6.1...v15.7.0) (2023-04-20)
 
 

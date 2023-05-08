@@ -20,16 +20,16 @@ jobs:
     steps:
 
     # Definição da action
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       # Parâmetros para a ação
       with:
         fetch-depth: 0
 
-    - uses: wagoid/commitlint-github-action@v2
+    - uses: wagoid/commitlint-github-action@v5
 
-    - uses: actions/setup-node@v1
+    - uses: actions/setup-node@v3
       with:
-        node-version: 14.x
+        node-version: 16
 
     # Executa um comando do projeto na máquina virtual
     - run: npm i
@@ -42,11 +42,11 @@ jobs:
     steps:
 
     # Definição da action
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - uses: actions/setup-node@v1
+    - uses: actions/setup-node@v3
       with:
-        node-version: 12.x
+        node-version: 16
 
     # Executa um comando do projeto na máquina virtual
     - run: npm i

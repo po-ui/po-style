@@ -148,9 +148,7 @@
 }
 
 .po-list-view-detail-button {
-  @apply --font-list-view-font-detail-button;
   border-top: solid 1px var(--color-list-view-border);
-  color: var(--color-list-view-color-primary);
   padding: 8px 0;
   text-align: center;
 }
@@ -223,11 +221,6 @@
 
   .po-list-view-more-icon {
     @apply --font-list-view-font-sm-icon;
-  }
-
-  .po-list-view-detail-button {
-    @apply --font-list-view-font-sm-detail-button;
-    padding: 4px 0;
   }
 
   .po-list-view-actions {

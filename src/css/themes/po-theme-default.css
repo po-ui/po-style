@@ -1654,6 +1654,20 @@ po-tag {
   /* info */
   --color-info: var(--color-feedback-info-lightest);
   --text-color-info: var(--color-feedback-info-dark);
+
+  /* removable */
+  --color: var(--color-brand-01-lightest);
+  --border-color: var(--color-secondary-light-20);
+  --color-icon: var(--color-secondary);
+  --text-color: var(--color-neutral-dark-40);
+  --color-hover: var(--color-secondary-light-20);
+  --outline-color-focused: var(--color-outline-focused);
+
+  /* disable */
+  --color-disabled: var(--color-neutral-light-80);
+  --border-color-disabled: var(--color-action-disabled);
+  --color-icon-disabled: var(--color-action-disabled);
+  --text-color-disabled: var(--color-neutral-mid-60);
 }
 
 :root {

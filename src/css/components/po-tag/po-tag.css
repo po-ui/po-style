@@ -1,9 +1,4 @@
 :root {
-  --font-tag-font-icon: {
-    @apply --font-text-small;
-    line-height: 0;
-  }
-
   --font-tag-font-label: {
     @apply --font-text-bold;
   }
@@ -17,23 +12,29 @@
 
 .po-tag {
   border-radius: var(--border-radius);
-
-  min-height: 1.5em;
-  border-style: solid;
-  border-color: transparent;
-
+  border-width: var(--border-width-sm);
   padding-left: var(--spacing-xs);
   padding-right: var(--spacing-xs);
 
-  max-width: 15em;
-
   align-items: center;
-  border-width: var(--border-width-sm);
+  border-color: transparent;
+  border-style: solid;
   display: flex;
   gap: 0.25em;
-  height: 1.5em;
   justify-content: center;
-  overflow: hidden;
+  max-width: 15em;
+  min-height: 1.5em;
+
+  min-width: 1.5em;
+  width: max-content;
+}
+
+.po-tag-icon,
+.po-tag-value,
+.po-tag-remove {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
 }
 
 .po-tag-inverse {
@@ -44,26 +45,79 @@
   outline: none;
 }
 
-.po-clickable.po-tag:focus,
-.po-clickable.po-tag:active {
-  outline-color: var(--color-brand-01-darkest, var(--outline-color-focused));
-
+.po-clickable.po-tag:not(.po-tag-removable):focus-visible,
+.po-clickable.po-tag:not(.po-tag-removable):active {
+  outline-color: var(--outline-color-focused);
   outline-width: var(--border-width-lg);
+
   outline-style: solid;
-  outline-offset: 2px;
+}
+
+.po-tag-removable {
+  background-color: var(--color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+
+  padding-right: 0;
+}
+
+.po-tag-remove {
+  border-bottom-right-radius: var(--border-radius);
+  border-left-color: var(--border-color);
+  border-left-width: var(--border-width-sm);
+  border-top-right-radius: var(--border-radius);
+  color: var(--color-icon);
+
+  border-left-style: solid;
+  justify-content: center;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+
+  min-width: 1.5625em;
+  overflow: hidden;
+}
+
+.po-tag-disabled {
+  background-color: var(--color-disabled);
+  border-color: var(--border-color-disabled);
+
+  cursor: not-allowed;
+}
+
+.po-tag-disabled .po-tag-value {
+  color: var(--text-color-disabled);
+}
+
+.po-tag-disabled .po-tag-remove {
+  color: var(--color-icon-disabled);
+  border-left-color: var(--border-color-disabled);
+}
+
+.po-tag-remove:focus-visible {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--border-width-lg);
+
+  outline-style: solid;
+}
+
+.po-tag-remove:is(.po-clickable):hover {
+  background-color: var(--color-hover);
 }
 
 .po-tag-value {
   font-family: var(--font-family);
   font-size: var(--font-size);
+  font-weight: var(--font-weight-normal);
   line-height: var(--line-height);
 
-  font-weight: var(--font-weight-normal);
+  overflow: hidden;
   text-align: left;
+  white-space: nowrap;
+}
 
+.po-tag-value span {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .po-tag-label {
@@ -76,9 +130,6 @@
 }
 
 .po-tag-icon {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
   justify-content: center;
 }
 

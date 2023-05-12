@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [15.8.0](https://github.com/po-ui/po-style/compare/v15.7.1...v15.8.0) (2023-05-12)
+
+
+### Features
+
+* **list-view:** utiliza o `po-button` para exibir os detalhes ([3df2d6a](https://github.com/po-ui/po-style/commit/3df2d6a8dfc9b99b209014f98d094fc11de7a869))
+
+
+
 ## [15.7.1](https://github.com/po-ui/po-style/compare/v15.7.0...v15.7.1) (2023-05-08)
 
 

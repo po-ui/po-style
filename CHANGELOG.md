@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [15.9.0](https://github.com/po-ui/po-style/compare/v15.8.2...v15.9.0) (2023-05-26)
+
+Compatibilidade com @po-ui/ng-components@15.9.0
+
+### Features
+
+* **tag:** implementa novas propriedades ([5bdc17f](https://github.com/po-ui/po-style/commit/5bdc17f960ea036a207b7fa70174c033f6fae9e6))
+
+
+
 ## [15.8.2](https://github.com/po-ui/po-style/compare/v15.8.1...v15.8.2) (2023-05-24)
 
 Compatibilidade com @po-ui/ng-components@15.8.2

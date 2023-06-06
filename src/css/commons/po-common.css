@@ -1,6 +1,6 @@
 :root {
-  --collapsed-menu-width: 64px;
-  --menu-width: 256px;
+  --collapsed-menu-width: 56px;
+  --menu-width: 290px;
   --menu-panel-width: 56px;
 
   --full-wrapper: {

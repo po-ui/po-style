@@ -1056,44 +1056,133 @@ po-item-list:is([p-type='option'], [p-type='check']) {
   --color-lookup-search-border-text: var(--color-neutral-light-60);
   --color-lookup-search-border-text-focusable: var(--color-primary);
   --color-lookup-advanced-search-link-color-text: var(--color-primary);
+}
 
-  /*------------------------------------*\
-    MENU
-  \*------------------------------------*/
+/*------------------------------------*\
+  MENU
+\*------------------------------------*/
+po-menu {
+  --border-radius: var(--border-radius-md);
+  --border-color: var(--color-neutral-light-80);
+  --background-color: var(--color-neutral-light-05);
 
-  --color-menu-color-menu-collapse-icon: var(--color-primary);
-  --color-menu-color-menu-item-text: var(--color-primary);
-  --color-menu-color-menu-item-selected: var(--color-primary);
-  --color-menu-color-menu-sub-item-text: var(--color-danger-light-40);
-  --color-menu-color-menu-sub-item-selected: var(--color-neutral-dark-60);
-  --color-menu-color-menu-responsive: var(--color-primary);
+  /* Menu Footer */
+  --color: var(--color-secondary);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
+  --outline-color-focused: var(--color-action-focus);
+  --font-weight-lvl0: var(--font-weight-bold);
+}
+
+/*------------------------------------*\
+  MENU ITEM
+\*------------------------------------*/
+po-menu-item {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
+  --border-radius: var(--border-radius-md);
+  --color: var(--color-secondary);
+  --background-color: transparent;
+
+  --color-hover: var(--color-brand-01-darkest);
+  --background-color-hover: var(--color-secondary-light-20);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --background-color-pressed: var(--color-secondary-light-40);
+
+  --background-color-actived: var(--color-brand-01-lightest);
+  --color-actived: var(--color-action-pressed);
+
+  --font-weight-lvl0: var(--font-weight-bold);
+
+  --font-weight-lvl1: var(--font-weight-normal);
+}
+
+:root {
+  --color-menu-color-menu-collapse-icon: var(--color);
+
+  --color-menu-color-menu-item-text: var(--color);
+  /*Deprecated v16.x.x utilizar --color*/
+
+  --color-menu-color-menu-item-selected: var(--color-actived);
+  /*Deprecated v16.x.x utilizar --color-actived*/
+
+  --color-menu-color-menu-sub-item-text: var(--color);
+
+  --color-menu-color-menu-sub-item-selected: var(--color-actived);
+  /*Deprecated v16.x.x utilizar --color-actived*/
+
+  --color-menu-color-menu-responsive: var(--color);
+  /*Deprecated v16.x.x utilizar --color*/
 
   --color-menu-background-color-item-grouper-up-hover: var(--color-neutral-light-98);
-  --color-menu-background-color-item-hover: var(--color-black-alpha-15);
-  --color-menu-background-color-item-selected: var(--color-neutral-light-80);
-  --color-menu-background-color-menu: var(--color-white);
-  --color-menu-background-color-menu-responsive-overlay: var(--color-secondary-dark-60-alpha-70);
+
+  --color-menu-background-color-item-hover: var(--background-color-hover);
+  /*Deprecated v16.x.x utilizar --background-color-hover*/
+
+  --color-menu-background-color-item-selected: var(--background-color-actived);
+  /*Deprecated v16.x.x utilizar --background-color-actived*/
+
+  --color-menu-background-color-menu: var(--background-color);
+  /*Deprecated v16.x.x utilizar --background-color*/
+
+  --color-menu-background-color-menu-responsive-overlay: var(--color-neutral-dark-40);
+  /* nao fazer nada neste token */
+
   --color-menu-background-color-responsive: var(--color-neutral-light-98);
   --color-menu-background-color-sub-items: var(--color-neutral-light-98);
-  --color-menu-background-color-sub-item-selected: var(--color-neutral-light-80);
+  --color-menu-background-color-sub-item-selected: var(--background-color-actived);
 
   --color-menu-border-color-menu-item-selected: var(--color-danger-light-40);
   --color-menu-border-left-item: var(--color-transparent);
   --color-menu-border-top-item-grouper-up-hover: var(--color-neutral-light-80);
   --color-menu-border-top-logo: var(--color-neutral-light-80);
-  --color-menu-border-top-collapse-button: var(--color-neutral-alpha-45);
 
-  /*------------------------------------*\
-    MENU FILTER
-  \*------------------------------------*/
+  --color-menu-border-top-collapse-button: var(--border-color);
+  /*Deprecated v16.x.x utilizar --border-color*/
+}
 
-  --color-menu-filter-color-icon: var(--color-primary);
-  --color-menu-filter-color-text: var(--color-neutral-dark-60);
+/*------------------------------------*\
+  MENU FILTER
+\*------------------------------------*/
+po-menu-filter {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --text-color-placeholder: var(--color-neutral-light-60);
+  --color: var(--color-neutral);
+  --border-radius: var(--border-radius-md);
+  --background: var(--color-neutral-light-98);
 
-  --color-menu-filter-background-color: var(--color-neutral-light-98);
+  --text-color: var(--color-neutral-dark-60);
 
-  --color-menu-filter-border: var(--color-neutral-alpha-45);
-  --color-menu-filter-border-focusable: var(--color-neutral);
+  --color-icon-read: var(--color-neutral);
+
+  --color-clear: var(--color-secondary);
+
+  --color-hover: var(--color-action-hover);
+  --background-hover: var(--color-brand-01-lightest);
+
+  --color-focused: var(--color-secondary);
+  --outline-color-focused: var(--color-action-focus);
+}
+
+:root {
+  --color-menu-filter-color-icon: var(--color-icon-read);
+  /*Deprecated v16.x.x utilizar --color-icon-read*/
+
+  --color-menu-filter-color-text: var(--text-color);
+  /*Deprecated v16.x.x utilizar --text-color*/
+
+  --color-menu-filter-background-color: var(--background);
+  /*Deprecated v16.x.x utilizar --background*/
+
+  --color-menu-filter-border: var(--color);
+  /*Deprecated v16.x.x utilizar --color*/
+
+  --color-menu-filter-border-focusable: var(--color-focused);
+  /*Deprecated v16.x.x utilizar --color-focused*/
 
   /*------------------------------------*\
     MENU PANEL

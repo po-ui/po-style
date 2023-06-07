@@ -25,10 +25,14 @@
   position: relative;
 }
 
-.po-table thead.po-table-header-sticky {
+.po-table > thead.po-table-header-sticky {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.table {
+  width: 100%;
 }
 
 .po-table thead tr,
@@ -49,6 +53,7 @@
   font-size: var(--font-size-default);
 
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .po-table thead tr th.po-table-header-sorted {
@@ -75,14 +80,9 @@
 .po-table.po-table-striped .po-table-master-detail tbody tr {
   border-bottom: none;
 }
-.po-table.po-table-striped > tbody:nth-child(odd) tr:first-child,
-.po-table.po-table-striped .po-table-master-detail > tbody tr:nth-child(odd) {
-  background-color: var(--color-table-background-color-row-strip, var(--background-striped-color));
-}
 
 .po-table tbody tr {
   background-color: var(--background-color);
-  /* color: var(--color-table-color-text, var(--color)); */
 }
 
 .po-table tbody tr td {
@@ -95,8 +95,10 @@
   padding-block: 0.75rem;
   padding-inline: var(--spacing-sm);
 
-  white-space: nowrap;
   color: var(--color-table-color-text, var(--color));
+  white-space: nowrap;
+
+  overflow: hidden;
 }
 
 .po-table tbody tr td.po-table-column-detail {
@@ -196,6 +198,11 @@
   color: var(--color-actived);
 }
 
+.po-table.po-table-striped > tbody:nth-child(odd) tr:first-child:not(.po-table-row-active),
+.po-table.po-table-striped .po-table-master-detail > tbody tr:nth-child(odd):not(.po-table-row-active) {
+  background-color: var(--color-table-background-color-row-strip, var(--background-striped-color));
+}
+
 .po-table .po-table-column-right {
   text-align: right;
 }
@@ -222,12 +229,14 @@
 }
 
 .po-table .po-table-single-action {
-  @apply --font-table-text-bold;
-  color: var(--color-table-color-actions);
+  color: var(--color-table-color-actions, var(--color));
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .po-table .po-table-single-action:hover {
   color: var(--color-table-color-single-action-hover);
+  text-decoration: none;
 }
 
 .po-table .po-table-action-disabled,
@@ -272,7 +281,6 @@
 .po-table-column-icons .po-icon,
 .po-table-column-icons .po-fonts-icon,
 .po-table-icon-content > :first-child:not(.po-fonts-icon):not(.po-icon) {
-  color: var(--color-table-color-header, var(--color));
   font-size: 1.5rem;
 }
 
@@ -282,7 +290,7 @@
 
 .po-table-footer {
   @apply --font-table-text;
-  border-top: 2px solid var(--color-table-box-shadow-footer);
+  border-top: 2px solid var(--color-table-box-shadow-footer, var(--color-line));
 }
 
 .po-table-subtitle-footer-container {
@@ -477,6 +485,10 @@
   width: 56px;
 }
 
+.po-table-header-master-detail {
+  pointer-events: none;
+}
+
 .po-table-column-detail-toggle .po-icon-arrow-down,
 .po-table-column-detail-toggle .po-icon-arrow-up {
   color: var(--color-table-color-header, var(--color));
@@ -487,6 +499,7 @@
 .po-table-header-column-manager,
 .po-table-header-single-action {
   text-align: center;
+  pointer-events: none;
 }
 
 .po-table-header-column-manager div {
@@ -497,6 +510,7 @@
 
 .po-table-header-column-manager,
 .po-table-header-actions {
+  pointer-events: none;
   max-width: 56px;
   min-width: 56px;
   width: 56px;

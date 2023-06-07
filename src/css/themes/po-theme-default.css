@@ -1617,65 +1617,67 @@ po-table {
 :root {
   --color-table-background-color-action-hover: var(--color-action-hover);
   /*Deprecated v16.x.x utilizar --color-action-hover*/
-  --color-table-background-color-actions: var(--color-white);
+
   --color-table-background-color-active: var(--background-color-actived);
   /*Deprecated v16.x.x utilizar --background-color-actived*/
-  --color-table-background-color-detail-content: var(--color-white);
-  --color-table-background-color-footer-show-subtitle: var(--color-white);
-  /*Deprecated v16.x.x utilizar --color-white*/
+
   --color-table-background-color-header: var(--color-neutral-light-90);
   /*Deprecated v16.x.x utilizar --color-neutral-light-90*/
+
   --color-table-background-color-overlay: var(--color-secondary-dark-60-alpha-70);
   /*Deprecated v16.x.x utilizar --color-secondary-dark-60-alpha-70*/
+
   --color-table-background-color-overlay-content: var(--color-white);
   /*Deprecated v16.x.x utilizar ---color-white*/
+
   --color-table-background-color-row-strip: var(--background-striped-color);
   /*Deprecated v16.x.x utilizar --background-striped-color*/
-  --color-table-background-color-scrollbar: var(--color-primary);
+
   --color-table-background-color-selected: var(--color-brand-01-lightest);
   /*Deprecated v16.x.x utilizar --color-brand-01-lightest*/
+
   --color-table-background-color-table: var(--color-white);
   /*Deprecated v16.x.x utilizar --color-white*/
-  --color-table-background-color-radio: var(--color-white);
-  --color-table-background-color-radio-active: var(--color-primary);
+
+  --color-table-border-rows: var(--color-line);
+  /*Deprecated v16.x.x utilizar --color-line*/
+
+  --color-table-color-footer-show-subtitle: var(--color-neutral-dark-95);
+  /*Deprecated v16.x.x utilizar --color-neutral-dark-95*/
+
+  --color-table-background-color-footer-show-subtitle: var(--color-white);
+  /*Deprecated v16.x.x utilizar --color-white*/
 
   --color-table-border-footer-show-subtitle: var(--color-neutral-light-90);
   /*Deprecated v16.x.x utilizar --color-neutral-light-90*/
-  --color-table-border-select-checkbox: var(--color-neutral-light-60);
-  --color-table-border-selected-checkbox: var(--color-primary);
-  --color-table-border-rows: var(--color-line);
-  /*Deprecated v16.x.x utilizar --color-line*/
-  --color-table-border-select-radio: var(--color-neutral-light-60);
-  --color-table-border-select-radio-focusable: var(--color-primary-dark-20);
 
-  --color-table-box-shadow-action: var(--color-black-alpha-30);
-  --color-table-box-shadow-checkbox: var(--color-black-alpha-15);
-  --color-table-box-shadow-footer: var(--color-primary-light-80);
+  --color-table-box-shadow-footer: var(--color-line);
   /*Deprecated v16.x.x utilizar --color-primary-light-80*/
-  --color-table-box-shadow-overlay-content: var(--color-black-alpha-30);
-  --color-table-box-shadow-header: var(--color-primary-light-80);
 
-  --color-table-color-actions: var(--color-primary);
-  --color-table-color-detail: var(--color-neutral-light-40);
-  --color-table-color-disabled: var(--color-neutral-light-80);
-  --color-table-color-footer-show-subtitle: var(--color-primary);
-  /*Deprecated v16.x.x utilizar --color-primary*/
+  --color-table-box-shadow-overlay-content: var(--color-black-alpha-30);
+  /*Deprecated v16.x.x */
+
+  --color-table-color-actions: var(--color-action-default);
+  /*Deprecated v16.x.x */
+
   --color-table-color-header: var(--color);
   /*Deprecated v16.x.x utilizar --color*/
-  --color-table-color-select: var(--color-white);
-  --color-table-color-subtitle-text: var(--color-white);
-  --color-table-color-single-action-hover: var(--color-primary-dark-20);
+
   --color-table-color-text: var(--color);
   /*Deprecated v16.x.x utilizar --color*/
+
+  --color-table-color-disabled: var(--color-disabled);
+  /*Deprecated v16.x.x utilizar --color-disabled*/
+
+  --color-table-color-subtitle-text: var(--color-white);
+
+  --color-table-color-single-action-hover: var(--color-action-hover);
 
   /*------------------------------------*\
     TABLE COLUMN LINK
   \*------------------------------------*/
 
-  --color-table-color-link: var(--color-primary);
   --color-table-color-link-disabled: var(--color-neutral-light-80);
-  --color-table-color-link-hover: var(--color-primary-dark-20);
-  --color-table-color-link-pressed: var(--color-primary-dark-40);
 }
 
 po-table-list-manager {

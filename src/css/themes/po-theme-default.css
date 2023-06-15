@@ -1101,23 +1101,14 @@ po-menu-item {
 }
 
 :root {
-  --color-menu-color-menu-collapse-icon: var(--color);
-
   --color-menu-color-menu-item-text: var(--color);
   /*Deprecated v16.x.x utilizar --color*/
 
   --color-menu-color-menu-item-selected: var(--color-actived);
   /*Deprecated v16.x.x utilizar --color-actived*/
 
-  --color-menu-color-menu-sub-item-text: var(--color);
-
-  --color-menu-color-menu-sub-item-selected: var(--color-actived);
-  /*Deprecated v16.x.x utilizar --color-actived*/
-
   --color-menu-color-menu-responsive: var(--color);
   /*Deprecated v16.x.x utilizar --color*/
-
-  --color-menu-background-color-item-grouper-up-hover: var(--color-neutral-light-98);
 
   --color-menu-background-color-item-hover: var(--background-color-hover);
   /*Deprecated v16.x.x utilizar --background-color-hover*/
@@ -1130,15 +1121,6 @@ po-menu-item {
 
   --color-menu-background-color-menu-responsive-overlay: var(--color-neutral-dark-40);
   /* nao fazer nada neste token */
-
-  --color-menu-background-color-responsive: var(--color-neutral-light-98);
-  --color-menu-background-color-sub-items: var(--color-neutral-light-98);
-  --color-menu-background-color-sub-item-selected: var(--background-color-actived);
-
-  --color-menu-border-color-menu-item-selected: var(--color-danger-light-40);
-  --color-menu-border-left-item: var(--color-transparent);
-  --color-menu-border-top-item-grouper-up-hover: var(--color-neutral-light-80);
-  --color-menu-border-top-logo: var(--color-neutral-light-80);
 
   --color-menu-border-top-collapse-button: var(--border-color);
   /*Deprecated v16.x.x utilizar --border-color*/

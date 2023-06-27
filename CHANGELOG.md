@@ -2,6 +2,47 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [15.10.0](https://github.com/po-ui/po-style/compare/v15.9.2...v15.10.0) (2023-06-27)
+
+Compatibilidade com @po-ui/ng-components@15.10.0
+
+### Code Refactoring
+
+* **table:** remove variaveis não utilizadas ([5b3a778](https://github.com/po-ui/po-style/commit/5b3a77807cb65cf4c40a0dfd6f12115ad44be895))
+
+
+### Features
+
+* **table:** implementa definições do AnimaliaDS ([d812813](https://github.com/po-ui/po-style/commit/d812813d9b518180cfb6d4e305a451e04be95a54))
+
+
+### BREAKING CHANGES
+
+* **table:** remove variáveis de customização de cores
+
+Remove variáveis para compatibilidade com table e melhorias de acessibilidade, não sendo mais possível a customização.
+```
+  --color-table-background-color-actions:
+  --color-table-background-color-detail-content: cor do background da tabela master detail
+  --color-table-background-color-scrollbar: cor da barra de rolagem
+  --color-table-background-color-radio: cor do input radio
+  --color-table-background-color-radio-active: cor do input radio marcado
+  --color-table-border-select-checkbox: cor do input checkbox
+  --color-table-border-selected-checkbox: cor do input checkbox marcado
+  --color-table-border-select-radio: cor da borda do input radio
+  --color-table-border-select-radio-focusable:  cor da borda do input radio em focus
+  --color-table-box-shadow-action: cor da sombra da caixa de ações
+  --color-table-box-shadow-checkbox: cor da sombra do input checkbox
+  --color-table-box-shadow-header: cor da sombra do header da tabela
+  --color-table-color-detail: cor do texto da tabela de detalhe
+  --color-table-color-select: cor do texto do input checkbox selecionado
+  --color-table-color-link-hover: cor dos itens do link da tabela no hover
+  --color-table-color-link-pressed: cor dos itens do link da tabela no click
+  --color-table-color-link: cor dos itens do link da tabela
+  ```
+
+
+
 ## [15.9.2](https://github.com/po-ui/po-style/compare/v15.9.1...v15.9.2) (2023-06-19)
 
 Compatibilidade com @po-ui/ng-components@15.9.2

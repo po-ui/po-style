@@ -16,6 +16,8 @@
   padding-left: var(--spacing-xs);
   padding-right: var(--spacing-xs);
 
+  color: var(--text-color-neutral);
+
   align-items: center;
   border-color: transparent;
   border-style: solid;

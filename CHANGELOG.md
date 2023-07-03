@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.11.0](https://github.com/po-ui/po-style/compare/v15.10.0...v15.11.0) (2023-07-03)
+
+Compatibilidade com @po-ui/ng-components@15.11.0
+
+### Bug Fixes
+
+* **page-login:** centraliza tag h1 ([07dfcd5](https://github.com/po-ui/po-style/commit/07dfcd5ca68f5a0af0a74d99a4a0933c81acf37c)), closes [#1743](https://github.com/po-ui/po-style/issues/1743)
+* **tag:** ajusta interferência na definição de cor ([fd7cdac](https://github.com/po-ui/po-style/commit/fd7cdac6498bfcadd4280050028a20d5cbe06ef0))
+
+
+
 # [15.10.0](https://github.com/po-ui/po-style/compare/v15.9.2...v15.10.0) (2023-06-27)
 
 Compatibilidade com @po-ui/ng-components@15.10.0

@@ -115,8 +115,9 @@
 .po-table-actions {
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  gap: var(--spacing-sm);
+  justify-content: flex-end;
   padding-block: var(--spacing-xs);
   width: 100%;
 }
@@ -125,11 +126,15 @@
   padding: 0;
 }
 
-.po-table-actions-column-manager {
-  margin-left: auto;
+.po-table-actions-batch-actions {
+  align-items: center;
+  display: flex;
+  gap: var(--spacing-2xl);
+  margin-right: auto;
 }
 
-.po-table-actions-column-manager po-button .po-icon-settings {
+.po-table-actions-batch-actions po-button .po-icon,
+.po-table-actions-column-manager po-button .po-icon {
   font-size: 1.5rem;
 }
 

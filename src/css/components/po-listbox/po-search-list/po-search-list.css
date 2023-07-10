@@ -1,0 +1,26 @@
+.po-field-container-content {
+  position: relative;
+  width: 100%;
+
+  &.po-multiselect-show {
+    & .po-multiselect-container {
+      background-color: var(--color-multiselect-background-color) !important;
+      display: block;
+      z-index: 1000;
+    }
+  }
+
+  &.po-listbox-loading {
+    & > .po-input {
+      border: solid 1px var(--color-multiselect-border-field-focus) !important;
+    }
+  }
+}
+
+.po-listbox-container-search {
+  padding: 8px;
+}
+
+.po-listbox-search-input {
+  outline: none;
+}

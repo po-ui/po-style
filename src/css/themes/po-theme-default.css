@@ -1134,11 +1134,42 @@ po-modal {
   --color-modal-password-recovery-link-color: var(--color-primary);
   --color-modal-password-recovery-link-color-hover: var(--color-primary-dark-20);
   --color-modal-password-recovery-text-color: var(--color-neutral);
+}
+/*------------------------------------*\
+  MULTISELECT
+\*------------------------------------*/
+po-multiselect,
+po-multiselect po-listbox {
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --border-color: var(--color-neutral-light-80);
+  --background: var(--color-white);
+  --shadow: var(--shadow-md);
+}
 
-  /*------------------------------------*\
-    MULTISELECT
-  \*------------------------------------*/
+po-multiselect po-item-list {
+  /* Item list */
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
 
+  /* Item list check */
+  --font-weight: var(--font-weight-normal);
+  --color-option: var(--color-neutral-dark-90);
+
+  --font-weight-selected: var(--font-weight-bold);
+  --background-selected: var(--color-brand-01-lightest);
+
+  --background-hover: var(--color-brand-01-lighter);
+
+  --background-pressed: var(--color-brand-01-light);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-disabled: var(--color-action-disabled);
+}
+
+:root {
   --color-multiselect-background-color: var(--color-white);
   --color-multiselect-background-color-item-hover: var(--color-primary-light-95);
   --color-multiselect-background-color-scrollbar: var(--color-primary-alpha-50);

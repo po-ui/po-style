@@ -234,20 +234,15 @@
   font-weight: bold;
 }
 
-.po-table .po-table-single-action:hover {
+.po-table .po-table-single-action:not(.po-table-action-disabled):hover {
   color: var(--color-table-color-single-action-hover);
   text-decoration: none;
 }
 
 .po-table .po-table-action-disabled,
 .po-table .po-table-icon-disabled {
-  color: var(--color-table-color-disabled);
-}
-
-.po-table .po-table-action-disabled:hover,
-.po-table .po-table-icon-disabled:hover {
-  color: var(--color-table-color-disabled);
-  cursor: default;
+  color: var(--color-table-color-disabled, var(--color-disabled));
+  cursor: not-allowed !important;
 }
 
 .po-table-column-actions {

@@ -114,11 +114,21 @@
 .po-table-actions {
   align-items: center;
   display: flex;
-  flex-wrap: nowrap;
-  gap: var(--spacing-sm);
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: end;
   padding-block: var(--spacing-xs);
+  gap: var(--spacing-xs);
   width: 100%;
+}
+
+.po-table-actions-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.po-table-actions-end {
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .po-table-actions:empty {
@@ -160,6 +170,10 @@
   right: 0;
   top: 0;
   z-index: 2;
+}
+
+.po-table-search {
+  width: 256px;
 }
 
 .po-table-overlay-content {

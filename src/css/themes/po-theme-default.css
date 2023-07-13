@@ -1631,7 +1631,7 @@ po-switch {
 }
 
 /*------------------------------------*\
-  TABLE - 24
+  TABLE 
 \*------------------------------------*/
 po-table {
   --background-color: var(--color-white);
@@ -1724,6 +1724,33 @@ po-table {
   \*------------------------------------*/
 
   --color-table-color-link-disabled: var(--color-neutral-light-80);
+}
+
+/*------------------------------------*\
+  SEARCH
+\*------------------------------------*/
+po-search {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --text-color-placeholder: var(--color-neutral-light-60);
+  --color: var(--color-neutral);
+  --border-radius: var(--border-radius-md);
+  --background: var(--color-neutral-light-98);
+
+  --text-color: var(--color-neutral-dark-60);
+
+  --color-icon-read: var(--color-neutral);
+
+  --color-clear: var(--color-secondary);
+
+  --color-hover: var(--color-action-hover);
+  --background-hover: var(--color-brand-01-lightest);
+
+  --color-focused: var(--color-secondary);
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-disabled: var(--color-action-disabled);
+  --background-disabled: var(--color-neutral-light-20);
 }
 
 po-table-list-manager {

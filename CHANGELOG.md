@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [15.12.1](https://github.com/po-ui/po-style/compare/v15.12.0...v15.12.1) (2023-07-17)
+
+Compatibilidade com @po-ui/ng-components@15.12.1
+
+### Bug Fixes
+
+* **table:** corrige única ação desabilitada ([2bb97cd](https://github.com/po-ui/po-style/commit/2bb97cdd059b03725a890cf6c8b00b0161fae33e))
+
+
+
 ## [15.12.0](https://github.com/po-ui/po-style/compare/v15.11.0...v15.12.0) (2023-07-07)
 
 Compatibilidade com @po-ui/ng-components@15.12.0

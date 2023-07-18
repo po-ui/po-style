@@ -1139,33 +1139,8 @@ po-modal {
     MULTISELECT
   \*------------------------------------*/
 
-  --color-multiselect-background-color: var(--color-white);
-  --color-multiselect-background-color-item-hover: var(--color-primary-light-95);
-  --color-multiselect-background-color-scrollbar: var(--color-primary-alpha-50);
-
-  --color-multiselect-border-field: var(--color-neutral-light-60);
-  --color-multiselect-border-field-error: var(--color-danger);
   --color-multiselect-border-field-focus: var(--color-secondary-dark-20);
-  --color-multiselect-border-search: var(--color-neutral-light-80);
-
-  --color-multiselect-color-field-focus: var(--color-primary);
-
   --color-multiselect-color-primary: var(--color-primary);
-  --color-multiselect-color-text-error: var(--color-danger);
-  --color-multiselect-color-text-disabled: var(--color-white);
-
-  --color-multiselect-background-color-checkbox: var(--color-white);
-  --color-multiselect-background-color-checkbox-active: var(--color-primary);
-  --color-multiselect-background-color-checkbox-disabled: var(--color-neutral-light-90);
-  --color-multiselect-background-color-checkbox-icon-disabled: var(--color-neutral-light-60);
-
-  --color-multiselect-border-checkbox-input: var(--color-neutral-light-60);
-  --color-multiselect-border-checkbox-input-active: var(--color-primary);
-  --color-multiselect-border-checkbox-input-disabled: var(--color-neutral-light-60);
-
-  --color-multiselect-color-checkbox-active: var(--color-white);
-
-  --color-multiselect-disclaimer-background-color-disabled: var(--color-neutral-light-60);
 
   /*------------------------------------*\
     NAVBAR

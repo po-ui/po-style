@@ -1,16 +1,4 @@
-:root {
-  --shadow-multiselect-box-shadow-content: var(--shadow-card);
-  --shadow-multiselect-box-shadow-checkbox-input: var(--shadow-input);
-
-  --font-multiselect-text: {
-    @apply --font-text-large;
-  }
-}
-
 .po-multiselect-container {
-  background-color: var(--color-multiselect-background-color);
-  border-radius: 3px;
-  box-shadow: var(--shadow-multiselect-box-shadow-content);
   padding: 0;
   position: fixed;
   width: 100%;
@@ -33,7 +21,7 @@
 }
 
 .po-multiselect-input {
-  color: var(--color-multiselect-color-primary);
+  color: var(--color-brand-01-base);
 }
 
 .po-multiselect-input-auto {
@@ -82,37 +70,8 @@
   overflow-y: auto;
 }
 
-.po-multiselect-items-container::-webkit-scrollbar {
-  width: 7px;
-}
-
-.po-multiselect-items-container::-webkit-scrollbar-track {
-  display: none;
-}
-
-.po-multiselect-items-container::-webkit-scrollbar-thumb {
-  background-color: var(--color-multiselect-background-color-scrollbar);
-  border-radius: 2px;
-}
-
-.po-multiselect-item {
-  @apply --font-multiselect-text;
-  color: var(--color-multiselect-color-primary);
-  cursor: pointer;
-  display: block;
-  padding: 10px 16px;
-  text-align: left;
-  word-wrap: break-word;
-
-  &:hover {
-    background-color: var(--color-multiselect-background-color-item-hover) !important;
-    color: var(--color-multiselect-color-primary) !important;
-    text-decoration: none;
-  }
-}
-
-.po-multiselect-item-selected > .po-multiselect-item {
-  background-color: var(--color-multiselect-background-color-item-hover);
+.po-listbox-container-search {
+  padding-inline: var(--spacing-sm);
 }
 
 .po-field-container-content {
@@ -135,9 +94,6 @@
 }
 
 .po-multiselect-input-disabled {
-  border-color: var(--color-input-border-text, var(--color-disabled));
-  background-color: var(--color-input-border-text-disabled, var(--background-disabled));
-  color: var(--color-input-color-disabled, var(--text-color-disabled));
   cursor: not-allowed !important;
   outline: none !important;
 }
@@ -150,56 +106,4 @@
 
 .po-multiselect-input-static .po-multiselect-input-placeholder {
   padding: 5px 8px;
-}
-
-.po-multiselect-checkbox-input {
-  border-radius: 2px;
-  box-shadow: var(--shadow-multiselect-box-shadow-checkbox-input);
-  position: absolute;
-  visibility: hidden;
-}
-
-.po-multiselect-checkbox-input + .po-multiselect-checkbox-label:before {
-  background-color: var(--color-multiselect-background-color-checkbox);
-  border: solid 1px var(--color-multiselect-border-checkbox-input);
-  border-radius: 2px;
-  box-shadow: var(--shadow-multiselect-box-shadow-checkbox-input);
-  content: ' ';
-  display: inline-block;
-  height: 20px;
-  margin-right: 8px;
-  margin-top: -2px;
-  vertical-align: middle;
-  width: 20px;
-  min-width: 20px;
-}
-
-.po-multiselect-checkbox-input-checked + .po-multiselect-checkbox-label:before,
-.po-multiselect-checkbox-input-indeterminate + .po-multiselect-checkbox-label:before {
-  background-color: var(--color-multiselect-background-color-checkbox-active);
-  border: solid 1px var(--color-multiselect-border-checkbox-input-active);
-  box-shadow: none;
-  color: var(--color-multiselect-color-checkbox-active);
-  font-family: 'PoIcon' !important;
-  line-height: 18px;
-  padding-left: 1px;
-}
-
-.po-multiselect-checkbox-item-disabled .po-multiselect-checkbox-input + .po-multiselect-checkbox-label:before {
-  background-color: var(--color-multiselect-background-color-checkbox-disabled);
-  border: solid 1px var(--color-multiselect-border-checkbox-input-disabled);
-  color: var(--color-multiselect-background-color-checkbox-icon-disabled);
-}
-
-.po-multiselect-checkbox-input-checked + .po-multiselect-checkbox-label:before {
-  content: '\e93c';
-}
-
-.po-multiselect-checkbox-input-indeterminate + .po-multiselect-checkbox-label:before {
-  content: '\e939';
-}
-
-.po-multiselect-checkbox-label {
-  display: flex;
-  align-items: center;
 }

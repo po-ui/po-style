@@ -10,6 +10,12 @@
   overflow: hidden;
   position: fixed;
   z-index: 1000;
+
+  &.po-listbox-check {
+    display: flex;
+    flex-direction: column;
+    position: static;
+  }
 }
 
 .po-listbox-list {

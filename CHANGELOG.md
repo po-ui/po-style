@@ -2,6 +2,66 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [15.13.0](https://github.com/po-ui/po-style/compare/v15.12.1...v15.13.0) (2023-07-21)
+
+Compatibilidade com @po-ui/ng-components@15.13.0
+
+### Code Refactoring
+
+* **menu:** remove variaveis não utilizadas ([cd678e3](https://github.com/po-ui/po-style/commit/cd678e377c981553e51ef72077b631be9829668a))
+* **multiselect:** remove variável não utilizada ([8d9c004](https://github.com/po-ui/po-style/commit/8d9c00427e0969b4ce9981a301bed29909c2d1bd))
+
+
+### Features
+
+* **menu:** implementa definições do AnimaliaDS ([7046657](https://github.com/po-ui/po-style/commit/70466573743b24186365c844bc75b1b6f39b9bae))
+* **multiselect:** implementa definições do AnimaliaDS ([3be797d](https://github.com/po-ui/po-style/commit/3be797d4467a5824e3721a063755ff57da81bccd))
+* **table:** estiliza ações em lote ([ec1e4eb](https://github.com/po-ui/po-style/commit/ec1e4ebc4632336a89cfae2caf5d2903224dde1c)), closes [#DTHFUI-7317](https://github.com/po-ui/po-style/issues/DTHFUI-7317)
+* **table:** implementa drag and drop na tabela ([30e6177](https://github.com/po-ui/po-style/commit/30e617797ed0a890bfd304ce361ec40abf301244))
+
+
+### BREAKING CHANGES
+
+* **multiselect:** remove variáveis de customização de cores
+
+Remove variáveis para compatibilidade com @animaliads/multiselect e melhorias
+de acessibilidade, não sendo mais possível a customização.
+
+- `color-multiselect-background-color-item-hover` : customização do background hover
+- `color-multiselect-background-color-scrollbar`: customização da cor do scrollbar
+- `color-multiselect-border-field`: customização da borda do field
+- `color-multiselect-border-field-error`: customização da borda quando estiver com erro
+- `color-multiselect-color-field-focus`: customização do focus
+- `color-multiselect-color-text-error`: customização da cor do texto
+- `color-multiselect-color-text-disabled`: customização da cor do texto desabilitado
+- `color-multiselect-background-color-checkbox`: customização do checkbox
+- `color-multiselect-background-color-checkbox-active`: customização do checkbox
+- `color-multiselect-background-color-checkbox-disabled`: customização do checkbox
+- `color-multiselect-background-color-checkbox-icon-disabled`: customização do checkbox
+- `color-multiselect-border-checkbox-input`: customização do checkbox
+- `color-multiselect-border-checkbox-input-active`: customização do checkbox
+- `color-multiselect-border-checkbox-input-disabled`: customização do checkbox
+- `color-multiselect-color-checkbox-active`: customização do checkbox
+- `color-multiselect-disclaimer-background-color-disabled`: customização do disclaimer
+* **menu:** remove variáveis de customização de cores
+
+Remove variáveis para compatibilidade com menu e melhorias de acessibilidade, não sendo mais possível a customização.
+```
+    --color-menu-color-menu-collapse-icon: Cor do icone de controle de expansão do menu
+    --color-menu-color-menu-sub-item-text: Cor do texto do sub-item
+    --color-menu-color-menu-sub-item-selected: Cor do texto do sub-item selecionado
+    --color-menu-background-color-item-grouper-up-hover: Cor do background do sub-items
+    --color-menu-background-color-responsive: Cor de fundo do menu no modo responsivo
+    --color-menu-background-color-sub-items: Cor de fundo dos sub-items
+    --color-menu-background-color-sub-item-selected: Cor de fundo do sub-item selecionado
+    --color-menu-border-color-menu-item-selected: Cor da borda do item selecionado
+    --color-menu-border-left-item: Cor da bordar esquerda do item
+    --color-menu-border-top-item-grouper-up-hover: Cor da bordar superior do item
+    --color-menu-border-top-logo: Cor da bordar superior do logo
+```
+
+
+
 ## [15.12.1](https://github.com/po-ui/po-style/compare/v15.12.0...v15.12.1) (2023-07-17)
 
 Compatibilidade com @po-ui/ng-components@15.12.1

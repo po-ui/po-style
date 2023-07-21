@@ -599,12 +599,59 @@ po-button {
   --color-button-group-background-color-neutral-disabled: var(--color-transparent);
   --color-button-group-border-neutral-disabled: var(--color-neutral-light-60);
   --color-button-group-color-neutral-disabled: var(--color-neutral-light-60);
+}
 
-  /*------------------------------------*\
-    CALENDAR
-  \*------------------------------------*/
+/*------------------------------------*\
+  CALENDAR
+\*------------------------------------*/
+po-calendar {
+  --border-color: var(--color-neutral-light-20);
+  --background: var(--color-neutral-light-00);
+  --shadow: var(--shadow-md);
 
-  --color-calendar-background-color: var(--color-white);
+  /* weekly */
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-sm);
+  --font-weight-weekly: var(--font-weight-bold);
+  --text-color-weekly: var(--color-neutral-dark-90);
+
+  /* days */
+  --font-weight-days: var(--font-weight-normal);
+  --text-color: var(--color-neutral-dark-90);
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+
+  /* today */
+  --font-weight-today: var(--font-weight-bold);
+  --text-color-today: var(--color-action-default);
+
+  /* focus */
+  --outline-focus: var(--color-action-focus);
+
+  /* hover */
+  --text-color-hover: var(--color-neutral-light-00);
+  --color-hover: var(--color-action-hover);
+
+  /* interal */
+  --text-color-interval: var(--color-neutral-dark-90);
+  --color-interval: var(--color-brand-01-lighter);
+
+  /* next month */
+  --text-color-next: var(--color-neutral-dark-80);
+
+  /* disabled */
+  --text-color-disabled: var(--color-action-disabled);
+  --border-disabled: var(--color-action-disabled);
+
+  /* select */
+  --text-color-selected: var(--color-neutral-light-00);
+  --color-selected: var(--color-action-default);
+}
+
+:root {
+  --shadow-calendar-box-shadow: var(--shadow);
+
+  --color-calendar-background-color: var(--background);
   --color-calendar-arrow: var(--color-primary);
   --color-calendar-title: var(--color-primary);
   --color-calender-color-content-label: var(--color-neutral-light-40);
@@ -627,7 +674,9 @@ po-button {
   --color-calendar-color-box-foreground-range: var(--color-primary);
   --color-calendar-color-box-foreground-today: var(--color-primary);
   --color-calendar-color-box-foreground-disabled: var(--color-neutral-light-80);
+}
 
+:root {
   /*------------------------------------*\
     CHART
   \*------------------------------------*/
@@ -646,8 +695,8 @@ po-button {
 }
 
 /*------------------------------------*\
-    CHECKBOX
-  \*------------------------------------*/
+  CHECKBOX
+\*------------------------------------*/
 
 po-checkbox {
   --border-color: var(--color-neutral);
@@ -711,6 +760,7 @@ po-checkbox {
   --color-combo-color-selected: var(--color-white);
   --color-combo-background-color-selected-primary: var(--color-primary);
 }
+
 /*------------------------------------*\
     CONTAINER
   \*------------------------------------*/
@@ -757,20 +807,20 @@ po-disclaimer {
 }
 
 :root {
-  --color-disclaimer-background-color-label: var(--color); /*Deprecated v16.x.x utilizar --color */
-  --color-disclaimer-background-color-label-danger: var(
-    --color-danger-light-05
-  ); /*Deprecated v16.x.x utilizar --color-danger-light-05 */
+  --color-disclaimer-background-color-label: var(--color);
+  /*Deprecated v16.x.x utilizar --color */
+  --color-disclaimer-background-color-label-danger: var(--color-danger-light-05);
+  /*Deprecated v16.x.x utilizar --color-danger-light-05 */
 
-  --color-disclaimer-color-text: var(--text-color); /*Deprecated v16.x.x utilizar --text-color */
-  --color-disclaimer-color-text-danger: var(
-    --color-feedback-negative-darker
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-darker */
+  --color-disclaimer-color-text: var(--text-color);
+  /*Deprecated v16.x.x utilizar --text-color */
+  --color-disclaimer-color-text-danger: var(--color-feedback-negative-darker);
+  /*Deprecated v16.x.x utilizar --color-feedback-negative-darker */
 
-  --color-disclaimer-background-color-remove: var(--color); /*Deprecated v16.x.x utilizar --color */
-  --color-disclaimer-background-color-danger-remove: var(
-    --color-danger-light-05
-  ); /*Deprecated v16.x.x utilizar --color-danger-light-05 */
+  --color-disclaimer-background-color-remove: var(--color);
+  /*Deprecated v16.x.x utilizar --color */
+  --color-disclaimer-background-color-danger-remove: var(--color-danger-light-05);
+  /*Deprecated v16.x.x utilizar --color-danger-light-05 */
 
   /*------------------------------------*\
     DISCLAIMER GROUP
@@ -792,7 +842,8 @@ po-divider {
   \*------------------------------------*/
 
   --color-divider-label-color: var(--color-neutral-dark-60);
-  --color-divider-line-color: var(--color); /*Deprecated v16.x.x utilizar --color*/
+  --color-divider-line-color: var(--color);
+  /*Deprecated v16.x.x utilizar --color*/
 }
 
 po-dropdown {
@@ -824,18 +875,20 @@ po-dropdown {
     DROPDOWN
   \*------------------------------------*/
 
-  --color-dropdown-button-color: var(--color); /* Deprecated v16.x.x utilizar --color */
-  --color-dropdown-button-border-color: var(--color); /* Deprecated v16.x.x utilizar --color */
+  --color-dropdown-button-color: var(--color);
+  /* Deprecated v16.x.x utilizar --color */
+  --color-dropdown-button-border-color: var(--color);
+  /* Deprecated v16.x.x utilizar --color */
 
-  --color-dropdown-button-color-hover: var(--color-hover); /* Deprecated v16.x.x utilizar --color-hover */
-  --color-dropdown-button-border-color-hover: var(--color-hover); /* Deprecated v16.x.x utilizar --color-hover */
+  --color-dropdown-button-color-hover: var(--color-hover);
+  /* Deprecated v16.x.x utilizar --color-hover */
+  --color-dropdown-button-border-color-hover: var(--color-hover);
+  /* Deprecated v16.x.x utilizar --color-hover */
 
-  --color-dropdown-button-color-disabled: var(
-    --color-disabled
-  ); /* Deprecated v16.x.x utilizar --color-action-disabled */
-  --color-dropdown-button-border-color-disabled: var(
-    --color-disabled
-  ); /* Deprecated v16.x.x utilizar --color-action-disabled */
+  --color-dropdown-button-color-disabled: var(--color-disabled);
+  /* Deprecated v16.x.x utilizar --color-action-disabled */
+  --color-dropdown-button-border-color-disabled: var(--color-disabled);
+  /* Deprecated v16.x.x utilizar --color-action-disabled */
 
   /*------------------------------------*\
     FIELD CONTAINER
@@ -1119,13 +1172,17 @@ po-modal {
   --opacity-overlay: 0.7;
   --color-divider: var(--color-neutral-light-80);
 }
+
 /*------------------------------------*\
     MODAL
   \*------------------------------------*/
 :root {
-  --color-modal-background-color-content: var(--background); /*Deprecated v16.x.x utilizar --background*/
-  --color-modal-color-overlay: var(--color-overlay); /*Deprecated v16.x.x utilizar --color-overlay*/
-  --shadow-modal-content: var(--shadow); /*Deprecated v16.x.x utilizar --shadow*/
+  --color-modal-background-color-content: var(--background);
+  /*Deprecated v16.x.x utilizar --background*/
+  --color-modal-color-overlay: var(--color-overlay);
+  /*Deprecated v16.x.x utilizar --color-overlay*/
+  --shadow-modal-content: var(--shadow);
+  /*Deprecated v16.x.x utilizar --shadow*/
 
   /*------------------------------------*\
     MODAL PASSWORD RECOVERY
@@ -1342,25 +1399,26 @@ po-popup po-item-list {
 }
 
 :root {
-  --color-popup-background-color-popup: var(--background); /*Deprecated v16.x.x utilizar --background */
-  --color-popup-background-color-popup-item-hover: var(
-    --background-hover
-  ); /*Deprecated v16.x.x utilizar --background-hover */
-  --color-popup-background-color-popup-item-selected: var(
-    --background-selected
-  ); /* Deprecated v16.x.x utilizar --background-selected */
+  --color-popup-background-color-popup: var(--background);
+  /*Deprecated v16.x.x utilizar --background */
+  --color-popup-background-color-popup-item-hover: var(--background-hover);
+  /*Deprecated v16.x.x utilizar --background-hover */
+  --color-popup-background-color-popup-item-selected: var(--background-selected);
+  /* Deprecated v16.x.x utilizar --background-selected */
 
-  --color-popup-background-color-popup-item-selected-hover: var(
-    --background-hover
-  ); /* Deprecated v16.x.x utilizar --background-hover */
+  --color-popup-background-color-popup-item-selected-hover: var(--background-hover);
+  /* Deprecated v16.x.x utilizar --background-hover */
 
-  --color-popup-border-color-separator: var(
-    --color-neutral-light-90
-  ); /*Deprecated v16.x.x utilizar --color-neutral-light-90 */
-  --color-popup-color-danger: var(--color-danger); /*Deprecated v16.x.x utilizar --color-danger */
-  --color-popup-color-default: var(--color); /*Deprecated v16.x.x utilizar --color */
-  --color-popup-color-disabled: var(--color-disabled); /*Deprecated v16.x.x utilizar --color-disabled */
-  --color-popup-color-item-selected: var(--color-option); /*Deprecated v16.x.x utilizar --color-option */
+  --color-popup-border-color-separator: var(--color-neutral-light-90);
+  /*Deprecated v16.x.x utilizar --color-neutral-light-90 */
+  --color-popup-color-danger: var(--color-danger);
+  /*Deprecated v16.x.x utilizar --color-danger */
+  --color-popup-color-default: var(--color);
+  /*Deprecated v16.x.x utilizar --color */
+  --color-popup-color-disabled: var(--color-disabled);
+  /*Deprecated v16.x.x utilizar --color-disabled */
+  --color-popup-color-item-selected: var(--color-option);
+  /*Deprecated v16.x.x utilizar --color-option */
 
   /*------------------------------------*\
     PROGRESS
@@ -1746,16 +1804,24 @@ po-tag {
     TAG
   \*------------------------------------*/
 
-  --color-tag-color-danger: var(--text-color-negative); /*Deprecated v16.x.x utilizar --text-color-negative*/
-  --color-tag-color-info: var(--text-color-info); /*Deprecated v16.x.x utilizar --text-color-info*/
-  --color-tag-color-success: var(--text-color-positive); /*Deprecated v16.x.x utilizar --text-color-positive*/
-  --color-tag-color-warning: var(--text-color-warning); /*Deprecated v16.x.x utilizar --text-color-warning*/
+  --color-tag-color-danger: var(--text-color-negative);
+  /*Deprecated v16.x.x utilizar --text-color-negative*/
+  --color-tag-color-info: var(--text-color-info);
+  /*Deprecated v16.x.x utilizar --text-color-info*/
+  --color-tag-color-success: var(--text-color-positive);
+  /*Deprecated v16.x.x utilizar --text-color-positive*/
+  --color-tag-color-warning: var(--text-color-warning);
+  /*Deprecated v16.x.x utilizar --text-color-warning*/
   --color-tag-color-text-label: var(--color-neutral);
 
-  --color-tag-background-color-danger: var(--color-negative); /*Deprecated v16.x.x utilizar --color-negative*/
-  --color-tag-background-color-info: var(--color-info); /*Deprecated v16.x.x utilizar --color-info*/
-  --color-tag-background-color-success: var(--color-positive); /*Deprecated v16.x.x utilizar --color-positive*/
-  --color-tag-background-color-warning: var(--color-tag-warning); /*Deprecated v16.x.x utilizar --color-tag-warning*/
+  --color-tag-background-color-danger: var(--color-negative);
+  /*Deprecated v16.x.x utilizar --color-negative*/
+  --color-tag-background-color-info: var(--color-info);
+  /*Deprecated v16.x.x utilizar --color-info*/
+  --color-tag-background-color-success: var(--color-positive);
+  /*Deprecated v16.x.x utilizar --color-positive*/
+  --color-tag-background-color-warning: var(--color-tag-warning);
+  /*Deprecated v16.x.x utilizar --color-tag-warning*/
   --color-tag-background-color-white: var(--color-white);
 
   --color-tag-inverse-border-color-01: var(--color-01);
@@ -1841,8 +1907,10 @@ po-textarea {
 }
 
 :root {
-  --color-tooltip-background-color-balloon: var(--color); /* Deprecated v16.x.x utilizar --color */
-  --color-tooltip-color-text-balloon: var(--text-color); /* Deprecated v16.x.x utilizar --text-color*/
+  --color-tooltip-background-color-balloon: var(--color);
+  /* Deprecated v16.x.x utilizar --color */
+  --color-tooltip-color-text-balloon: var(--text-color);
+  /* Deprecated v16.x.x utilizar --text-color*/
 
   /*------------------------------------*\
     TREEVIEW
@@ -1898,6 +1966,7 @@ po-textarea {
 
   --color-upload-file-restrictions-color-text: var(--color-neutral);
 }
+
 /*------------------------------------*\
     WIDGET
   \*------------------------------------*/

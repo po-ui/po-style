@@ -1,46 +1,63 @@
 :root {
-  --font-calendar-title {
+  /* --font-calendar-title {
     @apply --font-text-large-bold;
   }
 
   --font-calendar-label {
     @apply --font-text-small;
-  }
+  } */
 
-  --font-calendar-nav-icon {
+  /* --font-calendar-nav-icon {
     @apply --font-subtitle;
-  }
-
+  } */
+  /*
   --font-calendar-content {
     @apply --font-text;
-  }
-
+  } */
+  /*
   --font-calendar-button {
     @apply --font-text-large-bold;
-  }
+  } */
 
-  --shadow-calendar-box-shadow: var(--shadow-card);
+  /*
+  */
 
-  --po-calendar-width: 288px;
-  --po-calendar-height: 320px;
+  --shadow-calendar-box-shadow: var(--shadow);
+
+  /* --po-calendar-width: 408px; */
   --po-calendar-range-height: 288px;
 }
 
 .po-calendar {
-  background-color: var(--color-calendar-background-color);
-  border-radius: 3px;
-  box-shadow: var(--shadow-calendar-box-shadow);
-  height: var(--po-calendar-height);
+  border-radius: var(--border-radius);
+  border-width: var(--border-width);
+  border-color: var(--border-color);
+  background-color: var(--color-calendar-background-color, var(--background));
+  box-shadow: var(--shadow-calendar-box-shadow, var(--shadow));
+
+  border-style: solid;
+  height: 376px;
   overflow: hidden;
   position: relative;
   user-select: none;
-  width: var(--po-calendar-width);
+  width: 408px;
+}
+
+/* nao pega */
+.po-calendar po-button[p-kind='tertiary'] .po-button {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.po-calendar po-button[p-kind='tertiary'] .po-icon {
+  font-size: 1.5em;
 }
 
 .po-calendar-wrapper {
   display: inline-block;
   height: 100%;
-  width: var(--po-calendar-width);
+  width: 408px;
   position: relative;
 }
 
@@ -59,94 +76,149 @@
 }
 
 .po-calendar-header {
-  min-height: 40px;
-  overflow: hidden;
+  /* padding-left: var(--spacing-md); */
+  /* padding-right: var(--spacing-md); */
+  /* padding-top: var(--spacing-sm); */
+  /* padding-bottom: var(--spacing-sm); */
+
+  /* height: 16px; */
+  /* min-height: 40px; */
+  /* overflow: hidden; */
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.po-calendar-header .po-calendar-header-left,
+.po-calendar-header-select,
+po-select {
+  --font-size: 16px;
+}
+
+.po-calendar-header-button {
+  /* display: flex; */
+}
+
+/* .po-calendar-header .po-calendar-header-left,
 .po-calendar-header .po-calendar-header-right {
   @apply --font-calendar-nav-icon;
   color: var(--color-calendar-arrow);
   cursor: pointer;
   position: absolute;
   top: 12px;
-}
+} */
 
-.po-calendar-header .po-calendar-header-left {
+/* .po-calendar-header .po-calendar-header-left {
   left: 16px;
 }
 
 .po-calendar-header .po-calendar-header-right {
   right: 16px;
-}
-
+} */
+/*
 .po-calendar-header .po-calendar-header-title {
   @apply --font-calendar-title;
   color: var(--color-calendar-title);
   margin-top: 16px;
   text-align: center;
   width: 100%;
-}
+} */
 
 .po-calendar-content {
-  @apply --font-calendar-content;
   overflow: hidden;
-  width: var(--po-calendar-width);
+  width: 408px;
+}
+
+.po-calendar-content-list-day {
+  padding-top: var(--spacing-sm);
+
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  row-gap: var(--spacing-xs);
 }
 
 .po-calendar-content .po-calendar-content-list-day,
 .po-calendar-content .po-calendar-content-list-month,
 .po-calendar-content .po-calendar-content-list-year {
-  position: absolute;
+  /* position: absolute; */
 }
 
 .po-calendar-content .po-calendar-content-list-day {
-  padding: 0 4px;
-  top: 75px;
+  /* padding: 0 4px; */
+  /* top: 75px; */
 }
 
 .po-calendar-content .po-calendar-content-list-day,
 .po-calendar-content .po-calendar-content-list-month {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .po-calendar-content .po-calendar-content-list-month,
 .po-calendar-content .po-calendar-content-list-year {
-  padding: 0 8px;
-  top: 85px;
+  /* padding: 0 8px; */
+  /* top: 85px; */
 }
 
 .po-calendar-content .po-calendar-labels {
+  /* padding: 0 4px; */
+  /* position: absolute; */
+  /* text-align: center; */
+  /* top: 50px; */
+  /* width: 408px; */
+
   padding: 0 4px;
-  position: absolute;
-  text-align: center;
-  top: 50px;
-  width: var(--po-calendar-width);
+  width: 408px;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .po-calendar-content .po-calendar-label {
-  @apply --font-calendar-label;
+  /* @apply --font-calendar-label;
   color: var(--color-calender-color-content-label);
   display: inline-block;
   height: 24px;
   margin: 0 2px;
   text-align: center;
-  width: 32px;
+  width: 32px; */
+
+  color: var(--text-color-weekly);
+  display: inline-block;
+  margin: 0 2px;
+  text-align: center;
+  width: 2.5rem;
+  font-weight: var(--font-weight-weekly);
+  height: 2rem;
+  font-family: var(--font-family);
 }
 
 .po-calendar-content .po-calendar-day {
   border-radius: 3px;
   display: inline-block;
-  line-height: 30px;
+  /* line-height: 30px; */
   margin: 2px;
   text-align: center;
   width: 32px;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-days);
 }
 
 .po-calendar-content .po-calendar-month,
 .po-calendar-content .po-calendar-year {
   @apply --font-calendar-content;
-  border-radius: 3px;
+
+  border-radius: var(--border-radius);
+  border-width: var(--border-width);
+
+  border-color: transparent;
+
+  /* border-radius: 3px; */
   cursor: pointer;
   display: inline-block;
   height: 32px;
@@ -161,12 +233,17 @@
   cursor: pointer;
 
   &:hover {
-    background-color: var(--color-calendar-background-color-box-background-hover);
+    /* background-color: var(--color-calendar-background-color-box-background-hover); */
+    background-color: var(--color-hover);
+    color: var(--text-color-hover);
   }
 
   &:active {
-    background-color: var(--color-calendar-background-color-box-background-active);
-    color: var(--color-calendar-text-box-background-active);
+    /* background-color: var(--color-calendar-background-color-box-background-active);
+    color: var(--color-calendar-text-box-background-active); */
+
+    background-color: var(--color-selected);
+    color: var(--text-color-selected);
   }
 
   &-in-range,
@@ -185,7 +262,9 @@
   }
 
   &-selected {
-    background-color: var(--color-calendar-background-color-box-background-selected);
+    /* background-color: var(--color-calendar-background-color-box-background-selected); */
+    background-color: var(--color-selected);
+    color: var(--text-color-selected);
 
     &-disabled {
       background-color: var(--color-calendar-background-color-box-background-disabled);
@@ -201,13 +280,17 @@
       pointer-events: none;
 
       &:hover {
-        background-color: var(--color-calendar-background-color-box-background-today-hover);
+        /* background-color: var(--color-calendar-background-color-box-background-today-hover); */
+        background-color: var(--color-hover);
+        color: var(--text-color-hover);
         pointer-events: none;
       }
     }
 
     &:hover {
-      background-color: var(--color-calendar-background-color-box-background-today-hover);
+      /* background-color: var(--color-calendar-background-color-box-background-today-hover); */
+      background-color: var(--color-hover);
+      color: var(--text-color-hover);
     }
   }
 
@@ -217,10 +300,15 @@
 }
 
 .po-calendar-content .po-calendar-box-foreground {
-  color: var(--color-calendar-color-box-foreground);
+  /* color: var(--color-calendar-color-box-foreground); */
+
+  color: var(--color-text);
 
   &-selected {
-    color: var(--color-calendar-color-box-foreground-selected);
+    /* color: var(--color-calendar-color-box-foreground-selected); */
+    background-color: var(--color-selected);
+    color: var(--text-color-selected);
+
     font-family: var(--font-family-bold);
 
     &-disabled {
@@ -230,8 +318,12 @@
   }
 
   &-in-range {
-    background-color: var(--color-calendar-background-color-box-background-range);
-    color: var(--color-calendar-color-box-foreground-range);
+    /* background-color: var(--color-calendar-background-color-box-background-range);
+    color: var(--color-calendar-color-box-foreground-range); */
+
+    background-color: var(--color-interval);
+    color: var(--text-color-interval);
+
     display: block;
     font-family: var(--font-family-bold);
     width: 100%;
@@ -244,9 +336,11 @@
   }
 
   &-today {
-    border: 1px solid var(--color-calendar-background-color-border-today);
-    color: var(--color-calendar-color-box-foreground-today);
+    /* border: 1px solid var(--color-calendar-background-color-border-today); */
+    color: var(--text-color-today);
     font-family: var(--font-family-bold);
+    font-weight: var(--font-weight-today);
+    text-decoration: underline;
 
     &-disabled {
       border: 1px solid var(--color-calendar-color-box-foreground-disabled);
@@ -261,8 +355,9 @@
   }
 
   &-hover {
-    background-color: var(--color-calendar-background-color-box-background-hover);
-    color: var(--color-calendar-color-box-foreground);
+    /* background-color: var(--color-calendar-background-color-box-background-hover); */
+    background-color: var(--color-hover);
+    color: var(--text-color-hover);
     display: block;
     width: 100%;
   }
@@ -275,24 +370,41 @@
 }
 
 .po-calendar-footer {
-  overflow: hidden;
-  position: absolute;
-  top: 279px;
-  width: var(--po-calendar-width);
+  /* overflow: hidden; */
+  /* position: absolute; */
+  /* top: 279px; */
+  width: 408px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .po-calendar-footer .po-calendar-footer-today {
-  text-align: center;
+  /* text-align: center; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .po-calendar-footer .po-calendar-footer-today .po-calendar-footer-today-button {
-  @apply --font-calendar-button;
-  background: transparent;
+  /* @apply --font-calendar-button; */
+  /* background: transparent;
   border: none;
   color: var(--color-primary);
   cursor: pointer;
   text-decoration: underline;
+  text-align: center; */
+
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: var(--text-color-today);
+  cursor: pointer;
+  text-decoration: none;
   text-align: center;
+  font-weight: var(--font-weight-today);
 }
 
 .po-calendar-footer .po-calendar-footer-today .po-calendar-footer-today-button:disabled {
@@ -302,6 +414,7 @@
 
 @media screen and (max-width: 599.33px) {
   .po-calendar-range {
-    width: var(--po-calendar-width);
+    /* width: var(--po-calendar-width); */
+    width: 408px;
   }
 }

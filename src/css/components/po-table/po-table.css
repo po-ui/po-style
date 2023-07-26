@@ -43,14 +43,14 @@
 
 .po-table thead tr th,
 .po-table-master-detail thead tr th {
-  padding-block: 0.75rem;
-  padding-inline: var(--spacing-sm);
-
   font-family: var(--font-family);
   font-weight: var(--font-weight-headline);
 
   line-height: var(--line-height-md);
   font-size: var(--font-size-default);
+
+  padding-block: 0.75rem;
+  padding-inline: var(--spacing-sm);
 
   white-space: nowrap;
   overflow: hidden;
@@ -88,12 +88,11 @@
 .po-table tbody tr td {
   font-family: var(--font-family);
 
+  padding-inline: var(--spacing-sm);
+
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-md);
   font-size: var(--font-size-default);
-
-  padding-block: 0.75rem;
-  padding-inline: var(--spacing-sm);
 
   color: var(--color-table-color-text, var(--color));
   white-space: nowrap;
@@ -622,6 +621,18 @@ span.po-table-header-icon-ascending svg {
 .po-table-column-fixed {
   position: sticky;
   box-shadow: rgba(29, 36, 38, 0.25) 3px 0px 2.6px;
+}
+
+.po-table[p-spacing='small'] tbody tr td:not(.po-table-column-detail) {
+  padding-block: var(--spacing-xs);
+}
+
+.po-table[p-spacing='medium'] tbody tr td:not(.po-table-column-detail) {
+  padding-block: 0.75rem;
+}
+
+.po-table[p-spacing='large'] tbody tr td:not(.po-table-column-detail) {
+  padding-block: var(--spacing-sm);
 }
 
 @media print {

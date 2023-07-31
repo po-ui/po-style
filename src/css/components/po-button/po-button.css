@@ -191,6 +191,18 @@ po-button {
   vertical-align: -0.1rem;
 }
 
+.po-button .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) path {
+  fill: var(--color-button-color, var(--color));
+}
+
+.po-button:hover .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) path {
+  fill: var(--color-button-color-hover, var(--border-color-hover));
+}
+
+.po-button:disabled .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) path {
+  fill: var(--color-button-color-disabled, var(--color-disabled));
+}
+
 /* Variáveis antigas. Necessárias para a utilização de botão nativo com as classes do po-button */
 
 :root {

@@ -23,3 +23,19 @@
   max-height: inherit;
   overflow-y: auto;
 }
+
+.po-listbox-container-loading-default > .po-loading {
+  position: relative;
+  transform: translate(-50%, 5%);
+  padding-block: 1em;
+}
+
+.po-listbox-container-loading-scroll,
+.po-listbox-container-no-data {
+  height: 96px;
+}
+
+.po-listbox-container-no-data {
+  @apply --font-table-text-bold;
+  padding: 36px 0px;
+}

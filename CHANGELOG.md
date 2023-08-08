@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [15.14.0](https://github.com/po-ui/po-style/compare/v15.13.1...v15.14.0) (2023-08-08)
+
+
+Compatibilidade com @po-ui/ng-components@15.14.0
+
+### Features
+
+* **table:** cria propriedade p-spacing para a tabela ([df857e5](https://github.com/po-ui/po-style/commit/df857e52623a58c7c3591feb14de44d9b3faf184))
+* **table:** implementa fixador de colunas ([9be77c0](https://github.com/po-ui/po-style/commit/9be77c0583cf68918a7299f9134dcd7c131cb177))
+
+
+
 ## [15.13.1](https://github.com/po-ui/po-style/compare/v15.13.0...v15.13.1) (2023-07-31)
 
 Compatibilidade com @po-ui/ng-components@15.13.1

@@ -90,3 +90,15 @@
 .po-lookup-input-static .po-lookup-input-placeholder {
   padding: 5px 8px;
 }
+
+.po-lookup-input-disabled,
+.po-lookup-input-disabled:hover {
+  border-color: var(--color-input-border-text, var(--color-disabled));
+  background-color: var(--color-input-border-text-disabled, var(--background-disabled));
+  color: var(--color-input-color-disabled, var(--text-color-disabled));
+  cursor: not-allowed;
+}
+
+.po-lookup-input-disabled:focus {
+  outline: none;
+}

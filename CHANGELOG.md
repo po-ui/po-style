@@ -2,9 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-# [16.0.0-next.2](https://github.com/po-ui/po-style/compare/v15.15.0...v16.0.0-next.2) (2023-08-29)
+# [16.0.0](https://github.com/po-ui/po-style/compare/v15.15.0...v16.0.0) (2023-09-05)
 
-Compatibilidade com @po-ui/ng-components@16.0.0-next.2
+Compatibilidade com @po-ui/ng-components@16.0.0
+
+### Bug Fixes
+
+* **lookup:** ajusta propriedade `p-disabled` ([244fdbf](https://github.com/po-ui/po-style/commit/244fdbfe985b4f037a89fee64fef20be6929ef81))
+
+### Features
+
+* **combo:** implementa o listbox no componente ([15b387f](https://github.com/po-ui/po-style/commit/15b387fa5aa1da0dbc0083c19372967e8b03e3d4))
+
+
 
 ### Bug Fixes
 

@@ -34,7 +34,7 @@
   outline: none;
 }
 
-.po-checkbox-outline:focus-visible {
+.po-checkbox-outline:is(:focus, :focus-visible) {
   outline-color: var(--color-checkbox-box-shadow-color-focusable, var(--outline-color-focused));
 
   outline-width: 4px;

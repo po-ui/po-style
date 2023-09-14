@@ -16,7 +16,6 @@
 
 po-combo.ng-invalid.ng-dirty .po-input {
   border: solid 1px var(--color-combo-border-button-error) !important;
-  outline: none;
 }
 
 .po-combo-container {

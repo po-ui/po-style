@@ -231,7 +231,6 @@
 
 .po-table .po-table-column-cell {
   overflow: hidden;
-  width: max-content;
   text-overflow: ellipsis;
 }
 

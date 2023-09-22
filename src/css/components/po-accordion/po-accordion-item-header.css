@@ -1,69 +1,57 @@
-:root {
-  --font-accordion-header-font-button: {
-    @apply --font-text-large-bold;
-  }
-
-  --font-accordion-header-font-size-icon: 24px;
+.po-accordion-item {
+  list-style: none;
 }
 
-.po-accordion-item-header {
-  margin: 0;
-  padding: 8px 0;
-  position: relative;
+.po-accordion-item:is(:first-child) {
+  border-top: 1px solid var(--color-neutral-light-40);
 }
 
-.po-accordion-item-header-title {
-  margin-right: 24px;
-}
-
-.po-accordion-item:not(:first-child) .po-accordion-item-header {
-  border-top: 1px solid var(--color-accordion-item-border-color);
-}
-
-.po-accordion-item-header-button,
-.po-accordion-item-header-icon {
-  color: var(--color-accordion-header-color-primary);
-}
-
-.po-accordion-item-header:hover .po-accordion-item-header-button,
-.po-accordion-item-header:hover .po-accordion-item-header-icon {
-  color: var(--color-accordion-header-color-hover);
+.po-accordion-item-header-button:hover {
+  color: var(--color-accordion-header-color-hover, var(--color-hover));
+  background-color: var(--background-hover);
 }
 
 .po-accordion-item-header-button {
-  @apply --font-accordion-header-font-button;
-  background-color: var(--color-accordion-item-header-button-background-color);
-  border: none;
-  max-width: 100vw;
-  outline: 0;
-  padding: 8px 8px 8px 16px;
-  text-align: left;
+  background-color: var(--color-accordion-item-header-button-background-color, var(--background-color));
+
   width: 100%;
+  height: 100%;
+  min-height: 44px;
+  max-width: 100vw;
+  text-align: left;
+  display: flex;
+
+  border: none;
+  /* padding-left: var(--spacing-sm);
+  padding-right: var(--spacing-sm); */
+  padding: var(--spacing-squish-md);
+
+  font-weight: var(--font-accordion-header-font-button, var(--font-weight));
+  font-size: var(--font-size);
+  font-family: var(--font-family);
 }
 
-/* outline para compatibilidade com os demais navegadores */
-.po-accordion-item-header-button:focus:before {
-  border-radius: 1px;
-  border: 2px dashed var(--color-accordion-item-header-button-focus);
-  box-sizing: border-box;
-  content: '';
-  height: calc(100% + 11px);
-  left: -6px;
-  position: absolute;
-  top: -6px;
-  width: calc(100% + 11px);
+.po-accordion-item-header-tag {
+  margin-top: 0.25rem;
+  display: inline-block;
 }
 
-/* remove a borda interna nativa do botão no firefox */
-.po-accordion-item-header-button::-moz-focus-inner {
-  border: 0;
+.po-accordion-item-header-button:disabled {
+  background-color: var(--background-disabled);
+  color: var(--color-disabled);
+  cursor: not-allowed !important;
+  border-color: var(--color-disabled);
+}
+
+.po-accordion-item-header-button:disabled .po-accordion-item-header-icon {
+  color: var(--color-disabled);
 }
 
 .po-accordion-item-header-icon {
-  font-size: var(--font-accordion-header-font-size-icon);
-  position: absolute;
-  right: 8px;
-  top: 18px;
+  align-self: center;
+  margin-left: var(--spacing-sm);
+
+  font-size: 24px;
 }
 
 .po-accordion-item-header-icon {

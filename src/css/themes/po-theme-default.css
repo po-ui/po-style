@@ -351,6 +351,43 @@
 /*------------------------------------*\
   COMPONENTS
 \*------------------------------------*/
+po-accordion {
+  --background-color: var(--color-white);
+  --color: var(--color-action-default);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-sm);
+  --font-weight: var(--font-weight-bold);
+
+  /* --line-height: ;
+  --paddding: ; */
+
+  --background-hover: var(--color-brand-01-lightest);
+  --color-hover: var(--color-action-hover);
+
+  --background-disabled: var(--color-neutral-light-90);
+  --color-disabled: var(--color-action-disabled);
+
+  --background-pressed: var(--color-secondary-light-20);
+  --color-pressed: var(--color-action-pressed);
+
+  --color-focus: var(--color-action-focus);
+  --outline-color-focused: var(--color-action-focus);
+}
+
+po-accordion-manager {
+  --background-color: var(--color-brand-01-lightest);
+  --color: var(--color-action-default);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-sm);
+  --font-weight: var(--font-weight-bold);
+
+  --background-pressed: var(--color-secondary-light-20);
+  --color-pressed: var(--color-action-pressed);
+
+  --color-focus: var(--color-action-default);
+  --outline-color-focused: var(--color-action-focus);
+}
+
 :root {
   /*------------------------------------*\
     ACCORDION
@@ -360,24 +397,31 @@
    * Accordion Item
   */
   --color-accordion-item-border-color: var(--color-neutral-light-90);
+  /*Deprecated v16.x.x/
 
   /**
    * Accordion Item Header
   */
-  --color-accordion-header-button-background-color: var(--color-white);
-  --color-accordion-header-color-primary: var(--color-primary);
-  --color-accordion-header-color-hover: var(--color-secondary);
+  --color-accordion-header-button-background-color: var(--background-color);
+  /*Deprecated v16.x.x*/
+  --color-accordion-header-color-primary: var(--color);
+  /*Deprecated v16.x.x utilizar --color*/
+  --color-accordion-header-color-hover: var(--color-hover);
+  /*Deprecated v16.x.x utilizar --color-hover*/
 
   /**
-   * Accordion Item Header Button
+  * Accordion Item Header Button
   */
-  --color-accordion-item-header-button-background-color: var(--color-transparent);
-  --color-accordion-item-header-button-focus: var(--color-secondary);
+  --color-accordion-item-header-button-background-color: var(--background-color);
+  /*Deprecated v16.x.x utilizar --background-color*/
+  --color-accordion-item-header-button-focus: var(--color-focus);
+  /*Deprecated v16.x.x utilizar --color-focus*/
 
   /**
-   * Accordion Item Body
+  * Accordion Item Body
   */
   --color-accordion-item-body-color: var(--color-neutral);
+  /*Deprecated v16.x.x*/
 
   /*------------------------------------*\
     AVATAR

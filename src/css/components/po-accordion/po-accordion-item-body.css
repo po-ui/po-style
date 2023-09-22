@@ -12,5 +12,5 @@
 }
 
 .po-accordion-item-body-content {
-  padding: 8px 16px;
+  padding: var(--spacing-squish-md);
 }

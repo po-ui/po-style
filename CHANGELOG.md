@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.2.0](https://github.com/po-ui/po-style/compare/v16.1.0...v16.2.0) (2023-09-25)
+
+Compatibilidade com @po-ui/ng-components@16.2.0
+
+### Bug Fixes
+
+* **page-edit:** valida campos obrigatórios ([d4d0f2c](https://github.com/po-ui/po-style/commit/d4d0f2c74dba2b10418fa6174d3b9d66360e8b58))
+
+
+
 ## [16.1.0](https://github.com/po-ui/po-style/compare/v16.0.0...v16.1.0) (2023-09-18)
 
 Compatibilidade com @po-ui/ng-components@16.1.0

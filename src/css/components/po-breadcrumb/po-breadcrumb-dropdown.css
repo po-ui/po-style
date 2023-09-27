@@ -32,10 +32,3 @@
   background-color: var(--color-breadcrumb-background-color-dropdown-item-hover);
   cursor: pointer;
 }
-
-.po-breadcrumb-icon-more {
-  @apply --font-breadcrumb-icon-more;
-  color: var(--color-breadcrumb-color-item);
-  line-height: 30px;
-  padding-left: 8px;
-}

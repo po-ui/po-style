@@ -1,27 +1,64 @@
+.po-accordion-manager-header {
+  position: relative;
+}
+
 .po-accordion-manager-button {
   background-color: var(--background-color);
+  color: var(--color);
 
-  display: flex;
-  width: 100%;
-  min-height: 44px;
-  max-width: 100vw;
-  text-align: left;
-
-  padding-left: var(--spacing-sm);
-  padding-right: var(--spacing-sm);
-
-  font-weight: var(--font-accordion-header-font-button, var(--font-weight));
+  font-weight: var(--font-weight);
   font-size: var(--font-size);
   font-family: var(--font-family);
 
+  min-height: 2.75em;
+
   border: none;
+  display: flex;
+  max-width: 100%;
+  padding-inline: var(--spacing-sm);
+  text-align: left;
+  width: 100%;
+}
+
+.po-accordion-manager-button:enabled:active {
+  background-color: var(--background-pressed);
+  color: var(--color-pressed);
+  outline: none;
+}
+
+.po-accordion-manager-button:focus .po-accordion-manager-icon {
+  color: var(--color-focus);
+}
+
+/* outline para compatibilidade com os demais navegadores */
+.po-accordion-manager-button:focus {
+  color: var(--color-focus);
+
+  position: relative;
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--border-width-lg);
+  outline-style: solid;
+  outline-offset: 2px;
+
+  z-index: 1;
+}
+
+/* remove a borda interna nativa do botão no firefox */
+.po-accordion-manager-button::-moz-focus-inner {
+  border: 0;
+}
+
+.po-accordion-manager-button-content {
+  align-self: center;
+  flex: 1;
 }
 
 .po-accordion-manager-icon {
-  align-self: center;
-  margin-left: var(--spacing-sm);
+  color: var(--color);
 
-  font-size: 24px;
+  align-self: center;
+  font-size: 1.5em;
+  margin-left: var(--spacing-sm);
   transition: all 0.3s cubic-bezier(0.07, 0.88, 0.58, 0.92);
 }
 

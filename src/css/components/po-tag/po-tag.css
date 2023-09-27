@@ -157,6 +157,17 @@
   color: var(--color-tag-color-info, var(--text-color-info));
 }
 
+.po-tag-neutral {
+  background-color: var(--color-neutral);
+  color: var(--text-color-neutral);
+}
+
+.po-tag-neutral-inverse {
+  background-color: var(--color-neutral);
+  border-color: var(--text-color-neutral);
+  color: var(--text-color-neutral);
+}
+
 .po-tag-success {
   background-color: var(--color-tag-background-color-success, var(--color-positive));
   color: var(--color-tag-color-success, var(--text-color-positive));

@@ -1,3 +1,8 @@
+.po-accordion-item-header {
+  border-bottom: 1px solid var(--color-neutral-light-40);
+  position: relative;
+}
+
 .po-accordion-item {
   list-style: none;
 }
@@ -6,12 +11,8 @@
   border-top: 1px solid var(--color-neutral-light-40);
 }
 
-.po-accordion-item-header-button:hover {
-  color: var(--color-accordion-header-color-hover, var(--color-hover));
-  background-color: var(--background-hover);
-}
-
 .po-accordion-item-header-button {
+  color: var(--color-accordion-header-color-primary, var(--color));
   background-color: var(--color-accordion-item-header-button-background-color, var(--background-color));
 
   width: 100%;
@@ -22,8 +23,6 @@
   display: flex;
 
   border: none;
-  /* padding-left: var(--spacing-sm);
-  padding-right: var(--spacing-sm); */
   padding: var(--spacing-squish-md);
 
   font-weight: var(--font-accordion-header-font-button, var(--font-weight));
@@ -31,9 +30,9 @@
   font-family: var(--font-family);
 }
 
-.po-accordion-item-header-tag {
-  margin-top: 0.25rem;
-  display: inline-block;
+.po-accordion-item-header-button:hover {
+  color: var(--color-accordion-header-color-hover, var(--color-hover));
+  background-color: var(--background-hover);
 }
 
 .po-accordion-item-header-button:disabled {
@@ -47,18 +46,53 @@
   color: var(--color-disabled);
 }
 
-.po-accordion-item-header-icon {
-  align-self: center;
-  margin-left: var(--spacing-sm);
+.po-accordion-item-header-button:enabled:active {
+  background-color: var(--background-pressed);
+  color: var(--color-pressed);
+  outline: none;
+}
 
-  font-size: 24px;
+/* outline para compatibilidade com os demais navegadores */
+.po-accordion-item-header-button:focus {
+  color: var(--color-focus);
+
+  position: relative;
+  outline-color: var(--color-accordion-item-header-button-focus, var(--outline-color-focused));
+  outline-width: var(--border-width-lg);
+  outline-style: solid;
+  outline-offset: 2px;
+
+  z-index: 1;
+}
+
+.po-accordion-item-header-button:focus .po-accordion-item-header-icon {
+  color: var(--color-focus);
+}
+
+/* remove a borda interna nativa do botão no firefox */
+.po-accordion-item-header-button::-moz-focus-inner {
+  border: 0;
 }
 
 .po-accordion-item-header-icon {
+  color: var(--color-accordion-header-color-primary, var(--color));
+
+  align-self: center;
+  font-size: 1.5rem;
   transform: rotate(0deg);
   transition: all 0.3s cubic-bezier(0.07, 0.88, 0.58, 0.92);
 }
 
 .po-accordion-item-active .po-accordion-item-header-icon {
   transform: rotate(180deg);
+}
+
+.po-accordion-item-header-button-content {
+  align-self: center;
+  flex: 1;
+}
+
+.po-accordion-item-header-tag {
+  margin-top: 0.25rem;
+  display: inline-block;
 }

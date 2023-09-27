@@ -563,23 +563,17 @@ po-button {
   /*------------------------------------*\
     BREADCRUMB
   \*------------------------------------*/
+}
 
-  /**
-   * Breadcrumb
-  */
+po-breadcrumb {
+  --font-family: var(--font-family-theme);
+  --color-icon: var(--color-neutral-mid-60);
+  --color-current-page: var(--color-neutral-mid-60);
+  --color: var(--color-secondary);
+}
 
-  --color-breadcrumb-background-color-container: var(--color-white);
-  --color-breadcrumb-border-color-container: var(--color-neutral-light-90);
-
-  --color-breadcrumb-color-item: var(--color-primary);
-  --color-breadcrumb-color-item-link-hover: var(--color-primary-dark-40);
-  --color-breadcrumb-color-item-unclickable: var(--color-neutral);
-  --color-breadcrumb-color-star-active: var(--color-warning);
-  /**
-   * Breadcrumb Dropdown
-  */
-  --color-breadcrumb-background-color-dropdown: var(--color-white);
-  --color-breadcrumb-background-color-dropdown-item-hover: var(--color-primary-light-95);
+:root {
+  --color-breadcrumb-color-item: var(--color); /*Deprecated v17.x.x utilizar --color */
 
   /*------------------------------------*\
     BUTTON GROUP

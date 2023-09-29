@@ -209,7 +209,7 @@
 }
 
 .po-table .po-table-row-active td {
-  background-color: var(--color-table-background-color-active, var(--background-color-actived));
+  background-color: var(--color-table-background-color-selected, var(--background-color-selected));
 }
 
 .po-table .po-table-row-active td {

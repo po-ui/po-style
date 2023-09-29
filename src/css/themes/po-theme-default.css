@@ -1631,7 +1631,7 @@ po-switch {
 }
 
 /*------------------------------------*\
-  TABLE 
+  TABLE
 \*------------------------------------*/
 po-table {
   --background-color: var(--color-white);
@@ -1679,7 +1679,7 @@ po-table {
   --color-table-background-color-row-strip: var(--background-striped-color);
   /*Deprecated v16.x.x utilizar --background-striped-color*/
 
-  --color-table-background-color-selected: var(--color-brand-01-lightest);
+  --color-table-background-color-selected: var(--background-color-selected);
   /*Deprecated v16.x.x utilizar --color-brand-01-lightest*/
 
   --color-table-background-color-table: var(--color-white);

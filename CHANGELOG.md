@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.2.1](https://github.com/po-ui/po-style/compare/v16.2.0...v16.2.1) (2023-10-02)
+
+
+### Bug Fixes
+
+* **table:** alinhamento de colunas do tipo number, currence e subtitle ([5822568](https://github.com/po-ui/po-style/commit/5822568219374c78791776ffcd02da2865a899b8))
+* **table:** corrige cor da linha selecionada ([d09a292](https://github.com/po-ui/po-style/commit/d09a292744eb34a62a688d6724a2e514d99bf283))
+
+Compatibilidade com @po-ui/ng-components@16.2.1
+
 ## [16.2.0](https://github.com/po-ui/po-style/compare/v16.1.0...v16.2.0) (2023-09-25)
 
 Compatibilidade com @po-ui/ng-components@16.2.0

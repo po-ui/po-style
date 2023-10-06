@@ -86,3 +86,8 @@ po-url.ng-invalid.ng-dirty .po-input {
   border: solid 1px var(--color-input-border-text-error) !important;
   color: var(--color-input-text-error);
 }
+
+po-input.ng-invalid-mask .po-input {
+  border: solid 1px var(--color-input-border-text-error) !important;
+  color: var(--color-input-text-error);
+}

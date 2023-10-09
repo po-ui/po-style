@@ -2,6 +2,46 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [16.3.0](https://github.com/po-ui/po-style/compare/v16.2.1...v16.3.0) (2023-10-09)
+
+
+### Bug Fixes
+
+* **input:** adiciona indicação visual de campo inválido ([89c9f4a](https://github.com/po-ui/po-style/commit/89c9f4ae657bbf59e998a960fc55baca52a4f173))
+
+
+### Features
+
+* **accordion:** implementa definições do AnimaliaDS ([d3a6fa6](https://github.com/po-ui/po-style/commit/d3a6fa6d3c9965ca0321dec3d72891415ec25931))
+* **breadcrumb:** implementa definições do AnimaliaDS ([51aedc6](https://github.com/po-ui/po-style/commit/51aedc659ad67034429aec498de8e3c7375fccce))
+
+
+### BREAKING CHANGES
+
+* **accordion:** remove variáveis de customização de cores
+
+Remove variáveis para compatibilidade com @animaliads/accordion e melhorias
+de acessibilidade, não sendo mais possível a customização.
+
+- `color-accordion-item-border-color`: customização da cor da borda do accordion.
+- `color-accordion-header-button-background-color`: customização duplicada da cor de fundo do accordion.
+- `color-accordion-item-body-color`: customização da cor do corpo do accordion.
+
+* **breadcrumb:** remove variáveis de customização de cores
+
+Remove variáveis para compatibilidade com @animaliads/breadcrumb e melhorias
+de acessibilidade, não sendo mais possível a customização.
+
+- `color-breadcrumb-background-color-container` : customização do background do container.
+- `color-breadcrumb-border-color-container`. : customização da borda.
+- `color-breadcrumb-color-item-link-hover`. : customização do hover do item.
+- `color-breadcrumb-background-color-dropdown`. : customização da cord de background.
+- `color-breadcrumb-background-color-dropdown-item-hover`. : customização do item do dropdown.
+- `color-breadcrumb-color-item-unclickable`. : customização do favoritar
+- `color-breadcrumb-color-star-active`. : customização do icone de favoritar
+
+Compatibilidade com @po-ui/ng-components@16.3.0
+
 ## [16.2.1](https://github.com/po-ui/po-style/compare/v16.2.0...v16.2.1) (2023-10-02)
 
 

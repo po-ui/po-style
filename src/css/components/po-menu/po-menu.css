@@ -44,6 +44,14 @@
   overflow-y: auto;
 }
 
+.po-menu-list {
+  list-style: none;
+}
+
+.po-menu-list-item {
+  display: block;
+}
+
 .po-collapsed-menu .po-menu-header-container-logo {
   padding-inline: var(--spacing-xs);
 }

@@ -61,7 +61,7 @@
   border-color: var(--color-menu-filter-border-focusable, var(--color-focused));
   outline-color: var(--outline-color-focused);
 
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
 }

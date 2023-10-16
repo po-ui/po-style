@@ -50,7 +50,7 @@
 .po-clickable.po-tag:not(.po-tag-removable):focus-visible,
 .po-clickable.po-tag:not(.po-tag-removable):active {
   outline-color: var(--outline-color-focused);
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
 
   outline-style: solid;
 }
@@ -97,7 +97,7 @@
 
 .po-tag-remove:focus-visible {
   outline-color: var(--outline-color-focused);
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
 
   outline-style: solid;
 }

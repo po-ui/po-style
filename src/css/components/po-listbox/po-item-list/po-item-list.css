@@ -16,7 +16,7 @@
   background-color: var(--background-pressed);
   color: var(--color-hover);
   outline-color: var(--outline-color-focused);
-  outline-width: var(--border-width-md);
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: -2px;
 
@@ -99,7 +99,7 @@
 
 .cdk-option:focus-visible .po-item-list {
   outline-color: var(--outline-color-focused);
-  outline-width: var(--border-width-md);
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: -2px;
 }

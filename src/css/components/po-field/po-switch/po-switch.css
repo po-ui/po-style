@@ -18,7 +18,7 @@
 .po-switch-container:focus-visible {
   outline-color: var(--color-switch-box-shadow-color-focusable, var(--outline-color-focused));
 
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
 }

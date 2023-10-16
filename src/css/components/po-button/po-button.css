@@ -40,7 +40,7 @@ po-button {
 .po-button:enabled:active {
   outline-color: var(--outline-color-focused);
 
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
 }
@@ -219,7 +219,7 @@ po-button {
   &:focus-visible {
     outline-color: var(--color-outline-focused);
 
-    outline-width: 0.25em;
+    outline-width: var(--outline-width);
     outline-style: solid;
     outline-offset: 0.125em;
   }
@@ -245,7 +245,7 @@ po-button {
       border-color: var(--color-button-border-pressed, var(--color-brand-01-darker));
       color: var(--color-button-color-pressed, var(--color-brand-01-darker));
       outline-color: var(--color-outline-focused, var(--color-action-focus));
-      outline-width: 0.25em;
+      outline-width: var(--outline-width);
       outline-style: solid;
       outline-offset: 0.125em;
       cursor: pointer;
@@ -277,7 +277,7 @@ po-button {
         border-color: var(--color-button-border-danger-pressed, var(--color-feedback-negative-darkest));
         color: var(--color-button-color-danger-pressed, var(--color-feedback-negative-darkest));
         outline-color: var(--color-outline-focused, var(--color-action-focus));
-        outline-width: 0.25em;
+        outline-width: var(--outline-width);
         outline-style: solid;
         outline-offset: 0.125em;
         cursor: pointer;
@@ -311,7 +311,7 @@ po-button {
 
       color: var(--color-button-color-primary-pressed, var(--color-neutral-light-00));
       outline-color: var(--color-outline-focused, var(--color-action-focus));
-      outline-width: 0.25em;
+      outline-width: var(--outline-width);
       outline-style: solid;
       outline-offset: 0.125em;
       cursor: pointer;
@@ -366,7 +366,7 @@ po-button {
       color: var(--color-button-color-link-pressed, var(--color-brand-01-darkest));
       background-color: var(--color-button-background-color-link-pressed, var(--color-brand-01-light));
       outline-color: var(--color-outline-focused, var(--color-action-focus));
-      outline-width: 0.25em;
+      outline-width: var(--outline-width);
       outline-style: solid;
       outline-offset: 0.125em;
       cursor: pointer;
@@ -398,7 +398,7 @@ po-button {
       border-color: var(--color-button-border-danger-pressed, var(--color-feedback-negative-darkest));
       color: var(--color-button-color-danger-pressed, var(--color-feedback-negative-darkest));
       outline-color: var(--color-outline-focused, var(--color-action-focus));
-      outline-width: 0.25em;
+      outline-width: var(--outline-width);
       outline-style: solid;
       outline-offset: 0.125em;
       cursor: pointer;

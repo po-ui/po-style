@@ -288,6 +288,8 @@
   --color-outline-focused: var(--color-action-focus);
   /*Deprecated v16.x.x utilizar --color-action-focus*/
 
+  --outline-width: var(--border-width-lg);
+
   /*------------------------------------*\
     COLOR-PALETTE
   \*------------------------------------*/

@@ -58,7 +58,7 @@
 
   position: relative;
   outline-color: var(--color-accordion-item-header-button-focus, var(--outline-color-focused));
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
 

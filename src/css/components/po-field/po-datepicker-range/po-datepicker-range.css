@@ -25,7 +25,7 @@ div.po-datepicker-range-field-focused {
   border-color: var(--color-datepicker-range-color-focused) !important;
   outline-color: var(--color-action-focus);
 
-  outline-width: 4px;
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
 }

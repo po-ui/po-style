@@ -27,7 +27,7 @@
   border-color: var(--color-focused);
   outline-color: var(--outline-color-focused);
 
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
 }
@@ -36,7 +36,7 @@
   border-color: var(--color-focused);
   outline-color: var(--outline-color-focused);
 
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
 }
@@ -101,7 +101,7 @@
 .po-search .po-search-clean:focus {
   border-color: var(--color-focused);
   outline-color: var(--outline-color-focused);
-  outline-width: var(--border-width-md);
+  outline-width: var(--outline-width);
   outline-style: solid;
 
   outline-offset: 1px;

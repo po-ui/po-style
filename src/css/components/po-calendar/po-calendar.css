@@ -216,6 +216,10 @@
   }
 }
 
+.po-calendar-box-background:active .po-calendar-box-foreground {
+  color: var(--color-calendar-color-box-foreground-pressed);
+}
+
 .po-calendar-content .po-calendar-box-foreground {
   color: var(--color-calendar-color-box-foreground);
 
@@ -265,6 +269,10 @@
     color: var(--color-calendar-color-box-foreground);
     display: block;
     width: 100%;
+  }
+
+  &:active {
+    color: var(--color-calendar-color-box-foreground-pressed);
   }
 }
 

@@ -63,7 +63,7 @@
   border-color: var(--color-button-group-border-neutral-pressed, var(--color-brand-01-darker));
   color: var(--color-button-group-color-neutral-pressed);
   outline-color: var(--color-outline-focused);
-  outline-width: 0.25em;
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 0.125em;
   cursor: pointer;

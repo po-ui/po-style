@@ -45,7 +45,7 @@
 .po-breadcrumb-favorite:focus {
   outline-color: var(--color-brand-01-darkest);
 
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
 }
@@ -75,7 +75,7 @@
 .po-breadcrumb-icon-more:focus {
   outline-color: var(--color-brand-01-darkest);
 
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
 }

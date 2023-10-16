@@ -35,7 +35,7 @@
 .po-input:focus {
   border-color: var(--color-input-border-text-focusable, var(--color-focused));
   outline-color: var(--outline-color-focused);
-  outline-width: 4px;
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
 }

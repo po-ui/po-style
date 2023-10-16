@@ -64,7 +64,7 @@
 .po-disclaimer-remove:focus-visible {
   outline-color: var(--outline-color-focused);
   outline-style: solid;
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
 }
 
 .po-disclaimer-remove:hover {
@@ -92,7 +92,7 @@
 .po-disclaimer-danger:focus-visible {
   outline-color: var(--outline-color-focused);
   outline-style: solid;
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
   outline-offset: 2px;
 }
 

@@ -24,7 +24,7 @@
   outline-color: var(--outline-color-focused);
   outline-offset: 2px;
   outline-style: solid;
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
 }
 
 .po-link:active {
@@ -33,7 +33,7 @@
   outline-color: var(--outline-color-focused);
   outline-offset: 2px;
   outline-style: solid;
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
   text-decoration: none;
 }
 

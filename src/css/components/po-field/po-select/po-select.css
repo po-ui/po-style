@@ -37,7 +37,7 @@ select:focus {
   border-color: var(--color-select-border-button-focus, var(--color-focused));
   outline-color: var(--color-select-button-focus, var(--outline-color-focused));
 
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
 }

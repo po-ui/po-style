@@ -1255,13 +1255,6 @@ po-multiselect {
 
 :root {
   /*------------------------------------*\
-    MULTISELECT
-  \*------------------------------------*/
-
-  --color-multiselect-border-field-focus: var(--color-disabled);
-  --color-multiselect-color-primary: var(--color-primary);
-
-  /*------------------------------------*\
     NAVBAR
   \*------------------------------------*/
 

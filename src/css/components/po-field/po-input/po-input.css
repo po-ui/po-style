@@ -57,7 +57,7 @@
 
 .po-field-icon.po-icon-input:not(.po-icon-eye-off),
 po-clean.po-icon-input span.po-field-icon {
-  color: var(--color-brand-01-dark) !important;
+  color: var(--color-brand-01-dark);
 }
 
 .po-icon-input-disabled {
@@ -77,7 +77,6 @@ po-email.ng-invalid.ng-dirty .po-input,
 po-input.ng-invalid.ng-dirty .po-input,
 po-login.ng-invalid.ng-dirty .po-input,
 po-lookup.ng-invalid.ng-dirty .po-input,
-po-multiselect.ng-invalid.ng-dirty .po-multiselect-input,
 po-number.ng-invalid.ng-dirty .po-input,
 po-password.ng-invalid.ng-dirty .po-input,
 po-select.ng-invalid.ng-dirty .po-select-button,

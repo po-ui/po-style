@@ -18,6 +18,10 @@
   }
 }
 
+.po-listbox-container-search {
+  padding-inline: var(--spacing-sm);
+}
+
 .po-listbox-list {
   list-style: none;
   max-height: inherit;

@@ -1,3 +1,68 @@
+.po-multiselect-input {
+  background-color: var(--background);
+  border-color: var(--color);
+  border-width: var(--border-width-sm);
+  border-radius: var(--border-radius-md);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
+  gap: var(--spacing-xs);
+  padding-left: var(--spacing-xs);
+  padding-right: 3.25rem;
+
+  align-items: center;
+  border-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 2.75em;
+
+  padding-block: 0.625rem;
+  overflow: hidden;
+}
+
+.po-multiselect-input-font {
+  font-size: var(--font-size);
+}
+
+.po-multiselect-input-placeholder {
+  color: var(--text-color-placeholder);
+}
+
+.po-multiselect-input .po-field-icon-container-right .po-icon-input {
+  color: var(--color);
+}
+
+.po-multiselect-input:focus:not(.po-multiselect-input-disabled) {
+  border-color: var(--color-focused);
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--border-width-lg);
+
+  border-style: solid;
+  border-width: 1px;
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.po-multiselect-input:focus .po-field-icon-container-right .po-icon-input {
+  color: var(--color-focused);
+}
+
+.po-multiselect-input:hover:not(.po-multiselect-input-disabled) {
+  border-color: var(--color-hover);
+  background-color: var(--background-hover);
+  cursor: pointer;
+}
+
+.po-multiselect-input:hover .po-field-icon-container-right .po-icon-input {
+  color: var(--color-hover);
+}
+
+.po-multiselect-input-disabled {
+  border-color: var(--color-disabled);
+  background-color: var(--background-disabled);
+
+  cursor: not-allowed;
+}
+
 .po-multiselect-container {
   padding: 0;
   position: fixed;
@@ -5,105 +70,13 @@
   z-index: 1000;
 }
 
-.po-multiselect-input,
-.po-multiselect-search-input {
-  outline: none;
+po-multiselect.ng-invalid.ng-dirty .po-multiselect-input {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-error);
+  color: var(--color-error);
 }
 
-.po-multiselect-input:focus:not(.po-multiselect-input-disabled),
-.po-multiselect-search-input:focus:not(.po-multiselect-input-disabled) {
-  border: solid 1px var(--color-multiselect-border-field-focus);
-}
-
-.po-multiselect-input:hover:not(.po-multiselect-input-disabled) {
-  border-color: var(--color-multiselect-border-field-focus);
-  background-color: var(--color-brand-01-lightest);
-}
-
-.po-multiselect-input {
-  color: var(--color-brand-01-base);
-}
-
-.po-multiselect-input-auto {
-  min-height: 44px;
-  height: unset;
-}
-
-.po-multiselect-input-static {
-  overflow-y: hidden;
-}
-
-.po-multiselect-input.po-multiselect-input-auto {
-  padding: 6px 44px 6px 4px;
-}
-
-.po-multiselect-input-auto .po-multiselect-input-disclaimer {
-  display: inline-block;
-  padding: 2px 4px;
-}
-
-.po-multiselect-input.po-multiselect-input-static {
-  padding: 4px 44px 4px 4px;
-}
-
-.po-multiselect-input-static .po-multiselect-input-disclaimer {
-  display: inline-block;
-  padding: 4px;
-}
-
-.po-multiselect-container-loading {
-  padding: 36px 0px;
-  position: relative;
-}
-
-.po-multiselect-container-no-data {
-  @apply --font-table-text-bold;
-  padding: 36px 0px;
-}
-
-.po-multiselect-container-search {
-  padding: 8px;
-}
-
-.po-multiselect-items-container {
-  max-height: 175px;
-  overflow-y: auto;
-}
-
-.po-listbox-container-search {
-  padding-inline: var(--spacing-sm);
-}
-
-.po-field-container-content {
-  position: relative;
-  width: 100%;
-
-  &.po-multiselect-show {
-    & .po-multiselect-container {
-      background-color: var(--color-multiselect-background-color) !important;
-      display: block;
-      z-index: 1000;
-    }
-  }
-
-  &.po-multiselect-loading {
-    & > .po-input {
-      border: solid 1px var(--color-multiselect-border-field-focus) !important;
-    }
-  }
-}
-
-.po-multiselect-input-disabled {
-  cursor: not-allowed !important;
-  outline: none !important;
-}
-
-.po-multiselect-input-placeholder {
-  display: inline-block;
-  padding: 3px 8px;
-  line-height: 24px;
-}
-
-.po-multiselect-input-static .po-multiselect-input-placeholder {
-  padding: 5px 8px;
+po-multiselect.ng-invalid.ng-dirty .po-multiselect-input .po-field-icon-container-right .po-icon-input {
+  color: var(--color-error);
 }

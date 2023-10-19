@@ -26,6 +26,7 @@
   list-style: none;
   max-height: inherit;
   overflow-y: auto;
+  padding-block: var(--spacing-xs);
 }
 
 .po-listbox-container-loading-default > .po-loading {

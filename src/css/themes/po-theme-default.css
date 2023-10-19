@@ -1230,6 +1230,9 @@ po-modal {
   --color-modal-password-recovery-text-color: var(--color-neutral);
 }
 
+/*------------------------------------*\
+  MULTISELECT
+\*------------------------------------*/
 po-multiselect {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-default);

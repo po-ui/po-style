@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [16.4.0](https://github.com/po-ui/po-style/compare/v16.3.0...v16.4.0) (2023-10-20)
+
+
+### Bug Fixes
+
+* **menu:** ajusta aparencia do menu ([04c7ba7](https://github.com/po-ui/po-style/commit/04c7ba71a18e3666e3fcb05d98ac9be4159323d2))
+
+
+### Features
+
+* **tag:** implementa variação de status `neutral` ([3edad8d](https://github.com/po-ui/po-style/commit/3edad8d6744ec457bbc9d3379a93c46d923c3545))
+
+
+
 # [16.3.0](https://github.com/po-ui/po-style/compare/v16.2.1...v16.3.0) (2023-10-09)
 
 

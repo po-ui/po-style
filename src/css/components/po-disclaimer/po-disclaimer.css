@@ -2,7 +2,7 @@
   align-items: center;
   border-color: var(--border-color);
   border-radius: var(--border-radius);
-  background-color: var(--color-disclaimer-background-color-label, var(--color));
+  background-color: var(--color);
   border-style: solid;
   border-width: var(--border-width-sm);
   display: flex;
@@ -37,13 +37,13 @@
 }
 
 .po-disclaimer-remove {
-  background-color: var(--color-disclaimer-background-color-remove, var(--color));
+  background-color: var(--color);
   border-bottom-right-radius: var(--border-radius);
   border-left-color: var(--border-color);
   border-left-style: solid;
   border-left-width: var(--border-width-sm);
   border-top-right-radius: var(--border-radius);
-  color: var(--color-disclaimer-color-text, var(--color-icon));
+  color: var(--color-icon);
   min-width: 1.5625em;
   overflow: hidden;
   padding-left: 0.25em;
@@ -51,13 +51,13 @@
 }
 
 .po-disclaimer-remove-danger {
-  background-color: var(--color-disclaimer-background-color-danger-remove);
-  color: var(--color-disclaimer-color-text-danger);
+  background-color: var(--color-feedback-negative-lightest);
+  color: var(--color-feedback-negative-darker);
   border-left-color: var(--color-feedback-negative-darker);
 }
 
 .po-disclaimer-label span {
-  color: var(--color-disclaimer-color-text, var(--text-color));
+  color: var(--text-color);
 }
 
 .po-disclaimer-remove:active,
@@ -76,12 +76,12 @@
 }
 
 .po-disclaimer-danger {
-  background-color: var(--color-disclaimer-background-color-label-danger);
+  background-color: var(--color-feedback-negative-lightest);
   border-color: var(--color-feedback-negative-darker);
 }
 
 .po-disclaimer-danger > .po-disclaimer-label > span {
-  color: var(--color-disclaimer-color-text-danger);
+  color: var(--color-feedback-negative-darker);
 }
 
 .po-disclaimer-remove-danger:hover {

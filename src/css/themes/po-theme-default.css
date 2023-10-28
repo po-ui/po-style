@@ -614,16 +614,7 @@ po-dropdown {
   ); /* Deprecated v16.x.x utilizar --color-action-disabled */
   --color-dropdown-button-border-color-disabled: var(
     --color-disabled
-  ); /* Deprecated v16.x.x utilizar --color-action-disabled */
-
-  /*------------------------------------*\
-    FIELD CONTAINER
-  \*------------------------------------*/
-
-  --color-field-container-color-title: var(--text-color);
-  /* Deprecated v16.x.x utilizar --text-color */
-  --color-field-container-color-opcional: var(--text-color-required);
-  /* Deprecated v16.x.x utilizar --text-color-required */
+  ); /* Deprecated v17.x.x utilizar --color-action-disabled */
 }
 
 po-field-container-bottom {

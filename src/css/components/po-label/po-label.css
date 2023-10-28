@@ -6,7 +6,7 @@ po-label {
   font-family: var(--font-family);
   font-size: var(--font-size);
   line-height: var(--line-height);
-  color: var(--color-field-container-color-title, var(--text-color));
+  color: var(--text-color);
   font-weight: var(--font-weight-normal);
 
   text-align: left;
@@ -28,7 +28,7 @@ po-label {
 }
 
 .po-label-requirement {
-  color: var(--color-field-container-color-opcional, var(--text-color-required));
+  color: var(--text-color-required);
   font-size: var(--font-size-required);
   line-height: var(--line-height-required);
 }

@@ -19,21 +19,21 @@ po-button {
 }
 
 .po-button[p-kind='primary'] {
-  color: var(--color-button-color-primary, var(--text-color));
-  background-color: var(--color-button-background-color-primary, var(--color));
-  box-shadow: var(--color-button-box-shadow, var(--shadow));
+  color: var(--text-color);
+  background-color: var(--color);
+  box-shadow: var(--shadow);
 
-  border-color: var(--color-button-border-primary, var(--border-color));
+  border-color: var(--border-color);
 }
 
 .po-button[p-kind='primary']:hover {
-  color: var(--color-button-color-primary-hover, var(--text-color));
-  background-color: var(--color-button-background-color-primary-hover, var(--color-hover));
+  color: var(--text-color);
+  background-color: var(--color-hover);
 }
 
 .po-button[p-kind='primary']:active {
-  background-color: var(--color-button-background-color-primary-pressed, var(--color-pressed));
-  color: var(--color-button-color-primary-pressed, var(--text-color));
+  background-color: var(--color-pressed);
+  color: var(--text-color);
 }
 
 .po-button:focus,
@@ -46,80 +46,80 @@ po-button {
 }
 
 .po-button[p-kind='secondary'] {
-  color: var(--color-button-color, var(--color));
-  border-color: var(--color-button-border, var(--color));
+  color: var(--color);
+  border-color: var(--color);
 
-  background-color: var(--color-button-background-color, var(--background-color));
-  box-shadow: var(--color-button-box-shadow, var(--shadow));
+  background-color: var(--background-color);
+  box-shadow: var(--shadow);
 }
 
 .po-button[p-kind='secondary']:hover {
-  background-color: var(--color-button-background-color-hover, var(--background-hover));
-  border-color: var(--color-button-border-hover, var(--border-color-hover));
-  color: var(--color-button-color-hover, var(--border-color-hover));
+  background-color: var(--background-hover);
+  border-color: var(--border-color-hover);
+  color: var(--border-color-hover);
 }
 
 .po-button[p-kind='secondary']:enabled:active {
-  background-color: var(--color-button-background-color-pressed, var(--background-pressed));
-  border-color: var(--color-button-border-pressed, var(--border-color-hover));
-  color: var(--color-button-color-pressed, var(--border-color-hover));
+  background-color: var(--background-pressed);
+  border-color: var(--border-color-hover);
+  color: var(--border-color-hover);
 }
 
 .po-button[p-kind='tertiary'] {
-  color: var(--color-button-color-link, var(--color));
+  color: var(--color);
 
-  background-color: var(--color-button-background-color-link, var(--background-color));
-  border-color: var(--color-button-border-color-link, var(--border-color));
-  box-shadow: var(--color-button-box-shadow, var(--shadow));
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+  box-shadow: var(--shadow);
 }
 
 .po-button[p-kind='tertiary']:hover,
 .po-button[p-kind='link']:hover {
-  color: var(--color-button-color-link-hover, var(--border-color-hover));
-  background-color: var(--color-button-background-color-link-hover, var(--background-hover));
+  color: var(--border-color-hover);
+  background-color: var(--background-hover);
 }
 
 .po-button[p-kind='tertiary']:enabled:active {
-  background-color: var(--color-button-background-color-link-pressed, var(--background-pressed));
-  color: var(--color-button-color-link-pressed, var(--color-pressed));
+  background-color: var(--background-pressed);
+  color: var(--color-pressed);
 }
 
 .po-button[p-kind='primary'][p-danger='true'] {
   color: var(--text-color-danger);
-  background-color: var(--color-button-primary-background-color-danger, var(--color-button-danger));
+  background-color: var(--color-button-danger);
 
   border-color: transparent;
 }
 
 .po-button[p-kind='primary'][p-danger='true']:enabled:hover {
-  background-color: var(--color-button-primary-background-color-danger-hover, var(--color-danger-hover));
+  background-color: var(--color-danger-hover);
 }
 
 .po-button[p-kind='primary'][p-danger='true']:enabled:active {
-  background-color: var(--color-button-primary-background-color-danger-pressed, var(--color-danger-pressed));
+  background-color: var(--color-danger-pressed);
 }
 
 .po-button[p-kind='secondary'][p-danger='true'],
 .po-button[p-kind='danger']:not(:disabled) {
-  color: var(--color-button-color-danger, var(--color-button-danger));
-  border-color: var(--color-button-border-danger, var(--color-button-danger));
-  background-color: var(--color-button-background-color-danger, var(--background-color-button-danger));
+  color: var(--color-button-danger);
+  border-color: var(--color-button-danger);
+  background-color: var(--background-color-button-danger);
 }
 
 .po-button[p-kind='secondary'][p-danger='true']:enabled:hover,
 .po-button[p-kind='danger']:enabled:hover {
-  background-color: var(--color-button-background-color-danger-hover, var(--background-danger-hover));
-  border-color: var(--color-button-border-danger-hover, var(--border-color-danger-hover));
+  background-color: var(--background-danger-hover);
+  border-color: var(--border-color-danger-hover);
 
-  color: var(--color-button-color-danger-hover, var(--border-color-danger-hover));
+  color: var(--border-color-danger-hover);
 }
 
 .po-button[p-kind='secondary'][p-danger='true']:enabled:active,
 .po-button[p-kind='danger']:enabled:active {
-  background-color: var(--color-button-background-color-danger-pressed, var(--background-danger-pressed));
-  border-color: var(--color-button-border-danger-pressed, var(--border-color-danger-hover));
+  background-color: var(--background-danger-pressed);
+  border-color: var(--border-color-danger-hover);
 
-  color: var(--color-button-color-danger-pressed, var(--border-color-danger-hover));
+  color: var(--border-color-danger-hover);
 }
 
 .po-button:disabled {
@@ -127,21 +127,21 @@ po-button {
 }
 
 .po-button[p-kind='primary']:disabled {
-  color: var(--color-button-color-primary-disabled, var(--text-color-disabled));
-  background-color: var(--color-button-background-color-primary-disabled, var(--color-disabled));
+  color: var(--text-color-disabled);
+  background-color: var(--color-disabled);
 }
 
 .po-button[p-kind='secondary']:disabled {
-  color: var(--color-button-color-disabled, var(--color-disabled));
-  border-color: var(--color-button-border-disabled, var(--color-disabled));
+  color: var(--color-disabled);
+  border-color: var(--color-disabled);
 
-  background-color: var(--color-button-background-color-disabled, var(--background-color-disabled));
+  background-color: var(--background-color-disabled);
 }
 
 .po-button[p-kind='tertiary']:disabled {
-  color: var(--color-button-color-link-disabled, var(--color-disabled));
+  color: var(--color-disabled);
 
-  background-color: var(--color-button-background-color-link-disabled, var(--background-color-disabled));
+  background-color: var(--background-color-disabled);
 }
 
 .po-button[p-size='large'] {
@@ -192,15 +192,15 @@ po-button {
 }
 
 .po-button .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) path {
-  fill: var(--color-button-color, var(--color));
+  fill: var(--color);
 }
 
 .po-button:hover .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) path {
-  fill: var(--color-button-color-hover, var(--border-color-hover));
+  fill: var(--border-color-hover);
 }
 
 .po-button:disabled .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) path {
-  fill: var(--color-button-color-disabled, var(--color-disabled));
+  fill: var(--color-disabled);
 }
 
 /* Variáveis antigas. Necessárias para a utilização de botão nativo com as classes do po-button */
@@ -225,25 +225,25 @@ po-button {
   }
 
   &-default {
-    color: var(--color-button-color, var(--color-action-default));
-    border-color: var(--color-button-border, var(--color-action-default));
-    background-color: var(--color-button-background-color, var(--color-transparent));
+    color: var(--color-action-default);
+    border-color: var(--color-action-default);
+    background-color: var(--color-transparent);
 
     box-shadow: none;
 
     &:hover {
-      background-color: var(--color-button-background-color-hover, var(--color-brand-01-lighter));
-      border-color: var(--color-button-border-hover, var(--color-brand-01-darkest));
+      background-color: var(--color-brand-01-lighter);
+      border-color: var(--color-brand-01-darkest);
 
       cursor: pointer;
-      color: var(--color-button-color-hover, var(--color-brand-01-darkest));
+      color: var(--color-brand-01-darkest);
     }
 
     &:enabled:active {
-      background-color: var(--color-button-background-color-pressed, var(--color-brand-01-light));
+      background-color: var(--color-brand-01-light);
 
-      border-color: var(--color-button-border-pressed, var(--color-brand-01-darker));
-      color: var(--color-button-color-pressed, var(--color-brand-01-darker));
+      border-color: var(--color-brand-01-darker);
+      color: var(--color-brand-01-darker);
       outline-color: var(--color-outline-focused, var(--color-action-focus));
       outline-width: var(--outline-width);
       outline-style: solid;
@@ -252,30 +252,30 @@ po-button {
     }
 
     &:disabled {
-      color: var(--color-button-color-disabled, var(--color-neutral-light-30));
-      border-color: var(--color-button-border-disabled, var(--color-neutral-light-30));
-      background-color: var(--color-button-background-color-disabled, var(--color-transparent));
+      color: var(--color-neutral-light-30);
+      border-color: var(--color-neutral-light-30);
+      background-color: var(--color-transparent);
       cursor: not-allowed;
     }
 
     &.po-button-danger {
-      color: var(--color-button-color-danger, var(--color-feedback-negative-dark));
+      color: var(--color-feedback-negative-dark);
       background-color: transparent;
-      border-color: var(--color-button-color-danger, var(--color-feedback-negative-dark));
+      border-color: var(--color-feedback-negative-dark);
 
       &:enabled:hover {
-        background-color: var(--color-button-background-color-danger-hover, var(--color-feedback-negative-lighter));
-        border-color: var(--color-button-border-danger-hover, var(--color-feedback-negative-darkest));
+        background-color: var(--color-feedback-negative-lighter);
+        border-color: var(--color-feedback-negative-darkest);
 
-        color: var(--color-button-color-danger-hover, var(--color-feedback-negative-darkest));
+        color: var(--color-feedback-negative-darkest);
         cursor: pointer;
       }
 
       &:enabled:active {
-        background-color: var(--color-button-background-color-danger-pressed, var(--color-feedback-negative-light));
+        background-color: var(--color-feedback-negative-light);
 
-        border-color: var(--color-button-border-danger-pressed, var(--color-feedback-negative-darkest));
-        color: var(--color-button-color-danger-pressed, var(--color-feedback-negative-darkest));
+        border-color: var(--color-feedback-negative-darkest);
+        color: var(--color-feedback-negative-darkest);
         outline-color: var(--color-outline-focused, var(--color-action-focus));
         outline-width: var(--outline-width);
         outline-style: solid;
@@ -284,32 +284,32 @@ po-button {
       }
 
       &:disabled {
-        color: var(--color-button-color-disabled, var(--color-neutral-light-30));
-        border-color: var(--color-button-border-disabled, var(--color-neutral-light-30));
-        background-color: var(--color-button-background-color-disabled, var(--color-transparent));
+        color: var(--color-neutral-light-30);
+        border-color: var(--color-neutral-light-30);
+        background-color: var(--color-transparent);
         cursor: not-allowed;
       }
     }
   }
 
   &-primary {
-    color: var(--color-button-color-primary, var(--color-neutral-light-00));
-    background-color: var(--color-button-background-color-primary, var(--color-action-default));
-    box-shadow: var(--color-button-box-shadow);
+    color: var(--color-neutral-light-00);
+    background-color: var(--color-action-default);
+    box-shadow: var(--shadow);
 
-    border-color: var(--color-button-border-primary, var(--color-action-default));
+    border-color: var(--color-action-default);
 
     &:hover {
-      background-color: var(--color-button-background-color-primary-hover, var(--color-brand-01-dark));
-      color: var(--color-button-color-primary-hover, var(--color-neutral-light-00));
-      border-color: var(--color-button-background-color-primary-hover, var(--color-brand-01-dark));
+      background-color: var(--color-brand-01-dark);
+      color: var(--color-neutral-light-00);
+      border-color: var(--color-brand-01-dark);
       cursor: pointer;
     }
 
     &:enabled:active {
-      background-color: var(--color-button-background-color-primary-pressed, var(--color-brand-01-darker));
+      background-color: var(--color-brand-01-darker);
 
-      color: var(--color-button-color-primary-pressed, var(--color-neutral-light-00));
+      color: var(--color-neutral-light-00);
       outline-color: var(--color-outline-focused, var(--color-action-focus));
       outline-width: var(--outline-width);
       outline-style: solid;
@@ -318,53 +318,47 @@ po-button {
     }
 
     &:disabled {
-      background-color: var(--color-button-background-color-primary-disabled, var(--color-neutral-light-30));
-      color: var(--color-button-color-primary-disabled, var(--color-neutral-dark-70));
+      background-color: var(--color-neutral-light-30);
+      color: var(--color-neutral-dark-70);
       border-color: transparent;
       cursor: not-allowed;
     }
 
     &.po-button-danger {
-      background-color: var(--color-button-primary-background-color-danger, var(--color-feedback-negative-dark));
+      background-color: var(--color-feedback-negative-dark);
       border-color: transparent;
 
       &:enabled:hover {
-        background-color: var(
-          --color-button-primary-background-color-danger-hover,
-          var(--color-feedback-negative-darker)
-        );
+        background-color: var(--color-feedback-negative-darker);
       }
 
       &:enabled:active {
-        background-color: var(
-          --color-button-primary-background-color-danger-pressed,
-          var(--color-feedback-negative-darkest)
-        );
+        background-color: var(--color-feedback-negative-darkest);
       }
 
       &:disabled {
-        background-color: var(--color-button-background-color-primary-disabled, var(--color-neutral-light-30));
-        color: var(--color-button-color-primary-disabled, var(--color-neutral-dark-70));
+        background-color: var(--color-neutral-light-30);
+        color: var(--color-neutral-dark-70);
         cursor: not-allowed;
       }
     }
   }
 
   &-link {
-    color: var(--color-button-color-link, var(--color-action-default));
-    background-color: var(--color-button-background-color-link, var(--color-transparent));
-    border-color: var(--color-button-border-color-link, var(--color-transparent));
+    color: var(--color-action-default);
+    background-color: var(--color-transparent);
+    border-color: var(--color-transparent);
     box-shadow: none;
 
     &:hover {
-      background-color: var(--color-button-background-color-link-hover, var(--color-brand-01-lighter));
-      color: var(--color-button-color-link-hover, var(--color-brand-01-darkest));
+      background-color: var(--color-brand-01-lighter);
+      color: var(--color-brand-01-darkest);
       cursor: pointer;
     }
 
     &:enabled:active {
-      color: var(--color-button-color-link-pressed, var(--color-brand-01-darkest));
-      background-color: var(--color-button-background-color-link-pressed, var(--color-brand-01-light));
+      color: var(--color-brand-01-darkest);
+      background-color: var(--color-brand-01-light);
       outline-color: var(--color-outline-focused, var(--color-action-focus));
       outline-width: var(--outline-width);
       outline-style: solid;
@@ -373,30 +367,30 @@ po-button {
     }
 
     &:disabled {
-      color: var(--color-button-color-link-disabled, var(--color-neutral-light-30));
-      background-color: var(--color-button-background-color-link-disabled, var(--color-transparent));
+      color: var(--color-neutral-light-30);
+      background-color: var(--color-transparent);
       cursor: not-allowed !important;
     }
   }
 
   &.po-button-danger:not(.po-button-primary) {
-    color: var(--color-button-color-danger, var(--color-feedback-negative-dark));
+    color: var(--color-feedback-negative-dark);
     background-color: transparent;
-    border-color: var(--color-button-color-danger, var(--color-feedback-negative-dark));
+    border-color: var(--color-feedback-negative-dark);
 
     &:enabled:hover {
-      background-color: var(--color-button-background-color-danger-hover, var(--color-feedback-negative-lighter));
-      border-color: var(--color-button-border-danger-hover, var(--color-feedback-negative-darkest));
+      background-color: var(--color-feedback-negative-lighter);
+      border-color: var(--color-feedback-negative-darkest);
 
-      color: var(--color-button-color-danger-hover, var(--color-feedback-negative-darkest));
+      color: var(--color-feedback-negative-darkest);
       cursor: pointer;
     }
 
     &:enabled:active {
-      background-color: var(--color-button-background-color-danger-pressed, var(--color-feedback-negative-light));
+      background-color: var(--color-feedback-negative-light);
 
-      border-color: var(--color-button-border-danger-pressed, var(--color-feedback-negative-darkest));
-      color: var(--color-button-color-danger-pressed, var(--color-feedback-negative-darkest));
+      border-color: var(--color-feedback-negative-darkest);
+      color: var(--color-feedback-negative-darkest);
       outline-color: var(--color-outline-focused, var(--color-action-focus));
       outline-width: var(--outline-width);
       outline-style: solid;
@@ -405,9 +399,9 @@ po-button {
     }
 
     &:disabled {
-      color: var(--color-button-color-disabled, var(--color-neutral-light-30));
-      border-color: var(--color-button-border-disabled, var(--color-neutral-light-30));
-      background-color: var(--color-button-background-color-disabled, var(--color-transparent));
+      color: var(--color-neutral-light-30);
+      border-color: var(--color-neutral-light-30);
+      background-color: var(--color-transparent);
       cursor: not-allowed;
     }
   }

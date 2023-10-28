@@ -1,9 +1,9 @@
 select {
   font-family: var(--font-family);
   font-size: var(--font-size);
-  color: var(--color-select-color-primary, var(--text-color));
-  border-color: var(--color-select-border-button, var(--color));
-  background-color: var(--color-select-background-color, var(--background));
+  color: var(--text-color);
+  border-color: var(--color);
+  background-color: var(--background);
   padding: var(--padding-vertical) var(--padding-horizontal);
 
   font-weight: var(--font-weight-normal);
@@ -27,15 +27,15 @@ select {
 }
 
 select:hover {
-  border-color: var(--color-select-border-button-hover, var(--color-hover));
-  background-color: var(--color-select-button-hover, var(--background-hover));
+  border-color: var(--color-hover);
+  background-color: var(--background-hover);
 
   cursor: pointer;
 }
 
 select:focus {
-  border-color: var(--color-select-border-button-focus, var(--color-focused));
-  outline-color: var(--color-select-button-focus, var(--outline-color-focused));
+  border-color: var(--color-focused);
+  outline-color: var(--outline-color-focused);
 
   outline-width: var(--outline-width);
   outline-style: solid;
@@ -43,8 +43,8 @@ select:focus {
 }
 
 select:disabled {
-  border-color: var(--color-select-border-button-disabled, var(--color-disabled));
-  background-color: var(--color-select-background-color-disabled, var(--background-disabled));
+  border-color: var(--color-disabled);
+  background-color: var(--background-disabled);
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.707 8.29301C18.316 7.90201 17.684 7.90201 17.293 8.29301L12 13.586L6.70701 8.29301C6.31601 7.90201 5.68401 7.90201 5.29301 8.29301C4.90201 8.68401 4.90201 9.31601 5.29301 9.70701L11.293 15.707C11.488 15.902 11.744 16 12 16C12.256 16 12.512 15.902 12.707 15.707L18.707 9.70701C19.098 9.31601 19.098 8.68401 18.707 8.29301Z' fill='%23B4B4C0'/%3E%3C/svg%3E%0A");
 
   color: var(--text-color);
@@ -52,18 +52,18 @@ select:disabled {
 }
 
 select.po-select-placeholder {
-  color: var(--color-select-color-text-empty, var(--text-color-empty));
+  color: var(--text-color-empty);
 }
 
 option {
-  color: var(--color-select-color-primary, var(--text-color));
+  color: var(--text-color);
 }
 
 option:disabled {
-  color: var(--color-select-color-text-empty, var(--text-color-empty));
+  color: var(--text-color-empty);
 }
 
 po-select.ng-dirty.ng-invalid select {
-  border-color: var(--color-select-border-button-error, var(--color-feedback-negative-base));
+  border-color: var(--color-feedback-negative-base);
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.707 8.29301C18.316 7.90201 17.684 7.90201 17.293 8.29301L12 13.586L6.70701 8.29301C6.31601 7.90201 5.68401 7.90201 5.29301 8.29301C4.90201 8.68401 4.90201 9.31601 5.29301 9.70701L11.293 15.707C11.488 15.902 11.744 16 12 16C12.256 16 12.512 15.902 12.707 15.707L18.707 9.70701C19.098 9.31601 19.098 8.68401 18.707 8.29301Z' fill='%23BE3E37'/%3E%3C/svg%3E%0A");
 }

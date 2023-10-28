@@ -560,21 +560,6 @@ po-disclaimer {
 }
 
 :root {
-  --color-disclaimer-background-color-label: var(--color); /*Deprecated v16.x.x utilizar --color */
-  --color-disclaimer-background-color-label-danger: var(
-    --color-feedback-negative-lightest
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-lightest */
-
-  --color-disclaimer-color-text: var(--text-color); /*Deprecated v16.x.x utilizar --text-color */
-  --color-disclaimer-color-text-danger: var(
-    --color-feedback-negative-darker
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-darker */
-
-  --color-disclaimer-background-color-remove: var(--color); /*Deprecated v16.x.x utilizar --color */
-  --color-disclaimer-background-color-danger-remove: var(
-    --color-feedback-negative-lightest
-  ); /*Deprecated v16.x.x utilizar --color-feedback-negative-lightest */
-
   /*------------------------------------*\
     DISCLAIMER GROUP
   \*------------------------------------*/

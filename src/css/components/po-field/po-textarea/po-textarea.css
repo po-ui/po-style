@@ -1,8 +1,8 @@
 .po-textarea {
   font-family: var(--font-family);
   font-size: var(--font-size);
-  border-color: var(--color-textarea-border, var(--color));
-  background: var(--color-textarea-background-color, var(--background));
+  border-color: var(--color);
+  background: var(--background);
   color: var(--text-color);
 
   font-weight: var(--font-weight-normal);
@@ -26,7 +26,7 @@
 }
 
 .po-textarea:focus-visible {
-  border-color: var(--color-textarea-border-focusable, var(--color-focused));
+  border-color: var(--color-focused);
   outline-color: var(--outline-color-focused);
 
   outline-width: var(--outline-width);
@@ -38,21 +38,21 @@
   color: var(--text-color-readonly);
 
   border-color: var(--color-disabled);
-  background: var(--color-textarea-background-color, var(--background));
+  background: var(--background);
   cursor: text;
 }
 
 .po-textarea:disabled {
-  border-color: var(--color-textarea-border-color-disabled, var(--color-disabled));
-  background: var(--color-textarea-background-color-disabled, var(--background-disabled));
+  border-color: var(--color-disabled);
+  background: var(--background-disabled);
 
   color: var(--input-text);
   cursor: not-allowed;
 }
 
 po-textarea.ng-invalid.ng-dirty .po-textarea {
-  border-color: var(--color-textarea-color-error, var(--color-error));
+  border-color: var(--color-error);
 
-  background: var(--color-textarea-background-color, var(--background));
+  background: var(--background);
   cursor: text;
 }

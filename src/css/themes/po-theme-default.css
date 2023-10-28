@@ -1336,24 +1336,6 @@ po-switch {
 }
 
 :root {
-  --color-switch-background-color-container-on: var(--track-checked);
-  /*Deprecated v16.x.x utilizar --track-checked */
-  --color-switch-background-color-container-off: var(--track-unchecked);
-  /*Deprecated v16.x.x utilizar --track-unchecked */
-  --color-switch-background-color-container-disabled: var(--track-unchecked);
-  /*Deprecated v16.x.x utilizar --track-unchecked */
-
-  --color-switch-box-shadow-color-focusable: var(--outline-color-focused);
-  /*Deprecated v16.x.x utilizar --outline-color-focused*/
-
-  --color-switch-background-color-button: var(--color-unchecked);
-  /*Deprecated v16.x.x utilizar --color-unchecked */
-  --color-switch-background-color-button-disabled: var(--color-unchecked-disabled);
-  /*Deprecated v16.x.x utilizar --color-unchecked-disabled */
-
-  --color-switch-color-icon-on: var(--color-unchecked);
-  /*Deprecated v16.x.x utilizar --color-unchecked */
-
   /*------------------------------------*\
     TAB BUTTON
   \*------------------------------------*/

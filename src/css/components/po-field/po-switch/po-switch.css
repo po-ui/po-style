@@ -16,7 +16,7 @@
 }
 
 .po-switch-container:focus-visible {
-  outline-color: var(--color-switch-box-shadow-color-focusable, var(--outline-color-focused));
+  outline-color: var(--outline-color-focused);
 
   outline-width: var(--outline-width);
   outline-style: solid;
@@ -24,7 +24,7 @@
 }
 
 .po-switch-track {
-  background-color: var(--color-switch-background-color-container-off, var(--track-unchecked));
+  background-color: var(--track-unchecked);
 
   height: 1rem;
   width: 3rem;
@@ -33,7 +33,7 @@
 }
 
 .po-switch-toggle {
-  background-color: var(--color-switch-background-color-button, var(--color-unchecked));
+  background-color: var(--color-unchecked);
   border: var(--border-width-md) solid var(--border-color);
 
   border-radius: 100%;
@@ -57,11 +57,11 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  color: var(--color-switch-color-icon-on, var(--color-unchecked));
+  color: var(--color-unchecked);
 }
 
 [aria-checked='true'] .po-switch-toggle {
-  background-color: var(--color-switch-background-color-button, var(--color-checked));
+  background-color: var(--color-checked);
   border-color: transparent;
   transform: translateX(100%);
 }
@@ -71,26 +71,26 @@
 }
 
 [aria-checked='true'] .po-switch-track {
-  background-color: var(--color-switch-background-color-container-on, var(--track-checked));
+  background-color: var(--track-checked);
 }
 
 [aria-disabled='true'] .po-switch-track {
-  background-color: var(--color-switch-background-color-container-disabled, var(--track-unchecked));
+  background-color: var(--track-unchecked);
   cursor: not-allowed;
 }
 
 [aria-disabled='true'] .po-switch-toggle {
-  background-color: var(--color-switch-background-color-button-disabled, var(--color-unchecked-disabled));
+  background-color: var(--color-unchecked-disabled);
 
-  border-color: var(--color-switch-background-color-button-disabled, var(--color-checked-disabled));
+  border-color: var(--color-checked-disabled);
 }
 
 [aria-checked='true'][aria-disabled='true'] .po-switch-track {
-  background-color: var(--color-switch-background-color-container-disabled, var(--color-neutral-light-20));
+  background-color: var(--track-unchecked);
 }
 
 [aria-checked='true'][aria-disabled='true'] .po-switch-toggle {
-  background: var(--color-switch-background-color-button-disabled, var(--color-checked-disabled));
+  background: var(--color-checked-disabled);
   border-color: transparent;
 }
 

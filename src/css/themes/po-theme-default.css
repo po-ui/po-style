@@ -1244,22 +1244,6 @@ po-radio {
 
 :root {
   /*------------------------------------*\
-    RADIO-GROUP
-  \*------------------------------------*/
-
-  --color-radio-group-background-color: var(--color-unchecked);
-  /* Deprecated v16.x.x utilizar --color-unchecked */
-  --color-radio-group-background-color-active: var(--color-checked);
-  /* Deprecated v16.x.x utilizar --color-checked */
-  --color-radio-group-background-color-input-disabled: var(--color-unchecked-disabled);
-  /* Deprecated v16.x.x utilizar --color-unchecked-disabled */
-
-  --color-radio-group-border-color: var(--border-color);
-  /* Deprecated v16.x.x utilizar --border-color */
-  --color-radio-group-border-color-focusable: var(--outline-color-focused);
-  /* Deprecated v16.x.x utilizar --outline-color-focused */
-
-  /*------------------------------------*\
     RICH TEXT
   \*------------------------------------*/
 

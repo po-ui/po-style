@@ -9,13 +9,13 @@ po-radio {
 
   --background-radial-md: radial-gradient(
     var(--circle-width-md) circle at 10px 10px,
-    var(--color-radio-group-background-color-active, var(--color-checked)) 50%,
+    var(--color-checked) 50%,
     transparent 57%
   );
 
   --background-radial-lg: radial-gradient(
     var(--circle-width-lg) circle at 14px 14px,
-    var(--color-radio-group-background-color-active, var(--color-checked)) 50%,
+    var(--color-checked) 50%,
     transparent 54.2%
   );
 
@@ -45,7 +45,7 @@ po-radio {
 }
 
 .po-radio-focus > label {
-  outline-color: var(--color-radio-group-border-color-focusable, var(--outline-color-focused));
+  outline-color: var(--outline-color-focused);
 
   outline-width: var(--outline-width);
   outline-style: solid;
@@ -53,8 +53,8 @@ po-radio {
 }
 
 .po-radio input[type='radio'] {
-  background-color: var(--color-radio-group-background-color, var(--color-unchecked));
-  border-color: var(--color-radio-group-border-color, var(--border-color));
+  background-color: var(--color-unchecked);
+  border-color: var(--border-color);
 
   -webkit-appearance: none;
   appearance: none;
@@ -90,29 +90,29 @@ po-radio {
 
 .po-radio input[type='radio']:checked {
   background: var(--background-radial-md);
-  background-color: var(--color-radio-group-background-color, var(--color-unchecked));
-  border-color: var(--color-radio-group-background-color-active, var(--color-checked));
+  background-color: var(--color-unchecked);
+  border-color: var(--color-checked);
   padding: 4px;
 }
 
 .po-radio input[type='radio'][p-size='large']:checked {
   background: var(--background-radial-lg);
-  background-color: var(--color-radio-group-background-color, var(--color-unchecked));
+  background-color: var(--color-unchecked);
 }
 
 .po-radio input[type='radio'][disabled] {
-  background-color: var(--color-radio-group-background-color-input-disabled, var(--color-unchecked-disabled));
+  background-color: var(--color-unchecked-disabled);
   border-color: var(--color-checked-disabled);
 }
 
 .po-radio input[type='radio'][disabled]:checked {
   background: var(--background-radial-md-disabled);
-  background-color: var(--color-radio-group-background-color-input-disabled, var(--color-unchecked-disabled));
+  background-color: var(--color-unchecked-disabled);
 }
 
 .po-radio input[type='radio'][disabled][p-size='large']:checked {
   background: var(--background-radial-lg-disabled);
-  background-color: var(--color-radio-group-background-color-input-disabled, var(--color-unchecked-disabled));
+  background-color: var(--color-unchecked-disabled);
 }
 
 .po-radio input[type='radio']:not([disabled]):focus-visible {

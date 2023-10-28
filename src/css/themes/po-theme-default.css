@@ -1590,20 +1590,6 @@ po-textarea {
 }
 
 :root {
-  --color-textarea-background-color: var(---background);
-  /* Deprecated v16.x.x utilizar ---background */
-  --color-textarea-border: var(--color);
-  /* Deprecated v16.x.x utilizar --color */
-  --color-textarea-background-color-disabled: var(--background-disabled);
-  /* Deprecated v16.x.x utilizar --background-disabled */
-  --color-textarea-border-color-disabled: var(--color-disabled);
-  /* Deprecated v16.x.x utilizar --color-disabled */
-  --color-textarea-border-focusable: var(--color-focused);
-  /* Deprecated v16.x.x utilizar --color-focused */
-
-  --color-textarea-color-error: var(--color-error);
-  /* Deprecated v16.x.x utilizar --color-error */
-
   /*------------------------------------*\
     TOOLBAR
   \*------------------------------------*/

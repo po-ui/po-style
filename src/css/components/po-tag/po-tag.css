@@ -124,7 +124,7 @@
 
 .po-tag-label {
   @apply --font-tag-font-label;
-  color: var(--color-tag-color-text-label);
+  color: var(--color-neutral-dark-70);
 }
 
 .po-tag-container.po-tag-container-horizontal {
@@ -136,25 +136,25 @@
 }
 
 .po-tag-danger {
-  background-color: var(--color-tag-background-color-danger, var(--color-negative));
-  color: var(--color-tag-color-danger, var(--text-color-negative));
+  background-color: var(--color-negative);
+  color: var(--text-color-negative);
 }
 
 .po-tag-danger-inverse {
-  background-color: var(--color-tag-background-color-danger, var(--color-negative));
-  border-color: var(--color-tag-color-danger, var(--text-color-negative));
-  color: var(--color-tag-color-danger, var(--text-color-negative));
+  background-color: var(--color-negative);
+  border-color: var(--text-color-negative);
+  color: var(--text-color-negative);
 }
 
 .po-tag-info {
-  background-color: var(--color-tag-background-color-info, var(--color-info));
-  color: var(--color-tag-color-info, var(--text-color-info));
+  background-color: var(--color-info);
+  color: var(--text-color-info);
 }
 
 .po-tag-info-inverse {
-  background-color: var(--color-tag-background-color-info, var(--color-info));
-  border-color: var(--color-tag-color-info, var(--text-color-info));
-  color: var(--color-tag-color-info, var(--text-color-info));
+  background-color: var(--color-info);
+  border-color: var(--text-color-info);
+  color: var(--text-color-info);
 }
 
 .po-tag-neutral {
@@ -169,25 +169,25 @@
 }
 
 .po-tag-success {
-  background-color: var(--color-tag-background-color-success, var(--color-positive));
-  color: var(--color-tag-color-success, var(--text-color-positive));
+  background-color: var(--color-positive);
+  color: var(--text-color-positive);
 }
 
 .po-tag-success-inverse {
-  background-color: var(--color-tag-background-color-success, var(--color-positive));
-  border-color: var(--color-tag-color-success, var(--text-color-positive));
-  color: var(--color-tag-color-success, var(--text-color-positive));
+  background-color: var(--color-positive);
+  border-color: var(--text-color-positive);
+  color: var(--text-color-positive);
 }
 
 .po-tag-warning {
-  background-color: var(--color-tag-background-color-warning, var(--color-tag-warning));
-  color: var(--color-tag-color-warning, var(--text-color-warning));
+  background-color: var(--color-tag-warning);
+  color: var(--text-color-warning);
 }
 
 .po-tag-warning-inverse {
-  background-color: var(--color-tag-background-color-warning, var(--color-tag-warning));
-  border-color: var(--color-tag-color-warning, var(--text-color-warning));
-  color: var(--color-tag-color-warning, var(--text-color-warning));
+  background-color: var(--color-tag-warning);
+  border-color: var(--text-color-warning);
+  color: var(--text-color-warning);
 }
 
 .po-tag-inverse.po-text-color-01 {

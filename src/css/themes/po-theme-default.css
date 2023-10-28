@@ -1545,17 +1545,6 @@ po-tag {
   /*------------------------------------*\
     TAG
   \*------------------------------------*/
-
-  --color-tag-color-danger: var(--text-color-negative); /*Deprecated v16.x.x utilizar --text-color-negative*/
-  --color-tag-color-info: var(--text-color-info); /*Deprecated v16.x.x utilizar --text-color-info*/
-  --color-tag-color-success: var(--text-color-positive); /*Deprecated v16.x.x utilizar --text-color-positive*/
-  --color-tag-color-warning: var(--text-color-warning); /*Deprecated v16.x.x utilizar --text-color-warning*/
-  --color-tag-color-text-label: var(--color-neutral-dark-70);
-
-  --color-tag-background-color-danger: var(--color-negative); /*Deprecated v16.x.x utilizar --color-negative*/
-  --color-tag-background-color-info: var(--color-info); /*Deprecated v16.x.x utilizar --color-info*/
-  --color-tag-background-color-success: var(--color-positive); /*Deprecated v16.x.x utilizar --color-positive*/
-  --color-tag-background-color-warning: var(--color-tag-warning); /*Deprecated v16.x.x utilizar --color-tag-warning*/
   --color-tag-background-color-white: var(--color-neutral-light-00);
 
   --color-tag-inverse-border-color-01: var(--color-01);

@@ -574,15 +574,6 @@ po-divider {
   --stroke-linecap: round;
 }
 
-:root {
-  /*------------------------------------*\
-    DIVIDER
-  \*------------------------------------*/
-
-  --color-divider-label-color: var(--color-neutral-dark-90);
-  --color-divider-line-color: var(--color); /*Deprecated v16.x.x utilizar --color*/
-}
-
 po-dropdown {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-default);

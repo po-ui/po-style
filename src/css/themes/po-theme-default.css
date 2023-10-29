@@ -603,15 +603,15 @@ po-dropdown {
     DROPDOWN
   \*------------------------------------*/
 
-  --color-dropdown-button-color: var(--color); /* Deprecated v16.x.x utilizar --color */
-  --color-dropdown-button-border-color: var(--color); /* Deprecated v16.x.x utilizar --color */
+  --color-dropdown-button-color: var(--color); /* Deprecated v17.x.x utilizar --color */
+  --color-dropdown-button-border-color: var(--color); /* Deprecated v17.x.x utilizar --color */
 
-  --color-dropdown-button-color-hover: var(--color-hover); /* Deprecated v16.x.x utilizar --color-hover */
-  --color-dropdown-button-border-color-hover: var(--color-hover); /* Deprecated v16.x.x utilizar --color-hover */
+  --color-dropdown-button-color-hover: var(--color-hover); /* Deprecated v17.x.x utilizar --color-hover */
+  --color-dropdown-button-border-color-hover: var(--color-hover); /* Deprecated v17.x.x utilizar --color-hover */
 
   --color-dropdown-button-color-disabled: var(
     --color-disabled
-  ); /* Deprecated v16.x.x utilizar --color-action-disabled */
+  ); /* Deprecated v17.x.x utilizar --color-action-disabled */
   --color-dropdown-button-border-color-disabled: var(
     --color-disabled
   ); /* Deprecated v17.x.x utilizar --color-action-disabled */

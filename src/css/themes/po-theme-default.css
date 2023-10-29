@@ -1616,9 +1616,6 @@ po-textarea {
 }
 
 :root {
-  --color-tooltip-background-color-balloon: var(--color); /* Deprecated v16.x.x utilizar --color */
-  --color-tooltip-color-text-balloon: var(--text-color); /* Deprecated v16.x.x utilizar --text-color*/
-
   /*------------------------------------*\
     TREEVIEW
   \*------------------------------------*/

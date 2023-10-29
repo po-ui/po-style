@@ -371,7 +371,7 @@ po-breadcrumb {
 }
 
 :root {
-  --color-breadcrumb-color-item: var(--color); /*Deprecated v17.x.x utilizar --color */
+  --color-breadcrumb-color-item: var(--color); /*Deprecated v18.x.x utilizar --color */
 
   /*------------------------------------*\
     BUTTON GROUP

@@ -870,28 +870,28 @@ po-menu-item {
 
 :root {
   --color-menu-color-menu-item-text: var(--color);
-  /*Deprecated v16.x.x utilizar --color*/
+  /*Deprecated v17.x.x utilizar --color*/
 
   --color-menu-color-menu-item-selected: var(--color-actived);
-  /*Deprecated v16.x.x utilizar --color-actived*/
+  /*Deprecated v17.x.x utilizar --color-actived*/
 
   --color-menu-color-menu-responsive: var(--color);
-  /*Deprecated v16.x.x utilizar --color*/
+  /*Deprecated v17.x.x utilizar --color*/
 
   --color-menu-background-color-item-hover: var(--background-color-hover);
-  /*Deprecated v16.x.x utilizar --background-color-hover*/
+  /*Deprecated v17.x.x utilizar --background-color-hover*/
 
   --color-menu-background-color-item-selected: var(--background-color-actived);
-  /*Deprecated v16.x.x utilizar --background-color-actived*/
+  /*Deprecated v17.x.x utilizar --background-color-actived*/
 
   --color-menu-background-color-menu: var(--background-color);
-  /*Deprecated v16.x.x utilizar --background-color*/
+  /*Deprecated v17.x.x utilizar --background-color*/
 
   --color-menu-background-color-menu-responsive-overlay: var(--color-neutral-dark-80);
   /* nao fazer nada neste token */
 
   --color-menu-border-top-collapse-button: var(--border-color);
-  /*Deprecated v16.x.x utilizar --border-color*/
+  /*Deprecated v17.x.x utilizar --border-color*/
 }
 
 /*------------------------------------*\
@@ -920,19 +920,19 @@ po-menu-filter {
 
 :root {
   --color-menu-filter-color-icon: var(--color-icon-read);
-  /*Deprecated v16.x.x utilizar --color-icon-read*/
+  /*Deprecated v17.x.x utilizar --color-icon-read*/
 
   --color-menu-filter-color-text: var(--text-color);
-  /*Deprecated v16.x.x utilizar --text-color*/
+  /*Deprecated v17.x.x utilizar --text-color*/
 
   --color-menu-filter-background-color: var(--background);
-  /*Deprecated v16.x.x utilizar --background*/
+  /*Deprecated v17.x.x utilizar --background*/
 
   --color-menu-filter-border: var(--color);
-  /*Deprecated v16.x.x utilizar --color*/
+  /*Deprecated v17.x.x utilizar --color*/
 
   --color-menu-filter-border-focusable: var(--color-focused);
-  /*Deprecated v16.x.x utilizar --color-focused*/
+  /*Deprecated v17.x.x utilizar --color-focused*/
 
   /*------------------------------------*\
     MENU PANEL

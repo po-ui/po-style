@@ -962,9 +962,9 @@ po-modal {
     MODAL
   \*------------------------------------*/
 :root {
-  --color-modal-background-color-content: var(--background); /*Deprecated v16.x.x utilizar --background*/
-  --color-modal-color-overlay: var(--color-overlay); /*Deprecated v16.x.x utilizar --color-overlay*/
-  --shadow-modal-content: var(--shadow); /*Deprecated v16.x.x utilizar --shadow*/
+  --color-modal-background-color-content: var(--background); /*Deprecated v17.x.x utilizar --background*/
+  --color-modal-color-overlay: var(--color-overlay); /*Deprecated v17.x.x utilizar --color-overlay*/
+  --shadow-modal-content: var(--shadow); /*Deprecated v17.x.x utilizar --shadow*/
 
   /*------------------------------------*\
     MODAL PASSWORD RECOVERY

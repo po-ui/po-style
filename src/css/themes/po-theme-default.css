@@ -1389,58 +1389,58 @@ po-table {
 
 :root {
   --color-table-background-color-action-hover: var(--color-action-hover);
-  /*Deprecated v16.x.x utilizar --color-action-hover*/
+  /*Deprecated v17.x.x utilizar --color-action-hover*/
 
   --color-table-background-color-active: var(--background-color-actived);
-  /*Deprecated v16.x.x utilizar --background-color-actived*/
+  /*Deprecated v17.x.x utilizar --background-color-actived*/
 
   --color-table-background-color-header: var(--color-neutral-light-10);
-  /*Deprecated v16.x.x utilizar --color-neutral-light-10*/
+  /*Deprecated v17.x.x utilizar --color-neutral-light-10*/
 
   --color-table-background-color-overlay: var(--color-secondary-dark-60-alpha-70);
-  /*Deprecated v16.x.x utilizar --color-secondary-dark-60-alpha-70*/
+  /*Deprecated v17.x.x utilizar --color-secondary-dark-60-alpha-70*/
 
   --color-table-background-color-overlay-content: var(--color-neutral-light-00);
-  /*Deprecated v16.x.x utilizar ---color-white*/
+  /*Deprecated v17.x.x utilizar ---color-white*/
 
   --color-table-background-color-row-strip: var(--background-striped-color);
-  /*Deprecated v16.x.x utilizar --background-striped-color*/
+  /*Deprecated v17.x.x utilizar --background-striped-color*/
 
   --color-table-background-color-selected: var(--background-color-selected);
-  /*Deprecated v16.x.x utilizar --color-brand-01-lightest*/
+  /*Deprecated v17.x.x utilizar --color-brand-01-lightest*/
 
   --color-table-background-color-table: var(--color-neutral-light-00);
-  /*Deprecated v16.x.x utilizar --color-white*/
+  /*Deprecated v17.x.x utilizar --color-white*/
 
   --color-table-border-rows: var(--color-line);
-  /*Deprecated v16.x.x utilizar --color-line*/
+  /*Deprecated v17.x.x utilizar --color-line*/
 
   --color-table-color-footer-show-subtitle: var(--color-neutral-dark-95);
-  /*Deprecated v16.x.x utilizar --color-neutral-dark-95*/
+  /*Deprecated v17.x.x utilizar --color-neutral-dark-95*/
 
   --color-table-background-color-footer-show-subtitle: var(--color-neutral-light-00);
-  /*Deprecated v16.x.x utilizar --color-white*/
+  /*Deprecated v17.x.x utilizar --color-white*/
 
   --color-table-border-footer-show-subtitle: var(--color-neutral-light-10);
-  /*Deprecated v16.x.x utilizar --color-neutral-light-10*/
+  /*Deprecated v17.x.x utilizar --color-neutral-light-10*/
 
   --color-table-box-shadow-footer: var(--color-line);
-  /*Deprecated v16.x.x utilizar --color-primary-light-80*/
+  /*Deprecated v17.x.x utilizar --color-primary-light-80*/
 
   --color-table-box-shadow-overlay-content: var(--color-black-alpha-30);
-  /*Deprecated v16.x.x */
+  /*Deprecated v17.x.x */
 
   --color-table-color-actions: var(--color-action-default);
-  /*Deprecated v16.x.x */
+  /*Deprecated v17.x.x */
 
   --color-table-color-header: var(--color);
-  /*Deprecated v16.x.x utilizar --color*/
+  /*Deprecated v17.x.x utilizar --color*/
 
   --color-table-color-text: var(--color);
-  /*Deprecated v16.x.x utilizar --color*/
+  /*Deprecated v17.x.x utilizar --color*/
 
   --color-table-color-disabled: var(--color-disabled);
-  /*Deprecated v16.x.x utilizar --color-disabled*/
+  /*Deprecated v17.x.x utilizar --color-disabled*/
 
   --color-table-color-subtitle-text: var(--color-neutral-light-00);
 

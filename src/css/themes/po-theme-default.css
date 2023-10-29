@@ -283,17 +283,17 @@ po-accordion-manager {
    * Accordion Item Header
   */
   --color-accordion-header-color-primary: var(--color);
-  /*Deprecated v16.x.x utilizar --color*/
+  /*Deprecated v18.x.x utilizar --color*/
   --color-accordion-header-color-hover: var(--color-hover);
-  /*Deprecated v16.x.x utilizar --color-hover*/
+  /*Deprecated v18.x.x utilizar --color-hover*/
 
   /**
   * Accordion Item Header Button
   */
   --color-accordion-item-header-button-background-color: var(--background-color);
-  /*Deprecated v16.x.x utilizar --background-color*/
+  /*Deprecated v18.x.x utilizar --background-color*/
   --color-accordion-item-header-button-focus: var(--color-focus);
-  /*Deprecated v16.x.x utilizar --color-focus*/
+  /*Deprecated v18.x.x utilizar --color-focus*/
 
   /*------------------------------------*\
     AVATAR

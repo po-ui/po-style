@@ -23,13 +23,13 @@ e resumidamente falando, o que aconteceu com esse arquivo foi o seguinte:
 
 ``` css
 /* Isso "compilando" ... */
-.po-button {
-  background-color: var(--color-button-background-color);
-  color: var(--color-button-color);
+po-button {
+  --color: var(--color-action-default);
+  --background-color: var(--color-transparent);
 }
 
 /* ... vira isso. */
-.po-button{background-color: transparent;color: #8241a4;}
+.po-button{background-color: transparent;color: #753399;}
 ```
 
 ### Configurando sua aplicação para permitir customização das cores
@@ -57,9 +57,9 @@ Crie um novo arquivo CSS para o seu projeto Angular ou altere um arquivo já exi
 linhas:
 
 ``` css
-:root {
-  --color-button-color: white;
-  --color-button-background-color: black;
+po-button {
+  --color: white;
+  --background-color: black;
 }
 ```
 
@@ -71,9 +71,9 @@ Caso você queira customizar todas as cores é possível usar algumas das variá
 
 ``` css
 :root {
-  --color-primary: red;
-  --color-secondary: green;
-  --color-tertiary: blue;
+  --color-brand-01-base: red;
+  --color-brand-02-base: green;
+  --color-brand-03-base: blue;
 }
 ```
 

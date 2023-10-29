@@ -1703,7 +1703,6 @@ po-widget {
   --color-widget-color-title-action: var(--color-primary);
   --color-widget-color-widget-primary: var(--color-neutral-dark-90);
 
-  --color-widget-background-color: var(--background) /* Deprecated v16.x.x utilizar --background */;
   --color-widget-primary-background-color: var(--color-brand-03-base);
 
   --border-widget-border-no-shadow: solid var(--border-width) var(--color-neutral-light-10);

@@ -6,82 +6,92 @@
  * CONTENTS
  *
  * COMMONS
- * Common......................configurações.
- * Color.......................variáveis globais de cores.
- * Color Palette...............variáveis da peleta de cores.
- * Font........................variáveis de fontes.
+ * Common.........................configurações.
+ * Color..........................variáveis globais de cores.
+ * Color Palette..................variáveis da peleta de cores.
+ * Font...........................variáveis de fontes.
  *
  * COMPONENTS
- * Accordion...................variáveis do Accordion.
- * Avatar......................variáveis do Avatar.
- * Button......................variáveis do Button.
- * Badge.......................variáveis do Badge.
- * Breadcrumb..................variáveis do Breadcrumb.
- * Button Group................variáveis do Button Group.
- * Calendar....................variáveis do Calendar.
- * Chart.......................variáveis do Chart.
- * Checkbox Group..............variáveis do Checkbox Group.
- * Combo.......................variáveis do Combo.
- * Container...................variáveis do Container.
- * Datepicker Range............variáveis do Datepicker Range.
- * Disclaimer..................variáveis do Disclaimer.
- * Disclaimer Group............variáveis do Disclaimer Group.
- * Divider.....................variáveis do Divider.
- * Dropdown....................variáveis do Dropdown.
- * Field Container.............variáveis do Field Container.
- * Field Container Bottom......variáveis do Field Container Bottom.
- * Field Icon..................variáveis do Field Icon.
- * Gauge.......................variáveis do Gauge.
- * Info........................variáveis do Info.
- * Input.......................variáveis do Input.
- * Link........................variáveis do Link.
- * List View...................variáveis do List View.
- * Loading.....................variáveis do Loading.
- * Loading Overlay.............variáveis do Loading Overlay.
- * Lookup......................variáveis do Lookup.
- * Menu........................variáveis do Menu.
- * Menu Filter.................variáveis do Menu Filter.
- * Menu Panel..................variáveis do Menu Panel.
- * Modal.......................variáveis do Modal.
- * Modal Password Recovery.....variáveis do Modal Password Recovery.
- * Multiselect.................variáveis do Multiselect.
- * Navbar......................variáveis do Navbar.
- * Navbar Action...............variáveis do Navbar Action.
- * Navbar Action Popup.........variáveis do Navbar Action Popup.
- * Navbar Item.................variáveis do Navbar Item.
- * Navbar Item Navigation......variáveis do Navbar Item Navigation.
- * Page........................variáveis do Page.
- * Page Background.............variáveis do Page Background.
- * Page Blocked User...........variáveis do Page Blocked User.
- * Page Change Password........variáveis do Page Change Password.
- * Page Content................variáveis do Page Content.
- * Page Header................ variáveis do Page Header.
- * Page List...................variáveis do Page List.
- * Page Login..................variáveis do Page Login.
- * Popover.....................variáveis do Popover.
- * Popup.......................variáveis do Popup.
- * Radio.......................variáveis do Radio.
- * Radio Group.................variáveis do Radio Group.
- * Rich Text...................variáveis do Rich Text.
- * Select......................variáveis do Select.
- * Slide.......................variáveis do Slide.
- * Stepper.....................variáveis do Stepper.
- * Switch......................variáveis do Switch.
- * Tab Button..................variáveis do Tab Button.
- * Tab Dropdown................variáveis do Tab Dropdown.
- * Table.......................variáveis do Table.
- * Table Column Link...........variáveis do Table Column Link.
- * Table Column Manager .......variáveis do Table Column Manager.
- * Tag.........................variáveis do Tag.
- * Textarea....................variáveis do Textarea.
- * Toolbar.....................variáveis do Toolbar.
- * Tooltip.....................variáveis do Tooltip.
- * Tree View...................variáveis do Tree View.
- * Upload......................variáveis do Upload.
- * Widget......................variáveis do Widget.
+ * Accordion......................variáveis do Accordion.
+ * Accordion Manager..............variáveis do Acoordion Manager.
+ * Accordion Item Header..........variáveis do Accordion Item Header.
+ * Accordion Item Header Button...variáveis do Accordion Item Header Button.
+ * Avatar.........................variáveis do Avatar.
+ * Button.........................variáveis do Button.
+ * Badge..........................variáveis do Badge.
+ * Breadcrumb.....................variáveis do Breadcrumb.
+ * Button Group...................variáveis do Button Group.
+ * Calendar.......................variáveis do Calendar.
+ * Chart..........................variáveis do Chart.
+ * Checkbox Group.................variáveis do Checkbox Group.
+ * Combo..........................variáveis do Combo.
+ * Container......................variáveis do Container.
+ * Datepicker Range...............variáveis do Datepicker Range.
+ * Disclaimer.....................variáveis do Disclaimer.
+ * Disclaimer Group...............variáveis do Disclaimer Group.
+ * Divider........................variáveis do Divider.
+ * Dropdown.......................variáveis do Dropdown.
+ * Field Container Bottom.........variáveis do Field Container Bottom.
+ * Field Icon.....................variáveis do Field Icon.
+ * Gauge..........................variáveis do Gauge.
+ * Info...........................variáveis do Info.
+ * Input..........................variáveis do Input.
+ * Label..........................variáveis do Label.
+ * Link...........................variáveis do Link.
+ * Listbox........................variáveis do listbox.
+ * Itemlist.......................variáveis do Itemlist
+ * List View......................variáveis do List View.
+ * Loading........................variáveis do Loading.
+ * Loading Overlay................variáveis do Loading Overlay.
+ * Lookup.........................variáveis do Lookup.
+ * Menu...........................variáveis do Menu.
+ * Menu Item......................variáveis do Menu Item.
+ * Menu Filter....................variáveis do Menu Filter.
+ * Menu Panel.....................variáveis do Menu Panel.
+ * Modal..........................variáveis do Modal.
+ * Modal Password Recovery........variáveis do Modal Password Recovery.
+ * Multiselect....................variáveis do Multiselect.
+ * Navbar.........................variáveis do Navbar.
+ * Navbar Action..................variáveis do Navbar Action.
+ * Navbar Action Popup............variáveis do Navbar Action Popup.
+ * Navbar Item....................variáveis do Navbar Item.
+ * Navbar Item Navigation.........variáveis do Navbar Item Navigation.
+ * Page...........................variáveis do Page.
+ * Page Background................variáveis do Page Background.
+ * Page Blocked User..............variáveis do Page Blocked User.
+ * Page Change Password...........variáveis do Page Change Password.
+ * Page Content...................variáveis do Page Content.
+ * Page Header................ ...variáveis do Page Header.
+ * Page List......................variáveis do Page List.
+ * Page Login.....................variáveis do Page Login.
+ * Page Slide.....................variáveis do Page Slide.
+ * Popover........................variáveis do Popover.
+ * Popup..........................variáveis do Popup.
+ * Popup Item List................variáveis do Popup Item List.
+ * Progress.......................variáveis do Progress.
+ * Progress Bar...................variáveis do Progress Bar.
+ * Radio..........................variáveis do Radio.
+ * Rich Text......................variáveis do Rich Text.
+ * Search.........................variáveis do Search.
+ * Select.........................variáveis do Select.
+ * Slide..........................variáveis do Slide.
+ * Stepper........................variáveis do Stepper.
+ * Switch.........................variáveis do Switch.
+ * Tab Button.....................variáveis do Tab Button.
+ * Tab Dropdown...................variáveis do Tab Dropdown.
+ * Table..........................variáveis do Table.
+ * Table Column Link..............variáveis do Table Column Link.
+ * Table List Manager.............variáveis do Table List Manager.
+ * Tag............................variáveis do Tag.
+ * Textarea.......................variáveis do Textarea.
+ * Toolbar........................variáveis do Toolbar.
+ * Tooltip........................variáveis do Tooltip.
+ * Tree View......................variáveis do Tree View.
+ * Upload.........................variáveis do Upload.
+ * Widget.........................variáveis do Widget.
  *
  * SERVICES
- * Toaster.....................variáveis do Toaster.
+ * Toaster........................variáveis do Toaster.
  */
 
 /*------------------------------------*\
@@ -96,10 +106,12 @@
   --color-wrapper-menu-panel-color-background: var(--color-neutral-light-00);
   --color-overlay-background-color-overlay: var(--color-secondary-dark-60-alpha-70);
   --color-hr-border-top: var(--color-neutral-light-10);
+
+  --outline-width: var(--border-width-lg);
 }
 
 /*------------------------------------*\
-  BRAND TOKENS
+  BRAND TOKENS - PO UI
 \*------------------------------------*/
 
 :root {
@@ -138,7 +150,7 @@
 }
 
 /*------------------------------------*\
-  COLOR Deprecated v16.x.x Utilizar brand tokens
+  COLOR PO UI LEGACY - Essas variáveis serão removidas conforme evolução da implementação do AnimaliaDS
 \*------------------------------------*/
 
 :root {
@@ -149,19 +161,18 @@
   --color-primary-dark-20: #9d2c67; /* Hover do Botão primário, Links, Cor da borda do botão secundário */
   --color-primary-dark-40: #8b255a; /* Pressed do Botão primário, Links, Cor da borda do botão secundário */
 
-  /* Secondary */
-
   --color-secondary-dark-60-alpha-70: rgba(59, 28, 74, 0.7); /* Overlay de Modal e Menu (70% de opacidade) */
   --color-secondary-dark-60: #3b1c4a;
-
-  /* Tertiary */
 
   --color-tertiary-light-90: #fffaef; /* Cor do background da linha de arquivo em carregamento (Upload) */
   --color-tertiary-dark-5: #f4d069; /* Cor de gráficos, botão do disclaimer */
   --color-tertiary-dark-40: #d2b25a;
   --color-tertiary-dark-60: #ac9249;
+
   --color-white-alpha-30: rgba(255, 255, 255, 0.3);
+
   --color-neutral-alpha-45: rgba(74, 92, 96, 0.45); /* Borda superior do itens do menu (45% de opacidade) */
+
   --color-black-alpha-10: rgba(0, 0, 0, 0.1); /* Usar em sombras (10% de opacidade) */
   --color-black-alpha-15: rgba(0, 0, 0, 0.15); /* Usar em menu: Hover - Background de item de menu (15% de opacidade) */
   --color-black-alpha-30: rgba(
@@ -171,15 +182,16 @@
     0.3
   ); /* Usar em menu: Background dos itens de segundo nível (30% de opacidade) */
   --color-black: #000000;
+
   --color-success: #00b28e; /* Background do Feedback de sucesso */
   --color-warning: #ea9b3e; /* Background do Feedback de atenção */
   --color-danger-dark-20: #9e3933; /* Hover para botão danger */
+
   --color-transparent: transparent;
-  --outline-width: var(--border-width-lg);
 
   /*------------------------------------*\
-    COLOR-PALETTE
-  \*------------------------------------*/
+  COLOR-PALETTE
+\*------------------------------------*/
 
   /* Cores que podem ser utilizadas na coluna de labels, legenda e cor de icones do componente table, também utilizadas na tag e badge */
   --color-01: #0c9abe;
@@ -196,14 +208,13 @@
   --color-12: #06a6a5;
 
   /*------------------------------------*\
-    FONT
-  \*------------------------------------*/
+  FONT
+\*------------------------------------*/
 
   /**
    * Variáveis para definições de fontes. O PO utiliza as variantes *extra light*, *regular* e *bold* em seus componentes e, para cada uma delas,
    * é atribuído um @font-face específico. Os nomes elencados no `font-family` no @font-face devem ser os mesmos atribuídos como valor para as variáveis.
    */
-  /* --font-family: Roboto; */
   --font-family-theme: Roboto;
   --font-family-theme-bold: Roboto-Bold;
   --font-family-theme-extra-light: Roboto-Condensed-Light;
@@ -264,6 +275,9 @@ po-accordion {
   --color-disabled: var(--color-neutral-mid-60);
 }
 
+/*------------------------------------*\
+  ACCORDION MANAGER
+\*------------------------------------*/
 po-accordion-manager {
   --background-color: var(--color-brand-01-lightest);
   --color: var(--color-action-default);
@@ -279,35 +293,31 @@ po-accordion-manager {
 }
 
 :root {
-  /**
-   * Accordion Item Header
-  */
+  /*------------------------------------*\
+  ACCORDION ITEM HEADER
+\*------------------------------------*/
   --color-accordion-header-color-primary: var(--color);
   /*Deprecated v18.x.x utilizar --color*/
   --color-accordion-header-color-hover: var(--color-hover);
   /*Deprecated v18.x.x utilizar --color-hover*/
 
-  /**
-  * Accordion Item Header Button
-  */
+  /*------------------------------------*\
+  ACCORDION ITEM HEADER BUTTON
+\*------------------------------------*/
   --color-accordion-item-header-button-background-color: var(--background-color);
   /*Deprecated v18.x.x utilizar --background-color*/
   --color-accordion-item-header-button-focus: var(--color-focus);
   /*Deprecated v18.x.x utilizar --color-focus*/
 
   /*------------------------------------*\
-    AVATAR
-  \*------------------------------------*/
-
+  AVATAR
+\*------------------------------------*/
   --color-avatar-background-color-avatar: var(--color-neutral-dark-70);
 }
 
 /*------------------------------------*\
   BUTTON
 \*------------------------------------*/
-
-/* -------------------------------------------------------- */
-
 po-button {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-default);
@@ -353,16 +363,14 @@ po-button {
 
 :root {
   /*------------------------------------*\
-    BADGE
-  \*------------------------------------*/
-
+  BADGE
+\*------------------------------------*/
   --color-badge-color: var(--color-neutral-light-00);
-
-  /*------------------------------------*\
-    BREADCRUMB
-  \*------------------------------------*/
 }
 
+/*------------------------------------*\
+  BREADCRUMB
+\*------------------------------------*/
 po-breadcrumb {
   --font-family: var(--font-family-theme);
   --color-icon: var(--color-neutral-mid-60);
@@ -374,8 +382,8 @@ po-breadcrumb {
   --color-breadcrumb-color-item: var(--color); /*Deprecated v18.x.x utilizar --color */
 
   /*------------------------------------*\
-    BUTTON GROUP
-  \*------------------------------------*/
+  BUTTON GROUP
+\*------------------------------------*/
   --color-button-group-background-selected: var(--color-brand-01-darker);
   --color-button-group-border-selected: var(--color-brand-01-darker);
   --color-button-group-color-selected: var(--color-neutral-light-00);
@@ -393,9 +401,8 @@ po-breadcrumb {
   --color-button-group-color-neutral-disabled: var(--color-neutral-light-30);
 
   /*------------------------------------*\
-    CALENDAR
-  \*------------------------------------*/
-
+  CALENDAR
+\*------------------------------------*/
   --color-calendar-background-color: var(--color-neutral-light-00);
   --color-calendar-arrow: var(--color-primary);
   --color-calendar-title: var(--color-primary);
@@ -422,26 +429,21 @@ po-breadcrumb {
   --color-calendar-color-box-foreground-disabled: var(--color-neutral-light-20);
 
   /*------------------------------------*\
-    CHART
-  \*------------------------------------*/
-
+  CHART
+\*------------------------------------*/
   --color-chart-background-color: var(--color-neutral-light-00);
   --color-chart-legend-wrapper-scrollbar: var(--color-primary-alpha-50);
   --color-chart-axis-stroke: var(--color-neutral-light-20);
   --color-chart-legend-text: var(--color-neutral-dark-70);
   --color-chart-axis-label-text: var(--color-neutral-dark-90);
 
-  /**
-   * Chart Types
-   */
-
+  /* Chart Types */
   --color-chart-line-point-fill: var(--color-neutral-light-00);
 }
 
 /*------------------------------------*\
-    CHECKBOX
-  \*------------------------------------*/
-
+  CHECKBOX
+\*------------------------------------*/
 po-checkbox {
   --border-color: var(--color-neutral-dark-70);
   --color-unchecked: var(--color-neutral-light-00);
@@ -482,9 +484,8 @@ po-checkbox {
   /* Deprecated v17.x.x utilizar --shadow-color-hover */
 
   /*------------------------------------*\
-    CHECKBOX GROUP
-  \*------------------------------------*/
-
+  CHECKBOX GROUP
+\*------------------------------------*/
   --color-checkbox-group-border-input-invalid: var(--color-feedback-negative-base);
 }
 /*------------------------------------*\
@@ -515,8 +516,8 @@ po-combo {
 }
 
 /*------------------------------------*\
-    CONTAINER
-  \*------------------------------------*/
+  CONTAINER
+\*------------------------------------*/
 po-container {
   --border-radius: var(--border-radius-md);
   --background: var(--color-neutral-light-00);
@@ -561,19 +562,25 @@ po-disclaimer {
 
 :root {
   /*------------------------------------*\
-    DISCLAIMER GROUP
-  \*------------------------------------*/
+  DISCLAIMER GROUP
+\*------------------------------------*/
 
   --color-disclaimer-group-background-color: var(--color-neutral-light-00);
   --color-disclaimer-group-border-color: var(--color-neutral-light-10);
   --color-disclaimer-group-font-title: var(--color-neutral-dark-70);
 }
 
+/*------------------------------------*\
+  DIVIDER
+\*------------------------------------*/
 po-divider {
   --color: var(--color-neutral-mid-40);
   --stroke-linecap: round;
 }
 
+/*------------------------------------*\
+  DROPDOWN
+\*------------------------------------*/
 po-dropdown {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-default);
@@ -599,10 +606,6 @@ po-dropdown {
 }
 
 :root {
-  /*------------------------------------*\
-    DROPDOWN
-  \*------------------------------------*/
-
   --color-dropdown-button-color: var(--color); /* Deprecated v17.x.x utilizar --color */
   --color-dropdown-button-border-color: var(--color); /* Deprecated v17.x.x utilizar --color */
 
@@ -617,6 +620,9 @@ po-dropdown {
   ); /* Deprecated v17.x.x utilizar --color-action-disabled */
 }
 
+/*------------------------------------*\
+  FIELD CONTAINER BOTTOM
+\*------------------------------------*/
 po-field-container-bottom {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-sm);
@@ -630,25 +636,19 @@ po-field-container-bottom {
 }
 
 :root {
-  /*------------------------------------*\
-    FIELD CONTAINER BOTTOM
-  \*------------------------------------*/
-
   --color-field-container-bottom-color-text-error: var(--text-color-error);
   --color-field-container-color-help: var(--text-color-help);
 
   /*------------------------------------*\
-    FIELD ICON
-  \*------------------------------------*/
-
+  FIELD ICON
+\*------------------------------------*/
   --color-field-icon-color: var(--color-primary);
   --color-field-icon-color-error: var(--color-feedback-negative-base);
   --color-field-icon-color-disabled: var(--color-neutral-light-30);
 
   /*------------------------------------*\
-    GAUGE
-  \*------------------------------------*/
-
+  GAUGE
+\*------------------------------------*/
   --color-gauge-base-color: var(--color-neutral-light-20);
   --color-gauge-description-text-color: var(--color-neutral-dark-70);
   --color-gauge-description-bottom-focus: var(--color-action-default);
@@ -657,9 +657,8 @@ po-field-container-bottom {
   --color-gauge-pointer-color: var(--color-neutral-dark-70);
 
   /*------------------------------------*\
-    INFO
-  \*------------------------------------*/
-
+  INFO
+\*------------------------------------*/
   --color-info-color-text-label: var(--color-neutral-dark-70);
   --color-info-color-text-value: var(--color-neutral-dark-90);
 
@@ -671,7 +670,6 @@ po-field-container-bottom {
 /*------------------------------------*\
   INPUT
 \*------------------------------------*/
-
 po-input,
 po-url,
 po-login,
@@ -736,7 +734,6 @@ po-label {
 /*------------------------------------*\
   LINK
 \*------------------------------------*/
-
 po-link {
   --font-family: var(--font-family-theme);
   --text-color: var(--color-action-default);
@@ -750,7 +747,6 @@ po-link {
 /*------------------------------------*\
   LISTBOX
 \*------------------------------------*/
-
 po-listbox {
   --border-radius: var(--border-radius-md);
   --border-width: var(--border-width-sm);
@@ -762,7 +758,6 @@ po-listbox {
 /*------------------------------------*\
   ITEM LIST
 \*------------------------------------*/
-
 po-item-list {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-default);
@@ -803,23 +798,21 @@ po-item-list:is([p-type='option'], [p-type='check']) {
   --color-list-view-color-select-all-label: var(--color-neutral-dark-70);
 
   /*------------------------------------*\
-    LOADING
-  \*------------------------------------*/
+  LOADING
+\*------------------------------------*/
   --color-loading-color-label: var(--color-neutral-dark-70);
   --color-loading-icon-color-neutral: var(--color-neutral-light-20);
   --color-loading-icon-color-primary: var(--color-primary);
 
   /*------------------------------------*\
-    LOADING OVERLAY
-  \*------------------------------------*/
-
+  LOADING OVERLAY
+\*------------------------------------*/
   --color-loading-overlay-background-color-content: var(--color-neutral-light-00);
   --color-loading-overlay-box-shadow-content: var(--color-black-alpha-30);
 
   /*------------------------------------*\
-    LOOKUP
-  \*------------------------------------*/
-
+  LOOKUP
+\*------------------------------------*/
   --color-lookup-search-background-color-text: var(--color-neutral-light-00);
   --color-lookup-search-border-text: var(--color-neutral-light-30);
   --color-lookup-search-border-text-focusable: var(--color-primary);
@@ -935,9 +928,8 @@ po-menu-filter {
   /*Deprecated v17.x.x utilizar --color-focused*/
 
   /*------------------------------------*\
-    MENU PANEL
-  \*------------------------------------*/
-
+  MENU PANEL
+\*------------------------------------*/
   --color-menu-panel-background-color-item-hover: var(--color-black-alpha-15);
   --color-menu-panel-background-color-item-selected: var(--color-neutral-light-20);
   --color-menu-panel-background-color-menu: var(--color-neutral-light-00);
@@ -948,6 +940,9 @@ po-menu-filter {
   --color-menu-panel-color-menu-item-selected: var(--color-neutral-dark-90);
 }
 
+/*------------------------------------*\
+  MODAL
+\*------------------------------------*/
 po-modal {
   --border-radius: var(--border-radius-md);
   --border-width: var(--border-width-sm);
@@ -958,18 +953,15 @@ po-modal {
   --opacity-overlay: 0.7;
   --color-divider: var(--color-neutral-light-20);
 }
-/*------------------------------------*\
-    MODAL
-  \*------------------------------------*/
+
 :root {
   --color-modal-background-color-content: var(--background); /*Deprecated v17.x.x utilizar --background*/
   --color-modal-color-overlay: var(--color-overlay); /*Deprecated v17.x.x utilizar --color-overlay*/
   --shadow-modal-content: var(--shadow); /*Deprecated v17.x.x utilizar --shadow*/
 
   /*------------------------------------*\
-    MODAL PASSWORD RECOVERY
-  \*------------------------------------*/
-
+  MODAL PASSWORD RECOVERY
+\*------------------------------------*/
   --color-modal-password-recovery-link-color: var(--color-primary);
   --color-modal-password-recovery-link-color-hover: var(--color-primary-dark-20);
   --color-modal-password-recovery-text-color: var(--color-neutral-dark-70);
@@ -1003,63 +995,54 @@ po-multiselect {
 
 :root {
   /*------------------------------------*\
-    NAVBAR
-  \*------------------------------------*/
-
+  NAVBAR
+\*------------------------------------*/
   --color-navbar-color: var(--color-neutral-light-00);
 
   /*------------------------------------*\
-    NAVBAR ACTION
-  \*------------------------------------*/
-
+  NAVBAR ACTION
+\*------------------------------------*/
   --color-navbar-action-color-content: var(--color-primary);
 
   /*------------------------------------*\
-    NAVBAR ACTION POPUP
-  \*------------------------------------*/
-
+  NAVBAR ACTION POPUP
+\*------------------------------------*/
   --color-navbar-action-popup-color-content: var(--color-navbar-action-color-content);
 
   /*------------------------------------*\
-    NAVBAR ITEM
-  \*------------------------------------*/
-
+  NAVBAR ITEM
+\*------------------------------------*/
   --color-navbar-item-color: var(--color-primary);
   --color-navbar-item-color-selected: var(--color-neutral-dark-70);
   --color-navbar-item-color-shadow-selected: var(--color-feedback-negative-light);
 
   /*------------------------------------*\
-    NAVBAR ITEM NAVIGATION
-  \*------------------------------------*/
-
+  NAVBAR ITEM NAVIGATION
+\*------------------------------------*/
   --color-navbar-item-navigation-color-icon: var(--color-primary);
   --color-navbar-item-navigation-color-icon-disabled: var(--color-neutral-light-20);
 
   /*------------------------------------*\
-    PAGE
-  \*------------------------------------*/
-
+  PAGE
+\*------------------------------------*/
   --color-page-background-color-page: var(--color-neutral-light-00);
 
   /*------------------------------------*\
-    PAGE BACKGROUND
-  \*------------------------------------*/
-
+  PAGE BACKGROUND
+\*------------------------------------*/
   --color-page-background-select-item-border-color: var(--color-neutral-light-10);
 
   /*------------------------------------*\
-    PAGE BLOCKED USER
-  \*------------------------------------*/
-
+  PAGE BLOCKED USER
+\*------------------------------------*/
   --color-page-blocked-user-link-color: var(--color-primary);
   --color-page-blocked-user-link-color-hover: var(--color-primary-dark-20);
   --color-page-blocked-user-text-color: var(--color-neutral-dark-70);
   --color-page--blocked-user-background-color: var(--color-neutral-light-05);
 
   /*------------------------------------*\
-    PAGE CHANGE PASSWORD
-  \*------------------------------------*/
-
+  PAGE CHANGE PASSWORD
+\*------------------------------------*/
   --color-page-change-password-background-color-buttons: var(--color-neutral-light-05);
   --color-page-change-password-background-color-container: var(--color-neutral-light-00);
   --color-page-change-password-background-color-secondary-logo: var(--color-neutral-light-05);
@@ -1071,27 +1054,23 @@ po-multiselect {
   --color-page-change-password-color-required-text: var(--color-secondary-dark-60-alpha-70);
 
   /*------------------------------------*\
-    PAGE CONTENT
-  \*------------------------------------*/
-
+  PAGE CONTENT
+\*------------------------------------*/
   --color-page-content-background-color-scrollbar: var(--color-primary);
 
   /*------------------------------------*\
-    PAGE HEADER
-  \*------------------------------------*/
-
+  PAGE HEADER
+\*------------------------------------*/
   --color-page-header-color-title: var(--color-neutral-dark-70);
 
   /*------------------------------------*\
-    PAGE LIST
-  \*------------------------------------*/
-
+  PAGE LIST
+\*------------------------------------*/
   --color-page-list-color-link-text: var(--color-primary);
 
   /*------------------------------------*\
-    PAGE LOGIN
-  \*------------------------------------*/
-
+  PAGE LOGIN
+\*------------------------------------*/
   --color-page-login-header-product-name-color: var(--color-neutral-dark-70);
   --color-page-login-header-welcome-color: var(--color-action-default);
   --color-page-login-background-color: var(--color-neutral-light-05);
@@ -1105,32 +1084,30 @@ po-multiselect {
   --color-page-login-support-color: var(--color-primary);
 }
 
+/*------------------------------------*\
+  PAGE SLIDE
+\*------------------------------------*/
 po-page-slide {
-  /* BASE */
+  /* base */
   --background-color: var(--color-neutral-light-00);
   --border-radius: var(--border-radius-md);
 
-  /* OVERLAY */
+  /* overlay */
   --color-overlay: var(--color-neutral-dark-80);
   --opacity-overlay: 0.7;
 
-  /* TITLE */
+  /* title */
   --font-family: var(--font-family-heading);
   --color-title: var(--color-neutral-dark-95);
 }
 
 :root {
-  /*------------------------------------*\
-    PAGE SLIDE
-  \*------------------------------------*/
-
   --color-page-slide-close-button-color: var(--color-primary);
   --color-page-slide-body-text-color: var(--color-neutral-dark-90);
 
   /*------------------------------------*\
-    POPOVER
-  \*------------------------------------*/
-
+  POPOVER
+\*------------------------------------*/
   --color-popover-background-color: var(--color-neutral-light-00);
   --color-popover-background-color-arrow: var(--color-neutral-light-00);
   --color-popover-background-color-scrollbar: var(--color-primary);
@@ -1139,9 +1116,8 @@ po-page-slide {
 }
 
 /*------------------------------------*\
-    POPUP
-  \*------------------------------------*/
-
+  POPUP
+\*------------------------------------*/
 po-popup,
 po-popup po-listbox {
   --border-radius: var(--border-radius-md);
@@ -1198,9 +1174,8 @@ po-popup po-item-list {
   --color-popup-color-item-selected: var(--color-option); /*Deprecated v17.x.x utilizar --color-option */
 
   /*------------------------------------*\
-    PROGRESS
-  \*------------------------------------*/
-
+  PROGRESS
+\*------------------------------------*/
   --color-progress-color-info-icon: var(--color-primary);
   --color-progress-color-text: var(--color-neutral-dark-70);
   --color-progress-color-text-success: var(--color-success);
@@ -1210,9 +1185,8 @@ po-popup po-item-list {
   --color-progress-border-color-info-icon-close: var(--color-action-default);
 
   /*------------------------------------*\
-    PROGRESS BAR
-  \*------------------------------------*/
-
+  PROGRESS BAR
+\*------------------------------------*/
   --color-progress-bar-background-color-bar: var(--color-primary-light-80);
   --color-progress-bar-background-color-default: var(--color-primary);
   --color-progress-bar-background-color-success: var(--color-success);
@@ -1222,7 +1196,6 @@ po-popup po-item-list {
 /*------------------------------------*\
   RADIO
 \*------------------------------------*/
-
 po-radio {
   --color-unchecked: var(--color-neutral-light-00);
   --border-color: var(--color-neutral-dark-70);
@@ -1244,9 +1217,8 @@ po-radio {
 
 :root {
   /*------------------------------------*\
-    RICH TEXT
-  \*------------------------------------*/
-
+  RICH TEXT
+\*------------------------------------*/
   --color-rich-text-background-color-scrollbar: var(--color-primary-alpha-50);
 
   --color-rich-text-body-background-color: var(--color-neutral-light-00);
@@ -1263,9 +1235,35 @@ po-radio {
 }
 
 /*------------------------------------*\
+  SEARCH
+\*------------------------------------*/
+po-search {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --text-color-placeholder: var(--color-neutral-light-30);
+  --color: var(--color-neutral-dark-70);
+  --border-radius: var(--border-radius-md);
+  --background: var(--color-neutral-light-05);
+
+  --text-color: var(--color-neutral-dark-90);
+
+  --color-icon-read: var(--color-neutral-dark-70);
+
+  --color-clear: var(--color-action-default);
+
+  --color-hover: var(--color-action-hover);
+  --background-hover: var(--color-brand-01-lightest);
+
+  --color-focused: var(--color-action-default);
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-disabled: var(--color-action-disabled);
+  --background-disabled: var(--color-neutral-light-20);
+}
+
+/*------------------------------------*\
   SELECT
 \*------------------------------------*/
-
 po-select {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-default);
@@ -1291,9 +1289,8 @@ po-select {
 
 :root {
   /*------------------------------------*\
-    SLIDE
-  \*------------------------------------*/
-
+  SLIDE
+\*------------------------------------*/
   --color-slide-background-color-active-circle: var(--color-primary);
   --color-slide-background-color-arrow-circle: var(--color-neutral-light-00);
   --color-slide-background-color-circle: var(--color-neutral-light-20);
@@ -1303,9 +1300,8 @@ po-select {
   --color-slide-box-shadow-wrapper: var(--color-black-alpha-30);
 
   /*------------------------------------*\
-    STEPPER
-  \*------------------------------------*/
-
+  STEPPER
+\*------------------------------------*/
   --color-stepper-bar: var(--color-neutral-dark-70);
   --color-stepper-bar-disabled: var(--color-neutral-mid-40);
   --color-stepper-circle-active: var(--color-primary);
@@ -1317,7 +1313,6 @@ po-select {
 /*------------------------------------*\
   SWITCH
 \*------------------------------------*/
-
 po-switch {
   --color-unchecked: var(--color-neutral-light-00);
   --border-color: var(--color-neutral-dark-70);
@@ -1337,9 +1332,8 @@ po-switch {
 
 :root {
   /*------------------------------------*\
-    TAB BUTTON
-  \*------------------------------------*/
-
+  TAB BUTTON
+\*------------------------------------*/
   --color-tab-button-box-shadow: var(--color-neutral-light-10);
   --color-tab-button-box-shadow-active: var(--color-action-default);
 
@@ -1347,9 +1341,8 @@ po-switch {
   --color-tab-button-color-disabled: var(--color-neutral-light-30);
 
   /*------------------------------------*\
-    TAB DROPDOWN
-  \*------------------------------------*/
-
+  TAB DROPDOWN
+\*------------------------------------*/
   --color-tab-dropdown-background-color-tab-dropdown-button-active: var(--color-primary);
   --color-tab-dropdown-background-color-tab-dropdown-button-disabled: var(--color-neutral-light-00);
   --color-tab-dropdown-background-color-tab-dropdown-button-hover: var(--color-primary-light-95);
@@ -1447,52 +1440,27 @@ po-table {
   --color-table-color-single-action-hover: var(--color-action-hover);
 
   /*------------------------------------*\
-    TABLE COLUMN LINK
-  \*------------------------------------*/
-
+  TABLE COLUMN LINK
+\*------------------------------------*/
   --color-table-color-link-disabled: var(--color-neutral-light-20);
 }
 
 /*------------------------------------*\
-  SEARCH
+  TABLE LIST MANAGER
 \*------------------------------------*/
-po-search {
-  --font-family: var(--font-family-theme);
-  --font-size: var(--font-size-default);
-  --text-color-placeholder: var(--color-neutral-light-30);
-  --color: var(--color-neutral-dark-70);
-  --border-radius: var(--border-radius-md);
-  --background: var(--color-neutral-light-05);
-
-  --text-color: var(--color-neutral-dark-90);
-
-  --color-icon-read: var(--color-neutral-dark-70);
-
-  --color-clear: var(--color-action-default);
-
-  --color-hover: var(--color-action-hover);
-  --background-hover: var(--color-brand-01-lightest);
-
-  --color-focused: var(--color-action-default);
-  --outline-color-focused: var(--color-action-focus);
-
-  --color-disabled: var(--color-action-disabled);
-  --background-disabled: var(--color-neutral-light-20);
-}
 
 po-table-list-manager {
-  /* TYPE */
+  /* type */
   --color-type: var(--color-neutral-dark-70);
 
-  /* COLUMN TEXT */
+  /* column text */
   --color-column-text: var(--color-neutral-dark-95);
 }
 
 :root {
   /*------------------------------------*\
-    TABLE COLUMN MANAGER
-  \*------------------------------------*/
-
+  TABLE COLUMN MANAGER
+\*------------------------------------*/
   --color-table-column-manager-body-color-background-scrollbar: var(--color-primary);
   --color-table-column-manager-border-color: var(--color-neutral-light-10);
   --color-table-column-manager-close-button-color: var(--color-primary);
@@ -1500,6 +1468,9 @@ po-table-list-manager {
   --color-table-column-manager-outline-color-focus: var(--color-action-default);
 }
 
+/*------------------------------------*\
+  TAG
+\*------------------------------------*/
 po-tag {
   --border-radius: var(--border-radius-pill);
   --font-family: var(--font-family-theme);
@@ -1542,9 +1513,6 @@ po-tag {
 }
 
 :root {
-  /*------------------------------------*\
-    TAG
-  \*------------------------------------*/
   --color-tag-background-color-white: var(--color-neutral-light-00);
 
   --color-tag-inverse-border-color-01: var(--color-01);
@@ -1591,8 +1559,8 @@ po-textarea {
 
 :root {
   /*------------------------------------*\
-    TOOLBAR
-  \*------------------------------------*/
+  TOOLBAR
+\*------------------------------------*/
 
   --color-toolbar-background-color-badge: var(--color-feedback-negative-base);
   --color-toolbar-background-color-toolbar: var(--color-neutral-light-00);
@@ -1602,12 +1570,11 @@ po-textarea {
   --color-toolbar-color-badge-text: var(--color-neutral-light-00);
   --color-toolbar-color-default: var(--color-primary);
   --color-toolbar-color-title: var(--color-action-default);
-
-  /*------------------------------------*\
-    TOOLTIP
-  \*------------------------------------*/
 }
 
+/*------------------------------------*\
+  TOOLTIP
+\*------------------------------------*/
 .po-tooltip {
   --color: var(--color-neutral-dark-80);
   --border-radius: var(--border-radius-md);
@@ -1617,8 +1584,8 @@ po-textarea {
 
 :root {
   /*------------------------------------*\
-    TREEVIEW
-  \*------------------------------------*/
+  TREEVIEW
+\*------------------------------------*/
 
   /** Tree View Item */
   --color-tree-view-item-border-bottom-color: var(--color-neutral-light-10);
@@ -1629,8 +1596,8 @@ po-textarea {
   --color-tree-view-item-header-label-text-color: var(--color-neutral-dark-70);
 
   /*------------------------------------*\
-    UPLOAD
-  \*------------------------------------*/
+  UPLOAD
+\*------------------------------------*/
 
   --color-upload-color-text-filename-loading: var(--color-neutral-dark-90);
 
@@ -1670,10 +1637,10 @@ po-textarea {
 
   --color-upload-file-restrictions-color-text: var(--color-neutral-dark-70);
 }
-/*------------------------------------*\
-    WIDGET
-  \*------------------------------------*/
 
+/*------------------------------------*\
+  WIDGET
+\*------------------------------------*/
 po-widget {
   --padding: 1em;
   --border-radius: var(--border-radius-md);
@@ -1716,9 +1683,8 @@ po-widget {
 \*------------------------------------*/
 :root {
   /*------------------------------------*\
-    TOASTER
-  \*------------------------------------*/
-
+  TOASTER
+\*------------------------------------*/
   /**
    * Toaster Item Success
    */

@@ -717,11 +717,36 @@ po-checkbox {
   \*------------------------------------*/
 
   --color-checkbox-group-border-input-invalid: var(--color-danger);
+}
 
-  /*------------------------------------*\
+/*------------------------------------*\
     COMBO
   \*------------------------------------*/
+
+po-combo {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --text-color: var(--color-neutral-dark-60);
+  --text-color-placeholder: var(--color-neutral-light-60);
+  --color: var(--color-neutral-dark-70);
+  --background: var(--color-neutral-light-98);
+  --border-radius: var(--border-width-lg);
+
+  --color-hover: var(--color-secondary-dark-20);
+  --background-hover: var(--color-brand-01-lightest);
+
+  --color-focused: var(--color-secondary);
+  --outline-color-focused: var(--color-outline-focused);
+
+  --color-disabled: var(--color-neutral-light-60);
+  --background-disabled: var(--color-neutral-light-80);
+
+  --color-error: var(--color-feedback-negative-base);
+
+  --text-color-suggestion: var(--color-neutral-mid-60);
+  --background-suggestion: var(--color-brand-01-lightest);
 }
+
 /*------------------------------------*\
     CONTAINER
   \*------------------------------------*/
@@ -918,7 +943,6 @@ po-url,
 po-login,
 po-email,
 po-password,
-po-combo,
 po-lookup,
 po-decimal,
 po-number,

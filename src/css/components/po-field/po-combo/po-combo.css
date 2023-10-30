@@ -1,45 +1,52 @@
-:root {
-  --font-combo-text: {
-    @apply --font-text-large;
-  }
-
-  --font-combo-group-title: {
-    @apply --font-text-small;
-  }
-
-  --font-combo-text-bold: {
-    @apply --font-text-bold;
-  }
-
-  --shadow-combo-box-shadow-content: var(--shadow-card);
+.po-combo-input {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  background-color: var(--background);
+  padding-inline: var(--spacing-xs);
+  border: 1px solid var(--color);
+  border-radius: var(--border-radius);
+  min-height: 2.75em;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 150px;
 }
 
-po-combo.ng-invalid.ng-dirty .po-input {
-  border: solid 1px var(--color-combo-border-button-error) !important;
+.po-combo-input:disabled,
+.po-combo-input[disabled='true'] {
+  border-color: var(--color-disabled);
+  background-color: var(--background-disabled);
+  color: var(--text-color);
+  cursor: not-allowed;
+}
+
+.po-combo-input:focus,
+.po-combo-input-focus {
+  border-color: var(--color-focused);
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.po-combo-input:focus:hover,
+.po-combo-input-focus:hover,
+.po-combo-input:hover:not(:disabled) {
+  border-color: var(--color-hover);
+  background-color: var(--background-hover);
+}
+
+.po-combo-input::placeholder {
+  color: var(--text-color-placeholder);
 }
 
 .po-combo-container {
-  background-color: var(--color-combo-background-color);
-  border-radius: 3px;
-  box-shadow: var(--shadow-combo-box-shadow-content);
   height: auto;
   position: fixed;
   z-index: 1000;
 }
 
-.po-combo-container-content {
-  border-radius: 3px;
-  max-height: 175px;
-  overflow-y: auto;
-}
-
-.po-combo-container-loading,
-.po-combo-container-no-data {
-  height: 96px;
-}
-
-.po-combo-item-title,
-.po-combo-item {
+.po-combo-item-title {
   display: block;
   padding: 10px 16px;
   text-align: left;
@@ -47,47 +54,195 @@ po-combo.ng-invalid.ng-dirty .po-input {
 }
 
 .po-combo-item-title {
-  @apply --font-combo-group-title;
+  font-family: var(--font-family);
   background: var(--color-combo-background-color-group-title);
   color: var(--color-combo-color-group-title);
 }
 
-.po-combo-item {
-  @apply --font-combo-text;
-  color: var(--color-combo-color-primary);
-  cursor: pointer;
-
-  &:hover {
-    background-color: var(--color-combo-background-color-item-hover) !important;
-    color: var(--color-combo-color-primary) !important;
-    text-decoration: none;
-  }
+.po-combo-container-content .po-field-icon-container-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.po-combo-item-selected > .po-combo-item {
-  background-color: var(--color-combo-background-color-selected-primary);
-  color: var(--color-combo-color-selected);
+.po-combo-container-content .po-field-icon-container-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.po-combo-container-content::-webkit-scrollbar {
-  width: 7px;
+.po-combo-container-content .po-field-icon.po-icon.po-icon-arrow-down,
+.po-combo-container-content .po-field-icon.po-icon.po-icon-arrow-up {
+  height: 2.75rem;
+  width: 2.75rem;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid var(--color);
+  border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.po-combo-container-content::-webkit-scrollbar-track {
-  display: none;
+.po-combo-input[disabled='true'] ~ .po-field-icon-container-right .po-field-icon-disabled.po-icon.po-icon-arrow-down,
+.po-combo-input:disabled ~ .po-field-icon-container-right .po-field-icon-disabled.po-icon.po-icon-arrow-down {
+  height: 2.75rem;
+  width: 2.75rem;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid var(--color-disabled);
+  border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+  border-radius: 0px 4px 4px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: not-allowed;
 }
 
-.po-combo-container-content::-webkit-scrollbar-thumb {
-  background-color: var(--color-combo-background-color-scrollbar);
-  border-radius: 2px;
+.po-combo-clean:focus {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: 2px;
+  z-index: 1;
 }
 
-.po-combo-input {
-  padding-right: 30px !important;
-  text-overflow: ellipsis;
+.po-combo-clean:focus .po-icon.po-field-icon.po-icon-clear-content,
+.po-combo-clean:focus .po-icon.po-field-icon.po-icon-clear-content:hover {
+  border-color: var(--color);
 }
 
-.po-combo-no-data {
-  @apply --font-combo-text-bold;
-  padding: 36px 0;
+.po-combo-input:focus ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-down,
+.po-combo-input:focus ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-up {
+  border-color: var(--color-focused);
+}
+
+.po-combo-input:focus:hover ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-down,
+.po-combo-input:focus:hover ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-up {
+  border-color: var(--color-hover);
+}
+
+.po-combo-input:hover ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-down,
+.po-combo-input:hover ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-up {
+  border-left-color: var(--color-hover);
+}
+
+.po-combo-container-content span:hover.po-field-icon.po-icon.po-icon-arrow-down.po-icon-input {
+  background: var(--background-hover);
+  border-color: var(--color);
+}
+
+.po-combo-container-content span:hover.po-field-icon.po-icon.po-icon-arrow-up.po-icon-input,
+.po-combo-container-content
+  .po-combo-input:focus
+  ~ .po-field-icon-container-right
+  span:hover.po-field-icon.po-icon.po-icon-arrow-up.po-icon-input,
+.po-combo-container-content
+  .po-combo-input:focus
+  ~ .po-field-icon-container-right
+  span:hover.po-field-icon.po-icon.po-icon-arrow-down.po-icon-input {
+  background: var(--background-hover);
+  border-color: var(--color-focused);
+}
+
+.po-combo-container-content
+  .po-combo-input-focus
+  ~ .po-field-icon-container-right
+  span:hover.po-field-icon.po-icon.po-icon-arrow-up.po-icon-input {
+  background: var(--background-hover);
+  border-color: var(--color-hover);
+}
+
+.po-combo-container-content .po-field-icon.po-icon.po-icon-clear-content {
+  height: 2.75rem;
+  width: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.po-combo-container-content:focus-within .po-field-icon.po-icon.po-icon-clear-content {
+  border-color: var(--color-focused);
+}
+
+.po-border-focused.po-icon.po-field-icon.po-icon-clear-content:hover {
+  border-color: var(--color-focused);
+}
+
+.po-combo-input:hover
+  ~ .po-field-icon-container-right
+  .po-field-icon.po-icon.po-icon-arrow-down.po-combo-default-border,
+.po-combo-input:hover ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-up.po-combo-default-border,
+.po-combo-input:hover ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-clear-content {
+  border-color: var(--color-hover);
+}
+
+.po-field-icon-container-right .po-field-icon.po-icon.po-combo-background-arrow-up.po-icon-arrow-up {
+  background: var(--background-hover);
+  border-color: var(--color-focused);
+}
+
+.po-icon.po-field-icon.po-icon-clear-content:hover {
+  background: var(--background-hover);
+  border-top: 1px solid var(--color);
+  border-bottom: 1px solid var(--color);
+}
+
+.po-combo-container-content .po-field-icon-container-right {
+  right: 0px;
+}
+
+.po-combo-input.po-input-icon-left {
+  padding-left: 44px;
+}
+
+.po-combo-input.po-input-icon-right {
+  padding-right: 52px;
+}
+
+.po-combo-input.po-input-double-icon-right {
+  padding-right: 96px;
+}
+
+po-combo.ng-invalid.ng-dirty .po-combo-input,
+po-combo.ng-invalid.ng-dirty
+  .po-combo-input:focus
+  ~ .po-field-icon-container-right
+  .po-field-icon.po-icon.po-icon-arrow-down,
+po-combo.ng-invalid.ng-dirty
+  .po-combo-input:focus
+  ~ .po-field-icon-container-right
+  .po-field-icon.po-icon.po-icon-arrow-up,
+po-combo.ng-invalid.ng-dirty
+  .po-combo-input:focus:hover
+  ~ .po-field-icon-container-right
+  .po-field-icon.po-icon.po-icon-arrow-down,
+po-combo.ng-invalid.ng-dirty
+  .po-combo-input:focus:hover
+  ~ .po-field-icon-container-right
+  .po-field-icon.po-icon.po-icon-arrow-up,
+po-combo.ng-invalid.ng-dirty .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-down,
+po-combo.ng-invalid.ng-dirty .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-up,
+po-combo.ng-invalid.ng-dirty .po-field-icon-container-right .po-field-icon.po-icon.po-icon-clear-content,
+po-combo.ng-invalid.ng-dirty
+  .po-combo-container-content
+  .po-combo-input:focus
+  ~ .po-field-icon-container-right
+  span:hover.po-field-icon.po-icon.po-icon-arrow-down.po-icon-input,
+po-combo.ng-invalid.ng-dirty
+  .po-combo-container-content
+  .po-combo-input:focus
+  ~ .po-field-icon-container-right
+  span:hover.po-field-icon.po-icon.po-icon-arrow-up.po-icon-input {
+  border-color: var(--color-error);
+  color: var(--color-error);
+}
+
+po-combo .po-field-container-content {
+  display: inline-table;
 }

@@ -70,7 +70,6 @@ po-clean.po-icon-input span.po-field-icon {
   display: none;
 }
 
-po-combo.ng-invalid.ng-dirty .po-input,
 po-datepicker.ng-invalid.ng-dirty .po-input,
 po-decimal.ng-invalid.ng-dirty .po-input,
 po-email.ng-invalid.ng-dirty .po-input,

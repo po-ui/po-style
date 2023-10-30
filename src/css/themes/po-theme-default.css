@@ -721,19 +721,6 @@ po-checkbox {
   /*------------------------------------*\
     COMBO
   \*------------------------------------*/
-
-  --color-combo-background-color: var(--color-white);
-
-  --color-combo-background-color-item-hover: var(--color-primary-light-95);
-  --color-combo-background-color-scrollbar: var(--color-primary-alpha-50);
-
-  --color-combo-border-button-error: var(--color-danger);
-
-  --color-combo-background-color-group-title: var(--color-neutral-light-98);
-  --color-combo-color-group-title: var(--color-neutral-dark-60);
-  --color-combo-color-primary: var(--color-primary);
-  --color-combo-color-selected: var(--color-white);
-  --color-combo-background-color-selected-primary: var(--color-primary);
 }
 /*------------------------------------*\
     CONTAINER

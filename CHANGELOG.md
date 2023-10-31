@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [16.5.0](https://github.com/po-ui/po-style/compare/v16.4.1...v16.5.0) (2023-10-31)
+
+Compatibilidade com @po-ui/ng-components@16.5.0
+
+### Code Refactoring
+
+* **multiselect:** remove variável não utilizada ([d3bfe95](https://github.com/po-ui/po-style/commit/d3bfe95e49315ac3cc43c3b7f95ab19ce6383b17))
+
+
+### Features
+
+* **listbox:** migra classe que estava no multiselect ([7d7ff0c](https://github.com/po-ui/po-style/commit/7d7ff0c49e42147f7ca49d470ad89173720d60c7))
+* **multiselect:** implementa as definições do AnimaliaDS ([e0eb2e4](https://github.com/po-ui/po-style/commit/e0eb2e487c17759ff93db62d497e69715a6f7a66))
+
+
+### BREAKING CHANGES
+
+* **multiselect:** remove variáveis de customização de cores
+
+Remove variáveis para compatibilidade com @animaliads/multiselect e melhorias
+de acessibilidade, não sendo mais possível a customização.
+
+- `color-multiselect-border-field-focus`: customização da cor da borda interior do multiselect.
+- `color-multiselect-color-primary`: customização da cor de fundo do multiselect que não estava sendo mais utilizada.
+
+
+
 ## [16.4.1](https://github.com/po-ui/po-style/compare/v16.4.0...v16.4.1) (2023-10-23)
 
 Compatibilidade com po-theme-totvs

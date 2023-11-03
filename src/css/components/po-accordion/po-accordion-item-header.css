@@ -1,5 +1,5 @@
 .po-accordion-item-header {
-  border-bottom: 1px solid var(--color-neutral-light-40);
+  border-bottom: 1px solid var(--color-neutral-mid-40);
   position: relative;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .po-accordion-item:is(:first-child) {
-  border-top: 1px solid var(--color-neutral-light-40);
+  border-top: 1px solid var(--color-neutral-mid-40);
 }
 
 .po-accordion-item-header-button {

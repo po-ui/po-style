@@ -44,7 +44,7 @@
 }
 
 .po-popup .po-item-list__danger:not(.po-item-list__disabled) {
-  color: var(--color-popup-color-danger, var(--color-danger));
+  color: var(--color-popup-color-danger, var(--color-feedback-negative-base));
 }
 
 .po-popup .po-item-list__selected:not(.po-item-list__danger) {
@@ -57,5 +57,5 @@
 }
 
 .po-popup .po-item-list__separator {
-  border-top: 1px solid var(--color-popup-border-color-separator, var(--color-neutral-light-90));
+  border-top: 1px solid var(--color-popup-border-color-separator, var(--color-neutral-light-10));
 }

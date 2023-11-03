@@ -101,7 +101,7 @@
 }
 
 .po-modal-title {
-  color: var(--color-neutral);
+  color: var(--color-neutral-dark-70);
   display: flex;
   align-items: center;
   padding-right: var(--spacing-md);
@@ -118,7 +118,7 @@
 
 .po-modal-body {
   @apply --font-modal-body;
-  color: var(--color-neutral-dark-60);
+  color: var(--color-neutral-dark-90);
   overflow-x: auto;
   overflow-y: auto;
   text-align: left;

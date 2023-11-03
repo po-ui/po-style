@@ -55,7 +55,7 @@
 }
 
 .po-calendar-range po-calendar-wrapper + po-calendar-wrapper .po-calendar-wrapper {
-  border-left: 1px solid var(--color-neutral-light-90);
+  border-left: 1px solid var(--color-neutral-light-10);
 }
 
 .po-calendar-header {
@@ -304,7 +304,7 @@
 }
 
 .po-calendar-footer .po-calendar-footer-today .po-calendar-footer-today-button:disabled {
-  color: var(--color-neutral-light-60);
+  color: var(--color-neutral-light-30);
   pointer-events: none;
 }
 

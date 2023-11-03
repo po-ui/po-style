@@ -10,7 +10,7 @@
 }
 
 .po-popover {
-  background-color: var(--color-white);
+  background-color: var(--color-neutral-light-00);
   border-radius: var(--popover-border-radius);
   box-shadow: var(--shadow-popover-box-shadow);
   max-height: 800px;

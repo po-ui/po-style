@@ -265,7 +265,7 @@ po-accordion {
   --background-hover: var(--color-brand-01-lightest);
   --color-hover: var(--color-action-hover);
 
-  --background-pressed: var(--color-secondary-light-20);
+  --background-pressed: var(--color-brand-01-lighter);
   --color-pressed: var(--color-action-pressed);
 
   --color-focus: var(--color-action-focus);
@@ -285,7 +285,7 @@ po-accordion-manager {
   --font-size: var(--font-size-sm);
   --font-weight: var(--font-weight-bold);
 
-  --background-pressed: var(--color-secondary-light-20);
+  --background-pressed: var(--color-brand-01-lighter);
   --color-pressed: var(--color-action-pressed);
 
   --color-focus: var(--color-action-default);
@@ -345,7 +345,7 @@ po-button {
 
   /* hover */
   --color-hover: var(--color-action-hover);
-  --background-hover: var(--color-secondary-light-20);
+  --background-hover: var(--color-brand-01-lighter);
   --border-color-hover: var(--color-brand-01-darkest);
 
   /* focused */
@@ -451,7 +451,7 @@ po-checkbox {
   --color-checked: var(--color-action-default);
 
   --color-hover: var(--color-action-hover);
-  --shadow-color-hover: var(--color-secondary-light-20);
+  --shadow-color-hover: var(--color-brand-01-lighter);
 
   --outline-color-focused: var(--color-action-focus);
 
@@ -552,11 +552,11 @@ po-disclaimer {
   --text-color-neutral: var(--color-neutral-dark-80);
 
   --color: var(--color-brand-01-lightest);
-  --border-color: var(--color-secondary-light-20);
+  --border-color: var(--color-brand-01-lighter);
   --color-icon: var(--color-action-default);
   --text-color: var(--color-neutral-dark-80);
 
-  --color-hover: var(--color-secondary-light-20);
+  --color-hover: var(--color-brand-01-lighter);
   --outline-color-focused: var(--color-brand-01-darkest);
 }
 
@@ -593,7 +593,7 @@ po-dropdown {
 
   /* hover */
   --color-hover: var(--color-brand-01-darkest);
-  --background-hover: var(--color-secondary-light-20);
+  --background-hover: var(--color-brand-01-lighter);
 
   /* focus */
   --outline-color-focused: var(--color-action-focus);
@@ -768,7 +768,7 @@ po-item-list {
   --color: var(--color-action-default);
 
   --color-hover: var(--color-brand-01-darkest);
-  --background-hover: var(--color-secondary-light-20);
+  --background-hover: var(--color-brand-01-lighter);
 
   --outline-color-focused: var(--color-action-focus);
 
@@ -847,7 +847,7 @@ po-menu-item {
   --background-color: transparent;
 
   --color-hover: var(--color-brand-01-darkest);
-  --background-color-hover: var(--color-secondary-light-20);
+  --background-color-hover: var(--color-brand-01-lighter);
 
   --outline-color-focused: var(--color-action-focus);
 
@@ -974,23 +974,23 @@ po-multiselect {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-default);
   --text-color-placeholder: var(--color-action-disabled);
-  --color: var(--color-neutral);
-  --background: var(--color-neutral-light-98);
+  --color: var(--color-neutral-dark-70);
+  --background: var(--color-neutral-light-05);
 
   /* hover */
   --color-hover: var(--color-action-hover);
   --background-hover: var(--color-brand-01-lightest);
 
   /* focus */
-  --color-focused: var(--color-secondary);
-  --outline-color-focused: var(--color-outline-focused);
+  --color-focused: var(--color-action-default);
+  --outline-color-focused: var(--color-action-focus);
 
   /* disabled */
   --color-disabled: var(--color-action-disabled);
-  --background-disabled: var(--color-neutral-light-80);
+  --background-disabled: var(--color-neutral-light-20);
 
   /* error */
-  --color-error: var(--color-danger);
+  --color-error: var(--color-feedback-negative-base);
 }
 
 :root {
@@ -1137,7 +1137,7 @@ po-popup po-item-list {
   --color: var(--color-action-default);
 
   --color-hover: var(--color-brand-01-darkest);
-  --background-hover: var(--color-secondary-light-20);
+  --background-hover: var(--color-brand-01-lighter);
 
   --outline-color-focused: var(--color-action-focus);
 
@@ -1201,7 +1201,7 @@ po-radio {
   --border-color: var(--color-neutral-dark-70);
 
   /* hover */
-  --shadow-color-hover: var(--color-secondary-light-20);
+  --shadow-color-hover: var(--color-brand-01-lighter);
   --color-hover: var(--color-brand-01-dark);
 
   /* focus */
@@ -1370,7 +1370,7 @@ po-table {
   --font-weight-headline: var(--font-weight-bold);
 
   --color-hover: var(--color-action-hover);
-  --background-color-hover: var(--color-secondary-light-20);
+  --background-color-hover: var(--color-brand-01-lighter);
 
   --outline-color-focused: var(--color-action-focus);
 
@@ -1499,10 +1499,10 @@ po-tag {
 
   /* removable */
   --color: var(--color-brand-01-lightest);
-  --border-color: var(--color-secondary-light-20);
+  --border-color: var(--color-brand-01-lighter);
   --color-icon: var(--color-action-default);
   --text-color: var(--color-neutral-dark-80);
-  --color-hover: var(--color-secondary-light-20);
+  --color-hover: var(--color-brand-01-lighter);
   --outline-color-focused: var(--color-action-focus);
 
   /* disable */

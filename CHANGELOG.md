@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [16.6.0](https://github.com/po-ui/po-style/compare/v16.5.0...v16.6.0) (2023-11-03)
+
+Compatibilidade com @po-ui/ng-components@16.6.0
+
+### Bug Fixes
+
+* **input:** remove declaração `!important` ([17d894b](https://github.com/po-ui/po-style/commit/17d894bf8a9245d9436a95f4f82048c56d9d0017))
+
+
+### Code Refactoring
+
+* **combo:** remove variável não utilizada ([099ef56](https://github.com/po-ui/po-style/commit/099ef5624cc8c1809b3ed9644ff9fc7b2b2b43eb))
+
+
+### Features
+
+* **combo:** implementa definições do AnimaliaDS ([96f12c0](https://github.com/po-ui/po-style/commit/96f12c0b690327e533637dde98063f61c13f0438))
+
+
+### BREAKING CHANGES
+
+* **combo:** remove variáveis de customização de cores
+
+Remove variáveis para compatibilidade com @animaliads/combo e melhorias
+de acessibilidade, não sendo mais possível a customização.
+
+- `color-combo-background-color`. : customização do background
+- `color-combo-background-color-item-hover`. : customização do item no hover
+- `color-combo-background-color-scrollbar`. : customização da barra de rolagem
+- `color-combo-border-button-error`. : customização da cor de erro
+- `color-combo-background-color-group-title`. : customização da cor do title
+- `color-combo-color-group-title`. : customização da cot do title do grupo
+- `color-combo-color-primary`. : customização da cor principal
+- `color-combo-color-selected`. : customização da cor selecionada
+- `color-combo-background-color-selected-primary`. : customização da cor primaria selecionada
+
+
 # [16.5.0](https://github.com/po-ui/po-style/compare/v16.4.1...v16.5.0) (2023-10-31)
 
 Compatibilidade com @po-ui/ng-components@16.5.0

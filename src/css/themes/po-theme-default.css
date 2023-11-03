@@ -881,7 +881,7 @@ po-menu-item {
   /*Deprecated v17.x.x utilizar --background-color*/
 
   --color-menu-background-color-menu-responsive-overlay: var(--color-neutral-dark-80);
-  /* nao fazer nada neste token */
+  /*Deprecated v17.x.x utilizar --color-neutral-dark-80*/
 
   --color-menu-border-top-collapse-button: var(--border-color);
   /*Deprecated v17.x.x utilizar --border-color*/

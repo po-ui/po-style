@@ -1394,16 +1394,16 @@ po-table {
   /*Deprecated v17.x.x utilizar --color-secondary-dark-60-alpha-70*/
 
   --color-table-background-color-overlay-content: var(--color-neutral-light-00);
-  /*Deprecated v17.x.x utilizar ---color-white*/
+  /*Deprecated v17.x.x utilizar --color-neutral-light-00*/
 
   --color-table-background-color-row-strip: var(--background-striped-color);
   /*Deprecated v17.x.x utilizar --background-striped-color*/
 
   --color-table-background-color-selected: var(--background-color-selected);
-  /*Deprecated v17.x.x utilizar --color-brand-01-lightest*/
+  /*Deprecated v17.x.x utilizar --background-color-selected*/
 
   --color-table-background-color-table: var(--color-neutral-light-00);
-  /*Deprecated v17.x.x utilizar --color-white*/
+  /*Deprecated v17.x.x utilizar --color-neutral-light-00*/
 
   --color-table-border-rows: var(--color-line);
   /*Deprecated v17.x.x utilizar --color-line*/
@@ -1412,19 +1412,19 @@ po-table {
   /*Deprecated v17.x.x utilizar --color-neutral-dark-95*/
 
   --color-table-background-color-footer-show-subtitle: var(--color-neutral-light-00);
-  /*Deprecated v17.x.x utilizar --color-white*/
+  /*Deprecated v17.x.x utilizar --color-neutral-light-00*/
 
   --color-table-border-footer-show-subtitle: var(--color-neutral-light-10);
   /*Deprecated v17.x.x utilizar --color-neutral-light-10*/
 
   --color-table-box-shadow-footer: var(--color-line);
-  /*Deprecated v17.x.x utilizar --color-primary-light-80*/
+  /*Deprecated v17.x.x utilizar --color-line*/
 
   --color-table-box-shadow-overlay-content: var(--color-black-alpha-30);
-  /*Deprecated v17.x.x */
+  /*Deprecated v17.x.x utilizar --color-black-alpha-30*/
 
   --color-table-color-actions: var(--color-action-default);
-  /*Deprecated v17.x.x */
+  /*Deprecated v17.x.x utilizar --color-action-default*/
 
   --color-table-color-header: var(--color);
   /*Deprecated v17.x.x utilizar --color*/
@@ -1436,8 +1436,10 @@ po-table {
   /*Deprecated v17.x.x utilizar --color-disabled*/
 
   --color-table-color-subtitle-text: var(--color-neutral-light-00);
+  /*Deprecated v17.x.x utilizar --color-neutral-light-00*/
 
   --color-table-color-single-action-hover: var(--color-action-hover);
+  /*Deprecated v17.x.x utilizar --color-action-hover*/
 
   /*------------------------------------*\
   TABLE COLUMN LINK

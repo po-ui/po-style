@@ -4,9 +4,9 @@
   --color-grid-cell-freeze-color: var(--color-primary-light-80);
   --color-grid-cell-scrollbar-color: var(--color-primary-alpha-50);
 
-  --color-grid-footer-wrapper-border-color: var(--color-neutral-light-90);
+  --color-grid-footer-wrapper-border-color: var(--color-neutral-light-10);
 
-  --color-grid-wrapper-border-color: var(--color-neutral-light-90);
+  --color-grid-wrapper-border-color: var(--color-neutral-light-10);
 }
 
 .po-grid-wrapper {

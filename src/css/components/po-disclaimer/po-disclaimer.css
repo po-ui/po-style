@@ -85,7 +85,7 @@
 }
 
 .po-disclaimer-remove-danger:hover {
-  background-color: var(--color-danger-light-20);
+  background-color: var(--color-feedback-negative-lighter);
 }
 
 .po-disclaimer-danger:active,

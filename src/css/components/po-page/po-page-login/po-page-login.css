@@ -200,7 +200,7 @@
 }
 
 .po-page-login-popover {
-  background-color: var(--color-white);
+  background-color: var(--color-neutral-light-00);
   border-radius: 3px;
   box-shadow: var(--shadow-page-login-popover-box-shadow);
   max-width: 206px;

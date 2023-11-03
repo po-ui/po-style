@@ -217,7 +217,7 @@ po-button {
 
 .po-button {
   &:focus-visible {
-    outline-color: var(--color-outline-focused);
+    outline-color: var(--color-action-focus);
 
     outline-width: var(--outline-width);
     outline-style: solid;
@@ -244,7 +244,7 @@ po-button {
 
       border-color: var(--color-brand-01-darker);
       color: var(--color-brand-01-darker);
-      outline-color: var(--color-outline-focused, var(--color-action-focus));
+      outline-color: var(--color-action-focus, var(--color-action-focus));
       outline-width: var(--outline-width);
       outline-style: solid;
       outline-offset: 0.125em;
@@ -276,7 +276,7 @@ po-button {
 
         border-color: var(--color-feedback-negative-darkest);
         color: var(--color-feedback-negative-darkest);
-        outline-color: var(--color-outline-focused, var(--color-action-focus));
+        outline-color: var(--color-action-focus, var(--color-action-focus));
         outline-width: var(--outline-width);
         outline-style: solid;
         outline-offset: 0.125em;
@@ -310,7 +310,7 @@ po-button {
       background-color: var(--color-brand-01-darker);
 
       color: var(--color-neutral-light-00);
-      outline-color: var(--color-outline-focused, var(--color-action-focus));
+      outline-color: var(--color-action-focus, var(--color-action-focus));
       outline-width: var(--outline-width);
       outline-style: solid;
       outline-offset: 0.125em;
@@ -359,7 +359,7 @@ po-button {
     &:enabled:active {
       color: var(--color-brand-01-darkest);
       background-color: var(--color-brand-01-light);
-      outline-color: var(--color-outline-focused, var(--color-action-focus));
+      outline-color: var(--color-action-focus, var(--color-action-focus));
       outline-width: var(--outline-width);
       outline-style: solid;
       outline-offset: 0.125em;
@@ -391,7 +391,7 @@ po-button {
 
       border-color: var(--color-feedback-negative-darkest);
       color: var(--color-feedback-negative-darkest);
-      outline-color: var(--color-outline-focused, var(--color-action-focus));
+      outline-color: var(--color-action-focus, var(--color-action-focus));
       outline-width: var(--outline-width);
       outline-style: solid;
       outline-offset: 0.125em;

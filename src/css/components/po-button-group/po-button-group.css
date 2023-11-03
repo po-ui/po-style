@@ -62,7 +62,7 @@
   background-color: var(--color-button-group-background-color-neutral-pressed, var(--color-brand-01-darker));
   border-color: var(--color-button-group-border-neutral-pressed, var(--color-brand-01-darker));
   color: var(--color-button-group-color-neutral-pressed);
-  outline-color: var(--color-outline-focused);
+  outline-color: var(--color-action-focus);
   outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 0.125em;

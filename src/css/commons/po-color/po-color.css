@@ -23,7 +23,7 @@
 }
 
 .po-color-secondary {
-  background-color: var(--color-secondary);
+  background-color: var(--color-action-default);
 }
 
 .po-color-secondary-dark-60-alpha-70 {
@@ -39,11 +39,11 @@
 }
 
 .po-color-tertiary {
-  background-color: var(--color-tertiary);
+  background-color: var(--color-brand-03-base);
 }
 
 .po-color-white {
-  background-color: var(--color-white);
+  background-color: var(--color-neutral-light-00);
 }
 
 .po-color-white-alpha-30 {
@@ -51,23 +51,23 @@
 }
 
 .po-color-neutral-light-98 {
-  background-color: var(--color-neutral-light-98);
+  background-color: var(--color-neutral-light-05);
 }
 
 .po-color-neutral-light-90 {
-  background-color: var(--color-neutral-light-90);
+  background-color: var(--color-neutral-light-10);
 }
 
 .po-color-neutral-light-80 {
-  background-color: var(--color-neutral-light-80);
+  background-color: var(--color-neutral-light-20);
 }
 
 .po-color-neutral-light-60 {
-  background-color: var(--color-neutral-light-60);
+  background-color: var(--color-neutral-light-30);
 }
 
 .po-color-neutral-light-40 {
-  background-color: var(--color-neutral-light-40);
+  background-color: var(--color-neutral-mid-40);
 }
 
 .po-color-neutral-alpha-45 {
@@ -75,15 +75,15 @@
 }
 
 .po-color-neutral {
-  background-color: var(--color-neutral);
+  background-color: var(--color-neutral-dark-70);
 }
 
 .po-color-neutral-dark-40 {
-  background-color: var(--color-neutral-dark-40);
+  background-color: var(--color-neutral-dark-80);
 }
 
 .po-color-neutral-dark-60 {
-  background-color: var(--color-neutral-dark-60);
+  background-color: var(--color-neutral-dark-90);
 }
 
 .po-color-black-alpha-10 {
@@ -111,7 +111,7 @@
 }
 
 .po-color-danger {
-  background-color: var(--color-danger);
+  background-color: var(--color-feedback-negative-base);
 }
 
 .po-color-transparent {
@@ -143,15 +143,15 @@
 }
 
 .po-text-color-secondary {
-  color: var(--color-secondary) !important;
+  color: var(--color-action-default) !important;
 }
 
 .po-text-color-secondary-dark-20 {
-  color: var(--color-secondary-dark-20) !important;
+  color: var(--color-brand-01-dark) !important;
 }
 
 .po-text-color-secondary-dark-40 {
-  color: var(--color-secondary-dark-40) !important;
+  color: var(--color-brand-01-darker) !important;
 }
 
 .po-text-color-secondary-dark-60-alpha-70 {
@@ -167,7 +167,7 @@
 }
 
 .po-text-color-tertiary {
-  color: var(--color-tertiary) !important;
+  color: var(--color-brand-03-base) !important;
 }
 
 .po-text-color-tertiary-dark-5 {
@@ -183,7 +183,7 @@
 }
 
 .po-text-color-white {
-  color: var(--color-white) !important;
+  color: var(--color-neutral-light-00) !important;
 }
 
 .po-text-color-white-alpha-30 {
@@ -191,23 +191,23 @@
 }
 
 .po-text-color-neutral-light-98 {
-  color: var(--color-neutral-light-98) !important;
+  color: var(--color-neutral-light-05) !important;
 }
 
 .po-text-color-neutral-light-90 {
-  color: var(--color-neutral-light-90) !important;
+  color: var(--color-neutral-light-10) !important;
 }
 
 .po-text-color-neutral-light-80 {
-  color: var(--color-neutral-light-80) !important;
+  color: var(--color-neutral-light-20) !important;
 }
 
 .po-text-color-neutral-light-60 {
-  color: var(--color-neutral-light-60) !important;
+  color: var(--color-neutral-light-30) !important;
 }
 
 .po-text-color-neutral-light-40 {
-  color: var(--color-neutral-light-40) !important;
+  color: var(--color-neutral-mid-40) !important;
 }
 
 .po-text-color-neutral-alpha-45 {
@@ -215,15 +215,15 @@
 }
 
 .po-text-color-neutral {
-  color: var(--color-neutral) !important;
+  color: var(--color-neutral-dark-70) !important;
 }
 
 .po-text-color-neutral-dark-40 {
-  color: var(--color-neutral-dark-40) !important;
+  color: var(--color-neutral-dark-80) !important;
 }
 
 .po-text-color-neutral-dark-60 {
-  color: var(--color-neutral-dark-60) !important;
+  color: var(--color-neutral-dark-90) !important;
 }
 
 .po-text-color-black-alpha-10 {
@@ -251,15 +251,15 @@
 }
 
 .po-text-color-danger-light-40 {
-  color: var(--color-danger-light-40) !important;
+  color: var(--color-feedback-negative-light) !important;
 }
 
 .po-text-color-danger {
-  color: var(--color-danger) !important;
+  color: var(--color-feedback-negative-base) !important;
 }
 
 .po-text-color-danger-dark-5 {
-  color: var(--color-danger-dark-5) !important;
+  color: var(--color-feedback-negative-dark) !important;
 }
 
 .po-text-color-danger-dark-20 {
@@ -267,7 +267,7 @@
 }
 
 .po-text-color-danger-dark-40 {
-  color: var(--color-danger-dark-40) !important;
+  color: var(--color-feedback-negative-darkest) !important;
 }
 
 .po-text-color-transparent {

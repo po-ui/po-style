@@ -374,7 +374,7 @@
 
 .po-table-column-label {
   border-radius: 3px;
-  color: var(--color-white);
+  color: var(--color-neutral-light-00);
   display: inline-block;
   min-width: 20px;
   overflow-y: hidden;

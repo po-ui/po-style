@@ -70,13 +70,13 @@
 }
 
 .po-item-list__danger:not(.po-item-list__disabled) {
-  color: var(--color-danger);
+  color: var(--color-feedback-negative-base);
   cursor: pointer;
 }
 
 .po-item-list__danger:hover:not(.po-item-list__disabled) {
-  background-color: var(--color-danger-light-20);
-  color: var(--color-danger);
+  background-color: var(--color-feedback-negative-lighter);
+  color: var(--color-feedback-negative-base);
 }
 
 .po-item-list__selected:not(.po-item-list__danger) {
@@ -90,11 +90,11 @@
 }
 
 .po-item-list__selected.po-item-list__danger {
-  background-color: var(--color-danger-light-20);
+  background-color: var(--color-feedback-negative-lighter);
 }
 
 .po-item-list__separator {
-  border-top: 1px solid var(--color-neutral-light-90);
+  border-top: 1px solid var(--color-neutral-light-10);
 }
 
 .cdk-option:focus-visible .po-item-list {

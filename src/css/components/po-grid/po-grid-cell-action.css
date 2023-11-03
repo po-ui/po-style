@@ -3,7 +3,7 @@
     @apply --font-text;
   }
 
-  --color-grid-cell-action-content-text-color: var(--color-neutral-light-90);
+  --color-grid-cell-action-content-text-color: var(--color-neutral-light-10);
   --color-grid-cell-action-content-text-color-focusable: var(--color-primary);
 }
 

@@ -7,5 +7,5 @@
 }
 
 .po-table-link-disabled po-link {
-  --text-color: var(--color-table-color-link-disabled, var(--color-neutral-light-40));
+  --text-color: var(--color-table-color-link-disabled, var(--color-neutral-mid-40));
 }

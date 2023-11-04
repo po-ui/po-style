@@ -157,7 +157,9 @@
   --color-primary-light-95: #fcf6f9; /* Cor do background da linha da tabela */
   --color-primary-light-80: #f5dbe8; /* Borda inferior da Table Header */
   --color-primary-alpha-50: rgba(201, 53, 125, 0.5); /* Scroll (opacidade de 50%) */
-  --color-primary: #c9357d; /* Botão primário, Links, Cor da borda do input selecionado, Cor da borda do botão secundário */
+
+  --color-primary: var(--color-brand-02-base); /* Deprecated v18.x.x utilizar --color-brand-02-base */
+
   --color-primary-dark-20: #9d2c67; /* Hover do Botão primário, Links, Cor da borda do botão secundário */
   --color-primary-dark-40: #8b255a; /* Pressed do Botão primário, Links, Cor da borda do botão secundário */
 

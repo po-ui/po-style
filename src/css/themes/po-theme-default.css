@@ -816,11 +816,15 @@ po-loading {
   --shadow: var(--shadow-md);
 }
 
+po-loading-icon {
+  --color: var(--color-action-default);
+}
+
 :root {
   --color-loading-color-label: var(--text-color);
   /*Deprecated v18.x.x utilizar --text-color*/
-  --color-loading-icon-color-neutral: var(--color-neutral-light-80);
-  --color-loading-icon-color-primary: var(--color-primary);
+  --color-loading-icon-color-neutral: var(--color-neutral-light-20);
+  --color-loading-icon-color-primary: var(--color); /*Deprecated v18.x.x utilizar --color*/
 
   /*------------------------------------*\
     LOADING OVERLAY

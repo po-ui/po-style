@@ -16,6 +16,12 @@ po-button {
   min-height: 2.75em;
   cursor: pointer;
   min-width: 2.75em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.po-button-container {
+  margin: 0 auto;
 }
 
 .po-button[p-kind='primary'] {

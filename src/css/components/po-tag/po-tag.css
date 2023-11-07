@@ -158,12 +158,12 @@
 }
 
 .po-tag-neutral {
-  background-color: var(--color-neutral-dark-70);
+  background-color: var(--color-neutral);
   color: var(--text-color-neutral);
 }
 
 .po-tag-neutral-inverse {
-  background-color: var(--color-neutral-dark-70);
+  background-color: var(--color-neutral);
   border-color: var(--text-color-neutral);
   color: var(--text-color-neutral);
 }

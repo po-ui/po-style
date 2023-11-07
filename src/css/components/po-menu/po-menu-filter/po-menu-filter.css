@@ -26,8 +26,8 @@
   width: 16px;
 }
 
-.po-menu-filter-search-icon-container .po-loading-icon .po-loading-icon-bar {
-  background-color: var(--color-menu-filter-color-icon, var(--color-icon-read));
+.po-menu-filter-search-icon-container .po-loading-icon-container svg {
+  color: var(--color-menu-filter-color-icon, var(--color-icon-read));
 }
 
 .po-menu-filter {
@@ -93,6 +93,10 @@
   .po-icon {
     font-size: 1.5rem;
   }
+}
+
+.po-menu-filter-search-icon-container .po-loading-icon-container {
+  transform: translateY(10%);
 }
 
 .po-menu-filter-container-hidden {

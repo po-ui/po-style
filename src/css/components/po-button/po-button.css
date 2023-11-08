@@ -16,6 +16,7 @@ po-button {
   min-height: 2.75em;
   cursor: pointer;
   min-width: 2.75em;
+  overflow: hidden;
 }
 
 .po-button[p-kind='primary'] {

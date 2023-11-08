@@ -36,10 +36,10 @@
  * Gauge..........................variáveis do Gauge.
  * Info...........................variáveis do Info.
  * Input..........................variáveis do Input.
+ * Itemlist.......................variáveis do Itemlist
  * Label..........................variáveis do Label.
  * Link...........................variáveis do Link.
  * Listbox........................variáveis do listbox.
- * Itemlist.......................variáveis do Itemlist
  * List View......................variáveis do List View.
  * Loading........................variáveis do Loading.
  * Loading Overlay................variáveis do Loading Overlay.
@@ -56,6 +56,7 @@
  * Navbar Action Popup............variáveis do Navbar Action Popup.
  * Navbar Item....................variáveis do Navbar Item.
  * Navbar Item Navigation.........variáveis do Navbar Item Navigation.
+ * Overlay........................variáveis do Overlay.
  * Page...........................variáveis do Page.
  * Page Background................variáveis do Page Background.
  * Page Blocked User..............variáveis do Page Blocked User.
@@ -712,6 +713,38 @@ input.po-input {
 }
 
 /*------------------------------------*\
+  ITEM LIST
+\*------------------------------------*/
+po-item-list {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
+
+  /* action */
+  --font-weight: var(--font-weight-bold);
+  --color: var(--color-action-default);
+
+  --color-hover: var(--color-brand-01-darkest);
+  --background-hover: var(--color-brand-01-lighter);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --background-pressed: var(--color-brand-01-light);
+
+  --color-disabled: var(--color-action-disabled);
+
+  /* option e check */
+  --color-option: var(--color-neutral-dark-90);
+
+  --font-weight-selected: var(--font-weight-bold);
+  --background-selected: var(--color-brand-01-lightest);
+}
+
+po-item-list:is([p-type='option'], [p-type='check']) {
+  --font-weight: var(--font-weight-normal);
+}
+
+/*------------------------------------*\
   LABEL
 \*------------------------------------*/
 po-label {
@@ -758,38 +791,6 @@ po-listbox {
 }
 
 /*------------------------------------*\
-  ITEM LIST
-\*------------------------------------*/
-po-item-list {
-  --font-family: var(--font-family-theme);
-  --font-size: var(--font-size-default);
-  --line-height: var(--line-height-md);
-
-  /* action */
-  --font-weight: var(--font-weight-bold);
-  --color: var(--color-action-default);
-
-  --color-hover: var(--color-brand-01-darkest);
-  --background-hover: var(--color-brand-01-lighter);
-
-  --outline-color-focused: var(--color-action-focus);
-
-  --background-pressed: var(--color-brand-01-light);
-
-  --color-disabled: var(--color-action-disabled);
-
-  /* option e check */
-  --color-option: var(--color-neutral-dark-90);
-
-  --font-weight-selected: var(--font-weight-bold);
-  --background-selected: var(--color-brand-01-lightest);
-}
-
-po-item-list:is([p-type='option'], [p-type='check']) {
-  --font-weight: var(--font-weight-normal);
-}
-
-/*------------------------------------*\
   LIST VIEW
 \*------------------------------------*/
 :root {
@@ -798,23 +799,41 @@ po-item-list:is([p-type='option'], [p-type='check']) {
   --color-list-view-color-primary: var(--color-primary);
   --color-list-view-color-primary-hover: var(--color-primary-dark-20);
   --color-list-view-color-select-all-label: var(--color-neutral-dark-70);
+}
 
-  /*------------------------------------*\
+/*------------------------------------*\
   LOADING
 \*------------------------------------*/
-  --color-loading-color-label: var(--color-neutral-dark-70);
-  --color-loading-icon-color-neutral: var(--color-neutral-light-20);
+po-loading {
+  --font-family: var(--font-family-theme);
+  --font-weight: var(--font-weight-normal);
+  --text-color: var(--color-neutral-dark-70);
+
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --border-color: var(--color-neutral-light-20);
+  --background: var(--color-neutral-light-00);
+  --shadow: var(--shadow-md);
+}
+
+:root {
+  --color-loading-color-label: var(--text-color);
+  /*Deprecated v18.x.x utilizar --text-color*/
+  --color-loading-icon-color-neutral: var(--color-neutral-light-80);
   --color-loading-icon-color-primary: var(--color-primary);
 
   /*------------------------------------*\
-  LOADING OVERLAY
-\*------------------------------------*/
-  --color-loading-overlay-background-color-content: var(--color-neutral-light-00);
-  --color-loading-overlay-box-shadow-content: var(--color-black-alpha-30);
+    LOADING OVERLAY
+  \*------------------------------------*/
+
+  --color-loading-overlay-background-color-content: var(--background);
+  /*Deprecated v18.x.x utilizar --background*/
+  --color-loading-overlay-box-shadow-content: var(--shadow);
+  /*Deprecated v18.x.x utilizar --shadow*/
 
   /*------------------------------------*\
   LOOKUP
-\*------------------------------------*/
+  \*------------------------------------*/
   --color-lookup-search-background-color-text: var(--color-neutral-light-00);
   --color-lookup-search-border-text: var(--color-neutral-light-30);
   --color-lookup-search-border-text-focusable: var(--color-primary);

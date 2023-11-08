@@ -1,0 +1,28 @@
+.po-overlay {
+  display: grid;
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  place-items: center;
+}
+
+.po-overlay::before {
+  backdrop-filter: blur(4px);
+  background-color: var(--color-overlay);
+  content: '';
+  inset: 0;
+  opacity: var(--opacity-overlay);
+  position: absolute;
+}
+
+.po-overlay-fixed {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.po-overlay-content {
+  position: relative;
+}

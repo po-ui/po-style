@@ -26,6 +26,7 @@
 @import './po-menu-panel';
 @import './po-modal';
 @import './po-navbar';
+@import './po-overlay';
 @import './po-page';
 @import './po-popover';
 @import './po-popup';

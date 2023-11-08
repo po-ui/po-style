@@ -1023,7 +1023,16 @@ po-multiselect {
 \*------------------------------------*/
   --color-navbar-item-navigation-color-icon: var(--color-primary);
   --color-navbar-item-navigation-color-icon-disabled: var(--color-neutral-light-20);
+}
+/*------------------------------------*\
+  OVERLAY
+\*------------------------------------*/
+po-overlay {
+  --color-overlay: var(--color-neutral-dark-80);
+  --opacity-overlay: 0.7;
+}
 
+:root {
   /*------------------------------------*\
   PAGE
 \*------------------------------------*/

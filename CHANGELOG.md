@@ -2,6 +2,174 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [16.6.1](https://github.com/po-ui/po-style/compare/v16.6.0...v16.6.1) (2023-11-13)
+
+
+### Code Refactoring
+
+* **button:** remove deprecated variables ([91603d1](https://github.com/po-ui/po-style/commit/91603d1377a9be41458fc514bc70951ee10f0038))
+* **disclaimer:** remove deprecated variables ([5a04d24](https://github.com/po-ui/po-style/commit/5a04d249cc9ce988d1a9b71b3d3e80f0d97feebc))
+* **divider:** remove deprecated variables ([69c1085](https://github.com/po-ui/po-style/commit/69c10850ed0d1977c9e751cf0142e29d13437001))
+* **field-container:** remove deprecated variables ([abe6390](https://github.com/po-ui/po-style/commit/abe639016d4754c1ca2abcfeda19d016c1c80fa8))
+* **radio-group:** remove deprecated variables ([acd42a0](https://github.com/po-ui/po-style/commit/acd42a07b1258e5201fa1878d3f114a07befeb2d))
+* **select:** remove deprecated variables ([0a7bfc4](https://github.com/po-ui/po-style/commit/0a7bfc45ae46a77f69857ce73409f999a6627ee1))
+* **switch:** remove deprecated variables ([33e93b9](https://github.com/po-ui/po-style/commit/33e93b9548ae63c70d4cd18a678e428a456be3d4))
+* **tag:** remove deprecated variables ([accd50a](https://github.com/po-ui/po-style/commit/accd50acb21dbdbb6210ee79465e5d1083f310cd))
+* **textarea:** remove deprecated variables ([b39c852](https://github.com/po-ui/po-style/commit/b39c8529f7d38d1f208bf28fa175aa2e239a748d))
+* **theme:** remove deprecated variables ([28117ae](https://github.com/po-ui/po-style/commit/28117aeed2d79ced85fd84f5645987669c8eaf8c))
+* **tooltip:** remove deprecated variables ([669cf67](https://github.com/po-ui/po-style/commit/669cf6741e144a08df86d56b99a6edbcde908c80))
+* **widget:** remove deprecated variables ([f9c7a26](https://github.com/po-ui/po-style/commit/f9c7a26c48ad374ecc8bf21f6d48b481768f5b15))
+* **theme:** deprecia variável --color-primary ([3c68a2a](https://github.com/po-ui/po-style/commit/3c68a2a5d67627d6ed14bcb5001ebac5c674aa45))
+
+
+### BREAKING CHANGES
+
+* **tooltip:** Removidas variáveis depreciadas na v14:
+
+--color-tooltip-background-color-balloon
+--color-tooltip-color-text-balloon
+* **widget:** Removida variável depreciada na v14:
+
+--color-widget-background-color
+* **textarea:** Removidas variáveis depreciadas na v14:
+
+--color-textarea-background-color
+--color-textarea-border
+--color-textarea-background-color-disabled
+--color-textarea-border-color-disabled
+--color-textarea-border-focusable
+--color-textarea-color-error
+* **tag:** Removidas variáveis depreciadas na v14:
+
+--color-tag-color-danger
+--color-tag-color-info
+--color-tag-color-success
+--color-tag-color-warning
+--color-tag-color-text-label
+--color-tag-background-color-danger
+--color-tag-background-color-info
+--color-tag-background-color-success
+--color-tag-background-color-warning
+* **switch:** Removidas variáveis depreciadas na v14:
+
+--color-switch-background-color-container-on
+--color-switch-background-color-container-off
+--color-switch-background-color-container-disabled
+--color-switch-box-shadow-color-focusable
+--color-switch-background-color-button
+--color-switch-background-color-button-disabled
+--color-switch-color-icon-on
+* **select:** Removidas variáveis depreciadas na v14:
+
+--color-select-background-color
+--color-select-background-color-disabled
+--color-select-border-button
+--color-select-border-button-error
+--color-select-border-button-disabled
+--color-select-border-button-hover
+--color-select-border-button-focus
+--color-select-button-hover
+--color-select-button-focus
+--color-select-color-primary
+--color-select-color-text-error
+--color-select-color-text-empty
+* **radio-group:** Removidas variáveis depreciadas na v14:
+
+--color-radio-group-background-color
+--color-radio-group-background-color-active
+--color-radio-group-background-color-input-disabled
+--color-radio-group-border-color
+--color-radio-group-border-color-focusable
+* **field-container:** Removidas variáveis depreciadas na v14:
+
+--color-field-container-color-title
+--color-field-container-color-opcional
+* **divider:** Removidas variáveis depreciadas na v14:
+
+--color-divider-label-color
+--color-divider-line-color
+* **disclaimer:** Removidas variáveis depreciadas na v14:
+
+--color-disclaimer-background-color-label
+--color-disclaimer-background-color-label-danger
+--color-disclaimer-color-text
+--color-disclaimer-color-text-danger
+--color-disclaimer-background-color-remove
+--color-disclaimer-background-color-danger-remove
+* **button:** Removidas variáveis depreciadas na v14:
+
+--color-button-background-color
+--color-button-border
+--color-button-color
+--color-button-box-shadow
+--color-button-background-color-hover
+--color-button-border-hover
+--color-button-color-hover
+--color-button-background-color-pressed
+--color-button-border-pressed
+--color-button-color-pressed
+--color-button-background-color-disabled
+--color-button-border-disabled
+--color-button-color-disabled
+--color-button-background-color-primary
+--color-button-border-primary
+--color-button-color-primary
+--color-button-background-color-primary-hover
+--color-button-color-primary-hover
+--color-button-background-color-primary-pressed
+--color-button-color-primary-pressed
+--color-button-background-color-primary-disabled
+--color-button-color-primary-disabled
+--color-button-primary-background-color-danger
+--color-button-primary-background-color-danger-hover
+--color-button-primary-background-color-danger-pressed
+--color-button-background-color-danger
+--color-button-border-danger
+--color-button-color-danger
+--color-button-background-color-danger-hover
+--color-button-border-danger-hover
+--color-button-color-danger-hover
+--color-button-background-color-danger-pressed
+--color-button-border-danger-pressed
+--color-button-color-danger-pressed
+--color-button-background-color-link
+--color-button-color-link
+--color-button-border-color-link
+--color-button-background-color-link-hover
+--color-button-color-link-hover
+--color-button-background-color-link-pressed
+--color-button-color-link-pressed
+--color-button-background-color-link-disabled
+--color-button-color-link-disabled
+* **theme:** Remove variáveis depreciadas na v14:
+
+variável removida -> novo token para customização
+
+--color-secondary-light-20 -> --color-brand-01-lighter
+--color-secondary-light-40 -> --color-brand-01-light
+--color-secondary -> --color-action-default
+--color-secondary-dark-20 -> --color-brand-01-dark
+--color-secondary-dark-40 -> --color-brand-01-darker
+--color-secondary-dark-80 -> --color-brand-01-darkest
+--color-tertiary -> --color-brand-03-base
+--color-white -> --color-neutral-light-00
+--color-neutral-light-98 -> --color-neutral-light-05
+--color-neutral-light-90 -> --color-neutral-light-10
+--color-neutral-light-80 -> --color-neutral-light-20
+--color-neutral-light-60 -> --color-neutral-light-30
+--color-neutral-light-40 -> --color-neutral-mid-40
+--color-neutral-dark-40 -> --color-neutral-dark-80
+--color-neutral-dark-60 -> --color-neutral-dark-90
+--color-danger-light-05 -> --color-feedback-negative-lightest
+--color-danger-light-20 -> --color-feedback-negative-lighter
+--color-danger-light-40 -> --color-feedback-negative-light
+--color-danger -> --color-feedback-negative-base
+--color-danger-dark-5 -> --color-feedback-negative-dark
+--color-danger-dark-40 -> --color-feedback-negative-darkest
+--color-outline-focused -> --color-action-focus
+
+
+
 # [16.6.0](https://github.com/po-ui/po-style/compare/v16.5.0...v16.6.0) (2023-11-03)
 
 Compatibilidade com @po-ui/ng-components@16.6.0

@@ -35,6 +35,10 @@
   background-color: var(--background-hover);
 }
 
+.po-accordion-item-header-button:hover .po-accordion-item-header-icon {
+  color: var(--color-hover);
+}
+
 .po-accordion-item-header-button:disabled {
   background-color: var(--background-disabled);
   color: var(--color-disabled);
@@ -50,6 +54,10 @@
   background-color: var(--background-pressed);
   color: var(--color-pressed);
   outline: none;
+}
+
+.po-accordion-item-header-button:enabled:active .po-accordion-item-header-icon {
+  color: var(--color-pressed);
 }
 
 /* outline para compatibilidade com os demais navegadores */

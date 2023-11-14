@@ -26,6 +26,10 @@
   outline: none;
 }
 
+.po-accordion-manager-button:enabled:active .po-accordion-manager-icon {
+  color: var(--color-pressed);
+}
+
 .po-accordion-manager-button:focus .po-accordion-manager-icon {
   color: var(--color-focus);
 }

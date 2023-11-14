@@ -1,12 +1,24 @@
 .po-progress-bar {
-  background-color: var(--color-progress-bar-background-color-bar);
-  border-radius: 8px;
+  background-color: var(--color-progress-bar-background-color-bar, var(--background-color-tray));
+  border-radius: var(--border-radius-pill);
+  border-color: transparent;
   display: block;
-  height: 8px;
   margin-bottom: 8px;
   overflow: hidden;
   position: relative;
   transition: opacity 250ms linear;
+}
+
+.po-progress-error .po-progress-bar {
+  background-color: var(--color-feedback-negative-lightest);
+}
+
+.po-progress-bar-large {
+  height: 0.5rem;
+}
+
+.po-progress-bar-medium {
+  height: 0.25rem;
 }
 
 .po-progress-bar-element {
@@ -35,127 +47,86 @@
   display: none;
 }
 
-.po-progress-bar-indeterminate .po-progress-bar-primary {
-  animation: po-progress-bar-primary-indeterminate-translate 2s infinite linear;
+.po-progress-bar-default .po-progress-bar-primary {
   backface-visibility: hidden;
   left: -145.166611%;
 }
 
-@keyframes po-progress-bar-primary-indeterminate-translate {
-  0% {
-    transform: translateX(0);
-  }
-
-  20% {
-    animation-timing-function: cubic-bezier(0.5, 0, 0.70173, 0.49582);
-    transform: translateX(0);
-  }
-
-  60% {
-    animation-timing-function: cubic-bezier(0.30244, 0.38135, 0.55, 0.95635);
-    transform: translateX(83.67142%);
-  }
-
-  100% {
-    transform: translateX(200.61106%);
-  }
-}
-
-.po-progress-bar-indeterminate .po-progress-bar-primary::after {
-  animation: po-progress-bar-primary-indeterminate-scale 2s infinite linear;
+.po-progress-bar-default .po-progress-bar-primary::after {
   backface-visibility: hidden;
 }
 
-@keyframes po-progress-bar-primary-indeterminate-scale {
-  0% {
-    transform: scaleX(0.08);
-  }
-
-  36.65% {
-    animation-timing-function: cubic-bezier(0.33473, 0.12482, 0.78584, 1);
-    transform: scaleX(0.08);
-  }
-
-  69.15% {
-    animation-timing-function: cubic-bezier(0.06, 0.11, 0.6, 1);
-    transform: scaleX(0.66148);
-  }
-
-  100% {
-    transform: scaleX(0.08);
-  }
-}
-
-.po-progress-bar-indeterminate .po-progress-bar-secondary {
-  animation: po-progress-bar-secondary-indeterminate-translate 2s infinite linear;
+.po-progress-bar-default .po-progress-bar-secondary {
   backface-visibility: hidden;
   display: block;
-  left: -54.888891%;
 }
 
-@keyframes po-progress-bar-secondary-indeterminate-translate {
-  0% {
-    animation-timing-function: cubic-bezier(0.15, 0, 0.51506, 0.40969);
-    transform: translateX(0);
-  }
-
-  25% {
-    animation-timing-function: cubic-bezier(0.31033, 0.28406, 0.8, 0.73371);
-    transform: translateX(37.65191%);
-  }
-
-  48% {
-    animation-timing-function: cubic-bezier(0.4, 0.62704, 0.6, 0.90203);
-    transform: translateX(84.38617%);
-  }
-
-  100% {
-    transform: translateX(160.27778%);
-  }
-}
-
-.po-progress-bar-indeterminate .po-progress-bar-secondary::after {
-  animation: po-progress-bar-secondary-indeterminate-scale 2s infinite linear;
+.po-progress-bar-default .po-progress-bar-secondary::after {
   backface-visibility: hidden;
 }
 
-@keyframes po-progress-bar-secondary-indeterminate-scale {
-  0% {
-    animation-timing-function: cubic-bezier(0.15, 0, 0.51506, 0.40969);
-    transform: scaleX(0.08);
-  }
+.po-progress-bar-indeterminate-track {
+  height: 8px;
+  background-color: var(--color-progress-bar-background-color-bar, var(--background-color-tray));
+  position: relative;
+  overflow: hidden;
+}
 
-  19.15% {
-    animation-timing-function: cubic-bezier(0.31033, 0.28406, 0.8, 0.73371);
-    transform: scaleX(0.4571);
-  }
+.po-progress-error .po-progress-bar-indeterminate-track {
+  background-color: var(--color-feedback-negative-lightest);
+}
 
-  44.15% {
-    animation-timing-function: cubic-bezier(0.4, 0.62704, 0.6, 0.90203);
-    transform: scaleX(0.72796);
-  }
+.po-progress-bar-medium .po-progress-bar-indeterminate-track,
+.po-progress-bar-medium .po-progress-bar-indeterminate-track-bar {
+  height: 4px;
+}
 
-  100% {
-    transform: scaleX(0.08);
-  }
+.po-progress-bar-indeterminate-track-bar {
+  height: 100%;
+  width: 50%;
+  background-color: var(--color-progress-bar-background-color-default, var(--background-color-indicator));
+  border-radius: 4px;
+  animation: progressIndeterminate 3s linear infinite;
+}
+
+.po-progress-success .po-progress-bar-indeterminate-track-bar {
+  background-color: var(--color-feedback-positive-dark);
+}
+
+.po-progress-error .po-progress-bar-indeterminate-track-bar {
+  background-color: var(--color-feedback-negative-darker);
+}
+
+.po-progress-bar-medium .po-progress-bar-indeterminate-track-bar {
+  border-radius: 2px;
 }
 
 .po-progress-default .po-progress-bar-element::after {
-  background-color: var(--color-progress-bar-background-color-default);
+  background-color: var(--color-progress-bar-background-color-default, var(--background-color-indicator));
 }
 
 .po-progress-success .po-progress-bar-element,
 .po-progress-success .po-progress-bar-element::after {
-  background-color: var(--color-progress-bar-background-color-success);
+  background-color: var(--color-feedback-positive-dark);
 }
 
 .po-progress-error .po-progress-bar-element,
 .po-progress-error .po-progress-bar-element::after {
-  background-color: var(--color-progress-bar-background-color-error);
+  background-color: var(--color-feedback-negative-darker);
 }
 
-@media screen and (min-width: 481px) {
-  .po-progress-bar {
-    display: table-caption;
+@keyframes progressIndeterminate {
+  0%,
+  100% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(100%);
+  }
+
+  100%,
+  0% {
+    transform: translateX(0%);
   }
 }

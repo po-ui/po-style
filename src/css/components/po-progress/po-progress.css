@@ -1,103 +1,39 @@
-:root {
-  --font-progress-bar-text: {
-    @apply --font-text-small-bold;
-  }
-}
-
-.po-progress {
-  display: table;
-  margin-bottom: 20px;
-  table-layout: fixed;
-  width: 100%;
-}
-
 .po-progress-description {
-  display: none;
-}
-
-.po-progress-description-mobile {
-  display: block;
-  margin-bottom: 8px;
-}
-
-.po-progress-description-text {
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
+  margin-bottom: var(--spacing-xs);
 }
 
 .po-progress-info {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
-.po-progress-info-text,
-.po-progress-description-text {
-  @apply --font-progress-bar-text;
+.po-progress-info-text {
+  font-family: var(--font-family);
+  color: var(--color-progress-color-text, var(--text-color));
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-md);
 }
 
-.po-progress-info-icon-action {
-  background-color: transparent;
-  border: none;
-  color: var(--color-progress-color-info-icon);
-  font-size: 16px;
-  margin-left: 16px;
-  position: relative;
-  top: 3px;
+.po-progress-info-text-error {
+  color: var(--color-progress-color-text-error, var(--text-color-error));
+  font-size: var(--font-size-sm);
 }
 
-.po-progress-info-icon-action:focus {
-  border-radius: 1px;
-  outline: dashed 2px var(--color-progress-border-color-info-icon-close);
-  outline-offset: 4px;
+.po-progress-info-icon-error {
+  color: var(--color-icon-error);
 }
 
-.po-progress-info .po-progress-info-icon-action:last-child {
-  margin-right: 6px;
+.po-progress-info-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
 }
 
-.po-progress-info-icon {
-  font-size: 16px;
-  position: relative;
-  right: 4px;
-  top: 2px;
-}
-
-.po-progress-description-text,
-.po-progress-info {
-  color: var(--color-progress-color-text);
-}
-
-.po-progress-success .po-progress-description-text,
-.po-progress-success .po-progress-info {
-  color: var(--color-progress-color-text-success);
-}
-
-.po-progress-error .po-progress-description-text,
-.po-progress-error .po-progress-info {
-  color: var(--color-progress-color-text-error);
-}
-
-@media screen and (min-width: 481px) {
-  .po-progress {
-    display: table;
-  }
-
-  .po-progress-description {
-    display: table-cell;
-    max-width: 0;
-  }
-
-  .po-progress-description-mobile {
-    display: none;
-  }
-
-  .po-progress-description-text {
-    max-width: 368px;
-    text-overflow: ellipsis;
-  }
-
-  .po-progress-info {
-    display: table-cell;
-    white-space: nowrap;
-  }
+.po-progress-info-left {
+  gap: var(--spacing-xs);
+  display: flex;
+  align-items: center;
 }

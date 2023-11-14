@@ -1174,18 +1174,38 @@ po-popup po-item-list {
   --color-popup-color-default: var(--color); /*Deprecated v17.x.x utilizar --color */
   --color-popup-color-disabled: var(--color-disabled); /*Deprecated v17.x.x utilizar --color-disabled */
   --color-popup-color-item-selected: var(--color-option); /*Deprecated v17.x.x utilizar --color-option */
+}
 
+po-progress {
+  --font-family: var(--font-family-theme);
+  --text-color: var(--color-neutral-dark-90);
+  --text-color-error: var(--color-feedback-negative-dark);
+  --color-icon-error: var(--color-feedback-negative-dark);
+}
+
+po-progress-bar {
+  --background-color-tray: var(--color-brand-01-lightest);
+  --background-color-indicator: var(--color-action-default);
+}
+
+:root {
   /*------------------------------------*\
   PROGRESS
   \*------------------------------------*/
-  --color-progress-color-text: var(--color-neutral-dark-70);
-  --color-progress-color-text-error: var(--color-feedback-negative-base);
+
+  --color-progress-color-text: var(--text-color); /*Deprecated v18.x.x utilizar --text-color */
+  --color-progress-color-text-error: var(--text-color-error); /*Deprecated v18.x.x utilizar --text-color-error */
 
   /*------------------------------------*\
   PROGRESS BAR
   \*------------------------------------*/
-  --color-progress-bar-background-color-bar: var(--color-primary-light-80);
-  --color-progress-bar-background-color-default: var(--color-primary);
+
+  --color-progress-bar-background-color-bar: var(
+    --background-color-tray
+  ); /*Deprecated v18.x.x utilizar --background-color-tray */
+  --color-progress-bar-background-color-default: var(
+    --background-color-indicator
+  ); /*Deprecated v18.x.x utilizar --background-color-indicator */
 }
 
 /*------------------------------------*\

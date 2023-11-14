@@ -1177,22 +1177,15 @@ po-popup po-item-list {
 
   /*------------------------------------*\
   PROGRESS
-\*------------------------------------*/
-  --color-progress-color-info-icon: var(--color-primary);
+  \*------------------------------------*/
   --color-progress-color-text: var(--color-neutral-dark-70);
-  --color-progress-color-text-success: var(--color-success);
   --color-progress-color-text-error: var(--color-feedback-negative-base);
-  --color-progress-color-info: var(--color-neutral-dark-70);
-
-  --color-progress-border-color-info-icon-close: var(--color-action-default);
 
   /*------------------------------------*\
   PROGRESS BAR
-\*------------------------------------*/
+  \*------------------------------------*/
   --color-progress-bar-background-color-bar: var(--color-primary-light-80);
   --color-progress-bar-background-color-default: var(--color-primary);
-  --color-progress-bar-background-color-success: var(--color-success);
-  --color-progress-bar-background-color-error: var(--color-feedback-negative-base);
 }
 
 /*------------------------------------*\

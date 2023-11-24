@@ -1,20 +1,80 @@
-:root {
-  --font-badge-font {
-    @apply --font-text-smaller;
-  }
+.po-badge-default {
+  background-color: var(--background-color);
 }
 
 .po-badge {
-  border-radius: 3px;
-  color: var(--color-badge-color);
-  display: table;
-  height: 18px;
-  text-align: center;
-  width: 22px;
+  border-color: transparent;
+  border-radius: 50%;
+  color: var(--color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+
+  border-style: solid;
+  border-width: var(--border-width-sm);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.po-badge-value {
-  @apply --font-badge-font;
-  display: table-cell;
-  vertical-align: middle;
+.po-badge-small {
+  height: 0.5em;
+  width: 0.5em;
+}
+
+.po-badge-medium:not(.po-badge-notification) {
+  height: 1em;
+  width: 1em;
+}
+
+.po-badge-medium:not(.po-badge-notification) po-icon {
+  font-size: 10px;
+}
+
+.po-badge-large:not(.po-badge-notification) {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.po-badge-large:not(.po-badge-notification) po-icon {
+  font-size: 14px;
+}
+
+.po-badge-notification {
+  border-style: solid;
+  border-width: var(--border-width-sm);
+  border-radius: var(--border-radius);
+
+  height: 1em;
+  max-width: 1.25em;
+  min-width: 1em;
+}
+
+.po-badge-notification span {
+  font-size: var(--font-size-xs);
+}
+
+.po-badge-border {
+  border-color: var(--border-color);
+}
+
+.po-badge[p-status='disabled'] {
+  background-color: var(--background-color);
+}
+
+.po-badge[p-status='positive'] {
+  background-color: var(--background-color);
+}
+
+.po-badge[p-status='negative'] {
+  background-color: var(--background-color);
+}
+
+.po-badge[p-status='warning'] {
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+.po-badge po-icon {
+  display: inline-flex;
 }

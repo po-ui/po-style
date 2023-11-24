@@ -364,6 +364,33 @@ po-button {
   --background-color-disabled: var(--color-transparent);
 }
 
+po-badge {
+  --background-color: var(--color-feedback-negative-base);
+  --border-color: var(--color-neutral-light-00);
+  --color: var(--color-neutral-light-00);
+
+  --border-radius: var(--border-radius-md);
+  --font-family: var(--font-family-theme);
+  --font-weight: var(--font-weight-bold);
+}
+
+po-badge[p-status='disabled'] {
+  --background-color: var(--color-action-disabled);
+}
+
+po-badge[p-status='positive'] {
+  --background-color: var(--color-feedback-positive-base);
+}
+
+po-badge[p-status='negative'] {
+  --background-color: var(--color-feedback-negative-base);
+}
+
+po-badge[p-status='warning'] {
+  --background-color: var(--color-feedback-warning-base);
+  --color: var(--color-neutral-dark-95);
+}
+
 :root {
   /*------------------------------------*\
   BADGE

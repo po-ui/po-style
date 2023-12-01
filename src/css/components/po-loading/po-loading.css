@@ -17,6 +17,30 @@
   padding: var(--spacing-md);
 }
 
+.po-loading-md {
+  width: calc(16.5rem / 1.75);
+  min-height: calc(13.75rem / 2);
+
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+}
+
+.po-loading-sm {
+  width: auto;
+  min-height: calc(13.75rem / 3);
+
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs);
+}
+
+.po-loading-xs {
+  width: auto;
+  min-height: fit-content;
+
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs);
+}
+
 .po-loading-label {
   font-family: var(--font-family);
   font-weight: var(--font-weight);

@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [16.8.0](https://github.com/po-ui/po-style/compare/v16.7.0...v16.8.0) (2023-12-05)
+
+
+### Code Refactoring
+
+* **progress:** remove variável não utilizada ([e3bf6b3](https://github.com/po-ui/po-style/commit/e3bf6b3fc7877dec151ddb73c20ad1a21e5ae4ee))
+
+
+### Features
+
+* **progress:** implementa definições do AnimaliaDS ([de03406](https://github.com/po-ui/po-style/commit/de0340643b16409e15654057c30e83799e31ca12))
+* **search:** implementa animaliaDS e externaliza para uso no portal ([cb6bfe5](https://github.com/po-ui/po-style/commit/cb6bfe587be49733028f12a6adb4e94c8e8f6e9c))
+
+
+### BREAKING CHANGES
+
+* **progress:** remove variáveis de customização de cores
+
+Remove variáveis para compatibilidade com @animaliads/progress e melhorias
+de acessibilidade, não sendo mais possível a customização.
+
+- `color-progress-bar-background-color-success`. : customização do background
+- `color-progress-bar-background-color-error`. : customização do background
+- `color-progress-color-info-icon`. : customização do ícone
+- `color-progress-color-text-success`. customização do texto no status de sucesso
+- `color-progress-color-info`. customização da cor no status padrão
+- `color-progress-border-color-info-icon-close`. customização da cor do ícone close
+
+
+
 # [16.7.0](https://github.com/po-ui/po-style/compare/v16.6.1...v16.7.0) (2023-11-17)
 
 

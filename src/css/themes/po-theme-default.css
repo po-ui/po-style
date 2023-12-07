@@ -1296,6 +1296,8 @@ po-search {
 
   --color-icon-read: var(--color-neutral-dark-70);
 
+  --color-icon: var(--color-action-default);
+
   --color-clear: var(--color-action-default);
 
   --color-hover: var(--color-action-hover);

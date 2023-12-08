@@ -34,9 +34,14 @@
 
 .po-switch-toggle {
   background-color: var(--color-unchecked);
-  border: var(--border-width-md) solid var(--border-color);
+  /* border: var(--border-width-md) solid var(--border-color); */
+  border-color: var(--border-color);
+  border-width: var(--border-width);
 
-  border-radius: 100%;
+  /* border-radius: 100%; */
+  border-radius: var(--border-radius);
+
+  border-style: solid;
   width: 1.5rem;
   height: 1.5rem;
   position: absolute;

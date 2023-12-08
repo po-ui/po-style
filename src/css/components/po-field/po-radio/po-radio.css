@@ -58,9 +58,11 @@ po-radio {
 
   -webkit-appearance: none;
   appearance: none;
-  border-width: var(--border-width-md);
+  /* border-width: var(--border-width-md); */
+  border-width: var(--border-width);
   border-style: solid;
-  border-radius: 100%;
+  /* border-radius: 100%; */
+  border-radius: var(--border-width);
   -webkit-background-clip: content-box;
   background-clip: content-box;
   margin: 0;

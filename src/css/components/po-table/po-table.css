@@ -115,7 +115,7 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: flex-end;
   padding-block: var(--spacing-xs);
   gap: var(--spacing-xs);
   width: 100%;

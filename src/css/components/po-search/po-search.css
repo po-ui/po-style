@@ -1,4 +1,180 @@
 .po-search {
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+
+.po-search .po-search-icon {
+  padding-inline: var(--spacing-xs);
+
+  color: var(--color-icon-read);
+
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  font-size: 1.5rem;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+}
+
+.po-search .po-search-input {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  border-color: var(--color);
+  border-radius: var(--border-radius);
+  background-color: var(--background);
+
+  font-weight: var(--font-weight-normal);
+  border-width: var(--border-width-sm);
+  border-style: solid;
+
+  min-height: 2.75rem;
+
+  align-self: stretch;
+  appearance: none;
+  height: 100%;
+  outline: none;
+  overflow: hidden;
+  padding-left: 2.75rem;
+  padding-right: var(--spacing-xs);
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.po-search .po-search-input.po-search-input-clean {
+  padding-right: calc(var(--spacing-xs) + 2.75rem);
+}
+
+.po-search .po-search-input.po-search-input-trigger {
+  padding-left: 0.25rem;
+  padding-right: calc(var(--spacing-xs) + 2.75rem);
+}
+
+.po-search
+  .po-search-input.po-search-input-trigger:focus
+  ~ .po-search-buttons
+  .po-search-button.po-search-button-trigger {
+  border-left-color: var(--color-focused);
+}
+
+.po-search
+  .po-search-input.po-search-input-trigger:hover
+  ~ .po-search-buttons
+  .po-search-button.po-search-button-trigger {
+  border-left-color: var(--color-hover);
+}
+
+.po-search .po-search-input.po-search-input-clean.po-search-input-trigger {
+  padding-right: calc(var(--spacing-xs) + 2.75rem * 2);
+}
+
+.po-search .po-search-input:disabled {
+  border-color: var(--color-disabled);
+  background-color: var(--background-disabled);
+
+  color: var(--color-disabled);
+  cursor: not-allowed;
+
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.po-search .po-search-input:is(:focus, :focus-visible) {
+  border-color: var(--color-focused);
+  outline-color: var(--outline-color-focused);
+
+  outline-width: var(--border-width-lg);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.po-search .po-search-input:not(:disabled):hover {
+  border-color: var(--color-hover);
+  background-color: var(--background-hover);
+}
+
+.po-search .po-search-input::placeholder {
+  color: var(--text-color-placeholder);
+}
+
+.po-search .po-search-buttons {
+  display: flex;
+  position: absolute;
+  inset: var(--border-width-sm);
+  left: auto;
+}
+
+.po-search .po-search-button {
+  background-color: transparent;
+  min-width: 2.75rem;
+
+  padding-inline: var(--spacing-xs);
+
+  color: var(--color-clear);
+
+  align-items: center;
+  align-self: stretch;
+  appearance: none;
+  border: none;
+  display: flex;
+  font-size: 1.5rem;
+  height: 100%;
+  justify-content: center;
+}
+
+.po-search .po-search-button:focus {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--border-width-md);
+  outline-style: solid;
+
+  outline-offset: 1px;
+
+  z-index: 1;
+}
+
+.po-search .po-search-button:hover {
+  background-color: var(--background-hover);
+  cursor: pointer;
+
+  color: var(--color-hover);
+}
+
+.po-search .po-search-button:last-of-type {
+  border-bottom-right-radius: calc(var(--border-radius) - var(--border-width-sm));
+  border-top-right-radius: calc(var(--border-radius) - var(--border-width-sm));
+}
+
+.po-search .po-search-button.po-search-button-trigger {
+  background-color: var(--background);
+  border-left-color: var(--color);
+  border-left-style: solid;
+  border-left-width: var(--border-width-sm);
+}
+
+.po-search .po-search-button.po-search-button-trigger:hover {
+  background-color: var(--background-hover);
+  border-left-color: var(--color);
+}
+
+.po-search.po-search-disabled {
+  pointer-events: none;
+}
+
+.po-search.po-search-disabled .po-search-icon *,
+.po-search.po-search-disabled .po-search-buttons * {
+  background-color: var(--background-disabled);
+  border-color: var(--color-disabled);
+  color: var(--color-disabled);
+}
+
+.po-search po-icon {
+  display: inline-flex;
+}
+
+/* .po-search {
   font-family: var(--font-family);
   font-size: var(--font-size);
   color: var(--text-color);
@@ -164,4 +340,4 @@
 
 .po-search po-icon {
   display: inline-flex;
-}
+} */

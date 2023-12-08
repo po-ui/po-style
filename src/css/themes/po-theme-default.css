@@ -461,6 +461,10 @@ po-checkbox {
   --color-unchecked-disabled: var(--color-action-disabled);
 
   --color-checked-disabled: var(--color-neutral-dark-70);
+
+  /* CUSTOM */
+  --border-radius: var(--border-radius-sm);
+  --border-width: var(--border-width-md);
 }
 
 :root {
@@ -501,7 +505,8 @@ po-combo {
   --text-color-placeholder: var(--color-neutral-light-30);
   --color: var(--color-neutral-dark-70);
   --background: var(--color-neutral-light-05);
-  --border-radius: var(--border-width-lg);
+
+  --border-radius: var(--border-radius-md);
 
   --color-hover: var(--color-action-hover);
   --background-hover: var(--color-brand-01-lightest);
@@ -509,7 +514,7 @@ po-combo {
   --color-focused: var(--color-action-default);
   --outline-color-focused: var(--color-action-focus);
 
-  --color-disabled: var(--color-neutral-light-30);
+  --color-disabled: var(--color-action-disabled);
   --background-disabled: var(--color-neutral-light-20);
 
   --color-error: var(--color-feedback-negative-base);
@@ -687,18 +692,26 @@ div.po-lookup-filter-content input.po-input,
 input.po-input {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-default);
-  --text-color-placeholder: var(--color-neutral-light-30);
+
+  --text-color-placeholder: var(--color-neutral-mid-60);
   --color: var(--color-neutral-dark-70);
   --background: var(--color-neutral-light-05);
-  --padding: 0 0.5rem;
+  --padding: 0.5rem;
+
   --text-color: var(--color-neutral-dark-90);
-  --color-hover: var(--color-brand-01-dark);
+
+  --color-hover: var(--color-action-hover);
   --background-hover: var(--color-brand-01-lightest);
+
   --color-focused: var(--color-action-default);
   --outline-color-focused: var(--color-action-focus);
-  --color-disabled: var(--color-neutral-light-30);
+
+  --color-disabled: var(--color-action-disabled);
   --background-disabled: var(--color-neutral-light-20);
+
   --text-color-disabled: var(--color-neutral-dark-70);
+
+  --color-error: var(--color-feedback-negative-base);
 }
 
 :root {
@@ -706,9 +719,9 @@ input.po-input {
   --color-input-border-text: var(--color-disabled);
   --color-input-border-text-disabled: var(--background-disabled);
   --color-input-border-text-focusable: var(--color-focused);
-  --color-input-border-text-error: var(--color-feedback-negative-base);
+  --color-input-border-text-error: var(--color-error);
   --color-input-color-disabled: var(--text-color-disabled);
-  --color-input-text-error: var(--color-feedback-negative-base);
+  --color-input-text-error: var(--color-error);
   --color-input-text-placeholder: var(--text-color-placeholder);
 }
 
@@ -1260,6 +1273,10 @@ po-radio {
   /* disabled */
   --color-unchecked-disabled: var(--color-neutral-light-30);
   --color-checked-disabled: var(--color-neutral-dark-70);
+
+  /* CUSTOM */
+  --border-radius: var(--border-radius-sm);
+  --border-width: var(--border-radius-pill);
 }
 
 :root {
@@ -1306,6 +1323,8 @@ po-search {
 
   --color-disabled: var(--color-action-disabled);
   --background-disabled: var(--color-neutral-light-20);
+
+  --color-icon: var(--color-action-default);
 }
 
 /*------------------------------------*\
@@ -1375,6 +1394,10 @@ po-switch {
 
   --color-unchecked-disabled: var(--color-neutral-light-20);
   --color-checked-disabled: var(--color-action-disabled);
+
+  /* CUSTOM */
+  --border-radius: var(--border-radius-pill);
+  --border-width: var(--border-width-md);
 }
 
 :root {

@@ -1,14 +1,16 @@
 :root {
   --border-radius-none: none;
-  --border-radius-sm: 2px;
-  --border-radius-md: 4px;
-  --border-radius-lg: 8px;
+  --border-radius-sm: var(--custom-border-radius, 2px);
+  --border-radius-md: var(--custom-border-radius, 4px);
+  --border-radius-lg: var(--custom-border-radius, 8px);
   --border-radius-pill: 400px;
+
   --border-width-none: none;
-  --border-width-sm: 1px;
-  --border-width-md: 2px;
-  --border-width-lg: 4px;
-  --border-width-xl: 8px;
+  --border-width-sm: var(--custom-border-width, 1px);
+  --border-width-md: var(--custom-border-width, 2px);
+  --border-width-lg: var(--custom-border-width, 4px);
+  --border-width-xl: var(--custom-border-width, 8px);
+
   --color-feedback-info-lightest: #e3e9f7;
   --color-feedback-info-lighter: #b0c1e8;
   --color-feedback-info-light: #7996d7;
@@ -37,11 +39,13 @@
   --color-feedback-warning-dark: #d8a20e;
   --color-feedback-warning-darker: #705200;
   --color-feedback-warning-darkest: #473400;
+
   --shadow-none: 0 0 0 rgb(255, 255, 255);
   --shadow-sm: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 3px 0 rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 0 3px 0 rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 6px 12px 0 rgba(0, 0, 0, 0.1), 0 0 3px 0 rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 16px 24px 0 rgba(0, 0, 0, 0.1), 0 0 3px 0 rgba(0, 0, 0, 0.1);
+
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
@@ -50,6 +54,7 @@
   --spacing-2xl: 3rem;
   --spacing-3xl: 3.5rem;
   --spacing-4xl: 4rem;
+
   --spacing-squish-2xs: 2px 4px;
   --spacing-squish-xs: 4px 8px;
   --spacing-squish-sm: 6px 12px;
@@ -58,6 +63,7 @@
   --spacing-squish-xl: 16px 24px;
   --spacing-squish-2xl: 24px 40px;
   --spacing-squish-3xl: 32px 48px;
+
   --letter-spacing-1: 0.015em;
   --letter-spacing-2: 0.025em;
   --letter-spacing-3: 0.05em;
@@ -69,6 +75,7 @@
   --letter-spacing-neg-3: -0.05em;
   --letter-spacing-neg-4: -0.075em;
   --letter-spacing-neg-5: -0.1em;
+
   --line-height-auto: auto;
   --line-height-none: 100%;
   --line-height-3xs: 110%;
@@ -81,6 +88,7 @@
   --line-height-2xl: 180%;
   --line-height-3xl: 190%;
   --line-height-4xl: 200%;
+
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-default: 1rem;
@@ -89,6 +97,7 @@
   --font-size-xl: 2rem;
   --font-size-2xl: 2.5rem;
   --font-size-3xl: 3rem;
+
   --font-weight-normal: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;

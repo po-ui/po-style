@@ -2,17 +2,21 @@
   font-family: var(--font-family);
   font-size: var(--font-size);
   color: var(--text-color);
+  border-color: var(--color-input-border-text, var(--color));
   background-color: var(--color-input-background-color-text, var(--background));
-  padding: var(--padding, 0 0.5em);
-  border: 1px solid var(--color-input-border-text, var(--color));
-  border-radius: 4px;
+  padding-inline: var(--padding);
+
+  border-width: var(--border-width-sm);
+  border-radius: var(--border-radius-md);
+  border-style: solid;
   min-height: 2.75em;
-  box-sizing: border-box;
+
   width: 100%;
 }
 
 .po-input.po-input-icon-right {
-  padding-right: 44px;
+  /* padding-right: 44px; */
+  padding-right: 2.75rem;
 }
 
 .po-input.po-input-double-icon-right {
@@ -24,7 +28,8 @@
 }
 
 .po-input.po-input-icon-left {
-  padding-left: 44px;
+  /* padding-left: 44px; */
+  padding-left: 2.75rem;
 }
 
 .po-input:hover {
@@ -81,11 +86,11 @@ po-password.ng-invalid.ng-dirty .po-input,
 po-select.ng-invalid.ng-dirty .po-select-button,
 po-upload.ng-invalid.ng-dirty .po-upload-button button,
 po-url.ng-invalid.ng-dirty .po-input {
-  border: solid 1px var(--color-input-border-text-error) !important;
-  color: var(--color-input-text-error);
+  border: solid var(--border-width-sm) var(--color-error) !important;
+  color: var(--color-error);
 }
 
 po-input.ng-invalid-mask .po-input {
-  border: solid 1px var(--color-input-border-text-error) !important;
-  color: var(--color-input-text-error);
+  border: solid var(--border-width-sm) var(--color-error) !important;
+  color: var(--color-error);
 }

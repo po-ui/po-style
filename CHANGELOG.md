@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [16.9.0](https://github.com/po-ui/po-style/compare/v16.8.0...v16.9.0) (2023-12-11)
+
+
+### Bug Fixes
+
+* **listbox:** ajusta redimensionamento do loading ([4cf08fb](https://github.com/po-ui/po-style/commit/4cf08fbe29231a119e38c873ef3305426995cce6))
+* **table:** ajusta redimensionamento do loading ([4f02710](https://github.com/po-ui/po-style/commit/4f027105bc9adbbea5c410fd3c9e21a2f4237a1e))
+
+
+### Features
+
+* **loading:** torna o p-size dinâmico ([1f5512e](https://github.com/po-ui/po-style/commit/1f5512e5e9c8be69ef9343697ce8478efae3cc85))
+
+
+
 # [16.8.0](https://github.com/po-ui/po-style/compare/v16.7.0...v16.8.0) (2023-12-05)
 
 

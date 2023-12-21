@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [16.10.0](https://github.com/po-ui/po-style/compare/v16.9.0...v16.10.0) (2023-12-21)
+
+
+### Features
+
+* **search:** implementa search trigger ([70fb715](https://github.com/po-ui/po-style/commit/70fb715671b49ce590ed68a0f3d93b79bf2aa777))
+
+
+
 # [16.9.0](https://github.com/po-ui/po-style/compare/v16.8.0...v16.9.0) (2023-12-11)
 
 

@@ -9,7 +9,8 @@
   border-width: var(--border-width-sm);
   border-radius: var(--border-radius-md);
   border-style: solid;
-  min-height: 2.75em;
+  /* min-height: 2.75em; */
+  min-height: var(--min-height-input);
 
   width: 100%;
 }

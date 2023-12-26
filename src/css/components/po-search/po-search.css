@@ -31,7 +31,8 @@
   border-width: var(--border-width-sm);
   border-style: solid;
 
-  min-height: 2.75rem;
+  /* min-height: 2.75rem; */
+  min-height: var(--min-height-input);
 
   align-self: stretch;
   appearance: none;

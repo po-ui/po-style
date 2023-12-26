@@ -362,6 +362,8 @@ po-button {
   --text-color-disabled: var(--color-neutral-dark-70);
   --color-disabled: var(--color-action-disabled);
   --background-color-disabled: var(--color-transparent);
+
+  --min-height-input: var(--default-height);
 }
 
 :root {
@@ -521,6 +523,8 @@ po-combo {
 
   --text-color-suggestion: var(--color-neutral-mid-60);
   --background-suggestion: var(--color-brand-01-lightest);
+
+  --min-height-input: var(--default-height);
 }
 
 /*------------------------------------*\
@@ -712,6 +716,8 @@ input.po-input {
   --text-color-disabled: var(--color-neutral-dark-70);
 
   --color-error: var(--color-feedback-negative-base);
+
+  --min-height-input: var(--default-height);
 }
 
 :root {
@@ -1029,6 +1035,8 @@ po-multiselect {
 
   /* error */
   --color-error: var(--color-feedback-negative-base);
+
+  --min-height-input: var(--default-height);
 }
 
 :root {
@@ -1325,6 +1333,7 @@ po-search {
   --background-disabled: var(--color-neutral-light-20);
 
   --color-icon: var(--color-action-default);
+  --min-height-input: var(--default-height);
 }
 
 /*------------------------------------*\

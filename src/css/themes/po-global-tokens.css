@@ -1,15 +1,18 @@
 :root {
+  --default-height: calc(var(--custom-default-height, 2.75em) * 1);
+
   --border-radius-none: none;
-  --border-radius-sm: var(--custom-border-radius, 2px);
-  --border-radius-md: var(--custom-border-radius, 4px);
-  --border-radius-lg: var(--custom-border-radius, 8px);
+  /* caso não passe custom-border, vai multiplicar 0.8 por 2.5 resultado no valor 2 (padrão) */
+  --border-radius-sm: calc(var(--custom-border-radius, 2.5px) * 0.8);
+  --border-radius-md: calc(var(--custom-border-radius, 4px) * 1);
+  --border-radius-lg: calc(var(--custom-border-radius, 6.66px) * 1.2);
   --border-radius-pill: 400px;
 
   --border-width-none: none;
-  --border-width-sm: var(--custom-border-width, 1px);
-  --border-width-md: var(--custom-border-width, 2px);
-  --border-width-lg: var(--custom-border-width, 4px);
-  --border-width-xl: var(--custom-border-width, 8px);
+  --border-width-sm: calc(var(--custom-border-width, 1.25px) * 0.8);
+  --border-width-md: calc(var(--custom-border-width, 2px) * 1);
+  --border-width-lg: calc(var(--custom-border-width, 3.33px) * 1.2);
+  --border-width-xl: calc(var(--custom-border-width, 5.71428px) * 1.4);
 
   --color-feedback-info-lightest: #e3e9f7;
   --color-feedback-info-lighter: #b0c1e8;

@@ -17,13 +17,17 @@
 }
 
 .po-button-group-container .po-button-group:first-child .po-button {
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
+  /* border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px; */
+  border-bottom-left-radius: var(--border-radius-md);
+  border-top-left-radius: var(--border-radius-md);
 }
 
 .po-button-group-container .po-button-group:last-child .po-button {
-  border-bottom-right-radius: 3px;
-  border-top-right-radius: 3px;
+  /* border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px; */
+  border-bottom-right-radius: var(--border-radius-md);
+  border-top-right-radius: var(--border-radius-md);
 }
 
 .po-button-group-container .po-button-group + .po-button-group {

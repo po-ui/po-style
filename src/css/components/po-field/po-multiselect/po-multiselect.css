@@ -14,7 +14,8 @@
   display: flex;
   flex-wrap: wrap;
   line-height: normal;
-  min-height: 2.75em;
+  /* min-height: 2.75em; */
+  min-height: var(--min-height-input);
 
   padding-block: var(--spacing-xs);
   overflow: hidden;

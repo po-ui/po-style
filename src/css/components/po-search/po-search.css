@@ -91,9 +91,13 @@
   border-color: var(--color-focused);
   outline-color: var(--outline-color-focused);
 
-  outline-width: var(--border-width-lg);
+  outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
+}
+
+.po-search .po-search-input:is(:focus-visible) {
+  outline-width: var(--outline-width-focus-visible);
 }
 
 .po-search .po-search-input:not(:disabled):hover {
@@ -132,12 +136,16 @@
 
 .po-search .po-search-button:focus {
   outline-color: var(--outline-color-focused);
-  outline-width: var(--border-width-md);
+  outline-width: var(--outline-width);
   outline-style: solid;
 
   outline-offset: 1px;
 
   z-index: 1;
+}
+
+.po-search .po-search-button:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
 }
 
 .po-search .po-search-button:hover {

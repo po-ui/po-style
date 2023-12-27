@@ -114,7 +114,7 @@
   font-family: var(--font-family);
   color: var(--color-title);
   flex: 1 1 auto;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight);
   line-height: var(--line-height-md);
   font-size: var(--font-size-default);
 }

@@ -73,6 +73,10 @@
   z-index: 1;
 }
 
+.po-accordion-item-header-button:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
+}
+
 .po-accordion-item-header-button:focus .po-accordion-item-header-icon {
   color: var(--color-focus);
 }

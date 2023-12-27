@@ -27,7 +27,7 @@
 }
 
 .po-button-group-container .po-button-group + .po-button-group {
-  margin-left: -2px;
+  margin-left: var(--button-group-container-margin);
 }
 
 .po-button-group-container .po-button-group:not(.po-button-group-disabled) {

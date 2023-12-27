@@ -109,6 +109,7 @@
   --color-hr-border-top: var(--color-neutral-light-10);
 
   --outline-width: var(--border-width-lg);
+  --outline-width-focus-visible: var(--border-width-lg);
 }
 
 /*------------------------------------*\
@@ -148,6 +149,9 @@
   --color-action-pressed: var(--color-brand-01-darker);
   --color-action-disabled: var(--color-neutral-light-30);
   --color-action-focus: var(--color-brand-01-darkest);
+
+  --font-size-default-normal: 14px;
+  --font-family-default-bold: var(--font-family-bold);
 }
 
 /*------------------------------------*\
@@ -403,6 +407,7 @@ po-badge[p-status='warning'] {
 \*------------------------------------*/
 po-breadcrumb {
   --font-family: var(--font-family-theme);
+  --font-weight: var(--font-weight-bold);
   --color-icon: var(--color-neutral-mid-60);
   --color-current-page: var(--color-neutral-mid-60);
   --color: var(--color-action-default);
@@ -861,6 +866,7 @@ po-label {
 \*------------------------------------*/
 po-link {
   --font-family: var(--font-family-theme);
+  --font-weight: var(--font-weight-bold);
   --text-color: var(--color-action-default);
 
   --text-color-hover: var(--color-action-hover);
@@ -1090,6 +1096,7 @@ po-multiselect {
   --font-size: var(--font-size-default);
   --text-color-placeholder: var(--color-action-disabled);
   --color: var(--color-neutral-dark-70);
+  --color-icon: var(--color-neutral-dark-70);
   --background: var(--color-neutral-light-05);
 
   /* hover */
@@ -1249,6 +1256,7 @@ po-page-slide {
 
   /* title */
   --font-family: var(--font-family-heading);
+  --font-weight: var(--font-weight-bold);
   --color-title: var(--color-neutral-dark-95);
 }
 
@@ -1633,6 +1641,7 @@ po-table {
 po-table-list-manager {
   /* type */
   --color-type: var(--color-neutral-dark-70);
+  --font-weight: var(--font-weight-bold);
 
   /* column text */
   --color-column-text: var(--color-neutral-dark-95);
@@ -1656,6 +1665,7 @@ po-tag {
   --border-radius: var(--border-radius-pill);
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-sm);
+  --font-weight: var(--font-weight-bold);
   --line-height: var(--line-height-sm);
 
   /* neutral */

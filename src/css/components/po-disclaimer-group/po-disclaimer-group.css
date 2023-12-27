@@ -13,7 +13,9 @@
 }
 
 .po-disclaimer-group-title {
-  @apply --font-disclaimer-font-title;
+  font-family: var(--font-family-default-bold), sans-serif;
+  font-size: var(--font-size-default-normal);
+  line-height: 24px;
   color: var(--color-disclaimer-group-font-title);
   padding-bottom: 8px;
 }

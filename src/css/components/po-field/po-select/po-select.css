@@ -42,6 +42,10 @@ select:focus {
   outline-offset: 2px;
 }
 
+select:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
+}
+
 select:disabled {
   border-color: var(--color-disabled);
   background-color: var(--background-disabled);

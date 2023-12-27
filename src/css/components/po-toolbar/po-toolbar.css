@@ -29,7 +29,10 @@
 }
 
 .po-toolbar-title {
-  @apply --font-toolbar-font-title;
+  font-family: var(--font-family-default-bold), sans-serif;
+  font-size: var(--font-size-default-normal);
+  line-height: 24px;
+  text-transform: uppercase;
   color: var(--color-toolbar-color-title);
   display: table-cell;
   height: 24px;

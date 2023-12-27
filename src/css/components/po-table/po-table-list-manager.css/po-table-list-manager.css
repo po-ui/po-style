@@ -38,7 +38,7 @@
   color: var(--color-column-text);
 
   font-family: var(--font-family-theme);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight);
   line-height: var(--line-height-md);
   letter-spacing: var(--letter-spacing-1);
   font-size: var(--font-size-default);

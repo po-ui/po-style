@@ -2,7 +2,7 @@
   color: var(--text-color);
   font-family: var(--font-family);
   font-size: inherit;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight);
   letter-spacing: var(--letter-spacing-auto);
   line-height: inherit;
   text-decoration: underline;
@@ -35,6 +35,10 @@
   outline-style: solid;
   outline-width: var(--outline-width);
   text-decoration: none;
+}
+
+.po-link:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
 }
 
 .po-link:visited {

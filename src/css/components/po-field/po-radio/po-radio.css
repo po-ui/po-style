@@ -47,7 +47,7 @@ po-radio {
 .po-radio-focus > label {
   outline-color: var(--outline-color-focused);
 
-  outline-width: var(--outline-width);
+  outline-width: var(--outline-width-focus-visible);
   outline-style: solid;
   outline-offset: 2px;
 }
@@ -117,4 +117,16 @@ po-radio {
 
 .po-radio input[type='radio']:not([disabled]):focus-visible {
   outline: none;
+}
+
+.po-radio label:not(.po-label-disabled) {
+  color: var(--color-brand-01-darker);
+}
+
+.po-radio label:not(.po-label-disabled):hover {
+  color: var(--color-brand-01-darkest);
+}
+
+.po-radio label.po-label-disabled {
+  cursor: not-allowed;
 }

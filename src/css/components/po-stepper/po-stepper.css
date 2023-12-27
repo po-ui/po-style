@@ -126,7 +126,9 @@
 }
 
 .po-stepper-label {
-  @apply --font-stepper-label;
+  font-family: var(--font-family-default-bold), sans-serif;
+  font-size: var(--font-size-default-normal);
+  line-height: 24px;
 }
 
 .po-stepper-horizontal .po-stepper-label {

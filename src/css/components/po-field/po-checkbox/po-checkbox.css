@@ -34,12 +34,16 @@
   outline: none;
 }
 
-.po-checkbox-outline:is(:focus, :focus-visible) {
+.po-checkbox-outline:is(:focus) {
   outline-color: var(--color-checkbox-box-shadow-color-focusable, var(--outline-color-focused));
 
   outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
+}
+
+.po-checkbox-outline:is(:focus-visible) {
+  outline-width: var(--outline-width-focus-visible);
 }
 
 .po-checkbox-outline {
@@ -98,6 +102,15 @@
   content: '\e939';
   font-size: 20px;
   color: var(--color-checkbox-background-color, var(--color-unchecked));
+}
+
+.po-checkbox-label > label.po-label:not(.po-label-disabled) {
+  color: var(--color-brand-01-darker);
+  cursor: pointer;
+}
+
+.po-checkbox-label > label.po-label:not(.po-label-disabled):hover {
+  color: var(--color-brand-01-darkest);
 }
 
 po-checkbox.ng-invalid.ng-dirty .po-checkbox-input + .po-checkbox-label:before {

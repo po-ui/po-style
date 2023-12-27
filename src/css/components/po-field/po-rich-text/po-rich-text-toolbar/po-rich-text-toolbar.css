@@ -58,6 +58,10 @@
   width: 44px;
 }
 
+.po-button-default.po-rich-text-toolbar-color-picker-button {
+  border: none;
+}
+
 .po-rich-text-toolbar-color-picker-container {
   display: flex;
 }
@@ -71,7 +75,6 @@
   background-color: transparent;
   border: none;
   height: 100%;
-  padding: 10%;
   vertical-align: middle;
   width: 100%;
 }

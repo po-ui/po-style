@@ -26,6 +26,10 @@
 }
 
 .po-multiselect-input .po-field-icon-container-right .po-icon-input {
+  color: var(--color-icon);
+}
+
+.po-multiselect-input-disabled .po-field-icon-container-right .po-icon-input {
   color: var(--color);
 }
 
@@ -38,6 +42,10 @@
   border-width: 1px;
   outline-style: solid;
   outline-offset: 2px;
+}
+
+.po-multiselect-input:focus-visible:not(.po-multiselect-input-disabled) {
+  outline-width: var(--outline-width-focus-visible);
 }
 
 .po-multiselect-input:focus .po-field-icon-container-right .po-icon-input {

@@ -50,6 +50,10 @@
   outline-offset: 2px;
 }
 
+.po-breadcrumb-favorite:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
+}
+
 .po-breadcrumb-favorite-star-active {
   color: var(--color-warning);
   position: relative;
@@ -59,7 +63,7 @@
 .po-breadcrumb-favorite {
   color: var(--color-action-default);
   font-family: var(--font-family-theme);
-  font-weight: 700;
+  font-weight: var(--font-weight);
 }
 
 .po-breadcrumb-favorite-label {
@@ -76,6 +80,15 @@
   outline-color: var(--color-brand-01-darkest);
 
   outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.po-breadcrumb-item-activate:focus-visible,
+.po-breadcrumb-icon-more:focus-visible {
+  outline-color: var(--color-brand-01-darkest);
+
+  outline-width: var(--outline-width-focus-visible);
   outline-style: solid;
   outline-offset: 2px;
 }

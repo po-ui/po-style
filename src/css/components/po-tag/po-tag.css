@@ -54,6 +54,10 @@
   outline-style: solid;
 }
 
+.po-clickable.po-tag:not(.po-tag-removable):focus-visible {
+  outline-width: var(--outline-width-focus-visible);
+}
+
 .po-tag-removable {
   background-color: var(--color);
   border-color: var(--border-color);
@@ -96,7 +100,7 @@
 
 .po-tag-remove:focus-visible {
   outline-color: var(--outline-color-focused);
-  outline-width: var(--outline-width);
+  outline-width: var(--outline-width-focus-visible);
 
   outline-style: solid;
 }
@@ -127,8 +131,10 @@
   align-items: center;
   width: 100%;
   justify-content: center;
-
-  @apply --font-tag-font-label;
+  font-family: var(--font-family-theme), sans-serif;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: 24px;
   color: var(--color-neutral-dark-70);
 }
 

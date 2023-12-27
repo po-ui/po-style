@@ -29,7 +29,7 @@
   border-color: var(--color-focused);
   outline-color: var(--outline-color-focused);
 
-  outline-width: var(--outline-width);
+  outline-width: var(--outline-width-focus-visible);
   outline-style: solid;
   outline-offset: 2px;
 }

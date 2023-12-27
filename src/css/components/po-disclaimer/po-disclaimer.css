@@ -60,11 +60,14 @@
   color: var(--text-color);
 }
 
-.po-disclaimer-remove:active,
-.po-disclaimer-remove:focus-visible {
+.po-disclaimer-remove:active {
   outline-color: var(--outline-color-focused);
   outline-style: solid;
   outline-width: var(--outline-width);
+}
+
+.po-disclaimer-remove:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
 }
 
 .po-disclaimer-remove:hover {

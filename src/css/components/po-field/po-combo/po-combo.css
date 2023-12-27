@@ -20,13 +20,16 @@
   cursor: not-allowed;
 }
 
-.po-combo-input:focus,
-.po-combo-input-focus {
+.po-combo-input:focus {
   border-color: var(--color-focused);
   outline-color: var(--outline-color-focused);
   outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
+}
+
+.po-combo-input:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
 }
 
 .po-combo-input:focus:hover,
@@ -110,6 +113,10 @@
   outline-style: solid;
   outline-offset: 2px;
   z-index: 1;
+}
+
+.po-combo-clean:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
 }
 
 .po-combo-clean:focus .po-icon.po-field-icon.po-icon-clear-content,

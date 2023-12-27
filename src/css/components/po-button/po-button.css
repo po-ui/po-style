@@ -51,6 +51,11 @@ po-button {
   outline-offset: 2px;
 }
 
+.po-button:focus-visible,
+.po-button:enabled:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
+}
+
 .po-button[p-kind='secondary'] {
   color: var(--color);
   border-color: var(--color);

@@ -42,9 +42,13 @@
   outline-color: var(--outline-color-focused);
   outline-width: var(--outline-width);
   outline-style: solid;
-  outline-offset: 2px;
+  outline-offset: var(--outline-width);
 
   z-index: 1;
+}
+
+.po-accordion-manager-button:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
 }
 
 /* remove a borda interna nativa do botão no firefox */

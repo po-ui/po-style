@@ -40,6 +40,10 @@
   outline-offset: 2px;
 }
 
+.po-input:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
+}
+
 .po-input:read-only:not(div, :disabled) {
   border-color: var(--color-neutral-light-30);
   background-color: var(--color-neutral-light-05);

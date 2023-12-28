@@ -186,8 +186,8 @@
   ); /* Usar em menu: Background dos itens de segundo nível (30% de opacidade) */
   --color-black: #000000;
 
-  --color-success: #00b28e; /* Background do Feedback de sucesso */
-  --color-warning: #ea9b3e; /* Background do Feedback de atenção */
+  --color-success-default: #00b28e; /* Background do Feedback de sucesso */
+  --color-warning-default: #ea9b3e; /* Background do Feedback de atenção */
   --color-danger-dark-20: #9e3933; /* Hover para botão danger */
 
   --color-transparent: transparent;
@@ -1110,7 +1110,7 @@ po-overlay {
   --color-page-change-password-color-link: var(--color-primary);
   --color-page-change-password-color-text: var(--color-neutral-dark-70);
   --color-page-change-password-color-required: var(--color-neutral-dark-70);
-  --color-page-change-password-color-required-ok: var(--color-success);
+  --color-page-change-password-color-required-ok: var(--color-success-default);
   --color-page-change-password-color-required-minus: var(--color-black-alpha-30);
   --color-page-change-password-color-required-text: var(--color-secondary-dark-60-alpha-70);
 
@@ -1693,7 +1693,7 @@ po-textarea {
 
   --color-upload-color-progress: var(--color-brand-03-base);
   --color-upload-color-text-load: var(--color-neutral-light-00);
-  --color-upload-background-color-success: var(--color-success);
+  --color-upload-background-color-success: var(--color-success-default);
   --color-upload-background-color-load-progress: var(--color-brand-03-base);
   --color-upload-background-color-error: var(--color-feedback-negative-base);
   --color-upload-color-text-load-waiting: var(--color-neutral-dark-70);
@@ -1759,39 +1759,67 @@ po-widget {
 /*------------------------------------*\
   SERVICES
 \*------------------------------------*/
-:root {
-  /*------------------------------------*\
-  TOASTER
+
+/*------------------------------------*\
+TOASTER
 \*------------------------------------*/
+po-toaster {
+  --border-radius: var(--border-radius-md);
+  --color-icon: var(--color-neutral-light-00);
+  --shadow: var(--shadow-lg);
+
+  /* Success */
+  --color-success: var(--color-feedback-positive-base);
+  --background-success: var(--color-feedback-positive-lightest);
+  --border-color-success: var(--color-feedback-positive-lighter);
+
+  /* Error */
+  --color-error: var(--color-feedback-negative-base);
+  --background-error: var(--color-feedback-negative-lightest);
+  --border-color-error: var(--color-feedback-negative-lighter);
+
+  /* Warning */
+  --color-warning: var(--color-feedback-warning-base);
+  --color-icon-warning: var(--color-neutral-dark-90);
+  --background-warning: var(--color-feedback-warning-lightest);
+  --border-color-warning: var(--color-feedback-warning-lighter);
+
+  /* Info */
+  --color-info: var(--color-feedback-info-base);
+  --background-info: var(--color-feedback-info-lightest);
+  --border-color-info: var(--color-feedback-info-lighter);
+}
+
+:root {
   /**
    * Toaster Item Success
    */
-  --color-toaster-background-color-success: var(--color-feedback-positive-lightest);
-  --color-toaster-border-color-success: var(--color-feedback-positive-lighter);
-  --color-toaster-icon-background-color-success: var(--color-feedback-positive-base);
-  --color-toaster-icon-color-success: var(--color-neutral-light-00);
+  --color-toaster-background-color-success: var(--background-success);
+  --color-toaster-border-color-success: var(--border-color-success);
+  --color-toaster-icon-background-color-success: var(--color-success);
+  --color-toaster-icon-color-success: var(--color-icon);
 
   /**
    * Toaster Item Warning
    */
-  --color-toaster-background-color-warning: var(--color-feedback-warning-lightest);
-  --color-toaster-border-color-warning: var(--color-feedback-warning-lighter);
-  --color-toaster-icon-background-color-warning: var(--color-feedback-warning-base);
-  --color-toaster-icon-color-warning: var(--color-neutral-dark-90);
+  --color-toaster-background-color-warning: var(--background-warning);
+  --color-toaster-border-color-warning: var(--border-color-warning);
+  --color-toaster-icon-background-color-warning: var(--color-warning);
+  --color-toaster-icon-color-warning: var(--color-icon-warning);
 
   /**
    * Toaster Item Error
    */
-  --color-toaster-background-color-error: var(--color-feedback-negative-lightest);
-  --color-toaster-border-color-error: var(--color-feedback-negative-lighter);
-  --color-toaster-icon-background-color-error: var(--color-feedback-negative-base);
-  --color-toaster-icon-color-error: var(--color-neutral-light-00);
+  --color-toaster-background-color-error: var(--background-error);
+  --color-toaster-border-color-error: var(--border-color-error);
+  --color-toaster-icon-background-color-error: var(--color-error);
+  --color-toaster-icon-color-error: var(--color-icon);
 
   /**
    * Toaster Item Info
    */
-  --color-toaster-background-color-info: var(--color-feedback-info-lightest);
-  --color-toaster-border-color-info: var(--color-feedback-info-lighter);
-  --color-toaster-icon-background-color-info: var(--color-feedback-info-base);
-  --color-toaster-icon-color-info: var(--color-neutral-light-00);
+  --color-toaster-background-color-info: var(--background-info);
+  --color-toaster-border-color-info: var(--border-color-info);
+  --color-toaster-icon-background-color-info: var(--color-info);
+  --color-toaster-icon-color-info: var(--color-icon);
 }

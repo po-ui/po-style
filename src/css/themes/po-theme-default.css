@@ -408,27 +408,70 @@ po-breadcrumb {
   --color: var(--color-action-default);
 }
 
+po-button-group .po-button {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --font-weight: var(--font-weight-bold);
+  --line-height: var(--line-height-none);
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-md);
+  --padding: 0 1em;
+
+  --text-color: var(--color-neutral-light-00);
+  --color: var(--color-action-default);
+  --background-color: var(--color-transparent);
+  --shadow: var(--shadow-none);
+
+  /* hover */
+  --color-hover: var(--color-action-hover);
+  --background-hover: var(--color-brand-01-lighter);
+  --border-color-hover: var(--color-brand-01-darkest);
+
+  /* focused */
+  --outline-color-focused: var(--color-action-focus);
+
+  /* pressed */
+  --color-pressed: var(--color-action-pressed);
+  --background-pressed: var(--color-brand-01-light);
+
+  /* disabled */
+  --color-disabled: var(--color-action-disabled);
+  --background-color-disabled: var(--color-transparent);
+}
+
 :root {
   --color-breadcrumb-color-item: var(--color); /*Deprecated v18.x.x utilizar --color */
 
   /*------------------------------------*\
   BUTTON GROUP
 \*------------------------------------*/
-  --color-button-group-background-selected: var(--color-brand-01-darker);
-  --color-button-group-border-selected: var(--color-brand-01-darker);
-  --color-button-group-color-selected: var(--color-neutral-light-00);
+  --color-button-group-background-selected: var(--color-pressed);
+  /*Deprecated v18.x.x utilizar --color-pressed */
+  --color-button-group-border-selected: var(--color-pressed);
+  /*Deprecated v18.x.x utilizar --color-pressed */
+  --color-button-group-color-selected: var(--text-color);
+  /*Deprecated v18.x.x utilizar --text-color */
 
-  --color-button-group-background-color-neutral-hover: var(--color-brand-01-dark);
-  --color-button-group-border-neutral-hover: var(--color-brand-01-dark);
-  --color-button-group-color-neutral-hover: var(--color-neutral-light-00);
+  --color-button-group-background-color-neutral-hover: var(--color-hover);
+  /*Deprecated v18.x.x utilizar --color-hover */
+  --color-button-group-border-neutral-hover: var(--color-hover);
+  /*Deprecated v18.x.x utilizar --color-hover */
+  --color-button-group-color-neutral-hover: var(--text-color);
+  /*Deprecated v18.x.x utilizar --text-color */
 
-  --color-button-group-background-color-neutral-pressed: var(--color-brand-01-darker);
-  --color-button-group-border-neutral-pressed: var(--color-brand-01-darker);
-  --color-button-group-color-neutral-pressed: var(--color-neutral-light-00);
+  --color-button-group-background-color-neutral-pressed: var(--color-pressed);
+  /*Deprecated v18.x.x utilizar --color-pressed */
+  --color-button-group-border-neutral-pressed: var(--color-pressed);
+  /*Deprecated v18.x.x utilizar --color-pressed */
+  --color-button-group-color-neutral-pressed: var(--text-color);
+  /*Deprecated v18.x.x utilizar --text-color */
 
-  --color-button-group-background-color-neutral-disabled: var(--color-transparent);
-  --color-button-group-border-neutral-disabled: var(--color-neutral-light-30);
-  --color-button-group-color-neutral-disabled: var(--color-neutral-light-30);
+  --color-button-group-background-color-neutral-disabled: var(--background-color-disabled);
+  /*Deprecated v18.x.x utilizar --background-color-disabled */
+  --color-button-group-border-neutral-disabled: var(--color-disabled);
+  /*Deprecated v18.x.x utilizar --color-disabled */
+  --color-button-group-color-neutral-disabled: var(--color-disabled);
+  /*Deprecated v18.x.x utilizar --color-disabled */
 
   /*------------------------------------*\
   CALENDAR

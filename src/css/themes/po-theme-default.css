@@ -1795,31 +1795,47 @@ po-toaster {
    * Toaster Item Success
    */
   --color-toaster-background-color-success: var(--background-success);
+  /*Deprecated v18.x.x utilizar --background-success*/
   --color-toaster-border-color-success: var(--border-color-success);
+  /*Deprecated v18.x.x utilizar --border-color-success*/
   --color-toaster-icon-background-color-success: var(--color-success);
+  /*Deprecated v18.x.x utilizar --color-success*/
   --color-toaster-icon-color-success: var(--color-icon);
+  /*Deprecated v18.x.x utilizar --color-icon*/
 
   /**
    * Toaster Item Warning
    */
   --color-toaster-background-color-warning: var(--background-warning);
+  /*Deprecated v18.x.x utilizar --background-warning*/
   --color-toaster-border-color-warning: var(--border-color-warning);
+  /*Deprecated v18.x.x utilizar --border-color-warning*/
   --color-toaster-icon-background-color-warning: var(--color-warning);
+  /*Deprecated v18.x.x utilizar --color-warning*/
   --color-toaster-icon-color-warning: var(--color-icon-warning);
+  /*Deprecated v18.x.x utilizar --color-icon-warning*/
 
   /**
    * Toaster Item Error
    */
   --color-toaster-background-color-error: var(--background-error);
+  /*Deprecated v18.x.x utilizar --background-error*/
   --color-toaster-border-color-error: var(--border-color-error);
+  /*Deprecated v18.x.x utilizar --border-color-error*/
   --color-toaster-icon-background-color-error: var(--color-error);
+  /*Deprecated v18.x.x utilizar --color-error*/
   --color-toaster-icon-color-error: var(--color-icon);
+  /*Deprecated v18.x.x utilizar --color-icon*/
 
   /**
    * Toaster Item Info
    */
   --color-toaster-background-color-info: var(--background-info);
+  /*Deprecated v18.x.x utilizar --background-info*/
   --color-toaster-border-color-info: var(--border-color-info);
+  /*Deprecated v18.x.x utilizar --border-color-info*/
   --color-toaster-icon-background-color-info: var(--color-info);
+  /*Deprecated v18.x.x utilizar --color-info*/
   --color-toaster-icon-color-info: var(--color-icon);
+  /*Deprecated v18.x.x utilizar --color-icon*/
 }

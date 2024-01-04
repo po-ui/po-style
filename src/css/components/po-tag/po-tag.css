@@ -47,11 +47,10 @@
   outline: none;
 }
 
-.po-clickable.po-tag:not(.po-tag-removable):focus-visible,
-.po-clickable.po-tag:not(.po-tag-removable):active {
+.po-clickable.po-tag-wrapper:not(.po-tag-removable):focus-visible > .po-tag,
+.po-clickable.po-tag-wrapper:not(.po-tag-removable):active > .po-tag {
   outline-color: var(--outline-color-focused);
   outline-width: var(--outline-width);
-
   outline-style: solid;
 }
 
@@ -123,6 +122,12 @@
 }
 
 .po-tag-label {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+
   @apply --font-tag-font-label;
   color: var(--color-neutral-dark-70);
 }
@@ -188,6 +193,16 @@
   background-color: var(--color-tag-warning);
   border-color: var(--text-color-warning);
   color: var(--text-color-warning);
+}
+
+.po-clickable.po-tag-wrapper,
+.po-click.po-tag-wrapper {
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
 }
 
 .po-tag-inverse.po-text-color-01 {

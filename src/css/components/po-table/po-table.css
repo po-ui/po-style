@@ -35,6 +35,10 @@
   width: 100%;
 }
 
+.po-table-data-fixed-columns {
+  table-layout: fixed;
+}
+
 .po-table thead tr th,
 .po-table .po-table-master-detail thead tr th {
   background-color: var(--background-color-headline);

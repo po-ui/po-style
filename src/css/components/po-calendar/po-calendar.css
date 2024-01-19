@@ -98,6 +98,7 @@
 .po-calendar-content .po-calendar-content-list-month,
 .po-calendar-content .po-calendar-content-list-year {
   position: absolute;
+  text-wrap: wrap;
 }
 
 .po-calendar-content .po-calendar-content-list-day {

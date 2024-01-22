@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [16.12.0](https://github.com/po-ui/po-style/compare/v16.11.0...v16.12.0) (2024-01-22)
+
+
+### Features
+
+* **button-group:** implementa definições do animaliaDS ([30f0842](https://github.com/po-ui/po-style/commit/30f08427e1d297ac00284fcc6790974efea6107e))
+* **tag:** ajusta área de click mínima ([5642d06](https://github.com/po-ui/po-style/commit/5642d06dcc11c57e7a963302916ff4ab71742730))
+* **theme:** adiciona depreciação de variáveis para 18.x.x ([92c3e2c](https://github.com/po-ui/po-style/commit/92c3e2cd9129ec7bfed7ef888976a530846868f6))
+* **toaster:** utilizar os tokens do AnimaliaDS ([c7241c6](https://github.com/po-ui/po-style/commit/c7241c62d818c79e7bc8a9a8927b01bf0d7c4e48))
+
+
+
 # [16.11.0](https://github.com/po-ui/po-style/compare/v16.10.0...v16.11.0) (2024-01-12)
 
 

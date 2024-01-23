@@ -710,14 +710,19 @@ po-field-container-bottom {
 
 :root {
   --color-field-container-bottom-color-text-error: var(--text-color-error);
+  /*Deprecated v18.x.x utilizar --text-color-error */
   --color-field-container-color-help: var(--text-color-help);
+  /*Deprecated v18.x.x utilizar --text-color-help */
 
   /*------------------------------------*\
   FIELD ICON
 \*------------------------------------*/
   --color-field-icon-color: var(--color-primary);
+  /* Deprecated v18.x.x utilizar --color-brand-02-base */
   --color-field-icon-color-error: var(--color-feedback-negative-base);
+  /* Deprecated v18.x.x utilizar --color-icon-error */
   --color-field-icon-color-disabled: var(--color-neutral-light-30);
+  /* Deprecated v18.x.x utilizar --color-neutral-light-30 */
 
   /*------------------------------------*\
   GAUGE
@@ -773,13 +778,21 @@ input.po-input {
 
 :root {
   --color-input-background-color-text: var(--background);
+  /*Deprecated v18.x.x utilizar --background */
   --color-input-border-text: var(--color-disabled);
+  /*Deprecated v18.x.x utilizar --color-disabled */
   --color-input-border-text-disabled: var(--background-disabled);
+  /*Deprecated v18.x.x utilizar --background-disabled */
   --color-input-border-text-focusable: var(--color-focused);
+  /*Deprecated v18.x.x utilizar --color-focused */
   --color-input-border-text-error: var(--color-feedback-negative-base);
+  /*Deprecated v18.x.x utilizar --color-feedback-negative-base */
   --color-input-color-disabled: var(--text-color-disabled);
+  /*Deprecated v18.x.x utilizar -text-color-disabled */
   --color-input-text-error: var(--color-feedback-negative-base);
+  /*Deprecated v18.x.x utilizar --color-feedback-negative-base */
   --color-input-text-placeholder: var(--text-color-placeholder);
+  /*Deprecated v18.x.x utilizar --text-color-placeholder */
 }
 
 /*------------------------------------*\

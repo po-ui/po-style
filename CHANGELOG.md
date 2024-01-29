@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.13.0](https://github.com/po-ui/po-style/compare/v16.12.0...v16.13.0) (2024-01-29)
+
+
+### Bug Fixes
+
+* **calendar:** ajusta `po-calendar` dentro do `po-table` ([145d7af](https://github.com/po-ui/po-style/commit/145d7af9942b75e3cb42dfbf2eb88d6a4d72ac93))
+* **table:** ajusta propriedade width ([9ac6a1f](https://github.com/po-ui/po-style/commit/9ac6a1f9982e2e2ff1d6ae9728cad132ddd98478))
+
+
+
 # [16.12.0](https://github.com/po-ui/po-style/compare/v16.11.0...v16.12.0) (2024-01-22)
 
 

@@ -639,3 +639,7 @@ span.po-table-header-icon-ascending svg {
     print-color-adjust: exact;
   }
 }
+
+.po-table-row-template-container {
+  max-width: 1rem;
+}

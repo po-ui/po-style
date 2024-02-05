@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.14.0](https://github.com/po-ui/po-style/compare/v16.13.0...v16.14.0) (2024-02-05)
+
+
+### Bug Fixes
+
+* **page-slide:** ajusta largura do po-page-slide ([f4e7d94](https://github.com/po-ui/po-style/commit/f4e7d9455fc0bceec28321dcdb06e4311739a44a))
+* **table:** ajusta largura do template details ([c52e41a](https://github.com/po-ui/po-style/commit/c52e41ad031c1a72e562cfb7424d43cf601f816a))
+
+
+
 ## [16.13.0](https://github.com/po-ui/po-style/compare/v16.12.0...v16.13.0) (2024-01-29)
 
 

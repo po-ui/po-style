@@ -1458,15 +1458,6 @@ po-switch {
 
   --color-tab-button-color: var(--color-action-default);
   --color-tab-button-color-disabled: var(--color-neutral-light-30);
-
-  /*------------------------------------*\
-  TAB DROPDOWN
-\*------------------------------------*/
-  --color-tab-dropdown-background-color-tab-dropdown-button-active: var(--color-primary);
-  --color-tab-dropdown-background-color-tab-dropdown-button-disabled: var(--color-neutral-light-00);
-  --color-tab-dropdown-background-color-tab-dropdown-button-hover: var(--color-primary-light-95);
-
-  --color-tab-dropdown-color-tab-dropdown-button: var(--color-neutral-light-00);
 }
 
 /*------------------------------------*\

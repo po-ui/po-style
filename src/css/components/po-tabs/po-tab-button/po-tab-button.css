@@ -1,62 +1,100 @@
-:root {
-  --font-tab-button-font-md: {
-    @apply --font-text-large-bold;
-  }
-
-  --font-tab-button-font-sm: {
-    @apply --font-text-bold;
-  }
-}
-
 .po-tab-button {
-  box-shadow: inset 0 -1px 0 0 var(--color-tab-button-box-shadow);
-  color: var(--color-tab-button-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+
+  color: var(--color-tab-button-color, var(--color));
   cursor: pointer;
-  display: table-cell;
   text-align: center;
   vertical-align: middle;
+  max-width: 15rem;
+  min-height: 2.75rem;
+  padding-top: 0.5em;
 }
 
-.po-tab-button-md,
-.po-tab-button-sm {
+.po-tab-button-default po-button[p-kind='tertiary'] {
+  --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  --background-color: var(--color-neutral-light-00);
+}
+
+.po-tab-button:last-child {
+  margin-right: var(--spacing-md);
+}
+
+.po-tab-button:first-child {
+  margin-left: var(--spacing-md);
+}
+
+.border-tab-button {
+  box-shadow: inset 0 -1px 0 0 var(--color-tab-button-box-shadow, var(--color-baseline));
+}
+
+.po-tab-button-default {
   align-items: center;
   display: inline-flex;
   text-align: center;
   width: 100%;
 }
 
-.po-tab-button-md {
-  @apply --font-tab-button-font-md;
-  height: 44px;
+.po-tab-button-default:not(.po-tab-button-disabled, .po-tab-dropdown-content):hover {
+  background-color: var(--background-item-hover);
+  border-radius: var(--border-radius);
+  color: var(--color-hover);
 }
 
-.po-tab-button-sm {
-  @apply --font-tab-button-font-sm;
-  height: 32px;
-}
-
-.po-tab-button-label {
-  padding: 0 16px;
-  width: 100%;
+.po-tab-button-default:not(.po-tab-button-disabled):focus-visible {
+  background-color: var(--background-item-selected);
+  border-radius: var(--border-radius);
+  color: var(--color-hover);
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: 2px;
 }
 
 .po-tab-button-disabled {
-  color: var(--color-tab-button-color-disabled);
-  cursor: default;
+  cursor: not-allowed;
+  background-color: var(--background-item-disabled);
+  border-radius: var(--border-radius);
+  color: var(--color-disabled);
+}
+
+.po-tab-button-default {
+  min-height: 2.75em;
+}
+
+.po-tab-button-label {
+  padding: 0 1rem;
+  width: 100%;
+  user-select: none;
+}
+
+.po-tab-border-active,
+.po-tab-border-disabled {
+  width: 100%;
+  height: 0.125rem;
+  margin-top: 0.25rem;
+  border-radius: 1px;
+}
+
+.po-tab-border-active {
+  background-color: var(--color-tab-button-box-shadow-active, var(--color));
+}
+
+.po-tab-border-disabled {
+  background-color: transparent;
 }
 
 .po-tab-button-active {
-  box-shadow: inset 0 -3px 0 0 var(--color-tab-button-box-shadow-active);
+  background-color: var(--background-item-selected);
+  border-radius: var(--border-radius);
 }
 
-.po-tab-button-mobile {
-  max-width: 30vw;
-  width: 30vw;
+.po-tab-dropdown-device .po-tab-button-default po-button[p-kind='tertiary'] {
+  padding-block: 6px;
+  margin-top: 1px;
 }
 
-@media screen and (max-width: 480px) {
-  .po-tab-button-mobile {
-    max-width: 40vw;
-    width: 40vw;
-  }
+.po-tab-dropdown-content .po-icon {
+  font-size: 1.5rem;
 }

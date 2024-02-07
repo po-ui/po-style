@@ -97,6 +97,10 @@
   border-top: 1px solid var(--color-neutral-light-10);
 }
 
+.po-item-list__hidden {
+  display: none;
+}
+
 .cdk-option:focus-visible .po-item-list {
   outline-color: var(--outline-color-focused);
   outline-width: var(--outline-width);

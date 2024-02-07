@@ -1462,15 +1462,37 @@ po-switch {
   --color-checked-disabled: var(--color-action-disabled);
 }
 
+po-tabs,
+po-tab-button {
+  --background: var(--color-neutral-light-00);
+  --color-baseline: var(--color-neutral-light-20);
+
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --font-weight: var(--font-weight-bold);
+  --color: var(--color-action-default);
+  --border-radius: var(--border-radius-md);
+
+  --background-item-selected: var(--color-neutral-light-00);
+
+  --color-hover: var(--color-brand-01-darkest);
+  --background-item-hover: var(--color-brand-01-lighter);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-disabled: var(--color-action-disabled);
+  --background-item-disabled: var(--color-neutral-light-10);
+}
+
 :root {
   /*------------------------------------*\
   TAB BUTTON
 \*------------------------------------*/
-  --color-tab-button-box-shadow: var(--color-neutral-light-10);
-  --color-tab-button-box-shadow-active: var(--color-action-default);
+  --color-tab-button-box-shadow: var(--color-baseline); /*Deprecated v18.x.x utilizar --color-baseline */
+  --color-tab-button-box-shadow-active: var(--color); /*Deprecated v18.x.x utilizar --color */
 
-  --color-tab-button-color: var(--color-action-default);
-  --color-tab-button-color-disabled: var(--color-neutral-light-30);
+  --color-tab-button-color: var(--color); /*Deprecated v18.x.x utilizar --color */
+  --color-tab-button-color-disabled: var(--color-disabled); /*Deprecated v18.x.x utilizar --color-disabled */
 }
 
 /*------------------------------------*\

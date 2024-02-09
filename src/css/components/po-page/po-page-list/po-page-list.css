@@ -25,6 +25,12 @@
   --filter-input-variable-size-smaller: calc(100% - (var(--filter-search-width-smaller)));
 }
 
+.po-page-list-container {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+}
+
 .po-page-list-actions {
   width: 100%;
   z-index: 1;
@@ -82,8 +88,8 @@
 
 @media screen and (max-width: 1366px) {
   .po-page-list-actions.po-page-list-actions-padding,
-  .po-page-list-header-padding .po-page-header-title {
-    width: calc(100% - (var(--filter-container-smaller)));
+  .po-page-list-header-padding .po-page-header-title-container {
+    flex-basis: calc(100% - (var(--filter-container-smaller)));
   }
 
   .po-page-list-header-padding .po-page-header-title {

@@ -1101,6 +1101,32 @@ po-multiselect {
   --color-error: var(--color-feedback-negative-base);
 }
 
+/*------------------------------------*\
+  PAGE HEADER
+\*------------------------------------*/
+po-page-header {
+  --padding: var(--spacing-xs) var(--spacing-sm) var(--spacing-sm);
+  --gap: var(--spacing-xs);
+
+  /* header container */
+  --padding-top-header: var(--spacing-xs);
+
+  /* actions button */
+  --gap-actions: var(--spacing-sm);
+}
+po-page-header .po-page-header-title {
+  --font-family: var(--font-family-extra-light);
+  --font-size: 2.125rem;
+  --line-height: 3rem;
+  --text-color: var(--color-neutral-dark-70);
+}
+po-page-header .po-page-header-subtitle {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
+  --text-color: var(--color-neutral-dark-70);
+}
+
 :root {
   /*------------------------------------*\
   NAVBAR
@@ -1176,9 +1202,10 @@ po-overlay {
   --color-page-content-background-color-scrollbar: var(--color-primary);
 
   /*------------------------------------*\
-  PAGE HEADER
-\*------------------------------------*/
+    PAGE HEADER
+  \*------------------------------------*/
   --color-page-header-color-title: var(--color-neutral-dark-70);
+  /*Deprecated v18.x.x utilizar --text-color */
 
   /*------------------------------------*\
   PAGE LIST

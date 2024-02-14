@@ -694,6 +694,13 @@ po-dropdown {
 }
 
 /*------------------------------------*\
+  FIELD CONTAINER CONTENT
+\*------------------------------------*/
+.po-field-container-content {
+  --padding: var(--spacing-xs) 0;
+}
+
+/*------------------------------------*\
   FIELD CONTAINER BOTTOM
 \*------------------------------------*/
 po-field-container-bottom {

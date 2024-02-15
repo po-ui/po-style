@@ -96,8 +96,7 @@
   margin: 4px 0;
 }
 
-.po-container-icons-arrows-columns-manager .po-button,
-.po-container-icons-arrows-columns-manager .po-button:not(.po-button-sm) {
+.po-container-icons-arrows-columns-manager .po-button {
   margin: 0;
   padding: 0;
 }

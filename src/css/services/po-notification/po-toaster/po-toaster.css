@@ -211,7 +211,7 @@ po-toaster {
 }
 
 @media screen and (max-width: 1366px) {
-  .po-toaster .po-button:not(.po-button-sm) {
+  .po-toaster .po-button {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
   }

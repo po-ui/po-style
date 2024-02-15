@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [16.15.0](https://github.com/po-ui/po-style/compare/v16.14.0...v16.15.0) (2024-02-15)
+
+
+### Code Refactoring
+
+* **tabs:** remove variável não utilizada ([590afe8](https://github.com/po-ui/po-style/commit/590afe8826bb082259ad968eedea9d3976ab9cbf))
+
+
+### Features
+
+* **fields:** adiciona depreciação de variáveis para 18.x.x
+
+* **page-default:** inclusão do subtitle e tokens do title ([0701c20](https://github.com/po-ui/po-style/commit/0701c20f7d6e132ce63c5269ea6bdb559439a6fc))
+* **tabs:** implementa definições do AnimaliaDS ([9904bc3](https://github.com/po-ui/po-style/commit/9904bc3603c4a21269929b9cee9a9ba3480e67fa))
+
+
+### BREAKING CHANGES
+
+* **tabs:** remove variáveis de customização de cores
+
+Remove variáveis para compatibilidade com @animaliads/tabs e melhorias
+de acessibilidade, não sendo mais possível a customização.
+
+- `color-tab-dropdown-background-color-tab-dropdown-button-active`. : customização do botão ativo
+- `color-tab-dropdown-background-color-tab-dropdown-button-disabled`. : customização do botão desabilitado
+- `color-tab-dropdown-background-color-tab-dropdown-button-hover`. : customização do botão no hover
+- `color-tab-dropdown-color-tab-dropdown-button`. customização do texto
+
+
+
 ## [16.14.0](https://github.com/po-ui/po-style/compare/v16.13.0...v16.14.0) (2024-02-05)
 
 

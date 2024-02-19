@@ -1,0 +1,54 @@
+name: Run publish @po-ui/style Next
+
+env:
+  PACKAGE_NAME: po-ui/style
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+        registry-url: 'https://registry.npmjs.org'
+
+    - run: npm install
+    - run: npm run build
+
+    # Pega as versões publicadas no NPM e salva no arquivo versions.json
+    - name: Obter todas as versões publicadas
+      run: npm show @${{ env.PACKAGE_NAME }} versions --json > versions.json
+
+    # Pega a versão no package.json
+    - name: Get package.json version
+      id: package-version
+      uses: martinbeentjes/npm-get-version-action@main
+
+    # Verifica se a versão a ser publicada já existe no NPM
+    - name: Verificar se a versão existe
+      id: version
+      run: |
+        VERSION_TO_CHECK=${{ steps.package-version.outputs.current-version }}
+        if jq -e --arg version "$VERSION_TO_CHECK" '.[] | select(. == $version)' versions.json; then
+          echo "publish=no" >> "$GITHUB_OUTPUT"
+        else
+          echo "publish=yes" >> "$GITHUB_OUTPUT"
+        fi
+
+    # PUBLISH
+    - name: Run publish with -next
+      if: contains(steps.version.outputs.publish, 'yes')
+      run: npm publish dist/style --tag next
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    - name: Add "Next" tag
+      if: contains(steps.version.outputs.publish, 'no')
+      run: npm dist-tags add @${{ env.PACKAGE_NAME }}@${{ env.PACKAGE_VERSION }} "next"
+      env:
+        PACKAGE_VERSION: ${{ steps.package-version.outputs.current-version }}
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

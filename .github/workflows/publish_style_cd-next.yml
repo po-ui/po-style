@@ -2,6 +2,7 @@ name: Run publish @po-ui/style Next
 
 env:
   PACKAGE_NAME: po-ui/style
+  WORKING_DIR: /home/runner/work/po-style/po-style
 
 on:
   workflow_dispatch:
@@ -42,13 +43,14 @@ jobs:
     # PUBLISH
     - name: Run publish with -next
       if: contains(steps.version.outputs.publish, 'yes')
-      run: npm publish dist/style --tag next
+      run: npm publish ${{env.WORKING_DIR}}/dist/style --tag next
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     - name: Add "Next" tag
       if: contains(steps.version.outputs.publish, 'no')
       run: npm dist-tags add @${{ env.PACKAGE_NAME }}@${{ env.PACKAGE_VERSION }} "next"
+      working-directory: ${{env.WORKING_DIR}}
       env:
         PACKAGE_VERSION: ${{ steps.package-version.outputs.current-version }}
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

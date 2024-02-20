@@ -7,7 +7,9 @@
 .po-tag-container {
   display: inline-flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: var(--gap);
+  padding: var(--padding);
+  align-items: flex-start;
 }
 
 .po-tag {

@@ -8,6 +8,10 @@
   }
 }
 
+.po-tab-dropdown .po-tab-dropdown-content {
+  margin-left: var(--margin-left);
+}
+
 .po-tab-dropdown .po-popover {
   min-height: auto;
   min-width: 125px !important;

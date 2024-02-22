@@ -1127,6 +1127,14 @@ po-page-header .po-page-header-subtitle {
   --text-color: var(--color-neutral-dark-70);
 }
 
+/*------------------------------------*\
+  PAGE CONTENT
+\*------------------------------------*/
+po-page-content {
+  --padding: var(--spacing-xs) var(--spacing-sm);
+  --padding-md: var(--spacing-xs); /* TODO: rever; usado em tela menor que 1024px */
+}
+
 :root {
   /*------------------------------------*\
   NAVBAR
@@ -1493,6 +1501,9 @@ po-tabs,
 po-tab-button {
   --background: var(--color-neutral-light-00);
   --color-baseline: var(--color-neutral-light-20);
+  --padding: var(--spacing-sm);
+  --margin-left-first: var(--spacing-md);
+  --margin-left-last: var(--spacing-md);
 
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-default);
@@ -1509,6 +1520,10 @@ po-tab-button {
 
   --color-disabled: var(--color-action-disabled);
   --background-item-disabled: var(--color-neutral-light-10);
+}
+
+po-tab-dropdown {
+  --margin-left: 0px;
 }
 
 :root {

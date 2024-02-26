@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.16.0](https://github.com/po-ui/po-style/compare/v16.15.0...v16.16.0) (2024-02-26)
+
+
+
 # [16.15.0](https://github.com/po-ui/po-style/compare/v16.14.0...v16.15.0) (2024-02-15)
 
 

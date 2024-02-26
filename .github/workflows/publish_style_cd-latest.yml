@@ -2,6 +2,7 @@ name: Run publish @po-ui/style Latest
 
 env:
   PACKAGE_NAME: po-ui/style
+  WORKING_DIR: /home/runner/work/po-style/po-style
 
 on:
   workflow_dispatch:
@@ -42,7 +43,7 @@ jobs:
     # PUBLISH
     - name: Run publish with -latest
       if: contains(steps.version.outputs.publish, 'yes')
-      run: npm publish dist/style --tag latest
+      run: npm publish ${{env.WORKING_DIR}}/dist/style --tag latest
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

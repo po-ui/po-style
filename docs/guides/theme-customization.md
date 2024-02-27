@@ -1,8 +1,7 @@
-[comment]: # (@label Customizando cores do tema padrão)
-[comment]: # (@link guides/colors-customization)
+[comment]: # (@label Personalizando o Tema Padrão com Tokens CSS)
+[comment]: # (@link guides/theme-customization)
 
-A partir da versão 1.9.0, o **PO UI** permite que você customize suas cores padrões de maneira fácil, você pode alterar as cores de apenas um componente ou de todos de uma única vez, para isso você vai precisar apenas alterar 
-os valores das variáveis usadas no CSS do tema padrão.
+A partir da versão 1.9.0, o **PO UI** oferece a flexibilidade de personalização do tema padrão. Você pode ajustar várias propriedades como as cores, fonte, tamanho da fonte entre outros. Para isso, basta modificar os valores das variáveis utilizadas no CSS do tema padrão.
 
 ### Como o tema do PO UI funciona
 
@@ -32,13 +31,12 @@ po-button {
 .po-button{background-color: transparent;color: #753399;}
 ```
 
-### Configurando sua aplicação para permitir customização das cores
+### Configurando sua aplicação para permitir personalização abrangente
 
-Para que seja possível fazer a customização das cores, o *package* `@po-ui/style` passou a disponibilizar
-os arquivos que contém as variáveis e o arquivo de estilo sem a *"compilação"* das variáveis, para isso
-você precisa carregar esses novos arquivos em seu projeto ao invés do arquivo que não permite a modificação
-das cores.
-
+Para possibilitar uma personalização abrangente, o *package* `@po-ui/style` agora disponibiliza os arquivos 
+    contendo as variáveis CSS, bem como o arquivo de estilo sem a *"compilação"* das variáveis. Isso permite não apenas a modificação 
+    das cores, mas também de outras propriedades via tokens. Para realizar essa configuração em seu projeto, é necessário carregar 
+    esses novos arquivos, substituindo o arquivo anterior que restringia a modificação abrangente das cores.
 ``` json
 "styles": [
   // Arquivo de variáveis (tema padrão)
@@ -51,21 +49,23 @@ das cores.
 
 > Só isso não vai fazer diferença no seu projeto, as cores padrões ainda serão mantidas.
 
-### Customizando as cores no seu projeto
+### Customizando Estilos no Seu Projeto
 
-Crie um novo arquivo CSS para o seu projeto Angular ou altere um arquivo já existente adicionando as seguintes
-linhas:
+Para personalizar os estilos no seu projeto Angular, você pode criar um novo arquivo CSS ou editar um existente e
+adicionar as seguintes linhas de código:
 
 ``` css
 po-button {
-  --color: white;
-  --background-color: black;
+    --color: rgb(43, 215, 60);
+    --border-radius: 12px;
+    --font-size: 16px;
+    --background-color: black;
 }
 ```
 
 Só com isso já conseguimos dar uma nova cara para os nossos botões.
 
-![Componente Button com a cor preta.][button-black]
+![Componente Button com a cor preta.][button-green-and-black]
 
 Caso você queira customizar todas as cores é possível usar algumas das variáveis globais:
 
@@ -80,19 +80,18 @@ Caso você queira customizar todas as cores é possível usar algumas das variá
 ![Exemplo dos componentes com as cores customizadas. Um botão azul, o componentes Tabs está com título
 verde e o scroll da página na cor vermelha.][components-custom-colors]
 
-Bom com isso você já consegue alterar todas as cores dos componentes e templates da sua aplicação que
-usam o PO UI.
+Com essas personalizações, você terá controle não apenas sobre as cores, mas também sobre outros aspectos visuais dos componentes e templates em sua aplicação que utilizam o PO UI.
 
-> Para saber quais as variáveis que você pode alterar, basta verificar o arquivo 
-`po-theme-default-variables.css` na pasta `node_modules/@po-ui/style/css`, você vai encontrar
-uma cópia exata do arquivo com todas as variáveis usadas pelo tema padrão.
+>Para descobrir quais variáveis você pode personalizar, consulte o arquivo 
+`po-theme-default-variables.css` na pasta `node_modules/@po-ui/style/css`, Lá, você
+encontrará uma lista completa de todas as variáveis utilizadas pelo tema padrão. Você também pode consultar a documentação de cada componente no próprio portal.
 
 > Para customização do componenete `po-button` verificar [variáveis customizaveis][var-customized] na aba de customização.
 
 > Atenção: Para saber quais browsers dão suporte a variáveis você pode consultar a ferramenta 
 [Can I use][can-i-use].
 
-[button-black]: ./assets/graphics/theme/button-black.png
+[button-green-and-black]: ./assets/graphics/theme/button-green-and-black.png
 [components-custom-colors]: ./assets/graphics/theme/components-custom-colors.png
 [can-i-use]: https://caniuse.com/#search=CSS%20Variables
 [var-customized]: https://doc.animaliads.io/docs/components/button/#live-demo

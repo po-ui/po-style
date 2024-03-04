@@ -2,19 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-# [17.0.0](https://github.com/po-ui/po-style/compare/v16.16.0...v17.0.0) (2024-02-26)
+# [17.0.0](https://github.com/po-ui/po-style/compare/v16.16.0...v17.0.0) (2024-03-04)
 
 ### Code Refactoring
 
-* **components:** remove propriedades depreciadas ([f4ba77f](https://github.com/po-ui/po-style/commit/f4ba77f38bf06bae5ae0f9e640a837700e3191bf))
-
+* **components:** remove propriedades depreciadas ([d169ae9](https://github.com/po-ui/po-style/commit/d169ae94f7bad8f84f09544c783aa2b96dde1631))
 
 ### Features
 
-* **components:** permite maior flexibilidade de customização ([f3fcc64](https://github.com/po-ui/po-style/commit/f3fcc645816c6c8878ced976da57527f3d84ad5c))
-* **divider:** permite maior flexibilidade de customização ([5123a91](https://github.com/po-ui/po-style/commit/5123a91edf0b48403c0aa3fe295b0ae742fb7c3e))
-* **field:** implementa definicoes de espacamento ([8540d67](https://github.com/po-ui/po-style/commit/8540d67eceaf4d0795dce73a63d13964d51714df))
-
+* **components:** permite maior flexibilidade de customização ([c507799](https://github.com/po-ui/po-style/commit/c5077996f4b0ac0d8fcadf5889e5be638d5d1497))
+* **divider:** permite maior flexibilidade de customização ([6923c10](https://github.com/po-ui/po-style/commit/6923c10f1b8aedc4a0997d7590cb07622c8ad1f9))
+* **info:** implementa definições de espacamento ([870ea72](https://github.com/po-ui/po-style/commit/870ea721e770157da46109a14e3dd23fda677b9a))
+* **theme-totvs:** implementa definicoes de espacamento ([fb1ea80](https://github.com/po-ui/po-style/commit/fb1ea80523f7349d58a4145503b87812a211bb6b))
 
 ### BREAKING CHANGES
 
@@ -23,6 +22,8 @@ All notable changes to this project will be documented in this file. See [standa
 Por regras de acessibilidade o botão não terá mais um tamanho menor do que 44px e por isso a propriedade será depreciada. Saiba mais
 
 ## [16.16.0](https://github.com/po-ui/po-style/compare/v16.15.0...v16.16.0) (2024-02-26)
+
+Compatibilidade com @po-ui/ng-components@16.16.0
 
 # [16.15.0](https://github.com/po-ui/po-style/compare/v16.14.0...v16.15.0) (2024-02-15)
 

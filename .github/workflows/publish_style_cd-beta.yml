@@ -2,19 +2,29 @@ name: Run publish @po-ui/style Beta
 
 env:
   PACKAGE_NAME: po-ui/style
+  WORKING_DIR: /home/runner/work/po-style/po-style
 
 on:
   workflow_dispatch:
+    inputs:
+      version-beta:
+        description: Informe a versão do Beta do PO-UI/Style
+        required: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/development'
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v3
       with:
         node-version: '18.x'
         registry-url: 'https://registry.npmjs.org'
+
+    - name: Update Version
+      run: node ./scripts/update-version.js ${{ github.event.inputs.version-beta }}
+      working-directory: ${{env.WORKING_DIR}}
 
     - run: npm install
     - run: npm run build

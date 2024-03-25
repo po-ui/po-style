@@ -191,3 +191,9 @@
 .po-search po-icon {
   display: inline-flex;
 }
+
+.po-search-listbox-container {
+  height: auto;
+  position: fixed;
+  z-index: 1000;
+}

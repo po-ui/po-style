@@ -31,6 +31,7 @@
  * Disclaimer Group...............variáveis do Disclaimer Group.
  * Divider........................variáveis do Divider.
  * Dropdown.......................variáveis do Dropdown.
+ * Dynamic........................variáveis do Dynamic.
  * Field Container Bottom.........variáveis do Field Container Bottom.
  * Field Icon.....................variáveis do Field Icon.
  * Gauge..........................variáveis do Gauge.
@@ -681,6 +682,27 @@ po-dropdown {
 
   /* disabled */
   --color-disabled: var(--color-action-disabled);
+}
+
+/*------------------------------------*\
+  DYNAMIC
+\*------------------------------------*/
+po-dynamic-container {
+  --gap: var(--spacing-md);
+  --font-family: var(--font-family-theme);
+  --font-size: 1.125rem;
+  --line-weight: var(--font-weight-semibold);
+  --line-height: var(--line-height-md);
+  --text-color: var(--color-neutral-dark-90);
+  --letter-spacing: 0.017rem;
+  --margin: 0 0 0.5rem 0;
+}
+po-dynamic-container po-container {
+  --border-radius: var(--border-radius-md);
+  --background: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-20);
+  --border-width: var(--border-width-sm);
+  --padding: var(--spacing-md);
 }
 
 :root {

@@ -14,6 +14,7 @@
 @import './po-disclaimer-group';
 @import './po-divider';
 @import './po-dropdown';
+@import './po-dynamic';
 @import './po-field';
 @import './po-gauge';
 @import './po-grid';

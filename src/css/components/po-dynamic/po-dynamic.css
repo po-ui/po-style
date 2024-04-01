@@ -1,0 +1,21 @@
+.po-dynamic {
+  display: grid;
+  width: 100%;
+}
+
+.po-dynamic-container {
+  display: grid;
+  gap: var(--gap);
+  width: 100%;
+}
+
+.po-dynamic-container-title {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--line-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  color: var(--text-color);
+  margin: var(--margin);
+  display: grid;
+}

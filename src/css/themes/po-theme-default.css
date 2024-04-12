@@ -591,6 +591,8 @@ po-combo {
 
   --text-color-suggestion: var(--color-neutral-mid-60);
   --background-suggestion: var(--color-brand-01-lightest);
+
+  --min-width: 9.375rem;
 }
 
 /*------------------------------------*\

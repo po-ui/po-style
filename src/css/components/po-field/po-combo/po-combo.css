@@ -9,7 +9,7 @@
   min-height: 2.75em;
   box-sizing: border-box;
   width: 100%;
-  min-width: 150px;
+  min-width: var(--min-width);
 }
 
 .po-combo-input:disabled,

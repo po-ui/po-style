@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [17.6.0](https://github.com/po-ui/po-style/compare/v17.5.0...v17.6.0) (2024-04-22)
+
+Compatibilidade com @po-ui/ng-components@17.6.0
+
+### Features
+
+* **dynamic:** inclusão da propriedade container ([8375e88](https://github.com/po-ui/po-style/commit/8375e880f6cd42e2dcafec5f0fa7f6136ce62c4e))
+* **search:** inclusão do listbox ao fazer o search ([92bb8d3](https://github.com/po-ui/po-style/commit/92bb8d3fec3e6ab6e043d8478cc53f0e6f6e68ce))
+
+
+
 ## [17.5.0](https://github.com/po-ui/po-style/compare/v17.4.0...v17.5.0) (2024-04-15)
 
 Compatibilidade com @po-ui/ng-components@17.5.0

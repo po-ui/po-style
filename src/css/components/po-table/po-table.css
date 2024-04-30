@@ -214,7 +214,14 @@
 
 .po-table .po-table-column-single-action {
   text-align: center;
+}
+
+.po-table:not(.po-table-text-wrap-enabled) .po-table-column-single-action {
   word-break: break-all;
+}
+
+.po-table.po-table-text-wrap-enabled .po-table-single-action {
+  text-wrap: wrap;
 }
 
 .po-table .po-table-single-action {
@@ -401,6 +408,10 @@
 .po-table-body-ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.po-table-text-wrap-enabled .po-table-body-ellipsis {
+  text-wrap: wrap;
 }
 
 .po-table-body-ellipsis {

@@ -8,13 +8,13 @@ po-radio {
   --circle-width-lg: calc(var(--width-lg) - 12px);
 
   --background-radial-md: radial-gradient(
-    var(--circle-width-md) circle at 10px 10px,
+    var(--circle-width-md) circle at center,
     var(--color-checked) 50%,
     transparent 57%
   );
 
   --background-radial-lg: radial-gradient(
-    var(--circle-width-lg) circle at 14px 14px,
+    var(--circle-width-lg) circle at center,
     var(--color-checked) 50%,
     transparent 54.2%
   );

@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container .label {
+  margin-right: 10px;
+}

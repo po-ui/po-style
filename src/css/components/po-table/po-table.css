@@ -54,7 +54,7 @@
   font-size: var(--font-size-default);
 
   padding-block: 0.75rem;
-  padding-inline: var(--spacing-sm);
+  padding-inline: var(--spacing-xs);
 
   white-space: nowrap;
   overflow: hidden;
@@ -92,7 +92,7 @@
 .po-table tbody tr td {
   font-family: var(--font-family);
 
-  padding-inline: var(--spacing-sm);
+  padding-inline: var(--spacing-xs);
 
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-md);
@@ -421,7 +421,7 @@
 .po-table-header-flex {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
+  gap: var(--spacing-xs);
 }
 
 .po-table-header-flex-right {
@@ -562,12 +562,12 @@
 
 .po-table-column-drag-box svg.cdk-drag-handle,
 svg.po-svg-table-fixed {
-  min-width: 24px;
+  min-width: 16px;
 }
 
 .po-table-column-drag-box svg.cdk-drag-handle {
   cursor: move;
-  min-width: 24px;
+  min-width: 16px;
 }
 
 span.po-table-header-icon-unselected svg,
@@ -592,7 +592,7 @@ span.po-table-header-icon-ascending svg {
 
 .po-table-column-drag-box.cdk-drag-preview {
   padding-block: 0.75rem;
-  padding-inline: var(--spacing-sm);
+  padding-inline: var(--spacing-xs);
   font-family: var(--font-family);
   font-weight: var(--font-weight-headline);
   line-height: var(--line-height-md);

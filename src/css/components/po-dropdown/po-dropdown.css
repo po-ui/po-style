@@ -14,7 +14,7 @@
 }
 
 .po-dropdown-button {
-  background-color: transparent;
+  background-color: var(--background);
   border: solid var(--border-width) var(--color-dropdown-button-border-color, var(--color));
   border-radius: var(--border-radius);
   color: var(--color-dropdown-button-color, var(--color));

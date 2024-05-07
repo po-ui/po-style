@@ -197,3 +197,70 @@
   position: fixed;
   z-index: 1000;
 }
+
+.po-search .po-search-select {
+  display: flex;
+  position: absolute;
+  inset: var(--border-width-sm);
+  right: auto;
+}
+.po-search .po-search-select + .po-search-input {
+  padding-left: calc(var(--spacing-xs) + 7.5rem);
+}
+
+.po-search .po-search-select + .po-search-icon {
+  padding-inline-start: calc(var(--spacing-xs) + 7.5rem);
+  pointer-events: none;
+}
+
+.po-search .po-search-select + .po-search-icon + .po-search-input {
+  padding-inline-start: calc(var(--spacing-xs) + 7.5rem + 2.75rem);
+}
+
+po-search po-dropdown {
+  --background: var(--background-select);
+  --background-hover: var(--background-select-hover);
+  --background-disabled: var(--background-select-disabled);
+}
+
+po-search po-dropdown .po-dropdown {
+  width: 7.5rem;
+  height: 100%;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  overflow: hidden;
+}
+
+po-search po-dropdown .po-dropdown .po-dropdown-button-disabled {
+  background-color: var(--background-disabled);
+}
+
+po-search po-dropdown .po-dropdown-button:not(.po-dropdown-button-disabled) .po-icon {
+  color: var(--color-icon);
+}
+po-search po-dropdown .po-dropdown-button:not(.po-dropdown-button-disabled) {
+  color: var(--text-color-empty);
+}
+po-search po-dropdown .po-dropdown-button.po-dropdown-button-disabled {
+  border-right-color: var(--color-neutral-light-30);
+}
+po-search po-dropdown .po-dropdown-button {
+  border: none;
+  height: 100%;
+  border-right: var(--border-width-sm) solid var(--color-neutral-light-10);
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+po-search po-dropdown .po-dropdown-button > span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100%;
+  align-content: center;
+  font-weight: var(--font-weight-normal);
+}
+po-search po-dropdown .po-dropdown-button:hover {
+  border: none;
+  background-color: var(--background-hover);
+  border-right: var(--border-width-sm) solid var(--color-neutral-light-10);
+}

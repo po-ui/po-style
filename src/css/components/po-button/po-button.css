@@ -198,10 +198,6 @@ po-button {
   vertical-align: -0.05rem;
 }
 
-.po-button .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) {
-  vertical-align: -0.1rem;
-}
-
 .po-button .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) path {
   fill: var(--color);
 }

@@ -91,7 +91,7 @@
   justify-content: space-between;
 }
 
-.po-modal-header .po-icon.po-icon-close:before {
+.po-modal-header i:before {
   font-size: 2rem;
 }
 

@@ -80,6 +80,16 @@
   right: 16px;
 }
 
+.po-calendar-header po-icon.po-calendar-header-left,
+.po-calendar-header po-icon.po-calendar-header-right {
+  line-height: 0;
+}
+
+.po-calendar-header .po-calendar-header-left i,
+.po-calendar-header .po-calendar-header-right i {
+  line-height: 32px;
+}
+
 .po-calendar-header .po-calendar-header-title {
   font-family: var(--font-family-default-bold), sans-serif;
   font-size: 16px;

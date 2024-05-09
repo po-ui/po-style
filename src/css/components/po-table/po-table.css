@@ -251,7 +251,7 @@
   width: 56px;
 }
 
-.po-table-column-actions .po-icon.po-icon-more {
+.po-table-column-actions i {
   color: var(--color-table-color-header, var(--color));
   display: block;
   font-size: 1.5rem;
@@ -484,8 +484,7 @@
   pointer-events: none;
 }
 
-.po-table-column-detail-toggle .po-icon-arrow-down,
-.po-table-column-detail-toggle .po-icon-arrow-up {
+.po-table-column-detail-toggle i {
   color: var(--color-table-color-header, var(--color));
   display: block;
   font-size: 1.5rem;

@@ -24,6 +24,7 @@
   margin-right: 8px;
   overflow: hidden;
   vertical-align: top;
+  line-height: 0px;
 }
 
 .po-tree-view-item-header-button::-moz-focus-inner {

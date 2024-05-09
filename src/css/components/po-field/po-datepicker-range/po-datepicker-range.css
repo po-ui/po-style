@@ -44,10 +44,6 @@ div.po-datepicker-range-field-focused {
   width: 10px;
 }
 
-.po-datepicker-range-icon .po-icon-calendar {
-  cursor: default;
-}
-
 .po-datepicker-range-input {
   background-color: transparent;
   border: none;

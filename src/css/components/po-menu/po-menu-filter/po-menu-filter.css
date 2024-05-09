@@ -11,6 +11,10 @@
   text-decoration: none;
 }
 
+.po-menu-filter-icon > i {
+  line-height: 33px;
+}
+
 .po-menu-filter-search-icon-container {
   left: 16px;
   width: 2.75em;
@@ -79,7 +83,7 @@
   justify-content: center;
   align-items: center;
 
-  .po-icon-close {
+  i.po-field-icon {
     color: var(--color-clear);
   }
 }

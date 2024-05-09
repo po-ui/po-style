@@ -52,7 +52,7 @@ po-field-container-bottom .po-field-container-bottom {
   position: relative;
 }
 
-.po-field-container-error-item .po-icon-exclamation {
+.po-field-container-error-item i {
   font-size: 16px;
   position: absolute;
   top: 50%;

@@ -59,8 +59,7 @@
   cursor: not-allowed;
 }
 
-.po-field-icon.po-icon-input:not(.po-icon-eye-off),
-po-clean.po-icon-input span.po-field-icon {
+po-clean.po-icon-input i.po-field-icon {
   color: var(--color-brand-01-dark);
 }
 

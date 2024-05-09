@@ -97,7 +97,7 @@
   white-space: nowrap;
 }
 
-.po-breadcrumb-icon-more .po-icon-more-vert {
+.po-breadcrumb-icon-more i {
   color: var(--color-breadcrumb-color-item, var(--color));
 }
 

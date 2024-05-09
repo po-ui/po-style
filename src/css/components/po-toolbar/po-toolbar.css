@@ -58,6 +58,10 @@
   vertical-align: middle;
 }
 
+.po-toolbar-notification po-icon {
+  line-height: 0;
+}
+
 .po-toolbar-notification-badge {
   @apply --font-toolbar-font-bagde;
   background-color: var(--color-toolbar-background-color-badge);

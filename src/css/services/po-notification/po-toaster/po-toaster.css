@@ -59,6 +59,11 @@ po-toaster {
   display: flex;
 }
 
+.po-toaster-icon po-icon i.ph {
+  font-size: var(--font-size-md);
+  padding: 0.125rem;
+}
+
 .po-toaster-message {
   @apply --font-toaster-message;
 
@@ -109,6 +114,8 @@ po-toaster {
   @apply --font-toaster-icon;
 
   display: flex;
+  font-size: var(--font-size-md);
+  padding: 0.125rem;
 }
 
 .po-toaster-success {

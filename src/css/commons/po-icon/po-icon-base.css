@@ -1,9 +1,10 @@
 @font-face {
   font-family: 'PoIcon';
-  src: url('./../icons/PoIcon.eot?31xwv');
-  src: url('./../icons/PoIcon.eot?31xwv#iefix') format('embedded-opentype'),
-    url('./../icons/PoIcon.ttf?31xwv') format('truetype'), url('./../icons/PoIcon.woff?31xwv') format('woff'),
-    url('./../icons/PoIcon.svg?31xwv#PoIcon') format('svg');
+  src: url('./../icons/PoIcon/PoIcon.eot?31xwv');
+  src: url('./../icons/PoIcon/PoIcon.eot?31xwv#iefix') format('embedded-opentype'),
+    url('./../icons/PoIcon/PoIcon.ttf?31xwv') format('truetype'),
+    url('./../icons/PoIcon/PoIcon.woff?31xwv') format('woff'),
+    url('./../icons/PoIcon/PoIcon.svg?31xwv#PoIcon') format('svg');
   font-weight: normal;
   font-style: normal;
 }

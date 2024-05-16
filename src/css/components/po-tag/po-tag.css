@@ -33,6 +33,10 @@
   width: max-content;
 }
 
+.po-tag i.ph {
+  font-size: var(--font-size-default);
+}
+
 .po-tag-icon,
 .po-tag-value,
 .po-tag-remove {

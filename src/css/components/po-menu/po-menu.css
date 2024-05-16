@@ -115,6 +115,10 @@
   max-height: 2.75em;
 }
 
+.po-menu-footer i.ph {
+  font-size: var(--font-size-lg);
+}
+
 .po-menu-collapse-button-icon {
   font-family: var(--font-family);
   font-size: var(--font-size);

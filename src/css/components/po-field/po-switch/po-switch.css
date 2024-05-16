@@ -52,12 +52,13 @@
 }
 
 .po-switch-icon {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   color: var(--color-unchecked);
+  font-size: 1rem;
 }
 
 .po-switch-label > label.po-label:not(.po-label-disabled) {

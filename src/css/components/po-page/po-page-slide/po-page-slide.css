@@ -106,8 +106,13 @@
   text-align: left;
 }
 
-.po-page-slide-header .po-icon {
+.po-page-slide-header po-icon {
   font-size: 1.5rem;
+}
+
+.po-page-slide-header po-icon i.ph {
+  font-size: var(--font-size-md);
+  padding: 0.125rem;
 }
 
 .po-page-slide-title {

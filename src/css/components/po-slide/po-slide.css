@@ -3,31 +3,18 @@
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 var(--color-slide-box-shadow-arrow-circle);
   cursor: pointer;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 32px;
   margin: 0 17px;
   position: relative;
   width: 32px;
 }
 
-.po-slide-arrow {
-  border-bottom: 2.5px solid var(--color-slide-border-arrow);
-  border-radius: 2px;
-  border-right: 2.5px solid var(--color-slide-border-arrow);
-  display: inline-block;
-  height: 12px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  width: 12px;
-}
-
-.po-slide-arrow-previous {
-  transform: translate(-35%, -45%) rotate(-225deg);
-}
-
-.po-slide-arrow-next {
-  transform: translate(-70%, -40%) rotate(-45deg);
+.po-slide-arrow-circle po-icon {
+  line-height: 0px;
+  font-size: 24px;
 }
 
 .po-slide-control-previous,

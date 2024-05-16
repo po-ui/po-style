@@ -104,3 +104,12 @@
 .po-breadcrumb-icon-arrow {
   color: var(--color-icon);
 }
+
+i.po-breadcrumb-icon-arrow.ph {
+  font-size: var(--font-size-default);
+}
+
+.po-breadcrumb-icon-more i.ph,
+i.po-breadcrumb-icon-arrow.ph {
+  font-size: var(--font-size-sm);
+}

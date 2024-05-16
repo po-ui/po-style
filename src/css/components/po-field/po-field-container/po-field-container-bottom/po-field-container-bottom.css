@@ -22,6 +22,14 @@
   text-align: left;
 }
 
+.po-field-container-bottom po-icon {
+  line-height: 0px;
+}
+
+.po-field-container-bottom i.ph {
+  font-size: var(--font-size-default);
+}
+
 .po-field-container-bottom-disabled .po-field-container-help {
   color: var(--text-color-help-disabled);
 }
@@ -32,6 +40,7 @@ po-field-container-bottom .po-field-container-bottom {
 
 .po-field-container-bottom-text-error {
   display: flex;
+  align-items: center;
   gap: var(--spacing-xs);
   color: var(--color-field-container-bottom-color-text-error, var(--text-color-error));
 }

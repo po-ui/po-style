@@ -95,6 +95,10 @@
   font-size: 2rem;
 }
 
+.po-modal-header i.ph::before {
+  font-size: var(--font-size-lg);
+}
+
 .po-modal-header .po-button {
   padding: 0;
   margin: 0;

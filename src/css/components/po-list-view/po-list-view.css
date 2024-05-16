@@ -223,6 +223,10 @@
     @apply --font-list-view-font-sm-icon;
   }
 
+  .po-list-view-more-icon i.ph {
+    font-size: var(--font-size-lg);
+  }
+
   .po-list-view-actions {
     @apply --font-list-view-font-sm-actions;
   }

@@ -18,6 +18,10 @@
   padding: 0;
 }
 
+.po-tab-dropdown i.ph {
+  font-size: var(--font-size-lg);
+}
+
 .po-tab-dropdown-container,
 .po-tab-dropdown-container-sm {
   display: block;

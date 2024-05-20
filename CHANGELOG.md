@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [17.11.0](https://github.com/po-ui/po-style/compare/v17.10.0...v17.11.0) (2024-05-20)
+
+
+### Features
+
+* **icon:** inclui dicionário de tokens ([a12d7a6](https://github.com/po-ui/po-style/commit/a12d7a6120fc9128833804fec8bebe6d1f56baea))
+* **table:** permite mais visão de itens e colunas ([577062f](https://github.com/po-ui/po-style/commit/577062fc3d8b55913fcb3331a72e0ac631339d4c))
+
+
+
 ## [17.10.0](https://github.com/po-ui/po-style/compare/v17.9.0...v17.10.0) (2024-05-14)
 
 Compatibilidade com @po-ui/ng-components@17.10.0

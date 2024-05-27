@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [17.12.0](https://github.com/po-ui/po-style/compare/v17.11.0...v17.12.0) (2024-05-27)
+
+
+### Bug Fixes
+
+* **radio:** ajusta centralização do `po-radio` ao reduzir o zoom da tela ([a686dc2](https://github.com/po-ui/po-style/commit/a686dc2b1c78a103921d006b9cdb33c1d117fc07))
+
+
+### Features
+
+* **menu:** altera o estilo do scroll no componente po-menu ([2d76b3c](https://github.com/po-ui/po-style/commit/2d76b3c8c132528515be6dbeadc7b81b6e84a48c))
+
+
+
 # [17.11.0](https://github.com/po-ui/po-style/compare/v17.10.0...v17.11.0) (2024-05-20)
 
 

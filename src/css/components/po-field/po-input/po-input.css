@@ -59,10 +59,6 @@
   cursor: not-allowed;
 }
 
-po-clean.po-icon-input i.po-field-icon {
-  color: var(--color-brand-01-dark);
-}
-
 .po-icon-input-disabled {
   color: var(--color-field-icon-color-disabled);
   cursor: not-allowed;

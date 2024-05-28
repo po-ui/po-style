@@ -155,6 +155,14 @@
   color: var(--color-hover);
 }
 
+.po-search .po-search-button po-clean.po-icon-input i.po-field-icon {
+  color: var(--color-clear);
+}
+
+.po-search .po-search-button:hover po-clean.po-icon-input i.po-field-icon {
+  color: var(--color-hover);
+}
+
 .po-search .po-search-button:last-of-type {
   border-bottom-right-radius: calc(var(--border-radius) - var(--border-width-sm));
   border-top-right-radius: calc(var(--border-radius) - var(--border-width-sm));

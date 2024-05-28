@@ -159,7 +159,7 @@
   border-color: var(--color-hover);
 }
 
-.po-combo-container-content .po-combo-clean .po-field-icon > i {
+.po-combo-container-content .po-combo-clean .po-field-icon {
   height: 2.75rem;
   width: 2.75rem;
   display: flex;
@@ -167,16 +167,16 @@
   justify-content: center;
 }
 
-.po-combo-container-content:focus-within .po-combo-clean .po-field-icon > i {
+.po-combo-container-content:focus-within .po-combo-clean .po-field-icon {
   border-color: var(--color-focused);
 }
 
-.po-combo-clean .po-border-focused.po-field-icon > i:hover {
+.po-combo-clean .po-border-focused.po-field-icon:hover {
   border-color: var(--color-focused);
 }
 
 .po-combo-input:hover ~ .po-field-icon-container-right .po-field-icon > i.po-combo-default-border,
-.po-combo-input:hover ~ .po-field-icon-container-right .po-combo-clean .po-field-icon > i {
+.po-combo-input:hover ~ .po-field-icon-container-right .po-combo-clean .po-field-icon {
   border-color: var(--color-hover);
 }
 
@@ -185,7 +185,7 @@
   border-color: var(--color-focused);
 }
 
-.po-combo-clean .po-field-icon > i:hover {
+.po-combo-clean .po-field-icon:hover {
   background: var(--background-hover);
   border-top: 1px solid var(--color);
   border-bottom: 1px solid var(--color);

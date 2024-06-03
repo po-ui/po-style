@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [17.13.0](https://github.com/po-ui/po-style/compare/v17.12.0...v17.13.0) (2024-06-03)
+
+
+### Features
+
+* **clean:** atualiza icone definido pelo animalia ([3ef9918](https://github.com/po-ui/po-style/commit/3ef99187ecbe9f18b5f06ec221c839627175ab13))
+* **search:** inclusão da propriedade filterSelect ([4693c06](https://github.com/po-ui/po-style/commit/4693c06c67a937376d11596c209fcb9139dd70a7))
+
+
+
 # [17.12.0](https://github.com/po-ui/po-style/compare/v17.11.0...v17.12.0) (2024-05-27)
 
 

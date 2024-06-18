@@ -30,7 +30,16 @@
 }
 
 .po-tab-dropdown-container {
-  max-height: 198px;
+  position: absolute;
+  overflow: visible;
+
+  max-height: inherit;
+  overflow-y: hidden;
+}
+
+.po-tab-dropdown-container div.po-listbox {
+  position: relative;
+  max-width: 300px;
 }
 
 .po-tab-dropdown-container-sm {

@@ -1929,6 +1929,10 @@ po-toaster {
   --color-icon: var(--color-neutral-light-00);
   --shadow: var(--shadow-lg);
 
+  --font-family: var(--font-family-theme);
+  --font-color: var(--color-neutral-dark-90);
+  --font-color-support: var(--color-neutral-dark-80);
+
   /* Success */
   --color-success: var(--color-feedback-positive-base);
   --background-success: var(--color-feedback-positive-lightest);

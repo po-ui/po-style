@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [17.16.0](https://github.com/po-ui/po-style/compare/v17.15.2...v17.16.0) (2024-06-24)
+
+
+### Features
+
+* **icon:** adiciona biblioteca de ícones phosphor ([1d759e0](https://github.com/po-ui/po-style/commit/1d759e0bc4602e0effbe514a8f44c6935e8ad1cc))
+* **toaster:** criação do componente po-toaster ([fbf50e6](https://github.com/po-ui/po-style/commit/fbf50e6ffd6f6f2736fbd4d10b712aa6374b96f4))
+
+
+
 ## [17.15.2](https://github.com/po-ui/po-style/compare/v17.15.1...v17.15.2) (2024-06-18)
 
 Compatibilidade com @po-ui/ng-components@17.15.2

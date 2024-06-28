@@ -448,6 +448,13 @@
   fill: var(--color);
 }
 
+.po-table-header-icon-unselected i.ph,
+.po-table-header-icon-descending i.ph,
+.po-table-header-icon-ascending i.ph {
+  font-size: var(--font-size-sm);
+  padding: 0.0625rem;
+}
+
 .po-table.po-table-interactive thead tr th:hover .po-table-header-icon-ascending svg path,
 .po-table.po-table-interactive thead tr th:hover .po-table-header-icon-descending svg path,
 .po-table.po-table-interactive thead tr th:hover .po-table-header-icon-unselected svg path {
@@ -572,6 +579,10 @@ svg.po-svg-table-fixed {
 .po-table-column-drag-box svg.cdk-drag-handle {
   cursor: move;
   min-width: 16px;
+}
+
+.po-table-column-drag-box po-icon.cdk-drag-handle {
+  cursor: move;
 }
 
 span.po-table-header-icon-unselected svg,

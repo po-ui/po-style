@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'Phosphor';
   src: url('./../icons/Phosphor/Phosphor.woff2') format('woff2'),
-    url('./../icons/Phosphor/Phosphor.woff') format('woff'), url('./../icons/Phosphor/Phosphor.ttf') format('truetype'),
-    url('./../icons/Phosphor/Phosphor.svg#Phosphor') format('svg');
+    url('./../icons/Phosphor/Phosphor.woff') format('woff'), url('./../icons/Phosphor/Phosphor.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: block;

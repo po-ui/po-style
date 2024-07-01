@@ -30,6 +30,8 @@
 }
 
 .po-tab-dropdown-container {
+  position: absolute;
+  overflow: visible;
   max-height: 198px;
 }
 
@@ -76,6 +78,11 @@
 
 .po-tab-dropdown-button .po-tab-button-active {
   box-shadow: none !important;
+}
+
+.po-tab-dropdown-container div.po-listbox {
+  position: relative;
+  max-width: 300px;
 }
 
 .po-tab-dropdown-container::-webkit-scrollbar-thumb,

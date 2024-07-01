@@ -234,7 +234,7 @@ po-toaster {
   position: initial;
   width: 100%;
   justify-content: flex-start;
-  z-index: 1000;
+  z-index: 0;
   --shadow: none;
 }
 

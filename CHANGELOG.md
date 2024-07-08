@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.18.0](https://github.com/po-ui/po-style/compare/v17.17.1...v17.18.0) (2024-07-08)
+
+
+### Bug Fixes
+
+* **tab-dropdown:** Corrige o posicionamento do po-listbox possibilitando uma visibilidade melhor dos itens ([f9425d3](https://github.com/po-ui/po-style/commit/f9425d3c576e114c3c2f50713fff03718514359b))
+* **toaster:** corrige z-index e cor ícone warning no tema dark ([e427046](https://github.com/po-ui/po-style/commit/e4270467433e27448dcc897e69c62e2c6d79a5ec))
+
+
+
 ## [17.17.1](https://github.com/po-ui/po-style/compare/v17.17.0...v17.17.1) (2024-07-02)
 
 Compatibilidade com @po-ui/ng-components@17.17.1

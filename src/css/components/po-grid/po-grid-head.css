@@ -5,7 +5,7 @@
 
   --color-grid-head-content-border-bottom-color: var(--color-primary-light-80);
   --color-grid-head-content-border-right-color: var(--color-neutral-light-10);
-  --color-grid-head-content-color: var(--color-primary);
+  --color-grid-head-content-color: var(--color-brand-02-base);
 }
 
 .po-grid-head-content {

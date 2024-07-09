@@ -97,9 +97,9 @@
 
 .po-lookup-input-disabled,
 .po-lookup-input-disabled:hover {
-  border-color: var(--color-input-border-text, var(--color-disabled));
-  background-color: var(--color-input-border-text-disabled, var(--background-disabled));
-  color: var(--color-input-color-disabled, var(--text-color-disabled));
+  border-color: var(--color-disabled);
+  background-color: var(--background-disabled);
+  color: var(--text-color-disabled);
   cursor: not-allowed;
 }
 

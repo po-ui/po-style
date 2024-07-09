@@ -123,59 +123,59 @@ po-toaster {
 }
 
 .po-toaster-success {
-  background-color: var(--color-toaster-background-color-success, var(--background-success));
-  border-color: var(--color-toaster-border-color-success, var(--border-color-success));
+  background-color: var(--background-success);
+  border-color: var(--border-color-success);
 }
 
 .po-toaster-success .po-toaster-icon {
-  background-color: var(--color-toaster-icon-background-color-success, var(--color-success));
-  color: var(--color-toaster-icon-color-success, var(--color-icon));
+  background-color: var(--color-success);
+  color: var(--color-icon);
 }
 
 .po-toaster-success .po-toaster-divider {
-  border-color: var(--color-toaster-border-color-success, var(--border-color-success));
+  border-color: var(--border-color-success);
 }
 
 .po-toaster-error {
-  background-color: var(--color-toaster-background-color-error, var(--background-error));
-  border-color: var(--color-toaster-border-color-error, var(--border-color-error));
+  background-color: var(--background-error);
+  border-color: var(--border-color-error);
 }
 
 .po-toaster-error .po-toaster-icon {
-  background-color: var(--color-toaster-icon-background-color-error, var(--color-error));
-  color: var(--color-toaster-icon-color-error, var(--color-icon));
+  background-color: var(--color-error);
+  color: var(--color-icon);
 }
 
 .po-toaster-error .po-toaster-divider {
-  border-color: var(--color-toaster-border-color-error, var(--border-color-error));
+  border-color: var(--border-color-error);
 }
 
 .po-toaster-warning {
-  background-color: var(--color-toaster-background-color-warning, var(--background-warning));
-  border-color: var(--color-toaster-border-color-warning, var(--border-color-warning));
+  background-color: var(--background-warning);
+  border-color: var(--border-color-warning);
 }
 
 .po-toaster-warning .po-toaster-icon {
-  background-color: var(--color-toaster-icon-background-color-warning, var(--color-warning));
-  color: var(--color-toaster-icon-color-warning, var(--color-icon-warning));
+  background-color: var(--color-warning);
+  color: var(--color-icon-warning);
 }
 
 .po-toaster-warning .po-toaster-divider {
-  border-color: var(--color-toaster-border-color-warning, var(--border-color-warning));
+  border-color: var(--border-color-warning);
 }
 
 .po-toaster-info {
-  background-color: var(--color-toaster-background-color-info, var(--background-info));
-  border-color: var(--color-toaster-border-color-info, var(--border-color-info));
+  background-color: var(--background-info);
+  border-color: var(--border-color-info);
 }
 
 .po-toaster-info .po-toaster-icon {
-  background-color: var(--color-toaster-icon-background-color-info, var(--color-info));
-  color: var(--color-toaster-icon-color-info, var(--color-icon));
+  background-color: var(--color-info);
+  color: var(--color-icon);
 }
 
 .po-toaster-info .po-toaster-divider {
-  border-color: var(--color-toaster-border-color-info, var(--border-color-info));
+  border-color: var(--border-color-info);
 }
 
 .po-toaster-row {

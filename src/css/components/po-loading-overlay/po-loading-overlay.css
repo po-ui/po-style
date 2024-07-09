@@ -1,7 +1,7 @@
 .po-loading-overlay-content {
-  background-color: var(--color-loading-overlay-background-color-content);
+  background-color: var(--background);
   border-radius: 3px;
-  box-shadow: 0 1px 4px 0 var(--color-loading-overlay-box-shadow-content);
+  box-shadow: 0 1px 4px 0 var(--shadow);
   display: block;
   height: 80%;
   left: 50%;

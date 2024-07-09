@@ -42,7 +42,7 @@ po-field-container-bottom .po-field-container-bottom {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
-  color: var(--color-field-container-bottom-color-text-error, var(--text-color-error));
+  color: var(--text-color-error);
 }
 
 .po-field-container-bottom-text-error .po-icon {
@@ -52,7 +52,7 @@ po-field-container-bottom .po-field-container-bottom {
 }
 
 .po-field-container-bottom-help-text {
-  color: var(--color-field-container-color-help, var(--text-color-help));
+  color: var(--text-color-help);
 }
 
 .po-field-container-error-item {

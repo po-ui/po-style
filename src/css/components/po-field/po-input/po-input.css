@@ -2,9 +2,9 @@
   font-family: var(--font-family);
   font-size: var(--font-size);
   color: var(--text-color);
-  background-color: var(--color-input-background-color-text, var(--background));
+  background-color: var(--background);
   padding: var(--padding, 0 0.5em);
-  border: 1px solid var(--color-input-border-text, var(--color));
+  border: 1px solid var(--color);
   border-radius: 4px;
   min-height: 2.75em;
   box-sizing: border-box;
@@ -20,7 +20,7 @@
 }
 
 .po-input::placeholder {
-  color: var(--color-input-text-placeholder, var(--text-color-placeholder));
+  color: var(--text-color-placeholder);
 }
 
 .po-input.po-input-icon-left {
@@ -33,7 +33,7 @@
 }
 
 .po-input:focus {
-  border-color: var(--color-input-border-text-focusable, var(--color-focused));
+  border-color: var(---color-focused);
   outline-color: var(--outline-color-focused);
   outline-width: var(--outline-width);
   outline-style: solid;
@@ -53,14 +53,14 @@
 
 .po-input:disabled,
 .po-input[disabled='true'] {
-  border-color: var(--color-input-border-text, var(--color-disabled));
-  background-color: var(--color-input-border-text-disabled, var(--background-disabled));
-  color: var(--color-input-color-disabled, var(--text-color-disabled));
+  border-color: var(--color-disabled);
+  background-color: var(--background-disabled);
+  color: var(---text-color-disabled);
   cursor: not-allowed;
 }
 
 .po-icon-input-disabled {
-  color: var(--color-field-icon-color-disabled);
+  color: var(--color-neutral-light-30);
   cursor: not-allowed;
 }
 
@@ -80,11 +80,11 @@ po-password.ng-invalid.ng-dirty .po-input,
 po-select.ng-invalid.ng-dirty .po-select-button,
 po-upload.ng-invalid.ng-dirty .po-upload-button button,
 po-url.ng-invalid.ng-dirty .po-input {
-  border: solid 1px var(--color-input-border-text-error) !important;
-  color: var(--color-input-text-error);
+  border: solid 1px var(--color-feedback-negative-base) !important;
+  color: var(--color-feedback-negative-base);
 }
 
 po-input.ng-invalid-mask .po-input {
-  border: solid 1px var(--color-input-border-text-error) !important;
-  color: var(--color-input-text-error);
+  border: solid 1px var(--color-feedback-negative-base) !important;
+  color: var(--color-feedback-negative-base);
 }

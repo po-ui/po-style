@@ -5,7 +5,7 @@
 .po-menu {
   border-radius: var(--border-radius);
   border-color: var(--border-color);
-  background-color: var(--color-menu-background-color-menu, var(--background-color));
+  background-color: var(--background-color);
 
   border-width: var(--border-width-sm);
   border-style: solid;
@@ -110,7 +110,7 @@
 .po-menu-footer {
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: var(--color-menu-border-top-collapse-button, var(--border-color));
+  border-top-color: var(--border-color);
 
   max-height: 2.75em;
 }
@@ -124,7 +124,7 @@
   font-size: var(--font-size);
   line-height: var(--line-height);
   border-radius: var(--border-radius);
-  color: var(--color-menu-color-menu-item-text, var(--color));
+  color: var(--color);
 
   letter-spacing: var(--letter-spacing-auto);
   min-height: 2.75em;
@@ -191,7 +191,7 @@
   }
 
   .po-menu-mobile {
-    color: var(--color-menu-color-menu-responsive, var(--color));
+    color: var(--color);
     display: block;
     font-size: 28px;
     height: 40px;
@@ -203,7 +203,7 @@
   }
 
   .po-menu-overlay {
-    background-color: var(--color-menu-background-color-menu-responsive-overlay);
+    background-color: var(--color-neutral-dark-80);
     bottom: 0;
     content: '';
     height: 100vh;

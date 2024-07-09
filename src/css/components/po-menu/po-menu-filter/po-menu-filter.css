@@ -5,7 +5,7 @@
 }
 
 .po-menu-filter-icon {
-  color: var(--color-menu-filter-color-icon, var(--color-icon-read));
+  color: var(--color-icon-read);
   cursor: default;
   text-align: center;
   text-decoration: none;
@@ -31,16 +31,16 @@
 }
 
 .po-menu-filter-search-icon-container .po-loading-icon-container svg {
-  color: var(--color-menu-filter-color-icon, var(--color-icon-read));
+  color: var(--color-icon-read);
 }
 
 .po-menu-filter {
   font-family: var(--font-family);
   font-size: var(--font-size);
-  color: var(--color-menu-filter-color-text, var(--text-color));
-  border-color: var(--color-menu-filter-border, var(--color));
+  color: var(--text-color);
+  border-color: var(--color);
   border-radius: var(--border-radius);
-  background-color: var(--color-menu-filter-background-color, var(--background));
+  background-color: var(--background);
 
   font-weight: var(--font-weight-normal);
   border-width: var(--border-width-sm);
@@ -62,7 +62,7 @@
 }
 
 .po-menu-filter:focus {
-  border-color: var(--color-menu-filter-border-focusable, var(--color-focused));
+  border-color: var(--color-focused);
   outline-color: var(--outline-color-focused);
 
   outline-width: var(--outline-width);

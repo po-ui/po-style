@@ -21,7 +21,7 @@
 }
 
 .po-breadcrumb-dropdown-item {
-  color: var(--color-breadcrumb-color-item);
+  color: var(--color);
   list-style: none;
   min-height: 44px;
   padding: 10px 16px;

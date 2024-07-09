@@ -47,21 +47,21 @@
 }
 
 .po-button-group-container .po-button-group.po-button-group-button-selected .po-button {
-  background-color: var(--color-button-group-background-selected, var(--color-pressed));
-  border-color: var(--color-button-group-border-selected, var(--color-pressed));
-  color: var(--color-button-group-color-selected, var(--text-color));
+  background-color: var(--color-pressed);
+  border-color: var(--color-pressed);
+  color: var(--text-color);
 }
 
 .po-button-group-container .po-button-group.po-button-group-button-selected:hover .po-button {
-  background-color: var(--color-button-group-background-color-neutral-hover, var(--color-hover));
-  border-color: var(--color-button-group-border-neutral-hover, var(--color-hover));
-  color: var(--color-button-group-color-neutral-hover, var(--text-color));
+  background-color: var(--color-hover);
+  border-color: var(--color-hover);
+  color: var(--text-color);
 }
 
 .po-button-group-container .po-button-group.po-button-group-button-selected .po-button:active {
-  background-color: var(--color-button-group-background-color-neutral-pressed, var(--color-pressed));
-  border-color: var(--color-button-group-border-neutral-pressed, var(--color-pressed));
-  color: var(--color-button-group-color-neutral-pressed, var(--text-color));
+  background-color: var(--color-pressed);
+  border-color: var(--color-pressed);
+  color: var(--text-color);
   outline-color: var(--color-action-focus);
   outline-width: var(--outline-width);
   outline-style: solid;
@@ -70,8 +70,8 @@
 }
 
 .po-button-group-container .po-button-group.po-button-group-button-selected .po-button:disabled {
-  background-color: var(--color-button-group-background-color-neutral-disabled, var(--background-color-disabled));
-  border-color: var(--color-button-group-border-neutral-disabled, var(--color-disabled));
-  color: var(--color-button-group-color-neutral-disabled, var(--color-disabled));
+  background-color: var(--background-color-disabled);
+  border-color: var(--color-disabled);
+  color: var(--color-disabled);
   cursor: not-allowed;
 }

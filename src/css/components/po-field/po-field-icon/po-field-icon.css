@@ -47,7 +47,7 @@
 }
 
 .po-field-icon-disabled {
-  color: var(--color-field-icon-color-disabled);
+  color: var(--color-neutral-light-30);
 }
 
 .po-field-icon-readonly {
@@ -65,5 +65,5 @@ po-number.ng-invalid.ng-dirty .po-field-icon,
 po-password.ng-invalid.ng-dirty .po-field-icon,
 po-select.ng-invalid.ng-dirty .po-field-icon,
 po-url.ng-invalid.ng-dirty .po-field-icon {
-  color: var(--color-field-icon-color-error) !important;
+  color: var(--color-feedback-negative-base) !important;
 }

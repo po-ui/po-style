@@ -28,7 +28,8 @@
 }
 
 .po-page-header-title-container .po-page-header-title {
-  color: var(--color-page-header-color-title, var(--text-color));
+  /*color: var(--color-page-header-color-title, var(--text-color));*/
+  color: var(--color-page-header-color-title, var(--color-neutral-dark-70));
 }
 
 .po-page-header-title,

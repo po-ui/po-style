@@ -11,7 +11,7 @@
 }
 
 .po-color-primary {
-  background-color: var(--color-primary);
+  background-color: var(--color-brand-02-base);
 }
 
 .po-color-primary-dark-20 {
@@ -131,7 +131,7 @@
 }
 
 .po-text-color-primary {
-  color: var(--color-primary) !important;
+  color: var(--color-brand-02-base) !important;
 }
 
 .po-text-color-primary-dark-20 {

@@ -4,7 +4,7 @@
 }
 
 .po-popup-arrow {
-  background-color: var(--color-popup-background-color-popup, var(--background));
+  background-color: var(--background);
   border-color: var(--border-color);
   border-style: solid;
   border-width: var(--border-width);
@@ -21,41 +21,41 @@
 /* item no modo hover */
 .po-popup
   .po-item-list:hover:is(.po-item-list__action, .po-item-list__check, .po-item-list__option):not(.po-item-list__disabled, .po-item-list__danger) {
-  background-color: var(--color-popup-background-color-popup-item-hover, var(--background-hover));
+  background-color: var(--background-hover);
 }
 
 .po-popup
   .po-item-list:hover:is(.po-item-list__check-selected:hover, .po-item-list__option-selected:hover):not(.po-item-list__disabled) {
-  background-color: var(--color-popup-background-color-popup-item-hover, var(--background-hover));
+  background-color: var(--background-hover);
 }
 
 /* item no modo desabilitado */
 .po-popup .po-item-list__disabled:is(.po-item-list__action, .po-item-list__check, .po-item-list__option) {
-  color: var(--color-popup-color-disabled, var(--color-disabled));
+  color: var(--color-disabled);
 }
 
 .po-popup .po-item-list:is(.po-item-list__check-selected, .po-item-list__option-selected) {
-  background-color: var(--color-popup-background-color-popup-item-selected, var(--background-selected));
+  background-color: var(--background-selected);
 }
 
 /* item do tipo action */
 .po-popup .po-item-list__action {
-  color: var(--color-popup-color-default, var(--color));
+  color: var(--color);
 }
 
 .po-popup .po-item-list__danger:not(.po-item-list__disabled) {
-  color: var(--color-popup-color-danger, var(--color-feedback-negative-base));
+  color: var(--color-feedback-negative-base);
 }
 
 .po-popup .po-item-list__selected:not(.po-item-list__danger) {
-  background-color: var(--color-popup-background-color-popup-item-selected, var(--background-selected));
-  color: var(--color-popup-color-item-selected, var(--color-option));
+  background-color: var(--background-selected);
+  color: var(--color-option);
 }
 
 .po-popup .po-item-list.po-item-list__selected:hover:not(.po-item-list__danger) {
-  background-color: var(--color-popup-background-color-popup-item-selected-hover, var(--background-hover));
+  background-color: var(--background-hover);
 }
 
 .po-popup .po-item-list__separator {
-  border-top: 1px solid var(--color-popup-border-color-separator, var(--color-neutral-light-10));
+  border-top: 1px solid var(--color-neutral-light-10);
 }

@@ -4,9 +4,9 @@
   }
 
   --color-grid-cell-content-input-border-color: var(--color-neutral-light-10);
-  --color-grid-cell-content-border-color-focusable: var(--color-primary);
+  --color-grid-cell-content-border-color-focusable: var(--color-brand-02-base);
 
-  --color-grid-cell-content-color: var(--color-primary);
+  --color-grid-cell-content-color: var(--color-brand-02-base);
   --color-grid-cell-content-required-color: var(--color-07);
 }
 

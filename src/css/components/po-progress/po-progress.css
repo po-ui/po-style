@@ -18,7 +18,7 @@
 }
 
 .po-progress-info-text-error {
-  color: var(--color-progress-color-text-error, var(--text-color-error));
+  color: var(--text-color-error);
   font-size: var(--font-size-sm);
 }
 

@@ -42,7 +42,7 @@
 .po-table thead tr th,
 .po-table .po-table-master-detail thead tr th {
   background-color: var(--background-color-headline);
-  color: var(--color-table-color-header, var(--color));
+  color: var(--color);
 }
 
 .po-table thead tr th,
@@ -76,7 +76,7 @@
 .po-table tbody:not(:last-child) tr td,
 .po-table .po-table-master-detail tbody tr:not(:last-child) td {
   border-bottom: solid;
-  border-bottom-color: var(--color-table-border-rows, var(--color-line));
+  border-bottom-color: var(--color-line);
   border-bottom-width: var(--border-width-sm);
 }
 
@@ -98,7 +98,7 @@
   line-height: var(--line-height-md);
   font-size: var(--font-size-default);
 
-  color: var(--color-table-color-text, var(--color));
+  color: var(--color);
   white-space: nowrap;
 
   overflow: hidden;
@@ -181,7 +181,7 @@
 }
 
 .po-table .po-table-row-active td {
-  background-color: var(--color-table-background-color-selected, var(--background-color-selected));
+  background-color: var(--background-color-selected);
 }
 
 .po-table .po-table-row-active td {
@@ -190,7 +190,7 @@
 
 .po-table.po-table-striped > tbody:nth-child(odd) tr:first-child:not(.po-table-row-active) td,
 .po-table.po-table-striped .po-table-master-detail > tbody tr:nth-child(odd):not(.po-table-row-active) td {
-  background-color: var(--color-table-background-color-row-strip, var(--background-striped-color));
+  background-color: var(--background-striped-color);
 }
 
 .po-table .po-table-column-right {
@@ -225,24 +225,25 @@
 }
 
 .po-table .po-table-single-action {
-  color: var(--color-table-color-actions, var(--color));
+  /*color: var(--color-table-color-actions, var(--color));*/
+  color: var(--color-action-default);
   text-decoration: underline;
   font-weight: bold;
 }
 
 .po-table .po-table-single-action:not(.po-table-action-disabled):hover {
-  color: var(--color-table-color-single-action-hover);
+  color: var(--color-action-hover);
   text-decoration: none;
 }
 
 .po-table .po-table-action-disabled,
 .po-table .po-table-icon-disabled {
-  color: var(--color-table-color-disabled, var(--color-disabled));
+  color: var(--color-disabled);
   cursor: not-allowed !important;
 }
 
 .po-table-column-actions {
-  color: var(--color-table-color-header, var(--color));
+  color: var(--color);
   cursor: default;
   max-width: 56px;
   min-width: 56px;
@@ -252,7 +253,7 @@
 }
 
 .po-table-column-actions i {
-  color: var(--color-table-color-header, var(--color));
+  color: var(--color);
   display: block;
   font-size: 1.5rem;
 }
@@ -281,7 +282,7 @@
 
 .po-table-footer {
   @apply --font-table-text;
-  border-top: 2px solid var(--color-table-box-shadow-footer, var(--color-line));
+  border-top: 2px solid var(--color-line);
 }
 
 .po-table-subtitle-footer-container {
@@ -295,7 +296,7 @@
 
 .po-container .po-table-group-row:last-child .po-table-row + tr:not(.po-table-row) .po-table-column-detail {
   border-bottom: none;
-  border-top: 1px solid var(--color-table-border-rows);
+  border-top: 1px solid var(--color-line);
 }
 
 .po-container .po-table .po-table-group-row:last-child .po-table-row {
@@ -303,8 +304,8 @@
 }
 
 .po-table-footer-show-subtitle {
-  background-color: var(--color-table-background-color-footer-show-subtitle);
-  border-left: solid 1px var(--color-table-border-footer-show-subtitle);
+  background-color: var(--color-neutral-light-00);
+  border-left: solid 1px var(--color-neutral-light-10);
   cursor: pointer;
   height: 42px;
   position: absolute;
@@ -319,7 +320,7 @@
 
 .po-table-show-subtitle {
   @apply --font-table-text-bold;
-  color: var(--color-table-color-footer-show-subtitle);
+  color: var(--color-neutral-dark-95);
   left: 0;
   position: absolute;
   top: 50%;
@@ -338,7 +339,7 @@
 .po-table-subtitle-circle,
 .po-table-column-label {
   @apply --text-table-text-smaller;
-  color: var(--color-table-color-subtitle-text);
+  color: var(--color-neutral-light-00);
   height: 20px;
   line-height: 16px;
 }
@@ -471,7 +472,7 @@
 
 .po-table-striped,
 .po-table-striped .po-table-master-detail .po-table-detail-row:nth-child(even) tr td {
-  background-color: var(--color-table-background-color-row-strip, var(--background-striped-color));
+  background-color: var(--background-striped-color);
 }
 
 .po-table-column-master-detail-space-checkbox {
@@ -496,7 +497,7 @@
 }
 
 .po-table-column-detail-toggle i {
-  color: var(--color-table-color-header, var(--color));
+  color: var(--color);
   display: block;
   font-size: 1.5rem;
 }
@@ -524,7 +525,7 @@
 .po-table-header-column-manager-button {
   background-color: transparent;
   border: none;
-  color: var(--color-table-color-header, var(--color));
+  color: var(--color);
   font-size: 1.5rem;
 }
 

@@ -12,8 +12,8 @@
 }
 
 .po-accordion-item-header-button {
-  color: var(--color-accordion-header-color-primary, var(--color));
-  background-color: var(--color-accordion-item-header-button-background-color, var(--background-color));
+  color: var(--color);
+  background-color: var(--background-color);
 
   width: 100%;
   height: 100%;
@@ -31,7 +31,7 @@
 }
 
 .po-accordion-item-header-button:hover {
-  color: var(--color-accordion-header-color-hover, var(--color-hover));
+  color: var(--color-hover);
   background-color: var(--background-hover);
 }
 
@@ -65,7 +65,7 @@
   color: var(--color-focus);
 
   position: relative;
-  outline-color: var(--color-accordion-item-header-button-focus, var(--outline-color-focused));
+  outline-color: var(--outline-color-focused);
   outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
@@ -87,7 +87,7 @@
 }
 
 .po-accordion-item-header-icon {
-  color: var(--color-accordion-header-color-primary, var(--color));
+  color: var(--color);
 
   align-self: center;
   font-size: 1.5rem;

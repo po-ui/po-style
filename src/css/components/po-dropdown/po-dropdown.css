@@ -15,9 +15,9 @@
 
 .po-dropdown-button {
   background-color: var(--background);
-  border: solid var(--border-width) var(--color-dropdown-button-border-color, var(--color));
+  border: solid var(--border-width) var(--color);
   border-radius: var(--border-radius);
-  color: var(--color-dropdown-button-color, var(--color));
+  color: var(--color);
   cursor: pointer;
   height: 44px;
   padding: var(--padding, 0 1em);
@@ -27,8 +27,8 @@
 }
 
 .po-dropdown-button:hover {
-  border: solid var(--border-width) var(--color-dropdown-button-border-color-hover, var(--color-hover));
-  color: var(--color-dropdown-button-color-hover, var(--color-hover));
+  border: solid var(--border-width) var(--color-hover);
+  color: var(--color-hover);
   background-color: var(--background-hover);
 }
 
@@ -49,8 +49,8 @@
 }
 
 .po-dropdown-button-disabled {
-  border-color: var(--color-dropdown-button-border-color-disabled, var(--color-disabled));
-  color: var(--color-dropdown-button-color-disabled, var(--color-disabled));
+  border-color: var(--color-disabled);
+  color: var(--color-disabled);
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -58,7 +58,7 @@
 .po-dropdown-button-open,
 .po-dropdown-button-open:hover {
   background-color: var(--background-pressed);
-  border: solid var(--border-width) var(--color-dropdown-button-border-color-hover, var(--color-hover));
+  border: solid var(--border-width) var(--color-hover);
   color: var(--color-dropdown-button-color-hover, var(--color-hover));
 }
 

@@ -1,5 +1,5 @@
 .po-progress-bar {
-  background-color: var(--color-progress-bar-background-color-bar, var(--background-color-tray));
+  background-color: var(--background-color-tray);
   border-radius: var(--border-radius-pill);
   border-color: transparent;
   display: block;
@@ -67,7 +67,7 @@
 
 .po-progress-bar-indeterminate-track {
   height: 8px;
-  background-color: var(--color-progress-bar-background-color-bar, var(--background-color-tray));
+  background-color: var(--background-color-tray);
   position: relative;
   overflow: hidden;
 }
@@ -84,7 +84,7 @@
 .po-progress-bar-indeterminate-track-bar {
   height: 100%;
   width: 50%;
-  background-color: var(--color-progress-bar-background-color-default, var(--background-color-indicator));
+  background-color: var(--background-color-indicator);
   border-radius: 4px;
   animation: progressIndeterminate 3s linear infinite;
 }
@@ -102,7 +102,7 @@
 }
 
 .po-progress-default .po-progress-bar-element::after {
-  background-color: var(--color-progress-bar-background-color-default, var(--background-color-indicator));
+  background-color: var(--background-color-indicator);
 }
 
 .po-progress-success .po-progress-bar-element,

@@ -17,7 +17,7 @@
   font-size: var(--font-size);
   line-height: var(--line-height);
   border-radius: var(--border-radius);
-  color: var(--color-menu-color-menu-item-text, var(--color));
+  color: var(--color);
   background-color: var(--background-color);
 
   letter-spacing: var(--letter-spacing-auto);
@@ -53,7 +53,7 @@
 }
 
 .po-menu-item:not(.po-menu-item-no-data):hover {
-  background-color: var(--color-menu-background-color-item-hover, var(--background-color-hover));
+  background-color: var(--background-color-hover);
   color: var(--color-hover);
 }
 
@@ -67,8 +67,8 @@
 }
 
 .po-menu-item-selected {
-  background-color: var(--color-menu-background-color-item-selected, var(--background-color-actived));
-  color: var(--color-menu-color-menu-item-selected, var(--color-actived));
+  background-color: var(--background-color-actived);
+  color: var(--color-actived);
 
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;

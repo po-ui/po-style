@@ -2,8 +2,8 @@
   border-radius: var(--border-radius);
   border-width: var(--border-width);
   border-color: var(--border-color);
-  background-color: var(--color-loading-overlay-background-color-content, var(--background));
-  box-shadow: var(--color-loading-overlay-box-shadow-content, var(--shadow));
+  background-color: var(--background);
+  box-shadow: var(--shadow);
 
   width: 16.5rem;
   min-height: 13.75rem;
@@ -44,7 +44,7 @@
 .po-loading-label {
   font-family: var(--font-family);
   font-weight: var(--font-weight);
-  color: var(--color-loading-color-label, var(--text-color));
+  color: var(--text-color);
 
   font-size: var(--font-size-default);
   line-height: var(--line-height-md);

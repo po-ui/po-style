@@ -33,7 +33,7 @@
   overflow-y: auto;
   position: fixed;
   width: 100%;
-  background: var(--color-modal-color-overlay, var(--color-overlay));
+  background: var(--color-overlay);
   opacity: var(--opacity-overlay);
 }
 
@@ -44,12 +44,12 @@
 }
 
 .po-modal-content {
-  background-color: var(--color-modal-background-color-content, var(--background));
+  background-color: var(--background);
   border: solid;
   border-radius: var(--border-radius);
   border-width: var(--border-width);
   border-color: var(--border-color);
-  box-shadow: var(--shadow-modal-content, var(--shadow));
+  box-shadow: var(--shadow);
   display: inline-block;
   margin: 0 auto;
   position: relative;

@@ -3,7 +3,7 @@
 }
 
 .po-loading-icon {
-  color: var(--color-loading-icon-color-primary, var(--color));
+  color: var(--color);
 }
 
 .po-loading-svg-lg svg {

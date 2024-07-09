@@ -29,7 +29,7 @@
 }
 
 .po-breadcrumb-item .po-breadcrumb-label {
-  color: var(--color-breadcrumb-color-item);
+  color: var(--color);
 }
 
 .po-breadcrumb-item .po-breadcrumb-label:hover {

@@ -1,5 +1,11 @@
+po-page-default .po-tabs-container {
+  overflow: initial;
+  position: relative;
+}
+
 .po-tabs-container {
   overflow: hidden;
+  position: initial;
 }
 
 .po-tabs-header {

@@ -2,6 +2,8 @@
 [comment]: # (@label Biblioteca de ícones)
 [comment]: # (@link guides/icons)
 
+>**Deprecated v20.x.x** . A Biblioteca de ícones POIcon está depreciada e será removida na v20. Recomendamos o uso da Lib Phosphor conforme documentação abaixo.
+
 ### Adicionamos suporte à Biblioteca de ícones Phosphor (v2.1)
 
 A partir da versão 17.15.0, disponibilizado suporte à biblioteca de ícones [Phosphor](https://phosphoricons.com/) (no estilo **regular**).

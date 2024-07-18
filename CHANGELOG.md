@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.0.0-next.0](https://github.com/po-ui/po-style/compare/v17.19.0...18.0.0-next.0) (2024-07-18)
+
+Compatibilidade com @po-ui/ng-components@18.0.0-next.0
+
 ## [17.19.0](https://github.com/po-ui/po-style/compare/v17.18.1...v17.19.0) (2024-07-15)
 
 Compatibilidade com @po-ui/ng-components@17.19.0

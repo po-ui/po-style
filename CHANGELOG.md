@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [18.0.0-rc.0](https://github.com/po-ui/po-style/compare/v18.0.0-next.0...v18.0.0-rc.0) (2024-07-24)
+
+### Code Refactoring
+
+* **components:** remove deprecated variables ([87b0fed](https://github.com/po-ui/po-style/commit/87b0fed1900d6cc09971e23fe1e9ba18f8d09a9d))
+
+
+### Features
+
+* **icon:** substitui a lib 'Phosphor' por 'Animalia-Icon' ([77134c4](https://github.com/po-ui/po-style/commit/77134c4bad70e075143a533b755d5e5242ae8d7f))
+
+
+
 ## [18.0.0-next.0](https://github.com/po-ui/po-style/compare/v17.19.0...18.0.0-next.0) (2024-07-18)
 
 Compatibilidade com @po-ui/ng-components@18.0.0-next.0

@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [18.0.0](https://github.com/po-ui/po-style/compare/v17.21.0...v18.0.0) (2024-07-29)
+
+
+### Features
+
+* **icon:** anuncia depreciação ([9c3f020](https://github.com/po-ui/po-style/commit/9c3f020968cbbe83825c08e34885997da7272cce))
+* **icon:** substitui a lib 'Phosphor' por 'Animalia-Icon' ([81672e0](https://github.com/po-ui/po-style/commit/81672e0ee8511a85fa54cfb160c945e2aac626ba))
+
+
+### BREAKING CHANGES
+
+* **icon:** Depreciação da Lib Po Icon
+A Lib Po Icon está depreciada e será removida na v20 do PO UI.
+
+Antes:
+
+É possível usar qualquer um dos ícones da [Lib PO Icon](/guides/icons).
+
+Depois:
+
+Utilize os ícones disponíveis na Lib [Phosphor](/guides/icons), conforme documentação.
+
+
+
 ## [17.21.0](https://github.com/po-ui/po-style/compare/v17.20.0...v17.21.0) (2024-07-29)
 
 Compatibilidade com @po-ui/ng-components@17.21.0

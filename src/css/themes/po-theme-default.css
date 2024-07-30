@@ -1518,16 +1518,34 @@ po-select {
   --color-slide-border-arrow: var(--color-primary);
   --color-slide-box-shadow-arrow-circle: var(--color-black-alpha-15);
   --color-slide-box-shadow-wrapper: var(--color-black-alpha-30);
+}
 
+po-stepper {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --font-weight: var(--font-weight-normal);
+
+  --text-color: var(--color-neutral-dark-70);
+  --color-icon-done: var(--color-neutral-dark-70);
+  --background-done: var(--color-neutral-light-00);
+  --color-line-done: var(--color-neutral-mid-40);
+  --color-icon-current: var(--color-neutral-light-00);
+  --background-current: var(--color-action-default);
+  --font-weight-current: var(--font-weight-bold);
+  --font-size-circle: var(--font-size-sm);
+  --color-next: var(--color-action-disabled);
+  --text-color-next: var(--color-neutral-light-30);
+}
+
+:root {
   /*------------------------------------*\
-  STEPPER
-\*------------------------------------*/
-  --color-stepper-bar: var(--color-neutral-dark-70);
-  --color-stepper-bar-disabled: var(--color-neutral-mid-40);
-  --color-stepper-circle-active: var(--color-primary);
-  --color-stepper-circle-default: var(--color-primary);
-  --color-stepper-circle-disabled: var(--color-neutral-light-30);
-  --color-stepper-circle-error: var(--color-feedback-negative-base);
+    STEPPER
+  \*------------------------------------*/
+  --color-stepper-bar: var(--color-line-done); /*Deprecated v19.x.x utilizar --color-line-done */
+  --color-stepper-bar-disabled: var(--color-next); /*Deprecated v19.x.x utilizar --color-next */
+  --color-stepper-circle-active: var(--background-current); /*Deprecated v19.x.x utilizar --background-current */
+  --color-stepper-circle-default: var(--color-icon-done); /*Deprecated v19.x.x utilizar --color-icon-done */
+  --color-stepper-circle-disabled: var(--color-next); /*Deprecated v19.x.x utilizar --color-next */
 }
 
 /*------------------------------------*\

@@ -1,21 +1,3 @@
-:root {
-  --font-stepper-label: {
-    @apply --font-text-bold;
-  }
-
-  --font-stepper-circle-content: {
-    @apply --font-text-small-bold;
-  }
-
-  --font-stepper-circle-content-md: {
-    @apply --font-text-bold;
-  }
-
-  --font-stepper-circle-content-lg: {
-    @apply --font-text-large-bold;
-  }
-}
-
 .po-stepper {
   display: table;
   table-layout: fixed;
@@ -40,6 +22,7 @@
 .po-stepper-vertical .po-stepper-container,
 .po-stepper-vertical .po-stepper-content {
   display: table-cell;
+  vertical-align: top;
 }
 
 .po-stepper-horizontal .po-stepper-content,
@@ -50,12 +33,7 @@
 
 .po-stepper-vertical .po-stepper-content {
   height: 100%;
-  vertical-align: top;
   width: 100%;
-}
-
-.po-stepper-horizontal .po-stepper-step {
-  padding-top: 8px;
 }
 
 .po-stepper-vertical .po-stepper-step {
@@ -73,16 +51,18 @@
 }
 
 .po-stepper-circle {
-  @apply --font-stepper-circle-content;
-  padding: 3px;
-  border: 2px solid;
   border-radius: 50%;
   height: 24px;
   width: 24px;
 }
 
+.po-stepper-circle-border {
+  border: 2px solid;
+}
+
 .po-stepper-horizontal .po-stepper-circle {
-  margin: 0 auto;
+  margin-inline: auto;
+  margin-bottom: 0.25em;
 }
 
 .po-stepper-vertical .po-stepper-circle {
@@ -99,21 +79,21 @@
   transform: translate(-50%, -50%);
 }
 
-.po-stepper-step-default .po-stepper-circle,
-.po-stepper-step-default .po-stepper-label {
-  border-color: var(--color-stepper-circle-default);
-  color: var(--color-stepper-circle-default);
+.po-stepper-step-default .po-stepper-circle {
+  border-color: var(--color-stepper-bar-disabled, var(--color-next));
 }
 
-.po-stepper-step-disabled .po-stepper-circle,
+.po-stepper-step-default .po-stepper-label,
 .po-stepper-step-disabled .po-stepper-label {
-  border-color: var(--color-stepper-circle-disabled);
-  color: var(--color-stepper-circle-disabled);
+  color: var(--color-stepper-circle-disabled, var(--text-color-next));
+}
+
+.po-stepper-step-disabled .po-stepper-circle {
+  border-color: var(--color-stepper-bar-disabled, var(--color-next));
 }
 
 .po-stepper-step-error .po-stepper-circle,
 .po-stepper-step-error .po-stepper-label {
-  border-color: var(--color-stepper-circle-error);
   color: var(--color-stepper-circle-error);
 }
 
@@ -126,14 +106,30 @@
 }
 
 .po-stepper-label {
-  font-family: var(--font-family-default-bold), sans-serif;
-  font-size: var(--font-size-default-normal);
-  line-height: 24px;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.po-stepper-label-none {
+  display: none;
+}
+
+.po-stepper-label-vertical {
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 15em;
+  width: 100%;
 }
 
 .po-stepper-horizontal .po-stepper-label {
-  padding: 8px 8px 0;
+  padding-inline: var(--spacing-xs);
   text-align: center;
+  display: list-item;
 }
 
 .po-stepper-vertical .po-stepper-step-label-position {
@@ -143,14 +139,14 @@
 
 .po-stepper-step-bar-left,
 .po-stepper-step-bar-right {
-  border-top: 2px solid var(--color-stepper-bar);
+  border-top: 2px solid var(--color-stepper-bar, var(--color-line-done));
   position: absolute;
   top: 50%;
 }
 
 .po-stepper-step-bar-top,
 .po-stepper-step-bar-bottom {
-  border-left: 2px solid var(--color-stepper-bar);
+  border-left: 2px solid var(--color-stepper-bar, var(--color-line-done));
   position: absolute;
 }
 
@@ -188,12 +184,40 @@
   margin-right: 16px;
 }
 
+.po-stepper-circle-content,
+.po-stepper-circle-content-md,
+.po-stepper-circle-content-lg,
+.po-stepper-circle-content.po-icon,
+.po-stepper-circle-content-md.po-icon,
+.po-stepper-circle-content-lg.po-icon {
+  font-weight: var(--font-weight-current);
+}
+
+.po-stepper-circle-content {
+  font-size: var(--font-size-circle);
+}
+
 .po-stepper-circle-content-md {
-  @apply --font-stepper-circle-content-md;
+  font-size: var(--font-size-md);
 }
 
 .po-stepper-circle-content-lg {
-  @apply --font-stepper-circle-content-lg;
+  font-size: var(--font-size-lg);
+}
+
+.po-stepper-step-default .po-stepper-circle-content,
+.po-stepper-step-disabled .po-stepper-circle-content {
+  font-size: var(--font-size-circle);
+}
+
+.po-stepper-step-default .po-stepper-circle-content,
+.po-stepper-step-disabled .po-stepper-circle-content-md {
+  font-size: var(--font-size-circle);
+}
+
+.po-stepper-step-default .po-stepper-circle-content,
+.po-stepper-step-disabled .po-stepper-circle-content-lg {
+  font-size: var(--font-size-circle);
 }
 
 .po-stepper-circle-content.po-icon {
@@ -209,32 +233,60 @@
 }
 
 .po-stepper-circle-active {
+  background-color: var(--color-stepper-circle-active, var(--background-current));
   border-radius: 50%;
-  background: var(--color-stepper-circle-active);
   width: 100%;
   height: 100%;
 }
 
 .po-stepper-step-error .po-stepper-circle-active {
-  background: var(--color-stepper-circle-error);
+  background: var(--color-feedback-negative-base);
 }
 
 .po-stepper-step-disabled .po-stepper-step-bar-right,
 .po-stepper-step-disabled .po-stepper-step-bar-left {
-  border-top: 2px dashed var(--color-stepper-bar-disabled);
+  border-top: 2px dashed var(--color-stepper-bar-disabled, var(--color-next));
 }
 
 .po-stepper-step-disabled .po-stepper-step-bar-top,
 .po-stepper-step-disabled .po-stepper-step-bar-bottom {
-  border-left: 2px dashed var(--color-stepper-bar-disabled);
+  border-left: 2px dashed var(--color-stepper-bar-disabled, var(--color-next));
 }
 
 .po-stepper-step-dashed-border {
-  border-top: 2px dashed var(--color-stepper-bar-disabled);
+  border-top: 2px dashed var(--color-stepper-bar-disabled, var(--color-next));
 }
 
 .po-stepper-step-dashed-border-vertical {
-  border-left: 2px dashed var(--color-stepper-bar-disabled);
+  border-left: 2px dashed var(--color-stepper-bar-disabled, var(--color-next));
+}
+
+.po-stepper-circle-done {
+  background-color: var(--background-done);
+  border-color: var(--color-neutral-dark-70) !important;
+}
+
+.po-stepper-label-done {
+  color: var(--text-color) !important;
+}
+
+.po-stepper-circle-done .po-stepper-circle-content.po-icon {
+  color: var(--color-icon-done);
+}
+
+.po-stepper-label-active {
+  color: var(--color-neutral-dark-70) !important;
+  font-weight: var(--font-weight-current);
+}
+
+.po-stepper-circle-active .po-stepper-circle-content.po-icon {
+  color: var(--color-icon-current);
+}
+
+.po-stepper-circle-content,
+.po-stepper-circle-content.po-icon,
+.po-stepper-step-disabled .po-stepper-circle-content {
+  color: var(--color-action-disabled);
 }
 
 @media print {

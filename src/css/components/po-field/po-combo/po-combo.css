@@ -224,3 +224,71 @@ po-combo.ng-invalid.ng-dirty
 po-combo .po-field-container-content {
   display: inline-table;
 }
+
+po-combo.po-md-1,
+po-combo.po-md-2 {
+  --min-width: 0px;
+}
+
+po-combo.po-md-1 .po-combo-input.po-input-icon-right {
+  padding-right: 0px;
+}
+
+po-combo.po-md-1 .po-loading,
+po-combo.po-md-2 .po-loading {
+  width: calc(16.5rem / 4.75);
+}
+
+@media (min-width: 141px) and (max-width: 160px) {
+  po-combo.po-md-1 .po-loading,
+  po-combo.po-md-2 .po-loading,
+  po-combo.po-md-3 .po-loading,
+  po-combo.po-md-4 .po-loading,
+  po-combo.po-md-5 .po-loading,
+  po-combo.po-md-6 .po-loading,
+  po-combo.po-md-7 .po-loading,
+  po-combo.po-md-8 .po-loading,
+  po-combo.po-md-9 .po-loading,
+  po-combo.po-md-10 .po-loading,
+  po-combo.po-md-11 .po-loading,
+  po-combo.po-md-12 .po-loading {
+    width: calc(16.5rem / 2.75);
+  }
+}
+
+@media (min-width: 161px) and (max-width: 480px) {
+  po-combo.po-md-1 .po-loading,
+  po-combo.po-md-2 .po-loading,
+  po-combo.po-md-3 .po-loading,
+  po-combo.po-md-4 .po-loading,
+  po-combo.po-md-5 .po-loading,
+  po-combo.po-md-6 .po-loading,
+  po-combo.po-md-7 .po-loading,
+  po-combo.po-md-8 .po-loading,
+  po-combo.po-md-9 .po-loading,
+  po-combo.po-md-10 .po-loading,
+  po-combo.po-md-11 .po-loading,
+  po-combo.po-md-12 .po-loading {
+    width: calc(16.5rem / 2);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 939px) {
+  po-combo.po-md-1 .po-loading,
+  po-combo.po-md-2 .po-loading {
+    width: calc(16.5rem / 6.75);
+  }
+}
+
+@media (min-width: 940px) and (max-width: 1200px) {
+  po-combo.po-md-1 .po-loading,
+  po-combo.po-md-2 .po-loading {
+    width: calc(16.5rem / 4.75);
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1200px) {
+  po-combo.po-md-1 .po-field-icon-container-left {
+    display: none;
+  }
+}

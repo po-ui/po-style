@@ -44,7 +44,7 @@ jobs:
     # PUBLISH
     - name: Run publish with v17-lts
       if: contains(steps.version.outputs.publish, 'yes')
-      run: npm publish dist/style --tag "v17-lts"
+      run: npm publish dist/style --tag v17-lts
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

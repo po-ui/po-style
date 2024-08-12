@@ -44,13 +44,14 @@ jobs:
     # PUBLISH
     - name: Run publish with v17-lts
       if: contains(steps.version.outputs.publish, 'yes')
-      run: npm publish dist/style --tag v17-lts
+      run: npm publish ${{env.WORKING_DIR}}/dist/style --tag v17-lts
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     - name: Add "v17-lts" tag
       if: contains(steps.version.outputs.publish, 'no')
       run: npm dist-tags add @${{ env.PACKAGE_NAME }}@${{ env.PACKAGE_VERSION }} "v17-lts"
+      working-directory: ${{env.WORKING_DIR}}
       env:
         PACKAGE_VERSION: ${{ steps.package-version.outputs.current-version }}
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

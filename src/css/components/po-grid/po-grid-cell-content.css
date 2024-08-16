@@ -22,6 +22,7 @@
   text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
+  color: var(--color-neutral-dark-80);
 }
 
 .po-grid-cell-center {

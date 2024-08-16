@@ -365,6 +365,7 @@
 
 .po-table-subtitle-text {
   padding-left: 8px;
+  color: var(--color-neutral-dark-80);
 }
 
 .po-table-header-subtitle {

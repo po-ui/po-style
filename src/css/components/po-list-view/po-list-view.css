@@ -105,6 +105,7 @@
 
 .po-list-view-container-no-data {
   @apply --font-list-view-text-bold;
+  color: var(--color-neutral-dark-80);
 }
 
 .po-list-view-header {

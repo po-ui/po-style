@@ -42,6 +42,7 @@
   @apply --font-page-blocked-user-font-title;
   order: -1;
   text-align: center;
+  color: var(--color-neutral-dark-80);
 }
 
 .po-page-blocked-user-reason-content {

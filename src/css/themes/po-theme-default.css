@@ -1325,7 +1325,7 @@ po-switch {
 
 po-tabs,
 po-tab-button {
-  --background: var(--color-neutral-light-00);
+  --background: var(--color-transparent);
   --color-baseline: var(--color-neutral-light-20);
 
   --font-family: var(--font-family-theme);

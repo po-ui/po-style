@@ -161,6 +161,10 @@
   transition: opacity 0.15s linear;
 }
 
+.po-field-help {
+  color: var(--color-neutral-dark-80);
+}
+
 @media screen and (max-width: 1200px) {
   .po-wrapper .po-toolbar,
   .po-wrapper.po-collapsed-menu .po-toolbar {

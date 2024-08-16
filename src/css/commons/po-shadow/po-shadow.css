@@ -41,6 +41,7 @@
 
 .po-shadow-card {
   box-shadow: var(--shadow-card);
+  color: var(--color-neutral-dark-80);
 }
 
 .po-shadow-container {

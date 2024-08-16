@@ -90,10 +90,12 @@
 
 .po-font-title {
   @apply --font-title;
+  color: var(--color-neutral-dark-80);
 }
 
 .po-font-subtitle {
   @apply --font-subtitle;
+  color: var(--color-neutral-dark-90);
 }
 
 .po-font-text-large {

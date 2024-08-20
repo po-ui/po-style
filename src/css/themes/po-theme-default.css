@@ -1300,7 +1300,6 @@ po-select {
   --color-stepper-circle-active: var(--color-brand-02-base);
   --color-stepper-circle-default: var(--color-brand-02-base);
   --color-stepper-circle-disabled: var(--color-neutral-light-30);
-  --color-stepper-circle-error: var(--color-feedback-negative-base);
 }
 
 /*------------------------------------*\

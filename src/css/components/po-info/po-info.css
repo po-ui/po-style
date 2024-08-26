@@ -29,12 +29,17 @@
     color: var(--color-info-color-text-value);
     display: block;
     min-height: 24px;
+    word-break: break-word;
 
     &-horizontal {
       display: table-cell;
       margin-top: 0;
       /* Usado por conta do espaçamento do grid system */
       padding: 0 !important;
+    }
+
+    &-pre {
+      white-space: pre-wrap;
     }
   }
 }

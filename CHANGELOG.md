@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [17.25.0](https://github.com/po-ui/po-style/compare/v17.24.0...v17.25.0) (2024-09-02)
+
+
+### Features
+
+* **dynamic-view:** adiciona propriedade p-text-wrap ([aa7b579](https://github.com/po-ui/po-style/commit/aa7b5795b479870bdd4b0bb545e4829293ef3fed))
+
+
+
 ## [17.24.0](https://github.com/po-ui/po-style/compare/v17.23.0...v17.23.1) (2024-08-26)
 
 Compatibilidade com @po-ui/ng-components@17.24.0

@@ -138,3 +138,7 @@
     padding-right: 8px;
   }
 }
+
+po-toolbar .po-popup {
+  width: max-content;
+}

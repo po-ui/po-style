@@ -22,7 +22,7 @@
     "update-animalia-icon": "npm install @animaliads/animalia-icon@latest && node scripts/update-animalia-icon.js"
   },
   "devDependencies": {
-    "@animaliads/animalia-icon": "^1.0.2",
+    "@animaliads/animalia-icon": "1.0.2",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-angular": "^11.0.0",
     "autoprefixer": "^9.8.6",

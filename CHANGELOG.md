@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.26.0](https://github.com/po-ui/po-style/compare/v17.25.0...v17.26.0) (2024-09-09)
+
+
+### Bug Fixes
+
+* **toolbar:** corrige posicionamento do popup ao abrir notificação ([29571ee](https://github.com/po-ui/po-style/commit/29571ee21b8d44c5248e7ac3c17297cf71a27f5c))
+
+
+
 # [17.25.0](https://github.com/po-ui/po-style/compare/v17.24.0...v17.25.0) (2024-09-02)
 
 

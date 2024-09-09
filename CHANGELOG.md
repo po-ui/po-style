@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.6.0](https://github.com/po-ui/po-style/compare/v18.5.0...v18.6.0) (2024-09-09)
+
+
+### Bug Fixes
+
+* **toolbar:** corrige posicionamento do popup ao abrir notificação ([853f701](https://github.com/po-ui/po-style/commit/853f70106c4a7437bb46070c2a6cce482f88a1e0))
+
+
+### Docs
+
+* **icons:** atualiza documentação para nova Lib Animalia Icons ([d857702](https://github.com/po-ui/po-style/commit/d85770219c3ef772e898c26b4877adea7a79ad5c))
+
+
+
 # [18.5.0](https://github.com/po-ui/po-style/compare/v18.4.0...v18.5.0) (2024-09-02)
 
 

@@ -1,5 +1,11 @@
-@media (min-width: 481px) and (max-width: 960px) {
+@media (min-width: $mediaMediumMin) and (max-width: $mediaMediumMax),
+  (min-width: var(--gridSystemMdMinWidth)) and (max-width: var(--gridSystemMdMaxWidth)) {
   /* Classes para definição de visibilidade */
+
+  .classeAquiSm {
+    background-color: $coloracao;
+    width: 500px;
+  }
 
   .po-visible-md,
   [class*='po-visible-md-'],

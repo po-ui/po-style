@@ -97,3 +97,14 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 }
+
+$coloracao: green;
+
+$mediaSmallMax: 480px;
+$mediaMediumMin: 481px;
+$mediaMediumMax: 960px;
+$mediaLargeMin: 961px;
+$mediaLargeMax: 1366px;
+$mediaSLargeMin: 1367px;
+$mediaPaddingSmall: 1599px;
+$mediaPaddingLarge: 1600px;

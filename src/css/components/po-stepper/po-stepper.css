@@ -63,11 +63,12 @@
   min-height: 5.6em;
 }
 
-.po-stepper-step-position:first-child .po-stepper-step-bar-left,
-.po-stepper-step-position:last-child .po-stepper-step-bar-right,
-.po-stepper-step-position:first-child .po-stepper-step-bar-top,
-.po-stepper-step-position:last-child .po-stepper-step-bar-bottom {
-  display: none;
+.po-stepper-horizontal .po-stepper-step-position-center {
+  margin-inline: auto;
+}
+
+.po-stepper-vertical .po-stepper-step-position-center {
+  margin: auto 0;
 }
 
 .po-stepper-circle {
@@ -76,6 +77,10 @@
   width: 24px;
   z-index: 2;
   position: relative;
+}
+
+.po-stepper-horizontal .po-stepper-circle-center {
+  margin-inline: auto;
 }
 
 .po-stepper-circle-border {
@@ -114,6 +119,11 @@
 .po-stepper-circle-vertical {
   display: grid;
   margin-bottom: auto;
+}
+
+.po-stepper-vertical .po-stepper-circle-vertical-center {
+  display: grid;
+  margin-bottom: 0;
 }
 
 .po-stepper-step-default,
@@ -163,6 +173,10 @@
   max-width: 15em;
 }
 
+.po-stepper-horizontal .po-stepper-label-center {
+  padding-inline: var(--spacing-xs);
+}
+
 .po-stepper-vertical .po-stepper-step-label-position {
   padding-left: var(--spacing-sm);
   padding-top: 0.25em;
@@ -178,15 +192,16 @@
   display: inline-grid;
 }
 
-.po-stepper-step-bar-left,
-.po-stepper-step-bar-right {
+.po-stepper-step-bar-right,
+.po-stepper-step-bar-center {
   border-top: 2px solid var(--color-stepper-bar, var(--color-line-done));
   position: absolute;
   top: 50%;
 }
 
 .po-stepper-step-bar-top,
-.po-stepper-step-bar-bottom {
+.po-stepper-step-bar-bottom,
+.po-stepper-step-bar-bottom-center {
   border-left: 2px solid var(--color-stepper-bar, var(--color-line-done));
   position: absolute;
 }
@@ -197,14 +212,25 @@
   right: 0;
 }
 
+.po-stepper-horizontal .po-stepper-step-bar-center {
+  position: absolute;
+  left: 50%;
+  right: -50%;
+}
+
 .po-stepper-vertical .po-stepper-step-bar-bottom {
   bottom: -4px;
   top: 4px;
-  margin-top: 0.25em;
+}
+
+.po-stepper-vertical .po-stepper-step-bar-bottom-center {
+  bottom: 0;
+  top: 50%;
 }
 
 .po-stepper-vertical .po-stepper-step-bar-top {
-  left: 50%;
+  position: absolute;
+  bottom: 50%;
   top: 0;
 }
 
@@ -252,8 +278,8 @@
   background: var(--color-feedback-negative-base);
 }
 
+.po-stepper-step-disabled .po-stepper-step-bar-center,
 .po-stepper-step-disabled .po-stepper-step-bar-right,
-.po-stepper-step-disabled .po-stepper-step-bar-left,
 .po-stepper-step-dashed-border {
   border-top: 2px dashed var(--color-stepper-bar-disabled, var(--color-next));
   position: absolute;

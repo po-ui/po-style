@@ -30,3 +30,16 @@ po-page-default .po-tabs-container {
 .po-tabs-content {
   padding-top: 8px;
 }
+
+.po-page-content .po-tabs-content {
+  padding-inline: var(--content-padding-tabs);
+}
+
+.po-page-content .po-tabs-header {
+  padding-inline: 0px;
+}
+
+.po-page-content .po-tabs-container {
+  margin-left: var(--margin-tabs-container-left);
+  margin-right: var(--margin-tabs-container-right);
+}

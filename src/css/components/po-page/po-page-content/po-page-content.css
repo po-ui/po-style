@@ -1,7 +1,7 @@
 .po-page-content {
   max-height: 100%;
   overflow-y: auto;
-  padding: 8px 16px;
+  padding: var(--padding-content);
   position: relative;
   width: 100%;
 }
@@ -17,12 +17,6 @@
 .po-page-content::-webkit-scrollbar-thumb {
   background-color: var(--color-page-content-background-color-scrollbar);
   border-radius: 10px;
-}
-
-@media screen and (max-width: 1024px) {
-  .po-page-content {
-    padding: 8px;
-  }
 }
 
 @media print {

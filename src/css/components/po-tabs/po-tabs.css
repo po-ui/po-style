@@ -14,8 +14,7 @@ po-page-default .po-tabs-container {
   width: 100%;
   gap: var(--spacing-xs);
   background-color: var(--background);
-  padding-left: var(--spacing-sm);
-  padding-right: var(--spacing-sm);
+  padding-inline: var(--padding-tabs-header);
 }
 
 .po-tabs-button-wrapper {
@@ -29,4 +28,17 @@ po-page-default .po-tabs-container {
 
 .po-tabs-content {
   padding-top: 8px;
+}
+
+.po-page-content .po-tabs-content {
+  padding-inline: var(--content-padding-tabs);
+}
+
+.po-page-content .po-tabs-header {
+  --padding-tabs-header: 0px;
+}
+
+.po-page-content .po-modal-body .po-tabs-header,
+.po-page-content .po-page-slide-body .po-tabs-header {
+  padding-inline: var(--padding-tabs-header);
 }

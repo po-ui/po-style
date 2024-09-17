@@ -939,6 +939,9 @@ po-modal {
   --color-overlay: var(--color-neutral-dark-80);
   --opacity-overlay: 0.7;
   --color-divider: var(--color-neutral-light-20);
+
+  --padding-header: var(--spacing-sm) var(--spacing-md);
+  --padding-body: var(--spacing-md) var(--spacing-2xl) var(--spacing-2xl) var(--spacing-md);
 }
 
 :root {
@@ -981,14 +984,14 @@ po-multiselect {
   PAGE HEADER
 \*------------------------------------*/
 po-page-header {
-  --padding: var(--spacing-xs) var(--spacing-sm) var(--spacing-sm);
-  --gap: var(--spacing-xs);
+  --padding: var(--spacing-xs) var(--spacing-md);
+  --gap: var(--spacing-md);
 
   /* header container */
-  --padding-top-header: var(--spacing-xs);
+  --padding-top-header: var(--spacing-md);
 
   /* actions button */
-  --gap-actions: var(--spacing-sm);
+  --gap-actions: var(--spacing-xs);
 }
 po-page-header .po-page-header-title {
   --font-family: var(--font-family-extra-light);
@@ -1001,6 +1004,10 @@ po-page-header .po-page-header-subtitle {
   --font-size: var(--font-size-default);
   --line-height: var(--line-height-md);
   --text-color: var(--color-neutral-dark-70);
+}
+
+po-page-content {
+  --padding-content: 8px 16px;
 }
 
 :root {
@@ -1114,6 +1121,9 @@ po-page-slide {
   --font-family: var(--font-family-heading);
   --font-weight: var(--font-weight-bold);
   --color-title: var(--color-neutral-dark-95);
+
+  --padding-header: var(--spacing-lg) var(--spacing-md) 0px var(--spacing-md);
+  --padding-body: 0px var(--spacing-md) var(--spacing-lg) var(--spacing-md);
 }
 
 :root {
@@ -1343,6 +1353,9 @@ po-tab-button {
 
   --color-disabled: var(--color-action-disabled);
   --background-item-disabled: var(--color-neutral-light-10);
+
+  --content-padding-tabs: var(--spacing-md);
+  --padding-tabs-header: var(--spacing-sm);
 }
 
 /*------------------------------------*\

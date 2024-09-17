@@ -90,7 +90,9 @@
 }
 
 .po-wrapper .po-page {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
   height: 100vh;
   transition: all 0.2s ease;
   white-space: normal;
@@ -205,11 +207,6 @@
 
   .po-wrapper-menu-panel .po-toolbar {
     padding-left: 8px;
-  }
-
-  .po-wrapper .po-page .po-page-content,
-  .po-wrapper-menu-panel .po-page .po-page-content {
-    padding: 8px;
   }
 }
 

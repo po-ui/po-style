@@ -86,24 +86,24 @@
 }
 
 .po-page-slide-content {
-  padding-inline: var(--spacing-md);
-  padding-block: var(--spacing-lg);
-
   background-color: var(--background-color);
   border-radius: var(--border-radius);
 
   margin: 0 auto;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
 }
 
 .po-page-slide-header {
-  margin-bottom: var(--spacing-md);
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0.25em;
   max-width: 100%;
   text-align: left;
+  padding: var(--padding-header);
 }
 
 .po-page-slide-header po-icon {
@@ -136,6 +136,7 @@
   text-align: left;
   height: calc(100% - 70px); /* 100% - .po-page-slide-header */
   scroll-behavior: smooth;
+  padding: var(--padding-body);
 }
 
 @media screen and (max-width: 480px) {

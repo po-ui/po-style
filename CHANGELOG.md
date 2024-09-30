@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [18.8.0](https://github.com/po-ui/po-style/compare/v18.7.0...v18.8.0) (2024-09-30)
+
+
+### Bug Fixes
+
+* **table:** possibilita desabilitar a propriedade p-virtual-scroll ([7c59873](https://github.com/po-ui/po-style/commit/7c598733cd49e21a4a33fa8d209da3ffbf1a4c02))
+
+
+### Code Refactoring
+
+* **stepper:** remove variável não utilizada ([8f556d9](https://github.com/po-ui/po-style/commit/8f556d9bfb0098ef175ad78c1d3cede272007c05))
+
+
+### Features
+
+* **stepper:** adiciona propriedade p-align-center ([86fd661](https://github.com/po-ui/po-style/commit/86fd661053eee56ae40ffaa6ac2dd8343696b789))
+* **stepper:** implementa definições do AnimaliaDS ([fe6b6ea](https://github.com/po-ui/po-style/commit/fe6b6ea99b7af93e2a65569ddb2903424ea868dd))
+
+
+### BREAKING CHANGES
+
+* **stepper:** remove variável de customização de cor
+
+Remove variável para compatibilidade com @animaliads/stepper e melhoria de acessibilidade, não sendo mais possível a customização.
+
+- `color-stepper-circle-error: cor aplicada ao step e à label quando ocorre um erro.
+
+
+
 ## [18.7.0](https://github.com/po-ui/po-style/compare/v18.6.0...v18.7.0) (2024-09-16)
 
 Compatibilidade com @po-ui/ng-components@18.7.0

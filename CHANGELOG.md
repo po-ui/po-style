@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.26.1](https://github.com/po-ui/po-style/compare/v17.26.0...v17.26.1) (2024-09-30)
+
+
+### Bug Fixes
+
+* **table:** possibilita desabilitar a propriedade p-virtual-scroll ([2acd094](https://github.com/po-ui/po-style/commit/2acd094b8e9b950c578a6b873f27254d81d7046d))
+
+
+
 ## [17.26.0](https://github.com/po-ui/po-style/compare/v17.25.0...v17.26.0) (2024-09-09)
 
 

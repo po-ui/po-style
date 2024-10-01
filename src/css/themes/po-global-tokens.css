@@ -1,4 +1,21 @@
+$gridSystemPullMaxWidth: 480px;
+$gridSystemOffsetMaxWidth: 480px;
+$gridSystemSmMaxWidth: 480px;
+$gridSystemMdMinWidth: 481px;
+$gridSystemMdMaxWidth: 960px;
+$gridSystemLgMinWidth: 961px;
+$gridSystemLgMaxWidth: 1366px;
+$gridSystemXlMinWidth: 1367px;
+
 :root {
+  --gridSystemSmMaxWidth: 480px;
+  --gridSystemMdMinWidth: 481px;
+  --gridSystemMdMaxWidth: 960px;
+  --gridSystemLgMinWidth: 961px;
+  --gridSystemLgMaxWidth: 1366px;
+  --gridSystemXlMinWidth: 1367px;
+  --gridSystemPullMaxWidth: 480px;
+  --gidSystemOffsetMaxWidth: 480px;
   --border-radius-none: none;
   --border-radius-sm: 2px;
   --border-radius-md: 4px;

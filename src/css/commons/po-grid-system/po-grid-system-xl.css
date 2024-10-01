@@ -1,4 +1,4 @@
-@media (min-width: 1367px) {
+@media (min-width: $gridSystemXlMinWidth), (min-width: var(--gridSystemXlMinWidth)) {
   /* Classes para definição de visibilidade */
 
   .po-visible-xl,

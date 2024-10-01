@@ -247,3 +247,89 @@ coluna.
 > É importante lembrar que o somatório de colunas com po-offset e os tamanhos dos elementos deve ser menor ou igual a 12.
 
 > Os tamanhos de deslocamentos do po-offset variam de 1 a 11, não incluindo o espaçamento igual a 12.
+
+## Customização dos breakpoints
+
+Atualmente, os navegadores não interpretam a leitura de variáveis em regras de breakpoint como por exemplo:
+
+`@media (min-width: var(--variavel-customizavel))`
+
+Porém, disponibilizamos os tokens de breakpoint no formato `var(--nome-da-variavel)` junto as regras de media query permitindo ao desenvolvedor realizar a customização dos breakpoints em tempo de execução através do serviço `PoMediaQueryService`.
+
+### Tokens de breakpoint customizáveis:
+
+- `--gridSystemSmMaxWidth`: 480px (valor padrão)
+- `--gridSystemMdMinWidth`: 481px (valor padrão)
+- `--gridSystemMdMaxWidth`: 960px (valor padrão)
+- `--gridSystemLgMinWidth`: 961px (valor padrão)
+- `--gridSystemLgMaxWidth`: 1366px (valor padrão)
+- `--gridSystemXlMinWidth`: 1367px (valor padrão)
+- `--gridSystemPullMaxWidth`: 480px  (valor padrão)
+- `--gidSystemOffsetMaxWidth`: 480px  (valor padrão)
+
+Nos arquivos de `grid-system` do `po-style`, a regra de breakpoint está escrita conforme modelo:
+
+```css
+@media (min-width: var(--gridSystemMdMinWidth)) and (max-width: var(--gridSystemMdMaxWidth)){...}
+```
+
+No exemplo acima está demonstrado o formato da regra de breakpoint para `gridsystem-md`.
+
+Para o desenvolvedor customizar a regra do grid-system acima, poderá utilizar o serviço PoMediaQueryService na inicialização do seu app, informando a regra e os respectivos valores, conforme o exemplo abaixo:
+```typescript
+const tokens: PoMediaQueryTokens =  {
+ *     sm: {
+ *      gridSystemSmMaxWidth: '1023px'
+ *      },
+ *     md: {
+ *      gridSystemMdMinWidth: '1024px',
+ *      gridSystemMdMaxWidth: '1366px'
+ *     },
+ *     lg: {
+ *      gridSystemLgMinWidth: '1367px',
+ *      gridSystemLgMaxWidth: '9999px'
+ *     }
+ *    };
+
+this.styleService.updateTokens(tokensMediaQueries);
+```
+
+A seguir segue a relação das regras de breakpoints do grid-system caso necessite customizá-las:
+<div class="po-row">
+  <div class="po-xl-6 po-lg-8 po-md-10 po-sm-12">
+    <table class="po-table po-text-color-neutral-dark-40">
+      <thead>
+        <tr class="po-table-header">
+          <th class="po-table-header-ellipsis">Grid-System</th>
+          <th class="po-table-header-ellipsis">Regra de breakpoint</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="po-table-row">
+          <td class="po-table-column">po-grid-system-sm</td>
+          <td class="po-table-column">(max-width: var(--gridSystemSmMaxWidth))</td>
+        </tr>
+        <tr class="po-table-row">
+          <td class="po-table-column">po-grid-system-md</td>
+          <td class="po-table-column">(min-width: var(--gridSystemMdMinWidth)) and (max-width: var(--gridSystemMdMaxWidth))</td>
+        </tr>
+        <tr class="po-table-row">
+          <td class="po-table-column">po-grid-system-lg</td>
+          <td class="po-table-column">(min-width: var(--gridSystemLgMinWidth)) and (max-width: var(--gridSystemLgMaxWidth))</td>
+        </tr>
+        <tr class="po-table-row">
+          <td class="po-table-column">po-grid-system-xl</td>
+          <td class="po-table-column">(min-width: var(--gridSystemXlMinWidth))</td>
+        </tr>
+        <tr class="po-table-row">
+          <td class="po-table-column">po-grid-system-pull</td>
+          <td class="po-table-column">(max-width: var(--gridSystemPullMaxWidth))</td>
+        </tr>
+        <tr class="po-table-row">
+          <td class="po-table-column">po-grid-system-offset</td>
+          <td class="po-table-column">(min-width: var(--gridSystemOffsetMaxWidth)) and (max-width: var(--gridSystemOffsetMaxWidth))</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

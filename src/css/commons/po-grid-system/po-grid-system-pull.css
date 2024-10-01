@@ -1,6 +1,6 @@
 /* Classes para definição de pull */
 
-@media (max-width: 480px) {
+@media (max-width: $gridSystemPullMaxWidth), (max-width: var(--gridSystemPullMaxWidth)) {
   .po-pull-sm-1 {
     margin-right: 8.33333333%;
   }

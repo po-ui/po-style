@@ -1,6 +1,6 @@
 /* Classes para definição de offset */
 
-@media (max-width: 480px) {
+@media (max-width: $gridSystemOffsetMaxWidth), (max-width: var(--gridSystemOffsetMaxWidth)) {
   .po-offset-sm-1 {
     margin-left: 8.33333333%;
   }

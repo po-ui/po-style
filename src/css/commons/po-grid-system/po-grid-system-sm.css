@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: $gridSystemSmMaxWidth), (max-width: var(--gridSystemSmMaxWidth)) {
   /* Classes para definição de visibilidade */
 
   .po-visible-sm,

@@ -1,4 +1,5 @@
-@media (min-width: 481px) and (max-width: 960px) {
+@media (min-width: $gridSystemMdMinWidth) and (max-width: $gridSystemMdMaxWidth),
+  (min-width: var(--gridSystemMdMinWidth)) and (max-width: var(--gridSystemMdMaxWidth)) {
   /* Classes para definição de visibilidade */
 
   .po-visible-md,

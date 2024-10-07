@@ -16,6 +16,13 @@
   line-height: 1rem;
 }
 
+.po-navbar-action-content:focus-visible {
+  outline-width: 1px;
+  outline-color: var(--color-action-focus);
+  outline-style: auto;
+  outline-offset: 0;
+}
+
 .po-navbar-action-content > :first-child:not(.po-fonts-icon):not(.po-icon) {
   line-height: 2rem;
 }

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.26.2](https://github.com/po-ui/po-style/compare/v17.26.1...v17.26.2) (2024-10-07)
+
+
+### Bug Fixes
+
+* **table:** corrige coluna do tipo link ([7f9def4](https://github.com/po-ui/po-style/commit/7f9def45ce6dca52ff6d2c49d448e0b45c9a4e74))
+
+
+
 ## [17.26.1](https://github.com/po-ui/po-style/compare/v17.26.0...v17.26.1) (2024-09-30)
 
 

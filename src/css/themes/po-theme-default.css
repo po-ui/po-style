@@ -1261,7 +1261,7 @@ po-search {
 
   --background-select: var(--background);
   --background-select-hover: var(--background-hover);
-  --background-select-disabled: var(background-disabled);
+  --background-select-disabled: var(--background-disabled);
 }
 
 /*------------------------------------*\

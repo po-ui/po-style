@@ -113,4 +113,9 @@ $gridSystemXlMinWidth: 1367px;
   --font-weight-normal: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+
+  --target-size-aaa: 2.75rem;
+  --target-size-aa: 2rem;
+  --focus-aaa: 4px;
+  --focus-aa: 2px;
 }

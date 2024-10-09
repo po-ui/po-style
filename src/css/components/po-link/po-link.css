@@ -1,11 +1,13 @@
 .po-link {
   color: var(--text-color);
   font-family: var(--font-family);
-  font-size: inherit;
+  font-size: var(--font-size-md); /* */
   font-weight: var(--font-weight);
   letter-spacing: var(--letter-spacing-auto);
   line-height: inherit;
   text-decoration: underline;
+  padding-inline: var(--spacing-sm);
+  min-height: var(--target-size-aaa); /* Valor padrão (AAA) */
 }
 
 .po-link:is(button) {
@@ -43,4 +45,17 @@
 
 .po-link:visited {
   color: var(--text-color-visited);
+}
+
+/* Variações de tamanho (p-size) */
+.po-link[p-size='small'] {
+  min-height: var(--target-size-aa); /* 32px */
+  font-size: var(--font-size-sm); /* Fonte menor para small */
+  padding-inline: var(--spacing-xs); /* Padding menor */
+}
+
+.po-link[p-size='large'] {
+  min-height: calc(var(--target-size-aaa) * 1.25); /* Valor maior */
+  font-size: var(--font-size-lg); /* Fonte maior para large */
+  padding-inline: var(--spacing-lg); /* Padding maior */
 }

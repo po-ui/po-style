@@ -788,6 +788,8 @@ po-link {
   --font-weight: var(--font-weight-bold);
   --text-color: var(--color-action-default);
 
+  --min-height: var(--target-size-aa);
+
   --text-color-hover: var(--color-action-hover);
   --text-color-pressed: var(--color-action-pressed);
   --outline-color-focused: var(--color-action-focus);

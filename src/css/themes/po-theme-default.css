@@ -1108,10 +1108,18 @@ po-overlay {
 /*------------------------------------*\
   PAGE SLIDE
 \*------------------------------------*/
+
+/* transition slide */
+:root {
+  --transition-duration: var(--duration-extra-fast);
+  --transition-timing: var(--duration-extra-slow) var(--timing-standart);
+}
+
 po-page-slide {
   /* base */
   --background-color: var(--color-neutral-light-00);
-  --border-radius: var(--border-radius-md);
+  --border-radius: var(--border-radius-md) 0 0 var(--border-radius-md);
+  --border-color: var(--color-neutral-light-20);
 
   /* overlay */
   --color-overlay: var(--color-neutral-dark-80);
@@ -1122,8 +1130,20 @@ po-page-slide {
   --font-weight: var(--font-weight-bold);
   --color-title: var(--color-neutral-dark-95);
 
-  --padding-header: var(--spacing-lg) var(--spacing-md) 0px var(--spacing-md);
-  --padding-body: 0px var(--spacing-md) var(--spacing-lg) var(--spacing-md);
+  --padding-header: var(--spacing-md);
+  --padding-body: var(--spacing-md);
+  --padding-footer: var(--spacing-sm) var(--spacing-md) var(--spacing-xl) var(--spacing-md);
+
+  --page-slide-width-sm: 40%;
+  --page-slide-width-md: 50%;
+  --page-slide-width-lg: 60%;
+  --page-slide-width-xl: 70%;
+  --page-slide-min-width-auto: 40%;
+  --page-slide-max-width-auto: 90%;
+}
+
+po-page-slide po-divider {
+  --border-color: var(--color-neutral-light-20);
 }
 
 :root {

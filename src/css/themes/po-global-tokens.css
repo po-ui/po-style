@@ -113,4 +113,43 @@ $gridSystemXlMinWidth: 1367px;
   --font-weight-normal: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --duration-extra-fast: 70ms;
+  --duration-fast: 110ms;
+  --duration-normal: 150ms;
+  --duration-moderate: 240ms;
+  --duration-slow: 400ms;
+  --duration-extra-slow: 700ms;
+  --timing-standart: Cubic-Bezier(0.35, 0, 0.1, 1);
+  --timing-entering: Cubic-Bezier(0.3, 0, 1, 0.8);
+  --timing-exiting: Cubic-Bezier(0.1, 0, 0, 1);
+  --timing-continuous: Cubic-Bezier(0, 0, 0, 0);
+  --motion-effect-fadein: opacity 0 1, transition-property all, transition-duration var(--duration-fast),
+    transition-timing-function var(--timing-standard);
+
+  --motion-effect-fadeout: opacity 1 0, transition-property all, transition-duration var(--duration-fast),
+    transition-timing-function var(--timing-standard);
+
+  --motion-effect-slide: transform translateX(1em), transition-property all, transition-duration var(--duration-normal),
+    transition-timing-function var(--timing-standard);
+
+  --motion-effect-slide-fade: opacity 0 1, transform translateX(1em), transition-property all,
+    transition-duration var(--duration-fast), transition-timing-function var(--timing-standard);
+
+  --motion-effect-scale: transform-origin center center, transform scale(0.5), transition-property all,
+    transition-duration var(--duration-fast), transition-timing-function var(--timing-standard);
+
+  --motion-effect-scale-fade: transform-origin start end, transform-origin start end, transition-property all,
+    transition-duration var(--duration-fast), transition-timing-function var(--timing-standard);
+
+  --motion-effect-scale-fade: transform-origin start end, transform scale(0.5, 1), transition-property all,
+    transition-duration var(--duration-fast), transition-timing-function var(--timing-standard);
+
+  --motion-effect-fill: background-size 100% 100%, transition-property all, transition-duration var(--duration-fast),
+    transition-timing-function var(--timing-standard);
+
+  --motion-effect-color: transition-property all, transition-duration var(--duration-fast),
+    transition-timing-function var(--timing-standard);
+
+  --motion-effect-expand: opacity 0 1, transform-origin top center, transform scale(0.5, 1), transition-property all,
+    transition-duration var(--duration-fast), transition-timing-function var(--timing-standard);
 }

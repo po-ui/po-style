@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [18.10.0](https://github.com/po-ui/po-style/compare/v18.9.0...v18.10.0) (2024-10-14)
+
+
+### Bug Fixes
+
+* **table:** corrige coluna do tipo link ([0e42b0f](https://github.com/po-ui/po-style/commit/0e42b0f7c76b54a91e466f4bd69fbd9a3263f3e8))
+
+
+### Features
+
+* **components:** permite melhor alinhamento ([a791f63](https://github.com/po-ui/po-style/commit/a791f6375d3eced6bf00a15db2803ebbea8e52e5))
+* **media-query:** implementa serviço para media query customizável ([2d7c41e](https://github.com/po-ui/po-style/commit/2d7c41ee3f2356862b5cfa97091652ba960a159c))
+
+
+
 # [18.9.0](https://github.com/po-ui/po-style/compare/v18.8.0...v18.9.0) (2024-10-07)
 
 

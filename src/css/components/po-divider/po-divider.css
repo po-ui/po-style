@@ -2,7 +2,7 @@ po-divider {
   --font-family: var(--font-family-theme);
   --font-size: 10px;
   --line-height: 16px;
-  --text-transform: uppercase;
+  --text-transform: none;
 }
 
 .po-divider-label {

@@ -1,15 +1,158 @@
 :root {
-  --font-lookup-text: {
-    @apply --font-text-large;
-  }
-
   --font-lookup-link-text: {
     @apply --font-text-bold;
   }
 
   --advanced-search-link-width: 80px;
-
   --filter-content-width: 232px;
+}
+
+.po-lookup {
+  padding: var(--spacing-xs) 0;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  display: inline-table;
+}
+
+.po-lookup .po-lookup-input {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  border-color: var(--color);
+  border-radius: var(--border-radius);
+  background-color: var(--background);
+  font-weight: var(--font-weight-normal);
+  border-width: var(--border-width-sm);
+  border-style: solid;
+  min-height: 2.75rem;
+  align-self: stretch;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 100%;
+  outline: none;
+  overflow: hidden;
+  padding-left: var(--spacing-xs);
+  padding-right: var(--spacing-xs);
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.po-lookup .po-lookup-buttons {
+  display: flex;
+  position: absolute;
+  inset: 9px 1px;
+  left: auto;
+}
+
+.po-lookup .po-lookup-button {
+  background-color: var(--background);
+  min-width: 2.75rem;
+  padding-inline: var(--spacing-xs);
+  color: var(--color-clear);
+  align-items: center;
+  align-self: stretch;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  display: flex;
+  font-size: 1.5rem;
+  height: 100%;
+  justify-content: center;
+}
+
+.po-lookup.po-lookup-disabled {
+  cursor: not-allowed;
+}
+
+.po-lookup.po-lookup-disabled * {
+  pointer-events: none;
+}
+
+.po-lookup .po-lookup-input.po-lookup-input-trigger {
+  padding-right: calc(var(--spacing-xs) + 2.75rem);
+}
+
+.po-lookup .po-lookup-input.po-lookup-input-trigger.po-input-double-icon-right {
+  padding-right: calc(var(--spacing-xs) + 2.75rem * 2);
+}
+
+.po-lookup .po-lookup-button.po-lookup-button-trigger {
+  background-color: var(--background);
+  border-left: none;
+  color: var(--color-icon);
+}
+
+.po-lookup-button-clean,
+.po-lookup-button-trigger {
+  position: relative;
+}
+
+.po-lookup-button-trigger::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: var(--border-width-sm);
+  background-color: var(--color);
+  left: 0;
+}
+
+.po-lookup .po-lookup-buttons .po-lookup-button.po-lookup-button-clean:is(:focus, :focus-visible),
+.po-lookup .po-lookup-buttons .po-lookup-button.po-lookup-button-trigger:is(:focus, :focus-visible),
+.po-lookup .po-lookup-input:is(:focus, :focus-visible) {
+  border-color: var(--color-focused);
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.po-lookup .po-lookup-buttons .po-lookup-button.po-lookup-button-clean:is(:focus, :focus-visible),
+.po-lookup .po-lookup-buttons .po-lookup-button.po-lookup-button-trigger:is(:focus, :focus-visible),
+.po-lookup .po-lookup-input:is(:focus-visible) {
+  outline-width: var(--outline-width-focus-visible);
+  z-index: 1;
+}
+
+.po-lookup .po-lookup-input:not(:disabled)::placeholder {
+  color: var(--text-color-placeholder);
+}
+
+.po-lookup .po-lookup-input:disabled::placeholder {
+  color: var(--text-color-disabled);
+}
+
+.po-lookup .po-lookup-input:not(:disabled):hover {
+  border-color: var(--color-hover);
+  background-color: var(--background-hover);
+}
+
+.po-lookup .po-lookup-input:focus ~ .po-lookup-buttons .po-lookup-button.po-lookup-button-trigger::before {
+  background-color: var(--color-focused);
+}
+
+.po-lookup .po-lookup-input:hover ~ .po-lookup-buttons .po-lookup-button.po-lookup-button-trigger::before {
+  background-color: var(--color-hover);
+}
+
+.po-lookup-buttons .po-lookup-button.po-lookup-button-clean:hover,
+.po-lookup-buttons .po-lookup-button.po-lookup-button-trigger:hover {
+  background-color: var(--background-hover);
+  color: var(--color-hover);
+  cursor: pointer;
+}
+
+.po-lookup .po-lookup-button po-clean.po-icon-input i.po-field-icon {
+  color: var(--color-clear);
+}
+
+.po-lookup .po-lookup-button:hover po-clean.po-icon-input i.po-field-icon {
+  color: var(--color-hover);
+}
+
+.po-lookup .po-lookup-button:last-of-type {
+  border-bottom-right-radius: calc(var(--border-radius) - var(--border-width-sm));
+  border-top-right-radius: calc(var(--border-radius) - var(--border-width-sm));
 }
 
 .po-lookup-header {
@@ -58,10 +201,11 @@
 }
 
 .po-lookup-advanced-search-link {
-  @apply --font-lookup-link-text;
   color: var(--color-lookup-advanced-search-link-color-text);
   cursor: pointer;
   text-decoration: none;
+  font-family: var(--font-family);
+  line-height: 1;
 }
 
 .po-lookup-input-auto {
@@ -95,14 +239,86 @@
   padding: 5px 8px;
 }
 
+.po-lookup-input.po-lookup-input-padding-button-clean {
+  padding-right: 88px;
+}
+
+.po-lookup .po-lookup-input:disabled,
 .po-lookup-input-disabled,
 .po-lookup-input-disabled:hover {
   border-color: var(--color-disabled);
   background-color: var(--background-disabled);
+
   color: var(--text-color-disabled);
   cursor: not-allowed;
+
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .po-lookup-input-disabled:focus {
   outline: none;
+}
+
+po-lookup.ng-invalid.ng-dirty .po-lookup-input:disabled,
+.po-lookup .po-lookup-input:disabled ~ .po-lookup-buttons .po-lookup-button.po-lookup-button-trigger,
+.po-lookup.po-lookup-disabled .po-lookup-input-disabled,
+.po-lookup.po-lookup-disabled .po-lookup-input-disabled:hover,
+.po-lookup.po-lookup-disabled .po-lookup-icon *,
+.po-lookup.po-lookup-disabled .po-lookup-buttons * {
+  background-color: var(--background-disabled);
+  border-color: var(--color-disabled);
+  color: var(--color-disabled);
+}
+
+po-lookup.ng-invalid.ng-dirty
+  .po-lookup-input:disabled
+  ~ .po-lookup-buttons
+  .po-lookup-button.po-lookup-button-trigger::before,
+po-lookup .po-lookup-input:disabled ~ .po-lookup-buttons .po-lookup-button.po-lookup-button-trigger::before {
+  background-color: var(--color-disabled);
+}
+
+po-lookup.ng-invalid.ng-dirty:hover .po-lookup-input:hover {
+  background-color: var(--background-error);
+  border-color: var(--color-error);
+  color: var(--color-error);
+}
+po-lookup.ng-invalid.ng-dirty:hover
+  .po-lookup-input:hover
+  ~ .po-lookup-buttons
+  .po-lookup-button.po-lookup-button-trigger,
+po-lookup.ng-invalid.ng-dirty .po-lookup-button-trigger:hover,
+po-lookup.ng-invalid.ng-dirty .po-lookup-buttons .po-lookup-button.po-lookup-button-trigger {
+  border-left-color: var(--color-error);
+  color: var(--color-error);
+}
+
+po-lookup.ng-invalid.ng-dirty .po-lookup-input,
+po-lookup.ng-invalid.ng-dirty:hover .po-lookup-input:not(:disabled),
+po-lookup.ng-invalid.ng-dirty .po-lookup-input:focus,
+po-lookup.ng-invalid.ng-dirty .po-lookup-input:hover {
+  border-color: var(--color-error);
+}
+
+po-lookup.ng-invalid.ng-dirty
+  .po-lookup-input:not(:disabled)
+  ~ .po-lookup-buttons
+  .po-lookup-button.po-lookup-button-trigger::before,
+po-lookup.ng-invalid.ng-dirty:hover
+  .po-lookup-input:not(:disabled)
+  ~ .po-lookup-buttons
+  .po-lookup-button.po-lookup-button-trigger::before {
+  background-color: var(--color-error);
+}
+
+po-lookup.ng-invalid.ng-dirty .po-lookup-button,
+po-lookup.ng-invalid.ng-dirty .po-lookup-input:hover,
+po-lookup.ng-invalid.ng-dirty:hover .po-lookup-buttons .po-lookup-button.po-lookup-button-trigger {
+  border-left-color: var(--color-error);
+  color: var(--color-error);
+}
+
+po-lookup.ng-invalid.ng-dirty .po-lookup-input:focus ~ .po-lookup-buttons .po-lookup-button-trigger {
+  border-left-color: var(--color-error);
 }

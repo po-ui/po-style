@@ -712,7 +712,6 @@ po-url,
 po-login,
 po-email,
 po-password,
-po-lookup,
 po-decimal,
 po-number,
 po-datepicker,
@@ -850,10 +849,35 @@ po-loading-icon {
   /*------------------------------------*\
   LOOKUP
   \*------------------------------------*/
-  --color-lookup-search-background-color-text: var(--color-neutral-light-00);
-  --color-lookup-search-border-text: var(--color-neutral-light-30);
-  --color-lookup-search-border-text-focusable: var(--color-brand-02-base);
   --color-lookup-advanced-search-link-color-text: var(--color-brand-02-base);
+}
+
+po-lookup {
+  --background: var(--color-neutral-light-05);
+  --background-disabled: var(--color-neutral-light-20);
+  --background-hover: var(--color-brand-01-lightest);
+  --background-select: var(--background);
+  --background-select-disabled: var(--background-disabled);
+  --background-select-hover: var(--background-hover);
+
+  --border-radius: var(--border-radius-md);
+
+  --color: var(--color-neutral-dark-70);
+  --color-clear: var(--color-action-default);
+  --color-disabled: var(--color-action-disabled);
+  --color-focused: var(--color-action-default);
+  --color-hover: var(--color-action-hover);
+  --color-icon: var(--color-action-default);
+  --color-error: var(--color-feedback-negative-base);
+
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --text-color: var(--color-neutral-dark-90);
+  --text-color-disabled: var(--color-action-disabled);
+  --text-color-placeholder: var(--color-neutral-light-30);
+
+  --outline-color-focused: var(--color-action-focus);
+  --padding: 0 0.5rem;
 }
 
 /*------------------------------------*\

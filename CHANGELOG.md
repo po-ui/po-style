@@ -2,6 +2,263 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.26.3](https://github.com/po-ui/po-style/compare/v17.26.2...v17.26.3) (2024-10-14)
+
+
+
+## [17.26.2](https://github.com/po-ui/po-style/compare/v17.26.1...v17.26.2) (2024-10-07)
+
+
+### Bug Fixes
+
+* **table:** corrige coluna do tipo link ([7f9def4](https://github.com/po-ui/po-style/commit/7f9def45ce6dca52ff6d2c49d448e0b45c9a4e74))
+
+
+
+## [17.26.1](https://github.com/po-ui/po-style/compare/v17.26.0...v17.26.1) (2024-09-30)
+
+
+### Bug Fixes
+
+* **table:** possibilita desabilitar a propriedade p-virtual-scroll ([2acd094](https://github.com/po-ui/po-style/commit/2acd094b8e9b950c578a6b873f27254d81d7046d))
+
+
+
+## [17.26.0](https://github.com/po-ui/po-style/compare/v17.25.0...v17.26.0) (2024-09-09)
+
+
+### Bug Fixes
+
+* **toolbar:** corrige posicionamento do popup ao abrir notificação ([29571ee](https://github.com/po-ui/po-style/commit/29571ee21b8d44c5248e7ac3c17297cf71a27f5c))
+
+
+
+# [17.25.0](https://github.com/po-ui/po-style/compare/v17.24.0...v17.25.0) (2024-09-02)
+
+
+### Features
+
+* **dynamic-view:** adiciona propriedade p-text-wrap ([aa7b579](https://github.com/po-ui/po-style/commit/aa7b5795b479870bdd4b0bb545e4829293ef3fed))
+
+
+
+## [17.24.0](https://github.com/po-ui/po-style/compare/v17.23.0...v17.23.1) (2024-08-26)
+
+Compatibilidade com @po-ui/ng-components@17.24.0
+
+# [17.23.0](https://github.com/po-ui/po-style/compare/v17.22.0...v17.23.0) (2024-08-19)
+
+
+### Features
+
+* **components:** implementa tokens para cor do texto em compatibilidade com tema dark ([0d22797](https://github.com/po-ui/po-style/commit/0d227978b3030159516b23813cffc3cf8c4a43e5))
+
+
+## [17.22.0](https://github.com/po-ui/po-style/compare/v17.21.0...v17.22.0) (2024-08-12)
+
+Compatibilidade com @po-ui/ng-components@17.22.0
+
+## [17.21.0](https://github.com/po-ui/po-style/compare/v17.20.0...v17.21.0) (2024-07-29)
+
+Compatibilidade com @po-ui/ng-components@17.21.0
+
+# [17.20.0](https://github.com/po-ui/po-style/compare/v17.19.0...v17.20.0) (2024-07-22)
+
+Compatibilidade com @po-ui/ng-components@17.20.0
+
+## [18.0.0-next.0](https://github.com/po-ui/po-style/compare/v17.19.0...18.0.0-next.0) (2024-07-18)
+
+Compatibilidade com @po-ui/ng-components@18.0.0-next.0
+
+## [17.19.0](https://github.com/po-ui/po-style/compare/v17.18.1...v17.19.0) (2024-07-15)
+
+Compatibilidade com @po-ui/ng-components@17.19.0
+
+## [17.18.1](https://github.com/po-ui/po-style/compare/v17.18.0...v17.18.1) (2024-07-11)
+
+
+### Bug Fixes
+
+* **tabs:** corrige posicionamento do dropdown ([dc2d672](https://github.com/po-ui/po-style/commit/dc2d6721495bda9c6c4f464f24ececc8f8fee34e))
+
+
+
+## [17.18.0](https://github.com/po-ui/po-style/compare/v17.17.1...v17.18.0) (2024-07-08)
+
+
+### Bug Fixes
+
+* **tab-dropdown:** Corrige o posicionamento do po-listbox possibilitando uma visibilidade melhor dos itens ([f9425d3](https://github.com/po-ui/po-style/commit/f9425d3c576e114c3c2f50713fff03718514359b))
+* **toaster:** corrige z-index e cor ícone warning no tema dark ([e427046](https://github.com/po-ui/po-style/commit/e4270467433e27448dcc897e69c62e2c6d79a5ec))
+
+
+
+## [17.17.1](https://github.com/po-ui/po-style/compare/v17.17.0...v17.17.1) (2024-07-02)
+
+Compatibilidade com @po-ui/ng-components@17.17.1
+
+
+## [17.17.0](https://github.com/po-ui/po-style/compare/v17.16.1...v17.17.0) (2024-07-01)
+
+
+### Bug Fixes
+
+* **icon:** remove import svg da lib Phosphor ([8d60b23](https://github.com/po-ui/po-style/commit/8d60b23db2bfc080ce072f54e4a4eefca86fec49))
+* **table:** ajusta cursor na coluna draggable ([607630e](https://github.com/po-ui/po-style/commit/607630e0d6eb2259ac3221ada23fa6c4b25bcb2e))
+* **tabs:** corrige cor de fundo ([b670448](https://github.com/po-ui/po-style/commit/b6704480720d15136acd818d915aa075bb673e51))
+
+Compatibilidade com @po-ui/ng-components@17.17.0
+
+
+## [17.16.1](https://github.com/po-ui/po-style/compare/v17.16.0...v17.16.1) (2024-06-25)
+
+Compatibilidade com @po-ui/ng-components@17.16.1
+
+# [17.16.0](https://github.com/po-ui/po-style/compare/v17.15.2...v17.16.0) (2024-06-24)
+
+
+### Features
+
+* **icon:** adiciona biblioteca de ícones phosphor ([1d759e0](https://github.com/po-ui/po-style/commit/1d759e0bc4602e0effbe514a8f44c6935e8ad1cc))
+* **toaster:** criação do componente po-toaster ([fbf50e6](https://github.com/po-ui/po-style/commit/fbf50e6ffd6f6f2736fbd4d10b712aa6374b96f4))
+
+
+
+## [17.15.2](https://github.com/po-ui/po-style/compare/v17.15.1...v17.15.2) (2024-06-18)
+
+Compatibilidade com @po-ui/ng-components@17.15.2
+
+## [17.15.1](https://github.com/po-ui/po-style/compare/v17.15.0...v17.15.1) (2024-06-17)
+
+Compatibilidade com @po-ui/ng-components@17.15.1
+
+## [17.15.0](https://github.com/po-ui/po-style/compare/v17.14.0...v17.15.0) (2024-06-17)
+
+Compatibilidade com @po-ui/ng-components@17.15.0
+
+## [17.14.0](https://github.com/po-ui/po-style/compare/v17.13.1...v17.14.0) (2024-06-10)
+
+Compatibilidade com @po-ui/ng-components@17.14.0
+
+## [17.13.1](https://github.com/po-ui/po-style/compare/v17.13.0...v17.13.1) (2024-06-04)
+
+Compatibilidade com @po-ui/ng-components@17.13.1
+
+# [17.13.0](https://github.com/po-ui/po-style/compare/v17.12.0...v17.13.0) (2024-06-03)
+
+
+### Features
+
+* **clean:** atualiza icone definido pelo animalia ([3ef9918](https://github.com/po-ui/po-style/commit/3ef99187ecbe9f18b5f06ec221c839627175ab13))
+* **search:** inclusão da propriedade filterSelect ([4693c06](https://github.com/po-ui/po-style/commit/4693c06c67a937376d11596c209fcb9139dd70a7))
+
+
+
+# [17.12.0](https://github.com/po-ui/po-style/compare/v17.11.0...v17.12.0) (2024-05-27)
+
+
+### Bug Fixes
+
+* **radio:** ajusta centralização do `po-radio` ao reduzir o zoom da tela ([a686dc2](https://github.com/po-ui/po-style/commit/a686dc2b1c78a103921d006b9cdb33c1d117fc07))
+
+
+### Features
+
+* **menu:** altera o estilo do scroll no componente po-menu ([2d76b3c](https://github.com/po-ui/po-style/commit/2d76b3c8c132528515be6dbeadc7b81b6e84a48c))
+
+
+
+# [17.11.0](https://github.com/po-ui/po-style/compare/v17.10.0...v17.11.0) (2024-05-20)
+
+
+### Features
+
+* **icon:** inclui dicionário de tokens ([a12d7a6](https://github.com/po-ui/po-style/commit/a12d7a6120fc9128833804fec8bebe6d1f56baea))
+* **table:** permite mais visão de itens e colunas ([577062f](https://github.com/po-ui/po-style/commit/577062fc3d8b55913fcb3331a72e0ac631339d4c))
+
+
+
+## [17.10.0](https://github.com/po-ui/po-style/compare/v17.9.0...v17.10.0) (2024-05-14)
+
+Compatibilidade com @po-ui/ng-components@17.10.0
+
+## [17.9.0](https://github.com/po-ui/po-style/compare/v17.8.0...v17.9.0) (2024-05-13)
+
+Compatibilidade com @po-ui/ng-components@17.9.0
+
+# [17.8.0](https://github.com/po-ui/po-style/compare/v17.7.0...v17.8.0) (2024-05-06)
+
+### Features
+
+* **table:** adiciona propriedade `textWrap` ([f0cb197](https://github.com/po-ui/po-style/commit/f0cb1971482aba78abf12428c53f728c58b632d5))
+
+## [17.7.0](https://github.com/po-ui/po-style/compare/v17.6.0...v17.7.0) (2024-04-26)
+
+Compatibilidade com @po-ui/ng-components@17.7.0
+
+# [17.6.0](https://github.com/po-ui/po-style/compare/v17.5.0...v17.6.0) (2024-04-22)
+
+Compatibilidade com @po-ui/ng-components@17.6.0
+
+### Features
+
+* **dynamic:** inclusão da propriedade container ([8375e88](https://github.com/po-ui/po-style/commit/8375e880f6cd42e2dcafec5f0fa7f6136ce62c4e))
+* **search:** inclusão do listbox ao fazer o search ([92bb8d3](https://github.com/po-ui/po-style/commit/92bb8d3fec3e6ab6e043d8478cc53f0e6f6e68ce))
+
+
+
+## [17.5.0](https://github.com/po-ui/po-style/compare/v17.4.0...v17.5.0) (2024-04-15)
+
+Compatibilidade com @po-ui/ng-components@17.5.0
+
+
+## [17.4.0](https://github.com/po-ui/po-style/compare/v17.3.0...v17.4.0) (2024-04-08)
+
+Compatibilidade com @po-ui/ng-components@17.4.0
+
+
+## [17.3.0](https://github.com/po-ui/po-style/compare/v17.2.0...v17.3.0) (2024-04-01)
+
+Compatibilidade com @po-ui/ng-components@17.3.0
+
+
+## [17.2.0](https://github.com/po-ui/po-style/compare/v17.1.1...v17.2.0) (2024-03-25)
+
+Compatibilidade com @po-ui/ng-components@17.2.0
+
+
+# [17.1.1](https://github.com/po-ui/po-style/compare/v17.1.0...v17.1.1) (2024-03-18)
+
+Compatibilidade com @po-ui/ng-components@17.1.1
+
+
+## [17.1.0](https://github.com/po-ui/po-style/compare/v17.0.0...v17.1.0) (2024-03-11)
+
+Compatibilidade com @po-ui/ng-components@17.1.0
+
+# [17.0.0](https://github.com/po-ui/po-style/compare/v16.16.0...v17.0.0) (2024-03-04)
+
+### Code Refactoring
+
+* **components:** remove propriedades depreciadas ([d169ae9](https://github.com/po-ui/po-style/commit/d169ae94f7bad8f84f09544c783aa2b96dde1631))
+
+### Features
+
+* **components:** permite maior flexibilidade de customização ([c507799](https://github.com/po-ui/po-style/commit/c5077996f4b0ac0d8fcadf5889e5be638d5d1497))
+* **divider:** permite maior flexibilidade de customização ([6923c10](https://github.com/po-ui/po-style/commit/6923c10f1b8aedc4a0997d7590cb07622c8ad1f9))
+* **info:** implementa definições de espacamento ([870ea72](https://github.com/po-ui/po-style/commit/870ea721e770157da46109a14e3dd23fda677b9a))
+* **theme-totvs:** implementa definicoes de espacamento ([fb1ea80](https://github.com/po-ui/po-style/commit/fb1ea80523f7349d58a4145503b87812a211bb6b))
+
+### BREAKING CHANGES
+
+* **components:** removida propriedade p-small
+
+Por regras de acessibilidade o botão não terá mais um tamanho menor do que 44px e por isso a propriedade será depreciada. Saiba mais
+
+## [16.16.0](https://github.com/po-ui/po-style/compare/v16.15.0...v16.16.0) (2024-02-26)
+
+Compatibilidade com @po-ui/ng-components@16.16.0
+
 # [16.15.0](https://github.com/po-ui/po-style/compare/v16.14.0...v16.15.0) (2024-02-15)
 
 

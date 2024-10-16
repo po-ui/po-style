@@ -47,6 +47,7 @@ po-gauge-legend {
   display: block;
   margin: 0 auto;
   padding-bottom: 16px;
+  color: var(--color-neutral-dark-80);
 }
 
 /* PO-GAUGE-DESCRIPTION */
@@ -83,6 +84,7 @@ po-gauge-legend {
 .po-gauge-description-bottom-value {
   @apply --font-gauge-description-value-text;
   padding-bottom: 12px;
+  color: var(--color-neutral-dark-80);
 }
 
 .po-gauge-description-bottom-text {

@@ -37,11 +37,15 @@
   --color-feedback-warning-dark: #d8a20e;
   --color-feedback-warning-darker: #705200;
   --color-feedback-warning-darkest: #473400;
-  --shadow-none: 0 0 0 rgb(255, 255, 255);
-  --shadow-sm: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 3px 0 rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 0 3px 0 rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 6px 12px 0 rgba(0, 0, 0, 0.1), 0 0 3px 0 rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 16px 24px 0 rgba(0, 0, 0, 0.1), 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  --shadow-none: 0 0 0 var(--color-neutral-light-00);
+  --shadow-sm: 0 1px 4px 0 color-mix(in srgb, var(--color-neutral-dark-95) 10%, transparent),
+    0 0 3px 0 color-mix(in srgb, var(--color-neutral-dark-95) 10%, transparent);
+  --shadow-md: 0 4px 8px 0 color-mix(in srgb, var(--color-neutral-dark-95) 10%, transparent),
+    0 0 3px 0 color-mix(in srgb, var(--color-neutral-dark-95) 10%, transparent);
+  --shadow-lg: 0 6px 12px 0 color-mix(in srgb, var(--color-neutral-dark-95) 10%, transparent),
+    0 0 3px 0 color-mix(in srgb, var(--color-neutral-dark-95) 10%, transparent);
+  --shadow-xl: 0 16px 24px 0 color-mix(in srgb, var(--color-neutral-dark-95) 10%, transparent),
+    0 0 3px 0 color-mix(in srgb, var(--color-neutral-dark-95) 10%, transparent);
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;

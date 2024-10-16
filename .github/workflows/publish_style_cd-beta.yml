@@ -1,0 +1,64 @@
+name: Run publish @po-ui/style Beta
+
+env:
+  PACKAGE_NAME: po-ui/style
+  WORKING_DIR: /home/runner/work/po-style/po-style
+
+on:
+  workflow_dispatch:
+    inputs:
+      version-beta:
+        description: Informe a versão do Beta do PO-UI/Style
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/development'
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+        registry-url: 'https://registry.npmjs.org'
+
+    - name: Update Version
+      run: node ./scripts/update-version.js ${{ github.event.inputs.version-beta }}
+      working-directory: ${{env.WORKING_DIR}}
+
+    - run: npm install
+    - run: npm run build
+
+    # Pega as versões publicadas no NPM e salva no arquivo versions.json
+    - name: Obter todas as versões publicadas
+      run: npm show @${{ env.PACKAGE_NAME }} versions --json > versions.json
+
+    # Pega a versão no package.json
+    - name: Get package.json version
+      id: package-version
+      uses: martinbeentjes/npm-get-version-action@main
+
+    # Verifica se a versão a ser publicada já existe no NPM
+    - name: Verificar se a versão existe
+      id: version
+      run: |
+        VERSION_TO_CHECK=${{ steps.package-version.outputs.current-version }}
+        if jq -e --arg version "$VERSION_TO_CHECK" '.[] | select(. == $version)' versions.json; then
+          echo "publish=no" >> "$GITHUB_OUTPUT"
+        else
+          echo "publish=yes" >> "$GITHUB_OUTPUT"
+        fi
+
+    # PUBLISH
+    - name: Run publish with -beta
+      if: contains(steps.version.outputs.publish, 'yes')
+      run: npm publish dist/style --tag beta
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    - name: Add "Beta" tag
+      if: contains(steps.version.outputs.publish, 'no')
+      run: npm dist-tags add @${{ env.PACKAGE_NAME }}@${{ env.PACKAGE_VERSION }} "beta"
+      env:
+        PACKAGE_VERSION: ${{ steps.package-version.outputs.current-version }}
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

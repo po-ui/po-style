@@ -31,6 +31,7 @@
  * Disclaimer Group...............variáveis do Disclaimer Group.
  * Divider........................variáveis do Divider.
  * Dropdown.......................variáveis do Dropdown.
+ * Dynamic........................variáveis do Dynamic.
  * Field Container Bottom.........variáveis do Field Container Bottom.
  * Field Icon.....................variáveis do Field Icon.
  * Gauge..........................variáveis do Gauge.
@@ -109,6 +110,7 @@
   --color-hr-border-top: var(--color-neutral-light-10);
 
   --outline-width: var(--border-width-lg);
+  --outline-width-focus-visible: var(--border-width-lg);
 }
 
 /*------------------------------------*\
@@ -148,6 +150,9 @@
   --color-action-pressed: var(--color-brand-01-darker);
   --color-action-disabled: var(--color-neutral-light-30);
   --color-action-focus: var(--color-brand-01-darkest);
+
+  --font-size-default-normal: 14px;
+  --font-family-default-bold: var(--font-family-bold);
 }
 
 /*------------------------------------*\
@@ -403,6 +408,7 @@ po-badge[p-status='warning'] {
 \*------------------------------------*/
 po-breadcrumb {
   --font-family: var(--font-family-theme);
+  --font-weight: var(--font-weight-bold);
   --color-icon: var(--color-neutral-mid-60);
   --color-current-page: var(--color-neutral-mid-60);
   --color: var(--color-action-default);
@@ -586,6 +592,8 @@ po-combo {
 
   --text-color-suggestion: var(--color-neutral-mid-60);
   --background-suggestion: var(--color-brand-01-lightest);
+
+  --min-width: 9.375rem;
 }
 
 /*------------------------------------*\
@@ -662,7 +670,10 @@ po-dropdown {
   --color: var(--color-action-default);
   --border-radius: var(--border-radius-md);
   --border-width: var(--border-width-md);
-  --padding: 0 1em;
+
+  --padding-horizontal: 1em;
+  --padding-vertical: 0;
+  --padding: var(--padding-vertical) var(--padding-horizontal);
 
   /* hover */
   --color-hover: var(--color-brand-01-darkest);
@@ -676,6 +687,30 @@ po-dropdown {
 
   /* disabled */
   --color-disabled: var(--color-action-disabled);
+
+  /* background color */
+  --background: var(--color-transparent);
+}
+
+/*------------------------------------*\
+  DYNAMIC
+\*------------------------------------*/
+po-dynamic-container {
+  --gap: var(--spacing-md);
+  --font-family: var(--font-family-theme);
+  --font-size: 1.125rem;
+  --line-weight: var(--font-weight-semibold);
+  --line-height: var(--line-height-md);
+  --text-color: var(--color-neutral-dark-90);
+  --letter-spacing: 0.017rem;
+  --margin: 0 0 0.5rem 0;
+}
+po-dynamic-container po-container {
+  --border-radius: var(--border-radius-md);
+  --background: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-20);
+  --border-width: var(--border-width-sm);
+  --padding: var(--spacing-md);
 }
 
 :root {
@@ -750,6 +785,17 @@ po-field-container-bottom {
   --color-info-color-link: var(--color-primary);
   --color-info-color-link-hover: var(--color-primary-dark-20);
   --color-info-color-link-pressed: var(--color-primary-dark-40);
+}
+
+/*------------------------------------*\
+  INFO CONTAINER CONTENT
+\*------------------------------------*/
+po-info .po-info-container-content {
+  --padding: var(--spacing-xs) 0;
+}
+
+po-info .po-info-label-horizontal {
+  --padding: 0 var(--spacing-xs) 0 0;
 }
 
 /*------------------------------------*\
@@ -861,6 +907,7 @@ po-label {
 \*------------------------------------*/
 po-link {
   --font-family: var(--font-family-theme);
+  --font-weight: var(--font-weight-bold);
   --text-color: var(--color-action-default);
 
   --text-color-hover: var(--color-action-hover);
@@ -1090,6 +1137,7 @@ po-multiselect {
   --font-size: var(--font-size-default);
   --text-color-placeholder: var(--color-action-disabled);
   --color: var(--color-neutral-dark-70);
+  --color-icon: var(--color-neutral-dark-70);
   --background: var(--color-neutral-light-05);
 
   /* hover */
@@ -1249,6 +1297,7 @@ po-page-slide {
 
   /* title */
   --font-family: var(--font-family-heading);
+  --font-weight: var(--font-weight-bold);
   --color-title: var(--color-neutral-dark-95);
 }
 
@@ -1412,7 +1461,6 @@ po-search {
   --text-color: var(--color-neutral-dark-90);
 
   --color-icon-read: var(--color-neutral-dark-70);
-
   --color-icon: var(--color-action-default);
 
   --color-clear: var(--color-action-default);
@@ -1425,6 +1473,12 @@ po-search {
 
   --color-disabled: var(--color-action-disabled);
   --background-disabled: var(--color-neutral-light-20);
+
+  --text-color-empty: var(--color-neutral-mid-60);
+
+  --background-select: var(--background);
+  --background-select-hover: var(--background-hover);
+  --background-select-disabled: var(background-disabled);
 }
 
 /*------------------------------------*\
@@ -1498,7 +1552,7 @@ po-switch {
 
 po-tabs,
 po-tab-button {
-  --background: var(--color-neutral-light-00);
+  --background: var(--color-transparent);
   --color-baseline: var(--color-neutral-light-20);
 
   --font-family: var(--font-family-theme);
@@ -1633,6 +1687,7 @@ po-table {
 po-table-list-manager {
   /* type */
   --color-type: var(--color-neutral-dark-70);
+  --font-weight: var(--font-weight-bold);
 
   /* column text */
   --color-column-text: var(--color-neutral-dark-95);
@@ -1656,7 +1711,10 @@ po-tag {
   --border-radius: var(--border-radius-pill);
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-sm);
+  --font-weight: var(--font-weight-bold);
   --line-height: var(--line-height-sm);
+  --gap: var(--spacing-xs);
+  --padding: 0;
 
   /* neutral */
   --color-neutral: var(--color-neutral-light-10);
@@ -1870,6 +1928,10 @@ po-toaster {
   --border-radius: var(--border-radius-md);
   --color-icon: var(--color-neutral-light-00);
   --shadow: var(--shadow-lg);
+
+  --font-family: var(--font-family-theme);
+  --font-color: var(--color-neutral-dark-90);
+  --font-color-support: var(--color-neutral-dark-80);
 
   /* Success */
   --color-success: var(--color-feedback-positive-base);

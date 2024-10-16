@@ -9,7 +9,7 @@
   min-height: 2.75em;
   box-sizing: border-box;
   width: 100%;
-  min-width: 150px;
+  min-width: var(--min-width);
 }
 
 .po-combo-input:disabled,
@@ -20,13 +20,16 @@
   cursor: not-allowed;
 }
 
-.po-combo-input:focus,
-.po-combo-input-focus {
+.po-combo-input:focus {
   border-color: var(--color-focused);
   outline-color: var(--outline-color-focused);
   outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
+}
+
+.po-combo-input:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
 }
 
 .po-combo-input:focus:hover,
@@ -75,8 +78,7 @@
   justify-content: center;
 }
 
-.po-combo-container-content .po-field-icon.po-icon.po-icon-arrow-down,
-.po-combo-container-content .po-field-icon.po-icon.po-icon-arrow-up {
+.po-combo-container-content .po-combo-arrow .po-field-icon > i {
   height: 2.75rem;
   width: 2.75rem;
   border-top: 1px solid transparent;
@@ -89,8 +91,8 @@
   justify-content: center;
 }
 
-.po-combo-input[disabled='true'] ~ .po-field-icon-container-right .po-field-icon-disabled.po-icon.po-icon-arrow-down,
-.po-combo-input:disabled ~ .po-field-icon-container-right .po-field-icon-disabled.po-icon.po-icon-arrow-down {
+.po-combo-input[disabled='true'] ~ .po-field-icon-container-right .po-field-icon-disabled i,
+.po-combo-input:disabled ~ .po-field-icon-container-right .po-field-icon-disabled i {
   height: 2.75rem;
   width: 2.75rem;
   border-top: 1px solid transparent;
@@ -112,40 +114,38 @@
   z-index: 1;
 }
 
-.po-combo-clean:focus .po-icon.po-field-icon.po-icon-clear-content,
-.po-combo-clean:focus .po-icon.po-field-icon.po-icon-clear-content:hover {
+.po-combo-clean:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
+}
+
+.po-combo-clean:focus > i.po-field-icon,
+.po-combo-clean:focus > i.po-field-icon:hover {
   border-color: var(--color);
 }
 
-.po-combo-input:focus ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-down,
-.po-combo-input:focus ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-up {
+.po-combo-input:focus ~ .po-field-icon-container-right .po-field-icon > i {
   border-color: var(--color-focused);
 }
 
-.po-combo-input:focus:hover ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-down,
-.po-combo-input:focus:hover ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-up {
+.po-combo-input:focus:hover ~ .po-field-icon-container-right .po-field-icon > i {
   border-color: var(--color-hover);
 }
 
-.po-combo-input:hover ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-down,
-.po-combo-input:hover ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-up {
+.po-combo-input:hover ~ .po-field-icon-container-right .po-field-icon > i {
   border-left-color: var(--color-hover);
 }
 
-.po-combo-container-content span:hover.po-field-icon.po-icon.po-icon-arrow-down.po-icon-input {
+.po-combo-container-content .po-field-icon > i.po-icon-input:hover {
   background: var(--background-hover);
   border-color: var(--color);
 }
 
-.po-combo-container-content span:hover.po-field-icon.po-icon.po-icon-arrow-up.po-icon-input,
+.po-combo-container-content .po-field-icon > i.po-icon-input:hover,
 .po-combo-container-content
   .po-combo-input:focus
   ~ .po-field-icon-container-right
-  span:hover.po-field-icon.po-icon.po-icon-arrow-up.po-icon-input,
-.po-combo-container-content
-  .po-combo-input:focus
-  ~ .po-field-icon-container-right
-  span:hover.po-field-icon.po-icon.po-icon-arrow-down.po-icon-input {
+  .po-field-icon
+  > i.po-icon-input:hover {
   background: var(--background-hover);
   border-color: var(--color-focused);
 }
@@ -153,12 +153,13 @@
 .po-combo-container-content
   .po-combo-input-focus
   ~ .po-field-icon-container-right
-  span:hover.po-field-icon.po-icon.po-icon-arrow-up.po-icon-input {
+  .po-field-icon
+  > i.po-icon-input:hover {
   background: var(--background-hover);
   border-color: var(--color-hover);
 }
 
-.po-combo-container-content .po-field-icon.po-icon.po-icon-clear-content {
+.po-combo-container-content .po-combo-clean .po-field-icon {
   height: 2.75rem;
   width: 2.75rem;
   display: flex;
@@ -166,28 +167,25 @@
   justify-content: center;
 }
 
-.po-combo-container-content:focus-within .po-field-icon.po-icon.po-icon-clear-content {
+.po-combo-container-content:focus-within .po-combo-clean .po-field-icon {
   border-color: var(--color-focused);
 }
 
-.po-border-focused.po-icon.po-field-icon.po-icon-clear-content:hover {
+.po-combo-clean .po-border-focused.po-field-icon:hover {
   border-color: var(--color-focused);
 }
 
-.po-combo-input:hover
-  ~ .po-field-icon-container-right
-  .po-field-icon.po-icon.po-icon-arrow-down.po-combo-default-border,
-.po-combo-input:hover ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-up.po-combo-default-border,
-.po-combo-input:hover ~ .po-field-icon-container-right .po-field-icon.po-icon.po-icon-clear-content {
+.po-combo-input:hover ~ .po-field-icon-container-right .po-field-icon > i.po-combo-default-border,
+.po-combo-input:hover ~ .po-field-icon-container-right .po-combo-clean .po-field-icon {
   border-color: var(--color-hover);
 }
 
-.po-field-icon-container-right .po-field-icon.po-icon.po-combo-background-arrow-up.po-icon-arrow-up {
+.po-field-icon-container-right > .po-field-icon > i.po-combo-background-arrow-up {
   background: var(--background-hover);
   border-color: var(--color-focused);
 }
 
-.po-icon.po-field-icon.po-icon-clear-content:hover {
+.po-combo-clean .po-field-icon:hover {
   background: var(--background-hover);
   border-top: 1px solid var(--color);
   border-bottom: 1px solid var(--color);
@@ -210,35 +208,15 @@
 }
 
 po-combo.ng-invalid.ng-dirty .po-combo-input,
-po-combo.ng-invalid.ng-dirty
-  .po-combo-input:focus
-  ~ .po-field-icon-container-right
-  .po-field-icon.po-icon.po-icon-arrow-down,
-po-combo.ng-invalid.ng-dirty
-  .po-combo-input:focus
-  ~ .po-field-icon-container-right
-  .po-field-icon.po-icon.po-icon-arrow-up,
-po-combo.ng-invalid.ng-dirty
-  .po-combo-input:focus:hover
-  ~ .po-field-icon-container-right
-  .po-field-icon.po-icon.po-icon-arrow-down,
-po-combo.ng-invalid.ng-dirty
-  .po-combo-input:focus:hover
-  ~ .po-field-icon-container-right
-  .po-field-icon.po-icon.po-icon-arrow-up,
-po-combo.ng-invalid.ng-dirty .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-down,
-po-combo.ng-invalid.ng-dirty .po-field-icon-container-right .po-field-icon.po-icon.po-icon-arrow-up,
-po-combo.ng-invalid.ng-dirty .po-field-icon-container-right .po-field-icon.po-icon.po-icon-clear-content,
+po-combo.ng-invalid.ng-dirty .po-combo-input:focus ~ .po-field-icon-container-right .po-field-icon > i,
+po-combo.ng-invalid.ng-dirty .po-combo-input:focus:hover ~ .po-field-icon-container-right .po-field-icon > i,
+po-combo.ng-invalid.ng-dirty .po-field-icon-container-right .po-field-icon > i,
 po-combo.ng-invalid.ng-dirty
   .po-combo-container-content
   .po-combo-input:focus
   ~ .po-field-icon-container-right
-  span:hover.po-field-icon.po-icon.po-icon-arrow-down.po-icon-input,
-po-combo.ng-invalid.ng-dirty
-  .po-combo-container-content
-  .po-combo-input:focus
-  ~ .po-field-icon-container-right
-  span:hover.po-field-icon.po-icon.po-icon-arrow-up.po-icon-input {
+  .po-field-icon
+  > i.po-icon-input:hover {
   border-color: var(--color-error);
   color: var(--color-error);
 }

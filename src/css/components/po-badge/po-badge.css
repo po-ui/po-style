@@ -18,13 +18,13 @@
 }
 
 .po-badge-small {
-  height: 0.5em;
-  width: 0.5em;
+  height: 0.5rem;
+  width: 0.5rem;
 }
 
 .po-badge-medium:not(.po-badge-notification) {
-  height: 1em;
-  width: 1em;
+  height: 1rem;
+  width: 1rem;
 }
 
 .po-badge-medium:not(.po-badge-notification) po-icon {
@@ -32,8 +32,8 @@
 }
 
 .po-badge-large:not(.po-badge-notification) {
-  height: 1.5em;
-  width: 1.5em;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .po-badge-large:not(.po-badge-notification) po-icon {
@@ -77,4 +77,12 @@
 
 .po-badge po-icon {
   display: inline-flex;
+}
+
+.po-badge-medium i.ph {
+  font-size: var(--font-size-xs);
+}
+
+.po-badge-large i.ph {
+  font-size: var(--font-size-default);
 }

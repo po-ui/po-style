@@ -20,7 +20,7 @@
     &-horizontal {
       /* Usado por conta do espaçamento do grid system */
       display: table-cell;
-      padding: 0 8px 0 0;
+      padding: var(--padding);
     }
   }
 
@@ -29,6 +29,7 @@
     color: var(--color-info-color-text-value);
     display: block;
     min-height: 24px;
+    word-break: break-word;
 
     &-horizontal {
       display: table-cell;
@@ -36,11 +37,15 @@
       /* Usado por conta do espaçamento do grid system */
       padding: 0 !important;
     }
+
+    &-pre {
+      white-space: pre-wrap;
+    }
   }
 }
 
 .po-info-container-content {
-  padding: 8px 0;
+  padding: var(--padding);
   width: 100%;
 }
 

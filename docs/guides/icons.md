@@ -2,6 +2,70 @@
 [comment]: # (@label Biblioteca de ícones)
 [comment]: # (@link guides/icons)
 
+### Adicionamos suporte à Biblioteca de ícones Phosphor (v2.1)
+
+A partir da versão 17.15.0, disponibilizado suporte à biblioteca de ícones [Phosphor](https://phosphoricons.com/) (no estilo **regular**).
+
+#### Como Usar?
+
+``` html
+<po-input p-icon="ph ph-user" p-label="PO input"></po-input>
+```
+
+Outra opção seria a customização do ícone através do `TemplateRef`, conforme exemplo abaixo:
+
+``` html
+<po-input [p-icon]="template" p-label="input template"></po-input>
+...
+<ng-template #template>
+ <i class="ph ph-arrow-fat-line-down"></i>
+</ng-template>
+```
+
+#### Ícones padrões
+
+Alguns elementos do PO-UI apresentam ícones internos, como por exemplo o `po-progress` (consulte https://po-ui.io/documentation/po-progress). 
+Esses ícones são os ícones padrões do po-ui.
+
+Atualmente, estamos usando a biblioteca `PoIcon` para esses ícones, mas agora é possível substituir os ícones padrões pela biblioteca `Phosphor`.
+
+Para isso, faça as seguintes alterações no arquivo `app.module`:
+
+``` javascript
+import { ICONS_DICTIONARY, PhosphorIconDictionary, PoModule } from '@po-ui/ng-components';
+
+@NgModule({
+  ...
+  providers: [
+    {
+      provide: ICONS_DICTIONARY,
+      useValue: PhosphorIconDictionary,
+    },
+  ],
+  ...
+})
+export class AppModule {}
+```
+
+Ou no arquivo `app.config.ts` para projeto do tipo `standalone`: 
+
+``` javascript
+import { ICONS_DICTIONARY, PhosphorIconDictionary, PoModule } from '@po-ui/ng-components';
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    ...
+    {
+      provide: ICONS_DICTIONARY,
+      useValue: PhosphorIconDictionary,
+    },
+  ],
+}
+export class AppModule {}
+```
+
+----------------------------------------
+
 O PO conta com uma Biblioteca de ícones disponibilizada pela equipe de UX.
 
 ### Como Usar?

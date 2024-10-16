@@ -194,7 +194,7 @@
   padding: 0;
 }
 
-.po-page-login-body .po-field-icon.po-icon-info {
+.po-page-login-body i.po-field-icon {
   cursor: default;
   text-align: left;
 }

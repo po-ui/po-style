@@ -51,6 +51,11 @@ po-button {
   outline-offset: 2px;
 }
 
+.po-button:focus-visible,
+.po-button:enabled:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
+}
+
 .po-button[p-kind='secondary'] {
   color: var(--color);
   border-color: var(--color);
@@ -191,10 +196,6 @@ po-button {
 .po-button-loading-icon {
   display: inline-block;
   vertical-align: -0.05rem;
-}
-
-.po-button .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) {
-  vertical-align: -0.1rem;
 }
 
 .po-button .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) path {

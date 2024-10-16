@@ -42,6 +42,10 @@
   width: var(--filter-content-width);
 }
 
+.po-lookup-filter-content .po-field-icon-container-right {
+  top: 50%;
+}
+
 .po-lookup-advanced-search {
   display: inline-block;
   height: 44px;

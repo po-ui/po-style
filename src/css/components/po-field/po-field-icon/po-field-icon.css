@@ -31,7 +31,11 @@
   cursor: pointer;
 }
 
-.po-field-icon:not(.po-icon-eye-off, .po-field-icon-disabled) {
+.po-field-icon-right {
+  float: right;
+}
+
+.po-field-icon:not(.po-field-icon-disabled) {
   color: var(--color-brand-01-dark);
 }
 

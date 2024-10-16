@@ -40,6 +40,10 @@
   outline-offset: 2px;
 }
 
+.po-input:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
+}
+
 .po-input:read-only:not(div, :disabled) {
   border-color: var(--color-neutral-light-30);
   background-color: var(--color-neutral-light-05);
@@ -53,11 +57,6 @@
   background-color: var(--color-input-border-text-disabled, var(--background-disabled));
   color: var(--color-input-color-disabled, var(--text-color-disabled));
   cursor: not-allowed;
-}
-
-.po-field-icon.po-icon-input:not(.po-icon-eye-off),
-po-clean.po-icon-input span.po-field-icon {
-  color: var(--color-brand-01-dark);
 }
 
 .po-icon-input-disabled {

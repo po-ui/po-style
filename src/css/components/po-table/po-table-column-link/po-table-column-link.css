@@ -1,5 +1,7 @@
 .po-table-link {
-  display: inline-block;
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .po-table-link-disabled {

@@ -80,8 +80,20 @@
   right: 16px;
 }
 
+.po-calendar-header po-icon.po-calendar-header-left,
+.po-calendar-header po-icon.po-calendar-header-right {
+  line-height: 0;
+}
+
+.po-calendar-header .po-calendar-header-left i,
+.po-calendar-header .po-calendar-header-right i {
+  line-height: 32px;
+}
+
 .po-calendar-header .po-calendar-header-title {
-  @apply --font-calendar-title;
+  font-family: var(--font-family-default-bold), sans-serif;
+  font-size: 16px;
+  line-height: 24px;
   color: var(--color-calendar-title);
   margin-top: 16px;
   text-align: center;
@@ -295,10 +307,12 @@
 }
 
 .po-calendar-footer .po-calendar-footer-today .po-calendar-footer-today-button {
-  @apply --font-calendar-button;
+  font-family: var(--font-family-default-bold), sans-serif;
+  font-size: 16px;
+  line-height: 24px;
   background: transparent;
   border: none;
-  color: var(--color-primary);
+  color: var(--color-brand-02-base);
   cursor: pointer;
   text-decoration: underline;
   text-align: center;

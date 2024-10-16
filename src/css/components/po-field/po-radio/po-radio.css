@@ -8,13 +8,13 @@ po-radio {
   --circle-width-lg: calc(var(--width-lg) - 12px);
 
   --background-radial-md: radial-gradient(
-    var(--circle-width-md) circle at 10px 10px,
+    var(--circle-width-md) circle at center,
     var(--color-checked) 50%,
     transparent 57%
   );
 
   --background-radial-lg: radial-gradient(
-    var(--circle-width-lg) circle at 14px 14px,
+    var(--circle-width-lg) circle at center,
     var(--color-checked) 50%,
     transparent 54.2%
   );
@@ -47,7 +47,7 @@ po-radio {
 .po-radio-focus > label {
   outline-color: var(--outline-color-focused);
 
-  outline-width: var(--outline-width);
+  outline-width: var(--outline-width-focus-visible);
   outline-style: solid;
   outline-offset: 2px;
 }
@@ -117,4 +117,16 @@ po-radio {
 
 .po-radio input[type='radio']:not([disabled]):focus-visible {
   outline: none;
+}
+
+.po-radio label:not(.po-label-disabled) {
+  color: var(--color-brand-01-darker);
+}
+
+.po-radio label:not(.po-label-disabled):hover {
+  color: var(--color-brand-01-darkest);
+}
+
+.po-radio label.po-label-disabled {
+  cursor: not-allowed;
 }

@@ -19,26 +19,31 @@
 .po-avatar.po-avatar-xs {
   height: 24px;
   width: 24px;
+  line-height: 12px;
 }
 
 .po-avatar.po-avatar-sm {
   height: 32px;
   width: 32px;
+  line-height: 16px;
 }
 
 .po-avatar.po-avatar-md {
   height: 64px;
   width: 64px;
+  line-height: 32px;
 }
 
 .po-avatar.po-avatar-lg {
   height: 96px;
   width: 96px;
+  line-height: 48px;
 }
 
 .po-avatar.po-avatar-xl {
   height: 144px;
   width: 144px;
+  line-height: 72px;
 }
 
 .po-avatar-default-icon {

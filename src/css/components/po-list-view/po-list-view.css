@@ -105,6 +105,7 @@
 
 .po-list-view-container-no-data {
   @apply --font-list-view-text-bold;
+  color: var(--color-neutral-dark-80);
 }
 
 .po-list-view-header {
@@ -221,6 +222,10 @@
 
   .po-list-view-more-icon {
     @apply --font-list-view-font-sm-icon;
+  }
+
+  .po-list-view-more-icon i.ph {
+    font-size: var(--font-size-lg);
   }
 
   .po-list-view-actions {

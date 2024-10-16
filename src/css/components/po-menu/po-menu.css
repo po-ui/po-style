@@ -44,6 +44,19 @@
   overflow-y: auto;
 }
 
+.po-menu-inner::-webkit-scrollbar-thumb {
+  background-color: var(--color-action-default);
+  border-radius: 10px;
+}
+
+.po-menu-inner::-webkit-scrollbar-track {
+  display: none;
+}
+
+.po-menu-inner::-webkit-scrollbar {
+  width: 7px;
+}
+
 .po-menu-list {
   list-style: none;
 }
@@ -100,6 +113,10 @@
   border-top-color: var(--color-menu-border-top-collapse-button, var(--border-color));
 
   max-height: 2.75em;
+}
+
+.po-menu-footer i.ph {
+  font-size: var(--font-size-lg);
 }
 
 .po-menu-collapse-button-icon {

@@ -111,6 +111,10 @@
   width: inherit;
 }
 
+po-page-login .po-switch {
+  justify-content: end;
+}
+
 @media print {
   .po-switch-container {
     print-color-adjust: exact;

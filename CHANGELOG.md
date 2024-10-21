@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [18.11.0](https://github.com/po-ui/po-style/compare/v18.10.0...v18.11.0) (2024-10-21)
+
+
+### Bug Fixes
+
+* **page-login:** corrige literals rememberUser ([7f3257c](https://github.com/po-ui/po-style/commit/7f3257c50be42a6f311cfa00871b6377f50901c7))
+
+
+### Features
+
+* **page-slide:** implementa definições do animalia-DS ([3f0f025](https://github.com/po-ui/po-style/commit/3f0f02599ddcd2a9740fa1346c54e035f7658b44))
+
+
+
 # [18.10.0](https://github.com/po-ui/po-style/compare/v18.9.0...v18.10.0) (2024-10-14)
 
 

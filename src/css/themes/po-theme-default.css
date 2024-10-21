@@ -527,11 +527,20 @@ po-combo {
   CONTAINER
 \*------------------------------------*/
 po-container {
+  /* title */
+  --font-family: var(--font-family-theme);
+  --line-weight: var(--font-weight-semibold);
+  --line-height: var(--line-height-md);
+  --text-color: var(--color-neutral-dark-90);
+  --font-size: 1.125rem;
+  --letter-spacing: 0.017rem;
+  --margin: 0 0 var(--spacing-xs);
+  /* content */
   --border-radius: var(--border-radius-md);
   --background: var(--color-neutral-light-00);
   --border-color: var(--color-neutral-light-20);
   --border-width: var(--border-width-sm);
-  --padding: 1em;
+  --padding: var(--spacing-sm);
 }
 
 /*------------------------------------*\

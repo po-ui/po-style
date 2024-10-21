@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.26.4](https://github.com/po-ui/po-style/compare/v17.26.3...v17.26.4) (2024-10-21)
+
+
+### Bug Fixes
+
+* **page-login:** corrige literals rememberUser ([a797fa7](https://github.com/po-ui/po-style/commit/a797fa78351b9d96fb2ac2b1d1b928fd0a4ff031))
+
+
+
 ## [17.26.3](https://github.com/po-ui/po-style/compare/v17.26.2...v17.26.3) (2024-10-14)
 
 

@@ -7,15 +7,22 @@
   display: grid;
   gap: var(--gap);
   width: 100%;
+
+  --font-family-dynamic: var(--font-family);
+  --font-size-dynamic: var(--font-size);
+  --font-weight-dynamic: var(--line-weight);
+  --line-height-dynamic: var(--line-height);
+  --letter-spacing-dynamic: var(--letter-spacing);
+  --text-color-dynamic: var(--text-color);
+  --margin-dynamic: var(--margin);
 }
 
-.po-dynamic-container-title {
-  font-family: var(--font-family);
-  font-size: var(--font-size);
-  font-weight: var(--line-weight);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
-  color: var(--text-color);
-  margin: var(--margin);
-  display: grid;
+.po-dynamic-container po-container {
+  --font-family: var(--font-family-dynamic);
+  --font-size: var(--font-size-dynamic);
+  --font-weight: var(--line-weight-dynamic);
+  --line-height: var(--line-height-dynamic);
+  --letter-spacing: var(--letter-spacing-dynamic);
+  --text-color: var(--text-color-dynamic);
+  --margin: var(--margin-dynamic);
 }

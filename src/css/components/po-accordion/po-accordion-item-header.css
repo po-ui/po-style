@@ -102,9 +102,15 @@
 .po-accordion-item-header-button-content {
   align-self: center;
   flex: 1;
+  overflow: hidden;
 }
 
 .po-accordion-item-header-tag {
   margin-top: 0.25rem;
   display: inline-block;
+}
+
+.po-text-ellipsis.po-accordion-item-header-title {
+  display: inline-block;
+  max-width: 100%;
 }

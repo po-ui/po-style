@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.26.5](https://github.com/po-ui/po-style/compare/v17.26.4...v17.26.5) (2024-10-29)
+
+
+### Bug Fixes
+
+* **accordion:** corrige texto grande no componente ([32508df](https://github.com/po-ui/po-style/commit/32508df57da9ba181320d4f9e2ff23d089155c3a))
+
+
+
 ## [17.26.4](https://github.com/po-ui/po-style/compare/v17.26.3...v17.26.4) (2024-10-21)
 
 

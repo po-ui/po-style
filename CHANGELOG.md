@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [18.12.0](https://github.com/po-ui/po-style/compare/v18.11.0...v18.12.0) (2024-10-29)
+
+
+### Bug Fixes
+
+* **accordion:** corrige texto grande no componente ([994bf1a](https://github.com/po-ui/po-style/commit/994bf1a57d6e2cba22bf938fd06857cf9f827445))
+
+
+### Features
+
+* **container:** adiciona titulo ([33d33c1](https://github.com/po-ui/po-style/commit/33d33c187d3082ed8075c2eddceeb771a0c627dc))
+
+
+
 # [18.11.0](https://github.com/po-ui/po-style/compare/v18.10.0...v18.11.0) (2024-10-21)
 
 

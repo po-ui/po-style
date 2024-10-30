@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   line-height: normal;
-  min-height: 2.75em;
+  min-height: 2.75rem;
 
   padding-block: var(--spacing-xs);
   overflow: hidden;

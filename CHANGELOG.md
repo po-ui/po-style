@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.13.0](https://github.com/po-ui/po-style/compare/v18.12.0...v18.13.0) (2024-11-04)
+
+
+### Bug Fixes
+
+* **multiselect:** ajusta a referência de altura ([7beb7eb](https://github.com/po-ui/po-style/commit/7beb7eb75f78eb6659e530230b4c4b38ffbb4edf))
+
+
+
 # [18.12.0](https://github.com/po-ui/po-style/compare/v18.11.0...v18.12.0) (2024-10-29)
 
 

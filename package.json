@@ -39,11 +39,11 @@
     "postcss-custom-properties": "^9.1.1",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.3",
-    "standard-version": "^9.0.0",
-    "xml2js": "^0.4.23",
-    "yargs": "^16.1.1",
     "prettier": "2.2.0",
-    "pretty-quick": "^3.1.0"
+    "pretty-quick": "^3.1.0",
+    "standard-version": "^9.0.0",
+    "xml2js": "^0.5.0",
+    "yargs": "^16.1.1"
   },
   "standard-version": {
     "skip": {

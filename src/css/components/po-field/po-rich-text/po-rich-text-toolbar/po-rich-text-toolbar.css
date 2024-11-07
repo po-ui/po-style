@@ -16,14 +16,14 @@
 .po-rich-text-toolbar {
   background-color: var(--color-rich-text-toolbar-background-color);
   border: var(--border-rich-text-toolbar-border);
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 var(--border-radius-md) var(--border-radius-md);
   border-top: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 1em 0.75em;
+  gap: 1rem 0.75rem;
   min-height: var(--rich-text-toolbar-min-height);
   min-width: var(--rich-text-toolbar-min-width);
-  padding: 1em;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -68,7 +68,7 @@
 
 /* Altera o tamanho do ícone dos po-buttons para respeitar o tamanho definido pela UX */
 .po-rich-text-toolbar .po-button-group .po-icon {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .po-rich-text-toolbar-color-picker-input {

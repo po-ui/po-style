@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.26.7](https://github.com/po-ui/po-style/compare/v17.26.6...v17.26.7) (2024-11-11)
+
+
+### Bug Fixes
+
+* corrige vulnerabilidade da biblioteca xml2js ([6aecb02](https://github.com/po-ui/po-style/commit/6aecb0243ccbdb7be809895c721c86358efa204f))
+
+
+
 ## [17.26.6](https://github.com/po-ui/po-style/compare/v17.26.5...v17.26.6) (2024-11-04)
 
 

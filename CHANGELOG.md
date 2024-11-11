@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [18.14.0](https://github.com/po-ui/po-style/compare/v18.13.0...v18.14.0) (2024-11-11)
+
+
+### Bug Fixes
+
+* corrige vulnerabilidade da biblioteca xml2js ([dca687c](https://github.com/po-ui/po-style/commit/dca687c751b8935221f7e1c1d3c2faac8742dd86))
+
+
+### Features
+
+* **lookup:** implementa definições animalia-DS ([0c8a16e](https://github.com/po-ui/po-style/commit/0c8a16e8b7f98a3a44efa122b03ef2e1f2361085))
+* **richtext:** inclusão propriedade para ocultar botões do toolbar ([de472b5](https://github.com/po-ui/po-style/commit/de472b5c293e9362068a50909f05a4d61be4067b))
+
+
+
 ## [18.13.0](https://github.com/po-ui/po-style/compare/v18.12.0...v18.13.0) (2024-11-04)
 
 

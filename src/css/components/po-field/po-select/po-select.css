@@ -73,7 +73,7 @@ po-select.ng-dirty.ng-invalid select {
 }
 
 po-select .po-select-phosphor {
-  --background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 256 256' fill='%23000000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E");
+  --background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 256 256' fill='%234a5c60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 po-select select.po-select-phosphor:disabled {

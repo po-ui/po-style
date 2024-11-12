@@ -89,6 +89,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color);
 }
 
 .po-combo-input[disabled='true'] ~ .po-field-icon-container-right .po-field-icon-disabled i,

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [18.16.0](https://github.com/po-ui/po-style/compare/v18.15.0...v18.16.0) (2024-11-25)
+
+
+### Bug Fixes
+
+* **combo/select:** ajusta cores do chevron-down conforme AnimaliaDS ([f14cd30](https://github.com/po-ui/po-style/commit/f14cd3044e68baf84f3645dd445e1102b05c95f5)), closes [#2154](https://github.com/po-ui/po-style/issues/2154)
+
+
+
 ## [18.15.0](https://github.com/po-ui/po-style/compare/v18.14.0...v18.15.0) (2024-11-18)
 
 Compatibilidade com @po-ui/ng-components@18.15.0

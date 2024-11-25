@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.26.8](https://github.com/po-ui/po-style/compare/v17.26.7...v17.26.8) (2024-11-25)
+
+
+### Bug Fixes
+
+* **combo/select:** ajusta cores do chevron-down conforme AnimaliaDS ([084ae3f](https://github.com/po-ui/po-style/commit/084ae3f1c426e7bfc9ca95513793d2f8eb833c78)), closes [#2154](https://github.com/po-ui/po-style/issues/2154)
+
+
+
 ## [17.26.7](https://github.com/po-ui/po-style/compare/v17.26.6...v17.26.7) (2024-11-11)
 
 

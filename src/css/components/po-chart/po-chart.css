@@ -170,6 +170,25 @@ po-chart-legend {
   fill: var(--color-chart-line-point-fill);
 }
 
+.po-chart-line-path-group {
+  opacity: 1;
+}
+
+.po-chart-line-path-blur {
+  opacity: 0.25;
+  transition: opacity 0.1s ease-in;
+}
+
+.po-chart-series-point-text {
+  font-size: 12px;
+  fill: var(--color-neutral-dark-95);
+}
+
+.po-chart-series-point-text-rect {
+  fill: var(--color-neutral-light-00);
+  fill-opacity: 0.7;
+}
+
 @media screen and (min-width: 1024px) {
   .po-chart-header {
     padding-bottom: 24px;

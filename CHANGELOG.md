@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [18.18.0](https://github.com/po-ui/po-style/compare/v18.17.0...v18.18.0) (2024-12-03)
+
+
+### Features
+
+* **chart:** inclusão propriedade `p-data-label` para chart tipo `line` ([835ae03](https://github.com/po-ui/po-style/commit/835ae0313cb9f59152897248961fa784cc6dbd85))
+
+
+
 ## [18.17.0](https://github.com/po-ui/po-style/compare/v18.16.0...v18.17.0) (2024-12-02)
 
 Compatibilidade com @po-ui/ng-components@18.17.0

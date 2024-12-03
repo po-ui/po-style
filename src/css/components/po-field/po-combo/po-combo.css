@@ -62,17 +62,23 @@
   color: var(--color-combo-color-group-title);
 }
 
+po-combo .po-combo-container-wrapper {
+  position: relative;
+}
+
+po-combo .po-combo-container-content .po-field-icon-container-right {
+  inset-block: 0px;
+  transform: translateY(0);
+}
+
+.po-combo-container-content .po-field-icon-container-left,
 .po-combo-container-content .po-field-icon-container-right {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 1px;
+  transform: translateY(0px);
 }
 
 .po-combo-container-content .po-field-icon-container-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-
   display: flex;
   align-items: center;
   justify-content: center;

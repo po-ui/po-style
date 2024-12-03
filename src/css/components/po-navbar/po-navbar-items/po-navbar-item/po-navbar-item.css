@@ -27,6 +27,13 @@
   cursor: default;
 }
 
+.po-navbar-item-link:focus-visible {
+  outline-width: 1px;
+  outline-color: var(--color-action-focus);
+  outline-style: auto;
+  outline-offset: 0;
+}
+
 .po-navbar-item-selected {
   box-shadow: var(--shadow-navbar-item-box-shadow-selected);
   color: var(--color-navbar-item-color-selected);

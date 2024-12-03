@@ -59,7 +59,7 @@
 }
 
 .po-button-default.po-rich-text-toolbar-color-picker-button {
-  border: none;
+  overflow: hidden;
 }
 
 .po-rich-text-toolbar-color-picker-container {
@@ -85,5 +85,4 @@
 
 .po-rich-text-toolbar-color-picker-input::-webkit-color-swatch {
   border: none;
-  border-radius: var(--border-radius, var(--border-radius-md));
 }

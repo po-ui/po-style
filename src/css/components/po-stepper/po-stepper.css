@@ -141,7 +141,7 @@
   color: var(--color-stepper-circle-error);
 }
 
-.po-stepper-step-default {
+.po-stepper-step-default:not(.po-stepper-disabled-click) {
   cursor: pointer;
 }
 
@@ -337,6 +337,15 @@ po-icon i {
 .po-stepper-label.po-link:focus,
 .po-stepper-label.po-link:active {
   outline: none;
+}
+
+.po-stepper-label.po-stepper-disabled-click.po-stepper-label-active {
+  color: var(--color-neutral-dark-70);
+  font-weight: var(--font-weight-current);
+}
+
+.po-stepper-label.po-stepper-disabled-click.po-stepper-label-done {
+  color: var(--text-color);
 }
 
 @media print {

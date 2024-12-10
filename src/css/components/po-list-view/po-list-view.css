@@ -41,7 +41,7 @@
 .po-list-view-select {
   display: table-cell;
   font-size: 16px;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .po-list-view-main-container-header,

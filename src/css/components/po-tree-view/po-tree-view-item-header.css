@@ -23,7 +23,7 @@
   font-size: 20px;
   margin-right: 8px;
   overflow: hidden;
-  vertical-align: top;
+  vertical-align: middle;
   line-height: 0px;
 }
 
@@ -60,6 +60,7 @@
   font-family: var(--font-family-default-bold), sans-serif;
   font-size: var(--font-size-default-normal);
   line-height: 24px;
+  vertical-align: middle;
 }
 
 .po-tree-view-item .po-tree-view-item .po-tree-view-item-header-label,

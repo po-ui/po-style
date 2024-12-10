@@ -46,6 +46,10 @@ po-field-container-bottom .po-field-container-bottom {
   display: flex;
 }
 
+.po-field-container-bottom:focus {
+  outline: none;
+}
+
 .po-field-container-bottom-text-error {
   color: var(--text-color-error);
 }
@@ -69,7 +73,7 @@ po-field-container-bottom .po-field-container-bottom {
 }
 
 .po-field-container-error-item {
-  display: block;
+  display: flex;
   margin-bottom: 12px;
   position: relative;
 }

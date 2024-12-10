@@ -37,7 +37,6 @@ div.po-datepicker-range-field-focused {
 .po-datepicker-range-icon {
   display: table-cell;
   font: inherit;
-  padding-top: 3px;
   text-align: center;
   vertical-align: middle;
   width: 10px;

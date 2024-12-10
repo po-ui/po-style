@@ -1,11 +1,19 @@
 po-radio {
+  --width-sm: 16px;
   --width-md: 24px;
   --width-lg: 32px;
 
   --offset-checked: 6px;
 
+  --circle-width-sm: calc(var(--width-sm) - 8px);
   --circle-width-md: calc(var(--width-md) - 12px);
   --circle-width-lg: calc(var(--width-lg) - 12px);
+
+  --background-radial-sm: radial-gradient(
+    var(--circle-width-sm) circle at center,
+    var(--color-checked) 50%,
+    transparent 57%
+  );
 
   --background-radial-md: radial-gradient(
     var(--circle-width-md) circle at center,
@@ -17,6 +25,12 @@ po-radio {
     var(--circle-width-lg) circle at center,
     var(--color-checked) 50%,
     transparent 54.2%
+  );
+
+  --background-radial-sm-disabled: radial-gradient(
+    var(--circle-width-sm) circle at 6px 6px,
+    var(--color-checked-disabled) 50%,
+    transparent 57%
   );
 
   --background-radial-md-disabled: radial-gradient(
@@ -38,10 +52,19 @@ po-radio {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
+  line-height: var(--line-height-none);
 }
 
-.po-radio > label * {
+.po-radio > label *,
+[data-a11y='AAA'] .po-radio-aa > label * {
   cursor: pointer;
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-md);
+}
+
+.po-radio-aa > label * {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-none);
 }
 
 .po-radio-focus > label {
@@ -67,7 +90,13 @@ po-radio {
   align-self: flex-start;
 }
 
-.po-radio input[p-size='medium'] {
+.po-radio input[p-size='small'] {
+  min-width: var(--width-sm);
+  min-height: var(--width-sm);
+}
+
+.po-radio input[p-size='medium'],
+[data-a11y='AAA'] .po-radio input[p-size='small'] {
   min-width: var(--width-md);
   min-height: var(--width-md);
 }
@@ -88,7 +117,13 @@ po-radio {
   cursor: not-allowed;
 }
 
-.po-radio input[type='radio']:checked {
+.po-radio input[type='radio'][p-size='small']:checked {
+  background: var(--background-radial-sm);
+  background-color: var(--color-unchecked);
+}
+
+.po-radio input[type='radio']:checked,
+[data-a11y='AAA'] .po-radio input[type='radio'][p-size='small']:checked {
   background: var(--background-radial-md);
   background-color: var(--color-unchecked);
   border-color: var(--color-checked);
@@ -105,8 +140,14 @@ po-radio {
   border-color: var(--color-checked-disabled);
 }
 
-.po-radio input[type='radio'][disabled]:checked {
+.po-radio input[type='radio'][disabled]:checked,
+[data-a11y='AAA'] .po-radio input[type='radio'][disabled][p-size='small']:checked {
   background: var(--background-radial-md-disabled);
+  background-color: var(--color-unchecked-disabled);
+}
+
+.po-radio input[type='radio'][disabled][p-size='small']:checked {
+  background: var(--background-radial-sm-disabled);
   background-color: var(--color-unchecked-disabled);
 }
 

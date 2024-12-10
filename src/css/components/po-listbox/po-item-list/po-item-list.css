@@ -1,14 +1,20 @@
-.po-item-list {
+.po-item-list,
+[data-a11y='AAA'] .po-item-list-aa {
   font-family: var(--font-family);
-  font-size: var(--font-size);
+  font-size: var(--font-size-default);
   line-height: var(--line-height);
   text-align: left;
   background-color: transparent;
-  min-height: 2.75em;
+  min-height: var(--target-size-aaa);
   display: flex;
   align-items: center;
   padding-inline: var(--spacing-sm);
   gap: var(--spacing-xs);
+}
+
+.po-item-list-aa {
+  font-size: var(--font-size-sm);
+  min-height: var(--target-size-aa);
 }
 
 /* estilo na ação de click dos itens */

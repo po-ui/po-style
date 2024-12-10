@@ -37,7 +37,6 @@ div.po-datepicker-range-field-focused {
 .po-datepicker-range-icon {
   display: table-cell;
   font: inherit;
-  padding-top: 3px;
   text-align: center;
   vertical-align: middle;
   width: 10px;
@@ -49,7 +48,6 @@ div.po-datepicker-range-field-focused {
   color: inherit;
   font: inherit;
   height: 100%;
-  vertical-align: middle;
   width: 100%;
 }
 
@@ -69,10 +67,15 @@ div.po-datepicker-range-field-focused {
   width: 8px;
 }
 
-.po-datepicker-range-start-date {
+.po-datepicker-range-start-date,
+[data-a11y='AAA'] .po-datepicker-range-start-date-aa {
   display: table-cell;
   vertical-align: middle;
   width: 90px;
+}
+
+.po-datepicker-range-start-date-aa {
+  width: 80px;
 }
 
 .po-calendar-range-picker {

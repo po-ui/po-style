@@ -1,6 +1,7 @@
-.po-textarea {
+.po-textarea,
+[data-a11y='AAA'] .po-textarea-aa {
   font-family: var(--font-family);
-  font-size: var(--font-size);
+  font-size: var(--font-size, var(--font-size-default));
   border-color: var(--color);
   background: var(--background);
   color: var(--text-color);
@@ -14,6 +15,10 @@
   width: 100%;
   box-sizing: border-box;
   resize: both;
+}
+
+.po-textarea-aa {
+  font-size: var(--font-size, var(--font-size-sm));
 }
 
 .po-textarea::placeholder {

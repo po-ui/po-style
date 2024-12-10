@@ -16,19 +16,10 @@
     flex-direction: column;
     position: static;
   }
-
-  &[hidden] {
-    display: flex !important;
-  }
 }
 
 .po-listbox-container-search {
   padding-inline: var(--spacing-sm);
-  padding-block: var(--spacing-sm) var(--spacing-xs);
-}
-
-.po-listbox-container-search .po-field-icon-container-left {
-  top: 56%;
 }
 
 .po-listbox-list {

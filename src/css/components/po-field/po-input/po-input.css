@@ -88,7 +88,3 @@ po-input.ng-invalid-mask .po-input {
   border: solid 1px var(--color-feedback-negative-base) !important;
   color: var(--color-feedback-negative-base);
 }
-
-po-password po-clean + po-icon {
-  margin-left: 8px;
-}

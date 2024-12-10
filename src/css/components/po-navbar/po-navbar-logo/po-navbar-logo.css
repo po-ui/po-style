@@ -9,13 +9,6 @@
   vertical-align: middle;
 }
 
-.po-navbar-logo-image:focus-visible {
-  outline-width: 1px;
-  outline-color: var(--color-action-focus);
-  outline-style: auto;
-  outline-offset: 0;
-}
-
 @media screen and (max-width: 768px) {
   .po-navbar-logo {
     text-align: center;

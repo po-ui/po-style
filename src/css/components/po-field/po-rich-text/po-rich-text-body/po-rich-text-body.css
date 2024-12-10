@@ -7,7 +7,7 @@
     @apply --font-text-large-bold;
   }
 
-  --border-rich-text-body-border: 1px solid var(--color-neutral-dark-70);
+  --border-rich-text-body-border: 1px solid var(--color-neutral-light-30);
   --shadow-rich-text-body-box-shadow: inset 0 1px 8px 0 var(--color-black-alpha-10);
 
   --rich-text-body-max-height: 262px;
@@ -29,7 +29,7 @@
   width: 100%;
 }
 
-po-rich-text-body:only-child .po-rich-text-body {
+.po-rich-text-body:only-child {
   border-radius: var(--border-radius-md);
 }
 

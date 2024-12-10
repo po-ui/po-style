@@ -28,11 +28,24 @@ po-icon i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.po-icon {
-  display: inline-block;
+.po-icon,
+.po-icon i,
+[data-a11y='AAA'] .po-icon-aa,
+[data-a11y='AAA'] .po-icon-aa i {
   font: normal normal normal 14px/1 PoIcon;
-  font-size: inherit;
+  font-size: var(--font-size-lg);
   text-rendering: auto;
+  vertical-align: middle;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.po-icon-aa,
+.po-icon-aa i {
+  font-size: var(--font-size-default);
+}
+
+.po-icon-large,
+.po-icon-large i {
+  font-size: var(--font-size-xl);
 }

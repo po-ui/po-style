@@ -38,7 +38,7 @@
 }
 
 .po-link:focus-visible {
-  outline-width: var(--outline-width-focus-visible);
+  outline-width: var(--outline-width);
 }
 
 .po-link:visited {

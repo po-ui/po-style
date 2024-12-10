@@ -1,6 +1,7 @@
-.po-tab-button {
+.po-tab-button,
+[data-a11y='AAA'] .po-tab-button-aa {
   font-family: var(--font-family);
-  font-size: var(--font-size);
+  font-size: var(--font-size, var(--font-size-default));
   font-weight: var(--font-weight);
 
   color: var(--color);
@@ -8,8 +9,13 @@
   text-align: center;
   vertical-align: middle;
   max-width: 15rem;
-  min-height: 2.75rem;
+  min-height: var(--target-size-aaa);
   padding-top: 0.5em;
+}
+
+.po-tab-button-aa {
+  font-size: var(--font-size, var(--font-size-sm));
+  min-height: var(--target-size-aa);
 }
 
 .po-tab-button-default po-button[p-kind='tertiary'] {
@@ -32,6 +38,7 @@
 .po-tab-button-default {
   align-items: center;
   display: inline-flex;
+  min-height: inherit;
   text-align: center;
   width: 100%;
   background-color: var(--background-item-default);
@@ -59,10 +66,6 @@
   background-color: var(--background-item-disabled);
   border-radius: var(--border-radius);
   color: var(--color-disabled);
-}
-
-.po-tab-button-default {
-  min-height: 2.75em;
 }
 
 .po-tab-button-label {

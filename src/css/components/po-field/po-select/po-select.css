@@ -1,16 +1,17 @@
-select {
+.po-select,
+[data-a11y='AAA'] .po-select-aa {
   font-family: var(--font-family);
-  font-size: var(--font-size);
+  font-size: var(--font-size, var(--font-size-default));
   color: var(--text-color);
   border-color: var(--color);
   background-color: var(--background);
-  padding: var(--padding-vertical) var(--padding-horizontal);
+  padding: var(--padding-vertical, 0.7rem) var(--padding-horizontal, 0.5rem);
 
   font-weight: var(--font-weight-normal);
   border-width: var(--border-width-sm);
   border-radius: var(--border-radius-md);
   border-style: solid;
-  min-height: 2.75em;
+  min-height: var(--target-size-aaa);
 
   -webkit-appearance: none;
   appearance: none;
@@ -18,22 +19,30 @@ select {
 
   background-image: var(--background-image);
   background-repeat: no-repeat;
-  background-position: right var(--padding-horizontal) center;
+  background-position: right var(--padding-horizontal, 0.5rem) center;
   background-size: 24px;
 
   text-overflow: ellipsis;
-  padding-right: 2em;
+  padding-right: calc(var(--target-size-aaa) - var(--padding-horizontal, 0.5rem));
   opacity: 1;
 }
 
-select:hover {
+.po-select-aa {
+  font-size: var(--font-size, var(--font-size-sm));
+  min-height: var(--target-size-aa);
+  padding: var(--padding-vertical, 0.35rem) var(--padding-horizontal, 0.5rem);
+  padding-right: calc(var(--target-size-aa) - var(--padding-horizontal, 0.5rem));
+  background-size: var(--font-size-default);
+}
+
+.po-select:hover {
   border-color: var(--color-hover);
   background-color: var(--background-hover);
 
   cursor: pointer;
 }
 
-select:focus {
+.po-select:focus {
   border-color: var(--color-focused);
   outline-color: var(--outline-color-focused);
 
@@ -42,11 +51,11 @@ select:focus {
   outline-offset: 2px;
 }
 
-select:focus-visible {
+.po-select:focus-visible {
   outline-width: var(--outline-width-focus-visible);
 }
 
-select:disabled {
+.po-select:disabled {
   border-color: var(--color-disabled);
   background-color: var(--background-disabled);
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.707 8.29301C18.316 7.90201 17.684 7.90201 17.293 8.29301L12 13.586L6.70701 8.29301C6.31601 7.90201 5.68401 7.90201 5.29301 8.29301C4.90201 8.68401 4.90201 9.31601 5.29301 9.70701L11.293 15.707C11.488 15.902 11.744 16 12 16C12.256 16 12.512 15.902 12.707 15.707L18.707 9.70701C19.098 9.31601 19.098 8.68401 18.707 8.29301Z' fill='%23B4B4C0'/%3E%3C/svg%3E%0A");
@@ -55,31 +64,31 @@ select:disabled {
   cursor: not-allowed;
 }
 
-select.po-select-placeholder {
+.po-select.po-select-placeholder {
   color: var(--text-color-empty);
 }
 
-option {
+.po-select option {
   color: var(--text-color);
 }
 
-option:disabled {
+.po-select option:disabled {
   color: var(--text-color-empty);
 }
 
-po-select.ng-dirty.ng-invalid select {
+.po-select.ng-dirty.ng-invalid select {
   border-color: var(--color-feedback-negative-base);
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.707 8.29301C18.316 7.90201 17.684 7.90201 17.293 8.29301L12 13.586L6.70701 8.29301C6.31601 7.90201 5.68401 7.90201 5.29301 8.29301C4.90201 8.68401 4.90201 9.31601 5.29301 9.70701L11.293 15.707C11.488 15.902 11.744 16 12 16C12.256 16 12.512 15.902 12.707 15.707L18.707 9.70701C19.098 9.31601 19.098 8.68401 18.707 8.29301Z' fill='%23BE3E37'/%3E%3C/svg%3E%0A");
 }
 
-po-select .po-select-phosphor {
+.po-select .po-select-phosphor {
   --background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 256 256' fill='%234a5c60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-po-select select.po-select-phosphor:disabled {
+.po-select select.po-select-phosphor:disabled {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 256 256' fill='%23B4B4C0' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-po-select.ng-dirty.ng-invalid select.po-select-phosphor {
+.po-select.ng-dirty.ng-invalid select.po-select-phosphor {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 256 256' fill='%23BE3E37' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E");
 }

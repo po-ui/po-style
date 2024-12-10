@@ -7,41 +7,44 @@
 }
 
 .po-loading-svg-lg svg {
-  height: 5rem;
-  width: 5rem;
+  min-height: 5rem;
+  min-width: 5rem;
 }
 
 .po-loading-icon-container.po-loading-svg-lg {
-  max-width: 5rem;
-  max-height: 5rem;
+  min-width: 5rem;
+  min-height: 5rem;
 }
 
 .po-loading-svg-md svg {
-  height: 2rem;
-  width: 2rem;
+  min-height: 2rem;
+  min-width: 2rem;
 }
 
 .po-loading-icon-container.po-loading-svg-md {
-  max-width: 2rem;
-  max-height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
 }
 
-.po-loading-svg-sm svg {
-  height: 1.5rem;
-  width: 1.5rem;
+.po-loading-svg-sm svg,
+[data-a11y='AAA'] .po-loading-svg-xs svg {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
 }
 
-.po-loading-icon-container.po-loading-svg-sm {
-  max-width: 1.5rem;
-  max-height: 1.5rem;
+.po-loading-icon-container.po-loading-svg-sm,
+[data-a11y='AAA'] .po-loading-icon-container.po-loading-svg-xs {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
 }
 
 .po-loading-svg-xs svg {
-  height: 1rem;
-  width: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
 }
 
-.po-loading-icon-container.po-loading-svg-xs {
-  max-width: 1rem;
-  max-height: 1rem;
+.po-loading-icon-container.po-loading-svg-xs,
+[data-a11y='AAA'] .po-loading-icon-container.po-loading-svg-xs {
+  min-width: 1rem;
+  min-height: 1rem;
 }

@@ -4,16 +4,16 @@
 
 .po-progress-info {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  gap: var(--spacing-xs);
 }
 
 .po-progress-info-text {
   font-family: var(--font-family);
   color: var(--color-progress-color-text, var(--text-color));
-  font-size: var(--font-size-default);
   font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-default);
   line-height: var(--line-height-md);
 }
 
@@ -26,14 +26,18 @@
   color: var(--color-icon-error);
 }
 
+.po-progress-info-left,
 .po-progress-info-right {
   display: flex;
-  align-items: center;
   gap: var(--spacing-xs);
+  font-size: var(--font-size-default);
+  margin-bottom: auto;
 }
 
 .po-progress-info-left {
-  gap: var(--spacing-xs);
-  display: flex;
+  align-items: top;
+}
+
+.po-progress-info-right {
   align-items: center;
 }

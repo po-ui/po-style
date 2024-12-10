@@ -1,4 +1,5 @@
-.po-checkbox {
+.po-checkbox,
+[data-a11y='AAA'] .po-checkbox-aa {
   width: 24px;
   height: 24px;
   box-sizing: border-box;
@@ -13,8 +14,21 @@
   min-width: 24px;
   min-height: 24px;
   cursor: pointer;
-  position: relative;
   align-self: flex-start;
+}
+
+.po-checkbox-aa {
+  width: var(--spacing-sm);
+  height: var(--spacing-sm);
+  min-width: var(--spacing-sm);
+  min-height: var(--spacing-sm);
+}
+
+.po-checkbox-large {
+  width: var(--spacing-lg);
+  height: var(--spacing-lg);
+  min-width: var(--spacing-lg);
+  min-height: var(--spacing-lg);
 }
 
 .po-checkbox-poicon {
@@ -23,13 +37,6 @@
 
 .po-checkbox-phosphor {
   font-family: Animalia !important;
-}
-
-[p-size='large'] .po-checkbox {
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
-  min-height: 32px;
 }
 
 .po-checkbox:hover {
@@ -86,13 +93,18 @@
 
 .container-po-checkbox {
   display: flex;
-  min-height: 24px;
+  min-height: 16px;
   align-items: center;
+  line-height: var(--line-height-none);
 }
 
 .po-checkbox-label {
   margin-left: 0.5rem;
   cursor: pointer;
+}
+
+.po-checkbox-label:focus {
+  outline: none;
 }
 
 .po-checkbox[aria-disabled='true'] ~ .po-checkbox-label {
@@ -125,6 +137,17 @@
 .po-checkbox-phosphor[aria-checked='mixed']:before {
   content: '\e32a';
   font-size: var(--font-size-default);
+}
+
+.po-checkbox-label > label.po-label,
+[data-a11y='AAA'] .po-checkbox-label-aa > label.po-label {
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-md);
+}
+
+.po-checkbox-label-aa > label.po-label {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-none);
 }
 
 .po-checkbox-label > label.po-label:not(.po-label-disabled) {

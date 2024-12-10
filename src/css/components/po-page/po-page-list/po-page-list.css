@@ -41,15 +41,25 @@
   margin: 8px 8px 0 0;
 }
 
-.po-page-list-filter-wrapper {
+.po-page-list-filter-wrapper,
+[data-a11y='AAA'] .po-page-list-filter-wrapper-aa {
   display: inline-flex;
   float: right;
   margin-top: -44px;
 }
 
-.po-page-filter-content {
+.po-page-list-filter-wrapper-aa {
+  margin-top: -32px;
+}
+
+.po-page-filter-content,
+[data-a11y='AAA'] .po-page-filter-content-aa {
   padding: 0px;
   margin-right: 6px;
+}
+
+.po-page-filter-content-aa {
+  padding: 8px 0px;
 }
 
 .po-page-list-filter-search {

@@ -1,4 +1,5 @@
-.po-multiselect-input {
+.po-multiselect-input,
+[data-a11y='AAA'] .po-multiselect-input-aa {
   background-color: var(--background);
   border-color: var(--color);
   border-width: var(--border-width-sm);
@@ -6,23 +7,29 @@
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
   gap: var(--spacing-xs);
-  padding-left: var(--spacing-xs);
-  padding-right: 2.75em;
-
+  padding: 0.625rem 2.75rem 0.625rem 0.5rem;
   align-items: center;
   border-style: solid;
   display: flex;
   flex-wrap: wrap;
   line-height: normal;
-  min-height: 2.75rem;
-
-  padding-block: var(--spacing-xs);
+  min-height: var(--target-size-aaa);
   overflow: hidden;
 }
 
-.po-multiselect-input-placeholder {
+.po-multiselect-input-aa {
+  min-height: var(--target-size-aa);
+  padding: 0.2rem 2rem 0.2rem 0.5rem;
+}
+
+.po-multiselect-input-placeholder,
+[data-a11y='AAA'] .po-multiselect-input-placeholder-aa {
   color: var(--text-color-placeholder);
-  font-size: var(--font-size);
+  font-size: var(--font-size, var(--font-size-default));
+}
+
+.po-multiselect-input-placeholder-aa {
+  font-size: var(--font-size, var(--font-size-sm));
 }
 
 .po-multiselect-input .po-field-icon-container-right .po-icon-input {

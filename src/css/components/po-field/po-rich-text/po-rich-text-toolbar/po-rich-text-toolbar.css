@@ -3,9 +3,6 @@
     @apply --font-subtitle;
   }
 
-  --rich-text-toolbar-button-group-height: 44px;
-  --rich-text-toolbar-button-group-width: 44px;
-
   --rich-text-toolbar-min-height: 64px;
 
   /* Valores herdados do componente po-rich-text-body */
@@ -32,17 +29,24 @@
   display: inline-block;
 }
 
-/* Aplica a largura fixa em cada botão do po-button-group */
-.po-rich-text-toolbar .po-button-group {
-  width: var(--rich-text-toolbar-button-group-width);
-  padding: inherit;
+/* Necessário para fixar a altura do po-button pois o mesmo tem tratamento para responsividade */
+.po-rich-text-toolbar .po-button-group > .po-button,
+.po-rich-text-toolbar-color-picker-button,
+[data-a11y='AAA'] .po-rich-text-toolbar-aa .po-button-group > .po-button,
+[data-a11y='AAA'] .po-rich-text-toolbar-color-picker-button-aa {
+  height: var(--target-size-aaa);
+  width: var(--target-size-aaa);
+  min-height: var(--target-size-aaa);
+  min-width: var(--target-size-aaa);
+  padding: 0;
 }
 
-/* Necessário para fixar a altura do po-button pois o mesmo tem tratamento para responsividade */
-.po-rich-text-toolbar .po-button-group > .po-button {
-  font-size: 16px;
-  height: var(--rich-text-toolbar-button-group-height);
-  padding: 0;
+.po-rich-text-toolbar-aa .po-button-group > .po-button,
+.po-rich-text-toolbar-color-picker-button-aa {
+  height: var(--target-size-aa);
+  width: var(--target-size-aa);
+  min-height: var(--target-size-aa);
+  min-width: var(--target-size-aa);
 }
 
 /* Seletor necessário para sobrepor o padding 0 */
@@ -51,24 +55,12 @@
   vertical-align: middle;
 }
 
-.po-rich-text-toolbar-color-picker-button {
-  font-size: 16px;
-  height: 44px;
-  padding: 0;
-  width: 44px;
-}
-
 .po-button-default.po-rich-text-toolbar-color-picker-button {
   overflow: hidden;
 }
 
 .po-rich-text-toolbar-color-picker-container {
   display: flex;
-}
-
-/* Altera o tamanho do ícone dos po-buttons para respeitar o tamanho definido pela UX */
-.po-rich-text-toolbar .po-button-group .po-icon {
-  font-size: 1.5rem;
 }
 
 .po-rich-text-toolbar-color-picker-input {

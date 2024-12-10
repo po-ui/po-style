@@ -34,7 +34,8 @@
   gap: var(--spacing-lg);
 }
 
-.po-table-list-manager-item-text {
+.po-table-list-manager-item-text,
+[data-a11y='AAA'] .po-table-list-manager-item-text-aa {
   color: var(--color-column-text);
 
   font-family: var(--font-family-theme);
@@ -44,18 +45,13 @@
   font-size: var(--font-size-default);
 }
 
+.po-table-list-manager-item-text-aa {
+  font-size: var(--font-size-sm);
+}
+
 .po-table-list-manager-item-buttons {
   gap: var(--spacing-xs);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.po-table-list-manager-item-buttons i {
-  font-size: 1.5rem;
-}
-
-.po-table-list-manager-item-buttons i.an {
-  font-size: var(--font-size-md);
-  padding: 0.125rem;
 }

@@ -107,15 +107,6 @@
   padding: var(--padding-header);
 }
 
-.po-page-slide-header po-icon {
-  font-size: 1.5rem;
-}
-
-.po-page-slide-header po-icon i.an {
-  font-size: var(--font-size-md);
-  padding: 0.125rem;
-}
-
 .po-page-slide-title {
   font-family: var(--font-family);
   color: var(--color-title);

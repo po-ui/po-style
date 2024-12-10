@@ -1,14 +1,9 @@
-:root {
-  --font-field-icon: {
-    @apply --font-subtitle;
-  }
-}
-
 .po-field-icon-container-left,
 .po-field-icon-container-right {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
 }
 
 .po-field-icon-container-left {
@@ -21,10 +16,23 @@
 }
 
 .po-field-icon,
-.po-field-icon-disabled {
-  @apply --font-field-icon;
+[data-a11y='AAA'] .po-field-icon-aa,
+.po-field-icon-disabled,
+[data-a11y='AAA'] .po-field-icon-disabled-aa {
+  font-size: var(--font-size-lg);
+  display: flex;
   text-align: center;
   text-decoration: none;
+}
+
+.po-field-icon-aa,
+.po-field-icon-disabled-aa {
+  font-size: var(--font-size-default);
+}
+
+.po-field-icon-large,
+.po-field-icon-disabled-large {
+  font-size: var(--font-size-xl);
 }
 
 .po-field-icon {
@@ -41,9 +49,18 @@
 
 .po-field-icon-container-left .po-field-icon > .po-icon,
 .po-field-icon-container-left .po-field-icon > .po-fonts-icon,
-.po-field-icon-container-left .po-field-icon > :first-child:not(.po-fonts-icon):not(.po-icon) {
+.po-field-icon-container-left .po-field-icon > :first-child:not(.po-fonts-icon):not(.po-icon),
+[data-a11y='AAA'] .po-field-icon-container-left .po-field-icon-aa > .po-icon,
+[data-a11y='AAA'] .po-field-icon-container-left .po-field-icon-aa > .po-fonts-icon,
+[data-a11y='AAA'] .po-field-icon-container-left .po-field-icon-aa > :first-child:not(.po-fonts-icon):not(.po-icon) {
   vertical-align: middle;
-  line-height: 2.65rem;
+  line-height: var(--target-size-aaa);
+}
+
+.po-field-icon-container-left .po-field-icon-aa > .po-icon,
+.po-field-icon-container-left .po-field-icon-aa > .po-fonts-icon,
+.po-field-icon-container-left .po-field-icon-aa > :first-child:not(.po-fonts-icon):not(.po-icon) {
+  line-height: var(--target-size-aa);
 }
 
 .po-field-icon-disabled {

@@ -1,18 +1,31 @@
-.po-switch {
+.po-switch,
+[data-a11y='AAA'] .po-switch-aa {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
+  height: var(--font-size-lg);
 }
 
-.po-switch-container {
-  height: 1.5rem;
+.po-switch-aa {
+  height: var(--font-size-default);
+}
+
+.po-switch-container,
+[data-a11y='AAA'] .po-switch-container-aa {
+  height: var(--font-size-default);
   position: relative;
 
   display: flex;
   align-items: center;
   align-self: flex-start;
   justify-content: center;
+  min-height: var(--font-size-lg);
+}
+
+.po-switch-container-aa {
+  height: 0.5rem;
+  min-height: var(--font-size-default);
 }
 
 .po-switch-container:focus-visible {
@@ -23,7 +36,8 @@
   outline-offset: 2px;
 }
 
-.po-switch-track {
+.po-switch-track,
+[data-a11y='AAA'] .po-switch-track-aa {
   background-color: var(--track-unchecked);
 
   height: 1rem;
@@ -32,17 +46,28 @@
   cursor: pointer;
 }
 
-.po-switch-toggle {
+.po-switch-track-aa {
+  width: var(--target-size-aa);
+  height: 0.75rem;
+}
+
+.po-switch-toggle,
+[data-a11y='AAA'] .po-switch-toggle-aa {
   background-color: var(--color-unchecked);
   border: var(--border-width-md) solid var(--border-color);
 
   border-radius: 100%;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: var(--font-size-lg);
+  height: var(--font-size-lg);
   position: absolute;
   inset: 0;
   box-sizing: border-box;
   transition: 0.3s ease-out all;
+}
+
+.po-switch-toggle-aa {
+  width: var(--font-size-default);
+  height: var(--font-size-default);
 }
 
 .po-switch-toggle:hover {
@@ -51,14 +76,24 @@
   border-color: var(--color-checked-hover);
 }
 
-.po-switch-icon {
+.po-switch-icon,
+[data-a11y='AAA'] .po-switch-icon-aa {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   color: var(--color-unchecked);
-  font-size: 1rem;
+  font-size: var(--font-size-default);
+}
+
+.po-switch-icon-aa,
+.po-switch-label-aa > label.po-label {
+  font-size: var(--font-size-sm);
+}
+
+[data-a11y='AAA'] .po-switch-label-aa > label.po-label {
+  font-size: var(--font-size-default);
 }
 
 .po-switch-label > label.po-label:not(.po-label-disabled) {

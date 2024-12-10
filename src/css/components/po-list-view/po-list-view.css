@@ -36,12 +36,14 @@
   }
 
   --list-view-main-header-height: 44px;
+
+  --list-view-main-header-height--aa: 32px;
 }
 
 .po-list-view-select {
   display: table-cell;
   font-size: 16px;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .po-list-view-main-container-header,
@@ -54,7 +56,8 @@
   padding-top: 60px;
 }
 
-.po-list-view-main-header {
+.po-list-view-main-header,
+[data-a11y='AAA'] .po-list-view-main-header-aa {
   background-color: var(--color-list-view-background-color);
   border: solid 1px var(--color-list-view-border);
   border-radius: 3px;
@@ -64,6 +67,10 @@
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+.po-list-view-main-header-aa {
+  height: var(--list-view-main-header-height-aa);
 }
 
 .po-list-view-main-select {

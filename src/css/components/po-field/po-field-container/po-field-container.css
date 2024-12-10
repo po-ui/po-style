@@ -15,6 +15,15 @@
   width: 100%;
 }
 
+.po-field-container-title .po-label,
+[data-a11y='AAA'] .po-field-container-title-aa .po-label {
+  font-size: var(--font-size-default);
+}
+
+.po-field-container-title-aa .po-label {
+  font-size: var(--font-size-sm);
+}
+
 .po-field-container-input {
   position: relative;
   width: 100%;

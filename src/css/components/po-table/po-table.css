@@ -146,11 +146,6 @@
   margin-right: auto;
 }
 
-.po-table-actions-batch-actions po-button i,
-.po-table-actions-column-manager po-button i {
-  font-size: 1.5rem;
-}
-
 .po-table-selectable thead tr th:hover {
   background-color: var(--background-color-selected);
 }

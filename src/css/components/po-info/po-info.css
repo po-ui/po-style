@@ -14,10 +14,7 @@
   word-wrap: break-word;
 
   &-label {
-    font-family: var(--font-family-theme), sans-serif;
-    font-size: var(--font-size-default);
-    line-height: var(--line-height-md);
-    font-weight: var(--font-weight-semibold);
+    @apply --font-info-font-label;
     color: var(--color-info-color-text-label);
 
     &-horizontal {

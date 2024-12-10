@@ -259,6 +259,7 @@
 }
 
 .po-table-column-actions i {
+  color: var(--color);
   display: block;
   font-size: 1.5rem;
 }
@@ -503,6 +504,7 @@
 }
 
 .po-table-column-detail-toggle i {
+  color: var(--color);
   display: block;
   font-size: 1.5rem;
 }
@@ -673,10 +675,4 @@ span.po-table-header-icon-ascending svg {
 
 .po-table-row-template-container {
   max-width: 1rem;
-}
-
-.po-table-header-flex po-icon,
-.po-table-column-actions i,
-.po-table-column-detail-toggle i {
-  color: var(--color-action-default);
 }

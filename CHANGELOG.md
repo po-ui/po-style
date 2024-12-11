@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [18.20.0](https://github.com/po-ui/po-style/compare/v18.19.1...v18.20.0) (2024-12-11)
+
+
+### Features
+
+* **theme:** adicionado melhoria no tema para diferentes acessibilidades ([3780974](https://github.com/po-ui/po-style/commit/378097414a987033776495c27f78d06398edff29))
+
+
+
 ## [18.19.1](https://github.com/po-ui/po-style/compare/v18.19.0...v18.19.1) (2024-12-10)
 
 

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [18.21.0](https://github.com/po-ui/po-style/compare/v18.20.0...v18.21.0) (2024-12-16)
+
+
+### Features
+
+* **stepper:** cria a propriedade p-disable-click ([3a2416c](https://github.com/po-ui/po-style/commit/3a2416c8c63bdada517451bf36281375cb48475c))
+
+
+
 # [18.20.0](https://github.com/po-ui/po-style/compare/v18.19.1...v18.20.0) (2024-12-11)
 
 

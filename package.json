@@ -1,6 +1,6 @@
 {
   "name": "@po-ui/style",
-  "version": "18.23.1",
+  "version": "19.0.0-next.0",
   "description": "PO Style",
   "author": "PO UI",
   "license": "MIT",
@@ -19,7 +19,9 @@
     "format:fix": "pretty-quick --staged",
     "format:check": "prettier --check --loglevel error \"src/**/*{.ts,.js,.json,.css,.scss,.html}\"",
     "format:all": "prettier --write \"src/**/*{.ts,.js,.json,.css,.scss,.html}\"",
-    "update-animalia-icon": "npm install @animaliads/animalia-icon@latest && node scripts/update-animalia-icon.js"
+    "update-animalia-icon": "npm install @animaliads/animalia-icon@latest && node scripts/update-animalia-icon.js",
+    "pack:style": "cd dist/style && npm pack",
+    "publish:style:local": "npm publish ./dist/style --registry http://localhost:4873 --ignore-scripts"
   },
   "devDependencies": {
     "@animaliads/animalia-icon": "1.0.2",

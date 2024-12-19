@@ -105,11 +105,11 @@
   color: var(--color-icon);
 }
 
-i.po-breadcrumb-icon-arrow.ph {
+i.po-breadcrumb-icon-arrow.an {
   font-size: var(--font-size-default);
 }
 
-.po-breadcrumb-icon-more i.ph,
-i.po-breadcrumb-icon-arrow.ph {
+.po-breadcrumb-icon-more i.an,
+i.po-breadcrumb-icon-arrow.an {
   font-size: var(--font-size-sm);
 }

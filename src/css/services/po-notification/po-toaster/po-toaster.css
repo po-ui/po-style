@@ -61,7 +61,7 @@ po-toaster {
   display: flex;
 }
 
-.po-toaster-icon po-icon i.ph {
+.po-toaster-icon po-icon i.an {
   font-size: var(--font-size-md);
   padding: 0.125rem;
 }
@@ -264,7 +264,7 @@ po-toaster .po-toaster-inline[hidden] {
 .po-toaster-inline .po-toaster-inline-icon i {
   border-radius: 50%;
 }
-.po-toaster-inline .po-toaster-inline-icon i.ph {
+.po-toaster-inline .po-toaster-inline-icon i.an {
   padding: 0.25rem;
   font-size: var(--font-size-default);
   display: flex;

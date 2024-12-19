@@ -79,10 +79,10 @@
   display: inline-flex;
 }
 
-.po-badge-medium i.ph {
+.po-badge-medium i.an {
   font-size: var(--font-size-xs);
 }
 
-.po-badge-large i.ph {
+.po-badge-large i.an {
   font-size: var(--font-size-default);
 }

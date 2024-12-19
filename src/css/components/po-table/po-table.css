@@ -455,9 +455,9 @@
   fill: var(--color);
 }
 
-.po-table-header-icon-unselected i.ph,
-.po-table-header-icon-descending i.ph,
-.po-table-header-icon-ascending i.ph {
+.po-table-header-icon-unselected i.an,
+.po-table-header-icon-descending i.an,
+.po-table-header-icon-ascending i.an {
   font-size: var(--font-size-sm);
   padding: 0.0625rem;
 }

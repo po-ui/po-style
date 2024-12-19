@@ -95,7 +95,7 @@
   font-size: 2rem;
 }
 
-.po-modal-header i.ph::before {
+.po-modal-header i.an::before {
   font-size: var(--font-size-lg);
 }
 

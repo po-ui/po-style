@@ -16,6 +16,10 @@
   padding-top: 16px;
 }
 
+.po-upload-progress-container .po-container-content {
+  overflow-y: initial;
+}
+
 .po-upload-send-button {
   display: block;
   padding: 8px 0;

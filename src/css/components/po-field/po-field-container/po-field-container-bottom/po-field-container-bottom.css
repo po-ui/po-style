@@ -82,3 +82,12 @@ po-field-container-bottom .po-field-container-bottom {
   display: block;
   margin-left: 24px;
 }
+
+.po-field-error-limit {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

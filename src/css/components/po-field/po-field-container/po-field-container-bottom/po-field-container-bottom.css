@@ -13,24 +13,27 @@
 }
 
 .po-field-container-bottom {
-  display: block;
   line-height: var(--line-height);
   font-family: var(--font-family);
   font-size: var(--font-size);
 
   font-weight: var(--font-weight-normal);
-  text-align: left;
 }
 
-.po-field-container-bottom po-icon {
-  line-height: 0px;
+.po-icon-container {
+  position: relative;
+  line-height: inherit;
+  padding-right: var(--spacing-xs);
 }
 
+.po-field-container-bottom-text-error .po-icon,
+.po-field-container-bottom po-icon,
 .po-field-container-bottom i.an {
   font-size: var(--font-size-default);
 }
 
-.po-field-container-bottom-disabled .po-field-container-help {
+.po-field-container-bottom-disabled .po-field-container-bottom-help-text,
+.po-field-container-bottom-disabled .po-icon-additional-help {
   color: var(--text-color-help-disabled);
 }
 
@@ -38,21 +41,31 @@ po-field-container-bottom .po-field-container-bottom {
   padding-bottom: var(--padding-bottom);
 }
 
-.po-field-container-bottom-text-error {
+.po-field-container-bottom-text-error,
+.po-field-container-bottom-help-text {
   display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
+}
+
+.po-field-container-bottom-text-error {
   color: var(--text-color-error);
 }
 
-.po-field-container-bottom-text-error .po-icon {
-  color: var(--color-icon-error);
-  display: inline-flex;
-  font-size: 1rem;
+.po-field-container-bottom-help-text,
+.po-icon-additional-help {
+  color: var(--text-color-help);
 }
 
-.po-field-container-bottom-help-text {
-  color: var(--text-color-help);
+.po-field-container-bottom-help-text .po-icon-additional-help {
+  order: 2;
+}
+
+.po-field-container-bottom-help-text span {
+  order: 1;
+}
+
+.po-field-container-bottom-text-error po-icon {
+  color: var(--color-icon-error);
+  padding-right: var(--spacing-xs);
 }
 
 .po-field-container-error-item {
@@ -62,15 +75,9 @@ po-field-container-bottom .po-field-container-bottom {
 }
 
 .po-field-container-error-item i {
-  font-size: 16px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.po-field-container-icon-error {
-  line-height: 24px;
-  vertical-align: top;
 }
 
 .po-field-container-error-container {

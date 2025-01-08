@@ -25,7 +25,7 @@ po-checkbox-group.ng-invalid.ng-dirty .po-checkbox:not([aria-disabled='true']) {
 }
 
 .po-checkbox-group-content ul {
-  padding: var(--spacing-xs) 0;
-  row-gap: var(--spacing-md);
+  padding-top: var(--spacing-xs);
+  row-gap: var(--spacing-xs);
   width: 100%;
 }

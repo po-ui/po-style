@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [18.23.0](https://github.com/po-ui/po-style/compare/v18.22.0...v18.23.0) (2025-01-13)
+
+
+### Features
+
+* **fields:** adiciona limite na exibição de mensagens de erro ([69ffb4e](https://github.com/po-ui/po-style/commit/69ffb4e97847d1bfe091a7a3fd8c18458b5fe7ca))
+* **progress:** adiciona suporte a ações customizadas ([6368f99](https://github.com/po-ui/po-style/commit/6368f991214b3b101ac9372f594d37ecfa18e808))
+
+
+
 ## [18.22.0](https://github.com/po-ui/po-style/compare/v18.21.0...v18.22.0) (2024-12-23)
 
 Compatibilidade com @po-ui/ng-components@18.22.0

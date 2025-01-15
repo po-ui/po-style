@@ -107,7 +107,7 @@
 
 .po-accordion-item-header-tag {
   margin-top: 0.25rem;
-  display: inline-block;
+  display: block;
 }
 
 .po-text-ellipsis.po-accordion-item-header-title {

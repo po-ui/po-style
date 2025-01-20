@@ -2,35 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [18.23.1](https://github.com/po-ui/po-style/compare/v18.23.0...v18.23.1) (2025-01-20)
-
-Compatibilidade com @po-ui/ng-components@18.23.1
-# [19.0.0-next.0](https://github.com/po-ui/po-style/compare/v18.23.0...v19.0.0-next.0) (2025-01-13)
+# [19.0.0-rc.0](https://github.com/po-ui/po-style/compare/v19.0.0-next.0...v19.0.0-rc.0) (2025-01-20)
 
 
 ### Code Refactoring
 
-* **icon:** substitui a prefixo 'ph' por 'an' ([b46763b](https://github.com/po-ui/po-style/commit/b46763b75e9c2b22c6800988684b31e81d0d3078))
+* **icon:** substitui a prefixo 'ph' por 'an' ([7ab5f47](https://github.com/po-ui/po-style/commit/7ab5f471b6f12025bb6e2628e75fcbfd0a1b435d))
 
 
 ### Features
 
-* **angular:** Compatibilidade com @po-ui/ng-components@19.0.0-next.0 ([becde9c](https://github.com/po-ui/po-style/commit/becde9c275ac8e22329d48fb806f5914aee585ad))
+* **angular:** build v19 ([c0caafa](https://github.com/po-ui/po-style/commit/c0caafad014b15c568abf843b6a6910f28e5253d))
 
 
 ### BREAKING CHANGES
 
-* **icon:** substitui a prefixo 'ph' por 'an'
+* **icon:** substitui o prefixo 'ph' por 'an'
 
-Substitui a prefixo 'ph' por 'an' seguindo as
-definições na lib @animaliads/animalia-icon
+Substitui o prefixo 'ph' por 'an' seguindo as
+definições da atualização da lib
+@animaliads/animalia-icon
 
 Antes:
 <i class="ph ph-arrow-fat-line-down"></i>
 
 Depois:
-<i class="and and-arrow-fat-line-down"></i>
+<i class="an an-arrow-fat-line-down"></i>
 
+
+
+## [18.23.1](https://github.com/po-ui/po-style/compare/v18.23.0...v18.23.1) (2025-01-20)
+
+Compatibilidade com @po-ui/ng-components@18.23.1
 
 
 # [18.23.0](https://github.com/po-ui/po-style/compare/v18.22.0...v18.23.0) (2025-01-13)

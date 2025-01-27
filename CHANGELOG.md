@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.26.12](https://github.com/po-ui/po-style/compare/v17.26.11...v17.26.12) (2025-01-27)
+
+
+### Bug Fixes
+
+* **accordion:** alinha posicionamento da tag em relação ao titulo ([bbca000](https://github.com/po-ui/po-style/commit/bbca000d14fee5acf41d0c8e3faff47f044611ad))
+
+
+
 ## [17.26.11](https://github.com/po-ui/po-style/compare/v17.26.10...v17.26.11) (2025-01-20)
 
 Compatibilidade com @po-ui/ng-components@17.26.11

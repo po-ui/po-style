@@ -2,30 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [18.24.0](https://github.com/po-ui/po-style/compare/v18.23.1...v18.24.0) (2025-01-27)
-
-
-### Bug Fixes
-
-* **accordion:** alinha posicionamento da tag em relação ao título ([65a1769](https://github.com/po-ui/po-style/commit/65a17694b9d5d6fd230a281eb109dd85b488470c))
-
-
-
-## [18.23.1](https://github.com/po-ui/po-style/compare/v18.23.0...v18.23.1) (2025-01-20)
-
-Compatibilidade com @po-ui/ng-components@18.23.1
-
-# [19.0.0-rc.0](https://github.com/po-ui/po-style/compare/v19.0.0-next.0...v19.0.0-rc.0) (2025-01-20)
+# [19.0.0](https://github.com/po-ui/po-style/compare/v18.24.0...v19.0.0) (2025-01-29)
 
 
 ### Code Refactoring
 
-* **icon:** substitui a prefixo 'ph' por 'an' ([7ab5f47](https://github.com/po-ui/po-style/commit/7ab5f471b6f12025bb6e2628e75fcbfd0a1b435d))
+* **icon:** substitui a prefixo 'ph' por 'an' ([a927cf1](https://github.com/po-ui/po-style/commit/a927cf1ce2f36294120838c8f77560aa2793c19f))
 
 
 ### Features
 
-* **angular:** build v19 ([c0caafa](https://github.com/po-ui/po-style/commit/c0caafad014b15c568abf843b6a6910f28e5253d))
+* **angular:** build v19 ([3f95c60](https://github.com/po-ui/po-style/commit/3f95c60ef3c327751912c8c48aace59988a7e337))
 
 
 ### BREAKING CHANGES
@@ -42,6 +29,12 @@ Antes:
 Depois:
 <i class="an an-arrow-fat-line-down"></i>
 
+
+## [18.24.0](https://github.com/po-ui/po-style/compare/v18.23.1...v18.24.0) (2025-01-27)
+
+### Bug Fixes
+
+* **accordion:** alinha posicionamento da tag em relação ao título ([65a1769](https://github.com/po-ui/po-style/commit/65a17694b9d5d6fd230a281eb109dd85b488470c))
 
 
 ## [18.23.1](https://github.com/po-ui/po-style/compare/v18.23.0...v18.23.1) (2025-01-20)

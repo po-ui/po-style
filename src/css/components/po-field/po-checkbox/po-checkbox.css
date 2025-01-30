@@ -1,4 +1,5 @@
-.po-checkbox {
+.po-checkbox,
+[data-a11y='AAA'] .po-checkbox-aa {
   width: 24px;
   height: 24px;
   box-sizing: border-box;
@@ -14,7 +15,20 @@
   min-height: 24px;
   cursor: pointer;
   position: relative;
-  align-self: flex-start;
+}
+
+.po-checkbox-aa {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.po-checkbox-large {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
 }
 
 .po-checkbox-poicon {
@@ -23,13 +37,6 @@
 
 .po-checkbox-phosphor {
   font-family: Animalia !important;
-}
-
-[p-size='large'] .po-checkbox {
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
-  min-height: 32px;
 }
 
 .po-checkbox:hover {
@@ -50,12 +57,25 @@
 }
 
 .po-checkbox-outline:is(:focus-visible) {
-  outline-width: var(--outline-width-focus-visible);
+  outline-width: var(--outline-width);
 }
 
-.po-checkbox-outline {
+.po-checkbox-outline,
+[data-a11y='AAA'] .po-checkbox-outline-aa {
   display: flex;
   align-items: center;
+  height: 24px;
+  min-height: 24px;
+}
+
+.po-checkbox-outline-aa {
+  height: 16px;
+  min-height: 16px;
+}
+
+.po-checkbox-outline-large {
+  height: 32px;
+  min-height: 32px;
 }
 
 [aria-checked='true'].po-checkbox,
@@ -86,7 +106,7 @@
 
 .container-po-checkbox {
   display: flex;
-  min-height: 24px;
+  min-height: 16px;
   align-items: center;
 }
 

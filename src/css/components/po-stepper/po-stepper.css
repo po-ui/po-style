@@ -243,27 +243,25 @@
   font-weight: var(--font-weight-current);
 }
 
-.po-stepper-step-default .po-stepper-circle-content,
-.po-stepper-step-disabled .po-stepper-circle-content,
-.po-stepper-step-default .po-stepper-circle-content,
-.po-stepper-step-disabled .po-stepper-circle-content-md,
-.po-stepper-step-default .po-stepper-circle-content,
-.po-stepper-step-disabled .po-stepper-circle-content-lg {
+.po-stepper-step-default .po-stepper-circle-content i,
+.po-stepper-step-disabled .po-stepper-circle-content i,
+.po-stepper-step-disabled .po-stepper-circle-content-md i,
+.po-stepper-step-disabled .po-stepper-circle-content-lg i {
   font-size: var(--font-size-circle);
 }
 
-.po-stepper-circle-done .po-stepper-circle-content.po-icon,
-.po-stepper-circle-active .po-stepper-circle-content.po-icon {
+.po-stepper-circle-done .po-stepper-circle-content.po-icon i,
+.po-stepper-circle-active .po-stepper-circle-content.po-icon i {
   font-size: 16px;
 }
 
-.po-stepper-circle-done .po-stepper-circle-content-md.po-icon,
-.po-stepper-circle-active .po-stepper-circle-content-md.po-icon {
+.po-stepper-circle-done .po-stepper-circle-content-md.po-icon i,
+.po-stepper-circle-active .po-stepper-circle-content-md.po-icon i {
   font-size: 24px;
 }
 
-.po-stepper-circle-done .po-stepper-circle-content-lg.po-icon,
-.po-stepper-circle-active .po-stepper-circle-content-lg.po-icon {
+.po-stepper-circle-done .po-stepper-circle-content-lg.po-icon i,
+.po-stepper-circle-active .po-stepper-circle-content-lg.po-icon i {
   font-size: 32px;
 }
 

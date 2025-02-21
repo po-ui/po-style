@@ -2,17 +2,27 @@
   margin-bottom: var(--spacing-xs);
 }
 
+[data-a11y='AAA'] .po-progress-description-aa .po-label,
+.po-progress-info-text,
+[data-a11y='AAA'] .po-progress-info-text-aa {
+  font-size: var(--font-size-default);
+}
+
+.po-progress-description-aa .po-label,
+.po-progress-info-text-aa {
+  font-size: var(--font-size-sm);
+}
+
 .po-progress-info {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  gap: var(--spacing-xs);
 }
 
 .po-progress-info-text {
   font-family: var(--font-family);
   color: var(--color-progress-color-text, var(--text-color));
-  font-size: var(--font-size-default);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-md);
 }
@@ -28,12 +38,10 @@
 
 .po-progress-info-right {
   display: flex;
-  align-items: center;
   gap: var(--spacing-xs);
 }
 
 .po-progress-info-left {
   gap: var(--spacing-xs);
   display: flex;
-  align-items: center;
 }

@@ -473,6 +473,32 @@ po-button-group .po-button {
   --color-chart-line-point-fill: var(--color-neutral-light-00);
 }
 
+po-chart-new .po-chart-header {
+  --color: var(--color-neutral-dark-70);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-xs);
+  --font-weight: var(--font-weight-normal);
+  --border-radius: var(--border-radius-sm);
+}
+
+po-chart-new .po-chart-footer {
+  --color: var(--color-neutral-dark-70);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-xs);
+  --font-weight: var(--font-weight-normal);
+  --border-radius: var(--border-radius-sm);
+}
+
+po-chart-new .po-chart {
+  --background-color-grid: var(--color-neutral-light-20);
+  --color-grid: var(--color-neutral-dark-70);
+  --font-family-grid: var(--font-family-theme);
+  --font-size-grid: var(--font-size-xs);
+  --font-weight-grid: var(--font-weight-normal);
+
+  --color-grid-hover: var(--color-neutral-mid-60);
+}
+
 /*------------------------------------*\
   CHECKBOX
 \*------------------------------------*/

@@ -156,6 +156,30 @@
 }
 
 /*------------------------------------*\
+  BRAND TOKENS - COLORS CATEGORICAL E COLOR OVERLAY
+\*------------------------------------*/
+
+:root {
+  --categorical-01: var(--color-caption-categorical-01);
+  --categorical-02: var(--color-caption-categorical-02);
+  --categorical-03: var(--color-caption-categorical-03);
+  --categorical-04: var(--color-caption-categorical-04);
+  --categorical-05: var(--color-caption-categorical-05);
+  --categorical-06: var(--color-caption-categorical-06);
+  --categorical-07: var(--color-caption-categorical-07);
+  --categorical-08: var(--color-caption-categorical-08);
+
+  --categorical-overlay-01: var(--color-caption-categorical-overlay-01);
+  --categorical-overlay-02: var(--color-caption-categorical-overlay-02);
+  --categorical-overlay-03: var(--color-caption-categorical-overlay-03);
+  --categorical-overlay-04: var(--color-caption-categorical-overlay-04);
+  --categorical-overlay-05: var(--color-caption-categorical-overlay-05);
+  --categorical-overlay-06: var(--color-caption-categorical-overlay-06);
+  --categorical-overlay-07: var(--color-caption-categorical-overlay-07);
+  --categorical-overlay-08: var(--color-caption-categorical-overlay-08);
+}
+
+/*------------------------------------*\
   COLOR PO UI LEGACY - Essas variáveis serão removidas conforme evolução da implementação do AnimaliaDS
 \*------------------------------------*/
 
@@ -470,6 +494,83 @@ po-button-group .po-button {
 
   /* Chart Types */
   --color-chart-line-point-fill: var(--color-neutral-light-00);
+}
+
+po-chart-new .po-chart-header {
+  --background-color: var(--color-neutral-light-00);
+  --color: var(--color-neutral-dark-70);
+  --font-family: var(--font-family-theme);
+  --font-size-title: var(--font-size-default);
+  --font-size-icons: var(--font-size-md);
+  --font-weight: var(--font-weight-bold);
+
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-inline: var(--spacing-sm);
+  padding-top: var(--spacing-xs);
+  width: 100%;
+
+  font-weight: var(--font-weight);
+  background-color: var(--background-color);
+}
+
+po-chart-new .po-chart-header .po-chart-header-title {
+  margin-right: auto;
+  font-family: var(--font-family);
+  font-size: var(--font-size-title);
+  text-overflow: ellipsis;
+  text-align: left;
+  color: var(--color);
+  padding-right: var(--spacing-sm);
+}
+
+po-chart-new .po-chart-header .po-chart-header-actions .po-button:focus {
+  z-index: 10;
+  position: relative;
+}
+
+po-chart-new .po-chart-header .po-chart-header-actions po-button i {
+  font-size: var(--font-size-icons);
+}
+
+po-chart-new .po-chart {
+  --background-color-grid: var(--color-neutral-light-00);
+  --color-grid: var(--color-neutral-light-20);
+  --font-family-grid: var(--font-family-theme);
+  --font-size-grid: var(--font-size-xs);
+  --font-weight-grid: var(--font-weight-normal);
+  --color-legend: var(--color-neutral-dark-70);
+
+  --color-grid-hover: var(--color-neutral-mid-60);
+
+  background-color: var(--background-color-grid);
+  padding-bottom: 16px;
+}
+
+#chart-container {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+#chart-container.expanded {
+  position: fixed;
+  background-color: var(--background-color-grid);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+#chart-container.expanded .po-chart-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
 }
 
 /*------------------------------------*\

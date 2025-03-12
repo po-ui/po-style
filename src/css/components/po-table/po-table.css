@@ -680,3 +680,7 @@ span.po-table-header-icon-ascending svg {
 .po-table-column-detail-toggle i {
   color: var(--color-action-default);
 }
+
+po-table .po-table-column-selectable .po-field-container-content {
+  padding: 0px;
+}

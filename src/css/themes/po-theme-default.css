@@ -1438,6 +1438,10 @@ po-tab-button {
 
   --margin-tabs-container-left: -16px;
   --margin-tabs-container-right: -16px;
+  --padding-tabs-header: var(--spacing-sm);
+
+  --margin-tabs-first-child: var(--spacing-md);
+  --margin-tabs-last-child: var(--spacing-md);
 }
 
 po-tabs po-tab-dropdown po-button {

@@ -1,8 +1,4 @@
 :root {
-  --font-rich-text {
-    @apply --font-text-large;
-  }
-
   --font-rich-text-bold {
     @apply --font-text-large-bold;
   }
@@ -15,8 +11,10 @@
   --rich-text-body-min-height: 94px;
 }
 
-.po-rich-text-body {
-  @apply --font-rich-text;
+.po-rich-text-body,
+[data-a11y='AAA'] .po-rich-text-body-aa {
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-md);
   background-color: var(--color-rich-text-body-background-color);
   border: var(--border-rich-text-body-border);
   border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
@@ -27,6 +25,10 @@
   overflow-y: auto;
   padding: 10px 16px;
   width: 100%;
+}
+
+.po-rich-text-body-aa {
+  font-size: var(--font-size-sm);
 }
 
 po-rich-text-body:only-child .po-rich-text-body {

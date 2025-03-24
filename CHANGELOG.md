@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.6.0](https://github.com/po-ui/po-style/compare/v19.5.1...v19.6.0) (2025-03-24)
+
+
+### Features
+
+* **tabs:** ajusta padding dos po-tabs dentro de po-page-default ([aed6057](https://github.com/po-ui/po-style/commit/aed605754c522a0cdb877638a142d243afde4c48))
+
+
+
 ## [19.5.1](https://github.com/po-ui/po-style/compare/v19.5.0...v19.5.1) (2025-03-17)
 
 Compatibilidade com @po-ui/ng-components@19.5.1

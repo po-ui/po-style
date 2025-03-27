@@ -34,6 +34,8 @@
   display: inline-flex;
   text-align: center;
   width: 100%;
+  background-color: var(--background-item-default);
+  border-radius: var(--border-radius);
 }
 
 .po-tab-button-default:not(.po-tab-button-disabled, .po-tab-dropdown-content):hover {

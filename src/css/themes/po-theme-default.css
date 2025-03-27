@@ -1426,6 +1426,8 @@ po-tab-button {
   --color: var(--color-action-default);
   --border-radius: var(--border-radius-md);
 
+  --background-item-default: var(--color-transparent);
+
   --background-item-selected: var(--color-brand-01-lightest);
 
   --color-hover: var(--color-brand-01-darkest);

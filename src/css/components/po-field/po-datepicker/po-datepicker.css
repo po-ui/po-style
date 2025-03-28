@@ -30,6 +30,11 @@
   z-index: 11;
 }
 
-.po-datepicker-button i {
-  font-size: 1.5rem;
+.po-datepicker-button i,
+[data-a11y='AAA'] .po-datepicker-button-aa i {
+  font-size: var(--font-size-lg);
+}
+
+.po-datepicker-button-aa i {
+  font-size: var(--font-size-default);
 }

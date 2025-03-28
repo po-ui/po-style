@@ -91,19 +91,6 @@
   justify-content: space-between;
 }
 
-.po-modal-header i:before {
-  font-size: 2rem;
-}
-
-.po-modal-header i.an::before {
-  font-size: var(--font-size-lg);
-}
-
-.po-modal-header .po-button {
-  padding: 0;
-  margin: 0;
-}
-
 .po-modal-title {
   color: var(--color-neutral-dark-70);
   display: flex;

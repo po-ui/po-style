@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.7.0](https://github.com/po-ui/po-style/compare/v19.6.0...v19.7.0) (2025-03-31)
+
+
+### Bug Fixes
+
+* **table:** remove padding do select dentro de um po-table ([0e78f80](https://github.com/po-ui/po-style/commit/0e78f807510cc8391a95e53efcc35442616aa45d))
+
+
+### Features
+
+* **components:** ajusta buttons e fields conforme acessibilidade ([e66b912](https://github.com/po-ui/po-style/commit/e66b9122b5cb270291ab4b5f32cdab7c593a9f36))
+* **tabs:** adiciona o token --background-item-default ([4487d71](https://github.com/po-ui/po-style/commit/4487d71c684be60e82ef1951d02cd5fc572fe393))
+
+
+
 # [19.6.0](https://github.com/po-ui/po-style/compare/v19.5.1...v19.6.0) (2025-03-24)
 
 

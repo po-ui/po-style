@@ -22,7 +22,6 @@
   @apply --font-chart-title;
   display: block;
   margin: 0 auto;
-  padding-bottom: 16px;
 }
 
 .po-chart-body {
@@ -191,7 +190,7 @@ po-chart-legend {
 
 @media screen and (min-width: 1024px) {
   .po-chart-header {
-    padding-bottom: 24px;
+    /* padding-bottom: 24px; */
   }
 
   .po-chart-legend {

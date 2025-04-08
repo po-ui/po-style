@@ -156,7 +156,7 @@
 }
 
 /*------------------------------------*\
-  BRAND TOKENS - COLORS CATEGORICAL
+  BRAND TOKENS - COLORS CATEGORICAL E COLOR OVERLAY
 \*------------------------------------*/
 
 :root {
@@ -168,6 +168,15 @@
   --categorical-06: var(--color-caption-categorical-06);
   --categorical-07: var(--color-caption-categorical-07);
   --categorical-08: var(--color-caption-categorical-08);
+
+  --categorical-overlay-01: var(--color-caption-categorical-overlay-01);
+  --categorical-overlay-02: var(--color-caption-categorical-overlay-02);
+  --categorical-overlay-03: var(--color-caption-categorical-overlay-03);
+  --categorical-overlay-04: var(--color-caption-categorical-overlay-04);
+  --categorical-overlay-05: var(--color-caption-categorical-overlay-05);
+  --categorical-overlay-06: var(--color-caption-categorical-overlay-06);
+  --categorical-overlay-07: var(--color-caption-categorical-overlay-07);
+  --categorical-overlay-08: var(--color-caption-categorical-overlay-08);
 }
 
 /*------------------------------------*\

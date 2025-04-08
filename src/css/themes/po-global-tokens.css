@@ -62,6 +62,14 @@ $gridSystemXlMinWidth: 1367px;
   --color-caption-categorical-06: #d44317;
   --color-caption-categorical-07: #4779a8;
   --color-caption-categorical-08: #ad6207;
+  --color-caption-categorical-overlay-01: #739cfd;
+  --color-caption-categorical-overlay-02: #f6b5a1;
+  --color-caption-categorical-overlay-03: #c6a8e6;
+  --color-caption-categorical-overlay-04: #69cab8;
+  --color-caption-categorical-overlay-05: #f3afd9;
+  --color-caption-categorical-overlay-06: #fca58b;
+  --color-caption-categorical-overlay-07: #99bfe3;
+  --color-caption-categorical-overlay-08: #e8b16e;
   --shadow-none: 0 0 0 var(--color-neutral-light-00);
   --shadow-sm: 0 1px 4px 0 color-mix(in srgb, var(--color-neutral-dark-95) 10%, transparent),
     0 0 3px 0 color-mix(in srgb, var(--color-neutral-dark-95) 10%, transparent);

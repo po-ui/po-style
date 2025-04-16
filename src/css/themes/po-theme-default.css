@@ -543,10 +543,16 @@ po-chart-new .po-chart {
   --font-weight-grid: var(--font-weight-normal);
   --color-legend: var(--color-neutral-dark-70);
 
+  --border-radius-bar: var(--border-radius-none);
+
   --color-grid-hover: var(--color-neutral-mid-60);
 
   background-color: var(--background-color-grid);
   padding-bottom: 16px;
+}
+
+po-chart-new #chart-container #custom-tooltip {
+  position: absolute;
 }
 
 #chart-container {

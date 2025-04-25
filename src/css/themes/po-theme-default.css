@@ -523,12 +523,17 @@ po-chart-new .po-chart-header .po-chart-header-title {
   text-overflow: ellipsis;
   text-align: left;
   color: var(--color);
-  padding-right: var(--spacing-sm);
+  padding: 0;
 }
 
 po-chart-new .po-chart-header .po-chart-header-actions .po-button:focus {
   z-index: 10;
   position: relative;
+}
+
+po-chart-new .po-chart-header .po-chart-header-actions {
+  text-align: end;
+  padding: 0;
 }
 
 po-chart-new .po-chart-header .po-chart-header-actions po-button i {

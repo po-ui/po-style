@@ -24,12 +24,12 @@
   border-color: transparent;
   border-style: solid;
   display: flex;
-  gap: 0.25em;
+  gap: 0.25rem;
   justify-content: center;
-  max-width: 15em;
-  min-height: 1.5em;
+  max-width: 15rem;
+  min-height: 1.5rem;
 
-  min-width: 1.5em;
+  min-width: 1.5rem;
   width: max-content;
 }
 
@@ -81,10 +81,10 @@
 
   border-left-style: solid;
   justify-content: center;
-  padding-left: 0.25em;
-  padding-right: 0.25em;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 
-  min-width: 1.5625em;
+  min-width: 1.5625rem;
   overflow: hidden;
 }
 

@@ -1,5 +1,7 @@
 po-label {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .po-label {
@@ -31,6 +33,8 @@ po-label {
   color: var(--text-color-required);
   font-size: var(--font-size-required);
   line-height: var(--line-height-required);
+  white-space: normal;
+  word-break: break-word;
 }
 
 .po-label-requirement::after {

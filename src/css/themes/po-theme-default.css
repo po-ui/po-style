@@ -509,7 +509,6 @@ po-chart-new .po-chart-header {
   flex-wrap: wrap;
   justify-content: flex-end;
   padding-inline: var(--spacing-sm);
-  padding-top: var(--spacing-xs);
   width: 100%;
 
   font-weight: var(--font-weight);
@@ -520,7 +519,10 @@ po-chart-new .po-chart-header .po-chart-header-title {
   margin-right: auto;
   font-family: var(--font-family);
   font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   text-align: left;
   color: var(--color);
   padding: 0;
@@ -547,7 +549,7 @@ po-chart-new .po-chart {
   --font-size-grid: var(--font-size-xs);
   --font-weight-grid: var(--font-weight-normal);
   --color-legend: var(--color-neutral-dark-70);
-
+  --border-color: var(--color-neutral-light-00);
   --border-radius-bar: var(--border-radius-none);
 
   --color-grid-hover: var(--color-neutral-mid-60);

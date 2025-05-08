@@ -1,6 +1,22 @@
 [comment]: # (@label Personalizando o Tema Padrão com Tokens CSS)
 [comment]: # (@link guides/theme-customization)
 
+> **⚠️ Atualização Importante para Versões 18+**  
+> A partir da versão 18.X.X do PO-UI, recomendamos **fortemente** a utilização do `PoThemeService` para todas as customizações de temas, incluindo:
+> 
+> - Tokens globais (cores, tipografia, espaçamentos)  
+> - Estilos específicos por componente  
+> - Gerenciamento de dark/light mode  
+> - Controle de acessibilidade (AA/AAA)  
+> 
+> **Benefícios:**  
+> ✅ Maior consistência visual  
+> ✅ Manutenção simplificada  
+> ✅ Transições suaves entre temas  
+> ✅ Suporte integrado a acessibilidade  
+> 
+> 📚 [Guia completo de Customização de Temas](guides/theme-service)
+
 A partir da versão 1.9.0, o **PO UI** oferece a flexibilidade de personalização do tema padrão. Você pode ajustar várias propriedades como as cores, fonte, tamanho da fonte entre outros. Para isso, basta modificar os valores das variáveis utilizadas no CSS do tema padrão.
 
 ### Como o tema do PO UI funciona

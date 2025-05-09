@@ -1,0 +1,44 @@
+po-chart-new .po-chart-header {
+  align-items: center;
+  background-color: var(--background-color);
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: var(--font-weight);
+  justify-content: flex-end;
+  padding-inline: var(--spacing-sm);
+  padding-top: var(--spacing-xs);
+  width: 100%;
+}
+
+po-chart-new .po-chart-header .po-chart-header-title {
+  color: var(--color);
+  font-family: var(--font-family);
+  font-size: var(--font-size-title);
+  margin-right: auto;
+  padding: 0;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+po-chart-new .po-chart-header .po-chart-header-actions .po-button:focus {
+  position: relative;
+  z-index: 10;
+}
+
+po-chart-new .po-chart-header .po-chart-header-actions {
+  padding: 0;
+  text-align: end;
+}
+
+po-chart-new .po-chart-header .po-chart-header-actions po-button i {
+  font-size: var(--font-size-icons);
+}
+
+po-chart-new .po-chart {
+  background-color: var(--background-color-grid);
+  padding-bottom: 16px;
+}
+
+po-chart-new #chart-container #custom-tooltip {
+  position: absolute;
+}

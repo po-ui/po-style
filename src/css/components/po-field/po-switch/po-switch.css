@@ -146,6 +146,16 @@
   width: inherit;
 }
 
+po-switch:has(.po-switch-aa) po-field-container-bottom .po-field-container-bottom:not(:empty) {
+  display: flex;
+  padding-top: var(--spacing-sm);
+}
+
+po-switch:not(:has(.po-switch-aa)) po-field-container-bottom .po-field-container-bottom:not(:empty) {
+  display: flex;
+  padding-top: var(--font-size-md);
+}
+
 po-page-login .po-switch {
   justify-content: end;
 }

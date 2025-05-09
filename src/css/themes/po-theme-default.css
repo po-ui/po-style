@@ -500,66 +500,20 @@ po-chart-new .po-chart-header {
   --background-color: var(--color-neutral-light-00);
   --color: var(--color-neutral-dark-70);
   --font-family: var(--font-family-theme);
-  --font-size-title: var(--font-size-default);
   --font-size-icons: var(--font-size-md);
+  --font-size-title: var(--font-size-default);
   --font-weight: var(--font-weight-bold);
-
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  padding-inline: var(--spacing-sm);
-  width: 100%;
-
-  font-weight: var(--font-weight);
-  background-color: var(--background-color);
-}
-
-po-chart-new .po-chart-header .po-chart-header-title {
-  margin-right: auto;
-  font-family: var(--font-family);
-  font-size: var(--font-size-title);
-  font-weight: var(--font-weight-bold);
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  text-align: left;
-  color: var(--color);
-  padding: 0;
-}
-
-po-chart-new .po-chart-header .po-chart-header-actions .po-button:focus {
-  z-index: 10;
-  position: relative;
-}
-
-po-chart-new .po-chart-header .po-chart-header-actions {
-  text-align: end;
-  padding: 0;
-}
-
-po-chart-new .po-chart-header .po-chart-header-actions po-button i {
-  font-size: var(--font-size-icons);
 }
 
 po-chart-new .po-chart {
   --background-color-grid: var(--color-neutral-light-00);
+  --border-radius-bar: var(--border-radius-none);
   --color-grid: var(--color-neutral-light-20);
+  --color-grid-hover: var(--color-neutral-mid-60);
+  --color-legend: var(--color-neutral-dark-70);
   --font-family-grid: var(--font-family-theme);
   --font-size-grid: var(--font-size-xs);
   --font-weight-grid: var(--font-weight-normal);
-  --color-legend: var(--color-neutral-dark-70);
-  --border-color: var(--color-neutral-light-00);
-  --border-radius-bar: var(--border-radius-none);
-
-  --color-grid-hover: var(--color-neutral-mid-60);
-
-  background-color: var(--background-color-grid);
-  padding-bottom: 16px;
-}
-
-po-chart-new #chart-container #custom-tooltip {
-  position: absolute;
 }
 
 #chart-container {

@@ -10,6 +10,7 @@
 @import './po-code-editor';
 @import './po-container';
 @import './po-chart';
+@import './po-chart-new'; /* Deletar esta referência quando não for mais necessário. */
 @import './po-disclaimer';
 @import './po-disclaimer-group';
 @import './po-divider';

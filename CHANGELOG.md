@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.11.0](https://github.com/po-ui/po-style/compare/v19.10.0...v19.11.0) (2025-05-09)
+
+
+### Features
+
+* **label:** implementa quebra de linha para textos do requirement ([d31679e](https://github.com/po-ui/po-style/commit/d31679e2ece50d300eaa1452a1a13c595249fa64))
+
+
+
 ## [19.10.0](https://github.com/po-ui/po-style/compare/v19.9.0...v19.10.0) (2025-05-02)
 
 Compatibilidade com @po-ui/ng-components@19.10.0

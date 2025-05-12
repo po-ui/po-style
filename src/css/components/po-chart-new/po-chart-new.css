@@ -6,7 +6,6 @@ po-chart-new .po-chart-header {
   font-weight: var(--font-weight);
   justify-content: flex-end;
   padding-inline: var(--spacing-sm);
-  padding-top: var(--spacing-xs);
   width: 100%;
 }
 
@@ -14,9 +13,12 @@ po-chart-new .po-chart-header .po-chart-header-title {
   color: var(--color);
   font-family: var(--font-family);
   font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
   margin-right: auto;
   padding: 0;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   text-align: left;
 }
 

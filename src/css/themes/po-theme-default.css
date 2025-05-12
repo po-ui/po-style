@@ -511,6 +511,7 @@ po-chart-new .po-chart {
   --color-grid: var(--color-neutral-light-20);
   --color-grid-hover: var(--color-neutral-mid-60);
   --color-legend: var(--color-neutral-dark-70);
+  --border-color: var(--color-neutral-light-00);
   --font-family-grid: var(--font-family-theme);
   --font-size-grid: var(--font-size-xs);
   --font-weight-grid: var(--font-weight-normal);

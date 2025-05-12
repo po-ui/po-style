@@ -1,3 +1,9 @@
+po-chart-new .expanded .po-chart-header {
+  padding-top: var(--spacing-xs);
+  position: relative;
+  z-index: 10;
+}
+
 po-chart-new .po-chart-header {
   align-items: center;
   background-color: var(--background-color);
@@ -7,6 +13,7 @@ po-chart-new .po-chart-header {
   justify-content: flex-end;
   padding-inline: var(--spacing-sm);
   width: 100%;
+  min-height: 44px;
 }
 
 po-chart-new .po-chart-header .po-chart-header-title {

@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.12.0](https://github.com/po-ui/po-style/compare/v19.11.0...v19.12.0) (2025-05-19)
+
+
+### Features
+
+* **switch:** adiciona mensagem de erro de invalid ou required ([19ed0e2](https://github.com/po-ui/po-style/commit/19ed0e2539a612c2260ce89e648c9e01df2c0cb7))
+
+
+### Docs
+
+* **theme:** alteração da documentação de guia ([2885978](https://github.com/po-ui/po-style/commit/2885978df98148031df59501c022e39e7d07e109))
+
+
 # [19.11.0](https://github.com/po-ui/po-style/compare/v19.10.0...v19.11.0) (2025-05-09)
 
 

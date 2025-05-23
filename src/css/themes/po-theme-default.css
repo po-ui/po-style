@@ -496,7 +496,7 @@ po-button-group .po-button {
   --color-chart-line-point-fill: var(--color-neutral-light-00);
 }
 
-po-chart-new .po-chart-header {
+.po-chart-header {
   --background-color: var(--color-neutral-light-00);
   --color: var(--color-neutral-dark-70);
   --font-family: var(--font-family-theme);
@@ -505,7 +505,7 @@ po-chart-new .po-chart-header {
   --font-weight: var(--font-weight-bold);
 }
 
-po-chart-new .po-chart {
+.po-chart {
   --background-color-grid: var(--color-neutral-light-00);
   --color-grid: var(--color-neutral-light-20);
   --font-family-grid: var(--font-family-theme);
@@ -523,30 +523,6 @@ po-chart-new .po-chart {
   --font-weight-hightlight-value: var(--font-weight-bold);
 
   --color-grid-hover: var(--color-neutral-mid-60);
-}
-
-#chart-container {
-  transition: all 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
-}
-
-#chart-container.expanded {
-  position: fixed;
-  background-color: var(--background-color-grid);
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-}
-
-#chart-container.expanded .po-chart-header {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--background-color);
 }
 
 /*------------------------------------*\

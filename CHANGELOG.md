@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.13.0](https://github.com/po-ui/po-style/compare/v19.12.0...v19.13.0) (2025-05-26)
+
+
+### Features
+
+* **table:** adiciona tamanho extraSmall ao p-spacing ([277691c](https://github.com/po-ui/po-style/commit/277691cd2bde27bfa007ee089868e87dfd8ba558))
+* **chart:** implementa Animalia DS no chart tipo column ([1dd3b62](https://github.com/po-ui/po-style/commit/1dd3b62f83b33c6a38e063159cda19d0fd84e45d)) - feature toggle
+* **chart:** implementa Animalia DS no chart tipo area ([fdc4ff4](https://github.com/po-ui/po-angular/commit/fdc4ff472abbe9d5b796c66ff5a3883e26728883)) - feature toggle
+* **chart:** implementa Animalia DS no chart tipo bar ([65f62b5](https://github.com/po-ui/po-style/commit/65f62b568c8c5fa45419c03164827c2b14e3aa34)) - feature toggle
+* **chart:** implementa Animalia DS no chart tipo donut ([ed06596](https://github.com/po-ui/po-style/commit/ed06596ec3f82a8d22ab5a8e561ac4027d844694)) - feature toggle
+* **chart:** implementa Animalia DS no chart tipo line ([59bb58a](https://github.com/po-ui/po-style/commit/59bb58afff2847e269b686703cf978f5f683483c)) - feature toggle
+* **chart:** implementa Animalia DS no chart tipo pie ([175f575](https://github.com/po-ui/po-style/commit/175f5759fa757ed66be04504209b522db8d7a753)) - feature toggle
+
+**Feature Toggle**: Adicione a chave `newChart` com o valor `true` no localStorage do navegador para ativar a nova versão dos gráficos.
+
+A nova versão será habilitada por padrão em breve.
+
+
 # [19.12.0](https://github.com/po-ui/po-style/compare/v19.11.0...v19.12.0) (2025-05-19)
 
 

@@ -487,17 +487,20 @@ po-button-group .po-button {
   CHART
 \*------------------------------------*/
   --color-chart-background-color: var(--color-neutral-light-00);
-  --color-chart-legend-wrapper-scrollbar: var(--color-primary-alpha-50);
+  /*Deprecated v22.x.x utilizar --background-color e --background-color-grid */
   --color-chart-axis-stroke: var(--color-neutral-light-20);
+  /*Deprecated v22.x.x utilizar --color-grid */
   --color-chart-legend-text: var(--color-neutral-dark-70);
+  /*Deprecated v22.x.x utilizar --color-legend */
   --color-chart-axis-label-text: var(--color-neutral-dark-90);
+  /*Deprecated v22.x.x utilizar --text-color-grid */
 
-  /* Chart Types */
-  --color-chart-line-point-fill: var(--color-neutral-light-00);
+  /* --color-chart-legend-wrapper-scrollbar: var(--color-primary-alpha-50); */
+  /* --color-chart-line-point-fill: var(--color-neutral-light-00); */
 }
 
-po-chart-new .po-chart-header {
-  --background-color: var(--color-neutral-light-00);
+po-chart .po-chart-header {
+  --background-color: var(--color-chart-background-color, var(--color-neutral-light-00));
   --color: var(--color-neutral-dark-70);
   --font-family: var(--font-family-theme);
   --font-size-icons: var(--font-size-md);
@@ -505,48 +508,40 @@ po-chart-new .po-chart-header {
   --font-weight: var(--font-weight-bold);
 }
 
-po-chart-new .po-chart {
-  --background-color-grid: var(--color-neutral-light-00);
-  --color-grid: var(--color-neutral-light-20);
+po-chart {
+  --background-color-grid: var(--color-chart-background-color, var(--color-neutral-light-00));
+  --color-description-chart: var(--color-gauge-description-text-color, var(--color-neutral-dark-70));
+  --font-family-description-chart: var(--font-family-theme);
+  --font-size-description-chart: var(--font-size-sm);
+  --font-weight-description-chart: var(--font-weight-normal);
+}
+
+po-chart .po-chart {
+  --color-grid: var(--color-chart-axis-stroke, var(--color-neutral-light-20));
+  --text-color-grid: var(--color-chart-axis-label-text, var(--color-neutral-dark-70));
   --font-family-grid: var(--font-family-theme);
   --font-size-grid: var(--font-size-xs);
   --font-weight-grid: var(--font-weight-normal);
 
-  --color-legend: var(--color-neutral-dark-70);
+  --color-legend: var(--color-chart-legend-text, var(--color-neutral-dark-70));
 
   --border-color: var(--color-neutral-light-00);
   --border-radius-bar: var(--border-radius-none);
 
   --color-hightlight-value: var(--color-neutral-dark-70);
-  --font-size-hightlight-value: var(--font-size-md);
   --font-family-hightlight-value: var(--font-family-theme);
   --font-weight-hightlight-value: var(--font-weight-bold);
 
+  --color-base-gauge: var(--color-gauge-base-color, var(--color-neutral-light-20));
+  --color-gauge-pointer-color: var(--color-neutral-dark-70);
+
   --color-grid-hover: var(--color-neutral-mid-60);
+
+  --color-chart-line-point-fill: var(--color-neutral-light-00);
 }
 
-#chart-container {
-  transition: all 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
-}
-
-#chart-container.expanded {
-  position: fixed;
-  background-color: var(--background-color-grid);
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-}
-
-#chart-container.expanded .po-chart-header {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--background-color);
+po-chart .po-chart-container-gauge {
+  --background-color-container-gauge: var(--color-chart-background-color, var(--color-neutral-light-00));
 }
 
 /*------------------------------------*\
@@ -753,11 +748,13 @@ po-field-container-bottom {
   GAUGE
   \*------------------------------------*/
   --color-gauge-base-color: var(--color-neutral-light-20);
+  /*Deprecated v22.x.x utilizar --color-base-gauge */
   --color-gauge-description-text-color: var(--color-neutral-dark-70);
-  --color-gauge-description-bottom-focus: var(--color-action-default);
-  --color-gauge-legend-scrollbar: var(--color-primary-alpha-50);
-  --color-gauge-legend-text: var(--color-neutral-dark-70);
-  --color-gauge-pointer-color: var(--color-neutral-dark-70);
+  /*Deprecated v22.x.x utilizar --color-subtitle-gauge */
+  /* --color-gauge-description-bottom-focus: var(--color-action-default); */
+  /* --color-gauge-legend-scrollbar: var(--color-primary-alpha-50); */
+  /* --color-gauge-legend-text: var(--color-neutral-dark-70); */
+  /* --color-gauge-pointer-color: var(--color-neutral-dark-70); */
 
   /*------------------------------------*\
   INFO

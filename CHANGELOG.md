@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.14.0](https://github.com/po-ui/po-style/compare/v19.13.0...v19.14.0) (2025-06-02)
+
+
+### Bug Fixes
+
+* **select:** corrige seletor para campos inválidos ([2d481f4](https://github.com/po-ui/po-style/commit/2d481f49bd86e50b5b50b26f43d9fed5e8ee1604))
+
+
+
 # [19.13.0](https://github.com/po-ui/po-style/compare/v19.12.0...v19.13.0) (2025-05-26)
 
 

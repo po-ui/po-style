@@ -494,9 +494,6 @@ po-button-group .po-button {
   /*Deprecated v22.x.x utilizar --color-legend */
   --color-chart-axis-label-text: var(--color-neutral-dark-90);
   /*Deprecated v22.x.x utilizar --text-color-grid */
-
-  /* --color-chart-legend-wrapper-scrollbar: var(--color-primary-alpha-50); */
-  /* --color-chart-line-point-fill: var(--color-neutral-light-00); */
 }
 
 po-chart .po-chart-header {
@@ -745,10 +742,6 @@ po-field-container-bottom {
   /*Deprecated v22.x.x utilizar --color-base-gauge */
   --color-gauge-description-text-color: var(--color-neutral-dark-70);
   /*Deprecated v22.x.x utilizar --color-subtitle-gauge */
-  /* --color-gauge-description-bottom-focus: var(--color-action-default); */
-  /* --color-gauge-legend-scrollbar: var(--color-primary-alpha-50); */
-  /* --color-gauge-legend-text: var(--color-neutral-dark-70); */
-  /* --color-gauge-pointer-color: var(--color-neutral-dark-70); */
 
   /*------------------------------------*\
   INFO

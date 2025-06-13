@@ -63,6 +63,11 @@
   font-family: var(--font-family);
   background: var(--color-combo-background-color-group-title);
   color: var(--color-combo-color-group-title);
+  font-weight: bold;
+}
+
+li[aria-disabled='true']:has(.po-combo-item-title) ~ li.po-listbox-item:not([aria-disabled='true']) {
+  padding: 0 8px;
 }
 
 po-combo .po-combo-container-wrapper {

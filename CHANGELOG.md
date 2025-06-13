@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.16.0](https://github.com/po-ui/po-style/compare/v19.15.0...v19.16.0) (2025-06-13)
+
+
+### Code Refactoring
+
+* **chart:** remove variáveis não utilizadas ([473801e](https://github.com/po-ui/po-style/commit/473801e6df029c5b0eb2d16d9cd68889b73ddd2c))
+
+
+### Features
+
+* **chart:** implementa Animalia DS no tipo gauge ([0cd622d](https://github.com/po-ui/po-style/commit/0cd622d7f0917f6110562b56a84c934d229c39c9))
+
+
+### BREAKING CHANGES
+
+* **chart:** remove variáveis de customização de cores
+
+Remove variáveis para compatibilidade com AnimaliaDS e melhorias
+de acessibilidade, não sendo mais possível a customização.
+
+- `color-chart-legend-wrapper-scrollbar`
+- `color-gauge-description-bottom-focus`
+- `color-gauge-legend-scrollbar`
+- `color-gauge-legend-text`
+
+
+
 ## [19.15.0](https://github.com/po-ui/po-style/compare/v19.14.0...v19.15.0) (2025-06-09)
 
 Compatibilidade com @po-ui/ng-components@19.15.0

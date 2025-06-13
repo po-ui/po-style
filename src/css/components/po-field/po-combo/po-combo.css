@@ -66,6 +66,10 @@
   font-weight: bold;
 }
 
+li[aria-disabled='true']:has(.po-combo-item-title) ~ li.po-listbox-item:not([aria-disabled='true']) {
+  padding: 0 8px;
+}
+
 po-combo .po-combo-container-wrapper {
   position: relative;
 }

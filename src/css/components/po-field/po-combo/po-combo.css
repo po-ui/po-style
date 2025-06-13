@@ -63,6 +63,7 @@
   font-family: var(--font-family);
   background: var(--color-combo-background-color-group-title);
   color: var(--color-combo-color-group-title);
+  font-weight: bold;
 }
 
 po-combo .po-combo-container-wrapper {

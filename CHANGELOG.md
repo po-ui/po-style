@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.17.0](https://github.com/po-ui/po-style/compare/v19.16.0...v19.17.0) (2025-06-18)
+
+
+### Features
+
+* **combo:** adiciona espaçamento e bold no no item agrupador ([a067628](https://github.com/po-ui/po-style/commit/a067628b24b54ac05c3b4d7260073d75be0ff6a3))
+
+
+
 # [19.16.0](https://github.com/po-ui/po-style/compare/v19.15.0...v19.16.0) (2025-06-13)
 
 

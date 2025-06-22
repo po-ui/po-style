@@ -210,7 +210,7 @@
 .po-clickable.po-tag-wrapper,
 .po-click.po-tag-wrapper {
   min-width: 44px;
-  min-height: 44px;
+  min-height: var(--spacing-md);
   display: flex;
   align-items: center;
   justify-content: center;

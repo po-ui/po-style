@@ -13,7 +13,11 @@
 }
 
 .po-upload-progress-container {
-  padding-top: 16px;
+  padding-top: var(--spacing-sm);
+}
+
+[data-a11y='AA'] [p-size='small'] .po-upload-progress-container {
+  padding-top: var(--focus-aaa);
 }
 
 .po-upload-progress-container .po-container-content {

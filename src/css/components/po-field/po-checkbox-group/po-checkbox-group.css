@@ -29,3 +29,7 @@ po-checkbox-group.ng-invalid.ng-dirty .po-checkbox:not([aria-disabled='true']) {
   row-gap: var(--spacing-md);
   width: 100%;
 }
+
+[data-a11y='AA'] [p-size='small'] .po-checkbox-group-content ul {
+  row-gap: var(--spacing-xs);
+}

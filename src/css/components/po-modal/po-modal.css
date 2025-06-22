@@ -6,6 +6,10 @@
   --font-modal-title: {
     @apply --font-subtitle;
   }
+
+  --default-padding: var(--default-spacing-xs) var(--default-spacing-sm);
+  --default-padding-body: var(--default-spacing-sm) var(--default-spacing-xl) var(--default-spacing-xl)
+    var(--default-spacing-sm);
 }
 
 .po-modal {
@@ -83,6 +87,7 @@
 
 .po-modal-header {
   @apply --font-modal-title;
+  letter-spacing: var(--letter-spacing-auto);
   border: 0;
   max-width: 100%;
   padding: var(--padding-header);

@@ -80,6 +80,7 @@ $gridSystemXlMinWidth: 85.4375rem;
   --shadow-xl: 0 1rem 1.5rem 0 color-mix(in srgb, var(--color-neutral-dark-95) 10%, transparent),
     0 0 0.1875rem 0 color-mix(in srgb, var(--color-neutral-dark-95) 10%, transparent);
 
+  --spacing-xxs: 0.25rem;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;

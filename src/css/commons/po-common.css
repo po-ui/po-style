@@ -92,7 +92,6 @@
 .po-wrapper .po-page {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
   height: 100vh;
   transition: all 0.2s ease;
   white-space: normal;

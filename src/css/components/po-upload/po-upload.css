@@ -13,7 +13,11 @@
 }
 
 .po-upload-progress-container {
-  padding-top: 16px;
+  padding-top: var(--spacing-sm);
+}
+
+[data-a11y='AA'] .po-upload[p-size='small'] .po-upload-progress-container {
+  padding-top: var(--spacing-xxs);
 }
 
 .po-upload-progress-container .po-container-content {
@@ -22,5 +26,5 @@
 
 .po-upload-send-button {
   display: block;
-  padding: 8px 0;
+  padding-top: 8px;
 }

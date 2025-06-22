@@ -26,7 +26,7 @@
   display: block;
   height: auto;
   overflow-y: auto;
-  padding: var(--padding, var(--spacing-sm));
+  padding: var(--padding, var(--po-density-content-padding, var(--default-spacing-xs, var(--spacing-sm))));
   width: 100%;
 }
 

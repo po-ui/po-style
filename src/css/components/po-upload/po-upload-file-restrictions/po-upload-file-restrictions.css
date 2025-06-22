@@ -1,5 +1,9 @@
 .po-upload-file-restrictions {
   color: var(--color-upload-file-restrictions-color-text);
   display: block;
-  padding: 16px 0 8px 0;
+  padding: var(--spacing-sm) 0 var(--spacing-xs) 0;
+}
+
+[data-a11y='AA'] .po-upload[p-size='small'] .po-upload-file-restrictions {
+  padding: var(--spacing-xs) 0 0 0;
 }

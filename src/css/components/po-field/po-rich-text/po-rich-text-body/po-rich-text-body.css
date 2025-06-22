@@ -11,8 +11,7 @@
   --rich-text-body-min-height: 94px;
 }
 
-.po-rich-text-body,
-[data-a11y='AAA'] .po-rich-text-body-aa {
+.po-rich-text-body {
   font-size: var(--font-size-default);
   line-height: var(--line-height-md);
   background-color: var(--color-rich-text-body-background-color);
@@ -23,12 +22,13 @@
   min-height: var(--rich-text-body-min-height);
   min-width: var(--rich-text-body-min-width);
   overflow-y: auto;
-  padding: 10px 16px;
+  padding: var(--spacing-sm);
   width: 100%;
 }
 
-.po-rich-text-body-aa {
+[data-a11y='AA'] [p-size='small'] .po-rich-text-body {
   font-size: var(--font-size-sm);
+  padding: var(--spacing-xs);
 }
 
 po-rich-text-body:only-child .po-rich-text-body {

@@ -6,10 +6,10 @@
   border-style: solid;
   border-width: var(--border-width-sm);
   display: flex;
-  gap: 0.25em;
+  gap: 0.25rem;
   justify-content: center;
-  max-width: 15em;
-  min-height: 1.5em;
+  max-width: 15rem;
+  min-height: 1.5rem;
   padding-left: var(--spacing-xs);
 }
 
@@ -44,10 +44,10 @@
   border-left-width: var(--border-width-sm);
   border-top-right-radius: var(--border-radius);
   color: var(--color-icon);
-  min-width: 1.5625em;
+  min-width: 1.5625rem;
   overflow: hidden;
-  padding-left: 0.25em;
-  padding-right: 0.25em;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .po-disclaimer-remove-danger {
@@ -75,7 +75,7 @@
 }
 
 .po-disclaimer-remove-all {
-  padding-right: 0.5em;
+  padding-right: 0.5rem;
 }
 
 .po-disclaimer-danger {

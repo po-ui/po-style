@@ -10,7 +10,7 @@
   font-size: var(--font-size);
   font-family: var(--font-family);
 
-  min-height: 2.75em;
+  min-height: 2.75rem;
 
   border: none;
   display: flex;

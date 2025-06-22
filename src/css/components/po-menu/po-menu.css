@@ -80,7 +80,7 @@
   position: relative;
   width: 100%;
 
-  min-height: 2.75em;
+  min-height: 2.75rem;
   display: flex;
   align-items: center;
 }
@@ -112,7 +112,7 @@
   border-top-style: solid;
   border-top-color: var(--border-color);
 
-  max-height: 2.75em;
+  max-height: 2.75rem;
 }
 
 .po-menu-footer i.an {
@@ -127,7 +127,7 @@
   color: var(--color);
 
   letter-spacing: var(--letter-spacing-auto);
-  min-height: 2.75em;
+  min-height: 2.75rem;
 
   font-weight: var(--font-weight-lvl0);
 
@@ -136,7 +136,7 @@
   align-items: center;
   display: flex;
   flex-wrap: nowrap;
-  gap: 1em;
+  gap: 1rem;
   justify-content: space-between;
   position: relative;
   word-break: break-all;

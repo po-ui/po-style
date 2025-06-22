@@ -77,7 +77,7 @@
 .po-dropdown-icon,
 [data-a11y='AAA'] .po-dropdown-icon-aa {
   font-size: var(--font-size-lg);
-  margin-left: 0.5em;
+  margin-left: 0.5rem;
   display: flex;
 }
 

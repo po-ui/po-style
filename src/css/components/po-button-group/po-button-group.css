@@ -65,7 +65,7 @@
   outline-color: var(--color-action-focus);
   outline-width: var(--outline-width);
   outline-style: solid;
-  outline-offset: 0.125em;
+  outline-offset: 0.125rem;
   cursor: pointer;
 }
 

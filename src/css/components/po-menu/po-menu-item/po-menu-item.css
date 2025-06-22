@@ -21,7 +21,7 @@
   background-color: var(--background-color);
 
   letter-spacing: var(--letter-spacing-auto);
-  min-height: 2.75em;
+  min-height: 2.75rem;
 
   font-weight: var(--font-weight-lvl0);
 
@@ -29,7 +29,7 @@
 
   align-items: center;
   display: flex;
-  gap: 1em;
+  gap: 1rem;
   justify-content: flex-start;
   position: relative;
   word-break: break-word;
@@ -75,7 +75,7 @@
 }
 
 .po-menu-item-selected:after {
-  width: 0.25em;
+  width: 0.25rem;
 }
 
 .po-menu-item-level-two {

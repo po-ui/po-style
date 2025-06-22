@@ -60,7 +60,7 @@
 }
 
 .po-stepper-vertical .po-stepper-step-wrapper {
-  min-height: 5.6em;
+  min-height: 5.6rem;
 }
 
 .po-stepper-horizontal .po-stepper-step-position-center {
@@ -95,7 +95,7 @@
 .po-stepper-circle-content {
   display: flex;
   justify-content: center;
-  padding: 0.25em;
+  padding: 0.25rem;
   align-items: center;
   height: 100%;
 }
@@ -163,14 +163,14 @@
 .po-stepper-label-vertical {
   white-space: normal;
   word-wrap: break-word;
-  max-width: 15em;
+  max-width: 15rem;
 }
 
 .po-stepper-horizontal .po-stepper-label {
   display: list-item;
-  padding-top: 0.25em;
+  padding-top: 0.25rem;
   padding-right: var(--spacing-lg);
-  max-width: 15em;
+  max-width: 15rem;
 }
 
 .po-stepper-horizontal .po-stepper-label-center {
@@ -179,13 +179,13 @@
 
 .po-stepper-vertical .po-stepper-step-label-position {
   padding-left: var(--spacing-sm);
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   height: 100%;
 }
 
 .po-stepper-horizontal .po-stepper-step-label-position {
-  max-width: 15em;
+  max-width: 15rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

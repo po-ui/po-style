@@ -58,8 +58,8 @@
   margin-right: 6px;
 }
 
-.po-page-filter-content-aa {
-  padding: 8px 0px;
+[data-a11y='AA'] [p-components-size='small'] .po-page-filter-content {
+  margin-top: var(--spacing-xs);
 }
 
 .po-page-list-filter-search {
@@ -84,7 +84,8 @@
 }
 
 .po-page-filter-content {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: var(--filter-content-width);
 }
 

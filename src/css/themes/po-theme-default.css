@@ -729,7 +729,7 @@ po-dynamic-container po-container {
 po-field-container-bottom {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-sm);
-  --line-height: var(--line-height-md);
+  --line-height: var(--line-height);
   --text-color-help: var(--color-neutral-dark-90);
 
   --text-color-help-disabled: var(--color-neutral-mid-60);

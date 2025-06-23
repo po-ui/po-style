@@ -33,7 +33,6 @@
     display: block;
     word-break: break-word;
     line-height: var(--line-height-md);
-    font-size: var(--default-font-size-sm, var(--font-size-default));
 
     &-horizontal {
       display: table-cell;

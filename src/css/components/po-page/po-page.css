@@ -2,4 +2,6 @@
   background-color: var(--color-page-background-color-page);
   height: 100%;
   width: 100%;
+  display: grid;
+  gap: var(--po-density-gap-header-content, var(--default-spacing-0, var(--spacing-md)));
 }

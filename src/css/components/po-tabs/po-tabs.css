@@ -27,7 +27,7 @@ po-page-default .po-tabs-container {
 }
 
 .po-tabs-content {
-  padding-top: 8px;
+  padding-top: var(--po-density-gap-header-content, var(--spacing-xs));
 }
 
 .po-page-content .po-tabs-content {

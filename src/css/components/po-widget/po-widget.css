@@ -63,7 +63,7 @@
 .po-widget-primary .po-widget-header {
   @apply --font-widget-font-title;
   height: auto;
-  padding: var(--padding);
+  padding: var(--po-density-header-padding, var(--padding, var(--default-spacing-xs, var(--spacing-sm))));
   text-align: left;
 }
 
@@ -130,7 +130,7 @@
 .po-widget .po-widget-action,
 .po-widget-primary .po-widget-action {
   display: block;
-  padding: var(--padding);
+  padding: var(--po-density-content-padding, var(--padding, var(--default-spacing-xs, var(--spacing-sm))));
   text-align: center;
   text-decoration: none;
 
@@ -175,6 +175,6 @@
 @media screen and (max-width: 1366px) {
   .po-widget-header,
   .po-widget-primary .po-widget-header {
-    padding: var(--padding);
+    padding: var(--po-density-header-padding, var(--padding, var(--default-spacing-xs, var(--spacing-sm))));
   }
 }

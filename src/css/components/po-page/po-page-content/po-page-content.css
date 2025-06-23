@@ -1,7 +1,12 @@
 .po-page-content {
   max-height: 100%;
   overflow-y: auto;
-  padding: var(--padding-content);
+  /* Definir estilo quando remover o padding depreciado
+  padding: var(--po-density-content-padding, var(--spacing-xs) var(--spacing-sm)); */
+  padding: var(
+    --po-density-content-padding,
+    var(--padding-content, var(--spacing-xs) var(--spacing-sm))
+  ); /*Deprecated v20.x.x*/
   position: relative;
   width: 100%;
 }

@@ -13,11 +13,19 @@
 }
 
 .po-field-container-bottom {
-  line-height: var(--line-height);
+  line-height: var(--default-line-height-xs, var(--line-height-md));
   font-family: var(--font-family);
   font-size: var(--font-size);
 
   font-weight: var(--font-weight-normal);
+}
+
+.po-field-container-bottom:empty {
+  padding-bottom: var(--default-spacing-0, var(--spacing-xs));
+}
+
+.po-field-container-bottom:not(:empty) {
+  padding-bottom: var(--default-spacing-xs, var(--spacing-sm));
 }
 
 .po-icon-container {
@@ -86,7 +94,6 @@ po-field-container-bottom .po-field-container-bottom {
 
 .po-field-container-error-container {
   display: block;
-  margin-top: 4px;
 }
 
 .po-field-container-error-text {

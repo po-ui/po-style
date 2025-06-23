@@ -5,7 +5,7 @@
 
 .po-dynamic-container {
   display: grid;
-  gap: var(--gap);
+  gap: var(--gap, var(--po-density-gap-spacing, var(--default-spacing-xs, var(--spacing-md))));
   width: 100%;
 
   --font-family-dynamic: var(--font-family);
@@ -25,4 +25,12 @@
   --letter-spacing: var(--letter-spacing-dynamic);
   --text-color: var(--text-color-dynamic);
   --margin: var(--margin-dynamic);
+}
+
+.po-dynamic-container .po-container .po-container-content {
+  padding: var(--po-density-content-padding, var(--default-spacing-xs, var(--spacing-md)));
+}
+
+po-dynamic-view .po-info-value {
+  font-size: var(--font-size-default);
 }

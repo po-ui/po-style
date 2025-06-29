@@ -1370,6 +1370,7 @@ po-search {
   --color-icon: var(--color-action-default);
 
   --color-clear: var(--color-action-default);
+  --color-controls: var(--color-action-default);
 
   --color-hover: var(--color-action-hover);
   --background-hover: var(--color-brand-01-lightest);
@@ -1385,6 +1386,10 @@ po-search {
   --background-select: var(--background);
   --background-select-hover: var(--background-hover);
   --background-select-disabled: var(--background-disabled);
+
+  --transition-property: all;
+  --transition-duration: var(--duration-extra-fast);
+  --transition-timing: var(--timing-standart);
 }
 
 /*------------------------------------*\

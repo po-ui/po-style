@@ -14,12 +14,22 @@
   flex-wrap: wrap;
   line-height: normal;
   min-height: var(--target-size-aaa);
+  height: var(--target-size-aaa);
   overflow: hidden;
+}
+
+.po-multiselect-input.po-multiselect-input-static {
+  max-height: var(--target-size-aaa);
 }
 
 .po-multiselect-input-aa {
   min-height: var(--target-size-aa);
+  height: var(--target-size-aa);
   padding: 0.2rem 2rem 0.2rem 0.5rem;
+}
+
+.po-multiselect-input-aa.po-multiselect-input-static {
+  max-height: var(--target-size-aa);
 }
 
 .po-multiselect-input-placeholder,

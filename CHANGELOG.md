@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.19.0](https://github.com/po-ui/po-style/compare/v19.18.0...v19.19.0) (2025-07-07)
+
+
+### Bug Fixes
+
+* **multiselect:** adiciona max-height ao input ([5d51c6a](https://github.com/po-ui/po-style/commit/5d51c6a734eb8de42ee778262a18435b28bf0d64))
+
+
+
 ## [19.18.0](https://github.com/po-ui/po-style/compare/v19.17.1...v19.18.0) (2025-06-30)
 
 Compatibilidade com @po-ui/ng-components@19.18.0

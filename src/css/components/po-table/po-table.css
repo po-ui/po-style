@@ -207,7 +207,6 @@
 
 .po-table .po-table-column-single-action {
   text-align: center;
-  display: flex;
 }
 
 .po-table:not(.po-table-text-wrap-enabled) .po-table-column-single-action {
@@ -222,14 +221,19 @@
   /*color: var(--color-table-color-actions, var(--color));*/
   color: var(--color-action-default);
   font-weight: bold;
-  display: flex;
-  text-align: center;
-  margin: auto;
+  display: inline-flex;
+  line-height: var(--line-height-none);
+  vertical-align: top;
+}
+
+.po-table-single-action.po-clickable po-icon {
+  font-size: var(--font-size-lg);
 }
 
 .po-table-single-action.po-clickable span {
   text-decoration: underline;
   padding-left: var(--focus-aaa);
+  line-height: var(--line-height-md);
 }
 
 .po-table .po-table-single-action:not(.po-table-action-disabled):hover {

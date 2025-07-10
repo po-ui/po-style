@@ -28,7 +28,7 @@
 .po-table > thead.po-table-header-sticky {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .table {
@@ -636,6 +636,7 @@ span.po-table-header-icon-ascending svg {
 }
 
 .po-table-column-fixed {
+  z-index: 1;
   position: sticky;
   box-shadow: rgba(29, 36, 38, 0.25) 3px 0px 2.6px;
 }

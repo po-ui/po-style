@@ -198,7 +198,8 @@
   text-overflow: ellipsis;
 }
 
-.po-table-header-single-action {
+.po-table-header-single-action,
+.po-table-column-single-action {
   max-width: 120px;
   min-width: 120px;
   width: 120px;
@@ -206,6 +207,8 @@
 
 .po-table .po-table-column-single-action {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .po-table:not(.po-table-text-wrap-enabled) .po-table-column-single-action {
@@ -219,8 +222,14 @@
 .po-table .po-table-single-action {
   /*color: var(--color-table-color-actions, var(--color));*/
   color: var(--color-action-default);
-  text-decoration: underline;
   font-weight: bold;
+  display: flex;
+  text-align: center;
+}
+
+.po-table-single-action.po-clickable span {
+  text-decoration: underline;
+  padding-left: var(--focus-aaa);
 }
 
 .po-table .po-table-single-action:not(.po-table-action-disabled):hover {
@@ -237,11 +246,11 @@
 .po-table-column-actions {
   color: var(--color);
   cursor: default;
-  max-width: 56px;
-  min-width: 56px;
+  max-width: var(--spacing-3xl);
+  min-width: var(--spacing-3xl);
   position: relative;
   text-align: center;
-  width: 56px;
+  width: var(--spacing-3xl);
 }
 
 .po-table-column-icons po-table-column-icon {

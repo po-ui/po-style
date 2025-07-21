@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.20.0](https://github.com/po-ui/po-style/compare/v19.19.0...v19.20.0) (2025-07-21)
+
+
+### Bug Fixes
+
+* **table:** corrige alinhamento do ícone e label da ação única ([cba6075](https://github.com/po-ui/po-style/commit/cba607521dede0e1e5c572cb4094ea5ddd59869e))
+* **table:** corrige sobreposição de colunas fixas com template cell ([a671d0d](https://github.com/po-ui/po-style/commit/a671d0d2cc0647310c0c9688c5d0e399c2e79ab2))
+
+
+
 ## [19.19.0](https://github.com/po-ui/po-style/compare/v19.18.0...v19.19.0) (2025-07-07)
 
 

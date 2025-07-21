@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [17.26.27](https://github.com/po-ui/po-style/compare/v17.26.26...v17.26.27) (2025-07-21)
+
+
+### Bug Fixes
+
+* **table:** corrige sobreposição de colunas fixas com template cell ([d839b05](https://github.com/po-ui/po-style/commit/d839b05580d622ac3fb11e6370db8faa2cc93eee))
+
+
 ## [17.26.26](https://github.com/po-ui/po-style/compare/v17.26.25...v17.26.26) (2025-07-07)
 
 Compatibilidade com @po-ui/ng-components@17.26.26

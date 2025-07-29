@@ -1,6 +1,6 @@
 /* Classe que possibilita colocar o botão de clean na mesma linha, */
 .po-field-container-content {
-  padding: var(--padding);
+  padding: var(--spacing-xxs) 0 var(--spacing-xs) 0;
   position: relative;
   width: 100%;
 }
@@ -27,4 +27,6 @@
 .po-field-container-input {
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
 }

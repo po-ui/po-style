@@ -209,12 +209,9 @@
   margin-bottom: var(--spacing-xs);
   margin-right: 6px;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   width: var(--filter-content-width);
-}
-
-.po-lookup-filter-content .po-field-icon-container-right {
-  top: 50%;
 }
 
 .po-lookup-advanced-search {

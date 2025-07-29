@@ -24,6 +24,10 @@
   border-radius: 10px;
 }
 
+.po-page-content .po-table-actions {
+  padding-block: 0 var(--spacing-xs);
+}
+
 @media print {
   .po-page-content {
     overflow-y: visible;

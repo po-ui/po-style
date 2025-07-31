@@ -26,7 +26,7 @@
   display: block;
   height: auto;
   overflow-y: auto;
-  padding: var(--padding);
+  padding: var(--padding, var(--spacing-sm));
   width: 100%;
 }
 

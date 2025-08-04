@@ -45,9 +45,9 @@
   border-width: var(--border-width-sm);
   border-radius: var(--border-radius);
 
-  height: 1em;
-  max-width: 1.25em;
-  min-width: 1em;
+  height: 1rem;
+  max-width: 1.25rem;
+  min-width: 1rem;
 }
 
 .po-badge-notification span {

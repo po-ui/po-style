@@ -1831,3 +1831,58 @@ po-toaster {
   --background-info: var(--color-feedback-info-lightest);
   --border-color-info: var(--color-feedback-info-lighter);
 }
+
+po-header {
+  --header-height: 3.5rem;
+  /* base */
+  --background-color: var(--color-neutral-light-05);
+  --border-radius-bottom-left: var(--border-radius-md);
+  --border-radius-bottom-right: var(--border-radius-md);
+  --base-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+
+  /* title */
+  --font-family: var(--font-family-theme);
+  --font-weight: var(--font-weight-bold);
+  --text-color: var(--color-neutral-dark-70);
+
+  /* submenus */
+  --border-radius: var(--border-radius-md);
+  --text-color-submenu: var(--color-brand-01-base);
+  --icon-color: var(--color-brand-01-base);
+  --outline-color-focused: var(--color-neutral-dark-95);
+  /* submenus hover */
+  --background-hover: var(--color-brand-01-lighter);
+  --icon-color-hover: var(--color-brand-01-darkest);
+  --text-color-hover: var(--color-brand-01-darkest);
+  /* submenus pressed */
+  --background-pressed: var(--color-brand-01-light);
+  --icon-color-pressed: var(--color-brand-01-darkest);
+  --text-color-pressed: var(--color-brand-01-darkest);
+
+  /* selected */
+  --background-selected: var(--color-brand-01-light);
+  --text-color-selected: var(--color-brand-01-darkest);
+  --icon-color-selected: var(--color-neutral-dark-95);
+
+  /*customer  */
+  --background-color-customer: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-10);
+  --border-style: solid;
+  --border-width: var(--border-width-sm);
+  /* customer hover */
+  --background-color-customer-hover: var(--color-brand-01-lighter);
+  /* customer pressed */
+  --background-color-customer-pressed: var(--color-brand-01-light);
+  /* focus */
+
+  --object-fit-brand: contain;
+  --object-fit-customer: contain;
+  --object-fit-customer-user: cover;
+
+  --nav-position: fixed;
+  --nav-position-top: 0;
+  --nav-overlay-top: 56px;
+  --nav-overlay-left: 0px;
+  --nav-menu-top: 56px;
+  --nav-menu-left: 0px;
+}

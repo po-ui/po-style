@@ -103,3 +103,52 @@
 .po-tab-dropdown-content .po-icon {
   font-size: 1.5rem;
 }
+
+.po-tab-button .po-context-tab-button-label,
+[data-a11y='AAA'] .po-tab-button-aa .po-context-tab-button-label {
+  padding-left: 1rem;
+  padding-right: var(--target-size-aaa);
+}
+
+.po-tab-button-aa .po-context-tab-button-label {
+  padding-right: var(--target-size-aa);
+}
+
+.po-tab-button-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.po-tab-button .po-tab-button-content-close-icon,
+[data-a11y='AAA'] .po-tab-button-aa .po-tab-button-content-close-icon {
+  right: 0;
+  width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+
+.po-tab-button-aa .po-tab-button-content-close-icon {
+  width: var(--target-size-aa);
+  height: var(--target-size-aa);
+}
+
+.po-tab-button-icon-close:focus-visible {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.po-tab-button-icon-close {
+  align-items: center;
+  display: flex;
+}
+
+.po-tab-button-icon-close i {
+  font-size: 16px;
+  display: block;
+}

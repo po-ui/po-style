@@ -1475,6 +1475,7 @@ po-switch {
   --color-checked-disabled: var(--color-action-disabled);
 }
 
+po-context-tabs,
 po-tabs,
 po-tab-button {
   --background: var(--color-transparent);

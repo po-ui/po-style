@@ -216,6 +216,6 @@ po-container .po-widget-body {
   visibility: hidden;
 }
 
-po-widget .po-container-content {
+po-widget .po-container-content:not(.po-widget-body .po-container-content):first-of-type {
   padding: var(--padding-body, var(--padding, var(--spacing-xs) var(--spacing-sm) var(--spacing-xs) var(--spacing-sm)));
 }

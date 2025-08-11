@@ -1752,6 +1752,7 @@ po-widget {
   --font-size: var(--font-size-default);
   --font-weight: var(--font-weight-bold);
   --font-color: var(--color-neutral-dark-95);
+  --padding: var(--padding); /*Deprecated v21.x.x utilizar --padding-header, --padding-body, e --padding-footer*/
 
   --border-radius: var(--border-radius-md);
   --border-color: var(--color-neutral-light-20);

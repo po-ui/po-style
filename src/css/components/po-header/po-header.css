@@ -123,8 +123,18 @@ img {
 
 .po-header-nav-submenu-more:active .po-header-nav-submenu-button-more,
 .po-header-nav-submenu-more .po-header-nav-submenu-button-more.open,
-.po-header-nav-submenu:active .po-header-nav-submenu-button {
+.po-header-nav-submenu:active .po-header-nav-submenu-button,
+.po-header-nav-submenu-button.submenu-item-selected {
   background: var(--background-pressed);
+  color: var(--text-color-pressed);
+}
+
+.po-header-selected-tool {
+  background: var(--background-pressed);
+  border-radius: var(--border-radius-md);
+}
+
+.po-header-selected-tool po-icon i {
   color: var(--text-color-pressed);
 }
 
@@ -291,7 +301,7 @@ po-header-customer .po-popover-content {
   padding: 1rem;
   transform: translateX(-100%);
   transition: transform 0.5s ease;
-  border-radius: var(--border-radius-md);
+  border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
   z-index: 5;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
 }

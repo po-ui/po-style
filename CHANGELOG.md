@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.23.0](https://github.com/po-ui/po-style/compare/v19.22.0...v19.23.0) (2025-08-14)
+
+
+### BREAKING CHANGES
+
+* **widget:** deprecia variável --padding ([aef995c])(https://github.com/po-ui/po-style/commit/aef995c89213556e7e709e1e2aa128b446642bb2)
+A variável --padding está depreciada e será removida na v21 da biblioteca.
+
+Utilizar --padding-header, --padding-body, e --padding-footer.
+
+
+### Features
+
+* **widget:** implementa definições do AnimaliaDS ([0f985c2](https://github.com/po-ui/po-style/commit/0f985c233d1195d7127728758cc3f57eff81d6d8))
+
+
 ## [19.22.0](https://github.com/po-ui/po-style/compare/v19.21.0...v19.22.0) (2025-08-04)
 
 Compatibilidade com @po-ui/ng-components@19.22.0

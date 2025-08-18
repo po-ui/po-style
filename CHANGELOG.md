@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.24.0](https://github.com/po-ui/po-style/compare/v19.23.0...v19.24.0) (2025-08-18)
+
+
+### Features
+
+* **context-tabs:** novo componente ([f98cb38](https://github.com/po-ui/po-style/commit/f98cb38203806bb4098f6402052653f44cf230fb))
+
+
+
 # [19.23.0](https://github.com/po-ui/po-style/compare/v19.22.0...v19.23.0) (2025-08-14)
 
 

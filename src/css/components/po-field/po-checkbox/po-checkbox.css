@@ -63,6 +63,7 @@
 .po-checkbox-outline {
   display: flex;
   align-items: center;
+  min-width: 0;
 }
 
 [aria-checked='true'].po-checkbox,
@@ -161,4 +162,13 @@
 
 po-checkbox.ng-invalid.ng-dirty .po-checkbox-input + .po-checkbox-label:before {
   border: solid 1px var(--color-feedback-negative-base);
+}
+
+po-checkbox .po-checkbox-helper {
+  padding: 0 0.5rem;
+}
+
+po-checkbox po-label.po-checkbox-label {
+  min-width: 4ch;
+  overflow: hidden;
 }

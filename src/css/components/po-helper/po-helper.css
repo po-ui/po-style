@@ -1,0 +1,46 @@
+[data-a11y='AAA'] po-helper,
+[data-a11y='AA'] po-helper .po-helper-container[p-size='medium'] {
+  --font-size: 24px;
+}
+
+[data-a11y='AA'] po-helper {
+  --font-size: 16x;
+}
+
+.po-helper-container po-icon {
+  font-size: var(--font-size);
+  color: var(--color);
+  line-height: 0;
+}
+
+.po-helper-container .po-helper-target {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.po-helper-container po-icon:hover {
+  color: var(--color-hover);
+}
+
+.po-helper-container .po-helper-target:focus-visible {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+}
+
+.po-helper-container .po-popover {
+  min-height: unset !important;
+}
+
+.po-helper-container .po-popover .po-popover-content {
+  max-width: 386px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+po-helper po-popover .po-popover {
+  transform: translateY(-4px);
+}

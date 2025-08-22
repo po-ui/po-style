@@ -18,6 +18,7 @@
 @import './po-field';
 @import './po-gauge';
 @import './po-grid';
+@import './po-helper';
 @import './po-info';
 @import './po-listbox';
 @import './po-list-view';

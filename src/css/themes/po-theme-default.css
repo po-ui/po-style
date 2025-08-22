@@ -558,6 +558,10 @@ po-checkbox {
   --color-checked-disabled: var(--color-neutral-dark-70);
 }
 
+po-helper {
+  --color-hover: var(--color-action-hover);
+  --color: var(--color-action-default);
+}
 :root {
   /*------------------------------------*\
   CHECKBOX GROUP

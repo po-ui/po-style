@@ -38,3 +38,11 @@
 .po-datepicker-button-aa i {
   font-size: var(--font-size-default);
 }
+
+po-datepicker po-helper {
+  padding-right: 18px !important;
+}
+
+[data-a11y='AA'] po-datepicker po-helper:has(.po-helper-container[p-size='small']) {
+  padding-right: 9px !important;
+}

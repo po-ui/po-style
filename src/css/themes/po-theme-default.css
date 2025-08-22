@@ -35,6 +35,7 @@
  * Field Container Bottom.........variáveis do Field Container Bottom.
  * Field Icon.....................variáveis do Field Icon.
  * Gauge..........................variáveis do Gauge.
+ * Helper .........................variáveis do Helper.
  * Info...........................variáveis do Info.
  * Input..........................variáveis do Input.
  * Itemlist.......................variáveis do Itemlist
@@ -558,6 +559,18 @@ po-checkbox {
   --color-checked-disabled: var(--color-neutral-dark-70);
 }
 
+/*------------------------------------*\
+  HELPER
+\*------------------------------------*/
+po-helper {
+  --color: var(--color-action-default);
+  --color-hover: var(--color-action-hover);
+  --background-hover: var(--color-brand-01-lighter);
+  --border-color-hover: var(--color-brand-01-darkest);
+  --background-pressed: var(--color-brand-01-light);
+  --color-disabled: var(--color-action-disabled);
+  --font-size: var(--font-size);
+}
 :root {
   /*------------------------------------*\
   CHECKBOX GROUP

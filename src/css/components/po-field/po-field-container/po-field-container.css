@@ -13,6 +13,9 @@
 .po-field-container-title {
   display: flex;
   width: 100%;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .po-field-container-title .po-label,
@@ -27,4 +30,18 @@
 .po-field-container-input {
   position: relative;
   width: 100%;
+}
+
+.po-field-container-title po-label {
+  flex: 1 auto;
+  min-width: 0;
+}
+
+.po-field-container-title po-helper {
+  display: flex;
+  padding-right: var(--spacing-2xs);
+}
+
+[data-a11y='AA'] .po-field-container-title po-helper {
+  padding-right: var(--spacing-xs);
 }

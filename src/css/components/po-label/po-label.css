@@ -1,6 +1,5 @@
 po-label {
   display: flex;
-  flex-wrap: wrap;
   align-items: baseline;
 }
 
@@ -12,6 +11,22 @@ po-label {
   font-weight: var(--font-weight-normal);
 
   text-align: left;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.po-label.po-label-wrap {
+  display: block;
+  max-width: 100%;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+  min-width: 0;
 }
 
 .po-label[p-field='true'] {
@@ -33,7 +48,7 @@ po-label {
   color: var(--text-color-required);
   font-size: var(--font-size-required);
   line-height: var(--line-height-required);
-  white-space: normal;
+  white-space: nowrap;
   word-break: break-word;
 }
 
@@ -43,4 +58,28 @@ po-label {
 
 .po-label-requirement::before {
   content: '(';
+}
+
+@media (max-width: 768px) {
+  [data-a11y='AA'] po-label:has(.po-label-requirement.po-label-required) > .po-label {
+    padding-right: 0;
+  }
+
+  [data-a11y='AA'] .po-label-requirement.po-label-required {
+    display: inline;
+    margin-left: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  [data-a11y='AA'] .po-label-requirement.po-label-required::before {
+    content: '';
+  }
+
+  [data-a11y='AA'] .po-label-requirement.po-label-required::after {
+    content: '*';
+    font-size: var(--font-size-required);
+    line-height: var(--line-height-required);
+    color: var(--text-color-required);
+  }
 }

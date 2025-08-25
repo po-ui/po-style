@@ -24,7 +24,8 @@
   color: var(--color-hover);
 }
 
-.po-helper-container .po-helper-target:focus-visible {
+.po-helper-container .po-helper-target:focus-visible,
+.po-helper-container .po-helper-target:focus {
   outline-color: var(--outline-color-focused);
   outline-width: var(--outline-width);
   outline-style: solid;
@@ -41,6 +42,6 @@
   word-break: break-word;
 }
 
-po-helper po-popover .po-popover {
+po-helper .po-helper-container po-popover .po-popover {
   transform: translateY(-4px);
 }

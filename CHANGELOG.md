@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.25.0](https://github.com/po-ui/po-style/compare/v19.24.0...v19.25.0) (2025-08-25)
+
+
+### Features
+
+* **header:** cria novo componente header ([53a15ce](https://github.com/po-ui/po-style/commit/53a15ce4c0d6880c8d624696acbb4ab71b3550c3))
+* **search:** adiciona modo locate ao p-search-type ([ae58672](https://github.com/po-ui/po-style/commit/ae58672d271645dc86a7adb4257110f01e9812ef))
+
+
+
 # [19.24.0](https://github.com/po-ui/po-style/compare/v19.23.0...v19.24.0) (2025-08-18)
 
 

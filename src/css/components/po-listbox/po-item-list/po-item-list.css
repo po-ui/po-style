@@ -103,6 +103,10 @@
   border-top: 1px solid var(--color-neutral-light-10);
 }
 
+.po-listbox-list li:first-child .po-item-list__separator {
+  border-top: none;
+}
+
 .po-item-list__hidden {
   display: none;
 }
@@ -116,4 +120,14 @@
 
 .cdk-option:focus-visible {
   outline: none;
+}
+
+[data-a11y='AA'] .po-item-list-label-group {
+  padding-block: var(--spacing-xs);
+}
+
+.po-item-list-label-group {
+  display: flex;
+  flex-direction: column;
+  padding-block: var(--spacing-sm);
 }

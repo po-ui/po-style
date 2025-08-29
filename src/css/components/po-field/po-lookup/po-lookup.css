@@ -186,7 +186,7 @@
 
 .po-lookup-header {
   line-height: normal;
-  margin-bottom: 16px;
+  margin-block: var(--default-spacing-0, var(--spacing-xs) var(--spacing-sm));
 }
 
 .po-lookup-loading {
@@ -206,25 +206,20 @@
 }
 
 .po-lookup-filter-content {
-  padding: 8px 0;
+  margin-bottom: var(--spacing-xs);
   margin-right: 6px;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   width: var(--filter-content-width);
-}
-
-.po-lookup-filter-content .po-field-icon-container-right {
-  top: 50%;
 }
 
 .po-lookup-advanced-search {
   display: inline-block;
-  height: 44px;
-  line-height: 0;
+  vertical-align: middle;
   max-width: var(--advanced-search-link-width);
   padding-left: 16px;
   position: relative;
-  top: 12px;
   width: var(--advanced-search-link-width);
 }
 

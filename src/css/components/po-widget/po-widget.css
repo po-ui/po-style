@@ -55,6 +55,7 @@ po-container .po-widget-body {
 .po-widget-primary .po-widget-header {
   height: auto;
   font-weight: var(--font-weight, var(--font-weight-bold));
+  padding: var(--padding, var(--po-density-header-padding, var(--default-spacing-xs, var(--spacing-sm))));
   text-align: left;
 }
 
@@ -132,7 +133,7 @@ po-container .po-widget-body {
 .po-widget .po-widget-action,
 .po-widget-primary .po-widget-action {
   display: block;
-  padding: var(--padding);
+  padding: var(--padding, var(--po-density-content-padding, var(--default-spacing-xs, var(--spacing-sm))));
   text-align: center;
   text-decoration: none;
 
@@ -218,4 +219,11 @@ po-container .po-widget-body {
 
 po-widget .po-container-content:not(.po-widget-body .po-container-content):first-of-type {
   padding: var(--padding-body, var(--padding, var(--spacing-xs) var(--spacing-sm) var(--spacing-xs) var(--spacing-sm)));
+}
+
+@media screen and (max-width: 1366px) {
+  .po-widget-header,
+  .po-widget-primary .po-widget-header {
+    padding: var(--padding, var(--po-density-header-padding, var(--default-spacing-xs, var(--spacing-sm))));
+  }
 }

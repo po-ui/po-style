@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.26.0](https://github.com/po-ui/po-style/compare/v19.25.0...v19.26.0) (2025-09-01)
+
+
+### Features
+
+* **search:** adiciona modo execute ao p-search-type ([f690470](https://github.com/po-ui/po-style/commit/f69047058f9c2322699e8b27cac9f30c1a8c7236))
+
+
+
 # [19.25.0](https://github.com/po-ui/po-style/compare/v19.24.0...v19.25.0) (2025-08-25)
 
 

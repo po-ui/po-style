@@ -44,7 +44,7 @@ jobs:
     # PUBLISH
     - name: Run publish with v20-ng
       if: contains(steps.version.outputs.publish, 'yes')
-      run: npm publish dist/style --tag "v20-ng"
+      run: npm publish ${{env.WORKING_DIR}}/dist/style --tag "v20-ng"
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

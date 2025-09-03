@@ -42,15 +42,15 @@ jobs:
         fi
 
     # PUBLISH
-    - name: Run publish with v20
+    - name: Run publish with v20-ng
       if: contains(steps.version.outputs.publish, 'yes')
-      run: npm publish dist/style --tag "v20"
+      run: npm publish dist/style --tag "v20-ng"
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-    - name: Add "v20" tag
+    - name: Add "v20-ng" tag
       if: contains(steps.version.outputs.publish, 'no')
-      run: npm dist-tags add @${{ env.PACKAGE_NAME }}@${{ env.PACKAGE_VERSION }} "v20"
+      run: npm dist-tags add @${{ env.PACKAGE_NAME }}@${{ env.PACKAGE_VERSION }} "v20-ng"
       env:
         PACKAGE_VERSION: ${{ steps.package-version.outputs.current-version }}
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1113,30 +1113,30 @@ po-page-content {
   /*------------------------------------*\
   NAVBAR
 \*------------------------------------*/
-  --color-navbar-color: var(--color-neutral-light-00);
+  --color-navbar-color: var(--color-neutral-light-00); /*Deprecated v23.x.x */
 
   /*------------------------------------*\
   NAVBAR ACTION
 \*------------------------------------*/
-  --color-navbar-action-color-content: var(--color-brand-02-base);
+  --color-navbar-action-color-content: var(--color-brand-02-base); /*Deprecated v23.x.x */
 
   /*------------------------------------*\
   NAVBAR ACTION POPUP
 \*------------------------------------*/
-  --color-navbar-action-popup-color-content: var(--color-navbar-action-color-content);
+  --color-navbar-action-popup-color-content: var(--color-navbar-action-color-content); /*Deprecated v23.x.x */
 
   /*------------------------------------*\
   NAVBAR ITEM
 \*------------------------------------*/
-  --color-navbar-item-color: var(--color-brand-02-base);
-  --color-navbar-item-color-selected: var(--color-neutral-dark-70);
-  --color-navbar-item-color-shadow-selected: var(--color-feedback-negative-light);
+  --color-navbar-item-color: var(--color-brand-02-base); /*Deprecated v23.x.x */
+  --color-navbar-item-color-selected: var(--color-neutral-dark-70); /*Deprecated v23.x.x */
+  --color-navbar-item-color-shadow-selected: var(--color-feedback-negative-light); /*Deprecated v23.x.x */
 
   /*------------------------------------*\
   NAVBAR ITEM NAVIGATION
 \*------------------------------------*/
-  --color-navbar-item-navigation-color-icon: var(--color-brand-02-base);
-  --color-navbar-item-navigation-color-icon-disabled: var(--color-neutral-light-20);
+  --color-navbar-item-navigation-color-icon: var(--color-brand-02-base); /*Deprecated v23.x.x */
+  --color-navbar-item-navigation-color-icon-disabled: var(--color-neutral-light-20); /*Deprecated v23.x.x */
 }
 /*------------------------------------*\
   OVERLAY

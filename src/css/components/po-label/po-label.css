@@ -1,6 +1,5 @@
 po-label {
   display: flex;
-  flex-wrap: wrap;
   align-items: baseline;
 }
 
@@ -12,6 +11,10 @@ po-label {
   font-weight: var(--font-weight-normal);
 
   text-align: left;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .po-label[p-field='true'] {
@@ -33,7 +36,7 @@ po-label {
   color: var(--text-color-required);
   font-size: var(--font-size-required);
   line-height: var(--line-height-required);
-  white-space: normal;
+  white-space: nowrap;
   word-break: break-word;
 }
 

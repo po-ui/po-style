@@ -559,9 +559,16 @@ po-checkbox {
   --color-checked-disabled: var(--color-neutral-dark-70);
 }
 
+/*------------------------------------*\
+  HELPER
+\*------------------------------------*/
 po-helper {
-  --color-hover: var(--color-action-hover);
   --color: var(--color-action-default);
+  --color-hover: var(--color-action-hover);
+  --background-hover: var(--color-brand-01-lighter);
+  --border-color-hover: var(--color-brand-01-darkest);
+  --background-pressed: var(--color-brand-01-light);
+  --color-disabled: var(--color-action-disabled);
 }
 :root {
   /*------------------------------------*\

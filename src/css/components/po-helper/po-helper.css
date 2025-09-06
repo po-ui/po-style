@@ -4,7 +4,7 @@
 }
 
 [data-a11y='AA'] po-helper {
-  --font-size: 16x;
+  --font-size: 16px;
 }
 
 .po-helper-container po-icon {
@@ -13,19 +13,25 @@
   line-height: 0;
 }
 
-.po-helper-container .po-helper-target {
+.po-helper-target {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: var(--font-size);
+  height: var(--font-size);
+  border-radius: 50%;
 }
 
-.po-helper-container po-icon:hover {
-  color: var(--color-hover);
+.po-helper-container:hover {
+  border-color: var(--border-color-hover);
+  background-color: var(--background-hover);
 }
 
-.po-helper-container .po-helper-target:focus-visible,
-.po-helper-container .po-helper-target:focus {
+.po-helper-container:focus-visible,
+.po-helper-container:focus {
+  background-color: var(--background-pressed);
+  border-radius: 50%;
   outline-color: var(--outline-color-focused);
   outline-width: var(--outline-width);
   outline-style: solid;
@@ -40,8 +46,16 @@
   white-space: normal;
   overflow-wrap: anywhere;
   word-break: break-word;
+  color: var(--color-neutral-dark-90);
 }
 
 po-helper .po-helper-container po-popover .po-popover {
   transform: translateY(-4px);
+}
+
+po-helper .po-helper-disabled po-icon,
+po-helper .po-helper-disabled {
+  color: var(--color-disabled);
+  cursor: not-allowed;
+  pointer-events: none;
 }

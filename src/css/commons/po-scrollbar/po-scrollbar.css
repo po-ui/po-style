@@ -1,0 +1,27 @@
+@supports (-moz-appearance: none) {
+  * {
+    scrollbar-color: var(--color-thumb) var(--color-track);
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: var(--color-track);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--color-track);
+}
+
+::-webkit-scrollbar:vertical {
+  width: calc(var(--spacing-xs) + 2px);
+}
+
+::-webkit-scrollbar:horizontal {
+  height: calc(var(--spacing-xs) + 2px);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-thumb);
+  border-radius: var(--border-radius-lg);
+  border: var(--border-radius-sm) solid var(--color-track);
+}

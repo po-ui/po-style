@@ -10,6 +10,7 @@
  * Color..........................variáveis globais de cores.
  * Color Palette..................variáveis da peleta de cores.
  * Font...........................variáveis de fontes.
+ * Scrollbar......................variáveis do scrollbar.
  *
  * COMPONENTS
  * Accordion......................variáveis do Accordion.
@@ -186,7 +187,7 @@
 :root {
   --color-primary-light-95: #fcf6f9; /* Cor do background da linha da tabela */
   --color-primary-light-80: #f5dbe8; /* Borda inferior da Table Header */
-  --color-primary-alpha-50: rgba(201, 53, 125, 0.5); /* Scroll (opacidade de 50%) */
+  --color-primary-alpha-50: rgba(201, 53, 125, 0.5); /* Cor icon drag and drop upload (opacidade de 50%) */
 
   --color-primary-dark-20: #9d2c67; /* Hover do Botão primário, Links, Cor da borda do botão secundário */
   --color-primary-dark-40: #8b255a; /* Pressed do Botão primário, Links, Cor da borda do botão secundário */
@@ -276,6 +277,14 @@
   src: url('./../fonts/Roboto/Roboto-Bold.ttf');
   font-weight: bold;
   font-style: normal;
+}
+
+:root {
+  /*------------------------------------*\
+  SCROLLBAR
+\*------------------------------------*/
+  --color-track: var(--color-neutral-light-10);
+  --color-thumb: var(--color-neutral-light-30);
 }
 
 /*------------------------------------*\
@@ -1181,7 +1190,7 @@ po-overlay {
   /*------------------------------------*\
   PAGE CONTENT
 \*------------------------------------*/
-  --color-page-content-background-color-scrollbar: var(--color-brand-02-base);
+  --color-page-content-background-color-scrollbar: var(--color-thumb); /*Deprecated v21.x.x utilizar --color-thumb */
 
   /*------------------------------------*\
   PAGE LIST
@@ -1254,7 +1263,7 @@ po-page-slide po-divider {
 \*------------------------------------*/
   --color-popover-background-color: var(--color-neutral-light-00);
   --color-popover-background-color-arrow: var(--color-neutral-light-00);
-  --color-popover-background-color-scrollbar: var(--color-brand-02-base);
+  --color-popover-background-color-scrollbar: var(--color-thumb); /*Deprecated v21.x.x utilizar --color-thumb */
 
   --color-popover-color-text-title: var(--color-neutral-dark-70);
 }
@@ -1338,7 +1347,7 @@ po-rich-text .po-button {
   /*------------------------------------*\
   RICH TEXT
 \*------------------------------------*/
-  --color-rich-text-background-color-scrollbar: var(--color-primary-alpha-50);
+  --color-rich-text-background-color-scrollbar: var(--color-thumb); /*Deprecated v21.x.x utilizar --color-thumb */
 
   --color-rich-text-body-background-color: var(--color-neutral-light-05);
   --color-rich-text-body-border-error: var(--color-feedback-negative-base);
@@ -1424,7 +1433,7 @@ po-select {
   --color-slide-background-color-active-circle: var(--color-brand-02-base);
   --color-slide-background-color-arrow-circle: var(--color-neutral-light-00);
   --color-slide-background-color-circle: var(--color-neutral-light-20);
-  --color-slide-background-color-scrollbar: var(--color-primary-alpha-50);
+  --color-slide-background-color-scrollbar: var(--color-thumb); /*Deprecated v21.x.x utilizar --color-thumb */
   --color-slide-border-arrow: var(--color-brand-02-base);
   --color-slide-box-shadow-arrow-circle: var(--color-black-alpha-15);
   --color-slide-box-shadow-wrapper: var(--color-black-alpha-30);
@@ -1570,7 +1579,9 @@ po-table-list-manager {
   /*------------------------------------*\
   TABLE COLUMN MANAGER
 \*------------------------------------*/
-  --color-table-column-manager-body-color-background-scrollbar: var(--color-brand-02-base);
+  --color-table-column-manager-body-color-background-scrollbar: var(
+    --color-track
+  ); /*Deprecated v21.x.x utilizar --color-track */
   --color-table-column-manager-border-color: var(--color-neutral-light-10);
   --color-table-column-manager-close-button-color: var(--color-brand-02-base);
   --color-table-column-manager-header-title: var(--color-neutral-dark-90);
@@ -1795,7 +1806,7 @@ po-widget {
   --color-widget-border-color-footer-primary: var(--color-white-alpha-30);
 
   --color-widget-background-color-disabled: var(--color-neutral-light-05);
-  --color-widget-background-color-scroll-disabled: var(--color-neutral-mid-40);
+  --color-widget-background-color-scroll-disabled: var(--color-thumb); /*Deprecated v21.x.x utilizar --color-thumb */
   --color-widget-color-disabled: var(--color-neutral-mid-40);
 }
 

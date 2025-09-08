@@ -8,5 +8,6 @@
 @import './po-grid-system';
 @import './po-icon';
 @import './po-media-query/po-media-query.css';
+@import './po-scrollbar/po-scrollbar.css';
 @import './po-shadow/po-shadow.css';
 @import './po-spacing';

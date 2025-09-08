@@ -179,6 +179,28 @@
   --categorical-overlay-08: var(--color-caption-categorical-overlay-08);
 }
 
+:root {
+  /*------------------------------------*\
+  SCROLLBAR
+\*------------------------------------*/
+  --color-track: var(--color-neutral-light-10);
+  --color-thumb: var(--color-neutral-light-30);
+}
+
+::-webkit-scrollbar {
+  width: var(--spacing-xs);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-track);
+  padding: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-thumb);
+  border-radius: var(--border-radius-lg);
+}
+
 /*------------------------------------*\
   COLOR PO UI LEGACY - Essas variáveis serão removidas conforme evolução da implementação do AnimaliaDS
 \*------------------------------------*/

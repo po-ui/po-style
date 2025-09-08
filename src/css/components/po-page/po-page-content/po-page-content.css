@@ -6,19 +6,6 @@
   width: 100%;
 }
 
-.po-page-content::-webkit-scrollbar {
-  width: 7px;
-}
-
-.po-page-content::-webkit-scrollbar-track {
-  display: none;
-}
-
-.po-page-content::-webkit-scrollbar-thumb {
-  background-color: var(--color-page-content-background-color-scrollbar);
-  border-radius: 10px;
-}
-
 @media print {
   .po-page-content {
     overflow-y: visible;

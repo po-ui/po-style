@@ -58,20 +58,6 @@ po-rich-text-body:only-child .po-rich-text-body {
   color: inherit !important;
 }
 
-.po-rich-text-body::-webkit-scrollbar {
-  height: 7px;
-  width: 7px;
-}
-
-.po-rich-text-body::-webkit-scrollbar-track {
-  display: none;
-}
-
-.po-rich-text-body::-webkit-scrollbar-thumb {
-  background-color: var(--color-rich-text-background-color-scrollbar);
-  border-radius: 2px;
-}
-
 po-rich-text.ng-invalid.ng-dirty .po-rich-text-body {
   border: solid 1px var(--color-rich-text-body-border-error);
   color: var(--color-rich-text-body-text-error);

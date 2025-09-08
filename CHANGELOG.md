@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.27.1](https://github.com/po-ui/po-style/compare/v19.27.0...v19.27.1) (2025-09-08)
+
+
+
 # [19.27.0](https://github.com/po-ui/po-style/compare/v19.26.0...v19.27.0) (2025-09-08)
 
 

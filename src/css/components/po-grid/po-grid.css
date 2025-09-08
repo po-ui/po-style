@@ -20,18 +20,6 @@
   display: table;
 }
 
-.po-grid-cell-normal::-webkit-scrollbar,
-.po-grid-row-wrapper::-webkit-scrollbar {
-  border-radius: 2px;
-  height: 4px;
-  opacity: 0.5;
-  width: 4px;
-}
-.po-grid-cell-normal::-webkit-scrollbar-thumb,
-.po-grid-row-wrapper::-webkit-scrollbar-thumb {
-  background-color: var(--color-grid-cell-scrollbar-color);
-}
-
 .po-grid .fixed {
   display: table;
 }

@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.27.0](https://github.com/po-ui/po-style/compare/v19.26.0...v19.27.0) (2025-09-08)
+
+
+### Code Refactoring
+
+* **navbar:** marca componente po-navbar como depreciado ([5fdaf89](https://github.com/po-ui/po-style/commit/5fdaf8958b0242f7b2a04d7e42a96a89e0d910aa))
+
+
+### BREAKING CHANGES
+
+* **navbar:** marca componente po-navbar como @deprecated
+
+O componente po-navbar não será mais mantido e
+será removido em versões futuras.
+A alternativa recomendada é utilizar o po-header.
+
+
+
 # [19.26.0](https://github.com/po-ui/po-style/compare/v19.25.0...v19.26.0) (2025-09-01)
 
 

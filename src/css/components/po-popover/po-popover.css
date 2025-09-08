@@ -33,16 +33,6 @@
   overflow: auto;
 }
 
-.po-popover-content::-webkit-scrollbar {
-  border-radius: 2px;
-  opacity: 0.5;
-  width: 4px;
-}
-
-.po-popover-content::-webkit-scrollbar-thumb {
-  background-color: var(--color-popover-background-color-scrollbar);
-}
-
 .po-popover-title {
   @apply --font-popover-font-title;
   color: var(--color-popover-color-text-title);

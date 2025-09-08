@@ -82,22 +82,6 @@
   word-break: break-all;
 }
 
-.po-slide-item-content::-webkit-scrollbar {
-  border-radius: 2px;
-  height: 4px;
-  opacity: 0.5;
-  width: 4px;
-}
-
-.po-slide-item-content::-webkit-scrollbar-thumb {
-  background-color: var(--color-slide-background-color-scrollbar);
-  border-radius: 2px;
-}
-
-.po-slide-item-content::-webkit-scrollbar-track {
-  display: none;
-}
-
 .po-slide-circles {
   bottom: -32px;
   left: 0;

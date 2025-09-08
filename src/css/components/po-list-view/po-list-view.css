@@ -91,19 +91,6 @@
   gap: 1em;
 }
 
-.po-list-view-main-content::-webkit-scrollbar {
-  width: 7px;
-}
-
-.po-list-view-main-content::-webkit-scrollbar-track {
-  display: none;
-}
-
-.po-list-view-main-content::-webkit-scrollbar-thumb {
-  background-color: var(--color-combo-background-color-scrollbar);
-  border-radius: 2px;
-}
-
 .po-list-view-container,
 .po-list-view-container-no-data {
   padding: 24px 16px;

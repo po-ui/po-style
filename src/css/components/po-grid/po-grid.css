@@ -2,7 +2,6 @@
   --color-grid-cell-action-border-color: var(--color-primary-light-80);
   --color-grid-cell-action-color: var(--color-03);
   --color-grid-cell-freeze-color: var(--color-primary-light-80);
-  --color-grid-cell-scrollbar-color: var(--color-primary-alpha-50);
 
   --color-grid-footer-wrapper-border-color: var(--color-neutral-light-10);
 
@@ -18,18 +17,6 @@
   border-bottom: none;
   border-right: none;
   display: table;
-}
-
-.po-grid-cell-normal::-webkit-scrollbar,
-.po-grid-row-wrapper::-webkit-scrollbar {
-  border-radius: 2px;
-  height: 4px;
-  opacity: 0.5;
-  width: 4px;
-}
-.po-grid-cell-normal::-webkit-scrollbar-thumb,
-.po-grid-row-wrapper::-webkit-scrollbar-thumb {
-  background-color: var(--color-grid-cell-scrollbar-color);
 }
 
 .po-grid .fixed {

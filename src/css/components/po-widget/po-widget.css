@@ -169,10 +169,6 @@ po-container .po-widget-body {
   cursor: not-allowed !important;
 }
 
-.po-widget-disabled .po-container::-webkit-scrollbar-thumb {
-  background-color: var(--color-widget-background-color-scroll-disabled);
-}
-
 .po-widget-text {
   text-overflow: ellipsis;
   overflow: hidden;

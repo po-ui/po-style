@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [20.1.0](https://github.com/po-ui/po-style/compare/v19.27.0...v20.1.0) (2025-09-09)
+
+
+### Features
+
+* **angular:** build v20 ([a300c36](https://github.com/po-ui/po-style/commit/a300c360dfb7151b59024b8d65ed9d553290baa7))
+
+
+
 # [19.27.0](https://github.com/po-ui/po-style/compare/v19.26.0...v19.27.0) (2025-09-08)
 
 

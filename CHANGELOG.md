@@ -2,85 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-# [19.34.0](https://github.com/po-ui/po-style/compare/v19.33.0...v19.34.0) (2025-11-03)
+# [20.0.0](https://github.com/po-ui/po-style/compare/v19.26.0...v20.0.0) (2025-09-03)
 
 
 ### Features
 
-* **dropdown:** implementa criação de subníveis ([d7c95e8](https://github.com/po-ui/po-style/commit/d7c95e81d33e74c683ad887f0851916e33946abf))
-
-
-
-# [19.33.0](https://github.com/po-ui/po-style/compare/v19.32.0...v19.33.0) (2025-10-29)
-
-
-### Features
-
-* **components:** reduz espaçamentos e adensa layout de componentes ([547f95b](https://github.com/po-ui/po-style/commit/547f95be9a793dfa54003eeaa6fcf541d9fed556))
-* **components:** reduz tamanhos de fonte ([15622b4](https://github.com/po-ui/po-style/commit/15622b4180e9722bd0186bfd2b72d2bdbd6be51f))
-* **fields:** adiciona po-helper quando não há label definida ([42c7953](https://github.com/po-ui/po-style/commit/42c7953137419e7664c967daa8c5dc5726b81262))
-
-
-
-# [19.32.0](https://github.com/po-ui/po-style/compare/v19.31.0...v19.32.0) (2025-10-21)
-
-
-### Features
-
-* **upload:** implementa definições do AnimaliaDS ([7fb2a79](https://github.com/po-ui/po-style/commit/7fb2a7984928d5e7c29f361fe29b0e5c071c2fe0))
-
-
-
-# [19.31.0](https://github.com/po-ui/po-style/compare/v19.30.0...v19.31.0) (2025-10-13)
-
-
-### Features
-
-* **icons:** atualiza AnimaliaIcons para v1.0.5 ([73125ce](https://github.com/po-ui/po-style/commit/73125ce9b48cc5606febc1af00ebf55eebc8bac9))
-
-
-
-# [19.30.0](https://github.com/po-ui/po-style/compare/v19.29.0...v19.30.0) (2025-10-06)
-
-
-### Features
-
-* **helper:** implementa novo componente de ajuda ([8b4b2ea](https://github.com/po-ui/po-style/commit/8b4b2eaaa5b16e58c69d9f749ccee01f5679a81a))
-
-
-
-# [19.29.0](https://github.com/po-ui/po-style/compare/v19.28.1...v19.29.0) (2025-09-30)
-
-
-### Features
-
-* **scroll:** implementa definições do AnimaliaDS ([9b0119e](https://github.com/po-ui/po-style/commit/9b0119e6e803a243cd5961582b5e7ecab39df982))
-
-
-
-## [19.28.1](https://github.com/po-ui/po-style/compare/v19.28.0...v19.28.1) (2025-09-22)
-
-Compatibilidade com @po-ui/ng-components@19.28.1
-
-# [19.28.0](https://github.com/po-ui/po-style/compare/v19.27.0...v19.28.0) (2025-09-15)
-
-Compatibilidade com @po-ui/ng-components@19.28.0
-
-# [19.27.0](https://github.com/po-ui/po-style/compare/v19.26.0...v19.27.0) (2025-09-08)
-
-
-### Code Refactoring
-
-* **navbar:** marca componente po-navbar como depreciado ([5fdaf89](https://github.com/po-ui/po-style/commit/5fdaf8958b0242f7b2a04d7e42a96a89e0d910aa))
-
-
-### BREAKING CHANGES
-
-* **navbar:** marca componente po-navbar como @deprecated
-
-O componente po-navbar não será mais mantido e
-será removido em versões futuras.
-A alternativa recomendada é utilizar o po-header.
+* **angular:** build v20 ([a300c36](https://github.com/po-ui/po-style/commit/a300c360dfb7151b59024b8d65ed9d553290baa7))
 
 
 

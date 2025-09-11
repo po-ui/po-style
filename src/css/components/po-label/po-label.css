@@ -47,3 +47,27 @@ po-label {
 .po-label-requirement::before {
   content: '(';
 }
+
+@media (max-width: 600px) {
+  [data-a11y='AA'] .po-label[p-field='true'] {
+    padding-right: 0;
+  }
+
+  [data-a11y='AA'] .po-label-requirement {
+    display: inline;
+    margin-left: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  [data-a11y='AA'] .po-label-requirement::before {
+    content: '';
+  }
+
+  [data-a11y='AA'] .po-label-requirement::after {
+    content: '*';
+    font-size: var(--font-size-required);
+    line-height: var(--line-height-required);
+    color: var(--text-color-required);
+  }
+}

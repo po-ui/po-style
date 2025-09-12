@@ -8,8 +8,14 @@
   background-color: var(--color-disclaimer-group-background-color);
   border: solid 1px var(--color-disclaimer-group-border-color);
   border-radius: 3px;
-  padding: 8px 16px;
+  padding: var(--po-density-content-padding, var(--default-spacing-xs, var(--spacing-sm)));
+  padding-bottom: var(--default-spacing-0, var(--spacing-xs));
   width: 100%;
+}
+
+.po-disclaimer-group .po-clickable.po-tag-wrapper,
+[data-a11y='AA'] .po-disclaimer-group .po-clickable.po-tag-wrapper {
+  min-height: 0;
 }
 
 .po-disclaimer-group-title {

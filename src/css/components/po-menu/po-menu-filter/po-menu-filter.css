@@ -2,6 +2,8 @@
   padding-block: var(--spacing-xs);
   margin-inline: var(--spacing-sm);
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .po-menu-filter-icon {
@@ -89,8 +91,8 @@
 
 .po-menu-filter-close-icon-container {
   right: 16px;
-  width: 2.75em;
-  height: 2.75em;
+  width: 2.75rem;
+  height: 2.75rem;
   display: flex;
   justify-content: center;
   align-items: center;

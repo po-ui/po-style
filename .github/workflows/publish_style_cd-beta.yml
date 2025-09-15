@@ -44,7 +44,7 @@ jobs:
     # PUBLISH
     - name: Run publish with -beta
       if: contains(steps.version.outputs.publish, 'yes')
-      run: npm publish dist/style --tag beta
+      run: npm publish ${{env.WORKING_DIR}}/dist/style --tag beta
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

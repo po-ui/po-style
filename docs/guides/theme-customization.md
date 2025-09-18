@@ -83,26 +83,24 @@ Só com isso já conseguimos dar uma nova cara para os nossos botões.
 
 ![Componente Button com a cor preta.][button-green-and-black]
 
-Caso você queira customizar todas as cores é possível usar algumas das variáveis globais:
+Caso queira personalizar cores de forma global, é possível sobrescrever algumas variáveis globais:
 
 ``` css
 :root {
-  --color-brand-01-base: red;
-  --color-brand-02-base: green;
-  --color-brand-03-base: blue;
+  --color-track: #ffecb3;
+  --color-thumb: orange;
 }
 ```
 
-![Exemplo dos componentes com as cores customizadas. Um botão azul, o componentes Tabs está com título
-verde e o scroll da página na cor vermelha.][components-custom-colors]
+![Exemplo dos componentes com cores customizadas. Scroll da página com track amarelo e thumb laranja.][components-custom-colors]
 
 Com essas personalizações, você terá controle não apenas sobre as cores, mas também sobre outros aspectos visuais dos componentes e templates em sua aplicação que utilizam o PO UI.
 
 >Para descobrir quais variáveis você pode personalizar, consulte o arquivo 
-`po-theme-default-variables.css` na pasta `node_modules/@po-ui/style/css`, Lá, você
+`po-theme-default-variables.css` na pasta `node_modules/@po-ui/style/css`, lá, você
 encontrará uma lista completa de todas as variáveis utilizadas pelo tema padrão. Você também pode consultar a documentação de cada componente no próprio portal.
 
-> Para customização do componenete `po-button` verificar [variáveis customizaveis][var-customized] na aba de customização.
+> Para customização do componente `po-button` verificar [variáveis customizaveis][var-customized] na aba de customização.
 
 > Atenção: Para saber quais browsers dão suporte a variáveis você pode consultar a ferramenta 
 [Can I use][can-i-use].

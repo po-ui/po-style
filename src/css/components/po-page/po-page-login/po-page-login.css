@@ -173,15 +173,14 @@
 
 .po-page-login-info-icon-container {
   display: table-cell;
-  padding: 0 0 12px 10px;
   vertical-align: bottom;
   width: 20px;
+  padding-bottom: 1.5rem;
 }
 
 .po-page-login-info-icon-remember-user {
-  padding-bottom: 0;
-  padding-top: 4px;
-  vertical-align: top;
+  vertical-align: bottom;
+  padding-bottom: 1rem;
 }
 
 .po-page-login-info-container {

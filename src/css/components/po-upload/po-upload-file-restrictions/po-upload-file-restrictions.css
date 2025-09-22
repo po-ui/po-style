@@ -5,4 +5,5 @@
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-md);
+  padding: var(--spacing-sm) 0 var(--spacing-xs) 0;
 }

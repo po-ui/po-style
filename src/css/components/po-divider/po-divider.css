@@ -12,11 +12,11 @@ po-divider {
   text-transform: var(--text-transform);
   color: var(--color-neutral-dark-90);
   margin-bottom: 4px;
-  padding-left: 0.2em;
+  padding-left: 0.2rem;
 }
 
 .po-divider {
-  margin-bottom: 16px;
+  margin-bottom: var(--po-density-gap-spacing, var(--default-spacing-xs, var(--spacing-sm)));
   padding: 8px 0;
 }
 

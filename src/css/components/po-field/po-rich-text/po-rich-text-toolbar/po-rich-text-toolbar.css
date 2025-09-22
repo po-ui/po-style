@@ -3,10 +3,7 @@
     @apply --font-subtitle;
   }
 
-  --rich-text-toolbar-min-height: 64px;
-
   /* Valores herdados do componente po-rich-text-body */
-  --rich-text-toolbar-min-width: var(--rich-text-body-min-width);
   --border-rich-text-toolbar-border: var(--border-rich-text-body-border);
 }
 
@@ -18,10 +15,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem 0.75rem;
-  min-height: var(--rich-text-toolbar-min-height);
-  min-width: var(--rich-text-toolbar-min-width);
-  padding: 1rem;
+  padding: var(--spacing-sm);
   width: 100%;
+}
+
+[data-a11y='AA'] [p-size='small'] .po-rich-text-toolbar {
+  padding: var(--spacing-xs);
+  gap: var(--spacing-xs);
 }
 
 /* Necessário para alinhar os grupos dos botões, deverá ser aplicado na tag do componente 'po-button-group' */
@@ -31,9 +31,7 @@
 
 /* Necessário para fixar a altura do po-button pois o mesmo tem tratamento para responsividade */
 .po-rich-text-toolbar .po-button-group > .po-button,
-.po-rich-text-toolbar-color-picker-button,
-[data-a11y='AAA'] .po-rich-text-toolbar-aa .po-button-group > .po-button,
-[data-a11y='AAA'] .po-rich-text-toolbar-color-picker-button-aa {
+.po-rich-text-toolbar-color-picker-button {
   height: var(--target-size-aaa);
   width: var(--target-size-aaa);
   min-height: var(--target-size-aaa);
@@ -41,8 +39,8 @@
   padding: 0;
 }
 
-.po-rich-text-toolbar-aa .po-button-group > .po-button,
-.po-rich-text-toolbar-color-picker-button-aa {
+[data-a11y='AA'] [p-size='small'] .po-rich-text-toolbar .po-button-group > .po-button,
+[data-a11y='AA'] [p-size='small'] .po-rich-text-toolbar-color-picker-button {
   height: var(--target-size-aa);
   width: var(--target-size-aa);
   min-height: var(--target-size-aa);

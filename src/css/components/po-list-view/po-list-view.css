@@ -56,8 +56,11 @@
   padding-top: 60px;
 }
 
-.po-list-view-main-header,
-[data-a11y='AAA'] .po-list-view-main-header-aa {
+[data-a11y='AA'] [p-components-size='small'] .po-list-view-main-container-header {
+  padding-top: var(--spacing-xl);
+}
+
+.po-list-view-main-header {
   background-color: var(--color-list-view-background-color);
   border: solid 1px var(--color-list-view-border);
   border-radius: 3px;
@@ -69,13 +72,13 @@
   z-index: 1;
 }
 
-.po-list-view-main-header-aa {
+[data-a11y='AA'] [p-components-size='small'] .po-list-view-main-header {
   height: var(--list-view-main-header-height-aa);
 }
 
 .po-list-view-main-select {
   color: var(--color-list-view-color-select-all-label);
-  padding-left: 24px;
+  padding: var(--po-density-content-padding, var(--spacing-xs) var(--default-spacing-sm, var(--spacing-md)));
 }
 
 .po-list-view-select + .po-list-view-title-link {
@@ -88,12 +91,12 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: var(--po-density-gap-spacing, var(--default-spacing-xs, var(--spacing-sm)));
 }
 
 .po-list-view-container,
 .po-list-view-container-no-data {
-  padding: 24px 16px;
+  padding: var(--po-density-content-padding, var(--default-spacing-xs, var(--spacing-sm)));
   position: relative;
 }
 
@@ -114,6 +117,10 @@
   padding: 0 8px;
   text-align: left;
   vertical-align: middle;
+}
+
+[data-a11y='AA'] [p-components-size='small'] .po-list-view-title {
+  @apply --font-list-view-font-sm-title;
 }
 
 .po-list-view-title-link {
@@ -160,11 +167,11 @@
 
 .po-list-view-actions .po-button {
   margin-bottom: 4px;
-  margin-left: 16px;
+  margin-left: var(--default-spacing-xs, var(--spacing-sm));
 }
 
 .po-list-view-content {
-  margin-top: 32px;
+  margin-top: var(--default-spacing-xs, var(--spacing-lg));
 }
 
 .po-list-view-selectable-label {
@@ -190,7 +197,7 @@
   }
 
   .po-list-view-container {
-    padding: 8px 0;
+    padding: var(--po-density-content-padding, var(--default-spacing-xs, var(--spacing-xs)) 0);
   }
 
   .po-list-view-title {
@@ -207,7 +214,7 @@
 
   .po-list-view-content {
     @apply --font-list-view-font-sm-container;
-    margin-top: 16px;
+    margin-top: var(--default-spacing-xs, var(--spacing-sm));
   }
 
   .po-list-view-detail {
@@ -231,6 +238,6 @@
   }
 
   .po-list-view-main-content {
-    gap: 0.5em;
+    gap: var(--po-density-gap-spacing, var(--default-spacing-xs, var(--spacing-xs)));
   }
 }

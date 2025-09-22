@@ -1,8 +1,8 @@
 .po-stepper-horizontal {
   display: grid;
   width: 100%;
-  gap: 8px;
-  padding-inline: 8px;
+  gap: var(--po-density-gap-header-content, var(--spacing-xs));
+  padding: var(--po-density-content-padding, 0 var(--spacing-xs));
 }
 
 .po-stepper-step {
@@ -38,7 +38,7 @@
 .po-stepper-vertical {
   display: flex;
   width: 100%;
-  gap: 8px;
+  gap: var(--po-density-gap-header-content, var(--spacing-xs));
   padding-inline: 8px;
 }
 

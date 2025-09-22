@@ -9,6 +9,7 @@
  * Common.........................configurações.
  * Color..........................variáveis globais de cores.
  * Color Palette..................variáveis da peleta de cores.
+ * Density........................variáveis de espaçamento e densidade.
  * Font...........................variáveis de fontes.
  * Scrollbar......................variáveis do scrollbar.
  *
@@ -278,6 +279,28 @@
   src: url('./../fonts/Roboto/Roboto-Bold.ttf');
   font-weight: bold;
   font-style: normal;
+}
+
+/* DENSITY - LAYOUT TOKENS */
+:root {
+  --po-density-header-padding: var(
+    --po-density-header-padding
+  ); /* Padding interno em headers (inclui pages, dynamics, page slide e modal) */
+  --po-density-content-padding: var(
+    --po-density-content-padding
+  ); /* Padding interno em contents (inclui pages, dynamics, container, list view, modal, page slide, stepper e disclaimer-group) */
+  --po-density-footer-padding: var(
+    --po-density-footer-padding
+  ); /* Padding interno em footers (inclui modal e page slide) */
+  --po-density-gap-header-content: var(
+    --po-density-gap-header-content
+  ); /* Espaço interno entre o header e o content (inclui pages, tabs e stepper) */
+  --po-density-gap-spacing: var(
+    --po-density-gap-spacing
+  ); /* Espaço interno entre blocos de conteúdo presentes no header e content (inclui dividers e gaps) */
+  --po-density-floating-padding: var(
+    --po-density-floating-padding
+  ); /* Padding interno de componentes flutuantes como tooltip e popover */
 }
 
 :root {
@@ -718,7 +741,7 @@ po-dropdown {
   DYNAMIC
 \*------------------------------------*/
 po-dynamic-container {
-  --gap: var(--spacing-md);
+  --gap: var(--gap);
   --font-family: var(--font-family-theme);
   --font-size: 1.125rem;
   --line-weight: var(--font-weight-semibold);
@@ -732,7 +755,7 @@ po-dynamic-container po-container {
   --background: var(--color-neutral-light-00);
   --border-color: var(--color-neutral-light-20);
   --border-width: var(--border-width-sm);
-  --padding: var(--spacing-md);
+  --padding: var(--padding);
 }
 
 /*------------------------------------*\
@@ -748,7 +771,7 @@ po-dynamic-container po-container {
 po-field-container-bottom {
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size-sm);
-  --line-height: var(--line-height-md);
+  --line-height: var(--line-height);
   --text-color-help: var(--color-neutral-dark-90);
 
   --text-color-help-disabled: var(--color-neutral-mid-60);
@@ -1058,8 +1081,8 @@ po-modal {
   --opacity-overlay: 0.7;
   --color-divider: var(--color-neutral-light-20);
 
-  --padding-header: var(--spacing-sm) var(--spacing-md);
-  --padding-body: var(--spacing-md) var(--spacing-2xl) var(--spacing-2xl) var(--spacing-md);
+  --padding-header: var(--padding-header);
+  --padding-body: var(--padding-body);
 }
 
 :root {
@@ -1102,30 +1125,16 @@ po-multiselect {
   PAGE HEADER
 \*------------------------------------*/
 po-page-header {
-  --padding: var(--spacing-xs) var(--spacing-md);
-  --gap: var(--spacing-md);
-
-  /* header container */
-  --padding-top-header: var(--spacing-md);
-
-  /* actions button */
+  --padding: var(--padding);
+  --gap: var(--gap);
   --gap-actions: var(--spacing-xs);
 }
 po-page-header .po-page-header-title {
   --font-family: var(--font-family-extra-light);
-  --font-size: 2.125rem;
-  --line-height: 3rem;
-  --text-color: var(--color-neutral-dark-70);
-}
-po-page-header .po-page-header-subtitle {
-  --font-family: var(--font-family-theme);
-  --font-size: var(--font-size-default);
-  --line-height: var(--line-height-md);
-  --text-color: var(--color-neutral-dark-70);
 }
 
 po-page-content {
-  --padding-content: var(--spacing-xs) var(--spacing-sm);
+  --padding-content: var(--padding-content);
 }
 
 :root {
@@ -1248,9 +1257,9 @@ po-page-slide {
   --font-weight: var(--font-weight-bold);
   --color-title: var(--color-neutral-dark-95);
 
-  --padding-header: var(--spacing-md);
-  --padding-body: var(--spacing-md);
-  --padding-footer: var(--spacing-sm) var(--spacing-md) var(--spacing-xl) var(--spacing-md);
+  --padding-header: var(--padding-header);
+  --padding-body: var(--padding-body);
+  --padding-footer: var(--padding-footer);
 
   --page-slide-width-sm: 40%;
   --page-slide-width-md: 50%;
@@ -1524,8 +1533,8 @@ po-tab-button {
   --color-disabled: var(--color-action-disabled);
   --background-item-disabled: var(--color-neutral-light-10);
 
-  --margin-tabs-container-left: -16px;
-  --margin-tabs-container-right: -16px;
+  --margin-tabs-container-left: var(--margin-tabs-container-left);
+  --margin-tabs-container-right: var(--margin-tabs-container-right);
   --padding-tabs-header: var(--spacing-sm);
 
   --margin-tabs-first-child: var(--spacing-md);

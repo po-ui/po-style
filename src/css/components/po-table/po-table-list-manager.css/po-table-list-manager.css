@@ -15,6 +15,14 @@
   flex-direction: column;
 }
 
+.po-table-list-manager-section .po-table-list-manager-item-switch po-switch .po-field-container-content {
+  padding: 0;
+}
+
+.po-table-list-manager-section .po-table-list-manager-item-switch po-switch .po-field-container-bottom:empty {
+  padding-bottom: 0;
+}
+
 .po-table-list-manager-container-items + .po-table-list-manager-container-items {
   margin-top: 10px;
 }
@@ -26,6 +34,7 @@
   padding: var(--spacing-xs);
   border-radius: var(--border-radius-lg);
   gap: var(--spacing-xs);
+  align-items: center;
 }
 
 .po-table-list-manager-item-switch {

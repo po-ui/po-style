@@ -31,8 +31,8 @@
     @apply --font-info-font-value;
     color: var(--color-info-color-text-value);
     display: block;
-    min-height: 24px;
     word-break: break-word;
+    line-height: var(--line-height-md);
 
     &-horizontal {
       display: table-cell;

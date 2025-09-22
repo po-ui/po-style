@@ -7,8 +7,8 @@
 .po-page-header {
   display: flex;
   flex-direction: column;
-  gap: var(--gap);
-  padding: var(--padding);
+  gap: var(--gap, var(--po-density-gap-spacing, var(--default-spacing-xs, var(--spacing-md))));
+  padding: var(--padding, var(--po-density-header-padding, var(--spacing-xs) var(--spacing-md)));
   width: 100%;
 }
 
@@ -23,22 +23,27 @@
 .po-page-header-title-container {
   display: inline-flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--spacing-xs);
 }
 
 .po-page-header-title-container .po-page-header-title {
-  /*color: var(--color-page-header-color-title, var(--text-color));*/
   color: var(--color-page-header-color-title, var(--color-neutral-dark-70));
 }
 
-.po-page-header-title,
-.po-page-header-subtitle {
+.po-page-header-title {
   font-family: var(--font-family);
-  font-size: var(--font-size);
-  line-height: var(--line-height);
-  color: var(--text-color);
-  display: inline;
-  text-align: left;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-sm);
+  letter-spacing: var(--letter-spacing-auto);
+}
+
+.po-page-header-subtitle {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-2xs);
+  color: var(--color-neutral-dark-70);
+  letter-spacing: var(--letter-spacing-auto);
 }
 
 .po-page-header-actions {
@@ -63,7 +68,7 @@
   }
 
   .po-page-header-actions {
-    gap: var(--spacing-xs);
+    gap: var(--gap-actions, var(--spacing-xs));
   }
 }
 

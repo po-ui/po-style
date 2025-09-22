@@ -27,7 +27,7 @@
 }
 
 .po-popover-content {
-  padding: 16px;
+  padding: var(--po-density-content-padding, var(--default-spacing-xs, var(--spacing-sm)));
   width: 100%;
   max-height: 768px;
   overflow: auto;

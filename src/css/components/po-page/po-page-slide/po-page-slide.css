@@ -12,6 +12,9 @@
     @apply --font-text-small;
     @apply --text-ellipsis;
   }
+
+  --default-padding-footer: var(--default-spacing-xs) var(--default-spacing-sm) var(--default-spacing-lg)
+    var(--default-spacing-sm);
 }
 
 .po-page-slide {
@@ -101,10 +104,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: var(--spacing-md);
+  gap: var(--po-density-gap-spacing, var(--default-spacing-xs, var(--spacing-md)));
   max-width: 100%;
   text-align: left;
-  padding: var(--padding-header);
+  padding: var(--padding-header, var(--po-density-header-padding, var(--default-spacing-sm, var(--spacing-md))));
 }
 
 .po-page-slide-title {
@@ -128,18 +131,24 @@
   text-align: left;
   height: calc(100% - 70px); /* 100% - .po-page-slide-header */
   scroll-behavior: smooth;
-  padding: var(--padding-body);
+  padding: var(--padding-body, var(--po-density-content-padding, var(--default-spacing-sm, var(--spacing-md))));
 }
 
 .po-page-slide-footer {
-  padding: var(--padding-footer);
+  padding: var(
+    --padding-footer,
+    var(
+      --po-density-footer-padding,
+      var(--default-padding-footer, var(--spacing-sm) var(--spacing-md) var(--spacing-xl) var(--spacing-md))
+    )
+  );
 }
 
 .po-page-slide-footer-align-right {
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: var(--spacing-sm);
+  gap: var(--po-density-gap-spacing, var(--default-spacing-xs, var(--spacing-sm)));
   flex-wrap: wrap;
 }
 

@@ -13,7 +13,7 @@
 }
 
 .po-field-container-bottom {
-  line-height: var(--line-height);
+  line-height: var(--default-line-height-xs, var(--line-height-md));
   font-family: var(--font-family);
   font-size: var(--font-size);
 

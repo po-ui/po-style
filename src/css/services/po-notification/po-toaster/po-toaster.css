@@ -1,10 +1,3 @@
-:root {
-  --font-toaster-icon: {
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-}
-
 po-toaster {
   display: flex;
   align-items: center;
@@ -56,14 +49,16 @@ po-toaster {
 }
 
 .po-toaster-icon po-icon {
-  @apply --font-toaster-icon;
-
+  font-weight: 700;
   display: flex;
+}
+
+[data-a11y='AA'] [p-size-actions='small'] .po-toaster-icon po-icon i.an {
+  font-size: var(--font-size-default);
 }
 
 .po-toaster-icon po-icon i.an {
   font-size: var(--font-size-md);
-  padding: 0.125rem;
 }
 
 .po-toaster-message {
@@ -185,7 +180,6 @@ po-toaster {
   }
 
   .po-toaster-message {
-    padding-bottom: 0rem;
     padding-right: var(--spacing-xs);
     padding-left: var(--spacing-xs);
   }
@@ -193,14 +187,11 @@ po-toaster {
   .po-toaster-actions {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    padding-bottom: 0.5rem;
-
     display: inline-block;
   }
 
   .po-toaster-action {
     display: inherit;
-    margin-top: var(--spacing-xs);
   }
   .po-toaster-action po-button {
     float: right;
@@ -210,13 +201,6 @@ po-toaster {
 @media screen and (min-width: 961px) {
   .po-toaster {
     width: 50%;
-  }
-}
-
-@media screen and (max-width: 1366px) {
-  .po-toaster .po-button {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
   }
 }
 
@@ -255,14 +239,13 @@ po-toaster .po-toaster-inline[hidden] {
 .po-toaster-inline .po-toaster-inline-icon i {
   border-radius: 50%;
 }
-.po-toaster-inline .po-toaster-inline-icon i.an,
-[data-a11y='AAA'] .po-toaster-inline .po-toaster-inline-icon-aa i.an {
+.po-toaster-inline .po-toaster-inline-icon i.an {
   padding: 0.25rem;
   font-size: var(--font-size-default);
   display: flex;
 }
 
-.po-toaster-inline .po-toaster-inline-icon-aa i.an {
+[data-a11y='AA'] .po-toaster-inline[p-size-actions='small'] .po-toaster-inline-icon i.an {
   padding: 0.125rem;
   font-size: var(--font-size-xs);
 }
@@ -287,12 +270,12 @@ po-toaster .po-toaster-inline[hidden] {
   padding: var(--spacing-xs) 0;
   z-index: 1;
 }
+
 .po-toaster-inline .po-toaster-actions:last-child {
   margin-right: var(--spacing-xs);
 }
 
-.po-toaster-inline .po-toaster-actions .po-toaster-message,
-[data-a11y='AAA'] .po-toaster-inline .po-toaster-actions-aa .po-toaster-message {
+.po-toaster-inline .po-toaster-actions .po-toaster-message {
   padding: var(--spacing-xs) var(--spacing-sm);
   font-size: var(--font-size-default);
   font-weight: var(--font-weight-bold);
@@ -300,7 +283,7 @@ po-toaster .po-toaster-inline[hidden] {
   text-align: left;
 }
 
-.po-toaster-inline .po-toaster-actions-aa .po-toaster-message {
+[data-a11y='AA'] .po-toaster-inline[p-size-actions='small'] .po-toaster-actions .po-toaster-message {
   padding: 0.25rem var(--spacing-sm);
 }
 

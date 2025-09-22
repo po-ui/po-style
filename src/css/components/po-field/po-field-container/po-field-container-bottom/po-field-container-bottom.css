@@ -13,11 +13,18 @@
 }
 
 .po-field-container-bottom {
-  line-height: var(--line-height);
   font-family: var(--font-family);
   font-size: var(--font-size);
 
   font-weight: var(--font-weight-normal);
+}
+
+.po-field-container-bottom:empty {
+  padding-bottom: var(--spacing-xs);
+}
+
+.po-field-container-bottom:not(:empty) {
+  padding-bottom: var(--spacing-sm);
 }
 
 .po-icon-container {
@@ -86,7 +93,6 @@ po-field-container-bottom .po-field-container-bottom {
 
 .po-field-container-error-container {
   display: block;
-  margin-top: 4px;
 }
 
 .po-field-container-error-text {

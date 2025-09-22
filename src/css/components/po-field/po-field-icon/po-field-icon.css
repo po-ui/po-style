@@ -1,9 +1,6 @@
 .po-field-icon-container-left,
 .po-field-icon-container-right {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
 }
 
 .po-field-icon-container-left {
@@ -13,6 +10,7 @@
 
 .po-field-icon-container-right {
   right: 10px;
+  display: flex;
 }
 
 .po-field-icon,

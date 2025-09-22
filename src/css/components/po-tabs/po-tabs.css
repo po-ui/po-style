@@ -1,3 +1,8 @@
+:root {
+  --margin-tabs-container-xs: calc(-2 * var(--default-spacing-xs));
+  --margin-tabs-container-sm: calc(-1 * var(--spacing-sm));
+}
+
 po-page-default .po-tabs-container {
   overflow: initial;
   position: relative;
@@ -27,7 +32,7 @@ po-page-default .po-tabs-container {
 }
 
 .po-tabs-content {
-  padding-top: 8px;
+  padding-top: var(--po-density-gap-header-content, var(--spacing-xs));
 }
 
 .po-page-content .po-tabs-content {
@@ -39,6 +44,6 @@ po-page-default .po-tabs-container {
 }
 
 .po-page-content .po-tabs-container {
-  margin-left: var(--margin-tabs-container-left);
-  margin-right: var(--margin-tabs-container-right);
+  margin-left: var(--margin-tabs-container-left, var(--margin-tabs-container-xs, var(--margin-tabs-container-sm)));
+  margin-right: var(--margin-tabs-container-right, var(--margin-tabs-container-xs, var(--margin-tabs-container-sm)));
 }

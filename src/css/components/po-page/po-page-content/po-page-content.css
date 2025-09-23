@@ -1,7 +1,7 @@
 .po-page-content {
   max-height: 100%;
   overflow-y: auto;
-  padding: var(--padding-content);
+  padding: var(--padding-content, var(--po-density-content-padding, var(--spacing-xs) var(--spacing-sm)));
   position: relative;
   width: 100%;
 }
@@ -17,6 +17,10 @@
 .po-page-content::-webkit-scrollbar-thumb {
   background-color: var(--color-page-content-background-color-scrollbar);
   border-radius: 10px;
+}
+
+.po-page-content .po-table-actions {
+  padding-block: 0 var(--spacing-xs);
 }
 
 @media print {

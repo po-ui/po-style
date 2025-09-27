@@ -3,6 +3,9 @@
   display: flex;
   flex-wrap: wrap;
 }
+.po-row > * {
+  min-width: 0;
+}
 
 [class*='po-xl-'],
 [class*=' po-xl-'],

@@ -569,7 +569,6 @@ po-helper {
   --border-color-hover: var(--color-brand-01-darkest);
   --background-pressed: var(--color-brand-01-light);
   --color-disabled: var(--color-action-disabled);
-  --font-size: var(--font-size);
 }
 :root {
   /*------------------------------------*\

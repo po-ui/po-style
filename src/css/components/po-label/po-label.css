@@ -61,10 +61,6 @@ po-label {
 }
 
 @media (max-width: 768px) {
-  [data-a11y='AA'] po-label:has(.po-label-requirement.po-label-required) > .po-label {
-    padding-right: 0;
-  }
-
   [data-a11y='AA'] .po-label-requirement.po-label-required {
     display: inline;
     margin-left: 0;

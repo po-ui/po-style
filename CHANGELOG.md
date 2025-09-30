@@ -2,11 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.29.0](https://github.com/po-ui/po-style/compare/v19.28.1...v19.29.0) (2025-09-30)
+
+
+### Features
+
+* **scroll:** implementa definições do AnimaliaDS ([9b0119e](https://github.com/po-ui/po-style/commit/9b0119e6e803a243cd5961582b5e7ecab39df982))
+
+
+
 ## [19.28.1](https://github.com/po-ui/po-style/compare/v19.28.0...v19.28.1) (2025-09-22)
 
 Compatibilidade com @po-ui/ng-components@19.28.1
 
-## [19.28.0](https://github.com/po-ui/po-style/compare/v19.27.0...v19.28.0) (2025-09-15)
+# [19.28.0](https://github.com/po-ui/po-style/compare/v19.27.0...v19.28.0) (2025-09-15)
 
 Compatibilidade com @po-ui/ng-components@19.28.0
 
@@ -72,11 +81,11 @@ Utilizar --padding-header, --padding-body, e --padding-footer.
 * **widget:** implementa definições do AnimaliaDS ([0f985c2](https://github.com/po-ui/po-style/commit/0f985c233d1195d7127728758cc3f57eff81d6d8))
 
 
-## [19.22.0](https://github.com/po-ui/po-style/compare/v19.21.0...v19.22.0) (2025-08-04)
+# [19.22.0](https://github.com/po-ui/po-style/compare/v19.21.0...v19.22.0) (2025-08-04)
 
 Compatibilidade com @po-ui/ng-components@19.22.0
 
-## [19.21.0](https://github.com/po-ui/po-style/compare/v19.20.0...v19.21.0) (2025-07-28)
+# [19.21.0](https://github.com/po-ui/po-style/compare/v19.20.0...v19.21.0) (2025-07-28)
 
 Compatibilidade com @po-ui/ng-components@19.21.0
 

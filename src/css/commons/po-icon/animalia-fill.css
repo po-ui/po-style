@@ -33,6 +33,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.an-fill.an-totvs-logo:before {
+  content: '\e901';
+}
 .an-fill.an-acorn:before {
   content: '\eb9a';
 }
@@ -4625,7 +4628,4 @@
 }
 .an-fill.an-fluig-logo:before {
   content: '\e900';
-}
-.an-fill.an-totvs-logo:before {
-  content: '\e901';
 }

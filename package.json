@@ -24,7 +24,7 @@
     "publish:style:local": "npm publish ./dist/style --registry http://localhost:4873 --ignore-scripts"
   },
   "devDependencies": {
-    "@animaliads/animalia-icon": "1.0.3",
+    "@animaliads/animalia-icon": "1.0.5",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-angular": "^11.0.0",
     "autoprefixer": "^9.8.6",

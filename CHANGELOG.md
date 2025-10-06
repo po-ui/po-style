@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.30.0](https://github.com/po-ui/po-style/compare/v19.29.0...v19.30.0) (2025-10-06)
+
+
+### Features
+
+* **helper:** implementa novo componente de ajuda ([8b4b2ea](https://github.com/po-ui/po-style/commit/8b4b2eaaa5b16e58c69d9f749ccee01f5679a81a))
+
+
+
 # [19.29.0](https://github.com/po-ui/po-style/compare/v19.28.1...v19.29.0) (2025-09-30)
 
 

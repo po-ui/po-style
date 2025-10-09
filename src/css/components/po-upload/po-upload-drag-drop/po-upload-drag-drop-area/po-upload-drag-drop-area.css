@@ -14,6 +14,7 @@
   display: table;
   height: 100%;
   width: 100%;
+  margin-bottom: var(--spacing-xs);
 }
 
 .po-upload-drag-drop-area-container {
@@ -31,7 +32,7 @@
   @apply --font-upload-drag-drop-area-select-files-text;
   background: none;
   border: none;
-  color: var(--color-upload-drag-drop-area-select-files-text);
+  color: var(--color-action-default, var(--color-upload-drag-drop-area-select-files-text));
   -webkit-appearance: none;
 }
 

@@ -1,5 +1,8 @@
 .po-upload-file-restrictions {
-  color: var(--color-upload-file-restrictions-color-text);
+  font-family: var(--font-family-text-support);
+  color: var(--text-color-text-support, var(--color-upload-file-restrictions-color-text));
   display: block;
-  padding: 16px 0 8px 0;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-md);
 }

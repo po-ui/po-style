@@ -12,15 +12,239 @@
   opacity: 0.01;
 }
 
-.po-upload-progress-container {
-  padding-top: 16px;
-}
-
-.po-upload-progress-container .po-container-content {
-  overflow-y: initial;
+.po-upload-files-content {
+  padding-top: var(--spacing-sm);
+  gap: var(--spacing-xs);
+  display: grid;
 }
 
 .po-upload-send-button {
   display: block;
-  padding: 8px 0;
+  padding: var(--spacing-xs) 0;
+}
+
+.po-upload-progress-container po-container,
+[data-a11y='AAA'] .po-upload-progress-container-aa po-container {
+  --background: var(--background-color-content);
+  --border-radius: var(--border-radius-content);
+  --border-color: var(--border-color-content);
+  --border-width: var(--border-width-sm);
+  --padding: 0px;
+
+  min-height: var(--target-size-aaa);
+}
+
+.po-upload-progress-container-aa po-container {
+  min-height: var(--target-size-aa);
+}
+
+.po-upload-status-uploaded po-container {
+  --background: var(--background-color-content-uploaded);
+  --border-color: var(--border-color-content-uploaded);
+}
+
+.po-upload-progress-container po-container .po-progress-bar {
+  --background-color-tray: transparent;
+}
+
+po-progress.po-upload-progress {
+  --margin-bottom: 0px;
+}
+
+.po-upload-content {
+  margin-inline: var(--spacing-sm);
+}
+
+.po-upload-file-name,
+[data-a11y='AAA'] .po-upload-file-name-aa {
+  min-height: var(--target-size-aaa);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.po-upload-file-name-aa {
+  min-height: var(--target-size-aa);
+}
+
+.po-upload-display-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.po-upload-icon-focus,
+[data-a11y='AAA'] .po-upload-icon-focus-aa {
+  min-height: var(--target-size-aaa);
+  min-width: var(--target-size-aaa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: calc(-1 * var(--spacing-xs));
+}
+
+.po-upload-icon-focus-aa {
+  min-height: var(--target-size-aa);
+  min-width: var(--target-size-aa);
+}
+
+.po-upload-icon-focus:focus {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: -4px;
+}
+
+.po-upload-icon-close {
+  color: var(--color-action-default);
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+}
+
+.po-upload-icon-remove {
+  color: var(--color-feedback-negative-base);
+}
+
+.po-upload-buttons-content {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.po-upload-custom-action-button {
+  padding-block: var(--spacing-xs);
+}
+
+.po-upload-content-error {
+  align-items: center;
+  padding-bottom: var(--spacing-xs);
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.po-upload-container-error po-container {
+  --background: var(--background-color-content-error);
+  --border-color: var(--border-color-content-error);
+}
+
+.po-upload-icon-error {
+  display: flex;
+  align-items: center;
+  color: var(--color-icon-error);
+}
+
+.po-upload-content-error-text {
+  color: var(--text-color-error);
+}
+
+po-link.po-upload-retry-link {
+  --text-color: var(--color-feedback-negative-base);
+  --text-color-hover: var(--color-feedback-negative-dark);
+  --text-color-pressed: var(--color-feedback-negative-darker);
+}
+
+.po-upload-progress-container .po-upload-file-name {
+  color: var(--text-color-file-name);
+  font-family: var(--font-family-file-name);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-md);
+}
+
+.fade-out {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: var(--duration-slow);
+  transition-timing-function: var(--timing-entering);
+}
+
+.fade-out.hidden {
+  opacity: 0;
+}
+
+.po-upload-progress-container .po-upload-info-bar {
+  color: var(--text-color-info-bar);
+  font-family: var(--font-family-info-bar);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.po-upload-file-name-display {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.po-upload-content-thumbnail {
+  margin-left: var(--spacing-xs);
+}
+
+.po-upload-thumbnail {
+  margin-right: var(--spacing-xs);
+  margin-block: var(--spacing-xs);
+  cursor: pointer;
+}
+
+.po-upload-thumbnail,
+.po-upload-thumbnail-img {
+  border-radius: var(--border-radius-thumbnail);
+  border-width: var(--border-width-thumbnail);
+  background-color: var(--background-color-thumbnail);
+  height: 80px;
+  width: 80px;
+}
+
+.po-upload-thumbnail-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-left: 56px;
+  margin-top: 56px;
+  background: var(--color-brand-01-lightest);
+  border-radius: var(--border-radius-pill);
+  border: var(--border-width-thumbnail) solid var(--color-neutral-light-00);
+}
+
+.po-upload-thumbnail-icon po-icon {
+  font-size: 14px;
+  color: var(--color-action-default);
+  display: flex;
+  align-items: center;
+}
+
+.po-upload-thumbnail-broken {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+.po-upload-thumbnail-broken po-icon {
+  display: block;
+  font-size: 80px;
+  color: var(--color-action-default);
+}
+
+.po-upload-name-interactive {
+  cursor: pointer;
+  color: var(--text-color-file-name-interactive);
+}
+
+.po-upload-cancel-disabled:focus {
+  outline: none;
+}
+
+.po-upload-cancel-disabled po-icon {
+  color: var(--color-action-disabled);
+  cursor: not-allowed;
 }

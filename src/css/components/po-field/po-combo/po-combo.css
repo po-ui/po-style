@@ -66,6 +66,10 @@
   font-weight: bold;
 }
 
+[data-a11y='AA'] .po-listbox[p-size='small'] .po-combo-item-title {
+  padding: var(--spacing-xxs) var(--spacing-xs);
+}
+
 li[aria-disabled='true']:has(.po-combo-item-title)
   ~ li.po-listbox-item:not([aria-disabled='true'])
   .po-item-list-label {

@@ -1,5 +1,4 @@
-.po-item-list,
-[data-a11y='AAA'] .po-item-list-aa {
+.po-item-list {
   font-family: var(--font-family);
   font-size: var(--font-size-default);
   line-height: var(--line-height);
@@ -12,9 +11,10 @@
   gap: var(--spacing-xs);
 }
 
-.po-item-list-aa {
+[data-a11y='AA'] .po-listbox[p-size='small'] .po-item-list {
   font-size: var(--font-size-sm);
   min-height: var(--target-size-aa);
+  padding-inline: var(--spacing-xs);
 }
 
 /* estilo na ação de click dos itens */

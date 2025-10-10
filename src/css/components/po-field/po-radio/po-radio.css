@@ -52,7 +52,6 @@ po-radio {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
-  line-height: var(--line-height-none);
 }
 
 .po-radio > label *,
@@ -64,7 +63,6 @@ po-radio {
 
 .po-radio-aa > label * {
   font-size: var(--font-size-sm);
-  line-height: var(--line-height-none);
 }
 
 .po-radio-focus > label {
@@ -87,7 +85,6 @@ po-radio {
   -webkit-background-clip: content-box;
   background-clip: content-box;
   margin: 0;
-  align-self: flex-start;
 }
 
 .po-radio input[p-size='small'] {

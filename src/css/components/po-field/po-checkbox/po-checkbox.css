@@ -14,7 +14,6 @@
   min-width: 24px;
   min-height: 24px;
   cursor: pointer;
-  align-self: flex-start;
 }
 
 .po-checkbox-aa {
@@ -22,6 +21,7 @@
   height: var(--spacing-sm);
   min-width: var(--spacing-sm);
   min-height: var(--spacing-sm);
+  margin: 0.125rem 0;
 }
 
 .po-checkbox-large {
@@ -62,14 +62,12 @@
 
 .po-checkbox-outline {
   display: flex;
-  align-items: center;
   min-width: 0;
 }
 
 [aria-checked='true'].po-checkbox,
 [aria-checked='mixed'].po-checkbox {
   background-color: var(--color-checked);
-
   border-color: transparent;
 }
 
@@ -148,7 +146,6 @@
 
 .po-checkbox-label-aa > label.po-label {
   font-size: var(--font-size-sm);
-  line-height: var(--line-height-none);
 }
 
 .po-checkbox-label > label.po-label:not(.po-label-disabled) {

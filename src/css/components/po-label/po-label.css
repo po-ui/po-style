@@ -5,7 +5,7 @@ po-label {
 
 .po-label {
   font-family: var(--font-family);
-  font-size: var(--font-size);
+  font-size: var(--font-size, var(--font-size-default));
   line-height: var(--line-height);
   color: var(--text-color);
   font-weight: var(--font-weight-normal);

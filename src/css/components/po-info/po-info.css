@@ -47,9 +47,18 @@
   }
 }
 
+[data-a11y='AA'] .po-info[p-size='small'] .po-info-value,
+[data-a11y='AA'] .po-info[p-size='small'] .po-info-label {
+  font-size: var(--font-size-sm);
+}
+
 .po-info-container-content {
-  padding: var(--padding);
+  padding: var(--padding, var(--spacing-xs) 0);
   width: 100%;
+}
+
+[data-a11y='AA'] .po-info[p-size='small'] .po-info-container-content {
+  padding: var(--padding, var(--spacing-xxs) 0);
 }
 
 .po-info-link,

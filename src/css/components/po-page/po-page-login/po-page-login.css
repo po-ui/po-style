@@ -173,14 +173,8 @@
 
 .po-page-login-info-icon-container {
   display: table-cell;
-  vertical-align: bottom;
+  vertical-align: middle;
   width: 20px;
-  padding-bottom: 1.5rem;
-}
-
-.po-page-login-info-icon-remember-user {
-  vertical-align: bottom;
-  padding-bottom: 1rem;
 }
 
 .po-page-login-info-container {
@@ -196,6 +190,7 @@
 .po-page-login-body i.po-field-icon {
   cursor: default;
   text-align: left;
+  padding-left: var(--spacing-xs);
 }
 
 .po-page-login-popover {
@@ -283,10 +278,6 @@
 @media (max-width: 1366px) {
   .po-page-login-field-size {
     width: calc(100% - 32px);
-  }
-
-  .po-page-login-info-icon-container {
-    padding-left: 8px;
   }
 
   .po-page-login-password-popover-container {

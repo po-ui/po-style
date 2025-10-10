@@ -17,7 +17,6 @@ body {
   color: var(--color-neutral-dark-90);
 
   font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-default);
   line-height: var(--line-height-md);
   letter-spacing: var(--letter-spacing-auto);
   text-align: left;

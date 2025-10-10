@@ -11,7 +11,7 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-tooltip-shadow-balloon);
   max-width: 15rem;
-  padding: var(--po-density-content-padding, var(--default-spacing-xs, var(--spacing-squish-md)));
+  padding: var(--po-density-floating-padding, var(--default-spacing-squish-xs, var(--spacing-squish-md)));
   position: fixed;
   z-index: 1000;
   opacity: 0;

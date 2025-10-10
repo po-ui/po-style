@@ -14,7 +14,7 @@
   line-height: var(--line-height-none);
 }
 
-[data-a11y='AA'] .po-tree-view[p-components-size='small'] .po-tree-view-item-header {
+[data-a11y='AA'] po-tree-view[p-components-size='small'] .po-tree-view .po-tree-view-item-header {
   padding: var(--spacing-xs);
 }
 

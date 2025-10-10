@@ -26,7 +26,7 @@
   width: 100%;
 }
 
-[data-a11y='AA'] [p-size='small'] .po-rich-text-body {
+[data-a11y='AA'] .po-rich-text-body[p-size='small'] {
   font-size: var(--font-size-sm);
   padding: var(--spacing-xs);
 }

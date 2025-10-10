@@ -1,30 +1,42 @@
 po-helper,
-[data-a11y='AAA'] po-helper,
-[data-a11y='AA'] po-helper,
-[data-a11y='AA'] po-helper .po-helper-container[p-size='medium'],
-po-helper .po-helper-container[p-size='medium'] {
+po-helper .po-helper-container,
+[data-default-size='small'][data-a11y='AA'] po-helper .po-helper-container[p-size='medium'] {
+  display: flex;
   --font-size: var(--font-size-lg);
 }
 
 [data-default-size='small'][data-a11y='AA'] po-helper,
+[data-default-size='small'][data-a11y='AA'] po-helper .po-helper-container,
 [data-a11y='AA'] po-helper .po-helper-container[p-size='small'] {
   --font-size: var(--font-size-default);
+  align-items: center;
 }
 
-.po-helper-container po-icon {
+.po-helper-container po-icon,
+[data-a11y='AA'] .po-helper-container po-icon {
   font-size: var(--font-size);
   color: var(--color);
-  line-height: 0;
+}
+
+[data-default-size='small'][data-a11y='AA'] .po-helper-container po-icon,
+[data-a11y='AA'] po-helper .po-helper-container[p-size='small'] po-icon {
+  font-size: var(--font-size);
+  color: var(--color);
+  display: flex;
 }
 
 .po-helper-target {
   cursor: pointer;
   display: inline-flex;
-  align-items: center;
   justify-content: center;
   width: var(--font-size);
   height: var(--font-size);
   border-radius: 50%;
+}
+
+[data-default-size='small'][data-a11y='AA'] .po-helper-container.po-helper-target,
+[data-a11y='AA'] po-helper .po-helper-container.po-helper-target[p-size='small'] {
+  align-items: center;
 }
 
 .po-helper-container:hover {
@@ -41,10 +53,6 @@ po-helper .po-helper-container[p-size='medium'] {
   outline-style: solid;
 }
 
-.po-helper-popover {
-  min-height: unset !important;
-}
-
 .po-helper-popover .po-popover-content {
   max-width: 386px;
   white-space: normal;
@@ -54,6 +62,7 @@ po-helper .po-helper-container[p-size='medium'] {
 }
 
 .po-helper-popover {
+  min-height: unset !important;
   transform: translateY(-4px);
 }
 
@@ -62,12 +71,4 @@ po-helper .po-helper-disabled {
   color: var(--color-disabled);
   cursor: not-allowed;
   pointer-events: none;
-}
-
-.po-field-helper-button {
-  padding-top: 4px;
-}
-
-po-helper.po-field-helper-button:has(.po-helper-container[p-size='small']) {
-  padding-top: 2px;
 }

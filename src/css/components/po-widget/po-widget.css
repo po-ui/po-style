@@ -19,10 +19,6 @@
   }
 }
 
-po-container .po-widget-body {
-  --font-size: 1rem;
-}
-
 .po-widget {
   background-color: var(--background);
 }
@@ -71,7 +67,11 @@ po-container .po-widget-body {
 }
 
 .po-widget-body {
-  font-size: var(--font-size, var(--font-size-default));
+  font-size: var(--font-size);
+}
+
+[data-default-size='small'][data-a11y='AA'] .po-widget-body {
+  font-size: var(--font-size, var(--font-size-sm));
 }
 
 .po-widget-primary .po-widget-header,

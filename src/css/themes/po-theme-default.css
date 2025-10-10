@@ -644,7 +644,7 @@ po-container {
   --line-weight: var(--font-weight-semibold);
   --line-height: var(--line-height-md);
   --text-color: var(--color-neutral-dark-90);
-  --font-size: 1.125rem;
+  --font-size: var(--font-size);
   --letter-spacing: 0.017rem;
   --margin: 0 0 var(--spacing-xs);
   /* content */
@@ -759,10 +759,17 @@ po-dynamic-container po-container {
 }
 
 /*------------------------------------*\
+  FIELD CONTAINER HEADER
+\*------------------------------------*/
+po-field-container-header {
+  --font-size: var(--font-size);
+}
+
+/*------------------------------------*\
   FIELD CONTAINER CONTENT
 \*------------------------------------*/
 .po-field-container-content {
-  --padding: var(--spacing-xs) 0;
+  --padding: var(--padding);
 }
 
 /*------------------------------------*\
@@ -770,8 +777,8 @@ po-dynamic-container po-container {
 \*------------------------------------*/
 po-field-container-bottom {
   --font-family: var(--font-family-theme);
-  --font-size: var(--font-size-sm);
-  --line-height: var(--line-height);
+  --font-size: var(--font-size);
+  --line-height: var(--line-height-md);
   --text-color-help: var(--color-neutral-dark-90);
 
   --text-color-help-disabled: var(--color-neutral-mid-60);
@@ -804,7 +811,7 @@ po-field-container-bottom {
   INFO CONTAINER CONTENT
 \*------------------------------------*/
 po-info .po-info-container-content {
-  --padding: var(--spacing-xs) 0;
+  --padding: var(--padding);
 }
 
 po-info .po-info-label-horizontal {
@@ -880,7 +887,7 @@ po-item-list:is([p-type='option'], [p-type='check']) {
 po-label {
   /* basic */
   --font-family: var(--font-family-theme);
-  --font-size: var(--font-size-default);
+  --font-size: var(--font-size);
   --line-height: var(--line-height-md);
   --text-color: var(--color-neutral-dark-90);
 
@@ -1806,7 +1813,7 @@ po-upload {
 \*------------------------------------*/
 po-widget {
   --font-family: var(--font-family-theme);
-  --font-size: var(--font-size-default);
+  --font-size: var(--font-size);
   --font-weight: var(--font-weight-bold);
   --font-color: var(--color-neutral-dark-95);
   --padding: var(--padding); /*Deprecated v21.x.x utilizar --padding-header, --padding-body, e --padding-footer*/
@@ -1903,8 +1910,8 @@ po-header {
 
   /* submenus */
   --border-radius: var(--border-radius-md);
-  --text-color-submenu: var(--color-brand-01-base);
-  --icon-color: var(--color-brand-01-base);
+  --text-color-submenu: var(--color-brand-01-dark);
+  --icon-color: var(--color-brand-01-dark);
   --outline-color-focused: var(--color-neutral-dark-95);
   /* submenus hover */
   --background-hover: var(--color-brand-01-lighter);

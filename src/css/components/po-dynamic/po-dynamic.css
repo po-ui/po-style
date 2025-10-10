@@ -31,6 +31,6 @@
   padding: var(--po-density-content-padding, var(--default-spacing-xs, var(--spacing-md)));
 }
 
-po-dynamic-view .po-info-value {
-  font-size: var(--font-size-default);
+[data-a11y='AA'] po-dynamic-view[p-components-size='small'] .po-dynamic-view po-tag .po-tag-container {
+  gap: var(--spacing-xxs);
 }

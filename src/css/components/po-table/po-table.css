@@ -592,10 +592,10 @@ span.po-table-header-icon-ascending svg {
   background-color: var(--color-brand-01-lighter);
 }
 
-[data-a11y='AA'] .po-table[p-components-size='small'] thead tr th,
-[data-a11y='AA'] .po-table[p-components-size='small'] .po-table-master-detail thead tr th,
-[data-a11y='AA'] .po-table[p-components-size='small'] .po-table-column-drag-box.cdk-drag-preview,
-[data-a11y='AA'] .po-table[p-components-size='small'] tbody tr td {
+[data-a11y='AA'] po-table[p-components-size='small'] .po-table thead tr th,
+[data-a11y='AA'] po-table[p-components-size='small'] .po-table .po-table-master-detail thead tr th,
+[data-a11y='AA'] po-table[p-components-size='small'] .po-table .po-table-column-drag-box.cdk-drag-preview,
+[data-a11y='AA'] po-table[p-components-size='small'] .po-table tbody tr td {
   line-height: var(--spacing-md);
   font-size: var(--font-size-sm);
 }

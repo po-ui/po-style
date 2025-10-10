@@ -10,7 +10,7 @@
 
 .po-container-title {
   font-family: var(--font-family);
-  font-size: var(--font-size);
+  font-size: var(--font-size, 1.125rem);
   font-weight: var(--line-weight);
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
@@ -28,6 +28,10 @@
   overflow-y: auto;
   padding: var(--padding, var(--po-density-content-padding, var(--default-spacing-xs, var(--spacing-sm))));
   width: 100%;
+}
+
+[data-default-size='small'][data-a11y='AA'] .po-container-content {
+  font-size: var(--font-size-sm);
 }
 
 .po-container-content:not(po-widget .po-container-content) {

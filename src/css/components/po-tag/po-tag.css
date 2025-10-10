@@ -207,14 +207,17 @@
   color: var(--text-color-warning);
 }
 
-.po-clickable.po-tag-wrapper,
-.po-click.po-tag-wrapper {
+.po-clickable.po-tag-wrapper {
   min-width: 44px;
-  min-height: 44px;
+  min-height: var(--target-size-aaa);
   display: flex;
   align-items: center;
   justify-content: center;
   outline: none;
+}
+
+[data-a11y='AA'] .po-clickable.po-tag-wrapper {
+  min-height: var(--target-size-aa);
 }
 
 .po-tag-inverse.po-text-color-01 {

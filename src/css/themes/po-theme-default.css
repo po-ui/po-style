@@ -759,10 +759,17 @@ po-dynamic-container po-container {
 }
 
 /*------------------------------------*\
+  FIELD CONTAINER HEADER
+\*------------------------------------*/
+po-field-container-header {
+  --font-size: var(--font-size);
+}
+
+/*------------------------------------*\
   FIELD CONTAINER CONTENT
 \*------------------------------------*/
 .po-field-container-content {
-  --padding: var(--spacing-xs) 0;
+  --padding: var(--padding);
 }
 
 /*------------------------------------*\
@@ -770,8 +777,8 @@ po-dynamic-container po-container {
 \*------------------------------------*/
 po-field-container-bottom {
   --font-family: var(--font-family-theme);
-  --font-size: var(--font-size-sm);
-  --line-height: var(--line-height);
+  --font-size: var(--font-size);
+  --line-height: var(--line-height-md);
   --text-color-help: var(--color-neutral-dark-90);
 
   --text-color-help-disabled: var(--color-neutral-mid-60);
@@ -804,7 +811,7 @@ po-field-container-bottom {
   INFO CONTAINER CONTENT
 \*------------------------------------*/
 po-info .po-info-container-content {
-  --padding: var(--spacing-xs) 0;
+  --padding: var(--padding);
 }
 
 po-info .po-info-label-horizontal {
@@ -880,7 +887,7 @@ po-item-list:is([p-type='option'], [p-type='check']) {
 po-label {
   /* basic */
   --font-family: var(--font-family-theme);
-  --font-size: var(--font-size-default);
+  --font-size: var(--font-size);
   --line-height: var(--line-height-md);
   --text-color: var(--color-neutral-dark-90);
 

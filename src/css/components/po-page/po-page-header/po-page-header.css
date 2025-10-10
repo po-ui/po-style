@@ -63,10 +63,6 @@
 }
 
 @media screen and (max-width: 1366px) {
-  .po-page-header-title {
-    @apply --font-page-header-title-smaller;
-  }
-
   .po-page-header-actions {
     gap: var(--gap-actions, var(--spacing-xs));
   }

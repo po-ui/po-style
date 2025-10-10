@@ -17,10 +17,10 @@
   line-height: var(--line-height-md);
 }
 
-[data-a11y='AA'] .po-progress[p-size-actions='small'] .po-progress-description label.po-label,
-[data-a11y='AA'] .po-progress[p-size-actions='small'] .po-progress-info-text,
-[data-a11y='AA'] .po-progress[p-size-actions='small'] .po-progress-info-left,
-[data-a11y='AA'] .po-progress[p-size-actions='small'] .po-progress-info-right {
+[data-a11y='AA'] po-progress[p-size-actions='small'] .po-progress-description label.po-label,
+[data-a11y='AA'] po-progress[p-size-actions='small'] .po-progress-info-text,
+[data-a11y='AA'] po-progress[p-size-actions='small'] .po-progress-info-left,
+[data-a11y='AA'] po-progress[p-size-actions='small'] .po-progress-info-right {
   font-size: var(--font-size-sm);
 }
 

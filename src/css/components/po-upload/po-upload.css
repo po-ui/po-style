@@ -155,6 +155,10 @@ po-link.po-upload-retry-link {
   line-height: var(--line-height-md);
 }
 
+[data-a11y='AA'] .po-upload[p-size='small'] .po-upload-progress-container .po-upload-file-name {
+  font-size: var(--font-size-sm);
+}
+
 .fade-out {
   opacity: 0;
   transition-property: all;

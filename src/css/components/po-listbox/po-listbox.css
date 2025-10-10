@@ -27,11 +27,20 @@
   padding-block: var(--spacing-sm) var(--spacing-xs);
 }
 
+[data-a11y='AA'] po-search-list[p-size='small'] .po-field-container-input.po-listbox-container-search {
+  padding-inline: var(--spacing-xs);
+  padding-block: var(--spacing-xs) var(--spacing-xxs);
+}
+
 .po-listbox-list {
   list-style: none;
   max-height: inherit;
   overflow-y: auto;
   padding-block: var(--spacing-xs);
+}
+
+[data-a11y='AA'] .po-listbox[p-size='small'] .po-listbox-list {
+  padding-block: var(--spacing-xxs);
 }
 
 .po-listbox-container-loading-default {

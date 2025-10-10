@@ -7,6 +7,10 @@
   position: relative;
 }
 
+[data-a11y='AA'] .po-checkbox-group-content[p-size='small'] .po-checkbox-group-item {
+  padding: 0 var(--spacing-xs) 0 0;
+}
+
 .po-checkbox-group-item .po-checkbox-group-input {
   height: 0;
   width: 0;
@@ -25,11 +29,12 @@ po-checkbox-group.ng-invalid.ng-dirty .po-checkbox:not([aria-disabled='true']) {
 }
 
 .po-checkbox-group-content ul {
-  padding: var(--spacing-xs) 0;
+  margin: var(--spacing-xs) 0;
   row-gap: var(--spacing-md);
   width: 100%;
 }
 
-[data-a11y='AA'] [p-size='small'] .po-checkbox-group-content ul {
+[data-a11y='AA'] .po-checkbox-group-content[p-size='small'] ul {
+  margin: var(--spacing-xxs) 0;
   row-gap: var(--spacing-xs);
 }

@@ -27,7 +27,7 @@
 }
 
 .po-popover-content {
-  padding: var(--po-density-content-padding, var(--default-spacing-xs, var(--spacing-sm)));
+  padding: var(--po-density-floating-padding, var(--default-spacing-squish-xs, var(--spacing-sm)));
   width: 100%;
   max-height: 768px;
   overflow: auto;
@@ -37,6 +37,11 @@
   @apply --font-popover-font-title;
   color: var(--color-popover-color-text-title);
   display: block;
-  line-height: 14px;
+  line-height: var(--line-height-md);
   margin-bottom: 8px;
+}
+
+[data-default-size='small'][data-a11y='AA'] .po-popover-title,
+[data-default-size='small'][data-a11y='AA'] .po-popover-content {
+  font-size: var(--font-size-sm);
 }

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.31.0](https://github.com/po-ui/po-style/compare/v19.30.0...v19.31.0) (2025-10-13)
+
+
+### Features
+
+* **icons:** atualiza AnimaliaIcons para v1.0.5 ([73125ce](https://github.com/po-ui/po-style/commit/73125ce9b48cc5606febc1af00ebf55eebc8bac9))
+
+
+
 # [19.30.0](https://github.com/po-ui/po-style/compare/v19.29.0...v19.30.0) (2025-10-06)
 
 

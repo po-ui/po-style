@@ -103,3 +103,46 @@ po-multiselect.ng-invalid.ng-dirty .po-multiselect-input {
 po-multiselect.ng-invalid.ng-dirty .po-multiselect-input .po-field-icon-container-right .po-icon-input {
   color: var(--color-error);
 }
+
+.po-multiselect-field-wrapper,
+.po-multiselect-flex-item {
+  display: contents;
+}
+
+.po-multiselect-field-wrapper._active {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-xs);
+  flex-wrap: nowrap;
+  min-width: 0;
+  padding-right: var(--spacing-xs);
+}
+
+.po-multiselect-field-wrapper._active .po-multiselect-flex-item {
+  display: block;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.po-multiselect-field-wrapper._active .po-field-container-content {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.po-multiselect-field-wrapper._active .po-multiselect-input {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.po-multiselect-field-wrapper._active po-helper {
+  flex: 0 0 auto;
+  position: relative;
+  top: 4px;
+}
+
+.po-multiselect-field-wrapper._active po-helper:has(.po-helper-container[p-size='small']) {
+  top: 2px;
+}

@@ -160,6 +160,10 @@ po-page-login .po-switch {
   justify-content: end;
 }
 
+po-switch po-helper {
+  display: flex;
+}
+
 @media print {
   .po-switch-container {
     print-color-adjust: exact;

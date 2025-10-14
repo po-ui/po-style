@@ -102,3 +102,32 @@ po-field-container-bottom .po-field-container-bottom {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.po-footer-group .po-field-container-bottom-help-text,
+.po-footer-group .po-field-container-bottom-text-error {
+  padding-right: var(--spacing-xs);
+}
+
+.po-footer-group .po-field-container-bottom-help-text:empty,
+.po-footer-group .po-field-container-bottom-text-error:empty {
+  padding-right: 0;
+}
+
+.po-footer-group {
+  display: flex;
+  align-items: start;
+}
+
+.po-footer-group po-field-container-bottom {
+  min-width: 0;
+}
+
+.po-footer-group po-helper {
+  padding-right: var(--spacing-xs);
+  flex: 0 0 auto;
+}
+
+.po-footer-group po-field-container-bottom:has(.po-field-container-bottom-help-text:not(:empty)),
+.po-footer-group po-field-container-bottom:has(.po-field-container-bottom-text-error:not(:empty)) {
+  flex: 1;
+}

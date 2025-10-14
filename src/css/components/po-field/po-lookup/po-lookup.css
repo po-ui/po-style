@@ -362,3 +362,54 @@ po-lookup.ng-invalid.ng-dirty:hover .po-lookup-buttons .po-lookup-button.po-look
 po-lookup.ng-invalid.ng-dirty .po-lookup-input:focus ~ .po-lookup-buttons .po-lookup-button-trigger {
   border-left-color: var(--color-error);
 }
+
+.po-lookup-field-wrapper,
+.po-lookup-flex-item {
+  display: contents;
+}
+
+.po-lookup-field-wrapper._active {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-xs);
+  flex-wrap: nowrap;
+  min-width: 0;
+  padding-right: var(--spacing-xs);
+}
+
+.po-lookup-field-wrapper._active .po-lookup-flex-item {
+  display: block;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.po-lookup-field-wrapper._active .po-field-container-content {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.po-lookup-field-wrapper._active .po-lookup-input {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.po-lookup-field-wrapper._active po-helper {
+  flex: 0 0 auto;
+  position: relative;
+  top: 4px;
+}
+
+.po-lookup-field-wrapper._active po-helper:has(.po-helper-container[p-size='small']) {
+  top: 2px;
+}
+
+.po-lookup-field-wrapper._active:has(.po-lookup-input-auto) po-helper {
+  top: 8px;
+}
+
+.po-lookup-field-wrapper._active:has(.po-lookup-input-auto-aa) po-helper {
+  top: 5px;
+}

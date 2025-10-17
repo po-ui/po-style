@@ -1320,6 +1320,7 @@ po-progress {
   --text-color: var(--color-neutral-dark-90);
   --text-color-error: var(--color-feedback-negative-dark);
   --color-icon-error: var(--color-feedback-negative-dark);
+  --margin-bottom: var(--spacing-xs);
 }
 
 po-progress-bar {
@@ -1732,28 +1733,6 @@ po-textarea {
   UPLOAD
 \*------------------------------------*/
 
-  --color-upload-color-text-filename-loading: var(--color-neutral-dark-90);
-
-  --color-upload-background-color-disabled: var(--color-neutral-light-00);
-  --color-upload-border-disabled: var(--color-neutral-light-30);
-  --color-upload-color-disabled: var(--color-neutral-light-30);
-
-  --color-upload-background-color-hover: var(--color-neutral-light-00);
-  --color-upload-border-hover: var(--color-primary-dark-20);
-  --color-upload-color-hover: var(--color-primary-dark-20);
-
-  --color-upload-background-color-pressed: var(--color-neutral-light-00);
-  --color-upload-border-pressed: var(--color-primary-dark-40);
-  --color-upload-color-pressed: var(--color-primary-dark-40);
-
-  --color-upload-color-progress: var(--color-brand-03-base);
-  --color-upload-color-text-load: var(--color-neutral-light-00);
-  --color-upload-background-color-success: var(--color-success-default);
-  --color-upload-background-color-load-progress: var(--color-brand-03-base);
-  --color-upload-background-color-error: var(--color-feedback-negative-base);
-  --color-upload-color-text-load-waiting: var(--color-neutral-dark-70);
-  --color-upload-background-color-progress: var(--color-tertiary-light-90);
-
   --color-upload-drag-drop-overlay-icon: var(--color-primary-alpha-50);
   --color-upload-drag-drop-overlay-text: var(--color-brand-02-base);
   --color-upload-drag-drop-area-overlay-background-color: var(--color-neutral-light-00);
@@ -1768,7 +1747,49 @@ po-textarea {
   --color-upload-drag-drop-area-background-color-disabled: var(--color-neutral-light-10);
   --color-upload-drag-drop-area-color-disabled: var(--color-neutral-light-30);
 
-  --color-upload-file-restrictions-color-text: var(--color-neutral-dark-70);
+  --color-upload-file-restrictions-color-text: var(
+    --color-neutral-dark-70
+  ); /*Deprecated v21.x.x utilizar --text-color-text-support*/
+}
+
+/*------------------------------------*\
+  UPLOAD
+\*------------------------------------*/
+po-upload {
+  /* TEXT SUPPORT */
+  --font-family-text-support: var(--font-family-theme);
+  --text-color-text-support: var(--color-neutral-dark-90);
+
+  /* UPLOAD CONTENT */
+  --background-color-content: var(--color-neutral-light-10);
+  --border-color-content: var(--color-neutral-light-20);
+  --border-radius-content: var(--border-radius-md);
+  --text-color-file-name: var(--color-neutral-dark-90);
+  --font-family-file-name: var(--font-family-theme);
+  --text-color-info-bar: var(--color-neutral-mid-60);
+  --font-family-info-bar: var(--font-family-theme);
+
+  /* ERRO STATE */
+  --background-color-content-error: var(--color-neutral-light-00);
+  --border-color-content-error: var(--color-feedback-negative-base);
+  --text-color-error: var(--color-feedback-negative-dark);
+  --color-icon-error: var(--color-feedback-negative-base);
+  --font-family-error: var(--font-family-theme);
+
+  /* UPLOADED STATE */
+  --background-color-content-uploaded: var(--color-neutral-light-00);
+  --border-color-content-uploaded: var(--color-neutral-light-20);
+
+  /* INTERACTIVE STATE */
+  --text-color-file-name-interactive: var(--color-action-default);
+
+  /* THUMBNAIL */
+  --color-icon-thumbnail: var(--color-action-default);
+  --border-width-thumbnail: var(--border-width-sm);
+  --border-radius-thumbnail: var(--border-radius-md);
+  --background-color-thumbnail: var(--color-neutral-light-05);
+
+  --outline-color-focused: var(--color-action-focus);
 }
 
 /*------------------------------------*\

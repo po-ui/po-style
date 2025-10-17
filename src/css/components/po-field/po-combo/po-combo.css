@@ -280,3 +280,53 @@ po-combo.ng-invalid.ng-dirty
 po-combo .po-field-container-content {
   display: inline-table;
 }
+
+/* estado padrão: wrapper “não existe” pro layout */
+.po-combo-field-wrapper {
+  display: contents; /* não cria caixa, não altera fluxo */
+}
+
+.po-combo-flex-item {
+  display: contents;
+}
+
+/* quando precisa do helper ao lado, ligamos o flex e os overrides */
+.po-combo-field-wrapper._active {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-xs);
+  flex-wrap: nowrap;
+  min-width: 0;
+  padding-right: var(--spacing-xs);
+}
+
+.po-combo-field-wrapper._active .po-combo-flex-item {
+  display: block; /* volta a criar caixa */
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* 🔑 overrides só quando ativo (mantém opção A) */
+.po-combo-field-wrapper._active .po-field-container-content {
+  display: block; /* mata o inline-table do combo */
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.po-combo-field-wrapper._active .po-combo-container-content,
+.po-combo-field-wrapper._active .po-combo-container-wrapper {
+  min-width: 0;
+}
+
+.po-combo-field-wrapper._active .po-combo-input {
+  min-width: 0;
+  width: 100%;
+}
+
+/* helper não encolhe */
+.po-combo-field-wrapper._active po-helper {
+  flex: 0 0 auto;
+  position: relative;
+  top: 4px;
+}

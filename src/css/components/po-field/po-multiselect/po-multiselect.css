@@ -103,3 +103,55 @@ po-multiselect.ng-invalid.ng-dirty .po-multiselect-input {
 po-multiselect.ng-invalid.ng-dirty .po-multiselect-input .po-field-icon-container-right .po-icon-input {
   color: var(--color-error);
 }
+
+/* estado padrão: wrapper “transparente” pro layout */
+.po-multiselect-field-wrapper {
+  display: contents; /* não cria caixa, não altera fluxo */
+}
+
+.po-multiselect-flex-item {
+  display: contents;
+}
+
+/* quando precisa do helper ao lado, ligamos o flex e os overrides */
+.po-multiselect-field-wrapper._active {
+  display: flex;
+  align-items: baseline; /* alinha com o label/linha */
+  gap: var(--spacing-xs);
+  flex-wrap: nowrap;
+  min-width: 0;
+  padding-right: 8px; /* respiro à direita */
+}
+
+.po-multiselect-field-wrapper._active .po-multiselect-flex-item {
+  display: block; /* volta a criar caixa */
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* garantir que o container do campo use 100% sem “apertar” o conteúdo */
+.po-multiselect-field-wrapper._active .po-field-container-content {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* o “input” (div flex que segura tags/placeholder/ícone) continua fluido */
+.po-multiselect-field-wrapper._active .po-multiselect-input {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* helper não encolhe e alinha verticalmente com o campo */
+.po-multiselect-field-wrapper._active po-helper {
+  flex: 0 0 auto;
+  position: relative;
+  top: 4px; /* ajuste fino (igual ao combo) */
+}
+
+/* ajuste de micro alinhamento para tamanho pequeno
+[data-a11y='AA'] .po-multiselect-field-wrapper._active po-helper {
+  top: 2px;
+} */

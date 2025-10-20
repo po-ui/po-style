@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+.po-page-content .po-dropdown {
+  vertical-align: bottom;
+}
+
 @media print {
   .po-page-content {
     overflow-y: visible;

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.32.0](https://github.com/po-ui/po-style/compare/v19.31.0...v19.32.0) (2025-10-21)
+
+
+### Features
+
+* **upload:** implementa definições do AnimaliaDS ([7fb2a79](https://github.com/po-ui/po-style/commit/7fb2a7984928d5e7c29f361fe29b0e5c071c2fe0))
+
+
+
 # [19.31.0](https://github.com/po-ui/po-style/compare/v19.30.0...v19.31.0) (2025-10-13)
 
 

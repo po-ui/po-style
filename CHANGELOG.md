@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.33.0](https://github.com/po-ui/po-style/compare/v19.32.0...v19.33.0) (2025-10-29)
+
+
+### Features
+
+* **components:** reduz espaçamentos e adensa layout de componentes ([547f95b](https://github.com/po-ui/po-style/commit/547f95be9a793dfa54003eeaa6fcf541d9fed556))
+* **components:** reduz tamanhos de fonte ([15622b4](https://github.com/po-ui/po-style/commit/15622b4180e9722bd0186bfd2b72d2bdbd6be51f))
+* **fields:** adiciona po-helper quando não há label definida ([42c7953](https://github.com/po-ui/po-style/commit/42c7953137419e7664c967daa8c5dc5726b81262))
+
+
+
 # [19.32.0](https://github.com/po-ui/po-style/compare/v19.31.0...v19.32.0) (2025-10-21)
 
 

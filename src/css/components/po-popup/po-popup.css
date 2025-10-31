@@ -44,7 +44,7 @@
 }
 
 .po-popup .po-item-list__danger:not(.po-item-list__disabled) {
-  color: var(--color-feedback-negative-base);
+  color: var(--color-feedback-negative-dark);
 }
 
 .po-popup .po-item-list__selected:not(.po-item-list__danger) {

@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.34.0](https://github.com/po-ui/po-style/compare/v19.33.0...v19.34.0) (2025-11-03)
+
+
+### Features
+
+* **dropdown:** implementa criação de subníveis ([d7c95e8](https://github.com/po-ui/po-style/commit/d7c95e81d33e74c683ad887f0851916e33946abf))
+
+
+
 # [19.33.0](https://github.com/po-ui/po-style/compare/v19.32.0...v19.33.0) (2025-10-29)
 
 

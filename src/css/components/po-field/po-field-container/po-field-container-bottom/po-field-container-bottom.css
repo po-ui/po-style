@@ -45,8 +45,8 @@
 }
 
 .po-field-container-bottom-text-error .po-icon,
-.po-field-container-bottom po-icon,
-.po-field-container-bottom i.an {
+.po-field-container-bottom po-icon:not(po-helper po-icon),
+.po-field-container-bottom i.an:not(po-helper i.an) {
   font-size: var(--font-size-default);
 }
 

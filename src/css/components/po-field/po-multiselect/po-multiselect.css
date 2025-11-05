@@ -146,3 +146,37 @@ po-multiselect.ng-invalid.ng-dirty .po-multiselect-input .po-field-icon-containe
 .po-multiselect-field-wrapper._active po-helper:has(.po-helper-container[p-size='small']) {
   top: 2px;
 }
+
+.po-multiselect-input.po-multiselect-input-auto,
+.po-multiselect-input-auto.po-multiselect-input-aa,
+[data-a11y='AAA'] .po-multiselect-input-auto.po-multiselect-input-aa {
+  height: auto;
+}
+
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled) {
+  align-items: center;
+}
+
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled) po-helper {
+  top: 0;
+}
+
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled)
+  po-helper:has(.po-helper-container[p-size='small']) {
+  top: -4px;
+}
+
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto po-tag) {
+  align-items: baseline;
+}
+
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto po-tag) po-helper {
+  align-self: baseline;
+  top: 4px;
+}
+
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto po-tag)
+  po-helper:has(.po-helper-container[p-size='small']) {
+  top: 2px;
+}

@@ -408,3 +408,13 @@ po-lookup.ng-invalid.ng-dirty .po-lookup-input:focus ~ .po-lookup-buttons .po-lo
 .po-lookup-field-wrapper._active:has(.po-lookup-input-auto-aa) po-helper {
   top: 5px;
 }
+
+.po-lookup-field-wrapper._active:has(.po-lookup-input-auto.po-lookup-input-padding-button-clean) po-helper {
+  top: 4px;
+}
+
+[data-a11y='AAA']
+  .po-lookup-field-wrapper._active:has(.po-lookup-input-auto.po-lookup-input-padding-button-clean)
+  po-helper {
+  top: 8px;
+}

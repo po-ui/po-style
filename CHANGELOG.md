@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.35.0](https://github.com/po-ui/po-style/compare/v19.34.0...v19.35.0) (2025-11-10)
+
+
+### Bug Fixes
+
+* **table:** corrige exibição de checkbox quando há definição de p-height ([1aadff2](https://github.com/po-ui/po-style/commit/1aadff2624b11267ff22cfd66d65f45224026db8))
+
+
+
 # [19.34.0](https://github.com/po-ui/po-style/compare/v19.33.0...v19.34.0) (2025-11-03)
 
 

@@ -7,7 +7,7 @@
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
   gap: var(--spacing-xs);
-  padding: 0.625rem 2.75rem 0.625rem 0.5rem;
+  padding: 0.5rem 2.75rem 0.5rem 0.5rem;
   align-items: center;
   border-style: solid;
   display: flex;
@@ -140,9 +140,58 @@ po-multiselect.ng-invalid.ng-dirty .po-multiselect-input .po-field-icon-containe
 .po-multiselect-field-wrapper._active po-helper {
   flex: 0 0 auto;
   position: relative;
-  top: 4px;
+  top: 5px;
 }
 
-.po-multiselect-field-wrapper._active po-helper:has(.po-helper-container[p-size='small']) {
-  top: 2px;
+.po-multiselect-input.po-multiselect-input-auto,
+.po-multiselect-input-auto.po-multiselect-input-aa,
+[data-a11y='AAA'] .po-multiselect-input-auto.po-multiselect-input-aa {
+  height: auto;
+}
+
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled) {
+  align-items: center;
+}
+
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled):has(.po-field-container-bottom:not(:empty))
+  po-helper {
+  top: -10px;
+}
+
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:not(:has(po-tag)):has(.po-multiselect-input-disabled):has(.po-field-container-bottom:not(:empty))
+  po-helper:has(.po-helper-container[p-size='small']) {
+  top: -15px;
+}
+
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled) po-helper {
+  top: 0;
+}
+
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled)
+  po-helper:has(.po-helper-container[p-size='small']) {
+  top: -4px;
+}
+
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto po-tag) {
+  align-items: baseline;
+}
+
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto po-tag)
+  po-helper:has(.po-helper-container[p-size='small']),
+[data-a11y='AA'] .po-multiselect-field-wrapper._active po-helper:has(.po-helper-container[p-size='small']) {
+  top: 3px;
+}
+
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto po-tag) po-helper {
+  align-self: baseline;
+  top: 5px;
+}
+
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled
+    po-tag):has(.po-field-container-bottom:not(:empty))
+  po-helper {
+  top: 5px;
 }

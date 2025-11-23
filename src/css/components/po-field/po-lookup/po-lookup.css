@@ -397,6 +397,10 @@ po-lookup.ng-invalid.ng-dirty .po-lookup-input:focus ~ .po-lookup-buttons .po-lo
   top: 5px;
 }
 
+.po-lookup-field-wrapper._active:has(po-disclaimer) po-helper {
+  top: 6px;
+}
+
 .po-lookup-field-wrapper._active po-helper:has(.po-helper-container[p-size='small']) {
   top: 3px;
 }
@@ -407,16 +411,8 @@ po-lookup.ng-invalid.ng-dirty .po-lookup-input:focus ~ .po-lookup-buttons .po-lo
   top: 5px;
 }
 
-.po-lookup-field-wrapper._active:has(.po-lookup-input-auto.po-lookup-input-padding-button-clean) po-helper {
-  top: 4px;
-}
-
-[data-a11y='AAA']
-  .po-lookup-field-wrapper._active:has(.po-lookup-input-auto.po-lookup-input-padding-button-clean)
+.po-lookup-field-wrapper._active:has(.po-lookup-input-auto.po-lookup-input-padding-button-clean) po-helper,
+.po-lookup-field-wrapper._active:has(.po-lookup-input-auto.po-lookup-input-auto-dynamic-height po-disclaimer)
   po-helper {
-  top: 8px;
-}
-
-.po-lookup-field-wrapper._active:has(.po-lookup-input-auto.po-lookup-input-auto-dynamic-height) po-helper {
   top: 9px;
 }

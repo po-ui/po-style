@@ -25,7 +25,7 @@
 .po-multiselect-input-aa {
   min-height: var(--target-size-aa);
   height: var(--target-size-aa);
-  padding: 0.2rem 2rem 0.2rem 0.5rem;
+  padding: 0.075rem 2rem 0.075rem 0.5rem;
 }
 
 .po-multiselect-input-aa.po-multiselect-input-static {
@@ -137,7 +137,10 @@ po-multiselect.ng-invalid.ng-dirty .po-multiselect-input .po-field-icon-containe
   box-sizing: border-box;
 }
 
-.po-multiselect-field-wrapper._active po-helper {
+.po-multiselect-field-wrapper._active po-helper,
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-auto.po-multiselect-input-auto-dynamic-height)
+  po-helper:has(.po-helper-container[p-size='small']) {
   flex: 0 0 auto;
   position: relative;
   top: 5px;
@@ -153,23 +156,32 @@ po-multiselect.ng-invalid.ng-dirty .po-multiselect-input .po-field-icon-containe
   align-items: center;
 }
 
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled) po-helper {
+  top: 0;
+}
+
 .po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled):has(.po-field-container-bottom:not(:empty))
   po-helper {
   top: -10px;
 }
 
 [data-a11y='AA']
-  .po-multiselect-field-wrapper._active:not(:has(po-tag)):has(.po-multiselect-input-disabled):has(.po-field-container-bottom:not(:empty))
+  .po-multiselect-field-wrapper._active:not(po-tag):has(.po-multiselect-input-disabled.po-multiselect-input-auto):has(.po-field-container-bottom:not(:empty))
+  po-helper:has(.po-helper-container[p-size='small']),
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:not(po-tag):has(.po-multiselect-input-disabled):has(.po-field-container-bottom:not(:empty))
+  po-helper,
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:not(po-tag):has(.po-multiselect-input-disabled.po-multiselect-input-static):has(.po-field-container-bottom:not(:empty))
   po-helper:has(.po-helper-container[p-size='small']) {
   top: -15px;
 }
 
-.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled) po-helper {
-  top: 0;
-}
-
 [data-a11y='AA']
-  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled)
+  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto)
+  po-helper:has(.po-helper-container[p-size='small']),
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-static)
   po-helper:has(.po-helper-container[p-size='small']) {
   top: -4px;
 }
@@ -178,20 +190,53 @@ po-multiselect.ng-invalid.ng-dirty .po-multiselect-input .po-field-icon-containe
   align-items: baseline;
 }
 
-[data-a11y='AA']
-  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto po-tag)
-  po-helper:has(.po-helper-container[p-size='small']),
+.po-multiselect-field-wrapper._active:has(po-tag) po-helper {
+  top: 6px;
+}
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto
+    po-tag):has(.po-field-container-bottom:not(:empty))
+  po-helper,
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto po-tag) po-helper {
+  align-self: baseline;
+  top: 6px;
+}
+
 [data-a11y='AA'] .po-multiselect-field-wrapper._active po-helper:has(.po-helper-container[p-size='small']) {
   top: 3px;
 }
 
-.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto po-tag) po-helper {
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto
+    po-tag):has(.po-field-container-bottom:not(:empty))
+  po-helper:has(.po-helper-container[p-size='small']),
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto
+    po-tag):not(:has(.po-multiselect-input-auto-dynamic-height))
+  po-helper:has(.po-helper-container[p-size='small']) {
   align-self: baseline;
-  top: 5px;
+  top: 3px;
 }
 
-.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto.po-multiselect-input-auto-dynamic-height
     po-tag):has(.po-field-container-bottom:not(:empty))
+  po-helper,
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-auto.po-multiselect-input-auto-dynamic-height)
+  po-helper,
+.po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto.po-multiselect-input-auto-dynamic-height)
   po-helper {
+  top: 7px;
+}
+
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto.po-multiselect-input-auto-dynamic-height
+    po-tag):has(.po-field-container-bottom:not(:empty))
+  po-helper:has(.po-helper-container[p-size='small']),
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-auto-dynamic-height po-tag)
+  po-helper:has(.po-helper-container[p-size='small']),
+[data-a11y='AA']
+  .po-multiselect-field-wrapper._active:has(.po-multiselect-input-disabled.po-multiselect-input-auto-dynamic-height
+    po-tag)
+  po-helper:has(.po-helper-container[p-size='small']) {
   top: 5px;
 }

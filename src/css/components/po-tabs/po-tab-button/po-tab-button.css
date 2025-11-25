@@ -105,10 +105,6 @@ po-context-tabs .po-tabs-button-wrapper {
   margin-top: 1px;
 }
 
-.po-tab-dropdown-content .po-icon {
-  font-size: 1.5rem;
-}
-
 .po-tab-button .po-context-tab-button-label,
 [data-a11y='AAA'] .po-tab-button-aa .po-context-tab-button-label {
   padding-left: 1rem;

@@ -206,21 +206,21 @@ po-button {
   padding-left: 4px;
 }
 
-.po-button .po-button-icon .po-icon,
+.po-button .po-button-icon i,
 .po-button-loading-icon {
   display: inline-block;
   vertical-align: -0.05rem;
 }
 
-.po-button .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) path {
+.po-button .po-button-icon > :first-child:not(.po-fonts-icon) path {
   fill: var(--color);
 }
 
-.po-button:hover .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) path {
+.po-button:hover .po-button-icon > :first-child:not(.po-fonts-icon) path {
   fill: var(--border-color-hover);
 }
 
-.po-button:disabled .po-button-icon > :first-child:not(.po-fonts-icon):not(.po-icon) path {
+.po-button:disabled .po-button-icon > :first-child:not(.po-fonts-icon) path {
   fill: var(--color-disabled);
 }
 

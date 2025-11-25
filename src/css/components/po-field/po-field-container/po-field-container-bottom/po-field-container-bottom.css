@@ -44,9 +44,9 @@
   padding-right: var(--spacing-xs);
 }
 
-.po-field-container-bottom-text-error .po-icon,
+.po-field-container-bottom-text-error,
 .po-field-container-bottom po-icon:not(po-helper po-icon),
-.po-field-container-bottom i.an:not(po-helper i.an) {
+.po-field-container-bottom i:not(po-helper i) {
   font-size: var(--font-size-default);
 }
 

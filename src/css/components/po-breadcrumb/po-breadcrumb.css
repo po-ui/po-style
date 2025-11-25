@@ -111,8 +111,8 @@
   color: var(--color-icon);
 }
 
-.po-breadcrumb-icon-more i.an,
-i.po-breadcrumb-icon-arrow.an {
+.po-breadcrumb-icon-more i,
+i.po-breadcrumb-icon-arrow {
   font-size: var(--font-size-sm);
   display: flex;
 }

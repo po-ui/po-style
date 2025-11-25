@@ -33,7 +33,7 @@
   width: max-content;
 }
 
-.po-tag i.an {
+.po-tag i {
   font-size: var(--font-size-default);
 }
 

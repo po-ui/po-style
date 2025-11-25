@@ -53,12 +53,12 @@ po-toaster {
   display: flex;
 }
 
-[data-a11y='AA'] po-toaster[p-size-actions='small'] .po-toaster-icon po-icon i.an {
-  font-size: var(--font-size-default);
+.po-toaster-icon po-icon i {
+  font-size: var(--font-size-md);
 }
 
-.po-toaster-icon po-icon i.an {
-  font-size: var(--font-size-md);
+[data-a11y='AA'] po-toaster[p-size-actions='small'] .po-toaster-icon po-icon i {
+  font-size: var(--font-size-default);
 }
 
 .po-toaster-message {
@@ -239,13 +239,13 @@ po-toaster .po-toaster-inline[hidden] {
 .po-toaster-inline .po-toaster-inline-icon i {
   border-radius: 50%;
 }
-.po-toaster-inline .po-toaster-inline-icon i.an {
+.po-toaster-inline .po-toaster-inline-icon i {
   padding: 0.25rem;
   font-size: var(--font-size-default);
   display: flex;
 }
 
-[data-a11y='AA'] po-toaster[p-size-actions='small'] .po-toaster-inline .po-toaster-inline-icon i.an {
+[data-a11y='AA'] po-toaster[p-size-actions='small'] .po-toaster-inline .po-toaster-inline-icon i {
   padding: 0.125rem;
   font-size: var(--font-size-xs);
 }

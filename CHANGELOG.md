@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.36.0](https://github.com/po-ui/po-style/compare/v19.35.0...v19.36.0) (2025-11-25)
+
+
+### Bug Fixes
+
+* **fields:** corrige autoheight e alinha ícones ([0a4073f](https://github.com/po-ui/po-style/commit/0a4073fe931570c55447906aa939f9af8d3e07f2))
+
+
+
 ## [19.35.0](https://github.com/po-ui/po-style/compare/v19.34.0...v19.35.0) (2025-11-10)
 
 

@@ -225,7 +225,7 @@
     @apply --font-list-view-font-sm-icon;
   }
 
-  .po-list-view-more-icon i.an {
+  .po-list-view-more-icon i {
     font-size: var(--font-size-lg);
   }
 

@@ -326,9 +326,6 @@ po-search po-dropdown .po-dropdown .po-dropdown-button-disabled {
   background-color: var(--background-disabled);
 }
 
-po-search po-dropdown .po-dropdown-button:not(.po-dropdown-button-disabled) .po-icon {
-  color: var(--color-icon);
-}
 po-search po-dropdown .po-dropdown-button:not(.po-dropdown-button-disabled) {
   color: var(--text-color-empty);
 }

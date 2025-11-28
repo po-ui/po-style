@@ -102,7 +102,7 @@
   max-height: 2.75em;
 }
 
-.po-menu-footer i.an {
+.po-menu-footer i {
   font-size: var(--font-size-lg);
 }
 
@@ -141,10 +141,6 @@
   outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: -4px;
-}
-
-.po-menu-collapse-button-icon .po-icon {
-  font-size: 1.5rem;
 }
 
 .po-menu-collapse-button-icon po-icon {

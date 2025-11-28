@@ -107,10 +107,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-
-  .po-icon {
-    font-size: 1.5rem;
-  }
 }
 
 .po-menu-filter-search-icon-container .po-loading-icon-container {

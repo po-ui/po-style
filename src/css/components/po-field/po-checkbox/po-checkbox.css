@@ -32,10 +32,6 @@
   min-height: var(--spacing-lg);
 }
 
-.po-checkbox-poicon {
-  font-family: PoIcon !important;
-}
-
 .po-checkbox-phosphor {
   font-family: Animalia !important;
 }
@@ -115,10 +111,6 @@
   color: var(--color-unchecked);
 }
 
-.po-checkbox-poicon[aria-checked='true']:before {
-  content: '\e93c';
-}
-
 .po-checkbox-phosphor[aria-checked='true']:before {
   content: '\e182';
   font-size: var(--font-size-default);
@@ -127,10 +119,6 @@
 .po-checkbox[aria-checked='mixed']:before {
   font-size: 20px;
   color: var(--color-unchecked);
-}
-
-.po-checkbox-poicon[aria-checked='mixed']:before {
-  content: '\e939';
 }
 
 .po-checkbox-phosphor[aria-checked='mixed']:before {

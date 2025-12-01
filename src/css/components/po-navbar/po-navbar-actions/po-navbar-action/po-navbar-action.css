@@ -23,7 +23,7 @@
   outline-offset: 0;
 }
 
-.po-navbar-action-content > :first-child:not(.po-fonts-icon):not(.po-icon) {
+.po-navbar-action-content > :first-child:not(.po-fonts-icon) {
   line-height: 2rem;
 }
 

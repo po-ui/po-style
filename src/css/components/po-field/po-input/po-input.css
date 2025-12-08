@@ -113,3 +113,14 @@ po-input.ng-invalid-mask .po-input {
 po-password po-clean + po-icon {
   margin-left: 8px;
 }
+
+po-input .po-field-icon-container-right .po-loading-icon-container,
+po-decimal .po-field-icon-container-right .po-loading-icon-container,
+po-email .po-field-icon-container-right .po-loading-icon-container,
+po-login .po-field-icon-container-right .po-loading-icon-container,
+po-url .po-field-icon-container-right .po-loading-icon-container,
+po-number .po-field-icon-container-right .po-loading-icon-container,
+po-password .po-field-icon-container-right .po-loading-icon-container {
+  display: flex;
+  justify-content: center;
+}

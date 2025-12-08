@@ -566,6 +566,10 @@ po-chart .po-chart {
   --color-gauge-pointer-color: var(--color-neutral-dark-70);
 
   --color-chart-line-point-fill: var(--color-neutral-light-00);
+
+  --border-color-radar: var(--color-neutral-light-30);
+  --color-background-zebra: var(--color-neutral-light-10);
+  --color-background-line: none;
 }
 
 po-chart .po-chart-container-gauge {

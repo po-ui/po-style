@@ -88,6 +88,12 @@
   pointer-events: none;
 }
 
+po-lookup[p-disabled='true'] .po-disclaimer {
+  background-color: var(--background-disabled);
+  border-color: var(--color-disabled);
+  color: var(--text-color-disabled);
+}
+
 .po-lookup .po-lookup-input.po-lookup-input-trigger,
 [data-a11y='AAA'] .po-lookup .po-lookup-input.po-lookup-input-trigger-aa {
   padding-right: calc(var(--spacing-xs) + var(--target-size-aaa));
@@ -284,7 +290,7 @@
   border-color: var(--color-disabled);
   background-color: var(--background-disabled);
 
-  color: var(--text-color-disabled);
+  color: var(--text-color);
   cursor: not-allowed;
 
   overflow: hidden;

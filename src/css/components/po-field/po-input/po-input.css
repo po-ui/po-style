@@ -54,7 +54,7 @@
 }
 
 .po-input:focus {
-  border-color: var(---color-focused);
+  border-color: var(--color-focused);
   outline-color: var(--outline-color-focused);
   outline-width: var(--outline-width);
   outline-style: solid;
@@ -76,7 +76,7 @@
 .po-input[disabled='true'] {
   border-color: var(--color-disabled);
   background-color: var(--background-disabled);
-  color: var(---text-color-disabled);
+  color: var(--text-color-disabled);
   cursor: not-allowed;
 }
 

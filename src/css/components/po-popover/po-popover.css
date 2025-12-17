@@ -6,13 +6,14 @@
   --popover-border-radius: 3px;
 
   --shadow-popover-box-shadow: var(--shadow-popover);
-  --shadow-popover-box-shadow-arrow: var(--shadow-popover-arrow);
+  --shadow-popover-box-shadow-arrow: -1px -1px 1px 0 var(--color-neutral-light-20);
 }
 
 .po-popover {
   background-color: var(--color-neutral-light-00);
-  border-radius: var(--popover-border-radius);
-  box-shadow: var(--shadow-popover-box-shadow);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-neutral-light-20);
   max-height: 800px;
   max-width: 800px;
   min-height: 172px;

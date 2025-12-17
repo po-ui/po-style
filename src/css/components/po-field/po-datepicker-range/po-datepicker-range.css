@@ -30,7 +30,7 @@ div.po-datepicker-range-field-focused {
 }
 
 .po-datepicker-range-field:hover {
-  border-color: var(--color-action-hover) !important;
+  border-color: var(--color-hover) !important;
   background-color: var(--color-brand-01-lightest) !important;
 }
 

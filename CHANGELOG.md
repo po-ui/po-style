@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.38.0](https://github.com/po-ui/po-style/compare/v19.37.0...v19.38.0) (2025-12-18)
+
+
+### Features
+
+* **chart:** implementa nova variação de tipo radar ([7ec6e86](https://github.com/po-ui/po-style/commit/7ec6e86220116408a7873ec5b910ab4a6351fd9e))
+* **fields:** inclui estado de loading ([fef25e7](https://github.com/po-ui/po-style/commit/fef25e768d5f548e9e04d035165325f225e6497c))
+
+
+
 ## [19.37.0](https://github.com/po-ui/po-style/compare/v19.36.0...v19.37.0) (2025-12-01)
 Compatibilidade com @po-ui/ng-components@19.37.0
 

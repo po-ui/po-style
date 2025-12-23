@@ -84,6 +84,22 @@ const buildThemeCss = modern =>
     })
     .pipe(dest(`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/`));
 
+const buildThemeCssWatch = modern =>
+  src(`./.temp/css/index${modern ? '-modern' : ''}.css`)
+    .pipe(
+      tap(file => {
+        const contents = file.contents.toString().replace(/\${theme}/, argv.theme || 'default');
+        file.contents = Buffer.from(contents, 'utf-8');
+      })
+    )
+    .pipe(postcss([importCss(), apply(), nested(), simpleVars()]))
+    .pipe(rename(modern ? `css/po-theme-core.min.css` : `css/po-theme-default.min.css`))
+    .on('error', err => {
+      console.log(err.toString());
+      this.emit('end');
+    })
+    .pipe(dest(`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/`));
+
 const buildThemeVariablesCss = () =>
   src(`./.temp/css/themes/po-theme-${argv.theme ? argv.theme : 'default'}.css`)
     .pipe(postcss([cssnano()]))
@@ -114,6 +130,7 @@ const buildDevThemeCss = () =>
 
 const buildThemeCssModern = () => buildThemeCss(true);
 const buildThemeCssLegacy = () => buildThemeCss(false);
+const buildThemeCssLegacyWatch = () => buildThemeCssWatch(false);
 
 const buildTheme = series(
   cleanTemp,
@@ -122,6 +139,9 @@ const buildTheme = series(
   cleanTemp
 );
 buildTheme.displayName = 'build';
+
+const buildCss = series(copyThemeAssets, prepareThemeCss, buildThemeCssLegacyWatch, cleanTemp);
+buildCss.displayName = 'build:css';
 
 /**
  * ============================================================
@@ -203,6 +223,34 @@ const watchers = () => {
   watch('./src/**/*.js', buildAppJs);
 };
 
+// Funções auxiliares para logs
+const logWatchStart = done => {
+  console.log('\n🔄 Detectada alteração em arquivo CSS...');
+  console.log('⏳ Iniciando recompilação...\n');
+  done();
+};
+
+const logWatchEnd = done => {
+  console.log('\n✅ Recompilação concluída!');
+  console.log('📁 Arquivos atualizados na pasta dist/\n');
+  done();
+};
+
+const buildThemeWatchers = () => {
+  // Avisar que a tarefa de watch foi iniciada, sendo necessário apontar para o css presente na pasta dist
+  console.warn('\n');
+  console.warn('   ╔═════════════════════════════════════════════════╗');
+  console.warn('   ║                                                 ║');
+  console.warn('   ║   ATENÇÃO: A TAREFA DE WATCH FOI INICIADA!      ║');
+  console.warn('   ║                                                 ║');
+  console.warn('   ║   A PASTA DIST FOI ATUALIZADA COM O CSS         ║');
+  console.warn('   ║   RECOMPILADO. APONTE SUA APLICAÇÃO PARA        ║');
+  console.warn('   ║   ESSA PASTA PARA VISUALIZAR AS MUDANÇAS!       ║');
+  console.warn('   ║                                                 ║');
+  console.warn('   ╚═════════════════════════════════════════════════╝');
+  watch('./src/css/**/*.css', series(logWatchStart, prepareThemeCss, buildThemeCssLegacyWatch, logWatchEnd));
+};
+
 /**
  * ============================================================
  * EXPORT DAS TAREFAS DO GULP
@@ -219,6 +267,12 @@ exports.buildApp = buildApp;
 
 // gulp build:cli
 exports.buildCli = buildCli;
+
+// gulp build:css
+exports.buildCss = buildCss;
+
+// gulp watch:css
+exports['watch:css'] = series(clean, buildCss, buildThemeWatchers);
 
 // gulp
 exports.default = series(clean, buildApp);

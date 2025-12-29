@@ -8,7 +8,7 @@
   font-weight: var(--font-weight);
   font-size: var(--font-size);
   font-family: var(--font-family);
-  min-height: 44px;
+  min-height: var(--target-size-aaa);
   border: none;
   display: flex;
   max-width: 100vw;
@@ -76,22 +76,11 @@
 }
 
 /* incluindo padrões duplo A */
-[data-a11y='AA'] po-accordion .po-accordion-manager-button {
+[data-a11y='AA'] po-accordion[p-size='small'] .po-accordion-manager-button {
   min-height: var(--target-size-aa);
   padding: var(--spacing-squish-sm);
 }
 
-[data-a11y='AA'] po-accordion .po-accordion-manager-icon {
+[data-a11y='AA'] po-accordion[p-size='small'] .po-accordion-manager-icon {
   font-size: var(--font-size-default);
-}
-
-[data-a11y='AA'] po-accordion[ng-reflect-size='medium'] .po-accordion-manager-button,
-[data-a11y='AA'] po-accordion[size='medium'] .po-accordion-manager-button {
-  min-height: var(--target-size-aaa);
-  padding: var(--spacing-squish-md);
-}
-
-[data-a11y='AA'] po-accordion[ng-reflect-size='medium'] .po-accordion-manager-icon,
-[data-a11y='AA'] po-accordion[size='medium'] .po-accordion-manager-icon {
-  font-size: var(--font-size-lg);
 }

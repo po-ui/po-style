@@ -5,4 +5,10 @@
 
 .po-accordion-item-body-content {
   padding: var(--spacing-squish-md);
+  font-size: var(--font-size);
+}
+
+/* incluindo padrões duplo A */
+[data-a11y='AA'] po-accordion[p-size='small'] .po-accordion-item-body-content {
+  font-size: var(--font-size-sm);
 }

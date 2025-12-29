@@ -5,17 +5,14 @@
 .po-accordion-manager-button {
   background-color: var(--background-color);
   color: var(--color);
-
   font-weight: var(--font-weight);
   font-size: var(--font-size);
   font-family: var(--font-family);
-
-  min-height: 2.75em;
-
+  min-height: var(--target-size-aaa);
   border: none;
   display: flex;
   max-width: 100vw;
-  padding-inline: var(--spacing-sm);
+  padding: var(--spacing-squish-md);
   text-align: left;
   width: 100%;
   justify-content: space-between;
@@ -38,13 +35,11 @@
 /* outline para compatibilidade com os demais navegadores */
 .po-accordion-manager-button:focus {
   color: var(--color-focus);
-
   position: relative;
   outline-color: var(--outline-color-focused);
   outline-width: var(--outline-width);
   outline-style: solid;
-  outline-offset: var(--outline-width);
-
+  outline-offset: 2px;
   z-index: 1;
 }
 
@@ -67,7 +62,7 @@
   color: var(--color);
 
   align-self: center;
-  font-size: 1.5em;
+  font-size: var(--font-size-lg);
   margin-left: var(--spacing-sm);
   transition: all 0.3s cubic-bezier(0.07, 0.88, 0.58, 0.92);
 }
@@ -78,4 +73,14 @@
 
 .icon-up {
   transform: rotate(90deg);
+}
+
+/* incluindo padrões duplo A */
+[data-a11y='AA'] po-accordion[p-size='small'] .po-accordion-manager-button {
+  min-height: var(--target-size-aa);
+  padding: var(--spacing-squish-sm);
+}
+
+[data-a11y='AA'] po-accordion[p-size='small'] .po-accordion-manager-icon {
+  font-size: var(--font-size-default);
 }

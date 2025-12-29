@@ -6,3 +6,13 @@
 .po-accordion-item-body-content {
   padding: var(--spacing-squish-md);
 }
+
+/* incluindo padrões duplo A */
+[data-a11y='AA'] po-accordion .po-accordion-item-body-content {
+  font-size: var(--font-size-sm);
+}
+
+[data-a11y='AA'] po-accordion[ng-reflect-size='medium'] .po-accordion-item-body-content,
+[data-a11y='AA'] po-accordion[size='medium'] .po-accordion-item-body-content {
+  font-size: var(--font-size);
+}

@@ -111,6 +111,30 @@
 }
 
 .po-text-ellipsis.po-accordion-item-header-title {
-  display: inline-block;
+  display: flex;
   max-width: 100%;
+}
+
+/* incluindo padrões duplo A */
+[data-a11y='AA'] po-accordion .po-accordion-item-header-button {
+  min-height: var(--target-size-aa);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-none);
+  padding: var(--spacing-squish-sm);
+}
+
+[data-a11y='AA'] po-accordion .po-accordion-item-header-icon {
+  font-size: var(--font-size-default);
+}
+
+[data-a11y='AA'] po-accordion[ng-reflect-size='medium'] .po-accordion-item-header-button,
+[data-a11y='AA'] po-accordion[size='medium'] .po-accordion-item-header-button {
+  font-size: var(--font-size);
+  padding: var(--spacing-squish-md);
+  min-height: var(--target-size-aaa);
+}
+
+[data-a11y='AA'] po-accordion[ng-reflect-size='medium'] .po-accordion-item-header-icon,
+[data-a11y='AA'] po-accordion[size='medium'] .po-accordion-item-header-icon {
+  font-size: var(--font-size-lg);
 }

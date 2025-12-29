@@ -79,3 +79,12 @@
 .icon-up {
   transform: rotate(90deg);
 }
+
+/* incluindo padrões duplo A */
+[data-a11y='AA'] po-accordion .po-accordion-manager-button {
+  min-height: var(--target-size-aa);
+}
+
+[data-a11y='AA'] po-accordion .po-accordion-manager-icon {
+  font-size: var(--font-size-default);
+}

@@ -328,3 +328,20 @@ po-combo .po-field-container-content {
 .po-combo-field-wrapper._active po-helper:has(.po-helper-container[p-size='small']) {
   top: 2px;
 }
+
+po-combo .po-field-icon-container-right .po-loading-icon-container {
+  display: flex;
+}
+
+.po-combo-container-content .po-field-icon-container-right po-loading-icon {
+  width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.po-combo-container-content[p-size='small'] .po-field-icon-container-right po-loading-icon {
+  width: var(--target-size-aa);
+  height: var(--target-size-aa);
+}

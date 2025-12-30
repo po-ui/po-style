@@ -104,6 +104,10 @@ po-multiselect.ng-invalid.ng-dirty .po-multiselect-input .po-field-icon-containe
   color: var(--color-error);
 }
 
+po-multiselect[p-loading='true'].ng-invalid.ng-dirty .po-multiselect-input {
+  border-color: var(--color-disabled);
+}
+
 .po-multiselect-field-wrapper,
 .po-multiselect-flex-item {
   display: contents;
@@ -166,11 +170,14 @@ po-multiselect.ng-invalid.ng-dirty .po-multiselect-input .po-field-icon-containe
 }
 
 [data-a11y='AA']
+  .po-multiselect-field-wrapper._active:not(po-tag):has(.po-multiselect-input-disabled):has(.po-field-container-bottom:not(:empty))
+  po-helper {
+  top: -11px;
+}
+
+[data-a11y='AA']
   .po-multiselect-field-wrapper._active:not(po-tag):has(.po-multiselect-input-disabled.po-multiselect-input-auto):has(.po-field-container-bottom:not(:empty))
   po-helper:has(.po-helper-container[p-size='small']),
-[data-a11y='AA']
-  .po-multiselect-field-wrapper._active:not(po-tag):has(.po-multiselect-input-disabled):has(.po-field-container-bottom:not(:empty))
-  po-helper,
 [data-a11y='AA']
   .po-multiselect-field-wrapper._active:not(po-tag):has(.po-multiselect-input-disabled.po-multiselect-input-static):has(.po-field-container-bottom:not(:empty))
   po-helper:has(.po-helper-container[p-size='small']) {
@@ -239,4 +246,8 @@ po-multiselect.ng-invalid.ng-dirty .po-multiselect-input .po-field-icon-containe
     po-tag)
   po-helper:has(.po-helper-container[p-size='small']) {
   top: 5px;
+}
+
+po-multiselect .po-field-icon-container-right .po-loading-icon-container {
+  display: flex;
 }

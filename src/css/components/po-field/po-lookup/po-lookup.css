@@ -80,11 +80,13 @@
   line-height: 24px;
 }
 
-.po-lookup.po-lookup-disabled {
+.po-lookup.po-lookup-disabled,
+.po-lookup.po-lookup-loading {
   cursor: not-allowed;
 }
 
-.po-lookup.po-lookup-disabled * {
+.po-lookup.po-lookup-disabled *,
+.po-lookup.po-lookup-loading * {
   pointer-events: none;
 }
 
@@ -281,7 +283,7 @@ po-lookup[p-disabled='true'] .po-disclaimer {
 }
 
 .po-lookup-input.po-lookup-input-padding-button-clean-aa {
-  padding-right: var(--target-size-aa) * 2;
+  padding-right: calc(var(--target-size-aa) * 2);
 }
 
 .po-lookup .po-lookup-input:disabled,
@@ -364,6 +366,21 @@ po-lookup.ng-invalid.ng-dirty .po-lookup-input:focus ~ .po-lookup-buttons .po-lo
   border-left-color: var(--color-error);
 }
 
+po-lookup.ng-invalid.ng-dirty.po-lookup-loading {
+  background-color: var(--background-disabled);
+  border-color: var(--color-disabled);
+  color: var(--text-color-disabled);
+}
+
+po-lookup.ng-invalid.ng-dirty.po-lookup-loading .po-lookup-button-loading .po-loading-icon-container .po-loading-icon,
+po-lookup.ng-invalid.ng-dirty.po-lookup-loading .po-lookup-button-loading .po-loading-icon-container svg {
+  color: var(--color-action-default);
+}
+
+po-lookup[p-loading='true'].ng-invalid.ng-dirty .po-field-icon {
+  color: var(--text-color-disabled) !important;
+}
+
 .po-lookup-field-wrapper,
 .po-lookup-flex-item {
   display: contents;
@@ -420,4 +437,65 @@ po-lookup.ng-invalid.ng-dirty .po-lookup-input:focus ~ .po-lookup-buttons .po-lo
 .po-lookup-field-wrapper._active:has(.po-lookup-input-auto.po-lookup-input-auto-dynamic-height po-disclaimer)
   po-helper {
   top: 9px;
+}
+
+.po-lookup-button-trigger.po-field-icon-disabled > po-icon {
+  display: flex;
+}
+
+.po-lookup-button-loading .po-loading-icon-container {
+  display: flex;
+}
+
+.po-lookup-button-loading .po-loading-icon-container .po-loading-icon,
+.po-lookup-button-loading .po-loading-icon-container svg {
+  color: var(--color-action-default);
+}
+
+.po-lookup.po-lookup-loading .po-lookup-input:not(:disabled),
+.po-lookup.po-lookup-loading .po-lookup-input-auto,
+.po-lookup.po-lookup-loading .po-lookup-input-static {
+  border-color: var(--color-disabled);
+  background-color: var(--background-disabled);
+  color: var(--text-color-disabled);
+  cursor: not-allowed;
+}
+
+po-lookup[p-loading='true'] .po-disclaimer {
+  background-color: var(--background-disabled);
+  border-color: var(--color-disabled);
+  color: var(--text-color-disabled);
+}
+
+.po-lookup.po-lookup-disabled.po-lookup-loading .po-lookup-button-loading,
+.po-lookup.po-lookup-disabled.po-lookup-loading .po-lookup-button-loading * {
+  color: unset;
+}
+
+.po-lookup.po-lookup-loading .po-lookup-button-loading .po-loading-icon-container .po-loading-icon,
+.po-lookup.po-lookup-loading .po-lookup-button-loading .po-loading-icon-container svg {
+  color: var(--color-action-default);
+}
+
+.po-lookup.po-lookup-loading .po-lookup-button-loading,
+.po-lookup.po-lookup-loading .po-lookup-button-trigger {
+  background-color: var(--background-disabled);
+  color: var(--color-disabled);
+  cursor: not-allowed;
+}
+
+.po-lookup.po-lookup-loading .po-lookup-button-trigger .po-field-icon,
+.po-lookup.po-lookup-loading .po-lookup-button-trigger .po-icon,
+.po-lookup.po-lookup-loading .po-lookup-button-trigger::before {
+  color: var(--color-disabled);
+  background-color: var(--color-disabled);
+}
+
+.po-lookup .po-lookup-button-loading {
+  padding-inline: 0;
+  min-width: var(--target-size-aaa);
+}
+
+[p-size='small'] .po-lookup .po-lookup-button-loading {
+  min-width: var(--target-size-aa);
 }

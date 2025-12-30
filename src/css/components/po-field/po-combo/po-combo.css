@@ -96,6 +96,7 @@ po-combo .po-combo-container-content .po-field-icon-container-right {
   display: flex;
   align-items: center;
   justify-content: center;
+  right: 0px;
 }
 
 .po-combo-container-content .po-combo-arrow .po-field-icon > i,
@@ -233,10 +234,6 @@ po-combo .po-combo-container-content .po-field-icon-container-right {
   border-bottom: 1px solid var(--color);
 }
 
-.po-combo-container-content .po-field-icon-container-right {
-  right: 0px;
-}
-
 .po-combo-input.po-input-icon-left,
 [data-a11y='AAA'] .po-combo-input.po-input-icon-left-aa {
   padding-left: 44px;
@@ -327,4 +324,30 @@ po-combo .po-field-container-content {
 
 .po-combo-field-wrapper._active po-helper:has(.po-helper-container[p-size='small']) {
   top: 2px;
+}
+
+po-combo .po-field-icon-container-right .po-loading-icon-container {
+  display: flex;
+}
+
+.po-combo-container-content .po-field-icon-container-right po-loading-icon {
+  width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.po-combo-container-content[p-size='small'] .po-field-icon-container-right po-loading-icon {
+  width: var(--target-size-aa);
+  height: var(--target-size-aa);
+}
+
+po-combo[p-loading='true'].ng-dirty.ng-invalid .po-combo-input {
+  background-color: var(--background-disabled);
+  border-color: var(--color-disabled);
+}
+
+po-combo[p-loading='true'].ng-invalid.ng-dirty .po-field-icon {
+  color: var(--color-neutral-light-30) !important;
 }

@@ -105,6 +105,29 @@ po-url.ng-invalid.ng-dirty .po-input {
   color: var(--color-feedback-negative-base);
 }
 
+po-decimal[p-loading='true'].ng-invalid.ng-dirty .po-input,
+po-email[p-loading='true'].ng-invalid.ng-dirty .po-input,
+po-input[p-loading='true'].ng-invalid.ng-dirty .po-input,
+po-login[p-loading='true'].ng-invalid.ng-dirty .po-input,
+po-lookup[p-loading='true'].ng-invalid.ng-dirty .po-input,
+po-number[p-loading='true'].ng-invalid.ng-dirty .po-input,
+po-password[p-loading='true'].ng-invalid.ng-dirty .po-input,
+po-select[p-loading='true'].ng-invalid.ng-dirty .po-select-button,
+po-url[p-loading='true'].ng-invalid.ng-dirty .po-input {
+  border-color: var(--color-disabled) !important;
+  color: var(--text-color-disabled);
+}
+
+po-password[p-loading='true'].ng-invalid.ng-dirty .po-field-icon,
+po-login[p-loading='true'].ng-invalid.ng-dirty .po-field-icon,
+po-decimal[p-loading='true'].ng-invalid.ng-dirty .po-field-icon,
+po-number[p-loading='true'].ng-invalid.ng-dirty .po-field-icon,
+po-input[p-loading='true'].ng-invalid.ng-dirty .po-field-icon,
+po-email[p-loading='true'].ng-invalid.ng-dirty .po-field-icon,
+po-url[p-loading='true'].ng-invalid.ng-dirty .po-field-icon {
+  color: var(--color-neutral-light-30) !important;
+}
+
 po-input.ng-invalid-mask .po-input {
   border: solid 1px var(--color-feedback-negative-base) !important;
   color: var(--color-feedback-negative-base);

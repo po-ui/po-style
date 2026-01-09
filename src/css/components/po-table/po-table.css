@@ -31,6 +31,29 @@
   z-index: 2;
 }
 
+.po-table-virtual-scroll-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.po-table-virtual-scroll-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.po-table-virtual-scroll-viewport {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.po-table-virtual-scroll-header,
+.po-table-virtual-scroll-body {
+  table-layout: fixed;
+  width: 100%;
+}
+
 .table {
   width: 100%;
 }

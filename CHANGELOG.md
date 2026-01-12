@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [19.39.0](https://github.com/po-ui/po-style/compare/v19.38.0...v19.39.0) (2026-01-12)
+
+
+### Features
+
+* **accordion:** adiciona AA no accordion ([812a368](https://github.com/po-ui/po-style/commit/812a3686c415c9dab2c5e81730fb25b49443ab02))
+
+
+
 # [19.38.0](https://github.com/po-ui/po-style/compare/v19.37.0...v19.38.0) (2025-12-18)
 
 

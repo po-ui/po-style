@@ -10,9 +10,18 @@ All notable changes to this project will be documented in this file. See [standa
 
 [Compatibilidade com @po-ui/ng-components@19.39.0](https://github.com/po-ui/po-style/compare/v19.38.0...v19.39.0)
 
+### Features
+
+* **accordion:** adiciona AA no accordion ([812a368](https://github.com/po-ui/po-style/commit/812a3686c415c9dab2c5e81730fb25b49443ab02))
+
 ## [20.12.0](https://github.com/po-ui/po-style/compare/v20.11.0...v20.12.0) (2025-12-18)
 
 [Compatibilidade com @po-ui/ng-components@19.38.0](https://github.com/po-ui/po-style/compare/v19.37.0...v19.38.0)
+
+### Features
+
+* **chart:** implementa nova variação de tipo radar ([7ec6e86](https://github.com/po-ui/po-style/commit/7ec6e86220116408a7873ec5b910ab4a6351fd9e))
+* **fields:** inclui estado de loading ([fef25e7](https://github.com/po-ui/po-style/commit/fef25e768d5f548e9e04d035165325f225e6497c))
 
 ## [20.11.0](https://github.com/po-ui/po-style/compare/v20.10.0...v20.11.0) (2025-12-01)
 
@@ -22,33 +31,67 @@ All notable changes to this project will be documented in this file. See [standa
 
 [Compatibilidade com @po-ui/ng-components@19.36.0](https://github.com/po-ui/po-style/compare/v19.35.0...v19.36.0)
 
+### Bug Fixes
+
+* **fields:** corrige autoheight e alinha ícones ([0a4073f](https://github.com/po-ui/po-style/commit/0a4073fe931570c55447906aa939f9af8d3e07f2))
+
 ## [20.9.0](https://github.com/po-ui/po-style/compare/20.8.0...v20.9.0) (2025-11-10)
 
 [Compatibilidade com @po-ui/ng-components@19.35.0](https://github.com/po-ui/po-style/compare/v19.34.0...v19.35.0)
+
+### Bug Fixes
+
+* **table:** corrige exibição de checkbox quando há definição de p-height ([1aadff2](https://github.com/po-ui/po-style/commit/1aadff2624b11267ff22cfd66d65f45224026db8))
 
 ## [20.8.0](https://github.com/po-ui/po-style/compare/20.7.0...v20.8.0) (2025-11-03)
 
 [Compatibilidade com @po-ui/ng-components@19.34.0](https://github.com/po-ui/po-style/compare/v19.33.0...v19.34.0)
 
+### Features
+
+* **dropdown:** implementa criação de subníveis ([d7c95e8](https://github.com/po-ui/po-style/commit/d7c95e81d33e74c683ad887f0851916e33946abf))
+
 ## [20.7.0](https://github.com/po-ui/po-style/compare/v20.6.0...v20.7.0) (2025-10-29)
 
 [Compatibilidade com @po-ui/ng-components@19.33.0](https://github.com/po-ui/po-style/compare/v19.32.0...v19.33.0)
+
+### Features
+
+* **components:** reduz espaçamentos e adensa layout de componentes ([547f95b](https://github.com/po-ui/po-style/commit/547f95be9a793dfa54003eeaa6fcf541d9fed556))
+* **components:** reduz tamanhos de fonte ([15622b4](https://github.com/po-ui/po-style/commit/15622b4180e9722bd0186bfd2b72d2bdbd6be51f))
+* **fields:** adiciona po-helper quando não há label definida ([42c7953](https://github.com/po-ui/po-style/commit/42c7953137419e7664c967daa8c5dc5726b81262))
 
 ## [20.6.0](https://github.com/po-ui/po-style/compare/v20.5.0...v20.6.0) (2025-10-21)
 
 [Compatibilidade com @po-ui/ng-components@19.32.0](https://github.com/po-ui/po-style/compare/v19.31.0...v19.32.0)
 
+### Features
+
+* **upload:** implementa definições do AnimaliaDS ([7fb2a79](https://github.com/po-ui/po-style/commit/7fb2a7984928d5e7c29f361fe29b0e5c071c2fe0))
+
 ## [20.5.0](https://github.com/po-ui/po-style/compare/v20.4.0...v20.5.0) (2025-10-13)
 
 [Compatibilidade com @po-ui/ng-components@19.31.0](https://github.com/po-ui/po-style/compare/v19.30.0...v19.31.0)
+
+### Features
+
+* **icons:** atualiza AnimaliaIcons para v1.0.5 ([73125ce](https://github.com/po-ui/po-style/commit/73125ce9b48cc5606febc1af00ebf55eebc8bac9))
 
 ## [20.4.0](https://github.com/po-ui/po-style/compare/v20.3.0...v20.4.0) (2025-10-06)
 
 [Compatibilidade com @po-ui/ng-components@19.30.0](https://github.com/po-ui/po-style/compare/v19.29.0...v19.30.0)
 
+### Features
+
+* **helper:** implementa novo componente de ajuda ([8b4b2ea](https://github.com/po-ui/po-style/commit/8b4b2eaaa5b16e58c69d9f749ccee01f5679a81a))
+
 ## [20.3.0](https://github.com/po-ui/po-style/compare/v20.2.1...v20.3.0) (2025-09-30)
 
 [Compatibilidade com @po-ui/ng-components@19.29.0](https://github.com/po-ui/po-style/compare/v19.28.1...v19.29.0)
+
+### Features
+
+* **scroll:** implementa definições do AnimaliaDS ([9b0119e](https://github.com/po-ui/po-style/commit/9b0119e6e803a243cd5961582b5e7ecab39df982))
 
 # [20.2.1](https://github.com/po-ui/po-style/compare/v20.2.0...v20.2.1) (2025-09-22)
 
@@ -61,6 +104,19 @@ All notable changes to this project will be documented in this file. See [standa
 # [20.1.0](https://github.com/po-ui/po-style/compare/v20.0.0...v20.1.0) (2025-09-09)
 
 [Compatibilidade com @po-ui/ng-components@19.27.0](https://github.com/po-ui/po-style/compare/v19.26.0...v19.27.0)
+
+### Code Refactoring
+
+* **navbar:** marca componente po-navbar como depreciado ([5fdaf89](https://github.com/po-ui/po-style/commit/5fdaf8958b0242f7b2a04d7e42a96a89e0d910aa))
+
+
+### BREAKING CHANGES
+
+* **navbar:** marca componente po-navbar como @deprecated
+
+O componente po-navbar não será mais mantido e
+será removido em versões futuras.
+A alternativa recomendada é utilizar o po-header.
 
 # [20.0.0](https://github.com/po-ui/po-style/compare/v19.26.0...v20.0.0) (2025-09-03)
 

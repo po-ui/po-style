@@ -1,4 +1,4 @@
-name: Run publish @po-ui/style Angular@17
+name: Run publish @po-ui/style Angular@19
 
 env:
   PACKAGE_NAME: po-ui/style
@@ -10,12 +10,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/17.x.x'
+    if: github.ref == 'refs/heads/19.x.x'
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v3
       with:
-        node-version: '18.x'
+        node-version: '24.x'
         registry-url: 'https://registry.npmjs.org'
 
     - run: npm install
@@ -42,15 +42,15 @@ jobs:
         fi
 
     # PUBLISH
-    - name: Run publish with v17-lts
+    - name: Run publish with v19-lts
       if: contains(steps.version.outputs.publish, 'yes')
-      run: npm publish dist/style --tag "v17-lts"
+      run: npm publish dist/style --tag "v19-lts"
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-    - name: Add "v17-lts" tag
+    - name: Add "v19-lts" tag
       if: contains(steps.version.outputs.publish, 'no')
-      run: npm dist-tags add @${{ env.PACKAGE_NAME }}@${{ env.PACKAGE_VERSION }} "v17-lts"
+      run: npm dist-tags add @${{ env.PACKAGE_NAME }}@${{ env.PACKAGE_VERSION }} "v19-lts"
       env:
         PACKAGE_VERSION: ${{ steps.package-version.outputs.current-version }}
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

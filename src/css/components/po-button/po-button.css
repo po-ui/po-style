@@ -2,8 +2,7 @@ po-button {
   display: inline-block;
 }
 
-.po-button,
-[data-a11y='AAA'] .po-button-aa {
+.po-button {
   font-family: var(--font-family);
   font-weight: var(--font-weight, var(--font-weight-bold));
   font-size: var(--font-size, var(--font-size-default));
@@ -18,6 +17,17 @@ po-button {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+}
+
+po-button[p-size='small'] .po-button {
+  font-size: var(--font-size, var(--font-size-sm));
+  padding: var(--padding, 0 var(--spacing-xs));
+  min-height: var(--target-size-aa);
+}
+
+po-button[p-size='large'] .po-button {
+  padding: var(--padding, 0 var(--spacing-md));
+  min-height: var(--spacing-3xl);
 }
 
 .po-button-container {
@@ -153,17 +163,6 @@ po-button {
   background-color: var(--background-color-disabled);
 }
 
-.po-button-aa {
-  font-size: var(--font-size, var(--font-size-sm));
-  padding: var(--padding, 0 var(--spacing-xs));
-  min-height: var(--target-size-aa);
-}
-
-.po-button-large {
-  padding: var(--padding, 0 var(--spacing-md));
-  min-height: var(--spacing-3xl);
-}
-
 [class*='po-xl-'],
 [class*='po-lg-'],
 [class*='po-md-'],
@@ -173,13 +172,12 @@ po-button {
   }
 }
 
-.po-button-icon,
-[data-a11y='AAA'] .po-button-icon-aa {
+.po-button-icon {
   vertical-align: middle;
   font-size: var(--font-size, var(--font-size-lg));
 }
 
-.po-button-icon-aa {
+po-button[p-size='small'] .po-button-icon {
   font-size: var(--font-size, var(--font-size-default));
   min-height: var(--target-size-aa);
 }

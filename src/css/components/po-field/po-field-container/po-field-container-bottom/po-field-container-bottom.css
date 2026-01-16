@@ -20,21 +20,18 @@
   font-weight: var(--font-weight-normal);
 }
 
-[data-a11y='AA'] .po-field-container-bottom[p-size='small'] .po-field-container-bottom-help-text,
-[data-a11y='AA']
-  .po-field-container-bottom[p-size='small']
-  .po-field-container-bottom-text-error
-  .po-field-error-message,
-[data-a11y='AA'] .po-field-container-bottom[p-size='small'],
+po-field-container-bottom[p-size='small'] .po-field-container-bottom,
+po-field-container-bottom[p-size='small'] .po-field-container-bottom-help-text,
+po-field-container-bottom[p-size='small'] .po-field-container-bottom-text-error .po-field-error-message,
 [data-a11y='AA'] po-page-login[p-components-size='small'] .po-page-login-form .po-field-error-message {
   font-size: var(--font-size, var(--font-size-xs));
 }
 
-[data-a11y='AA'] .po-field-container-bottom:empty[p-size='small'] {
+po-field-container-bottom[p-size='small'] .po-field-container-bottom:empty {
   padding-bottom: var(--spacing-xs);
 }
 
-[data-a11y='AA'] .po-field-container-bottom:not(:empty)[p-size='small'] {
+po-field-container-bottom[p-size='small'] .po-field-container-bottom:not(:empty) {
   padding-bottom: 0.75rem;
 }
 

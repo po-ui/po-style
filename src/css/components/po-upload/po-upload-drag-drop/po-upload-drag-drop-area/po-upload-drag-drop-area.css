@@ -36,7 +36,7 @@
   -webkit-appearance: none;
 }
 
-[data-a11y='AA'] .po-upload[p-size='small'] .po-upload-drag-drop-area-select-files {
+po-upload[p-size='small'] .po-upload-drag-drop-area-select-files {
   font-size: var(--font-size-sm);
 }
 
@@ -46,7 +46,7 @@
   margin-bottom: 10px;
 }
 
-[data-a11y='AA'] .po-upload[p-size='small'] .po-upload-drag-drop-area-label {
+po-upload[p-size='small'] .po-upload-drag-drop-area-label {
   font-size: var(--font-size-md);
   margin-bottom: 0;
 }

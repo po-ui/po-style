@@ -34,12 +34,11 @@
   pointer-events: none;
 }
 
-.po-datepicker-button i,
-[data-a11y='AAA'] .po-datepicker-button i {
+.po-datepicker-button i {
   font-size: var(--font-size-lg);
 }
 
-[p-size='small'] .po-datepicker-button i {
+po-datepicker[p-size='small'] .po-datepicker-button i {
   font-size: var(--font-size-default);
 }
 

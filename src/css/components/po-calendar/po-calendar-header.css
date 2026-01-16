@@ -54,15 +54,23 @@ po-calendar[p-size='small'] .po-calendar-header po-combo:nth-of-type(2) .po-comb
   min-width: 5.5rem;
 }
 
-po-calendar po-field-container-bottom .po-field-container-bottom,
-po-calendar[p-size='small'] po-field-container-bottom .po-field-container-bottom,
-po-calendar[p-size='small'] .po-field-container-bottom:empty[p-size='small'] {
+po-calendar
+  .po-calendar-wrapper
+  .po-calendar-header
+  po-combo
+  po-field-container
+  .po-field-container
+  .po-field-container-bottom {
   padding-bottom: 0;
 }
 
-po-calendar .po-field-container .po-field-container-content,
-po-calendar[p-size='small'] .po-field-container .po-field-container-content[p-size='small'],
-po-calendar[p-size='small'] .po-field-container-content[p-size='small'] {
+po-calendar
+  .po-calendar-wrapper
+  .po-calendar-header
+  po-combo
+  po-field-container
+  .po-field-container
+  .po-field-container-content {
   padding: 0;
 }
 

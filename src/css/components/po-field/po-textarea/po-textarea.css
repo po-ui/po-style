@@ -16,7 +16,7 @@
   resize: both;
 }
 
-[data-a11y='AA'] .po-textarea[p-size='small'] {
+po-textarea[p-size='small'] .po-textarea {
   font-size: var(--font-size, var(--font-size-sm));
   padding: var(--spacing-squish-xs);
 }

@@ -1,5 +1,4 @@
-.po-tab-button,
-[data-a11y='AAA'] .po-tab-button-aa {
+.po-tab-button {
   font-family: var(--font-family);
   font-size: var(--font-size, var(--font-size-default));
   font-weight: var(--font-weight);
@@ -13,7 +12,8 @@
   padding-top: 0.5em;
 }
 
-.po-tab-button-aa {
+po-tabs[p-size='small'] .po-tab-button,
+po-context-tabs[p-size='small'] .po-tab-button {
   font-size: var(--font-size, var(--font-size-sm));
   min-height: var(--target-size-aa);
 }
@@ -105,13 +105,13 @@ po-context-tabs .po-tabs-button-wrapper {
   margin-top: 1px;
 }
 
-.po-tab-button .po-context-tab-button-label,
-[data-a11y='AAA'] .po-tab-button-aa .po-context-tab-button-label {
+.po-tab-button .po-context-tab-button-label {
   padding-left: 1rem;
   padding-right: calc(var(--target-size-aaa) + 2px);
 }
 
-.po-tab-button-aa .po-context-tab-button-label {
+po-tabs[p-size='small'] .po-tab-button .po-context-tab-button-label,
+po-context-tabs[p-size='small'] .po-tab-button .po-context-tab-button-label {
   padding-right: calc(var(--target-size-aa) + 2px);
 }
 
@@ -122,8 +122,7 @@ po-context-tabs .po-tabs-button-wrapper {
   position: relative;
 }
 
-.po-tab-button .po-tab-button-content-close-icon,
-[data-a11y='AAA'] .po-tab-button-aa .po-tab-button-content-close-icon {
+.po-tab-button .po-tab-button-content-close-icon {
   right: 0;
   width: var(--target-size-aaa);
   height: var(--target-size-aaa);
@@ -132,7 +131,8 @@ po-context-tabs .po-tabs-button-wrapper {
   justify-content: center;
 }
 
-.po-tab-button-aa .po-tab-button-content-close-icon {
+po-tabs[p-size='small'] .po-tab-button .po-tab-button-content-close-icon,
+po-context-tabs[p-size='small'] .po-tab-button .po-tab-button-content-close-icon {
   width: var(--target-size-aa);
   height: var(--target-size-aa);
 }

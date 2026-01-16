@@ -5,7 +5,7 @@
   width: 100%;
 }
 
-[data-a11y='AA'] .po-field-container-content[p-size='small'] {
+po-field-container[p-size='small'] .po-field-container-content {
   padding: var(--padding, var(--spacing-xxs) 0);
 }
 
@@ -25,7 +25,7 @@
   font-size: var(--font-size, var(--font-size-default));
 }
 
-[data-a11y='AA'] .po-field-container[p-size='small'] .po-field-container-title .po-label {
+po-field-container[p-size='small'] .po-field-container-title .po-label {
   font-size: var(--font-size, var(--font-size-sm));
 }
 
@@ -46,7 +46,7 @@
   padding-right: var(--spacing-2xs);
 }
 
-[data-a11y='AA'] .po-field-container-title po-helper {
+po-field-container[p-size='small'] .po-field-container-title po-helper {
   padding-right: var(--spacing-xs);
 }
 
@@ -61,7 +61,7 @@
   padding: var(--padding, var(--spacing-xs) var(--spacing-xs) var(--spacing-xs) 0);
 }
 
-[data-a11y='AA'] .po-field-container-content:has(po-helper)[p-size='small'] {
+po-field-container[p-size='small'] .po-field-container-content:has(po-helper) {
   padding: var(--padding, var(--spacing-xxs) var(--spacing-xs) var(--spacing-xxs) 0);
 }
 
@@ -71,9 +71,7 @@
   align-items: center;
 }
 
-[data-a11y='AA']
-  .po-field-container-content:not(.po-field-container-content-datepicker, .po-field-container-content-datepicker-range):has(po-helper
-    .po-helper-container[p-size='small'])
+.po-field-container-content:not(.po-field-container-content-datepicker, .po-field-container-content-datepicker-range):has(po-helper[p-size='small'])
   .po-field-icon-container-right {
   right: 42px;
 }
@@ -98,4 +96,29 @@
 
 .po-field-container-title.po-field-container-compact-label po-label {
   flex: 0 1 auto;
+}
+
+.po-field-container-content-helper-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+}
+
+.po-field-container-content-helper-wrapper .po-field-container-input:not(:has(.po-combo-input)) {
+  width: auto;
+  min-width: 0;
+  flex: 1 1 0%;
+}
+
+.po-field-container-content-helper-wrapper po-helper {
+  flex: 0 0 auto;
+}
+
+.po-field-container-content-helper-wrapper po-helper {
+  height: var(--target-size-aaa);
+}
+.po-field-container-content-helper-wrapper po-helper[p-size='small'] {
+  height: var(--target-size-aa);
 }

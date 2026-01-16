@@ -1,6 +1,5 @@
 po-helper,
-po-helper .po-helper-container,
-[data-default-size='small'][data-a11y='AA'] po-helper .po-helper-container[p-size='medium'] {
+po-helper .po-helper-container {
   display: flex;
   --font-size: var(--font-size-lg);
 }

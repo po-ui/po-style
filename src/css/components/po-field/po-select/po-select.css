@@ -1,12 +1,4 @@
-.po-select-container {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  gap: 8px;
-}
-
-.po-select,
-[data-a11y='AAA'] .po-select-aa {
+.po-select {
   font-family: var(--font-family);
   font-size: var(--font-size, var(--font-size-default));
   color: var(--text-color);
@@ -34,7 +26,7 @@
   opacity: 1;
 }
 
-.po-select-aa {
+po-select[p-size='small'] .po-select {
   font-size: var(--font-size, var(--font-size-sm));
   min-height: var(--target-size-aa);
   padding: var(--padding-vertical, 0.35rem) var(--padding-horizontal, 0.5rem);

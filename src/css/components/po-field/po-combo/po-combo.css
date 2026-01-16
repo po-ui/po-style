@@ -1,5 +1,4 @@
-.po-combo-input,
-[data-a11y='AAA'] .po-combo-input-aa {
+.po-combo-input {
   font-family: var(--font-family);
   font-size: var(--font-size, var(--font-size-default));
   color: var(--text-color);
@@ -13,7 +12,7 @@
   min-width: var(--min-width);
 }
 
-.po-combo-input-aa {
+po-combo[p-size='small'] .po-combo-input {
   font-size: var(--font-size, var(--font-size-sm));
   min-height: var(--target-size-aa);
 }
@@ -194,8 +193,7 @@ po-combo .po-combo-container-content .po-field-icon-container-right {
   border-color: var(--color-hover);
 }
 
-.po-combo-container-content .po-combo-clean .po-field-icon,
-[data-a11y='AAA'] .po-combo-container-content .po-combo-clean-aa .po-field-icon {
+.po-combo-container-content .po-combo-clean .po-field-icon {
   height: var(--target-size-aaa);
   width: var(--target-size-aaa);
   font-size: var(--font-size-lg);
@@ -204,7 +202,7 @@ po-combo .po-combo-container-content .po-field-icon-container-right {
   justify-content: center;
 }
 
-.po-combo-container-content .po-combo-clean-aa .po-field-icon {
+.po-combo-container-content .po-combo-clean[p-size='small'] .po-field-icon {
   height: var(--target-size-aa);
   width: var(--target-size-aa);
   font-size: var(--font-size-default);
@@ -322,7 +320,7 @@ po-combo .po-field-container-content {
   top: 4px;
 }
 
-.po-combo-field-wrapper._active po-helper:has(.po-helper-container[p-size='small']) {
+.po-combo-field-wrapper._active po-helper[p-size='small'] {
   top: 2px;
 }
 

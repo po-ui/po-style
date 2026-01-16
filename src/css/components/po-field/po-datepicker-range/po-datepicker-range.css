@@ -67,14 +67,13 @@ div.po-datepicker-range-field-focused {
   width: 8px;
 }
 
-.po-datepicker-range-start-date,
-[data-a11y='AAA'] .po-datepicker-range-start-date-aa {
+.po-datepicker-range-start-date {
   display: table-cell;
   vertical-align: middle;
   width: 90px;
 }
 
-.po-datepicker-range-start-date-aa {
+po-datepicker-range[p-size='small'] .po-datepicker-range-start-date {
   width: 80px;
 }
 

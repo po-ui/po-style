@@ -30,14 +30,17 @@
   z-index: 11;
 }
 
-.po-datepicker-button i,
-[data-a11y='AAA'] .po-datepicker-button-aa i {
+.po-datepicker-button i {
   font-size: var(--font-size-lg);
 }
 
-.po-datepicker-button-aa i {
+po-datepicker[p-size='small'] .po-datepicker-button i {
   font-size: var(--font-size-default);
 }
+
+/* .po-datepicker-button-aa i {
+  font-size: var(--font-size-default);
+} */
 
 po-datepicker .po-field-container-title po-helper,
 [data-a11y='AA'] po-datepicker .po-field-container-title po-helper {

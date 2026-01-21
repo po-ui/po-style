@@ -6,6 +6,19 @@
   color: var(--color);
 }
 
+.po-loading-icon-animated {
+  animation: po-loading-rotate 1200ms linear infinite;
+}
+
+@keyframes po-loading-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .po-loading-svg-lg svg {
   min-height: 5rem;
   min-width: 5rem;

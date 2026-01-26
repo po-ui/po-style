@@ -1,0 +1,430 @@
+name: "POC - Release (Create PR)"
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Versão alvo (ex. 1.2.3)"
+        required: true
+      jira_ticket:
+        description: "Ticket/Issue (ex. DTHFUI-1234)"
+        required: true
+        default: "IssueJira"
+      base_branch:
+        description: "Branch base da POC (Não usa a master)"
+        required: true
+        default: "poc/workflow_release"
+      node_version:
+        description: "Versão do Node"
+        required: true
+        default: "18"
+      reviewers:
+        description: "Reviewers (csv) ex: user1, user2 - opcional"
+        default: ""
+      dry_run:
+        description: "Dry-run (não cria tag / não publica)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: "poc-release-${{ github.ref }}"
+  cancel-in-progress: false
+
+jobs:
+  release_poc:
+    runs-on: ubuntu-latest
+
+    outputs:
+      pr_number: ${{ steps.create_pr.outputs.pr_number }}
+      build_branch: ${{ steps.names.outputs.build_branch }}
+      version: ${{ inputs.version }}
+
+    steps:
+      - name: "Contexto da execução"
+        run: |
+          echo "version=${{ inputs.version }}"
+          echo "jira_ticket=${{ inputs.jira_ticket }}"
+          echo "base_branch=${{ inputs.base_branch }}"
+          echo "node_version=${{ inputs.node_version }}"
+          echo "reviewers=${{ inputs.reviewers }}"
+          echo "dry_run=${{ inputs.dry_run }}"
+
+      - name: "Checkout da branch base (POC)"
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.base_branch }}
+          fetch-depth: 0
+
+      - name: "Setup Node"
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node_version }}
+          cache: "npm"
+
+      - name: "Configurar Git (bot)"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: "Instalar dependências"
+        run: npm ci
+
+      - name: "Definir nomes (branch/commit/tag POC)"
+        id: names
+        shell: bash
+        run: |
+          VERSION="${{ inputs.version }}"
+          TICKET="${{ inputs.jira_ticket }}"
+          BASE="${{ inputs.base_branch }}"
+
+          TICKET_SAFE=$(echo "$TICKET" | tr '[:upper:]' '[:lower:]' | tr -cd 'a-z0-9-_')
+          if [ -z "$TICKET_SAFE" ]; then TICKET_SAFE="poc"; fi
+
+          BUILD_BRANCH="build/poc/${TICKET_SAFE}-release-${VERSION}"
+          COMMIT_MSG="build: release v${VERSION}"
+          POC_TAG="poc-v${VERSION}"
+
+          echo "build_branch=$BUILD_BRANCH" >> $GITHUB_OUTPUT
+          echo "commit_msg=$COMMIT_MSG" >> $GITHUB_OUTPUT
+          echo "poc_tag=$POC_TAG" >> $GITHUB_OUTPUT
+          echo "base_branch=$BASE" >> $GITHUB_OUTPUT
+
+      - name: "Criar branch de build (a partir da base POC)"
+        run: |
+          git checkout -b "${{ steps.names.outputs.build_branch }}"
+
+      - name: "Rodar release"
+        run: |
+          echo "::group::npm run release"
+          npm run release
+          echo "::endgroup::"
+
+      - name: "Validações (package.json + CHANGELOG + diff)"
+        shell: bash
+        run: |
+          set -e
+
+          echo "::group::Verificar versão no package.json"
+          PKG_VERSION="$(node -p "require('./package.json').version")"
+          echo "package.json version: $PKG_VERSION"
+          echo "::endgroup::"
+
+          echo "::group::Verificar CHANGELOG.md"
+          if grep -q "## \[${PKG_VERSION}\]" CHANGELOG.md; then
+            echo "✓ CHANGELOG.md foi atualizado com a versão $PKG_VERSION"
+          else
+            echo "✗ CHANGELOG.md NÃO contém entrada para versão $PKG_VERSION"
+            exit 1
+          fi
+          echo "::endgroup::"
+
+          echo "::group::Mostrar alterações"
+          git diff --stat
+          echo "::endgroup::"
+
+      - name: "Adicionar arquivos ao stage (git add)"
+        run: git add .
+
+      - name: "Commit com a mensagem de release"
+        run: git commit -m "${{ steps.names.outputs.commit_msg }}"
+
+      - name: "Push da branch de build para origin"
+        run: git push --set-upstream origin "${{ steps.names.outputs.build_branch }}"
+
+      - name: "Criar Pull Request"
+        id: create_pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const version = "${{ inputs.version }}";
+            const ticket = "${{ inputs.jira_ticket }}";
+            const buildBranch = "${{ steps.names.outputs.build_branch }}";
+            const baseBranch = "master";
+            const reviewers = "${{ inputs.reviewers }}".split(",").map(r => r.trim()).filter(r => r);
+
+            const prTitle = `build: release v${version}`;
+            const prBody = `## Release v${version}
+
+            **Ticket JIRA**: ${ticket}
+            **Versão**: ${version}
+
+            ### Checklist
+            - [ ] Versão confirmada no \`package.json\`
+            - [ ] CHANGELOG.md atualizado
+            - [ ] Testes passando
+            - [ ] Pronto para merge
+
+            ### ⚠️ Importante
+            Esta é uma POC de automação de release. O workflow aguardará a aprovação de **2 revisores** e depois executará automaticamente:
+            1. Rebase and merge
+            2. Criação de tag de versão
+            3. Limpeza e recriação da branch development
+            4. Disparo dos workflows de publicação (next e latest)
+            5. Verificação no NPM
+            `;
+
+            const pr = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: prTitle,
+              body: prBody,
+              head: buildBranch,
+              base: baseBranch,
+            });
+
+            core.setOutput('pr_number', pr.data.number);
+            core.setOutput('pr_url', pr.data.html_url);
+
+            console.log(`✓ Pull Request criado: #${pr.data.number}`);
+            console.log(`URL: ${pr.data.html_url}`);
+
+            // Adicionar reviewers se fornecidos
+            if (reviewers.length > 0) {
+              try {
+                await github.rest.pulls.requestReviewers({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: pr.data.number,
+                  reviewers: reviewers,
+                });
+                console.log(`✓ Reviewers adicionados: ${reviewers.join(', ')}`);
+              } catch (error) {
+                console.warn(`⚠ Erro ao adicionar reviewers: ${error.message}`);
+              }
+            }
+
+      - name: "Registrar PR para pós-merge"
+        id: pr_info
+        run: |
+          echo "pr_number=${{ steps.create_pr.outputs.pr_number }}" >> $GITHUB_OUTPUT
+          echo "version=${{ inputs.version }}" >> $GITHUB_OUTPUT
+
+      - name: "Resumo da execução - Aguardando aprovações"
+        run: |
+          echo "## 🚀 POC Release Iniciado"
+          echo ""
+          echo "| Item | Valor |"
+          echo "|------|-------|"
+          echo "| Versão | ${{ inputs.version }} |"
+          echo "| Ticket JIRA | ${{ inputs.jira_ticket }} |"
+          echo "| Branch Build | ${{ steps.names.outputs.build_branch }} |"
+          echo "| Commit | ${{ steps.names.outputs.commit_msg }} |"
+          echo "| Pull Request | #${{ steps.create_pr.outputs.pr_number }} |"
+          echo "| PR URL | ${{ steps.create_pr.outputs.pr_url }} |"
+          echo "| Dry-run | ${{ inputs.dry_run }} |"
+          echo ""
+          echo "### ⏳ Próximas etapas"
+          echo "1. ✋ Revisar o Pull Request"
+          echo "2. ✋ Obter aprovação de **pelo menos 2 revisores**"
+          echo "3. ⚙️ Você precisa clicar em **'Rebase and merge'** no GitHub"
+          echo "4. ⚙️ Pós-merge: O workflow continuará automaticamente"
+          echo ""
+          echo "**⚠️ IMPORTANTE**: Clique em 'Rebase and merge' para continuar a automação!"
+
+  approval_gate:
+    name: "⏳ Aguardar Aprovações (2 revisores)"
+    needs: release_poc
+    runs-on: ubuntu-latest
+    if: ${{ !inputs.dry_run }}
+
+    steps:
+      - name: "Aguardar aprovações"
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const prNumber = ${{ needs.release_poc.outputs.pr_number }};
+
+            console.log(`⏳ Aguardando 2 aprovações para PR #${prNumber}`);
+
+            // Pooling a cada 30 segundos por até 24 horas
+            const maxAttempts = 2880; // 24 horas
+            let attempt = 0;
+
+            while (attempt < maxAttempts) {
+              const reviews = await github.rest.pulls.listReviews({
+                owner,
+                repo,
+                pull_number: prNumber,
+              });
+
+              const approved = reviews.data.filter(r => r.state === 'APPROVED').length;
+              const rejected = reviews.data.filter(r => r.state === 'CHANGES_REQUESTED').length;
+
+              console.log(`Tentativa ${attempt + 1}: ${approved}/2 aprovações, ${rejected} solicitudes de mudança`);
+
+              if (rejected > 0) {
+                core.setFailed(`Alterações solicitadas em PR #${prNumber}`);
+                return;
+              }
+
+              if (approved >= 2) {
+                console.log(`✅ Recebidas ${approved} aprovações! PR pronta para merge`);
+                return;
+              }
+
+              // Esperar 30 segundos antes da próxima verificação
+              await new Promise(resolve => setTimeout(resolve, 30000));
+              attempt++;
+            }
+
+            core.setFailed('Timeout: Não recebeu 2 aprovações em 24 horas');
+
+  post_merge_release:
+    name: "🚀 Pós-Merge: Tag, Cleanup e Publish"
+    needs: [release_poc, approval_gate]
+    if: success()
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout master"
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: "Setup Node"
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node_version }}
+          cache: "npm"
+
+      - name: "Configurar Git (bot)"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: "Atualizar master com rebase"
+        run: |
+          git checkout master
+          git pull --rebase origin master
+          echo "✓ Master atualizada"
+
+      - name: "Validar merge da PR"
+        id: merge_check
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const prNumber = ${{ needs.release_poc.outputs.pr_number }};
+
+            const pr = await github.rest.pulls.get({
+              owner,
+              repo,
+              pull_number: prNumber,
+            });
+
+            if (pr.data.merged) {
+              console.log(`✓ PR #${prNumber} foi mergida com sucesso`);
+              core.setOutput('is_merged', 'true');
+              core.setOutput('merged_at', pr.data.merged_at);
+            } else {
+              console.log(`✗ PR #${prNumber} ainda não foi mergida (esperando merge)`);
+              core.setOutput('is_merged', 'false');
+            }
+
+      - name: "Criar tag de versão"
+        if: steps.merge_check.outputs.is_merged == 'true'
+        run: |
+          VERSION="${{ needs.release_poc.outputs.version }}"
+          git tag "v${VERSION}" -m "Release v${VERSION}"
+          git push origin "v${VERSION}"
+          echo "✅ Tag v${VERSION} criada e enviada para origin"
+
+      - name: "Deletar branch de build"
+        if: steps.merge_check.outputs.is_merged == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const prNumber = ${{ needs.release_poc.outputs.pr_number }};
+
+            const pr = await github.rest.pulls.get({
+              owner,
+              repo,
+              pull_number: prNumber,
+            });
+
+            const branchName = pr.data.head.ref;
+
+            try {
+              await github.rest.git.deleteRef({
+                owner,
+                repo,
+                ref: `heads/${branchName}`,
+              });
+              console.log(`✅ Branch '${branchName}' deletada`);
+            } catch (error) {
+              console.warn(`⚠ Erro ao deletar branch: ${error.message}`);
+            }
+
+      - name: "Limpar e recriar development"
+        if: steps.merge_check.outputs.is_merged == 'true'
+        run: |
+          # Deletar development local se existir
+          git branch -D development || true
+
+          # Deletar development remota
+          git push origin --delete development || true
+          echo "✅ Branch development deletada"
+
+          # Recriar development baseado em master
+          git checkout -b development
+          git push --set-upstream origin development
+          echo "✅ Branch development recriada e publicada"
+
+      - name: "Disparar publish workflows"
+        if: steps.merge_check.outputs.is_merged == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const workflows = [
+              "publish_style_cd-next.yml",
+              "publish_style_cd-latest.yml"
+            ];
+
+            for (const workflow of workflows) {
+              try {
+                const dispatch = await github.rest.actions.createWorkflowDispatch({
+                  owner,
+                  repo,
+                  workflow_id: workflow,
+                  ref: "master"
+                });
+                console.log(`✅ Workflow ${workflow} disparado`);
+              } catch (error) {
+                console.error(`❌ Erro ao disparar ${workflow}: ${error.message}`);
+                core.warning(`Você pode disparar manualmente: ${workflow}`);
+              }
+            }
+
+      - name: "Resumo Final"
+        if: always()
+        run: |
+          echo "## ✅ Processo de Release Concluído"
+          echo ""
+          echo "### 📋 Resumo das ações executadas"
+          echo "- ✓ Tag de versão criada"
+          echo "- ✓ Branch de build deletada"
+          echo "- ✓ Branch development recriada"
+          echo "- ✓ Workflows de publish disparados"
+          echo ""
+          echo "### 🔍 Verificações recomendadas"
+          echo "- [ ] Verificar NPM: https://www.npmjs.com/package/@po-ui/style"
+          echo "- [ ] Verificar Release: https://github.com/${{ github.repository }}/releases"
+          echo "- [ ] Verificar workflows: https://github.com/${{ github.repository }}/actions"
+          echo ""
+          echo "### 📊 Informações"
+          echo "- Versão: ${{ needs.release_poc.outputs.version }}"
+          echo "- Branch master atualizada"
+          echo "- Merged at: ${{ steps.merge_check.outputs.merged_at }}"

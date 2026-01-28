@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.0.0](https://github.com/po-ui/po-style/compare/v20.13.1...v21.0.0) (2026-01-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* **angular:** deve ser utilizado o Angular v21
+
+Atualize seu projeto para utilizar a versão 21 do Angular, acesse a documentação [Guia de Atualização do Angular](https://angular.dev/update-guide) para fazer a migração completa.
+
+Consulte nossa documentação de migração (https://po-ui.io/guides/migration-poui) para mais detalhes sobre a atualização com o PO-UI.
+
+* **icon:** as classes po-icon e an foram removidas.
+
+Todos os componentes devem implementar Animalia Icons como fonte padrão.
+
+Antes:
+`<po-input p-icon='po-icon po-icon-anchor' p-label='PO input'></po-input>`
+
+Depois:
+`<po-input p-icon='an an-anchor' p-label='PO input'></po-input>`
+
+
+### Bug Fixes
+
+* **loading-icon:** otimiza animação via CSS ([0c189e3](https://github.com/po-ui/po-style/commit/0c189e32e60e0bc6a92df9233626aabde9b6b89f))
+
+
+### Code Refactoring
+
+* **icon:** remove ícones depreciados ([98ee73d](https://github.com/po-ui/po-style/commit/98ee73df7851001891bfc9b4b446e0c2e5b5a285))
+
+
+### Features
+
+* **angular:** deve ser utilizado o Angular v21 ([9bcf19c](https://github.com/po-ui/po-style/commit/9bcf19c49f2a181f11bb5ea45dc6aa0453594c2a))
+
+
 ## [20.13.1](https://github.com/po-ui/po-style/compare/v20.13.0...v20.13.1) (2026-01-26)
 
 [Compatibilidade com @po-ui/ng-components@19.39.1](https://github.com/po-ui/po-style/compare/v19.39.0...v19.39.1)

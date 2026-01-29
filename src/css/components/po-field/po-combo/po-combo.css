@@ -110,7 +110,6 @@ po-combo .po-combo-container-content .po-field-icon-container-right {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color);
   font-size: var(--font-size-lg);
 }
 
@@ -177,14 +176,12 @@ po-combo .po-combo-container-content .po-field-icon-container-right {
   border-color: var(--color);
 }
 
-.po-combo-container-content .po-field-icon > i.po-icon-input:hover,
 .po-combo-container-content
   .po-combo-input:focus
   ~ .po-field-icon-container-right
   .po-field-icon
   > i.po-icon-input:hover {
-  background: var(--background-hover);
-  border-color: var(--color-focused);
+  border-color: var(--color-hover);
 }
 
 .po-combo-container-content

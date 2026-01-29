@@ -116,12 +116,30 @@
 .po-widget:not(.po-widget-disabled).po-clickable:hover,
 .po-widget-primary:not(.po-widget-disabled).po-clickable:hover {
   border-color: var(--border-color-hover);
+}
+
+.po-widget:not(.po-widget-disabled):not(.po-widget-primary).po-clickable:hover {
+  background-color: var(--color-neutral-light-00);
+}
+
+.po-widget:not(.po-widget-disabled).po-clickable:not(.po-widget-no-shadow):hover,
+.po-widget-primary:not(.po-widget-disabled).po-clickable:not(.po-widget-no-shadow):hover {
   box-shadow: var(--shadow-hover);
+}
+
+.po-widget.po-clickable:not(.po-widget-primary):not(.po-widget-no-shadow) {
+  background-color: var(--color-neutral-light-00);
 }
 
 .po-widget.po-clickable:not(.po-widget-no-shadow),
 .po-widget-primary.po-clickable:not(.po-widget-no-shadow) {
   box-shadow: var(--shadow);
+  border-color: var(--color-neutral-light-20);
+}
+
+.po-widget:not(.po-widget-disabled):not(.po-widget-primary).po-clickable:active {
+  background-color: var(--color-brand-01-lightest);
+  border-color: var(--border-color-selected);
 }
 
 .po-widget-action-container {

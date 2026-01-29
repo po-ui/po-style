@@ -985,7 +985,7 @@ po-lookup {
   --color-clear: var(--color-action-default);
   --color-disabled: var(--color-action-disabled);
   --color-focused: var(--color-action-default);
-  --color-hover: var(--color-action-hover);
+  --color-hover: var(--color-brand-01-dark);
   --color-icon: var(--color-action-default);
   --color-error: var(--color-feedback-negative-base);
 
@@ -1828,10 +1828,10 @@ po-widget {
   --border-width: var(--border-width-sm);
   --shadow: var(--shadow-md);
 
-  --background-selected: var(--color-brand-01-lightest);
+  --background-selected: var(--color-action-lightest);
   --border-color-selected: var(--color-action-default);
 
-  --border-color-hover: var(--color-brand-01-dark);
+  --border-color-hover: var(--color-action-hover);
   --shadow-hover: var(--shadow-lg);
 
   --color-focused: var(--color-action-default);

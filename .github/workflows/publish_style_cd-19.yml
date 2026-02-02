@@ -44,7 +44,7 @@ jobs:
     # PUBLISH
     - name: Run publish with v19-lts
       if: contains(steps.version.outputs.publish, 'yes')
-      run: npm publish dist/style --tag "v19-lts"
+      run: npm publish ${{env.WORKING_DIR}}/dist/style --tag "v19-lts"
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 

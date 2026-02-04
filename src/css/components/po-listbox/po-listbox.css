@@ -27,7 +27,7 @@
   padding-block: var(--spacing-sm) var(--spacing-xs);
 }
 
-[data-a11y='AA'] po-search-list[p-size='small'] .po-field-container-input.po-listbox-container-search {
+po-search-list[p-size='small'] .po-field-container-input.po-listbox-container-search {
   padding-inline: var(--spacing-xs);
   padding-block: var(--spacing-xs) var(--spacing-xxs);
 }
@@ -39,7 +39,7 @@
   padding-block: var(--spacing-xs);
 }
 
-[data-a11y='AA'] .po-listbox[p-size='small'] .po-listbox-list {
+po-listbox[p-size='small'] .po-listbox-list {
   padding-block: var(--spacing-xxs);
 }
 
@@ -48,12 +48,16 @@
 }
 
 .po-listbox-container-no-data {
-  height: 96px;
+  padding: var(--target-size-aaa) 0;
+  line-height: var(--line-height-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
 }
 
-.po-listbox-container-no-data {
-  @apply --font-table-text-bold;
-  padding: 36px 0px;
+po-listbox[p-size='small'] .po-listbox-container-no-data {
+  padding: var(--target-size-aa) 0;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
 }
 
 /*------------------------------------*\
@@ -112,7 +116,7 @@ po-listbox[p-size='small'] .po-listbox-group-header i {
   border-radius: var(--border-radius-md);
 }
 
-[data-a11y='AA'] .cdk-option:focus-visible.po-listbox-group-header {
+.cdk-option:focus-visible.po-listbox-group-header {
   outline-width: var(--border-width-md);
   outline-offset: -2px;
 }
@@ -153,7 +157,7 @@ po-listbox[p-size='small'] .po-listbox-dropdown .po-item-list {
   outline-offset: -4px;
 }
 
-[data-a11y='AA'] .po-listbox-dropdown .cdk-option:focus-visible .po-item-list {
+.po-listbox-dropdown .cdk-option:focus-visible .po-item-list {
   outline-offset: -2px;
 }
 
@@ -164,7 +168,7 @@ po-listbox[p-size='small'] .po-listbox-dropdown .po-item-list {
   outline-offset: -2px;
 }
 
-[data-a11y='AA'] .po-listbox-dropdown :active:is(.po-item-list__action, .po-item-list__option).po-item-list__danger {
+.po-listbox-dropdown :active:is(.po-item-list__action, .po-item-list__option).po-item-list__danger {
   outline-width: var(--border-width-md);
 }
 

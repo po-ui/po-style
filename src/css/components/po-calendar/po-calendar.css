@@ -1,330 +1,40 @@
-:root {
-  --font-calendar-title {
-    @apply --font-text-large-bold;
-  }
-
-  --font-calendar-label {
-    @apply --font-text-small;
-  }
-
-  --font-calendar-nav-icon {
-    @apply --font-subtitle;
-  }
-
-  --font-calendar-content {
-    @apply --font-text;
-  }
-
-  --font-calendar-button {
-    @apply --font-text-large-bold;
-  }
-
-  --shadow-calendar-box-shadow: var(--shadow-card);
-
-  --po-calendar-width: 288px;
-  --po-calendar-height: 320px;
-  --po-calendar-range-height: 288px;
-}
-
 .po-calendar {
-  background-color: var(--color-calendar-background-color);
-  border-radius: 3px;
-  box-shadow: var(--shadow-calendar-box-shadow);
-  height: var(--po-calendar-height);
+  background-color: var(--color-calendar-background-color, var(--background));
+  border-style: solid;
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
+  border-width: var(--border-width);
+  box-shadow: var(--shadow);
+  height: auto;
+  width: 25.5rem;
   overflow: hidden;
   position: relative;
   user-select: none;
-  width: var(--po-calendar-width);
 }
 
 .po-calendar-wrapper {
   display: inline-block;
   height: 100%;
-  width: var(--po-calendar-width);
+  width: 25.5rem;
   position: relative;
 }
 
 .po-calendar-range {
-  background-color: var(--color-calendar-background-color);
-  border-radius: 3px;
-  box-shadow: var(--shadow-calendar-box-shadow);
-  height: var(--po-calendar-range-height);
+  background-color: var(--background);
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
+  border-width: var(--border-width);
+  box-shadow: var(--shadow);
+  height: auto;
+  width: 25.5rem;
   overflow: hidden;
   user-select: none;
   display: inline-flex;
 }
 
-.po-calendar-range po-calendar-wrapper + po-calendar-wrapper .po-calendar-wrapper {
-  border-left: 1px solid var(--color-neutral-light-10);
-}
-
-.po-calendar-header {
-  min-height: 40px;
-  overflow: hidden;
-}
-
-.po-calendar-header .po-calendar-header-left,
-.po-calendar-header .po-calendar-header-right {
-  @apply --font-calendar-nav-icon;
-  color: var(--color-calendar-arrow);
-  cursor: pointer;
-  position: absolute;
-  top: 12px;
-}
-
-.po-calendar-header .po-calendar-header-left {
-  left: 16px;
-}
-
-.po-calendar-header .po-calendar-header-right {
-  right: 16px;
-}
-
-.po-calendar-header po-icon.po-calendar-header-left,
-.po-calendar-header po-icon.po-calendar-header-right {
-  line-height: 0;
-}
-
-.po-calendar-header .po-calendar-header-left i,
-.po-calendar-header .po-calendar-header-right i {
-  line-height: 32px;
-}
-
-.po-calendar-header .po-calendar-header-title {
-  font-family: var(--font-family-default-bold), sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--color-calendar-title);
-  margin-top: 16px;
-  text-align: center;
-  width: 100%;
-}
-
-.po-calendar-content {
-  @apply --font-calendar-content;
-  overflow: hidden;
-  width: var(--po-calendar-width);
-}
-
-.po-calendar-content .po-calendar-content-list-day,
-.po-calendar-content .po-calendar-content-list-month,
-.po-calendar-content .po-calendar-content-list-year {
-  position: absolute;
-  text-wrap: wrap;
-}
-
-.po-calendar-content .po-calendar-content-list-day {
-  padding: 0 4px;
-  top: 75px;
-}
-
-.po-calendar-content .po-calendar-content-list-day,
-.po-calendar-content .po-calendar-content-list-month {
-  text-align: center;
-}
-
-.po-calendar-content .po-calendar-content-list-month,
-.po-calendar-content .po-calendar-content-list-year {
-  padding: 0 8px;
-  top: 85px;
-}
-
-.po-calendar-content .po-calendar-labels {
-  padding: 0 4px;
-  position: absolute;
-  text-align: center;
-  top: 50px;
-  width: var(--po-calendar-width);
-}
-
-.po-calendar-content .po-calendar-label {
-  @apply --font-calendar-label;
-  color: var(--color-calender-color-content-label);
-  display: inline-block;
-  height: 24px;
-  margin: 0 2px;
-  text-align: center;
-  width: 32px;
-}
-
-.po-calendar-content .po-calendar-day {
-  border-radius: 3px;
-  display: inline-block;
-  line-height: 30px;
-  margin: 2px;
-  text-align: center;
-  width: 32px;
-}
-
-.po-calendar-content .po-calendar-month,
-.po-calendar-content .po-calendar-year {
-  @apply --font-calendar-content;
-  border-radius: 3px;
-  cursor: pointer;
-  display: inline-block;
-  height: 32px;
-  line-height: 32px;
-  margin: 4px 4px 8px;
-  text-align: center;
-  width: 80px;
-}
-
-.po-calendar-content .po-calendar-box-background {
-  background-color: var(--color-calendar-background-color-box-background-normal);
-  cursor: pointer;
-
-  &:hover {
-    background-color: var(--color-calendar-background-color-box-background-hover);
-  }
-
-  &:active {
-    background-color: var(--color-calendar-background-color-box-background-active);
-    color: var(--color-calendar-text-box-background-active);
-  }
-
-  &-in-range,
-  &-hover {
-    border-radius: 0;
-    cursor: pointer;
-    line-height: 26px;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 2px 0;
-    width: 36px;
-
-    &-disabled {
-      pointer-events: none;
-    }
-  }
-
-  &-selected {
-    background-color: var(--color-calendar-background-color-box-background-selected);
-
-    &-disabled {
-      background-color: var(--color-calendar-background-color-box-background-disabled);
-      pointer-events: none;
-    }
-  }
-
-  &-today {
-    cursor: pointer;
-
-    &-disabled {
-      background-color: var(--color-calendar-background-color-box-background-today);
-      pointer-events: none;
-
-      &:hover {
-        background-color: var(--color-calendar-background-color-box-background-today-hover);
-        pointer-events: none;
-      }
-    }
-
-    &:hover {
-      background-color: var(--color-calendar-background-color-box-background-today-hover);
-    }
-  }
-
-  &-disabled {
-    pointer-events: none;
-  }
-}
-
-.po-calendar-box-background:active .po-calendar-box-foreground {
-  color: var(--color-calendar-color-box-foreground-pressed);
-}
-
-.po-calendar-content .po-calendar-box-foreground {
-  color: var(--color-calendar-color-box-foreground);
-
-  &-selected {
-    color: var(--color-calendar-color-box-foreground-selected);
-    font-family: var(--font-family-bold);
-
-    &-disabled {
-      color: var(--color-calendar-color-box-foreground-disabled);
-      pointer-events: none;
-    }
-  }
-
-  &-in-range {
-    background-color: var(--color-calendar-background-color-box-background-range);
-    color: var(--color-calendar-color-box-foreground-range);
-    display: block;
-    font-family: var(--font-family-bold);
-    width: 100%;
-
-    &-disabled {
-      background-color: var(--color-calendar-background-color-box-background-disabled);
-      color: var(--color-calendar-color-box-foreground-disabled);
-      pointer-events: none;
-    }
-  }
-
-  &-today {
-    border: 1px solid var(--color-calendar-background-color-border-today);
-    color: var(--color-calendar-color-box-foreground-today);
-    font-family: var(--font-family-bold);
-
-    &-disabled {
-      border: 1px solid var(--color-calendar-color-box-foreground-disabled);
-      color: var(--color-calendar-color-box-foreground-disabled);
-      pointer-events: none;
-    }
-  }
-
-  &-disabled {
-    color: var(--color-calendar-color-box-foreground-disabled);
-    pointer-events: none;
-  }
-
-  &-hover {
-    background-color: var(--color-calendar-background-color-box-background-hover);
-    color: var(--color-calendar-color-box-foreground);
-    display: block;
-    width: 100%;
-  }
-
-  &:active {
-    color: var(--color-calendar-color-box-foreground-pressed);
-  }
-}
-
-.po-calendar-box-foreground-today,
-.po-calendar-box-foreground-today-disabled {
-  border-radius: 3px;
-  padding: 2px;
-}
-
-.po-calendar-footer {
-  overflow: hidden;
-  position: absolute;
-  top: 279px;
-  width: var(--po-calendar-width);
-}
-
-.po-calendar-footer .po-calendar-footer-today {
-  text-align: center;
-}
-
-.po-calendar-footer .po-calendar-footer-today .po-calendar-footer-today-button {
-  font-family: var(--font-family-default-bold), sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background: transparent;
-  border: none;
-  color: var(--color-brand-02-base);
-  cursor: pointer;
-  text-decoration: underline;
-  text-align: center;
-}
-
-.po-calendar-footer .po-calendar-footer-today .po-calendar-footer-today-button:disabled {
-  color: var(--color-neutral-light-30);
-  pointer-events: none;
-}
-
-@media screen and (max-width: 599.33px) {
-  .po-calendar-range {
-    width: var(--po-calendar-width);
-  }
+/* Duplo A com size=small: reduzido */
+po-calendar[p-size='small'] .po-calendar,
+po-calendar[p-size='small'] .po-calendar-wrapper,
+po-calendar[p-size='small'] .po-calendar-range {
+  width: 21rem;
 }

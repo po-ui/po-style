@@ -11,7 +11,7 @@
   gap: var(--spacing-xs);
 }
 
-[data-a11y='AA'] .po-listbox[p-size='small'] .po-item-list {
+po-listbox[p-size='small'] .po-item-list {
   font-size: var(--font-size-sm);
   min-height: var(--target-size-aa);
   padding-inline: var(--spacing-xs);
@@ -122,7 +122,7 @@
   outline: none;
 }
 
-[data-a11y='AA'] .po-item-list-label-group {
+.po-item-list-label-group {
   padding-block: var(--spacing-xs);
 }
 

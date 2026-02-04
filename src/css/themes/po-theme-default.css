@@ -487,6 +487,38 @@ po-button-group .po-button {
   --background-color-disabled: var(--color-transparent);
 }
 
+/*------------------------------------*\
+  CALENDAR
+\*------------------------------------*/
+po-calendar {
+  /* BASE */
+  --background: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-20);
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --shadow: var(--shadow-md);
+
+  /* GRID */
+  --text-color-weekly: var(--color-neutral-dark-90);
+  --font-weight-weekly: var(--font-weight-bold);
+  --font-size: var(--font-size-sm);
+  --font-family: var(--font-family-theme);
+  --font-weight-days: var(--font-weight-normal);
+  --text-color: var(--color-neutral-dark-90);
+  --font-weight-today: var(--font-weight-bold);
+  --text-color-today: var(--color-action-default);
+  --text-color-hover: var(--color-neutral-light-00);
+  --color-hover: var(--color-action-hover);
+  --text-color-selected: var(--color-neutral-light-00);
+  --color-selected: var(--color-action-default);
+  --text-color-interval: var(--color-action-default);
+  --color-interval: var(--color-brand-01-lighter);
+  --text-color-next: var(--color-neutral-light-30);
+  --text-color-disabled: var(--color-action-disabled);
+  --border-disabled: var(--color-action-disabled);
+  --outline-color-focused: var(--color-action-focus);
+}
+
 :root {
   /*------------------------------------*\
   CALENDAR
@@ -495,20 +527,16 @@ po-button-group .po-button {
   --color-calendar-arrow: var(--color-brand-02-base);
   --color-calendar-title: var(--color-brand-02-base);
   --color-calender-color-content-label: var(--color-neutral-mid-40);
-
   --color-calendar-background-color-box-background-normal: var(--color-transparent);
   --color-calendar-background-color-box-background-hover: var(--color-neutral-light-20);
   --color-calendar-background-color-box-background-disabled: var(--color-neutral-light-30);
   --color-calendar-background-color-box-background-active: var(--color-brand-03-base);
   --color-calendar-background-color-mobile-overlay: var(--color-secondary-dark-60-alpha-70);
   --color-calendar-text-box-background-active: var(--color-neutral-dark-90);
-
   --color-calendar-background-color-box-background-selected: var(--color-brand-03-base);
   --color-calendar-background-color-box-background-range: var(--color-primary-light-80);
   --color-calendar-background-color-box-background-today-hover: var(--color-neutral-light-20);
-
   --color-calendar-background-color-border-today: var(--color-brand-02-base);
-
   --color-calendar-color-box-foreground: var(--color-neutral-dark-70);
   --color-calendar-color-box-foreground-selected: var(--color-neutral-dark-90);
   --color-calendar-color-box-foreground-pressed: var(--color-neutral-dark-90);

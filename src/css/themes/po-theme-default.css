@@ -524,26 +524,45 @@ po-calendar {
   CALENDAR
 \*------------------------------------*/
   --color-calendar-background-color: var(--color-neutral-light-00);
+  /*Deprecated v23.x.x */
   --color-calendar-arrow: var(--color-brand-02-base);
+  /*Deprecated v23.x.x */
   --color-calendar-title: var(--color-brand-02-base);
+  /*Deprecated v23.x.x */
   --color-calender-color-content-label: var(--color-neutral-mid-40);
+  /*Deprecated v23.x.x */
   --color-calendar-background-color-box-background-normal: var(--color-transparent);
+  /*Deprecated v23.x.x */
   --color-calendar-background-color-box-background-hover: var(--color-neutral-light-20);
+  /*Deprecated v23.x.x */
   --color-calendar-background-color-box-background-disabled: var(--color-neutral-light-30);
+  /*Deprecated v23.x.x */
   --color-calendar-background-color-box-background-active: var(--color-brand-03-base);
-  --color-calendar-background-color-mobile-overlay: var(--color-secondary-dark-60-alpha-70);
+  /*Deprecated v23.x.x */
   --color-calendar-text-box-background-active: var(--color-neutral-dark-90);
+  /*Deprecated v23.x.x */
   --color-calendar-background-color-box-background-selected: var(--color-brand-03-base);
+  /*Deprecated v23.x.x */
   --color-calendar-background-color-box-background-range: var(--color-primary-light-80);
+  /*Deprecated v23.x.x */
   --color-calendar-background-color-box-background-today-hover: var(--color-neutral-light-20);
+  /*Deprecated v23.x.x */
   --color-calendar-background-color-border-today: var(--color-brand-02-base);
+  /*Deprecated v23.x.x */
   --color-calendar-color-box-foreground: var(--color-neutral-dark-70);
+  /*Deprecated v23.x.x */
   --color-calendar-color-box-foreground-selected: var(--color-neutral-dark-90);
+  /*Deprecated v23.x.x */
   --color-calendar-color-box-foreground-pressed: var(--color-neutral-dark-90);
+  /*Deprecated v23.x.x */
   --color-calendar-color-box-foreground-range: var(--color-brand-02-base);
+  /*Deprecated v23.x.x */
   --color-calendar-color-box-foreground-today: var(--color-brand-02-base);
+  /*Deprecated v23.x.x */
   --color-calendar-color-box-foreground-disabled: var(--color-neutral-light-20);
+  /*Deprecated v23.x.x */
 
+  --color-calendar-background-color-mobile-overlay: var(--color-secondary-dark-60-alpha-70);
   /*------------------------------------*\
   CHART
 \*------------------------------------*/

@@ -1,0 +1,15 @@
+.po-calendar-footer {
+  display: flex;
+  padding: 0 var(--spacing-sm) var(--spacing-sm) var(--spacing-sm);
+  justify-content: space-between;
+}
+
+/* Duplo A com size=small: reduzido */
+[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-footer {
+  padding: 0 var(--spacing-xs) var(--spacing-xs) var(--spacing-xs);
+  justify-content: space-evenly;
+  column-gap: var(--spacing-sm);
+}
+[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-footer .po-calendar-footer-today-button {
+  font-size: var(--font-size-sm);
+}

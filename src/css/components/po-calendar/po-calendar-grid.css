@@ -1,0 +1,164 @@
+.po-calendar-content {
+  padding: 0 var(--spacing-sm);
+}
+
+.po-calendar-content .po-calendar-labels {
+  display: flex;
+  column-gap: var(--spacing-sm);
+  text-align: center;
+  color: var(--text-color-weekly);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-weekly);
+}
+
+.po-calendar-label {
+  height: 2rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.po-calendar-content .po-calendar-content-list-day {
+  padding: var(--spacing-sm) 0.25rem 0 0.25rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: var(--spacing-md);
+  row-gap: var(--spacing-xs);
+  padding-bottom: var(--spacing-sm);
+}
+
+.po-calendar-content .po-calendar-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: var(--border-width);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-days);
+  color: var(--text-color);
+}
+
+.po-calendar-content .po-calendar-box-background {
+  &:focus {
+    outline-color: var(--outline-color-focused);
+    outline-style: solid;
+    outline-width: var(--border-width-md);
+    outline-offset: 0.125rem;
+  }
+
+  &-selected {
+    background-color: var(--color-selected);
+    color: var(--text-color-selected);
+    font-weight: var(--font-weight-today);
+    &:focus {
+      outline-color: var(--outline-color-focused);
+      outline-style: solid;
+      outline-width: var(--border-width-md);
+      outline-offset: 0.125rem;
+    }
+  }
+
+  &-today {
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color-today);
+    text-decoration: underline;
+    &:focus {
+      outline-color: var(--outline-color-focused);
+      outline-style: solid;
+      outline-width: var(--border-width-md);
+      outline-offset: 0.125rem;
+    }
+    &:hover {
+      background-color: var(--color-hover);
+      color: var(--text-color-hover);
+      font-weight: var(--font-weight-today);
+    }
+  }
+
+  &:hover {
+    background-color: var(--color-hover);
+    color: var(--text-color-hover);
+    font-weight: var(--font-weight-today);
+  }
+
+  &-disabled,
+  &-selected-disabled,
+  &-today-disabled {
+    color: var(--text-color-disabled);
+    border-color: var(--border-disabled);
+    border-width: var(--border-width-sm);
+    border-style: solid;
+    cursor: not-allowed;
+  }
+
+  &-other-month {
+    color: var(--text-color-next);
+    &-disabled {
+      color: var(--text-color-disabled);
+      border-color: var(--border-disabled);
+      border-width: var(--border-width-sm);
+      border-style: solid;
+      cursor: not-allowed;
+    }
+  }
+
+  &-today-selected {
+    background-color: var(--color-selected);
+    color: var(--text-color-selected);
+    font-weight: var(--font-weight-today);
+    text-decoration: underline;
+    &:focus {
+      outline-color: var(--outline-color-focused);
+      outline-style: solid;
+      outline-width: var(--border-width-md);
+      outline-offset: 0.125rem;
+    }
+  }
+}
+
+.po-calendar-content .po-calendar-box-foreground {
+  &-in-range,
+  &-hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-interval);
+    color: var(--text-color-interval);
+    border-width: var(--border-width);
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-days);
+  }
+  &-disabled,
+  &-in-range-disabled,
+  &-hover-disabled,
+  &-today-disabled {
+    color: var(--text-color-disabled);
+    border-color: var(--border-disabled);
+    border-width: var(--border-width-sm);
+    cursor: not-allowed;
+  }
+}
+
+/* Duplo A com size=small: reduzido */
+[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-content {
+  padding: 0 var(--spacing-xs);
+}
+
+[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-content .po-calendar-content-list-day {
+  padding: 0;
+  row-gap: 0.25rem;
+  column-gap: var(--spacing-sm);
+  padding-bottom: var(--spacing-xs);
+}

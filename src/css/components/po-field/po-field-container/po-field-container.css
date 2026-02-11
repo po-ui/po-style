@@ -46,7 +46,7 @@
   padding-right: var(--spacing-2xs);
 }
 
-[data-a11y='AA'] .po-field-container-title po-helper {
+.po-field-container[p-size='small'] .po-field-container-title po-helper {
   padding-right: var(--spacing-xs);
 }
 

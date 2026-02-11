@@ -54,14 +54,13 @@ po-radio {
   gap: var(--spacing-xs);
 }
 
-.po-radio > label *,
-[data-a11y='AAA'] .po-radio-aa > label * {
+.po-radio > label * {
   cursor: pointer;
   font-size: var(--font-size-default);
   line-height: var(--line-height-md);
 }
 
-.po-radio-aa > label * {
+po-radio[p-size='small'] > label * {
   font-size: var(--font-size-sm);
 }
 

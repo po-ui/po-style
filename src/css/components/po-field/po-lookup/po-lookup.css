@@ -80,11 +80,13 @@
   line-height: 24px;
 }
 
-.po-lookup.po-lookup-disabled {
+.po-lookup.po-lookup-disabled,
+.po-lookup.po-lookup-loading {
   cursor: not-allowed;
 }
 
-.po-lookup.po-lookup-disabled * {
+.po-lookup.po-lookup-disabled *,
+.po-lookup.po-lookup-loading * {
   pointer-events: none;
 }
 
@@ -420,4 +422,30 @@ po-lookup.ng-invalid.ng-dirty .po-lookup-input:focus ~ .po-lookup-buttons .po-lo
 .po-lookup-field-wrapper._active:has(.po-lookup-input-auto.po-lookup-input-auto-dynamic-height po-disclaimer)
   po-helper {
   top: 9px;
+}
+
+po-lookup .po-field-icon-container-right .po-loading-icon-container {
+  display: flex;
+}
+
+.po-lookup .po-lookup-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  min-width: var(--target-size-aaa);
+}
+
+.po-lookup._size-small .po-lookup-loading,
+[data-a11y='AA'] .po-lookup .po-lookup-loading {
+  min-width: var(--target-size-aa);
+}
+
+.po-lookup.po-lookup-disabled.po-lookup-loading .po-lookup-buttons * {
+  color: unset;
+}
+
+.po-lookup.po-lookup-loading .po-lookup-button.po-lookup-loading .po-loading-icon {
+  color: var(--color-action-default);
 }

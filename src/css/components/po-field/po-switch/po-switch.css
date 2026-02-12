@@ -164,6 +164,11 @@ po-switch po-helper {
   display: flex;
 }
 
+po-switch .po-switch-loading-container .po-loading-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
 @media print {
   .po-switch-container {
     print-color-adjust: exact;

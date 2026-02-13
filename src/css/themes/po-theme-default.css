@@ -134,11 +134,11 @@
   --color-neutral-dark-80: #2c3739;
   --color-neutral-dark-90: #1d2426;
   --color-neutral-dark-95: #0b0e0e;
+  --color-neutral-light-00: #fff;
+  --color-neutral-light-05: #fbfbfb;
   --color-neutral-light-10: #eceeee;
   --color-neutral-light-20: #dadedf;
   --color-neutral-light-30: #b6bdbf;
-  --color-neutral-light-00: #fff;
-  --color-neutral-light-05: #fbfbfb;
   --color-neutral-mid-40: #9da7a9;
   --color-neutral-mid-60: #6e7c7f;
 }

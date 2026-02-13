@@ -72,13 +72,14 @@
 }
 
 [data-a11y='AA']
-  .po-field-container-content:not(.po-field-container-content-datepicker):has(po-helper
+  .po-field-container-content:not(.po-field-container-content-datepicker, .po-field-container-content-datepicker-range):has(po-helper
     .po-helper-container[p-size='small'])
   .po-field-icon-container-right {
   right: 42px;
 }
 
-.po-field-container-content:not(.po-field-container-content-datepicker):has(po-helper) .po-field-icon-container-right {
+.po-field-container-content:not(.po-field-container-content-datepicker, .po-field-container-content-datepicker-range):has(po-helper)
+  .po-field-icon-container-right {
   right: 50px;
 }
 

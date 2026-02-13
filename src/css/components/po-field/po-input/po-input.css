@@ -11,18 +11,7 @@
   width: 100%;
 }
 
-po-datepicker[p-size='small'] .po-input,
-po-datepicker-range[p-size='small'] .po-input,
-po-decimal[p-size='small'] .po-input,
-po-email[p-size='small'] .po-input,
-po-input[p-size='small'] .po-input,
-po-login[p-size='small'] .po-input,
-po-lookup-modal[p-size='small'] .po-input,
-po-number[p-size='small'] .po-input,
-po-password[p-size='small'] .po-input,
-po-page-list[p-size='small'] .po-input,
-po-search-list[p-size='small'] .po-input,
-po-url[p-size='small'] .po-input {
+.po-input[p-size='small'] {
   font-size: var(--font-size, var(--font-size-sm));
   min-height: var(--target-size-aa);
 }
@@ -31,7 +20,7 @@ po-url[p-size='small'] .po-input {
   padding-right: 44px;
 }
 
-po-input[p-size='small'] .po-input.po-input-icon-right {
+.po-input.po-input-icon-right[p-size='small'] {
   padding-right: var(--target-size-aa);
 }
 

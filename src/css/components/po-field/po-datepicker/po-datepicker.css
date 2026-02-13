@@ -30,20 +30,115 @@
   z-index: 11;
 }
 
+.po-date-picker-container-disabled po-label,
+.po-datepicker-field-disabled {
+  pointer-events: none;
+}
+
 .po-datepicker-button i,
-[data-a11y='AAA'] .po-datepicker-button-aa i {
+[data-a11y='AAA'] .po-datepicker-button i {
   font-size: var(--font-size-lg);
 }
 
-.po-datepicker-button-aa i {
+[p-size='small'] .po-datepicker-button i {
   font-size: var(--font-size-default);
 }
 
-po-datepicker .po-field-container-title po-helper,
-[data-a11y='AA'] po-datepicker .po-field-container-title po-helper {
-  padding-right: 18px;
+po-datepicker .po-loading-icon-container {
+  display: flex;
+  justify-content: center;
 }
 
-[data-a11y='AA'] po-datepicker .po-field-container-title po-helper:has(.po-helper-container[p-size='small']) {
-  padding-right: 9px;
+po-datepicker po-loading-icon {
+  position: absolute;
+  right: 0;
+  width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+po-datepicker[p-size='small'] po-loading-icon {
+  width: var(--target-size-aa);
+  height: var(--target-size-aa);
+}
+
+po-datepicker .po-datepicker-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+po-datepicker .po-datepicker-button .po-button {
+  width: var(--target-size-aaa);
+  max-width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  max-height: var(--target-size-aaa);
+  justify-content: center;
+}
+
+po-datepicker[p-size='small'] .po-datepicker-button .po-button {
+  width: var(--target-size-aa);
+  max-width: var(--target-size-aa);
+  height: var(--target-size-aa);
+  max-height: var(--target-size-aa);
+  justify-content: center;
+}
+
+po-datepicker .po-field-icon-container-right {
+  right: var(--target-size-aaa);
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  gap: 8px;
+}
+
+po-datepicker[p-size='small'] .po-field-icon-container-right {
+  right: var(--target-size-aa);
+}
+
+po-datepicker .po-input.po-input-icon-right,
+[data-a11y='AAA'] .po-input.po-input-icon-right {
+  padding-right: var(--target-size-aaa);
+}
+
+po-datepicker[p-size='small'] .po-input.po-input-icon-right {
+  padding-right: var(--target-size-aa);
+}
+
+po-datepicker po-clean.po-icon-input:focus {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: 12px;
+  border-radius: 1%;
+}
+
+po-datepicker[p-size='small'] po-clean.po-icon-input:focus {
+  outline-offset: 10px;
+}
+
+po-datepicker .po-input,
+po-datepicker-range .po-input,
+[data-a11y='AAA'] .po-input {
+  font-family: var(--font-family);
+  font-size: var(--font-size, var(--font-size-default));
+  color: var(--text-color);
+  background-color: var(--background);
+  padding: var(--padding, 0 0.5em);
+  border: 1px solid var(--color);
+  border-radius: 4px;
+  min-height: var(--target-size-aaa);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+po-datepicker[p-size='small'] .po-input,
+po-datepicker-range[p-size='small'] .po-input {
+  font-size: var(--font-size, var(--font-size-sm));
+  min-height: var(--target-size-aa);
 }

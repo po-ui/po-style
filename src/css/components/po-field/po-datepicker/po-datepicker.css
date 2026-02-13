@@ -30,20 +30,22 @@
   z-index: 11;
 }
 
-.po-datepicker-button i,
-[data-a11y='AAA'] .po-datepicker-button-aa i {
+.po-datepicker-button i {
   font-size: var(--font-size-lg);
 }
 
-.po-datepicker-button-aa i {
+po-datepicker[p-size='small'] .po-datepicker-button i {
   font-size: var(--font-size-default);
 }
 
-po-datepicker .po-field-container-title po-helper,
-[data-a11y='AA'] po-datepicker .po-field-container-title po-helper {
+/* .po-datepicker-button-aa i {
+  font-size: var(--font-size-default);
+} */
+
+po-datepicker .po-field-container-title po-helper {
   padding-right: 18px;
 }
 
-[data-a11y='AA'] po-datepicker .po-field-container-title po-helper:has(.po-helper-container[p-size='small']) {
+[data-a11y='AA'] po-datepicker .po-field-container-title po-helper[p-size='small'] {
   padding-right: 9px;
 }

@@ -46,7 +46,7 @@
   padding-right: var(--spacing-2xs);
 }
 
-[data-a11y='AA'] .po-field-container-title po-helper {
+.po-field-container[p-size='small'] .po-field-container-title po-helper {
   padding-right: var(--spacing-xs);
 }
 
@@ -71,9 +71,7 @@
   align-items: center;
 }
 
-[data-a11y='AA']
-  .po-field-container-content:not(.po-field-container-content-datepicker):has(po-helper
-    .po-helper-container[p-size='small'])
+.po-field-container-content:not(.po-field-container-content-datepicker):has(po-helper[p-size='small'])
   .po-field-icon-container-right {
   right: 42px;
 }

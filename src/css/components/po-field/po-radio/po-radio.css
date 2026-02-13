@@ -54,14 +54,13 @@ po-radio {
   gap: var(--spacing-xs);
 }
 
-.po-radio > label *,
-[data-a11y='AAA'] .po-radio-aa > label * {
+.po-radio > label * {
   cursor: pointer;
   font-size: var(--font-size-default);
   line-height: var(--line-height-md);
 }
 
-.po-radio-aa > label * {
+po-radio[p-size='small'] .po-radio > label * {
   font-size: var(--font-size-sm);
 }
 
@@ -88,16 +87,15 @@ po-radio {
   align-self: flex-start;
 }
 
+.po-radio input {
+  min-width: var(--width-md);
+  min-height: var(--width-md);
+}
+
 .po-radio input[p-size='small'] {
   min-width: var(--width-sm);
   min-height: var(--width-sm);
   margin: 0.125rem 0;
-}
-
-.po-radio input[p-size='medium'],
-[data-a11y='AAA'] .po-radio input[p-size='small'] {
-  min-width: var(--width-md);
-  min-height: var(--width-md);
 }
 
 .po-radio input[p-size='large'] {
@@ -116,22 +114,19 @@ po-radio {
   cursor: not-allowed;
 }
 
-.po-radio input[type='radio'][p-size='small']:checked {
-  background: var(--background-radial-sm);
-  background-color: var(--color-unchecked);
-}
-
-.po-radio input[type='radio']:checked,
-[data-a11y='AAA'] .po-radio input[type='radio'][p-size='small']:checked {
+.po-radio input[type='radio']:checked {
   background: var(--background-radial-md);
   background-color: var(--color-unchecked);
   border-color: var(--color-checked);
   padding: 4px;
 }
 
+.po-radio input[type='radio'][p-size='small']:checked {
+  background: var(--background-radial-sm);
+}
+
 .po-radio input[type='radio'][p-size='large']:checked {
   background: var(--background-radial-lg);
-  background-color: var(--color-unchecked);
 }
 
 .po-radio input[type='radio'][disabled] {
@@ -139,20 +134,16 @@ po-radio {
   border-color: var(--color-checked-disabled);
 }
 
-.po-radio input[type='radio'][disabled]:checked,
-[data-a11y='AAA'] .po-radio input[type='radio'][disabled][p-size='small']:checked {
+.po-radio input[type='radio'][disabled]:checked {
   background: var(--background-radial-md-disabled);
-  background-color: var(--color-unchecked-disabled);
 }
 
 .po-radio input[type='radio'][disabled][p-size='small']:checked {
   background: var(--background-radial-sm-disabled);
-  background-color: var(--color-unchecked-disabled);
 }
 
 .po-radio input[type='radio'][disabled][p-size='large']:checked {
   background: var(--background-radial-lg-disabled);
-  background-color: var(--color-unchecked-disabled);
 }
 
 .po-radio input[type='radio']:not([disabled]):focus-visible {

@@ -35,7 +35,8 @@
   padding-right: calc(var(--target-size-aa) + var(--spacing-md));
 }
 
-.po-input::placeholder {
+.po-input::placeholder,
+.po-datepicker-range-input::placeholder {
   color: var(--text-color-placeholder);
 }
 
@@ -48,7 +49,7 @@
   padding-left: var(--target-size-aa);
 }
 
-.po-input:hover {
+.po-input:hover:not(:has(.po-datepicker-range-button:hover, po-clean:hover)) {
   border-color: var(--color-hover);
   background-color: var(--background-hover);
 }
@@ -65,6 +66,7 @@
   outline-width: var(--outline-width-focus-visible);
 }
 
+po-datepicker-range .readonly .po-input,
 .po-input:read-only:not(div, :disabled) {
   border-color: var(--color-neutral-light-30);
   background-color: var(--color-neutral-light-05);
@@ -90,7 +92,45 @@
   display: none;
 }
 
+po-datepicker.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-button .po-button,
+po-datepicker-range.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-range-button .po-button,
+.po-field-container-input .po-button-tertiary-danger .po-button {
+  position: relative;
+  color: var(--color-button-danger);
+}
+
+po-datepicker.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-button .po-button:hover,
+po-datepicker-range.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-range-button .po-button:hover,
+.po-field-container-input .po-button-tertiary-danger .po-button:hover {
+  position: relative;
+  color: var(--color-danger-hover);
+  background-color: var(--background-danger-hover);
+}
+
+po-datepicker.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-button .po-button:active,
+po-datepicker-range.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-range-button .po-button:active,
+.po-field-container-input .po-button-tertiary-danger .po-button:active {
+  position: relative;
+  color: var(--color-danger-pressed);
+  background-color: var(--background-danger-pressed);
+}
+
+po-datepicker .po-button-vertical-divider,
+po-datepicker-range .po-button-vertical-divider {
+  background-color: var(--color-neutral-mid-40);
+  stroke-linecap: round;
+  width: var(--border-width-sm);
+  height: 24px;
+  flex-shrink: 0;
+}
+
+po-datepicker[p-size='small'] .po-button-vertical-divider,
+po-datepicker-range[p-size='small'] .po-button-vertical-divider {
+  height: 16px;
+}
+
 po-datepicker.ng-invalid.ng-dirty .po-input,
+po-datepicker-range.ng-invalid.ng-dirty .po-input,
 po-decimal.ng-invalid.ng-dirty .po-input,
 po-email.ng-invalid.ng-dirty .po-input,
 po-input.ng-invalid.ng-dirty .po-input,

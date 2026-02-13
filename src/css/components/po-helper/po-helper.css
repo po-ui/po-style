@@ -1,24 +1,19 @@
 po-helper,
 po-helper .po-helper-container {
   display: flex;
+  align-items: center;
   --font-size: var(--font-size-lg);
 }
 
 po-helper[p-size='small'],
 po-helper[p-size='small'] .po-helper-container {
   --font-size: var(--font-size-default);
-  align-items: center;
 }
 
 .po-helper-container po-icon {
-  font-size: var(--font-size);
-  color: var(--color);
-}
-
-po-helper[p-size='small'] .po-helper-container po-icon {
-  font-size: var(--font-size);
-  color: var(--color);
   display: flex;
+  font-size: var(--font-size);
+  color: var(--color);
 }
 
 .po-helper-target {

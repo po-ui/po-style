@@ -323,6 +323,6 @@ po-combo .po-field-container-content {
   top: 4px;
 }
 
-.po-combo-field-wrapper._active po-helper:has(.po-helper-container[p-size='small']) {
+.po-combo-field-wrapper._active po-helper[p-size='small'] {
   top: 2px;
 }

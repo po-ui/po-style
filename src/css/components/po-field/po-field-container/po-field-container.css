@@ -17,7 +17,7 @@
 .po-field-container-title {
   display: flex;
   width: 100%;
-  justify-content: var(--field-container-title-justify, space-between);
+  justify-content: var(--field-container-title-justify);
   align-items: center;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .po-field-container-title po-label {
-  flex: var(--field-container-title-flex, 1 auto);
+  flex: var(--field-container-title-flex);
   min-width: 0;
 }
 

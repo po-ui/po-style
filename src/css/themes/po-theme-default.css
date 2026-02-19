@@ -34,6 +34,7 @@
  * Divider........................variáveis do Divider.
  * Dropdown.......................variáveis do Dropdown.
  * Dynamic........................variáveis do Dynamic.
+ * Field Container ...............variáveis do Field Container.
  * Field Container Bottom.........variáveis do Field Container Bottom.
  * Field Icon.....................variáveis do Field Icon.
  * Gauge..........................variáveis do Gauge.
@@ -815,6 +816,14 @@ po-dynamic-container po-container {
   --border-color: var(--color-neutral-light-20);
   --border-width: var(--border-width-sm);
   --padding: var(--padding);
+}
+
+/*------------------------------------*\
+  FIELD CONTAINER TITLE
+\*------------------------------------*/
+:root {
+  --field-container-title-justify: space-between;
+  --field-container-title-flex: 1 auto;
 }
 
 /*------------------------------------*\

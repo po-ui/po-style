@@ -117,7 +117,7 @@ po-datepicker-range.ng-invalid.ng-dirty .po-button:active,
 
 po-datepicker .po-button-vertical-divider,
 po-datepicker-range .po-button-vertical-divider {
-  background-color: var(--color-neutral-light-40);
+  background-color: var(--color-neutral-mid-40);
   stroke-linecap: round;
   width: var(--border-width-sm);
   height: 24px;

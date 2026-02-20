@@ -92,23 +92,23 @@ po-datepicker-range .readonly .po-input,
   display: none;
 }
 
-po-datepicker.ng-invalid.ng-dirty .po-button,
-po-datepicker-range.ng-invalid.ng-dirty .po-button,
+po-datepicker.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-button .po-button,
+po-datepicker-range.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-range-button .po-button,
 .po-field-container-input .po-button-tertiary-danger .po-button {
   position: relative;
   color: var(--color-button-danger);
 }
 
-po-datepicker.ng-invalid.ng-dirty .po-button:hover,
-po-datepicker-range.ng-invalid.ng-dirty .po-button:hover,
+po-datepicker.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-button .po-button:hover,
+po-datepicker-range.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-range-button .po-button:hover,
 .po-field-container-input .po-button-tertiary-danger .po-button:hover {
   position: relative;
   color: var(--color-danger-hover);
   background-color: var(--background-danger-hover);
 }
 
-po-datepicker.ng-invalid.ng-dirty .po-button:active,
-po-datepicker-range.ng-invalid.ng-dirty .po-button:active,
+po-datepicker.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-button .po-button:active,
+po-datepicker-range.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-range-button .po-button:active,
 .po-field-container-input .po-button-tertiary-danger .po-button:active {
   position: relative;
   color: var(--color-danger-pressed);

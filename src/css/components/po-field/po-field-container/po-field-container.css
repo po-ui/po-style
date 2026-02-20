@@ -71,16 +71,6 @@ po-field-container[p-size='small'] .po-field-container-content:has(po-helper) {
   align-items: center;
 }
 
-.po-field-container-content:not(.po-field-container-content-datepicker, .po-field-container-content-datepicker-range):has(po-helper[p-size='small'])
-  .po-field-icon-container-right {
-  right: 42px;
-}
-
-.po-field-container-content:not(.po-field-container-content-datepicker, .po-field-container-content-datepicker-range):has(po-helper)
-  .po-field-icon-container-right {
-  right: 50px;
-}
-
 .po-field-container-content:has(po-helper) .po-input {
   flex: 1;
 }

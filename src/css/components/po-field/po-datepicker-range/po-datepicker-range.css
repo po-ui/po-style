@@ -6,13 +6,12 @@
 
 .po-datepicker-range-field {
   appearance: none !important;
-  display: table;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
 }
 
 .po-datepicker-range-field-disabled {
-  background-color: var(--color-datepicker-range-background-color-disabled);
-  border: solid 1px var(--color-datepicker-range-border-text);
-  color: var(--color-datepicker-range-color-disabled);
   pointer-events: none;
 }
 
@@ -29,17 +28,62 @@ div.po-datepicker-range-field-focused {
   outline-offset: 2px;
 }
 
-.po-datepicker-range-field:hover {
-  border-color: var(--color-hover) !important;
-  background-color: var(--color-brand-01-lightest) !important;
+po-datepicker-range .po-loading-icon-container {
+  display: flex;
+  justify-content: center;
 }
 
-.po-datepicker-range-icon {
-  display: table-cell;
-  font: inherit;
-  text-align: center;
-  vertical-align: middle;
-  width: 10px;
+po-datepicker-range po-loading-icon {
+  position: absolute;
+  right: 0;
+  width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+po-datepicker-range[p-size='small'] po-loading-icon {
+  width: var(--target-size-aa);
+  height: var(--target-size-aa);
+}
+
+po-datepicker-range .po-datepicker-range-icon .po-datepicker-range-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+po-datepicker-range .po-datepicker-range-button .po-button {
+  width: var(--target-size-aaa);
+  max-width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  max-height: var(--target-size-aaa);
+  justify-content: center;
+}
+
+po-datepicker-range[p-size='small'] .po-datepicker-range-button .po-button {
+  width: var(--target-size-aa);
+  max-width: var(--target-size-aa);
+  height: var(--target-size-aa);
+  max-height: var(--target-size-aa);
+  justify-content: center;
+}
+
+po-datepicker-range .po-field-icon-container-right {
+  right: var(--target-size-aaa);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+po-datepicker-range[p-size='small'] .po-field-icon-container-right {
+  right: var(--target-size-aa);
 }
 
 .po-datepicker-range-input {
@@ -61,6 +105,18 @@ div.po-datepicker-range-field-focused {
   outline: none;
 }
 
+po-datepicker-range po-clean.po-icon-input:focus {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: 12px;
+  border-radius: 1%;
+}
+
+po-datepicker-range[p-size='small'] po-clean.po-icon-input:focus {
+  outline-offset: 10px;
+}
+
 .po-datepicker-range-separator {
   display: table-cell;
   vertical-align: middle;
@@ -68,13 +124,13 @@ div.po-datepicker-range-field-focused {
 }
 
 .po-datepicker-range-start-date,
-[data-a11y='AAA'] .po-datepicker-range-start-date-aa {
+[data-a11y='AAA'] po-datepicker-range[p-size='small'] .po-datepicker-range-start-date {
   display: table-cell;
   vertical-align: middle;
   width: 90px;
 }
 
-.po-datepicker-range-start-date-aa {
+po-datepicker-range[p-size='small'] .po-datepicker-range-start-date {
   width: 80px;
 }
 
@@ -83,12 +139,8 @@ div.po-datepicker-range-field-focused {
   z-index: 1000;
 }
 
-po-datepicker-range.ng-invalid.ng-dirty .po-field-icon {
-  color: var(--color-datepicker-range-color-text-error) !important;
-}
-
 po-datepicker-range.ng-invalid.ng-dirty .po-input {
-  border: 1px solid var(--color-datepicker-range-border-text-error) !important;
+  border: 1px solid var(--color-datepicker-range-border-text-error);
   color: var(--color-datepicker-range-color-text-error);
   outline: none;
 }

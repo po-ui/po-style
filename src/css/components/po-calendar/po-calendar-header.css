@@ -1,0 +1,63 @@
+.po-calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-xs) var(--spacing-sm);
+  gap: var(--spacing-xs);
+}
+
+.po-calendar-header .po-field-container-content {
+  padding: 0;
+}
+
+.po-calendar-header po-combo:nth-of-type(1) {
+  --min-width: 8.5rem;
+}
+
+.po-calendar-header po-combo:nth-of-type(1) .po-combo-input {
+  padding-right: 0;
+  width: 8.5rem;
+  min-width: 8.5rem;
+}
+
+.po-calendar-header po-combo:nth-of-type(2) {
+  --min-width: 6.2rem;
+}
+
+.po-calendar-header po-combo:nth-of-type(2) .po-combo-input {
+  --min-width: 6.2rem;
+  min-width: 6.2rem;
+  width: 6.2rem;
+}
+
+.po-calendar-header-arrows {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+/* Duplo A com size=small: reduzido */
+[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-header {
+  padding: var(--spacing-xs) var(--spacing-xs) 0 var(--spacing-xs);
+  align-items: baseline;
+  column-gap: var(--spacing-xs);
+}
+
+[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-header po-combo:nth-of-type(1) {
+  --min-width: 8rem;
+}
+
+[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-header po-combo:nth-of-type(1) .po-combo-input {
+  padding-right: 0;
+  width: 8rem;
+  min-width: 8rem;
+}
+
+[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-header po-combo:nth-of-type(2) {
+  --min-width: 5.5rem;
+}
+
+[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-header po-combo:nth-of-type(2) .po-combo-input {
+  padding-right: 0;
+  width: 5.5rem;
+  min-width: 5.5rem;
+}

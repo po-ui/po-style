@@ -71,15 +71,6 @@
   align-items: center;
 }
 
-.po-field-container-content:not(.po-field-container-content-datepicker):has(po-helper[p-size='small'])
-  .po-field-icon-container-right {
-  right: 42px;
-}
-
-.po-field-container-content:not(.po-field-container-content-datepicker):has(po-helper) .po-field-icon-container-right {
-  right: 50px;
-}
-
 .po-field-container-content:has(po-helper) .po-input {
   flex: 1;
 }
@@ -87,4 +78,18 @@
 .po-field-container-content:has(po-helper):has(.container-po-checkbox) {
   display: block;
   padding-right: 0px;
+}
+
+.po-field-container-content-helper-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+}
+.po-field-container-content-helper-wrapper po-helper {
+  height: var(--target-size-aaa);
+}
+.po-field-container-content-helper-wrapper po-helper[p-size='small'] {
+  height: var(--target-size-aa);
 }

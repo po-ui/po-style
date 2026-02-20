@@ -38,10 +38,6 @@ po-datepicker[p-size='small'] .po-datepicker-button i {
   font-size: var(--font-size-default);
 }
 
-/* .po-datepicker-button-aa i {
-  font-size: var(--font-size-default);
-} */
-
 po-datepicker .po-field-container-title po-helper {
   padding-right: 18px;
 }

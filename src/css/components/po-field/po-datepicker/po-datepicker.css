@@ -3,9 +3,7 @@
 }
 
 .po-datepicker-popup-calendar {
-  height: 344px;
   position: fixed;
-  width: 344px;
   z-index: 1000;
 }
 

@@ -75,10 +75,6 @@ li[aria-disabled='true']:has(.po-combo-item-title)
   padding: 0 8px;
 }
 
-po-combo .po-combo-container-wrapper {
-  position: relative;
-}
-
 po-combo .po-combo-container-content .po-field-icon-container-right {
   inset-block: 0px;
   transform: translateY(0);
@@ -275,53 +271,6 @@ po-combo.ng-invalid.ng-dirty
 
 po-combo .po-field-container-content {
   display: inline-table;
-}
-
-.po-combo-field-wrapper,
-.po-combo-flex-item {
-  display: contents;
-}
-
-.po-combo-field-wrapper._active {
-  display: flex;
-  align-items: baseline;
-  gap: var(--spacing-xs);
-  flex-wrap: nowrap;
-  min-width: 0;
-  padding-right: var(--spacing-xs);
-}
-
-.po-combo-field-wrapper._active .po-combo-flex-item {
-  display: block;
-  flex: 1 1 0;
-  min-width: 0;
-}
-
-.po-combo-field-wrapper._active .po-field-container-content {
-  display: block;
-  width: 100%;
-  min-width: 0;
-  max-width: 100%;
-}
-
-.po-combo-field-wrapper._active .po-combo-container-content,
-.po-combo-field-wrapper._active .po-combo-container-wrapper {
-  min-width: 0;
-}
-
-.po-combo-field-wrapper._active .po-combo-input {
-  min-width: 0;
-  width: 100%;
-}
-
-.po-combo-field-wrapper._active po-helper {
-  flex: 0 0 auto;
-  position: relative;
-  top: 4px;
-}
-
-.po-combo-field-wrapper._active po-helper[p-size='small'] {
-  top: 2px;
 }
 
 po-combo .po-field-icon-container-right .po-loading-icon-container {

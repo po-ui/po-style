@@ -18,6 +18,7 @@
 
 .po-input.po-input-icon-right {
   padding-right: 44px;
+  position: relative;
 }
 
 .po-input.po-input-icon-right[p-size='small'] {

@@ -1,6 +1,7 @@
 .po-field-icon-container-left,
 .po-field-icon-container-right {
   position: absolute;
+  z-index: 1;
 }
 
 .po-field-icon-container-left {

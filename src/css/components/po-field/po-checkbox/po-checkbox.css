@@ -1,5 +1,4 @@
-.po-checkbox,
-[data-a11y='AAA'] .po-checkbox-aa {
+.po-checkbox {
   width: 24px;
   height: 24px;
   box-sizing: border-box;
@@ -17,7 +16,7 @@
   align-self: flex-start;
 }
 
-.po-checkbox-aa {
+po-checkbox[p-size='small'] .po-checkbox {
   width: var(--spacing-sm);
   height: var(--spacing-sm);
   min-width: var(--spacing-sm);
@@ -25,7 +24,7 @@
   margin: 0.125rem 0;
 }
 
-.po-checkbox-large {
+po-checkbox[p-size='large'] .po-checkbox {
   width: var(--spacing-lg);
   height: var(--spacing-lg);
   min-width: var(--spacing-lg);
@@ -126,13 +125,12 @@
   font-size: var(--font-size-default);
 }
 
-.po-checkbox-label > label.po-label,
-[data-a11y='AAA'] .po-checkbox-label-aa > label.po-label {
+.po-checkbox-label > label.po-label {
   font-size: var(--font-size-default);
   line-height: var(--line-height-md);
 }
 
-.po-checkbox-label-aa > label.po-label {
+po-checkbox[p-size='small'] .po-checkbox-label > label.po-label {
   font-size: var(--font-size-sm);
 }
 

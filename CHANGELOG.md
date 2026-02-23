@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.3.0](https://github.com/po-ui/po-style/compare/v21.2.0...v21.3.0) (2026-02-23)
+
+
+### Features
+
+* **fields:** inclui estado de loading nos componentes ([a1bb4b1](https://github.com/po-ui/po-style/commit/a1bb4b13208eeff497f05b58ce9462542dbd24d6))
+
+
 ## [21.2.0](https://github.com/po-ui/po-style/compare/v21.1.0...v21.2.0) (2026-02-12)
 
 Compatibilidade com @po-ui/ng-components@21.2.0

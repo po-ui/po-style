@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.39.4](https://github.com/po-ui/po-style/compare/v19.39.3...v19.39.4) (2026-02-23)
+
+
+### Bug Fixes
+
+* **fields:** aplica propriedade disabled quando loading é habilitado ([28a5c84](https://github.com/po-ui/po-style/commit/28a5c845ae1d010ea9843ace4e6ab864a413b68c))
+
+
+
 ## [19.39.3](https://github.com/po-ui/po-style/compare/v19.39.2...v19.39.3) (2026-02-12)
 
 Compatibilidade com @po-ui/ng-components@19.39.3

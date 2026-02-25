@@ -253,3 +253,9 @@ po-upload[p-size='small'] .po-upload-progress-container .po-upload-file-name {
   color: var(--color-action-disabled);
   cursor: not-allowed;
 }
+
+po-upload.ng-invalid.ng-dirty .po-upload-button button:disabled {
+  color: var(--color-disabled);
+  border: solid var(--border-width, var(--border-width-md)) var(--color-disabled);
+  background-color: var(--background-color-disabled);
+}

@@ -41,12 +41,6 @@ po-field-container-bottom[p-size='small'] .po-field-container-bottom:not(:empty)
   padding-right: var(--spacing-xs);
 }
 
-.po-field-container-bottom-text-error,
-.po-field-container-bottom po-icon:not(po-helper po-icon),
-.po-field-container-bottom i:not(po-helper i) {
-  font-size: var(--font-size-default);
-}
-
 .po-field-container-bottom-disabled .po-field-container-bottom-help-text,
 .po-field-container-bottom-disabled .po-icon-additional-help {
   color: var(--text-color-help-disabled);
@@ -83,6 +77,7 @@ po-field-container-bottom .po-field-container-bottom {
 }
 
 .po-field-container-bottom-text-error po-icon {
+  font-size: var(--font-size-default);
   color: var(--color-icon-error);
   padding-right: var(--spacing-xs);
 }

@@ -137,7 +137,7 @@ po-lookup.ng-invalid.ng-dirty .po-input,
 po-number.ng-invalid.ng-dirty .po-input,
 po-password.ng-invalid.ng-dirty .po-input,
 po-select.ng-invalid.ng-dirty .po-select-button,
-po-upload.ng-invalid.ng-dirty .po-upload-button button,
+po-upload.ng-invalid.ng-dirty .po-upload-button button:not(:disabled),
 po-url.ng-invalid.ng-dirty .po-input {
   border: solid 1px var(--color-feedback-negative-base) !important;
   color: var(--color-feedback-negative-base);

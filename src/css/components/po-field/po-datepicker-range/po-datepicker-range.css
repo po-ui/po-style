@@ -2,6 +2,7 @@
   display: table-cell;
   padding-left: 2px;
   vertical-align: middle;
+  width: 100%;
 }
 
 .po-datepicker-range-field {
@@ -9,6 +10,10 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
+}
+
+po-datepicker-range[p-size='small'] .po-datepicker-range-field {
+  gap: var(--spacing-xxs);
 }
 
 .po-datepicker-range-field-disabled {
@@ -117,7 +122,10 @@ po-datepicker-range po-clean.po-icon-input:focus {
 .po-datepicker-range-separator {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
   width: 8px;
+  min-width: 8px;
+  font-size: var(--font-size, var(--font-size-default));
 }
 
 po-datepicker-range .po-input.po-input-icon-right {
@@ -130,13 +138,26 @@ po-datepicker-range[p-size='small'] .po-input.po-input-icon-right {
 
 .po-datepicker-range-start-date,
 [data-a11y='AAA'] po-datepicker-range[p-size='small'] .po-datepicker-range-start-date {
-  display: table-cell;
-  vertical-align: middle;
-  width: 90px;
+  position: relative;
+  display: flex;
+}
+.po-datepicker-range-start-date::after {
+  content: attr(data-value) ' ';
+  visibility: hidden;
+  white-space: pre;
+  min-width: 88px;
 }
 
-po-datepicker-range[p-size='small'] .po-datepicker-range-start-date {
-  width: 80px;
+po-datepicker-range[p-size='small'] .po-datepicker-range-start-date::after {
+  min-width: 76px;
+}
+
+.po-datepicker-range-start-date input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .po-calendar-range-picker {

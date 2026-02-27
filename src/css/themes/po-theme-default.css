@@ -134,11 +134,11 @@
   --color-neutral-dark-80: #2c3739;
   --color-neutral-dark-90: #1d2426;
   --color-neutral-dark-95: #0b0e0e;
+  --color-neutral-light-00: #fff;
+  --color-neutral-light-05: #fbfbfb;
   --color-neutral-light-10: #eceeee;
   --color-neutral-light-20: #dadedf;
   --color-neutral-light-30: #b6bdbf;
-  --color-neutral-light-00: #fff;
-  --color-neutral-light-05: #fbfbfb;
   --color-neutral-mid-40: #9da7a9;
   --color-neutral-mid-60: #6e7c7f;
 }
@@ -487,34 +487,89 @@ po-button-group .po-button {
   --background-color-disabled: var(--color-transparent);
 }
 
+/*------------------------------------*\
+  CALENDAR
+\*------------------------------------*/
+po-calendar {
+  /* BASE */
+  --background: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-20);
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --shadow: var(--shadow-md);
+
+  /* WEEKLY CELLS */
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --font-weight-weekly: var(--font-weight-weekly);
+  --text-color-weekly: var(--color-neutral-dark-90);
+
+  /* DAY CELLS */
+  --font-weight-days: var(--font-weight-normal);
+  --text-color: var(--color-neutral-dark-90);
+  --border-radius-days: var(--border-radius);
+  --border-width-days: var(--border-width);
+
+  /* TODAY */
+  --font-weight-today: var(--font-weight-bold);
+  --text-color-today: var(--color-action-default);
+
+  /* FOCUS */
+  --outline-color-focused: var(--color-action-focus);
+
+  /* HOVER */
+  --text-color-hover: var(--color-neutral-light-00);
+  --color-hover: var(--color-action-hover);
+
+  /* INTERVAL (Range) */
+  --text-color-interval: var(--color-action-default);
+  --color-interval: var(--color-brand-01-lighter);
+
+  /* NEXT MONTH */
+  --text-color-next: var(--color-neutral-light-30);
+
+  /* DISABLED */
+  --text-color-disabled: var(--color-action-disabled);
+  --border-disabled: var(--color-action-disabled);
+
+  /* SELECTED */
+  --text-color-selected: var(--color-neutral-light-00);
+  --color-selected: var(--color-action-default);
+
+  --day-cell-transition-duration: var(--duration-extra-fast);
+  --day-cell-transition-property: all;
+  --day-cell-transition-timing: var(--timing-standart);
+}
+
 :root {
   /*------------------------------------*\
   CALENDAR
 \*------------------------------------*/
-  --color-calendar-background-color: var(--color-neutral-light-00);
-  --color-calendar-arrow: var(--color-brand-02-base);
-  --color-calendar-title: var(--color-brand-02-base);
-  --color-calender-color-content-label: var(--color-neutral-mid-40);
-
-  --color-calendar-background-color-box-background-normal: var(--color-transparent);
-  --color-calendar-background-color-box-background-hover: var(--color-neutral-light-20);
-  --color-calendar-background-color-box-background-disabled: var(--color-neutral-light-30);
-  --color-calendar-background-color-box-background-active: var(--color-brand-03-base);
-  --color-calendar-background-color-mobile-overlay: var(--color-secondary-dark-60-alpha-70);
-  --color-calendar-text-box-background-active: var(--color-neutral-dark-90);
-
-  --color-calendar-background-color-box-background-selected: var(--color-brand-03-base);
-  --color-calendar-background-color-box-background-range: var(--color-primary-light-80);
-  --color-calendar-background-color-box-background-today-hover: var(--color-neutral-light-20);
-
-  --color-calendar-background-color-border-today: var(--color-brand-02-base);
-
-  --color-calendar-color-box-foreground: var(--color-neutral-dark-70);
-  --color-calendar-color-box-foreground-selected: var(--color-neutral-dark-90);
-  --color-calendar-color-box-foreground-pressed: var(--color-neutral-dark-90);
-  --color-calendar-color-box-foreground-range: var(--color-brand-02-base);
-  --color-calendar-color-box-foreground-today: var(--color-brand-02-base);
-  --color-calendar-color-box-foreground-disabled: var(--color-neutral-light-20);
+  --color-calendar-background-color: var(--background); /*Deprecated v23.x.x utilizar --background */
+  --color-calender-color-content-label: var(--text-color-weekly); /*Deprecated v23.x.x utilizar --text-color-weekly */
+  --color-calendar-background-color-box-background-hover: var(
+    --color-hover
+  ); /*Deprecated v23.x.x utilizar --color-hover */
+  --color-calendar-background-color-box-background-selected: var(
+    --color-selected
+  ); /*Deprecated v23.x.x utilizar --color-selected */
+  --color-calendar-background-color-box-background-range: var(
+    --color-interval
+  ); /*Deprecated v23.x.x utilizar --color-interval */
+  --color-calendar-color-box-foreground: var(--text-color); /*Deprecated v23.x.x utilizar --text-color */
+  --color-calendar-color-box-foreground-selected: var(
+    --text-color-selected
+  ); /*Deprecated v23.x.x utilizar --text-color-selected */
+  --color-calendar-color-box-foreground-range: var(
+    --text-color-interval
+  ); /*Deprecated v23.x.x utilizar --text-color-interval */
+  --color-calendar-color-box-foreground-today: var(
+    --text-color-today
+  ); /*Deprecated v23.x.x utilizar --text-color-today */
+  --color-calendar-color-box-foreground-disabled: var(
+    --text-color-disabled
+  ); /*Deprecated v23.x.x utilizar --text-color-disabled */
+  --color-calendar-background-color-mobile-overlay: var(--color-neutral-dark-80); /*Deprecated v23.x.x */
 
   /*------------------------------------*\
   CHART

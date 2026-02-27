@@ -1,0 +1,206 @@
+.po-calendar-content {
+  padding: 0 var(--spacing-sm);
+}
+
+.po-calendar-content .po-calendar-labels {
+  display: flex;
+  column-gap: var(--spacing-sm);
+  text-align: center;
+  color: var(--color-calender-color-content-label, var(--text-color-weekly));
+  font-family: var(--font-family);
+  font-size: var(--font-size, var(--font-size-sm));
+  font-weight: var(--font-weight-weekly, var(--font-weight-bold));
+}
+
+po-calendar[p-size='small'] .po-calendar-content .po-calendar-labels {
+  font-size: var(--font-size, var(--font-size-xs));
+  font-weight: var(--font-weight-weekly, var(--font-weight-semibold));
+}
+
+.po-calendar-label {
+  height: var(--spacing-lg);
+  width: var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+po-calendar[p-size='small'] .po-calendar-label {
+  height: var(--spacing-md);
+  width: var(--spacing-lg);
+}
+
+.po-calendar-content .po-calendar-content-list-day {
+  padding: var(--spacing-sm) var(--spacing-xxs) 0 var(--spacing-xxs);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: var(--spacing-md);
+  row-gap: var(--spacing-xs);
+  padding-bottom: var(--spacing-sm);
+}
+
+.po-calendar-content .po-calendar-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--spacing-lg);
+  height: var(--spacing-lg);
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: var(--border-width-days);
+  border-radius: var(--border-radius-days);
+  font-family: var(--font-family);
+  font-size: var(--font-size, var(--font-size-sm));
+  font-weight: var(--font-weight-days);
+  color: var(--color-calendar-color-box-foreground, var(--text-color));
+
+  transition-property: var(--day-cell-transition-property);
+  transition-duration: var(--day-cell-transition-duration);
+  transition-timing-function: var(--day-cell-transition-timing);
+}
+
+.po-calendar-content .po-calendar-box-background {
+  &:focus {
+    outline-color: var(--outline-color-focused);
+    outline-style: solid;
+    outline-width: var(--border-width-lg);
+    outline-offset: var(--border-radius-sm);
+  }
+
+  &-selected {
+    background-color: var(--color-calendar-background-color-box-background-selected, var(--color-selected));
+    color: var(--color-calendar-color-box-foreground-selected, var(--text-color-selected));
+    font-weight: var(--font-weight-bold);
+    &:focus {
+      outline-color: var(--color-action-focus);
+      outline-style: solid;
+      outline-width: var(--border-width-lg);
+      outline-offset: var(--focus-aa);
+    }
+  }
+
+  &-today {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-calendar-color-box-foreground-today, var(--text-color-today));
+    text-decoration: underline;
+    &:focus {
+      outline-color: var(--outline-color-focused);
+      outline-style: solid;
+      outline-width: var(--border-width-lg);
+      outline-offset: var(--border-radius-sm);
+    }
+    &:hover {
+      background-color: var(--color-calendar-background-color-box-background-hover, var(--color-hover));
+      color: var(--text-color-hover);
+      font-weight: var(--font-weight-today);
+    }
+  }
+
+  &-today-selected {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    background-color: var(--color-calendar-background-color-box-background-hover, var(--color-hover));
+    color: var(--text-color-hover);
+    font-weight: var(--font-weight-today);
+  }
+
+  &-disabled,
+  &-selected-disabled,
+  &-today-disabled {
+    color: var(--color-calendar-color-box-foreground-disabled, var(--text-color-disabled));
+    border-color: var(--border-disabled);
+    border-width: var(--border-width-sm);
+    border-style: solid;
+    cursor: not-allowed;
+  }
+
+  &-other-month {
+    color: var(--text-color-next);
+    &-disabled {
+      color: var(--color-calendar-color-box-foreground-disabled, var(--text-color-disabled));
+      border-color: var(--border-disabled);
+      border-width: var(--border-width-sm);
+      border-style: solid;
+      cursor: not-allowed;
+    }
+  }
+
+  &-today-selected {
+    background-color: var(--color-calendar-background-color-box-background-selected, var(--color-selected));
+    color: var(--color-calendar-color-box-foreground-selected, var(--text-color-selected));
+    font-weight: var(--font-weight-today);
+    text-decoration: underline;
+    &:focus {
+      outline-color: var(--outline-color-focused);
+      outline-style: solid;
+      outline-width: var(--border-width-lg);
+      outline-offset: var(--border-radius-sm);
+    }
+  }
+}
+
+[data-a11y='AA'] .po-calendar-content .po-calendar-box-background {
+  &:focus {
+    outline-width: var(--border-width-md);
+  }
+
+  &-selected {
+    &:focus {
+      outline-width: var(--border-width-md);
+    }
+  }
+
+  &-today {
+    &:focus {
+      outline-width: var(--border-width-md);
+    }
+  }
+
+  &-today-selected {
+    &:focus {
+      outline-width: var(--border-width-md);
+    }
+  }
+}
+
+.po-calendar-content .po-calendar-box-foreground {
+  &-in-range,
+  &-hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--spacing-lg);
+    height: var(--spacing-lg);
+    background-color: var(--color-calendar-background-color-box-background-range, var(--color-interval));
+    color: var(--color-calendar-color-box-foreground-range, var(--text-color-interval));
+    border-width: var(--border-width-days);
+    border-radius: var(--border-radius-days);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-days);
+  }
+  &-disabled,
+  &-in-range-disabled,
+  &-hover-disabled,
+  &-today-disabled {
+    color: var(--color-calendar-color-box-foreground-disabled, var(--text-color-disabled));
+    border-color: var(--border-disabled);
+    border-width: var(--border-width-sm);
+    cursor: not-allowed;
+  }
+}
+
+/* Duplo A com size=small: reduzido */
+po-calendar[p-size='small'] .po-calendar-content {
+  padding: 0 var(--spacing-xs);
+}
+
+po-calendar[p-size='small'] .po-calendar-content .po-calendar-content-list-day {
+  padding: 0;
+  row-gap: var(--spacing-xxs);
+  column-gap: var(--spacing-sm);
+  padding-bottom: var(--spacing-xs);
+}

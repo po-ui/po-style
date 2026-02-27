@@ -1,0 +1,74 @@
+.po-calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-xs) var(--spacing-sm);
+  gap: var(--spacing-xs);
+}
+
+.po-calendar-header .po-field-container-content {
+  padding: 0;
+}
+
+.po-calendar-header po-combo:nth-of-type(1) {
+  --min-width: 8.5rem;
+}
+
+.po-calendar-header po-combo:nth-of-type(1) .po-combo-input {
+  padding-right: 0;
+  min-width: 8.5rem;
+}
+
+.po-calendar-header po-combo:nth-of-type(2) {
+  --min-width: 6.2rem;
+}
+
+.po-calendar-header po-combo:nth-of-type(2) .po-combo-input {
+  --min-width: 6.2rem;
+  min-width: 6.2rem;
+}
+
+.po-calendar-header-arrows {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+/* Duplo A com size=small: reduzido */
+po-calendar[p-size='small'] .po-calendar-header {
+  padding: var(--spacing-xs);
+}
+
+po-calendar[p-size='small'] .po-calendar-header po-combo:nth-of-type(1) {
+  --min-width: 8rem;
+}
+
+po-calendar[p-size='small'] .po-calendar-header po-combo:nth-of-type(1) .po-combo-input {
+  padding-right: 0;
+  width: 8rem;
+  min-width: 8rem;
+}
+
+po-calendar[p-size='small'] .po-calendar-header po-combo:nth-of-type(2) {
+  --min-width: 5.5rem;
+}
+
+po-calendar[p-size='small'] .po-calendar-header po-combo:nth-of-type(2) .po-combo-input {
+  padding-right: 0;
+  min-width: 5.5rem;
+}
+
+po-calendar po-field-container-bottom .po-field-container-bottom,
+po-calendar[p-size='small'] po-field-container-bottom .po-field-container-bottom,
+po-calendar[p-size='small'] .po-field-container-bottom:empty[p-size='small'] {
+  padding-bottom: 0;
+}
+
+po-calendar .po-field-container .po-field-container-content,
+po-calendar[p-size='small'] .po-field-container .po-field-container-content[p-size='small'],
+po-calendar[p-size='small'] .po-field-container-content[p-size='small'] {
+  padding: 0;
+}
+
+po-calendar po-field-container-bottom .po-field-container-bottom:empty {
+  --padding-bottom: 0;
+}

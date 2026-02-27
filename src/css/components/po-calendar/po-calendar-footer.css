@@ -5,11 +5,10 @@
 }
 
 /* Duplo A com size=small: reduzido */
-[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-footer {
+po-calendar[p-size='small'] .po-calendar-footer {
   padding: 0 var(--spacing-xs) var(--spacing-xs) var(--spacing-xs);
-  justify-content: space-evenly;
   column-gap: var(--spacing-sm);
 }
-[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-footer .po-calendar-footer-today-button {
+po-calendar[p-size='small'] .po-calendar-footer .po-calendar-footer-today-button {
   font-size: var(--font-size-sm);
 }

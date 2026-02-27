@@ -19,7 +19,8 @@
 }
 
 .po-datepicker-calendar-overlay {
-  background-color: var(--color-calendar-background-color-mobile-overlay);
+  background: var(--color-calendar-background-color-mobile-overlay, var(--color-neutral-dark-80));
+  opacity: 0.7;
   bottom: 0;
   left: 0;
   position: fixed;

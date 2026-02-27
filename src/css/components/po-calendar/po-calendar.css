@@ -1,5 +1,6 @@
 .po-calendar {
-  background-color: var(--background);
+  background-color: var(--color-calendar-background-color, var(--background));
+  border-style: solid;
   border-radius: var(--border-radius);
   border-color: var(--border-color);
   border-width: var(--border-width);
@@ -32,8 +33,8 @@
 }
 
 /* Duplo A com size=small: reduzido */
-[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar,
-[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-wrapper,
-[data-a11y='AA'] po-calendar[p-size='small'] .po-calendar-range {
+po-calendar[p-size='small'] .po-calendar,
+po-calendar[p-size='small'] .po-calendar-wrapper,
+po-calendar[p-size='small'] .po-calendar-range {
   width: 21rem;
 }

@@ -62,6 +62,11 @@ po-rich-text.ng-invalid.ng-dirty .po-rich-text-body {
   outline: none;
 }
 
+po-rich-text.ng-invalid.ng-dirty .po-rich-text-body.po-rich-text-disabled {
+  border-color: var(--color-neutral-light-30);
+  color: inherit;
+}
+
 /* Necessário para tratamento do placeholder no componente via css, o acesso no ts deve ser feito a partir da propriedade
 'data-placeholder' devido a não funcionar somente como 'placeholder', ao digitar um valor e apagar o conteúdo da tag fica
 com um <br>, será necessário tratar no keyup a remoção desse <br> para que funcione corretamente no firefox */
@@ -74,4 +79,47 @@ div[data-placeholder]:not([data-placeholder='']):empty::before {
 /* necessário devido ao reset aplicar padding: 0 aos elementos ::after e ::before */
 .po-rich-text-body ul {
   padding-left: 16px;
+}
+
+po-rich-text .po-rich-text-loading-container .po-loading-icon-container {
+  display: flex;
+}
+
+.po-rich-text-loading-container {
+  position: absolute;
+  top: 1.125rem;
+  right: var(--spacing-2xs);
+  pointer-events: none;
+}
+
+[data-a11y='AA'] .po-field-container-content[p-size='small'] .po-rich-text-loading-container {
+  top: 0.75rem;
+}
+
+.po-rich-text-body.po-rich-text-disabled {
+  background-color: var(--color-neutral-light-20);
+  border-color: var(--color-neutral-light-30);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+po-rich-text po-rich-text-body .po-rich-text-body.has-loading {
+  padding-right: 44px;
+}
+
+[data-a11y='AA'] po-rich-text po-rich-text-body .po-rich-text-body.has-loading[p-size='small'] {
+  padding-right: 32px;
+}
+
+/* Loading com scroll — recua o ícone */
+po-rich-text po-rich-text-body .has-loading.has-scroll + .po-rich-text-loading-container {
+  right: 20px;
+}
+
+[data-a11y='AA']
+  po-rich-text
+  po-rich-text-body
+  .has-loading.has-scroll[p-size='small']
+  + .po-rich-text-loading-container {
+  right: 16px;
 }

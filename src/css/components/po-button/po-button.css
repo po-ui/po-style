@@ -153,6 +153,12 @@ po-button {
   background-color: var(--background-color-disabled);
 }
 
+po-upload.ng-invalid.ng-dirty .po-upload-button button:disabled {
+  color: var(--color-disabled);
+  border: solid var(--border-width, var(--border-width-md)) var(--color-disabled) !important;
+  background-color: var(--background-color-disabled);
+}
+
 .po-button-aa {
   font-size: var(--font-size, var(--font-size-sm));
   padding: var(--padding, 0 var(--spacing-xs));
@@ -222,6 +228,11 @@ po-button {
 
 .po-button:disabled .po-button-icon > :first-child:not(.po-fonts-icon) path {
   fill: var(--color-disabled);
+}
+
+po-button .po-loading-icon-container {
+  display: flex;
+  justify-content: center;
 }
 
 /* Variáveis antigas. Necessárias para a utilização de botão nativo com as classes do po-button */

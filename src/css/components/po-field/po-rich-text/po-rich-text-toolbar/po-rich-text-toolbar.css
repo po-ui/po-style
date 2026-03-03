@@ -76,3 +76,7 @@
 .po-rich-text-toolbar-color-picker-input::-webkit-color-swatch {
   border: none;
 }
+
+.po-rich-text-toolbar.po-rich-text-disabled {
+  border-color: var(--color-neutral-light-30);
+}

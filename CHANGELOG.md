@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.4.0](https://github.com/po-ui/po-style/compare/v21.3.0...v21.4.0) (2026-03-03)
+
+
+### Features
+
+* **calendar:** implementa definições do AnimaliaDS ([d2912e0](https://github.com/po-ui/po-style/commit/d2912e061dbf4c07c0a88919f807e569bdfdd3af))
+* **datepicker:** implementa definições do AnimaliaDS ([474ee72](https://github.com/po-ui/po-style/commit/474ee723a739b12827f9dcd8e86f45bdbda521b1))
+* **widget:** adiciona avatar ao widget e novos posicionamentos da tag ([6b21575](https://github.com/po-ui/po-style/commit/6b21575ae9baf406274542c159b826dd8b47362a))
+
+
+
 # [21.3.0](https://github.com/po-ui/po-style/compare/v21.2.0...v21.3.0) (2026-02-23)
 
 

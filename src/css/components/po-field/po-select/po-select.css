@@ -1,12 +1,4 @@
-.po-select-container {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  gap: 8px;
-}
-
-.po-select,
-[data-a11y='AAA'] .po-select-aa {
+.po-select {
   font-family: var(--font-family);
   font-size: var(--font-size, var(--font-size-default));
   color: var(--text-color);
@@ -34,7 +26,7 @@
   opacity: 1;
 }
 
-.po-select-aa {
+po-select[p-size='small'] .po-select {
   font-size: var(--font-size, var(--font-size-sm));
   min-height: var(--target-size-aa);
   padding: var(--padding-vertical, 0.35rem) var(--padding-horizontal, 0.5rem);
@@ -112,25 +104,4 @@ po-select[p-loading='true'].ng-dirty.ng-invalid select.po-select-poicon:disabled
 
 po-select .po-field-icon-container-right .po-loading-icon-container {
   display: flex;
-}
-
-.po-select-loading-container {
-  position: absolute;
-  right: var(--padding-horizontal, var(--spacing-2xs));
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-[p-size='small'] .po-select-loading-container,
-.po-select-aa .po-select-loading-container {
-  right: var(--spacing-2xs);
-}
-
-.po-select-loading-with-helper {
-  right: 3.125rem;
-}
-
-[p-size='small'] .po-select-loading-with-helper,
-.po-select-aa .po-select-loading-with-helper {
-  right: 2.625rem;
 }

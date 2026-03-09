@@ -39,6 +39,10 @@
   table-layout: fixed;
 }
 
+.po-table-virtual-scroll {
+  table-layout: fixed;
+}
+
 .po-table thead tr th,
 .po-table .po-table-master-detail thead tr th {
   background-color: var(--background-color-headline);

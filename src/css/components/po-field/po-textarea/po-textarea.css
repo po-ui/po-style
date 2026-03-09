@@ -12,6 +12,7 @@
   border-width: var(--border-width-sm);
   border-style: solid;
   width: 100%;
+  min-height: var(--target-size-aaa);
   box-sizing: border-box;
   resize: both;
 }
@@ -19,6 +20,7 @@
 [data-a11y='AA'] .po-textarea[p-size='small'] {
   font-size: var(--font-size, var(--font-size-sm));
   padding: var(--spacing-squish-xs);
+  min-height: var(--target-size-aa);
 }
 
 .po-textarea::placeholder {
@@ -60,4 +62,41 @@ po-textarea.ng-invalid.ng-dirty .po-textarea {
 
   background: var(--background);
   cursor: text;
+}
+
+po-textarea.ng-invalid.ng-dirty .po-textarea:disabled {
+  border-color: var(--color-disabled);
+  background: var(--background-disabled);
+  cursor: not-allowed;
+}
+
+po-textarea .po-textarea-loading-container .po-loading-icon-container {
+  display: flex;
+}
+
+.po-textarea-loading-container {
+  position: absolute;
+  top: 1.125rem;
+  right: var(--spacing-2xs);
+  pointer-events: none;
+}
+
+[data-a11y='AA'] .po-field-container-content[p-size='small'] .po-textarea-loading-container {
+  top: var(--font-size-xs);
+}
+
+po-textarea textarea.po-textarea.has-loading {
+  padding-right: var(--target-size-aaa);
+}
+
+[data-a11y='AA'] po-textarea textarea.po-textarea.has-loading[p-size='small'] {
+  padding-right: var(--target-size-aa);
+}
+
+po-textarea textarea.has-loading.has-scroll + .po-textarea-loading-container {
+  right: 20px;
+}
+
+[data-a11y='AA'] po-textarea textarea.has-loading.has-scroll[p-size='small'] + .po-textarea-loading-container {
+  right: var(--spacing-sm);
 }

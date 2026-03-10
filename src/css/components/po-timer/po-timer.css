@@ -1,0 +1,25 @@
+.po-timer {
+  background-color: var(--background);
+  border-style: solid;
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
+  border-width: var(--border-width);
+  box-shadow: var(--shadow);
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.po-timer-wrapper {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+/* Duplo A com size=small: reduzido */
+po-timer[p-size='small'] .po-timer {
+  border-radius: var(--border-radius);
+}

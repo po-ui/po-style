@@ -542,6 +542,58 @@ po-calendar {
   --day-cell-transition-timing: var(--timing-standart);
 }
 
+po-timer {
+  /* BASE */
+  --background: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-20);
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --shadow: var(--shadow-md);
+
+  /* COLUMN LABELS */
+  --font-family: var(--font-family-theme);
+  --font-size-label: var(--font-size-sm);
+  --font-weight-label: var(--font-weight-bold);
+  --text-color-label: var(--color-neutral-dark-90);
+
+  /* SEPARATOR */
+  --font-size-separator: var(--font-size-md);
+  --text-color-separator: var(--color-neutral-dark-90);
+
+  /* COLUMN */
+  --column-max-height: 16rem;
+  --column-max-height-small: 13rem;
+
+  /* CELLS */
+  --font-size-cell: var(--font-size-sm);
+  --font-weight-cell: var(--font-weight-normal);
+  --text-color-cell: var(--color-neutral-dark-90);
+  --border-radius-cell: var(--border-radius-md);
+  --border-width-cell: var(--border-width-sm);
+  --cell-size: var(--spacing-xl);
+  --cell-size-small: var(--spacing-lg);
+
+  /* FOCUS */
+  --outline-color-focused: var(--color-action-focus);
+
+  /* HOVER */
+  --text-color-hover: var(--color-neutral-light-00);
+  --color-hover: var(--color-action-hover);
+
+  /* DISABLED */
+  --text-color-disabled: var(--color-action-disabled);
+  --border-disabled: var(--color-action-disabled);
+
+  /* SELECTED */
+  --text-color-selected: var(--color-neutral-light-00);
+  --color-selected: var(--color-action-default);
+
+  /* TRANSITIONS */
+  --cell-transition-duration: var(--duration-extra-fast);
+  --cell-transition-property: all;
+  --cell-transition-timing: var(--timing-standart);
+}
+
 :root {
   /*------------------------------------*\
   CALENDAR

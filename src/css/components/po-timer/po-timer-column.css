@@ -10,17 +10,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: auto;
+  overflow-y: scroll;
   max-height: var(--column-max-height);
   row-gap: var(--row-gap);
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
-po-timer[p-size='small'] .po-timer-column-scroll {
-  max-height: var(--column-max-height-small);
+.po-timer-column-scroll::-webkit-scrollbar {
+  width: 4px;
+  background: transparent;
 }
 
-.po-timer-column-scroll::-webkit-scrollbar {
-  display: none;
+.po-timer-column-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: var(--border-radius-cell, 4px);
+}
+
+.po-timer-column-scroll:hover {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-neutral-light-30, rgba(0, 0, 0, 0.2)) transparent;
+}
+
+.po-timer-column-scroll:hover::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-light-30, rgba(0, 0, 0, 0.2));
+}
+
+po-timer[p-size='small'] .po-timer-column-scroll {
+  max-height: var(--column-max-height-small);
 }

@@ -32,7 +32,7 @@
   display: inline-flex;
 }
 
-/* Duplo A com size=small: reduzido */
+/* AA Small */
 po-calendar[p-size='small'] .po-calendar,
 po-calendar[p-size='small'] .po-calendar-wrapper,
 po-calendar[p-size='small'] .po-calendar-range {

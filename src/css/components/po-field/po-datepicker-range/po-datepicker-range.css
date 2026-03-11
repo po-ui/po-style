@@ -167,6 +167,22 @@ po-datepicker-range[p-size='small'] .po-datepicker-range-start-date::after {
   z-index: 1000;
 }
 
+.po-datepicker-range-calendar-mobile-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.po-datepicker-range-calendar-mobile {
+  z-index: 11;
+}
+
 po-datepicker-range.ng-invalid.ng-dirty .po-input {
   border: 1px solid var(--color-datepicker-range-border-text-error);
   color: var(--color-datepicker-range-color-text-error);

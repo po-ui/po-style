@@ -1145,6 +1145,40 @@ po-menu-filter {
 }
 
 /*------------------------------------*\
+  CONTEXT MENU
+\*------------------------------------*/
+po-context-menu {
+  --color: var(--color-action-default);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --font-weight: var(--font-weight-bold);
+  --line-height: var(--line-height-md);
+
+  --color-context-title: var(--color-neutral-mid-40);
+  --font-size-context-title: var(--font-size-xs);
+
+  --color-title: var(--color-neutral-dark-80);
+  --font-size-title: var(--font-size-default);
+  --font-weight-title: var(--font-weight-bold);
+
+  --background-color: var(--color-neutral-light-05);
+  --border-color: var(--color-neutral-light-20);
+  --border-radius: var(--border-radius-md);
+  --outline-color-focused: var(--color-action-focus);
+
+  /* Hover */
+  --color-hover: var(--color-brand-01-darkest);
+  --background-color-hover: var(--color-brand-01-lighter);
+
+  /* Pressed */
+  --background-color-pressed: var(--color-brand-01-light);
+
+  /* Active / Selected */
+  --background-color-actived: var(--color-brand-01-lightest);
+  --color-actived: var(--color-action-pressed);
+}
+
+/*------------------------------------*\
   MODAL
 \*------------------------------------*/
 po-modal {

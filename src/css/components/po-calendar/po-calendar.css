@@ -32,6 +32,47 @@
   display: inline-flex;
 }
 
+/* Layout com painel lateral de presets */
+.po-calendar-with-presets {
+  display: inline-flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.po-calendar-preset-list {
+  display: flex;
+  flex-direction: column;
+  border-right-style: solid;
+  border-right-width: var(--border-width);
+  border-right-color: var(--border-color);
+  padding: var(--spacing-sm) 0;
+  min-width: 7.5rem;
+  max-height: 22rem;
+  overflow-y: auto;
+}
+
+.po-calendar-preset-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  text-align: left;
+  white-space: nowrap;
+  line-height: var(--line-height-md);
+}
+
+.po-calendar-preset-item:hover {
+  color: var(--color-action-hover);
+}
+
+.po-calendar-preset-item-selected {
+  color: var(--color-action-default);
+  font-weight: var(--font-weight-bold);
+}
+
 /* Duplo A com size=small: reduzido */
 po-calendar[p-size='small'] .po-calendar,
 po-calendar[p-size='small'] .po-calendar-wrapper,

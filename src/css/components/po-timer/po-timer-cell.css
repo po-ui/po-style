@@ -1,11 +1,15 @@
-.po-timer-cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Estilizacao do po-button como celula do timer */
+po-timer .po-timer-cell {
+  display: inline-block;
+}
+
+po-timer .po-timer-cell .po-button {
   width: var(--cell-size);
   height: var(--cell-size);
-  cursor: pointer;
-  background-color: transparent;
+  min-height: unset;
+  min-width: unset;
+  padding: 0;
+  justify-content: center;
   border-color: transparent;
   border-width: var(--border-width-cell);
   border-style: solid;
@@ -15,57 +19,67 @@
   font-weight: var(--font-weight-cell);
   color: var(--color);
   letter-spacing: var(--letter-spacing);
+  box-shadow: none;
 
   transition-property: var(--cell-transition-property);
   transition-duration: var(--cell-transition-duration);
   transition-timing-function: var(--cell-transition-timing);
-
-  &:focus {
-    outline-color: var(--outline-color-focused);
-    outline-style: solid;
-    outline-width: var(--outline-width);
-    outline-offset: var(--outline-offset);
-  }
-
-  &:hover:not(.po-timer-cell-disabled):not(.po-timer-cell-selected) {
-    background-color: var(--background-hover);
-    color: var(--color-hover);
-    font-weight: var(--font-weight-bold);
-  }
-
-  &:active:not(.po-timer-cell-disabled):not(.po-timer-cell-selected) {
-    background-color: var(--background-pressed);
-    color: var(--color-hover);
-    outline-color: var(--outline-color-focused);
-    outline-style: solid;
-    outline-width: var(--outline-width);
-    cursor: pointer;
-  }
-
-  &-selected {
-    background-color: var(--background-selected);
-    color: var(--color-selected);
-    font-weight: var(--font-weight-bold);
-
-    &:focus {
-      outline-color: var(--outline-color-focused);
-      outline-style: solid;
-      outline-width: var(--outline-width);
-      outline-offset: var(--outline-offset);
-    }
-  }
-
-  &-disabled {
-    color: var(--color-disabled);
-    cursor: not-allowed;
-  }
 }
 
-po-timer[p-size='small'] .po-timer-cell {
+po-timer .po-timer-cell .po-button:focus {
+  outline-color: var(--outline-color-focused);
+  outline-style: solid;
+  outline-width: var(--outline-width);
+  outline-offset: var(--outline-offset);
+}
+
+po-timer .po-timer-cell .po-button[p-kind='tertiary']:hover {
+  background-color: var(--background-hover);
+  color: var(--color-hover);
+  font-weight: var(--font-weight-bold);
+}
+
+po-timer .po-timer-cell .po-button[p-kind='tertiary']:enabled:active {
+  background-color: var(--background-pressed);
+  color: var(--color-hover);
+  outline-color: var(--outline-color-focused);
+  outline-style: solid;
+  outline-width: var(--outline-width);
+}
+
+/* Estado selecionado */
+po-timer .po-timer-cell-selected .po-button {
+  background-color: var(--background-selected);
+  color: var(--color-selected);
+  font-weight: var(--font-weight-bold);
+}
+
+po-timer .po-timer-cell-selected .po-button:focus {
+  outline-color: var(--outline-color-focused);
+  outline-style: solid;
+  outline-width: var(--outline-width);
+  outline-offset: var(--outline-offset);
+}
+
+po-timer .po-timer-cell-selected .po-button[p-kind='tertiary']:hover {
+  background-color: var(--background-selected);
+  color: var(--color-selected);
+}
+
+/* Estado desabilitado */
+po-timer .po-timer-cell .po-button[p-kind='tertiary']:disabled {
+  color: var(--color-disabled);
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+/* Tamanho small (AA) */
+po-timer[p-size='small'] .po-timer-cell .po-button {
   width: var(--cell-size-small);
   height: var(--cell-size-small);
 }
 
+/* Coluna AM/PM */
 .po-timer-column-period {
   overflow: visible;
 }

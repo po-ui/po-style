@@ -570,8 +570,8 @@ po-timer {
   --font-weight-cell: var(--font-weight-bold);
   --border-radius-cell: var(--border-radius-md);
   --border-width-cell: var(--border-width-sm);
-  --cell-size: var(--spacing-xl);
-  --cell-size-small: var(--spacing-lg);
+  --cell-size: var(--target-size-aaa);
+  --cell-size-small: var(--target-size-aa);
 
   /* FOCUS */
   --outline-color-focused: var(--color-brand-01-darkest);

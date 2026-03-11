@@ -11,34 +11,18 @@
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
-  max-height: var(--column-max-height);
+  max-height: calc(6 * var(--cell-size) + 5 * var(--row-gap));
   row-gap: var(--row-gap);
 
-  /* Firefox: sempre reservar espaco do scrollbar, mas invisivel por padrao */
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
+  /* Ocultar scrollbar completamente */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-/* Webkit: sempre reservar espaco do scrollbar, mas invisivel por padrao */
 .po-timer-column-scroll::-webkit-scrollbar {
-  width: 4px;
-  background: transparent;
-}
-
-.po-timer-column-scroll::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: var(--border-radius-cell, 4px);
-}
-
-/* Hover: tornar scrollbar visivel sem alterar layout */
-.po-timer-column-scroll:hover {
-  scrollbar-color: var(--color-neutral-light-30, rgba(0, 0, 0, 0.2)) transparent;
-}
-
-.po-timer-column-scroll:hover::-webkit-scrollbar-thumb {
-  background: var(--color-neutral-light-30, rgba(0, 0, 0, 0.2));
+  display: none;
 }
 
 po-timer[p-size='small'] .po-timer-column-scroll {
-  max-height: var(--column-max-height-small);
+  max-height: calc(6 * var(--cell-size-small) + 5 * var(--row-gap));
 }

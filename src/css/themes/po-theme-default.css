@@ -560,10 +560,6 @@ po-timer {
   --font-family: var(--font-family-theme);
   --letter-spacing: var(--letter-spacing-auto, normal);
 
-  /* COLUMN */
-  --column-max-height: 16rem;
-  --column-max-height-small: 13rem;
-
   /* CELLS - DISPLAY */
   --color: var(--color-brand-01-base);
   --font-size-cell: var(--font-size-sm);

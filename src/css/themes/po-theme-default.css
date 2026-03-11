@@ -548,45 +548,49 @@ po-timer {
   --border-color: var(--color-neutral-light-20);
   --border-radius: var(--border-radius-md);
   --border-width: var(--border-width-sm);
+  --border-style: solid;
   --shadow: var(--shadow-md);
+  --min-height: 37px;
+  --padding: var(--spacing-sm);
+  --padding-small: var(--spacing-xs);
+  --column-gap: var(--spacing-sm);
+  --row-gap: var(--spacing-xs);
 
-  /* COLUMN LABELS */
+  /* FONT */
   --font-family: var(--font-family-theme);
-  --font-size-label: var(--font-size-sm);
-  --font-weight-label: var(--font-weight-bold);
-  --text-color-label: var(--color-neutral-dark-90);
-
-  /* SEPARATOR */
-  --font-size-separator: var(--font-size-md);
-  --text-color-separator: var(--color-neutral-dark-90);
+  --letter-spacing: var(--letter-spacing-auto, normal);
 
   /* COLUMN */
   --column-max-height: 16rem;
   --column-max-height-small: 13rem;
 
-  /* CELLS */
+  /* CELLS - DISPLAY */
+  --color: var(--color-brand-01-base);
   --font-size-cell: var(--font-size-sm);
-  --font-weight-cell: var(--font-weight-normal);
-  --text-color-cell: var(--color-neutral-dark-90);
+  --font-weight-cell: var(--font-weight-bold);
   --border-radius-cell: var(--border-radius-md);
   --border-width-cell: var(--border-width-sm);
   --cell-size: var(--spacing-xl);
   --cell-size-small: var(--spacing-lg);
 
   /* FOCUS */
-  --outline-color-focused: var(--color-action-focus);
+  --outline-color-focused: var(--color-brand-01-darkest);
+  --outline-width: var(--border-width-md);
+  --outline-offset: 3px;
 
   /* HOVER */
-  --text-color-hover: var(--color-neutral-light-00);
-  --color-hover: var(--color-action-hover);
+  --color-hover: var(--color-brand-01-darkest);
+  --background-hover: var(--color-brand-01-lighter);
 
-  /* DISABLED */
-  --text-color-disabled: var(--color-action-disabled);
-  --border-disabled: var(--color-action-disabled);
+  /* PRESSED */
+  --background-pressed: var(--color-brand-01-light);
 
   /* SELECTED */
-  --text-color-selected: var(--color-neutral-light-00);
-  --color-selected: var(--color-action-default);
+  --color-selected: var(--color-brand-01-darkest);
+  --background-selected: var(--color-brand-01-lighter);
+
+  /* DISABLED */
+  --color-disabled: var(--color-neutral-light-30);
 
   /* TRANSITIONS */
   --cell-transition-duration: var(--duration-extra-fast);

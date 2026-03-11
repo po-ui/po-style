@@ -1,16 +1,18 @@
 .po-timer {
   background-color: var(--background);
-  border-style: solid;
+  border-style: var(--border-style);
   border-radius: var(--border-radius);
   border-color: var(--border-color);
   border-width: var(--border-width);
   box-shadow: var(--shadow);
-  height: auto;
+  min-height: var(--min-height);
   overflow: hidden;
   position: relative;
   user-select: none;
   display: inline-flex;
   flex-direction: row;
+  column-gap: var(--column-gap);
+  padding: var(--padding);
 }
 
 .po-timer-wrapper {
@@ -19,7 +21,6 @@
   position: relative;
 }
 
-/* Duplo A com size=small: reduzido */
 po-timer[p-size='small'] .po-timer {
-  border-radius: var(--border-radius);
+  padding: var(--padding-small);
 }

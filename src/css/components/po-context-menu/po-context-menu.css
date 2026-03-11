@@ -1,0 +1,158 @@
+/* Container principal */
+.po-context-menu {
+  background-color: var(--background-color);
+  border-right: var(--border-width-sm) solid var(--border-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 256px;
+  transition: width 0.2s ease;
+  overflow: hidden;
+}
+
+/* Estado colapsado - 56px como po-menu (po-menu.css linha 59-61) */
+.po-context-menu-collapsed {
+  width: 56px;
+}
+
+/* Header */
+.po-context-menu-header {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--spacing-sm);
+  border-bottom: var(--border-width-sm) solid var(--border-color);
+  gap: var(--spacing-xs);
+}
+
+.po-context-menu-header-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  gap: var(--spacing-2xs);
+}
+
+.po-context-menu-context-title {
+  font-family: var(--font-family);
+  font-size: var(--font-size-context-title);
+  color: var(--color-context-title);
+  line-height: var(--line-height);
+}
+
+.po-context-menu-title {
+  font-family: var(--font-family);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-title);
+  color: var(--color-title);
+  line-height: var(--line-height);
+}
+
+/* Toggle button - baseado em .po-menu-collapse-button-icon (po-menu.css linhas 109-136) */
+.po-context-menu-toggle {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color);
+  font-size: 1.5rem;
+  padding: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+}
+
+.po-context-menu-toggle:is(:focus, :focus-visible) {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: -4px;
+}
+
+/* Body */
+.po-context-menu-body {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Lista */
+.po-context-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Item da lista - baseado em .po-menu-item (po-menu-item.css linhas 15-36) */
+.po-context-menu-list-item {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  border-radius: var(--border-radius);
+  color: var(--color);
+  background-color: transparent;
+  font-weight: var(--font-weight);
+  padding-inline: var(--spacing-sm);
+  min-height: 2.75em;
+  align-items: center;
+  display: flex;
+  position: relative;
+  word-break: break-word;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+/* Pseudo-element para borda lateral - baseado em .po-menu-item::after (po-menu-item.css linhas 44-53) */
+.po-context-menu-list-item::after {
+  background-color: var(--color-hover);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.35s ease-in-out;
+  width: 0;
+}
+
+/* Hover - baseado em .po-menu-item:hover (po-menu-item.css linhas 55-58) */
+.po-context-menu-list-item:hover {
+  background-color: var(--background-color-hover);
+  color: var(--color-hover);
+}
+
+/* Focus - baseado em .po-menu-item:focus (po-menu-item.css linhas 60-67) */
+.po-context-menu-list-item:is(:focus, :focus-visible) {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: -4px;
+}
+
+/* Pressed - baseado em .po-menu-item:active (po-menu-item.css linhas 38-42) */
+.po-context-menu-list-item:active {
+  background-color: var(--background-color-pressed);
+  color: var(--color-hover);
+}
+
+/* Selecionado - baseado em .po-menu-item-selected (po-menu-item.css linhas 69-79) */
+.po-context-menu-item-selected {
+  background-color: var(--background-color-actived);
+  color: var(--color-actived);
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.po-context-menu-item-selected::after {
+  width: 0.25em;
+}
+
+/* Truncate com 2 linhas */
+.po-context-menu-item-label {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}

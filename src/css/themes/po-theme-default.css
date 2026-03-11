@@ -1129,6 +1129,37 @@ po-menu-filter {
   --outline-color-focused: var(--color-action-focus);
 }
 
+/*------------------------------------*\
+  CONTEXT MENU
+\*------------------------------------*/
+po-context-menu {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --font-size-context-title: var(--font-size-sm);
+  --font-size-title: var(--font-size-lg);
+  --line-height: var(--line-height-md);
+  --border-radius: var(--border-radius-md);
+  --border-color: var(--color-neutral-light-20);
+  --background-color: var(--color-neutral-light-05);
+  --color: var(--color-action-default);
+  --color-context-title: var(--color-neutral-mid-40);
+  --color-title: var(--color-neutral-dark-80);
+  --font-weight: var(--font-weight-bold);
+  --font-weight-title: var(--font-weight-bold);
+  --outline-color-focused: var(--color-action-focus);
+
+  /* Hover */
+  --color-hover: var(--color-brand-01-darkest);
+  --background-color-hover: var(--color-brand-01-lighter);
+
+  /* Pressed */
+  --background-color-pressed: var(--color-brand-01-light);
+
+  /* Active / Selected */
+  --background-color-actived: var(--color-brand-01-lightest);
+  --color-actived: var(--color-action-pressed);
+}
+
 :root {
   /*------------------------------------*\
   MENU PANEL

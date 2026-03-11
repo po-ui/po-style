@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
   row-gap: var(--row-gap);
 }
 
@@ -11,8 +11,14 @@
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
-  max-height: calc(6 * var(--cell-size) + 5 * var(--row-gap));
+  overflow-x: clip;
+  max-height: calc(
+    6 * var(--cell-size) + 5 * var(--row-gap) + var(--outline-width) + var(--outline-offset) + var(--outline-width) +
+      var(--outline-offset)
+  );
   row-gap: var(--row-gap);
+  padding-block: calc(var(--outline-width) + var(--outline-offset));
+  padding-inline: calc(var(--outline-width) + var(--outline-offset));
 
   /* Ocultar scrollbar completamente */
   scrollbar-width: none;
@@ -24,5 +30,8 @@
 }
 
 po-timer[p-size='small'] .po-timer-column-scroll {
-  max-height: calc(6 * var(--cell-size-small) + 5 * var(--row-gap));
+  max-height: calc(
+    6 * var(--cell-size-small) + 5 * var(--row-gap) + var(--outline-width) + var(--outline-offset) +
+      var(--outline-width) + var(--outline-offset)
+  );
 }

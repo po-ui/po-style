@@ -1999,6 +1999,7 @@ po-header {
   --border-radius-bottom-left: var(--border-radius-md);
   --border-radius-bottom-right: var(--border-radius-md);
   --base-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  --stroke-color: var(--color-brand-01-base);
 
   /* title */
   --font-family: var(--font-family-theme);
@@ -2010,6 +2011,8 @@ po-header {
   --text-color-submenu: var(--color-brand-01-dark);
   --icon-color: var(--color-brand-01-dark);
   --outline-color-focused: var(--color-neutral-dark-95);
+  --font-weight-submenu: var(--font-weight-bold);
+  --font-family-submenu: var(--font-family-theme);
   /* submenus hover */
   --background-hover: var(--color-brand-01-lighter);
   --icon-color-hover: var(--color-brand-01-darkest);
@@ -2033,7 +2036,9 @@ po-header {
   --background-color-customer-hover: var(--color-brand-01-lighter);
   /* customer pressed */
   --background-color-customer-pressed: var(--color-brand-01-light);
+  --border-width-pressed: var(--border-width-md);
   /* focus */
+  --border-width-focus: var(--border-width-md);
 
   --object-fit-brand: contain;
   --object-fit-customer: contain;

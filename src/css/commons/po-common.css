@@ -157,6 +157,14 @@
   @apply --full-wrapper-fixed;
 }
 
+.po-context-menu-wrapper {
+  display: flex;
+}
+
+.po-context-menu-wrapper > *:nth-child(2) {
+  width: 100%;
+}
+
 /* transitions */
 .po-fade {
   transition: opacity 0.15s linear;

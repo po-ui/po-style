@@ -1,0 +1,171 @@
+/* Container principal */
+.po-context-menu {
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
+  background-color: var(--background-color);
+
+  border-right-width: var(--border-width-sm);
+  border-right-style: solid;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all var(--duration-normal) ease;
+  overflow: hidden;
+  width: 256px;
+}
+
+.po-context-menu-collapsed {
+  width: 56px;
+}
+
+/* Header */
+.po-context-menu-collapsed > .po-context-menu-header {
+  padding-inline: var(--spacing-xxs);
+  justify-content: center;
+}
+
+.po-context-menu-header {
+  font-family: var(--font-family);
+  display: flex;
+  align-items: flex-start;
+  padding-inline: var(--spacing-xs) var(--spacing-sm);
+  padding-block: var(--spacing-xs);
+}
+
+/* Toggle button */
+.po-context-menu-toggle {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color);
+  font-size: 1.5rem;
+  padding: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+}
+
+.po-context-menu-toggle:is(:focus, :focus-visible) {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: -4px;
+}
+
+.po-context-menu-toggle po-icon {
+  line-height: 0;
+}
+
+/* Context Menu Header Content */
+.po-context-menu-header-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.po-context-menu-context-title {
+  font-size: var(--font-size-context-title);
+  color: var(--color-context-title);
+  line-height: var(--line-height);
+}
+
+.po-context-menu-title {
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-title);
+  color: var(--color-title);
+  line-height: var(--line-height);
+}
+
+/* Body */
+.po-context-menu-body {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Menu List */
+.po-context-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu List Item */
+.po-context-menu-list-item {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  border-radius: var(--border-radius);
+  color: var(--color);
+  background-color: transparent;
+
+  letter-spacing: var(--letter-spacing-auto);
+  min-height: 2.75em;
+
+  font-weight: var(--font-weight);
+
+  padding-inline: var(--spacing-sm);
+
+  align-items: center;
+  display: flex;
+  gap: 1em;
+  justify-content: flex-start;
+  position: relative;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+.po-context-menu-list-item::after {
+  background-color: var(--color-hover);
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.35s ease-in-out;
+  width: 0;
+}
+
+.po-context-menu-list-item:hover {
+  background-color: var(--background-color-hover);
+  color: var(--color-hover);
+}
+
+.po-context-menu-list-item:is(:focus, :focus-visible) {
+  outline-color: var(--outline-color-focused);
+
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: -4px;
+}
+
+.po-context-menu-list-item:active {
+  background-color: var(--background-color-pressed);
+  color: var(--color-hover);
+}
+
+.po-context-menu-item-selected {
+  background-color: var(--background-color-actived);
+  color: var(--color-actived);
+
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.po-context-menu-item-selected::after {
+  width: 0.25em;
+}
+
+/* Menu List Item - Label */
+.po-context-menu-item-label {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}

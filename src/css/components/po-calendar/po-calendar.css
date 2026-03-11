@@ -39,6 +39,10 @@
   width: auto;
 }
 
+.po-calendar-with-presets .po-calendar-footer {
+  justify-content: center;
+}
+
 .po-calendar-preset-list {
   display: flex;
   flex-direction: column;
@@ -46,9 +50,10 @@
   border-right-width: var(--border-width);
   border-right-color: var(--border-color);
   padding: var(--spacing-sm) 0;
-  min-width: 7.5rem;
-  max-height: 22rem;
+  width: 9rem;
+  align-self: stretch;
   overflow-y: auto;
+  gap: 8px;
 }
 
 .po-calendar-preset-item {
@@ -58,14 +63,23 @@
   font-family: var(--font-family);
   font-size: var(--font-size);
   color: var(--text-color);
-  padding: var(--spacing-xs) var(--spacing-sm);
+  padding: 0 var(--spacing-sm);
   text-align: left;
   white-space: nowrap;
-  line-height: var(--line-height-md);
+  height: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .po-calendar-preset-item:hover {
   color: var(--color-action-hover);
+}
+
+.po-calendar-preset-item:focus-visible {
+  outline: 2px solid var(--color-action-focus);
+  outline-offset: -2px;
+  border-radius: var(--border-radius);
 }
 
 .po-calendar-preset-item-selected {
@@ -73,9 +87,14 @@
   font-weight: var(--font-weight-bold);
 }
 
-/* Duplo A com size=small: reduzido */
+/* AA Small */
 po-calendar[p-size='small'] .po-calendar,
 po-calendar[p-size='small'] .po-calendar-wrapper,
 po-calendar[p-size='small'] .po-calendar-range {
   width: 21rem;
+}
+
+po-calendar[p-size='small'] .po-calendar-preset-item {
+  height: 32px;
+  min-height: 32px;
 }

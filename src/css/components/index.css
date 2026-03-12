@@ -47,5 +47,6 @@
 @import './po-label';
 @import './po-image';
 @import './po-search';
+@import './po-skeleton';
 @import './po-clean';
 @import './po-header';

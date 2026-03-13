@@ -698,3 +698,20 @@ po-table[p-components-size='small'] .po-table-column-selectable {
   min-width: 32px;
   max-width: 32px;
 }
+
+/* Container horizontal compartilhado para virtual scroll */
+.po-table-virtual-scroll-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Garantir que ambas as tabelas dentro do wrapper tenham largura mínima igual */
+.po-table-virtual-scroll-wrapper > .po-table {
+  min-width: 100%;
+}
+
+.po-table-virtual-scroll-wrapper > cdk-virtual-scroll-viewport > .po-table {
+  min-width: 100%;
+}

@@ -699,19 +699,23 @@ po-table[p-components-size='small'] .po-table-column-selectable {
   max-width: 32px;
 }
 
-/* Container horizontal compartilhado para virtual scroll */
+/* Container de altura para virtual scroll */
 .po-table-virtual-scroll-wrapper {
-  overflow-x: auto;
-  overflow-y: hidden;
   position: relative;
   width: 100%;
 }
 
-/* Garantir que ambas as tabelas dentro do wrapper tenham largura mínima igual */
-.po-table-virtual-scroll-wrapper > .po-table {
+/* Header container com overflow hidden para sincronizar scroll horizontal via JS */
+.po-table-header-virtual-scroll {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Garantir que as tabelas dentro do wrapper tenham largura mínima igual */
+.po-table-header-virtual-scroll > .po-table {
   min-width: 100%;
 }
 
-.po-table-virtual-scroll-wrapper > cdk-virtual-scroll-viewport > .po-table {
+.po-table-virtual-scroll-wrapper cdk-virtual-scroll-viewport .po-table {
   min-width: 100%;
 }

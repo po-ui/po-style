@@ -705,14 +705,8 @@ po-table[p-components-size='small'] .po-table-column-selectable {
   width: 100%;
 }
 
-/* Header container com overflow hidden para sincronizar scroll horizontal via JS */
-.po-table-header-virtual-scroll {
-  overflow: hidden;
-  width: 100%;
-}
-
 /* Garantir que as tabelas dentro do wrapper tenham largura mínima igual */
-.po-table-header-virtual-scroll > .po-table {
+.po-table-virtual-scroll-wrapper > .po-table {
   min-width: 100%;
 }
 

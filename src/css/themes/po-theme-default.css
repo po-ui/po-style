@@ -1970,7 +1970,7 @@ po-header {
   --border-radius-bottom-left: var(--border-radius-md);
   --border-radius-bottom-right: var(--border-radius-md);
   --base-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-  --stroke-color: var(--color-brand-01-light);
+  --stroke-color: var(--color-brand-01-base);
 
   /* title */
   --font-family: var(--font-family-theme);

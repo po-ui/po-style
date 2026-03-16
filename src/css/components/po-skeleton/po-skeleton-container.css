@@ -6,7 +6,7 @@
   com o atributo [data-po-skeleton="true"].
 
   Utiliza pseudo-elemento ::after como overlay
-  e reutiliza as animações e tokens já definidos
+  e reutiliza as animacoes e tokens ja definidos
   em po-skeleton.css e po-theme-default.css.
 \*------------------------------------*/
 
@@ -14,7 +14,7 @@
    Seletores de componentes alvo
    ============================== */
 
-/* Campos de formulário */
+/* Campos de formulario */
 [data-po-skeleton='true'] po-input,
 [data-po-skeleton='true'] po-number,
 [data-po-skeleton='true'] po-decimal,
@@ -37,13 +37,13 @@
 /* Interativos */
 [data-po-skeleton='true'] po-dropdown,
 [data-po-skeleton='true'] po-search,
-/* Dados e exibição */
+/* Dados e exibicao */
 [data-po-skeleton='true'] po-table,
 [data-po-skeleton='true'] po-list-view,
 [data-po-skeleton='true'] po-tree-view,
 [data-po-skeleton='true'] po-info,
 [data-po-skeleton='true'] po-widget,
-/* Navegação e estrutura */
+/* Navegacao e estrutura */
 [data-po-skeleton='true'] po-stepper,
 [data-po-skeleton='true'] po-accordion,
 [data-po-skeleton='true'] po-tabs,
@@ -55,7 +55,7 @@
   user-select: none;
 }
 
-/* Botões e tags mantêm inline-block */
+/* Botoes e tags mantem inline-block */
 [data-po-skeleton='true'] po-button,
 [data-po-skeleton='true'] po-tag {
   position: relative;
@@ -66,10 +66,10 @@
 }
 
 /* ==============================
-   Ocultar conteúdo interno
+   Ocultar conteudo interno
    ============================== */
 
-/* Campos de formulário */
+/* Campos de formulario */
 [data-po-skeleton='true'] po-input > *,
 [data-po-skeleton='true'] po-number > *,
 [data-po-skeleton='true'] po-decimal > *,
@@ -93,14 +93,14 @@
 [data-po-skeleton='true'] po-button > *,
 [data-po-skeleton='true'] po-dropdown > *,
 [data-po-skeleton='true'] po-search > *,
-/* Dados e exibição */
+/* Dados e exibicao */
 [data-po-skeleton='true'] po-table > *,
 [data-po-skeleton='true'] po-list-view > *,
 [data-po-skeleton='true'] po-tree-view > *,
 [data-po-skeleton='true'] po-info > *,
 [data-po-skeleton='true'] po-tag > *,
 [data-po-skeleton='true'] po-widget > *,
-/* Navegação e estrutura */
+/* Navegacao e estrutura */
 [data-po-skeleton='true'] po-stepper > *,
 [data-po-skeleton='true'] po-accordion > *,
 [data-po-skeleton='true'] po-tabs > *,
@@ -110,11 +110,12 @@
 
 /* ==============================
    Overlay skeleton (::after)
+   Base para todos os componentes.
    Reutiliza @keyframes po-skeleton-shimmer
    e @keyframes po-skeleton-pulse de po-skeleton.css
    ============================== */
 
-/* Campos de formulário */
+/* Campos de formulario */
 [data-po-skeleton='true'] po-input::after,
 [data-po-skeleton='true'] po-number::after,
 [data-po-skeleton='true'] po-decimal::after,
@@ -138,14 +139,14 @@
 [data-po-skeleton='true'] po-button::after,
 [data-po-skeleton='true'] po-dropdown::after,
 [data-po-skeleton='true'] po-search::after,
-/* Dados e exibição */
+/* Dados e exibicao */
 [data-po-skeleton='true'] po-table::after,
 [data-po-skeleton='true'] po-list-view::after,
 [data-po-skeleton='true'] po-tree-view::after,
 [data-po-skeleton='true'] po-info::after,
 [data-po-skeleton='true'] po-tag::after,
 [data-po-skeleton='true'] po-widget::after,
-/* Navegação e estrutura */
+/* Navegacao e estrutura */
 [data-po-skeleton='true'] po-stepper::after,
 [data-po-skeleton='true'] po-accordion::after,
 [data-po-skeleton='true'] po-tabs::after,
@@ -168,10 +169,31 @@
 }
 
 /* ==============================
-   Ajustes de dimensão por tipo
+   Ajustes de posicao do overlay
+   por tipo de componente.
+
+   Campos com label + input + bottom:
+   o overlay cobre apenas a area do input,
+   nao o bloco inteiro incluindo label.
    ============================== */
 
-/* Campos de formulário: altura mínima */
+/* Campos de formulario padrao: overlay apenas na area de input */
+[data-po-skeleton='true'] po-input::after,
+[data-po-skeleton='true'] po-number::after,
+[data-po-skeleton='true'] po-decimal::after,
+[data-po-skeleton='true'] po-password::after,
+[data-po-skeleton='true'] po-login::after,
+[data-po-skeleton='true'] po-combo::after,
+[data-po-skeleton='true'] po-select::after,
+[data-po-skeleton='true'] po-multiselect::after,
+[data-po-skeleton='true'] po-lookup::after,
+[data-po-skeleton='true'] po-datepicker::after,
+[data-po-skeleton='true'] po-datepicker-range::after {
+  top: auto;
+  height: var(--target-size-aaa);
+}
+
+/* Campos de formulario: altura minima */
 [data-po-skeleton='true'] po-input,
 [data-po-skeleton='true'] po-number,
 [data-po-skeleton='true'] po-decimal,
@@ -186,35 +208,73 @@
   min-height: calc(var(--target-size-aaa) + var(--spacing-md) + var(--font-size-default));
 }
 
-/* Textarea e rich-text: altura maior */
+/* Textarea: overlay cobrindo area do textarea */
+[data-po-skeleton='true'] po-textarea::after {
+  top: auto;
+  height: calc(var(--target-size-aaa) * 2);
+}
+
 [data-po-skeleton='true'] po-textarea {
   min-height: calc(var(--target-size-aaa) * 3);
+}
+
+/* Rich-text: area maior */
+[data-po-skeleton='true'] po-rich-text::after {
+  top: auto;
+  height: calc(var(--target-size-aaa) * 3);
 }
 
 [data-po-skeleton='true'] po-rich-text {
   min-height: calc(var(--target-size-aaa) * 5);
 }
 
-/* Checkbox, radio e switch: compactos com pill border */
+/* Checkbox e switch: overlay compacto na area do controle */
+[data-po-skeleton='true'] po-checkbox::after,
+[data-po-skeleton='true'] po-switch::after {
+  top: auto;
+  bottom: var(--spacing-sm);
+  height: calc(var(--spacing-md) + var(--spacing-xs));
+  width: 50%;
+  right: auto;
+}
+
 [data-po-skeleton='true'] po-checkbox,
-[data-po-skeleton='true'] po-radio,
 [data-po-skeleton='true'] po-switch {
   min-height: var(--target-size-aaa);
 }
 
-[data-po-skeleton='true'] po-checkbox::after,
-[data-po-skeleton='true'] po-radio::after,
-[data-po-skeleton='true'] po-switch::after {
-  border-radius: var(--border-radius-pill);
+/* Radio e radio-group: overlay compacto */
+[data-po-skeleton='true'] po-radio::after {
+  top: auto;
+  height: calc(var(--spacing-md) + var(--spacing-xs));
 }
 
-/* Checkbox-group e radio-group */
+[data-po-skeleton='true'] po-radio {
+  min-height: var(--target-size-aaa);
+}
+
+[data-po-skeleton='true'] po-checkbox-group::after,
+[data-po-skeleton='true'] po-radio-group::after {
+  top: auto;
+  height: calc(var(--target-size-aaa) + var(--spacing-xs));
+}
+
 [data-po-skeleton='true'] po-checkbox-group,
 [data-po-skeleton='true'] po-radio-group {
-  min-height: calc(var(--target-size-aaa) * 2 + var(--spacing-md));
+  min-height: calc(var(--target-size-aaa) + var(--spacing-md));
 }
 
-/* Botão: pill border */
+/* Upload: overlay parcial */
+[data-po-skeleton='true'] po-upload::after {
+  top: auto;
+  height: var(--target-size-aaa);
+}
+
+[data-po-skeleton='true'] po-upload {
+  min-height: calc(var(--target-size-aaa) * 2);
+}
+
+/* Botao: pill border */
 [data-po-skeleton='true'] po-button {
   min-height: var(--target-size-aaa);
   min-width: 6rem;
@@ -258,11 +318,6 @@
   border-radius: var(--border-radius-lg);
 }
 
-/* Upload */
-[data-po-skeleton='true'] po-upload {
-  min-height: calc(var(--target-size-aaa) * 2);
-}
-
 /* Dropdown e search */
 [data-po-skeleton='true'] po-dropdown,
 [data-po-skeleton='true'] po-search {
@@ -291,7 +346,7 @@
 }
 
 /* ==============================
-   Variante de animação: pulse
+   Variante de animacao: pulse
    Reutiliza @keyframes po-skeleton-pulse
    ============================== */
 
@@ -332,7 +387,7 @@
 }
 
 /* ==============================
-   Sem animação
+   Sem animacao
    ============================== */
 
 [data-po-skeleton-animation='none'] po-input::after,

@@ -65,6 +65,28 @@
   user-select: none;
 }
 
+/* Neutraliza skeleton em po-button aninhado dentro de fields.
+   Campos como datepicker, datepicker-range, lookup, password,
+   combo, multiselect possuem po-button interno (ex: icone de
+   calendario, busca, toggle senha). O overlay do campo pai ja
+   cobre toda a area, entao o botao interno nao deve gerar um
+   segundo bloco de skeleton. */
+[data-po-skeleton='true'] po-datepicker po-button,
+[data-po-skeleton='true'] po-datepicker-range po-button,
+[data-po-skeleton='true'] po-lookup po-button,
+[data-po-skeleton='true'] po-password po-button,
+[data-po-skeleton='true'] po-login po-button,
+[data-po-skeleton='true'] po-combo po-button,
+[data-po-skeleton='true'] po-multiselect po-button,
+[data-po-skeleton='true'] po-select po-button,
+[data-po-skeleton='true'] po-upload po-button,
+[data-po-skeleton='true'] po-rich-text po-button,
+[data-po-skeleton='true'] po-search po-button,
+[data-po-skeleton='true'] po-table po-button,
+[data-po-skeleton='true'] po-accordion po-button {
+  display: none;
+}
+
 /* ==============================
    Ocultar conteudo interno
    ============================== */

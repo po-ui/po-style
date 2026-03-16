@@ -1,0 +1,407 @@
+/*------------------------------------*\
+  SKELETON CONTAINER
+
+  Aplica estado visual de skeleton a todos os
+  componentes PO UI descendentes de um container
+  com o atributo [data-po-skeleton="true"].
+
+  Utiliza pseudo-elemento ::after como overlay
+  para não exigir alteração de template interno
+  dos componentes alvo.
+\*------------------------------------*/
+
+/* ==============================
+   Seletores de componentes alvo
+   ============================== */
+
+/* Campos de formulário */
+[data-po-skeleton='true'] po-input,
+[data-po-skeleton='true'] po-number,
+[data-po-skeleton='true'] po-decimal,
+[data-po-skeleton='true'] po-password,
+[data-po-skeleton='true'] po-login,
+[data-po-skeleton='true'] po-combo,
+[data-po-skeleton='true'] po-select,
+[data-po-skeleton='true'] po-multiselect,
+[data-po-skeleton='true'] po-lookup,
+[data-po-skeleton='true'] po-datepicker,
+[data-po-skeleton='true'] po-datepicker-range,
+[data-po-skeleton='true'] po-textarea,
+[data-po-skeleton='true'] po-rich-text,
+[data-po-skeleton='true'] po-checkbox,
+[data-po-skeleton='true'] po-checkbox-group,
+[data-po-skeleton='true'] po-radio,
+[data-po-skeleton='true'] po-radio-group,
+[data-po-skeleton='true'] po-switch,
+[data-po-skeleton='true'] po-upload,
+/* Interativos */
+[data-po-skeleton='true'] po-dropdown,
+[data-po-skeleton='true'] po-search,
+/* Dados e exibição */
+[data-po-skeleton='true'] po-table,
+[data-po-skeleton='true'] po-list-view,
+[data-po-skeleton='true'] po-tree-view,
+[data-po-skeleton='true'] po-info,
+[data-po-skeleton='true'] po-widget,
+/* Navegação e estrutura */
+[data-po-skeleton='true'] po-stepper,
+[data-po-skeleton='true'] po-accordion,
+[data-po-skeleton='true'] po-tabs,
+[data-po-skeleton='true'] po-breadcrumb {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Botões e tags mantêm inline-block */
+[data-po-skeleton='true'] po-button,
+[data-po-skeleton='true'] po-tag {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ==============================
+   Ocultar conteúdo interno
+   ============================== */
+
+/* Campos de formulário */
+[data-po-skeleton='true'] po-input > *,
+[data-po-skeleton='true'] po-number > *,
+[data-po-skeleton='true'] po-decimal > *,
+[data-po-skeleton='true'] po-password > *,
+[data-po-skeleton='true'] po-login > *,
+[data-po-skeleton='true'] po-combo > *,
+[data-po-skeleton='true'] po-select > *,
+[data-po-skeleton='true'] po-multiselect > *,
+[data-po-skeleton='true'] po-lookup > *,
+[data-po-skeleton='true'] po-datepicker > *,
+[data-po-skeleton='true'] po-datepicker-range > *,
+[data-po-skeleton='true'] po-textarea > *,
+[data-po-skeleton='true'] po-rich-text > *,
+[data-po-skeleton='true'] po-checkbox > *,
+[data-po-skeleton='true'] po-checkbox-group > *,
+[data-po-skeleton='true'] po-radio > *,
+[data-po-skeleton='true'] po-radio-group > *,
+[data-po-skeleton='true'] po-switch > *,
+[data-po-skeleton='true'] po-upload > *,
+/* Interativos */
+[data-po-skeleton='true'] po-button > *,
+[data-po-skeleton='true'] po-dropdown > *,
+[data-po-skeleton='true'] po-search > *,
+/* Dados e exibição */
+[data-po-skeleton='true'] po-table > *,
+[data-po-skeleton='true'] po-list-view > *,
+[data-po-skeleton='true'] po-tree-view > *,
+[data-po-skeleton='true'] po-info > *,
+[data-po-skeleton='true'] po-tag > *,
+[data-po-skeleton='true'] po-widget > *,
+/* Navegação e estrutura */
+[data-po-skeleton='true'] po-stepper > *,
+[data-po-skeleton='true'] po-accordion > *,
+[data-po-skeleton='true'] po-tabs > *,
+[data-po-skeleton='true'] po-breadcrumb > * {
+  visibility: hidden;
+}
+
+/* ==============================
+   Overlay skeleton (::after)
+   ============================== */
+
+@keyframes po-skeleton-container-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Campos de formulário */
+[data-po-skeleton='true'] po-input::after,
+[data-po-skeleton='true'] po-number::after,
+[data-po-skeleton='true'] po-decimal::after,
+[data-po-skeleton='true'] po-password::after,
+[data-po-skeleton='true'] po-login::after,
+[data-po-skeleton='true'] po-combo::after,
+[data-po-skeleton='true'] po-select::after,
+[data-po-skeleton='true'] po-multiselect::after,
+[data-po-skeleton='true'] po-lookup::after,
+[data-po-skeleton='true'] po-datepicker::after,
+[data-po-skeleton='true'] po-datepicker-range::after,
+[data-po-skeleton='true'] po-textarea::after,
+[data-po-skeleton='true'] po-rich-text::after,
+[data-po-skeleton='true'] po-checkbox::after,
+[data-po-skeleton='true'] po-checkbox-group::after,
+[data-po-skeleton='true'] po-radio::after,
+[data-po-skeleton='true'] po-radio-group::after,
+[data-po-skeleton='true'] po-switch::after,
+[data-po-skeleton='true'] po-upload::after,
+/* Interativos */
+[data-po-skeleton='true'] po-button::after,
+[data-po-skeleton='true'] po-dropdown::after,
+[data-po-skeleton='true'] po-search::after,
+/* Dados e exibição */
+[data-po-skeleton='true'] po-table::after,
+[data-po-skeleton='true'] po-list-view::after,
+[data-po-skeleton='true'] po-tree-view::after,
+[data-po-skeleton='true'] po-info::after,
+[data-po-skeleton='true'] po-tag::after,
+[data-po-skeleton='true'] po-widget::after,
+/* Navegação e estrutura */
+[data-po-skeleton='true'] po-stepper::after,
+[data-po-skeleton='true'] po-accordion::after,
+[data-po-skeleton='true'] po-tabs::after,
+[data-po-skeleton='true'] po-breadcrumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  visibility: visible;
+  background-color: var(--po-skeleton-container-color, var(--color-neutral-light-20));
+  border-radius: var(--po-skeleton-container-border-radius, var(--border-radius-md));
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    90deg,
+    var(--po-skeleton-container-color, var(--color-neutral-light-20)) 0%,
+    var(--po-skeleton-container-shimmer-highlight, var(--color-neutral-light-30)) 50%,
+    var(--po-skeleton-container-color, var(--color-neutral-light-20)) 100%
+  );
+  animation: po-skeleton-container-shimmer var(--po-skeleton-container-animation-duration, 3s)
+    var(--po-skeleton-container-animation-timing, ease-in-out) infinite;
+}
+
+/* ==============================
+   Ajustes por tipo de componente
+   ============================== */
+
+/* Campos de formulário: altura mínima para manter dimensão visual */
+[data-po-skeleton='true'] po-input,
+[data-po-skeleton='true'] po-number,
+[data-po-skeleton='true'] po-decimal,
+[data-po-skeleton='true'] po-password,
+[data-po-skeleton='true'] po-login,
+[data-po-skeleton='true'] po-combo,
+[data-po-skeleton='true'] po-select,
+[data-po-skeleton='true'] po-multiselect,
+[data-po-skeleton='true'] po-lookup,
+[data-po-skeleton='true'] po-datepicker,
+[data-po-skeleton='true'] po-datepicker-range {
+  min-height: calc(var(--target-size-aaa) + var(--spacing-md) + var(--font-size-default));
+}
+
+/* Textarea e rich-text: altura maior */
+[data-po-skeleton='true'] po-textarea {
+  min-height: calc(var(--target-size-aaa) * 3);
+}
+
+[data-po-skeleton='true'] po-rich-text {
+  min-height: calc(var(--target-size-aaa) * 5);
+}
+
+/* Checkbox, radio e switch: altura compacta */
+[data-po-skeleton='true'] po-checkbox,
+[data-po-skeleton='true'] po-radio,
+[data-po-skeleton='true'] po-switch {
+  min-height: var(--target-size-aaa);
+}
+
+[data-po-skeleton='true'] po-checkbox::after,
+[data-po-skeleton='true'] po-radio::after,
+[data-po-skeleton='true'] po-switch::after {
+  border-radius: var(--po-skeleton-container-border-radius, var(--border-radius-pill));
+}
+
+/* Checkbox-group e radio-group: mais espaço */
+[data-po-skeleton='true'] po-checkbox-group,
+[data-po-skeleton='true'] po-radio-group {
+  min-height: calc(var(--target-size-aaa) * 2 + var(--spacing-md));
+}
+
+/* Botão: borda arredondada */
+[data-po-skeleton='true'] po-button {
+  min-height: var(--target-size-aaa);
+  min-width: 6rem;
+}
+
+[data-po-skeleton='true'] po-button::after {
+  border-radius: var(--po-skeleton-container-border-radius, var(--border-radius-pill));
+}
+
+/* Tag: pequeno com pill border */
+[data-po-skeleton='true'] po-tag {
+  min-height: var(--spacing-md);
+  min-width: 4rem;
+}
+
+[data-po-skeleton='true'] po-tag::after {
+  border-radius: var(--po-skeleton-container-border-radius, var(--border-radius-pill));
+}
+
+/* Tabela: altura significativa */
+[data-po-skeleton='true'] po-table {
+  min-height: 12rem;
+}
+
+/* List view: altura significativa */
+[data-po-skeleton='true'] po-list-view {
+  min-height: 10rem;
+}
+
+/* Tree view */
+[data-po-skeleton='true'] po-tree-view {
+  min-height: 8rem;
+}
+
+/* Widget: altura de card */
+[data-po-skeleton='true'] po-widget {
+  min-height: 8rem;
+}
+
+[data-po-skeleton='true'] po-widget::after {
+  border-radius: var(--po-skeleton-container-border-radius, var(--border-radius-lg));
+}
+
+/* Upload: altura intermediária */
+[data-po-skeleton='true'] po-upload {
+  min-height: calc(var(--target-size-aaa) * 2);
+}
+
+/* Dropdown e search */
+[data-po-skeleton='true'] po-dropdown,
+[data-po-skeleton='true'] po-search {
+  min-height: var(--target-size-aaa);
+}
+
+/* Stepper e tabs */
+[data-po-skeleton='true'] po-stepper,
+[data-po-skeleton='true'] po-tabs {
+  min-height: var(--target-size-aaa);
+}
+
+/* Breadcrumb */
+[data-po-skeleton='true'] po-breadcrumb {
+  min-height: var(--spacing-lg);
+}
+
+/* Info */
+[data-po-skeleton='true'] po-info {
+  min-height: calc(var(--font-size-default) * 2 + var(--spacing-xs));
+}
+
+/* Accordion */
+[data-po-skeleton='true'] po-accordion {
+  min-height: calc(var(--target-size-aaa) * 2);
+}
+
+/* ==============================
+   Variante de animação: pulse
+   ============================== */
+
+@keyframes po-skeleton-container-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+[data-po-skeleton-animation='pulse'] po-input::after,
+[data-po-skeleton-animation='pulse'] po-number::after,
+[data-po-skeleton-animation='pulse'] po-decimal::after,
+[data-po-skeleton-animation='pulse'] po-password::after,
+[data-po-skeleton-animation='pulse'] po-login::after,
+[data-po-skeleton-animation='pulse'] po-combo::after,
+[data-po-skeleton-animation='pulse'] po-select::after,
+[data-po-skeleton-animation='pulse'] po-multiselect::after,
+[data-po-skeleton-animation='pulse'] po-lookup::after,
+[data-po-skeleton-animation='pulse'] po-datepicker::after,
+[data-po-skeleton-animation='pulse'] po-datepicker-range::after,
+[data-po-skeleton-animation='pulse'] po-textarea::after,
+[data-po-skeleton-animation='pulse'] po-rich-text::after,
+[data-po-skeleton-animation='pulse'] po-checkbox::after,
+[data-po-skeleton-animation='pulse'] po-checkbox-group::after,
+[data-po-skeleton-animation='pulse'] po-radio::after,
+[data-po-skeleton-animation='pulse'] po-radio-group::after,
+[data-po-skeleton-animation='pulse'] po-switch::after,
+[data-po-skeleton-animation='pulse'] po-upload::after,
+[data-po-skeleton-animation='pulse'] po-button::after,
+[data-po-skeleton-animation='pulse'] po-dropdown::after,
+[data-po-skeleton-animation='pulse'] po-search::after,
+[data-po-skeleton-animation='pulse'] po-table::after,
+[data-po-skeleton-animation='pulse'] po-list-view::after,
+[data-po-skeleton-animation='pulse'] po-tree-view::after,
+[data-po-skeleton-animation='pulse'] po-info::after,
+[data-po-skeleton-animation='pulse'] po-tag::after,
+[data-po-skeleton-animation='pulse'] po-widget::after,
+[data-po-skeleton-animation='pulse'] po-stepper::after,
+[data-po-skeleton-animation='pulse'] po-accordion::after,
+[data-po-skeleton-animation='pulse'] po-tabs::after,
+[data-po-skeleton-animation='pulse'] po-breadcrumb::after {
+  background-image: none;
+  animation: po-skeleton-container-pulse var(--po-skeleton-container-animation-duration, 1.5s)
+    var(--po-skeleton-container-animation-timing, ease-in-out) infinite;
+}
+
+/* ==============================
+   Sem animação
+   ============================== */
+
+[data-po-skeleton-animation='none'] po-input::after,
+[data-po-skeleton-animation='none'] po-number::after,
+[data-po-skeleton-animation='none'] po-decimal::after,
+[data-po-skeleton-animation='none'] po-password::after,
+[data-po-skeleton-animation='none'] po-login::after,
+[data-po-skeleton-animation='none'] po-combo::after,
+[data-po-skeleton-animation='none'] po-select::after,
+[data-po-skeleton-animation='none'] po-multiselect::after,
+[data-po-skeleton-animation='none'] po-lookup::after,
+[data-po-skeleton-animation='none'] po-datepicker::after,
+[data-po-skeleton-animation='none'] po-datepicker-range::after,
+[data-po-skeleton-animation='none'] po-textarea::after,
+[data-po-skeleton-animation='none'] po-rich-text::after,
+[data-po-skeleton-animation='none'] po-checkbox::after,
+[data-po-skeleton-animation='none'] po-checkbox-group::after,
+[data-po-skeleton-animation='none'] po-radio::after,
+[data-po-skeleton-animation='none'] po-radio-group::after,
+[data-po-skeleton-animation='none'] po-switch::after,
+[data-po-skeleton-animation='none'] po-upload::after,
+[data-po-skeleton-animation='none'] po-button::after,
+[data-po-skeleton-animation='none'] po-dropdown::after,
+[data-po-skeleton-animation='none'] po-search::after,
+[data-po-skeleton-animation='none'] po-table::after,
+[data-po-skeleton-animation='none'] po-list-view::after,
+[data-po-skeleton-animation='none'] po-tree-view::after,
+[data-po-skeleton-animation='none'] po-info::after,
+[data-po-skeleton-animation='none'] po-tag::after,
+[data-po-skeleton-animation='none'] po-widget::after,
+[data-po-skeleton-animation='none'] po-stepper::after,
+[data-po-skeleton-animation='none'] po-accordion::after,
+[data-po-skeleton-animation='none'] po-tabs::after,
+[data-po-skeleton-animation='none'] po-breadcrumb::after {
+  animation: none;
+  background-image: none;
+}
+
+/* ==============================
+   Acessibilidade: sr-only label
+   ============================== */
+
+[data-po-skeleton='true']::before {
+  content: attr(data-po-skeleton-label);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

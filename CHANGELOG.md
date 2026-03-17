@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.6.0](https://github.com/po-ui/po-style/compare/v21.5.0...v21.6.0) (2026-03-17)
+
+
+### Features
+
+* **components:** alterna size por nível de acessibilidade ([b5b1ca9](https://github.com/po-ui/po-style/commit/b5b1ca986ded716204a0df846ed408576c56cb6e))
+* **skeleton:** implementa componente po-skeleton ([166a0f3](https://github.com/po-ui/po-style/commit/166a0f3bffb097d5ac0a57272596b21b574abd05))
+
+
+
 # [21.5.0](https://github.com/po-ui/po-style/compare/v21.4.0...v21.5.0) (2026-03-10)
 
 

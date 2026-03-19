@@ -1,0 +1,209 @@
+.po-timer {
+  background-color: var(--background, var(--color-neutral-light-00));
+  border: var(--border-width-sm) solid var(--border-color, var(--color-neutral-light-20));
+  border-radius: var(--border-radius, var(--border-radius-md));
+  box-shadow: var(--shadow, var(--shadow-md));
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-sm);
+  user-select: none;
+  width: auto;
+}
+
+.po-timer-columns {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: flex-start;
+}
+
+.po-timer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  overflow-y: auto;
+  max-height: 19rem;
+  scrollbar-width: thin;
+}
+
+.po-timer-column::-webkit-scrollbar {
+  width: 4px;
+}
+
+.po-timer-column::-webkit-scrollbar-thumb {
+  background-color: var(--color-neutral-light-20);
+  border-radius: var(--border-radius-md);
+}
+
+.po-timer-column-separator {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color, var(--color-neutral-dark-90));
+  padding-top: var(--spacing-xs);
+}
+
+.po-timer-column-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-color-label, var(--color-neutral-dark-70));
+  padding-bottom: var(--spacing-xxs);
+  text-align: center;
+}
+
+/* Timer cell */
+.po-timer-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--spacing-xl);
+  height: var(--target-size-aaa);
+  border-radius: var(--border-radius-cell, var(--border-radius-md));
+  font-family: var(--font-family, var(--font-family-text));
+  font-size: var(--font-size, var(--font-size-default));
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color-cell, var(--color-action-default));
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: var(--duration-extra-fast);
+  transition-timing-function: var(--timing-standart);
+  padding: 0;
+}
+
+.po-timer-cell:hover {
+  background-color: var(--color-hover, var(--color-brand-01-lighter));
+  color: var(--text-color-hover, var(--color-neutral-dark-90));
+}
+
+.po-timer-cell:focus-visible {
+  outline-color: var(--outline-color-focused, var(--color-action-focus));
+  outline-style: solid;
+  outline-width: var(--border-width-lg);
+  outline-offset: var(--border-radius-sm);
+}
+
+.po-timer-cell-selected {
+  background-color: var(--color-selected, var(--color-brand-01-light));
+  color: var(--text-color-selected, var(--color-neutral-dark-90));
+}
+
+.po-timer-cell-selected:focus-visible {
+  outline-color: var(--color-action-focus);
+  outline-style: solid;
+  outline-width: var(--border-width-lg);
+  outline-offset: var(--focus-aa);
+}
+
+.po-timer-cell-disabled {
+  color: var(--text-color-disabled, var(--color-action-disabled));
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.po-timer-cell-disabled:hover {
+  background-color: transparent;
+}
+
+/* AM/PM toggle */
+.po-timer-period {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding-top: var(--spacing-md);
+}
+
+.po-timer-period-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--spacing-xl);
+  height: var(--target-size-aaa);
+  border-radius: var(--border-radius-md);
+  font-family: var(--font-family, var(--font-family-text));
+  font-size: var(--font-size, var(--font-size-default));
+  font-weight: var(--font-weight-bold);
+  color: var(--color-action-default);
+  background-color: transparent;
+  border: var(--border-width-sm) solid transparent;
+  cursor: pointer;
+  padding: var(--spacing-squish-xs);
+  transition-property: all;
+  transition-duration: var(--duration-extra-fast);
+  transition-timing-function: var(--timing-standart);
+}
+
+.po-timer-period-button:hover {
+  background-color: var(--color-brand-01-lighter);
+  color: var(--color-neutral-dark-90);
+}
+
+.po-timer-period-button:focus-visible {
+  outline-color: var(--outline-color-focused, var(--color-action-focus));
+  outline-style: solid;
+  outline-width: var(--border-width-lg);
+  outline-offset: var(--border-radius-sm);
+}
+
+.po-timer-period-button-selected {
+  background-color: var(--color-brand-01-light);
+  color: var(--color-neutral-dark-90);
+}
+
+/* Size small (AA) */
+po-timer[p-size='small'] .po-timer {
+  padding: var(--spacing-xs);
+}
+
+po-timer[p-size='small'] .po-timer-columns {
+  gap: var(--spacing-xs);
+}
+
+po-timer[p-size='small'] .po-timer-column {
+  gap: var(--spacing-xxs);
+  max-height: 15rem;
+}
+
+po-timer[p-size='small'] .po-timer-column-separator {
+  font-size: var(--font-size-sm);
+}
+
+po-timer[p-size='small'] .po-timer-column-label {
+  font-size: var(--font-size-xs);
+}
+
+po-timer[p-size='small'] .po-timer-cell {
+  width: var(--spacing-lg);
+  height: var(--target-size-aa);
+  font-size: var(--font-size-sm);
+}
+
+po-timer[p-size='small'] .po-timer-cell:focus-visible {
+  outline-width: var(--border-width-md);
+}
+
+po-timer[p-size='small'] .po-timer-cell-selected:focus-visible {
+  outline-width: var(--border-width-md);
+}
+
+po-timer[p-size='small'] .po-timer-period-button {
+  min-width: var(--spacing-lg);
+  height: var(--target-size-aa);
+  font-size: var(--font-size-sm);
+}
+
+/* AA accessibility override */
+[data-a11y='AA'] .po-timer-cell:focus-visible {
+  outline-width: var(--border-width-md);
+}
+
+[data-a11y='AA'] .po-timer-cell-selected:focus-visible {
+  outline-width: var(--border-width-md);
+}
+
+[data-a11y='AA'] .po-timer-period-button:focus-visible {
+  outline-width: var(--border-width-md);
+}

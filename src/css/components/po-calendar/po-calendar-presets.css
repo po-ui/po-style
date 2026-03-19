@@ -1,0 +1,41 @@
+/* Layout com painel lateral de presets */
+.po-calendar-with-presets {
+  display: inline-flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.po-calendar-with-presets .po-calendar-footer {
+  justify-content: center;
+}
+
+.po-calendar-preset-list {
+  display: flex;
+  flex-direction: column;
+  border-right-style: solid;
+  border-right-width: var(--border-width);
+  border-right-color: var(--border-color);
+  padding: var(--spacing-xs);
+  min-width: 9rem;
+  max-width: 12.75rem;
+  height: 0;
+  min-height: 100%;
+  overflow-y: auto;
+  gap: 8px;
+}
+
+po-calendar[p-size='small'] .po-calendar-preset-list {
+  max-width: 10.5rem;
+}
+
+po-calendar .po-calendar-preset-list .po-button {
+  width: 100%;
+}
+
+po-calendar[p-size='small'] .po-calendar-with-presets.po-calendar {
+  width: auto;
+}
+
+po-calendar[p-size='small'] .po-calendar.po-calendar-with-presets .po-calendar-wrapper {
+  width: 21rem;
+}

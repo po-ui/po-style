@@ -18,6 +18,7 @@
   padding: var(--spacing-xs);
   min-width: 9rem;
   max-width: 12.75rem;
+  max-height: 386px;
   height: 0;
   min-height: 100%;
   overflow-y: auto;
@@ -26,6 +27,7 @@
 
 po-calendar[p-size='small'] .po-calendar-preset-list {
   max-width: 10.5rem;
+  max-height: 298px;
 }
 
 po-calendar .po-calendar-preset-list .po-button {
@@ -38,4 +40,26 @@ po-calendar[p-size='small'] .po-calendar-with-presets.po-calendar {
 
 po-calendar[p-size='small'] .po-calendar.po-calendar-with-presets .po-calendar-wrapper {
   width: 21rem;
+}
+
+/* Layout mobile: presets abaixo do calendário */
+.po-calendar-with-presets.po-calendar-mobile {
+  flex-direction: column;
+}
+
+.po-calendar-mobile .po-calendar-preset-list {
+  border-right: none;
+  border-top-style: solid;
+  border-top-width: var(--border-width);
+  border-top-color: var(--border-color);
+  min-width: unset;
+  max-width: unset;
+  width: 100%;
+  height: auto;
+  min-height: unset;
+  max-height: 386px;
+}
+
+po-calendar[p-size='small'] .po-calendar-mobile .po-calendar-preset-list {
+  max-height: 298px;
 }

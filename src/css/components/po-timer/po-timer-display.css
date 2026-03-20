@@ -1,0 +1,54 @@
+/* Estilizacao do po-button como celula do timer */
+po-timer .po-timer-display {
+  display: inline-block;
+}
+
+po-timer po-button.po-timer-display {
+  --color: var(--color-display);
+  --font-weight: var(--font-weight-display);
+  --border-radius: var(--border-radius-display);
+
+  /* HOVER */
+  --color-hover: var(--color-hover-display);
+  --border-color-hover: var(--color-hover-display);
+  --background-hover: var(--background-hover-display);
+
+  /* FOCUS */
+  --outline-color-focused: var(--outline-color-focused-display);
+
+  /* PRESSED */
+  --background-pressed: var(--background-pressed-display);
+
+  /* DISABLED */
+  --color-disabled: var(--color-disabled-display);
+}
+
+po-timer .po-timer-display .po-button {
+  width: var(--display-size);
+  height: var(--display-size);
+  max-width: unset;
+  max-height: unset;
+
+  padding: 0;
+
+  transition-property: var(--transition-property);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing);
+}
+
+/* SELECTED */
+po-timer .po-timer-display-selected .po-button,
+po-timer .po-timer-display-selected .po-button[p-kind='tertiary']:hover {
+  background-color: var(--background-selected-display);
+  color: var(--color-selected-display);
+}
+
+/* Coluna AM/PM */
+.po-timer-column-period {
+  overflow: visible;
+}
+
+.po-timer-period-scroll {
+  overflow: visible;
+  max-height: none;
+}

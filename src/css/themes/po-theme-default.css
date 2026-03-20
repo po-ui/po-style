@@ -543,6 +543,38 @@ po-calendar {
   --day-cell-transition-timing: var(--timing-standart);
 }
 
+po-timer {
+  /* BASE */
+  --background: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-20);
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --shadow: var(--shadow-md);
+
+  /* CELLS - DISPLAY */
+  --color-display: var(--color-action-default);
+  --font-weight-display: var(--font-weight-bold);
+  --border-radius-display: var(--border-radius-md);
+
+  /* HOVER */
+  --color-hover-display: var(--color-brand-01-darkest);
+  --background-hover-display: var(--color-brand-01-lighter);
+
+  /* FOCUS */
+  --outline-color-focused-display: var(--color-brand-01-darkest);
+
+  /* PRESSED */
+  --background-pressed-display: var(--color-brand-01-light);
+
+  /* DISABLED */
+  --color-disabled-display: var(--color-neutral-light-30);
+
+  /* TRANSITIONS */
+  --transition-duration: var(--duration-extra-fast);
+  --transition-property: all;
+  --transition-timing: var(--timing-standart);
+}
+
 :root {
   /*------------------------------------*\
   CALENDAR
@@ -900,6 +932,7 @@ po-number,
 po-datepicker,
 po-datepicker-range,
 po-datepicker-range .po-input,
+po-timepicker,
 div.po-lookup-filter-content input.po-input,
 input.po-input {
   --font-family: var(--font-family-theme);

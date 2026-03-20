@@ -1,0 +1,34 @@
+/* TOKENS INTERNOS */
+po-timer {
+  --padding: var(--spacing-sm);
+  --row-gap: var(--spacing-xs);
+  --border-style: solid;
+
+  --display-size: var(--target-size-aaa);
+  --color-selected-display: var(--color-hover-display);
+  --background-selected-display: var(--background-pressed-display);
+}
+
+po-timer[p-size='small'] {
+  --display-size: var(--target-size-aa);
+}
+
+.po-timer {
+  background-color: var(--background);
+  border-style: var(--border-style);
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
+  border-width: var(--border-width);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.po-timer-wrapper {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}

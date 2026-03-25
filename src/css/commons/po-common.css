@@ -2,6 +2,7 @@
   --collapsed-menu-width: 56px;
   --menu-width: 290px;
   --menu-panel-width: 56px;
+  --menu-mobile-height: 40px;
 
   --full-wrapper: {
     top: 0;
@@ -84,42 +85,244 @@
 .po-wrapper,
 .po-wrapper-menu-panel {
   background-color: var(--color-wrapper-menu-panel-color-background);
-  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   max-width: 100%;
   overflow: hidden;
+}
+
+/* po-menu host element: position fixed para não consumir espaço
+   no flex layout do wrapper (conteúdo interno .po-menu já é fixed) */
+.po-wrapper > po-menu,
+.po-wrapper-menu-panel > po-menu-panel {
+  display: block;
+  flex: none;
+  height: 0;
+  overflow: visible;
+}
+
+/* Garante que o componente roteado (irmão seguinte do router-outlet)
+   participe do flex layout do wrapper */
+.po-wrapper > router-outlet + *,
+.po-wrapper-menu-panel > router-outlet + * {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Garante que componentes de page participem do flex layout do wrapper,
+   mesmo sem router-outlet (ex: samples com po-menu direto) */
+.po-wrapper > po-page-default,
+.po-wrapper > po-page-detail,
+.po-wrapper > po-page-edit,
+.po-wrapper > po-page-list,
+.po-wrapper-menu-panel > po-page-default,
+.po-wrapper-menu-panel > po-page-detail,
+.po-wrapper-menu-panel > po-page-edit,
+.po-wrapper-menu-panel > po-page-list {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .po-wrapper .po-page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  flex: 1 1 0%;
+  min-height: 0;
+  overflow: hidden;
   transition: all 0.2s ease;
   white-space: normal;
 }
 
-.po-wrapper .po-page,
-.po-wrapper .po-toolbar {
+.po-wrapper > po-menu ~ :is(po-page-default, po-page-detail, po-page-edit, po-page-list) > po-page > .po-page,
+.po-wrapper > .po-menu ~ :is(po-page-default, po-page-detail, po-page-edit, po-page-list) > po-page > .po-page,
+.po-wrapper
+  > po-menu
+  ~ router-outlet
+  + *
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper
+  > .po-menu
+  ~ router-outlet
+  + *
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper:has(> po-menu) > :is(po-page-default, po-page-detail, po-page-edit, po-page-list) > po-page > .po-page,
+.po-wrapper:has(> .po-menu) > :is(po-page-default, po-page-detail, po-page-edit, po-page-list) > po-page > .po-page,
+.po-wrapper:has(> po-menu)
+  > router-outlet
+  + *
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper:has(> .po-menu)
+  > router-outlet
+  + *
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper:not(.po-collapsed-menu):has(> po-menu) > po-toolbar .po-toolbar,
+.po-wrapper:not(.po-collapsed-menu):has(> .po-menu) > po-toolbar .po-toolbar,
+.po-wrapper:not(.po-collapsed-menu):has(> po-menu) > .po-toolbar,
+.po-wrapper:not(.po-collapsed-menu):has(> .po-menu) > .po-toolbar {
   margin-left: var(--menu-width);
   width: calc(100% - var(--menu-width));
 }
 
 .po-wrapper-menu-panel .po-page {
-  display: inline-block;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  min-height: 0;
+  overflow: hidden;
   transition: all 0.2s ease;
   white-space: normal;
 }
 
-.po-wrapper-menu-panel .po-page,
-.po-wrapper-menu-panel .po-toolbar {
+.po-wrapper-menu-panel
+  > po-menu-panel
+  ~ :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper-menu-panel
+  > .po-menu-panel
+  ~ :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper-menu-panel
+  > po-menu-panel
+  ~ router-outlet
+  + *
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper-menu-panel
+  > .po-menu-panel
+  ~ router-outlet
+  + *
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper-menu-panel:has(> po-menu-panel)
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper-menu-panel:has(> .po-menu-panel)
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper-menu-panel:has(> po-menu-panel)
+  > router-outlet
+  + *
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper-menu-panel:has(> .po-menu-panel)
+  > router-outlet
+  + *
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper-menu-panel:has(> po-menu-panel) > po-toolbar .po-toolbar,
+.po-wrapper-menu-panel:has(> .po-menu-panel) > po-toolbar .po-toolbar,
+.po-wrapper-menu-panel:has(> po-menu-panel) > .po-toolbar,
+.po-wrapper-menu-panel:has(> .po-menu-panel) > .po-toolbar {
   margin-left: var(--menu-panel-width);
   width: calc(100% - var(--menu-panel-width));
 }
 
-.po-wrapper.po-collapsed-menu .po-page,
-.po-wrapper.po-collapsed-menu .po-toolbar {
+.po-wrapper.po-collapsed-menu
+  > po-menu
+  ~ :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper.po-collapsed-menu
+  > .po-menu
+  ~ :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper.po-collapsed-menu
+  > po-menu
+  ~ router-outlet
+  + *
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper.po-collapsed-menu
+  > .po-menu
+  ~ router-outlet
+  + *
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper.po-collapsed-menu:has(> po-menu)
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper.po-collapsed-menu:has(> .po-menu)
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper.po-collapsed-menu:has(> po-menu)
+  > router-outlet
+  + *
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper.po-collapsed-menu:has(> .po-menu)
+  > router-outlet
+  + *
+  > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+  > po-page
+  > .po-page,
+.po-wrapper.po-collapsed-menu:has(> po-menu) > po-toolbar .po-toolbar,
+.po-wrapper.po-collapsed-menu:has(> .po-menu) > po-toolbar .po-toolbar,
+.po-wrapper.po-collapsed-menu:has(> po-menu) > .po-toolbar,
+.po-wrapper.po-collapsed-menu:has(> .po-menu) > .po-toolbar {
   margin-left: var(--collapsed-menu-width);
   width: calc(100% - var(--collapsed-menu-width));
+}
+
+/* Regras deterministicas para wrappers aninhados em po-page-content.
+   Evita dependencia de :has e neutraliza comportamento de viewport/flex. */
+.po-page-content > .po-wrapper,
+.po-page-content > .po-wrapper-menu-panel {
+  flex-direction: column;
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+  position: relative;
+}
+
+.po-page-content > .po-wrapper > :is(po-page-default, po-page-detail, po-page-edit, po-page-list),
+.po-page-content > .po-wrapper-menu-panel > :is(po-page-default, po-page-detail, po-page-edit, po-page-list),
+.po-page-content > .po-wrapper-menu-panel > router-outlet + *,
+.po-page-content > .po-wrapper > router-outlet + * {
+  flex: none;
+}
+
+.po-page-content > .po-wrapper .po-page,
+.po-page-content > .po-wrapper-menu-panel .po-page {
+  flex: none;
+  min-height: 0;
+  height: auto;
+  overflow: visible;
+}
+
+/* Reset para nested .po.page — considera apenas o nested mais proximo */
+.po-wrapper .po-page > .po-page-content > .po-page,
+.po-wrapper.po-collapsed-menu .po-page > .po-page-content > .po-page,
+.po-wrapper-menu-panel .po-page > .po-page-content > .po-page {
+  margin-left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .po-wrapper .po-page .po-page-content,
@@ -129,8 +332,11 @@
   width: 100%;
 }
 
-.po-wrapper .po-toolbar,
-.po-wrapper-menu-panel .po-toolbar {
+.po-wrapper > po-toolbar .po-toolbar,
+.po-wrapper > .po-toolbar,
+.po-wrapper-menu-panel > po-toolbar .po-toolbar,
+.po-wrapper-menu-panel > .po-toolbar {
+  flex-shrink: 0;
   padding-left: 16px;
   transition: all 0.2s ease;
 }
@@ -175,19 +381,144 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .po-wrapper .po-toolbar,
-  .po-wrapper.po-collapsed-menu .po-toolbar {
+  /* Em <=1200 o menu deixa de ocupar coluna lateral fixa.
+     Mesmo com po-menu/po-menu-panel presente no DOM, o page/toolbar
+     nao deve manter margin-left de desktop. */
+  .po-wrapper > po-menu ~ :is(po-page-default, po-page-detail, po-page-edit, po-page-list) > po-page > .po-page,
+  .po-wrapper > .po-menu ~ :is(po-page-default, po-page-detail, po-page-edit, po-page-list) > po-page > .po-page,
+  .po-wrapper
+    > po-menu
+    ~ router-outlet
+    + *
+    > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page,
+  .po-wrapper
+    > .po-menu
+    ~ router-outlet
+    + *
+    > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page,
+  .po-wrapper:has(> po-menu) > :is(po-page-default, po-page-detail, po-page-edit, po-page-list) > po-page > .po-page,
+  .po-wrapper:has(> .po-menu) > :is(po-page-default, po-page-detail, po-page-edit, po-page-list) > po-page > .po-page,
+  .po-wrapper:has(> po-menu)
+    > router-outlet
+    + *
+    > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page,
+  .po-wrapper:has(> .po-menu)
+    > router-outlet
+    + *
+    > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page,
+  .po-wrapper.po-collapsed-menu
+    > po-menu
+    ~ :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page,
+  .po-wrapper.po-collapsed-menu
+    > .po-menu
+    ~ :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page,
+  .po-wrapper.po-collapsed-menu
+    > po-menu
+    ~ router-outlet
+    + *
+    > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page,
+  .po-wrapper.po-collapsed-menu
+    > .po-menu
+    ~ router-outlet
+    + *
+    > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page,
+  .po-wrapper.po-collapsed-menu:has(> po-menu)
+    > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page,
+  .po-wrapper.po-collapsed-menu:has(> .po-menu)
+    > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page,
+  .po-wrapper.po-collapsed-menu:has(> po-menu)
+    > router-outlet
+    + *
+    > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page,
+  .po-wrapper.po-collapsed-menu:has(> .po-menu)
+    > router-outlet
+    + *
+    > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .po-wrapper > po-toolbar .po-toolbar,
+  .po-wrapper > .po-toolbar,
+  .po-wrapper:not(.po-collapsed-menu):has(> po-menu) > po-toolbar .po-toolbar,
+  .po-wrapper:not(.po-collapsed-menu):has(> .po-menu) > po-toolbar .po-toolbar,
+  .po-wrapper:not(.po-collapsed-menu):has(> po-menu) > .po-toolbar,
+  .po-wrapper:not(.po-collapsed-menu):has(> .po-menu) > .po-toolbar,
+  .po-wrapper.po-collapsed-menu > po-toolbar .po-toolbar,
+  .po-wrapper.po-collapsed-menu > .po-toolbar,
+  .po-wrapper.po-collapsed-menu:has(> po-menu) > po-toolbar .po-toolbar,
+  .po-wrapper.po-collapsed-menu:has(> .po-menu) > po-toolbar .po-toolbar,
+  .po-wrapper.po-collapsed-menu:has(> po-menu) > .po-toolbar,
+  .po-wrapper.po-collapsed-menu:has(> .po-menu) > .po-toolbar {
     margin-left: 44px;
     padding-left: 24px;
     position: fixed;
     width: calc(100% - 44px);
   }
 
-  .po-wrapper .po-page {
-    display: block;
+  .po-wrapper > :is(po-page-default, po-page-detail, po-page-edit, po-page-list) > po-page > .po-page,
+  .po-wrapper
+    > router-outlet
+    + *
+    > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page,
+  .po-wrapper.po-collapsed-menu > :is(po-page-default, po-page-detail, po-page-edit, po-page-list) > po-page > .po-page,
+  .po-wrapper.po-collapsed-menu
+    > router-outlet
+    + *
+    > :is(po-page-default, po-page-detail, po-page-edit, po-page-list)
+    > po-page
+    > .po-page {
     margin-left: 0;
-    transition: all 0.2s ease;
+    min-height: 0;
+    overflow: visible;
     width: 100%;
+  }
+
+  /* Em mobile, o host do menu nao deve permanecer com height: 0. */
+  .po-wrapper > po-menu {
+    flex: 0 0 var(--menu-mobile-height);
+    height: var(--menu-mobile-height);
+    overflow: visible;
+  }
+
+  /* Com header/navbar, o botao hamburger fica no topo do header.
+     Nesses cenarios, nao deve reservar espaco extra no host do menu. */
+  po-header ~ .po-wrapper > po-menu,
+  po-header ~ .po-wrapper-menu-panel > po-menu-panel,
+  po-header ~ .po-wrapper .po-wrapper > po-menu,
+  po-header ~ .po-wrapper .po-wrapper-menu-panel > po-menu-panel,
+  po-navbar ~ .po-wrapper > po-menu,
+  po-navbar ~ .po-wrapper-menu-panel > po-menu-panel,
+  po-navbar ~ .po-wrapper .po-wrapper > po-menu,
+  po-navbar ~ .po-wrapper .po-wrapper-menu-panel > po-menu-panel {
+    flex: none;
+    height: 0;
   }
 
   .po-wrapper .po-page-header,
@@ -202,17 +533,37 @@
     margin: 0;
     width: 100%;
   }
+
+  /* Reset nested .po-page em responsive */
+  .po-wrapper .po-page > .po-page-content > .po-page,
+  .po-wrapper.po-collapsed-menu .po-page > .po-page-content > .po-page {
+    margin-left: 0;
+    width: 100%;
+    left: auto;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  .po-wrapper .po-toolbar {
+  .po-wrapper > po-toolbar .po-toolbar,
+  .po-wrapper > .po-toolbar,
+  .po-wrapper:not(.po-collapsed-menu):has(> po-menu) > po-toolbar .po-toolbar,
+  .po-wrapper:not(.po-collapsed-menu):has(> .po-menu) > po-toolbar .po-toolbar,
+  .po-wrapper:not(.po-collapsed-menu):has(> po-menu) > .po-toolbar,
+  .po-wrapper:not(.po-collapsed-menu):has(> .po-menu) > .po-toolbar,
+  .po-wrapper.po-collapsed-menu > po-toolbar .po-toolbar,
+  .po-wrapper.po-collapsed-menu > .po-toolbar,
+  .po-wrapper.po-collapsed-menu:has(> po-menu) > po-toolbar .po-toolbar,
+  .po-wrapper.po-collapsed-menu:has(> .po-menu) > po-toolbar .po-toolbar,
+  .po-wrapper.po-collapsed-menu:has(> po-menu) > .po-toolbar,
+  .po-wrapper.po-collapsed-menu:has(> .po-menu) > .po-toolbar {
     margin-left: 36px;
     padding-left: 24px;
     position: fixed;
     width: calc(100% - 36px);
   }
 
-  .po-wrapper-menu-panel .po-toolbar {
+  .po-wrapper-menu-panel > po-toolbar .po-toolbar,
+  .po-wrapper-menu-panel > .po-toolbar {
     padding-left: 8px;
   }
 }
@@ -236,6 +587,13 @@
     margin-left: 0;
     position: absolute;
     width: 100%;
+  }
+
+  /* Reset nested .po-page em print */
+  .po-wrapper .po-page .po-page {
+    margin-left: 0;
+    width: 100%;
+    position: relative;
   }
 
   .po-dynamic-view.po-row {

@@ -4,6 +4,10 @@
   }
 }
 
+po-page-header {
+  flex-shrink: 0;
+}
+
 .po-page-header {
   display: flex;
   flex-direction: column;

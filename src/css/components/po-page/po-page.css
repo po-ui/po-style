@@ -1,8 +1,10 @@
 .po-page {
   background-color: var(--color-page-background-color-page);
-  height: 100%;
-  width: 100%;
   display: flex;
+  flex: 1 1 0%;
   flex-direction: column;
   gap: var(--po-density-gap-header-content, var(--default-spacing-0, var(--spacing-md)));
+  min-height: 0;
+  overflow: hidden;
+  width: 100%;
 }

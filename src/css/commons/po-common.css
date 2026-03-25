@@ -91,6 +91,16 @@
   overflow: hidden;
 }
 
+/* Garante que o componente roteado (irmão seguinte do router-outlet)
+   participe do flex layout do wrapper */
+.po-wrapper > router-outlet + *,
+.po-wrapper-menu-panel > router-outlet + * {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  min-height: 0;
+}
+
 .po-wrapper .po-page {
   display: flex;
   flex-direction: column;

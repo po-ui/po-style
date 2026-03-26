@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.7.0](https://github.com/po-ui/po-style/compare/v21.6.0...v21.7.0) (2026-03-26)
+
+
+### Features
+
+* **fields:** inclui estado de loading nos componentes ([67d240e](https://github.com/po-ui/po-style/commit/67d240e1522ee3a297e2ce6d44f4fe4a536172fd))
+
+
+
 # [21.6.0](https://github.com/po-ui/po-style/compare/v21.5.0...v21.6.0) (2026-03-17)
 
 

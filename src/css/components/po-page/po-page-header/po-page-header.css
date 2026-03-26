@@ -101,6 +101,7 @@ po-page-header {
 .po-page-header-secondary .po-page-header-container {
   flex-direction: row;
   align-items: center;
+  gap: var(--gap-navigation, var(--spacing-xxs));
 }
 
 /* Tertiary Header Variant */

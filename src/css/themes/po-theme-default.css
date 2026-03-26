@@ -1234,6 +1234,13 @@ po-multiselect {
 /*------------------------------------*\
   PAGE HEADER
 \*------------------------------------*/
+po-page-default,
+po-page-list,
+po-page-detail,
+po-page-edit {
+  --background: var(--background);
+}
+
 po-page-header {
   --padding: var(--padding);
   --gap: var(--gap);

@@ -45,3 +45,7 @@
 .po-container-no-padding {
   padding: 0;
 }
+
+po-page-job-scheduler .po-container {
+  overflow-y: unset;
+}

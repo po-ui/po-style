@@ -1,3 +1,8 @@
+po-badge {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .po-badge-default {
   background-color: var(--background-color);
 }

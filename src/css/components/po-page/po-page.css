@@ -1,7 +1,22 @@
+po-page {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  min-height: 0;
+}
+
+po-page-default,
+po-page-list,
+po-page-detail,
+po-page-edit {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  min-height: 0;
+}
+
 .po-page {
-  background-color: var(--color-page-background-color-page);
-  height: 100%;
-  width: 100%;
+  background-color: var(--background, var(--color-page-background-color-page));
   display: flex;
   flex-direction: column;
   gap: var(--po-density-gap-header-content, var(--default-spacing-0, var(--spacing-md)));

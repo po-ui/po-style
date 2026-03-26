@@ -79,3 +79,26 @@
     width: 100%;
   }
 }
+
+/* Secondary Header Variant */
+.po-page-header-secondary {
+  background: var(--background-secondary, none);
+  padding: var(--padding-secondary, var(--spacing-sm));
+}
+
+.po-page-header-secondary .po-page-header-title {
+  font-size: var(--font-size-title-secondary, var(--font-size-md));
+  font-weight: var(--font-weight-title-secondary, var(--font-weight-semibold));
+  line-height: var(--line-height-sm);
+  letter-spacing: var(--letter-spacing-title-secondary, var(--letter-spacing-none, 0));
+}
+
+.po-page-header-secondary .po-page-header-container {
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Tertiary Header Variant */
+.po-page-header-tertiary {
+  /* Tertiary uses same base styles as primary, customizable via tokens */
+}

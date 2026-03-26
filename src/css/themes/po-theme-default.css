@@ -1209,6 +1209,18 @@ po-page-header .po-page-header-title {
   --font-family: var(--font-family-extra-light);
 }
 
+/* Secondary Header */
+po-page-header .po-page-header-secondary {
+  --background-secondary: none;
+  --font-size-title-secondary: var(--font-size-md);
+  --font-weight-title-secondary: var(--font-weight-semibold);
+  --letter-spacing-title-secondary: 0;
+}
+
+po-page-header .po-page-header-secondary .po-page-header-title {
+  --font-family: var(--font-family-heading);
+}
+
 po-page-content {
   --padding-content: var(--padding-content);
 }

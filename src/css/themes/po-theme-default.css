@@ -1236,11 +1236,16 @@ po-multiselect {
 \*------------------------------------*/
 po-page-header {
   --padding: var(--padding);
+  --background: var(--background);
   --gap: var(--gap);
   --gap-actions: var(--spacing-xs);
 }
 po-page-header .po-page-header-title {
   --font-family: var(--font-family-extra-light);
+}
+
+po-page-header .po-page-header-secondary .po-page-header-title {
+  --font-family: var(--font-family-heading);
 }
 
 po-page-content {

@@ -84,15 +84,29 @@
 .po-wrapper,
 .po-wrapper-menu-panel {
   background-color: var(--color-wrapper-menu-panel-color-background);
-  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   max-width: 100%;
   overflow: hidden;
+}
+
+/* Garante que o componente roteado (irmão seguinte do router-outlet)
+   participe do flex layout do wrapper */
+.po-wrapper > router-outlet + *,
+.po-wrapper-menu-panel > router-outlet + * {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .po-wrapper .po-page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  flex: 1 1 0%;
+  min-height: 0;
+  overflow: hidden;
   transition: all 0.2s ease;
   white-space: normal;
 }
@@ -104,8 +118,11 @@
 }
 
 .po-wrapper-menu-panel .po-page {
-  display: inline-block;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  min-height: 0;
+  overflow: hidden;
   transition: all 0.2s ease;
   white-space: normal;
 }
@@ -122,6 +139,15 @@
   width: calc(100% - var(--collapsed-menu-width));
 }
 
+/* Reset para nested .po-page — impede herança de margin-left/width */
+.po-wrapper .po-page .po-page,
+.po-wrapper.po-collapsed-menu .po-page .po-page,
+.po-wrapper-menu-panel .po-page .po-page {
+  margin-left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .po-wrapper .po-page .po-page-content,
 .po-wrapper-menu-panel .po-page .po-page-content {
   transition: width 0.2s ease;
@@ -131,6 +157,7 @@
 
 .po-wrapper .po-toolbar,
 .po-wrapper-menu-panel .po-toolbar {
+  flex-shrink: 0;
   padding-left: 16px;
   transition: all 0.2s ease;
 }
@@ -176,7 +203,8 @@
   }
 
   .po-wrapper .po-page {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-left: 0;
     transition: all 0.2s ease;
     width: 100%;
@@ -193,6 +221,14 @@
     left: 0;
     margin: 0;
     width: 100%;
+  }
+
+  /* Reset nested .po-page em responsive */
+  .po-wrapper .po-page .po-page,
+  .po-wrapper.po-collapsed-menu .po-page .po-page {
+    margin-left: 0;
+    width: 100%;
+    left: auto;
   }
 }
 
@@ -228,6 +264,13 @@
     margin-left: 0;
     position: absolute;
     width: 100%;
+  }
+
+  /* Reset nested .po-page em print */
+  .po-wrapper .po-page .po-page {
+    margin-left: 0;
+    width: 100%;
+    position: relative;
   }
 
   .po-dynamic-view.po-row {

@@ -4,9 +4,14 @@
   }
 }
 
+po-page-header {
+  flex-shrink: 0;
+}
+
 .po-page-header {
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   gap: var(--gap, var(--po-density-gap-spacing, var(--default-spacing-xs, var(--spacing-md))));
   padding: var(--padding, var(--po-density-header-padding, var(--spacing-xs) var(--spacing-md)));
   width: 100%;

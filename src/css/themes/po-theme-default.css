@@ -1221,6 +1221,11 @@ po-page-header .po-page-header-secondary .po-page-header-title {
   --font-family: var(--font-family-heading);
 }
 
+/* Tertiary Header */
+po-page-header .po-page-header-tertiary .po-page-header-title {
+  --font-weight-title-tertiary: var(--font-weight-normal);
+}
+
 po-page-content {
   --padding-content: var(--padding-content);
 }

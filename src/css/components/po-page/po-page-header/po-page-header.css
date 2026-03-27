@@ -101,10 +101,13 @@ po-page-header {
 .po-page-header-secondary .po-page-header-container {
   flex-direction: row;
   align-items: center;
-  gap: var(--gap-navigation, var(--spacing-xxs));
+}
+
+.po-page-header-secondary [po-page-header-navigation] + .po-page-header-title-container {
+  margin-left: var(--gap-navigation, var(--spacing-xs));
 }
 
 /* Tertiary Header Variant */
-.po-page-header-tertiary {
-  /* Tertiary uses same base styles as primary, customizable via tokens */
+.po-page-header-tertiary .po-page-header-title {
+  font-weight: var(--font-weight-title-tertiary, var(--font-weight-normal));
 }

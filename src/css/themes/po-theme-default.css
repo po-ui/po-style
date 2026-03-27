@@ -1202,6 +1202,7 @@ po-multiselect {
 \*------------------------------------*/
 po-page-header {
   --padding: var(--padding);
+  --background: var(--background);
   --gap: var(--gap);
   --gap-actions: var(--spacing-xs);
 }
@@ -1209,21 +1210,8 @@ po-page-header .po-page-header-title {
   --font-family: var(--font-family-extra-light);
 }
 
-/* Secondary Header */
-po-page-header .po-page-header-secondary {
-  --background-secondary: none;
-  --font-size-title-secondary: var(--font-size-md);
-  --font-weight-title-secondary: var(--font-weight-semibold);
-  --letter-spacing-title-secondary: 0;
-}
-
 po-page-header .po-page-header-secondary .po-page-header-title {
   --font-family: var(--font-family-heading);
-}
-
-/* Tertiary Header */
-po-page-header .po-page-header-tertiary .po-page-header-title {
-  --font-weight-title-tertiary: var(--font-weight-normal);
 }
 
 po-page-content {

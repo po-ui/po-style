@@ -87,15 +87,15 @@ po-page-header {
 
 /* Secondary Header Variant */
 .po-page-header-secondary {
-  background: var(--background-secondary, none);
-  padding: var(--padding-secondary, var(--spacing-sm));
+  background: none;
+  padding: var(--spacing-sm);
 }
 
 .po-page-header-secondary .po-page-header-title {
-  font-size: var(--font-size-title-secondary, var(--font-size-md));
-  font-weight: var(--font-weight-title-secondary, var(--font-weight-semibold));
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-sm);
-  letter-spacing: var(--letter-spacing-title-secondary, var(--letter-spacing-none, 0));
+  letter-spacing: 0;
 }
 
 .po-page-header-secondary .po-page-header-container {
@@ -109,5 +109,5 @@ po-page-header {
 
 /* Tertiary Header Variant */
 .po-page-header-tertiary .po-page-header-title {
-  font-weight: var(--font-weight-title-tertiary, var(--font-weight-normal));
+  font-weight: var(--font-weight-normal);
 }

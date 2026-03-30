@@ -111,6 +111,14 @@ po-page-header {
   margin-left: var(--gap-navigation, var(--spacing-xs));
 }
 
+@media (max-width: 479px) {
+  .po-page-header-secondary .po-page-header-actions .po-button,
+  .po-page-header-secondary .po-page-header-actions .po-dropdown {
+    width: auto;
+    margin: 0;
+  }
+}
+
 /* Tertiary Header Variant */
 .po-page-header-tertiary .po-page-header-title {
   font-size: var(--font-size-md);

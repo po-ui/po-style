@@ -12,9 +12,12 @@ po-page-header {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  gap: var(--gap, var(--po-density-gap-spacing, var(--default-spacing-xs, var(--spacing-md))));
   padding: var(--padding, var(--po-density-header-padding, var(--spacing-xs) var(--spacing-md)));
   width: 100%;
+}
+
+.po-page-header-breadcrumb + .po-page-header-container {
+  margin-top: var(--gap, var(--po-density-gap-spacing, var(--default-spacing-xs, var(--spacing-md))));
 }
 
 .po-page-header-container {
@@ -98,9 +101,11 @@ po-page-header {
   letter-spacing: 0;
 }
 
-.po-page-header-secondary .po-page-header-container {
-  flex-direction: row;
-  align-items: center;
+@media (min-width: 480px) {
+  .po-page-header-secondary .po-page-header-container {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .po-page-header-secondary [po-page-header-navigation] + .po-page-header-title-container {
@@ -109,5 +114,6 @@ po-page-header {
 
 /* Tertiary Header Variant */
 .po-page-header-tertiary .po-page-header-title {
+  font-size: var(--font-size-default);
   font-weight: var(--font-weight-normal);
 }

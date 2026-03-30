@@ -91,7 +91,6 @@ po-field-container[p-size='small'] .po-textarea-loading-container {
 
 po-textarea textarea.po-textarea.has-loading {
   padding-right: var(--target-size-aaa);
-  resize: none;
 }
 
 po-textarea[p-size='small'] textarea.po-textarea.has-loading {

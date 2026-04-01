@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.8.0](https://github.com/po-ui/po-style/compare/v21.7.0...v21.8.0) (2026-04-01)
+
+
+### Features
+
+* **context-menu:** implementa o componente po-context-menu ([ce9e80f](https://github.com/po-ui/po-style/commit/ce9e80f6dd44fa796c50cdddc8a99ecbad119526))
+* **header:** implementa variação AA small ([580f614](https://github.com/po-ui/po-style/commit/580f614b1520d029da97812fb43e22bb2196d5ec))
+
+
+
 # [21.7.0](https://github.com/po-ui/po-style/compare/v21.6.0...v21.7.0) (2026-03-26)
 
 

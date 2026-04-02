@@ -76,6 +76,7 @@
  * Popup Item List................variáveis do Popup Item List.
  * Progress.......................variáveis do Progress.
  * Progress Bar...................variáveis do Progress Bar.
+ * Progress Circle.................variáveis do Progress Circle.
  * Radio..........................variáveis do Radio.
  * Rich Text......................variáveis do Rich Text.
  * Search.........................variáveis do Search.
@@ -1445,6 +1446,12 @@ po-progress {
 po-progress-bar {
   --background-color-tray: var(--color-brand-01-lightest);
   --background-color-indicator: var(--color-action-default);
+}
+
+po-progress-circle {
+  --background-color-tray: var(--color-brand-01-lightest);
+  --background-color-indicator: var(--color-action-default);
+  --color-icon-error: var(--color-feedback-negative-dark);
 }
 
 /*------------------------------------*\

@@ -243,6 +243,46 @@
   --color-12: #06a6a5;
 
   /*------------------------------------*\
+  CAPTION TAG COLORS
+\*------------------------------------*/
+
+  --caption-tag-01: var(--color-caption-tag-01);
+  --caption-tag-02: var(--color-caption-tag-02);
+  --caption-tag-03: var(--color-caption-tag-03);
+  --caption-tag-04: var(--color-caption-tag-04);
+  --caption-tag-05: var(--color-caption-tag-05);
+  --caption-tag-06: var(--color-caption-tag-06);
+  --caption-tag-07: var(--color-caption-tag-07);
+  --caption-tag-08: var(--color-caption-tag-08);
+  --caption-tag-09: var(--color-caption-tag-09);
+  --caption-tag-10: var(--color-caption-tag-10);
+  --caption-tag-11: var(--color-caption-tag-11);
+  --caption-tag-12: var(--color-caption-tag-12);
+  --caption-tag-13: var(--color-caption-tag-13);
+  --caption-tag-14: var(--color-caption-tag-14);
+  --caption-tag-15: var(--color-caption-tag-15);
+  --caption-tag-16: var(--color-caption-tag-16);
+  --caption-tag-17: var(--color-caption-tag-17);
+  --caption-tag-18: var(--color-caption-tag-18);
+  --caption-tag-19: var(--color-caption-tag-19);
+  --caption-tag-20: var(--color-caption-tag-20);
+  --caption-tag-21: var(--color-caption-tag-21);
+  --caption-tag-22: var(--color-caption-tag-22);
+  --caption-tag-23: var(--color-caption-tag-23);
+  --caption-tag-24: var(--color-caption-tag-24);
+  --caption-tag-25: var(--color-caption-tag-25);
+  --caption-tag-26: var(--color-caption-tag-26);
+  --caption-tag-27: var(--color-caption-tag-27);
+  --caption-tag-28: var(--color-caption-tag-28);
+  --caption-tag-29: var(--color-caption-tag-29);
+  --caption-tag-30: var(--color-caption-tag-30);
+  --caption-tag-31: var(--color-caption-tag-31);
+  --caption-tag-32: var(--color-caption-tag-32);
+  --caption-tag-33: var(--color-caption-tag-33);
+  --caption-tag-34: var(--color-caption-tag-34);
+  --caption-tag-35: var(--color-caption-tag-35);
+
+  /*------------------------------------*\
   FONT
 \*------------------------------------*/
 

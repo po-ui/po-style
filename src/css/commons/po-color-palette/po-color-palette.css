@@ -165,3 +165,493 @@
   border-color: var(--color-12);
   stroke: var(--color-12);
 }
+
+.po-caption-tag-01 {
+  background-color: var(--color-caption-tag-01);
+  fill: var(--color-caption-tag-01);
+}
+
+.po-caption-tag-02 {
+  background-color: var(--color-caption-tag-02);
+  fill: var(--color-caption-tag-02);
+}
+
+.po-caption-tag-03 {
+  background-color: var(--color-caption-tag-03);
+  fill: var(--color-caption-tag-03);
+}
+
+.po-caption-tag-04 {
+  background-color: var(--color-caption-tag-04);
+  fill: var(--color-caption-tag-04);
+}
+
+.po-caption-tag-05 {
+  background-color: var(--color-caption-tag-05);
+  fill: var(--color-caption-tag-05);
+}
+
+.po-caption-tag-06 {
+  background-color: var(--color-caption-tag-06);
+  fill: var(--color-caption-tag-06);
+}
+
+.po-caption-tag-07 {
+  background-color: var(--color-caption-tag-07);
+  fill: var(--color-caption-tag-07);
+}
+
+.po-caption-tag-08 {
+  background-color: var(--color-caption-tag-08);
+  fill: var(--color-caption-tag-08);
+}
+
+.po-caption-tag-09 {
+  background-color: var(--color-caption-tag-09);
+  fill: var(--color-caption-tag-09);
+}
+
+.po-caption-tag-10 {
+  background-color: var(--color-caption-tag-10);
+  fill: var(--color-caption-tag-10);
+}
+
+.po-caption-tag-11 {
+  background-color: var(--color-caption-tag-11);
+  fill: var(--color-caption-tag-11);
+}
+
+.po-caption-tag-12 {
+  background-color: var(--color-caption-tag-12);
+  fill: var(--color-caption-tag-12);
+}
+
+.po-caption-tag-13 {
+  background-color: var(--color-caption-tag-13);
+  fill: var(--color-caption-tag-13);
+}
+
+.po-caption-tag-14 {
+  background-color: var(--color-caption-tag-14);
+  fill: var(--color-caption-tag-14);
+}
+
+.po-caption-tag-15 {
+  background-color: var(--color-caption-tag-15);
+  fill: var(--color-caption-tag-15);
+}
+
+.po-caption-tag-16 {
+  background-color: var(--color-caption-tag-16);
+  fill: var(--color-caption-tag-16);
+}
+
+.po-caption-tag-17 {
+  background-color: var(--color-caption-tag-17);
+  fill: var(--color-caption-tag-17);
+}
+
+.po-caption-tag-18 {
+  background-color: var(--color-caption-tag-18);
+  fill: var(--color-caption-tag-18);
+}
+
+.po-caption-tag-19 {
+  background-color: var(--color-caption-tag-19);
+  fill: var(--color-caption-tag-19);
+}
+
+.po-caption-tag-20 {
+  background-color: var(--color-caption-tag-20);
+  fill: var(--color-caption-tag-20);
+}
+
+.po-caption-tag-21 {
+  background-color: var(--color-caption-tag-21);
+  fill: var(--color-caption-tag-21);
+}
+
+.po-caption-tag-22 {
+  background-color: var(--color-caption-tag-22);
+  fill: var(--color-caption-tag-22);
+}
+
+.po-caption-tag-23 {
+  background-color: var(--color-caption-tag-23);
+  fill: var(--color-caption-tag-23);
+}
+
+.po-caption-tag-24 {
+  background-color: var(--color-caption-tag-24);
+  fill: var(--color-caption-tag-24);
+}
+
+.po-caption-tag-25 {
+  background-color: var(--color-caption-tag-25);
+  fill: var(--color-caption-tag-25);
+}
+
+.po-caption-tag-26 {
+  background-color: var(--color-caption-tag-26);
+  fill: var(--color-caption-tag-26);
+}
+
+.po-caption-tag-27 {
+  background-color: var(--color-caption-tag-27);
+  fill: var(--color-caption-tag-27);
+}
+
+.po-caption-tag-28 {
+  background-color: var(--color-caption-tag-28);
+  fill: var(--color-caption-tag-28);
+}
+
+.po-caption-tag-29 {
+  background-color: var(--color-caption-tag-29);
+  fill: var(--color-caption-tag-29);
+}
+
+.po-caption-tag-30 {
+  background-color: var(--color-caption-tag-30);
+  fill: var(--color-caption-tag-30);
+}
+
+.po-caption-tag-31 {
+  background-color: var(--color-caption-tag-31);
+  fill: var(--color-caption-tag-31);
+}
+
+.po-caption-tag-32 {
+  background-color: var(--color-caption-tag-32);
+  fill: var(--color-caption-tag-32);
+}
+
+.po-caption-tag-33 {
+  background-color: var(--color-caption-tag-33);
+  fill: var(--color-caption-tag-33);
+}
+
+.po-caption-tag-34 {
+  background-color: var(--color-caption-tag-34);
+  fill: var(--color-caption-tag-34);
+}
+
+.po-caption-tag-35 {
+  background-color: var(--color-caption-tag-35);
+  fill: var(--color-caption-tag-35);
+}
+
+.po-text-caption-tag-01 {
+  color: var(--color-caption-tag-01) !important;
+}
+
+.po-text-caption-tag-02 {
+  color: var(--color-caption-tag-02) !important;
+}
+
+.po-text-caption-tag-03 {
+  color: var(--color-caption-tag-03) !important;
+}
+
+.po-text-caption-tag-04 {
+  color: var(--color-caption-tag-04) !important;
+}
+
+.po-text-caption-tag-05 {
+  color: var(--color-caption-tag-05) !important;
+}
+
+.po-text-caption-tag-06 {
+  color: var(--color-caption-tag-06) !important;
+}
+
+.po-text-caption-tag-07 {
+  color: var(--color-caption-tag-07) !important;
+}
+
+.po-text-caption-tag-08 {
+  color: var(--color-caption-tag-08) !important;
+}
+
+.po-text-caption-tag-09 {
+  color: var(--color-caption-tag-09) !important;
+}
+
+.po-text-caption-tag-10 {
+  color: var(--color-caption-tag-10) !important;
+}
+
+.po-text-caption-tag-11 {
+  color: var(--color-caption-tag-11) !important;
+}
+
+.po-text-caption-tag-12 {
+  color: var(--color-caption-tag-12) !important;
+}
+
+.po-text-caption-tag-13 {
+  color: var(--color-caption-tag-13) !important;
+}
+
+.po-text-caption-tag-14 {
+  color: var(--color-caption-tag-14) !important;
+}
+
+.po-text-caption-tag-15 {
+  color: var(--color-caption-tag-15) !important;
+}
+
+.po-text-caption-tag-16 {
+  color: var(--color-caption-tag-16) !important;
+}
+
+.po-text-caption-tag-17 {
+  color: var(--color-caption-tag-17) !important;
+}
+
+.po-text-caption-tag-18 {
+  color: var(--color-caption-tag-18) !important;
+}
+
+.po-text-caption-tag-19 {
+  color: var(--color-caption-tag-19) !important;
+}
+
+.po-text-caption-tag-20 {
+  color: var(--color-caption-tag-20) !important;
+}
+
+.po-text-caption-tag-21 {
+  color: var(--color-caption-tag-21) !important;
+}
+
+.po-text-caption-tag-22 {
+  color: var(--color-caption-tag-22) !important;
+}
+
+.po-text-caption-tag-23 {
+  color: var(--color-caption-tag-23) !important;
+}
+
+.po-text-caption-tag-24 {
+  color: var(--color-caption-tag-24) !important;
+}
+
+.po-text-caption-tag-25 {
+  color: var(--color-caption-tag-25) !important;
+}
+
+.po-text-caption-tag-26 {
+  color: var(--color-caption-tag-26) !important;
+}
+
+.po-text-caption-tag-27 {
+  color: var(--color-caption-tag-27) !important;
+}
+
+.po-text-caption-tag-28 {
+  color: var(--color-caption-tag-28) !important;
+}
+
+.po-text-caption-tag-29 {
+  color: var(--color-caption-tag-29) !important;
+}
+
+.po-text-caption-tag-30 {
+  color: var(--color-caption-tag-30) !important;
+}
+
+.po-text-caption-tag-31 {
+  color: var(--color-caption-tag-31) !important;
+}
+
+.po-text-caption-tag-32 {
+  color: var(--color-caption-tag-32) !important;
+}
+
+.po-text-caption-tag-33 {
+  color: var(--color-caption-tag-33) !important;
+}
+
+.po-text-caption-tag-34 {
+  color: var(--color-caption-tag-34) !important;
+}
+
+.po-text-caption-tag-35 {
+  color: var(--color-caption-tag-35) !important;
+}
+
+.po-border-caption-tag-01 {
+  border-color: var(--color-caption-tag-01);
+  stroke: var(--color-caption-tag-01);
+}
+
+.po-border-caption-tag-02 {
+  border-color: var(--color-caption-tag-02);
+  stroke: var(--color-caption-tag-02);
+}
+
+.po-border-caption-tag-03 {
+  border-color: var(--color-caption-tag-03);
+  stroke: var(--color-caption-tag-03);
+}
+
+.po-border-caption-tag-04 {
+  border-color: var(--color-caption-tag-04);
+  stroke: var(--color-caption-tag-04);
+}
+
+.po-border-caption-tag-05 {
+  border-color: var(--color-caption-tag-05);
+  stroke: var(--color-caption-tag-05);
+}
+
+.po-border-caption-tag-06 {
+  border-color: var(--color-caption-tag-06);
+  stroke: var(--color-caption-tag-06);
+}
+
+.po-border-caption-tag-07 {
+  border-color: var(--color-caption-tag-07);
+  stroke: var(--color-caption-tag-07);
+}
+
+.po-border-caption-tag-08 {
+  border-color: var(--color-caption-tag-08);
+  stroke: var(--color-caption-tag-08);
+}
+
+.po-border-caption-tag-09 {
+  border-color: var(--color-caption-tag-09);
+  stroke: var(--color-caption-tag-09);
+}
+
+.po-border-caption-tag-10 {
+  border-color: var(--color-caption-tag-10);
+  stroke: var(--color-caption-tag-10);
+}
+
+.po-border-caption-tag-11 {
+  border-color: var(--color-caption-tag-11);
+  stroke: var(--color-caption-tag-11);
+}
+
+.po-border-caption-tag-12 {
+  border-color: var(--color-caption-tag-12);
+  stroke: var(--color-caption-tag-12);
+}
+
+.po-border-caption-tag-13 {
+  border-color: var(--color-caption-tag-13);
+  stroke: var(--color-caption-tag-13);
+}
+
+.po-border-caption-tag-14 {
+  border-color: var(--color-caption-tag-14);
+  stroke: var(--color-caption-tag-14);
+}
+
+.po-border-caption-tag-15 {
+  border-color: var(--color-caption-tag-15);
+  stroke: var(--color-caption-tag-15);
+}
+
+.po-border-caption-tag-16 {
+  border-color: var(--color-caption-tag-16);
+  stroke: var(--color-caption-tag-16);
+}
+
+.po-border-caption-tag-17 {
+  border-color: var(--color-caption-tag-17);
+  stroke: var(--color-caption-tag-17);
+}
+
+.po-border-caption-tag-18 {
+  border-color: var(--color-caption-tag-18);
+  stroke: var(--color-caption-tag-18);
+}
+
+.po-border-caption-tag-19 {
+  border-color: var(--color-caption-tag-19);
+  stroke: var(--color-caption-tag-19);
+}
+
+.po-border-caption-tag-20 {
+  border-color: var(--color-caption-tag-20);
+  stroke: var(--color-caption-tag-20);
+}
+
+.po-border-caption-tag-21 {
+  border-color: var(--color-caption-tag-21);
+  stroke: var(--color-caption-tag-21);
+}
+
+.po-border-caption-tag-22 {
+  border-color: var(--color-caption-tag-22);
+  stroke: var(--color-caption-tag-22);
+}
+
+.po-border-caption-tag-23 {
+  border-color: var(--color-caption-tag-23);
+  stroke: var(--color-caption-tag-23);
+}
+
+.po-border-caption-tag-24 {
+  border-color: var(--color-caption-tag-24);
+  stroke: var(--color-caption-tag-24);
+}
+
+.po-border-caption-tag-25 {
+  border-color: var(--color-caption-tag-25);
+  stroke: var(--color-caption-tag-25);
+}
+
+.po-border-caption-tag-26 {
+  border-color: var(--color-caption-tag-26);
+  stroke: var(--color-caption-tag-26);
+}
+
+.po-border-caption-tag-27 {
+  border-color: var(--color-caption-tag-27);
+  stroke: var(--color-caption-tag-27);
+}
+
+.po-border-caption-tag-28 {
+  border-color: var(--color-caption-tag-28);
+  stroke: var(--color-caption-tag-28);
+}
+
+.po-border-caption-tag-29 {
+  border-color: var(--color-caption-tag-29);
+  stroke: var(--color-caption-tag-29);
+}
+
+.po-border-caption-tag-30 {
+  border-color: var(--color-caption-tag-30);
+  stroke: var(--color-caption-tag-30);
+}
+
+.po-border-caption-tag-31 {
+  border-color: var(--color-caption-tag-31);
+  stroke: var(--color-caption-tag-31);
+}
+
+.po-border-caption-tag-32 {
+  border-color: var(--color-caption-tag-32);
+  stroke: var(--color-caption-tag-32);
+}
+
+.po-border-caption-tag-33 {
+  border-color: var(--color-caption-tag-33);
+  stroke: var(--color-caption-tag-33);
+}
+
+.po-border-caption-tag-34 {
+  border-color: var(--color-caption-tag-34);
+  stroke: var(--color-caption-tag-34);
+}
+
+.po-border-caption-tag-35 {
+  border-color: var(--color-caption-tag-35);
+  stroke: var(--color-caption-tag-35);
+}

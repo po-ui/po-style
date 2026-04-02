@@ -1,0 +1,141 @@
+.po-progress-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.po-progress-circle-svg-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.po-progress-circle-svg {
+  transform: rotate(-90deg);
+  display: block;
+}
+
+.po-progress-circle-tray {
+  fill: none;
+  stroke: var(--background-color-tray);
+  transition: stroke 250ms ease;
+}
+
+.po-progress-circle-indicator {
+  fill: none;
+  stroke: var(--background-color-indicator);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 250ms ease, stroke 250ms ease;
+}
+
+.po-progress-circle-medium .po-progress-circle-tray,
+.po-progress-circle-medium .po-progress-circle-indicator {
+  stroke-width: 0.25rem;
+}
+
+.po-progress-circle-large .po-progress-circle-tray,
+.po-progress-circle-large .po-progress-circle-indicator {
+  stroke-width: 0.5rem;
+}
+
+.po-progress-success .po-progress-circle-indicator {
+  stroke: var(--color-feedback-positive-dark);
+}
+
+.po-progress-error .po-progress-circle-tray {
+  stroke: var(--color-feedback-negative-lightest);
+}
+
+.po-progress-error .po-progress-circle-indicator {
+  stroke: var(--color-feedback-negative-darker);
+}
+
+.po-progress-circle-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  user-select: none;
+}
+
+.po-progress-circle-info-error-medium {
+  font-size: 1.5rem;
+}
+
+.po-progress-circle-info-error-large {
+  font-size: 2rem;
+}
+
+.po-progress-circle-info-error {
+  color: var(--color-icon-error);
+}
+
+.po-progress-circle-info-percentage {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-default);
+  color: var(--text-color);
+  line-height: var(--line-height-md);
+}
+
+.po-progress-circle-indeterminate .po-progress-circle-svg {
+  animation: progressCircleRotate 1.4s linear infinite;
+}
+
+.po-progress-circle-indeterminate .po-progress-circle-indicator {
+  animation: progressCircleDash 1.4s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@keyframes progressCircleRotate {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes progressCircleDash {
+  0% {
+    stroke-dasharray: 30, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 120, 200;
+    stroke-dashoffset: -40;
+  }
+  100% {
+    stroke-dasharray: 30, 200;
+    stroke-dashoffset: -160;
+  }
+}
+
+.po-progress-circle-indeterminate .po-progress-circle-indicator {
+  animation: poProgressCircleDashNormalized 1.4s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@keyframes poProgressCircleDashNormalized {
+  0% {
+    stroke-dasharray: 10 90;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 60 40;
+    stroke-dashoffset: -25;
+  }
+
+  100% {
+    stroke-dasharray: 10 90;
+    stroke-dashoffset: -100;
+  }
+}

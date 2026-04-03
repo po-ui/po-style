@@ -172,6 +172,21 @@
   overflow-x: auto;
 }
 
+.po-table-virtual-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.po-table-header-virtual-scroll {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.po-table-header-relative {
+  position: relative;
+}
+
 .po-table .po-table-row-active td {
   background-color: var(--background-color-selected);
   color: var(--color-actived);

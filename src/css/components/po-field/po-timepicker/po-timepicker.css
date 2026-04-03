@@ -1,0 +1,293 @@
+/* Host element display */
+po-timepicker {
+  display: block;
+  width: 100%;
+}
+
+/* Timepicker field wrapper - segmented input structure */
+.po-timepicker-field {
+  appearance: none !important;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.po-timepicker-field-disabled {
+  pointer-events: none;
+  border-color: var(--color-disabled) !important;
+  background-color: var(--background-disabled) !important;
+  color: var(--text-color-disabled) !important;
+  cursor: not-allowed;
+}
+
+.po-timepicker-field-readonly {
+  border-color: var(--color-neutral-light-30) !important;
+  background-color: var(--color-neutral-light-05) !important;
+  color: var(--color-neutral-dark-70) !important;
+  cursor: text;
+}
+
+.po-timepicker-field-focused {
+  border-color: var(--color-focused, var(--color-action-default)) !important;
+  outline-color: var(--color-action-focus);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+/* Segment wrapper with adaptive width (follows po-datepicker-range pattern) */
+.po-timepicker-field-segment {
+  position: relative;
+  display: flex;
+}
+
+.po-timepicker-field-segment::after {
+  content: attr(data-value);
+  visibility: hidden;
+  white-space: pre;
+  min-width: 1ch;
+}
+
+.po-timepicker-field-segment input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Segment input */
+.po-timepicker-segment-input {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
+
+.po-timepicker-segment-input::-ms-clear,
+.po-timepicker-segment-input::-ms-reveal {
+  display: none;
+}
+
+.po-timepicker-segment-input:focus {
+  outline: none;
+}
+
+.po-timepicker-segment-input::placeholder {
+  color: var(--text-color-placeholder);
+  opacity: 1;
+}
+
+/* Separator between segments */
+.po-timepicker-field-separator {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size, var(--font-size-default));
+  color: inherit;
+  user-select: none;
+}
+
+po-timepicker[p-size='small'] .po-timepicker-field-separator {
+  font-size: var(--font-size, var(--font-size-sm));
+}
+
+/* AM/PM period display */
+.po-timepicker-field-period {
+  display: flex;
+  position: relative;
+  font-size: var(--font-size, var(--font-size-default));
+  color: inherit;
+  margin-left: var(--spacing-xxs);
+  white-space: nowrap;
+}
+
+.po-timepicker-period-input {
+  text-transform: uppercase;
+  caret-color: transparent;
+  user-select: none;
+}
+
+po-timepicker[p-size='small'] .po-timepicker-field-period {
+  font-size: var(--font-size, var(--font-size-sm));
+}
+
+.po-timepicker-popup-timer {
+  position: fixed;
+  z-index: 1000;
+}
+
+.po-timepicker-popup-timer po-timer {
+  position: absolute;
+}
+
+.po-timepicker-timer-mobile {
+  position: fixed !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+}
+
+.po-timepicker-timer-overlay {
+  background: var(--color-neutral-dark-80);
+  opacity: 0.7;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 11;
+}
+
+.po-timepicker-container-disabled po-label {
+  pointer-events: none;
+}
+
+.po-timepicker-button i {
+  font-size: var(--font-size-lg);
+}
+
+po-timepicker[p-size='small'] .po-timepicker-button i {
+  font-size: var(--font-size-default);
+}
+
+po-timepicker .po-loading-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+po-timepicker po-loading-icon {
+  position: absolute;
+  right: 0;
+  width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+po-timepicker[p-size='small'] po-loading-icon {
+  width: var(--target-size-aa);
+  height: var(--target-size-aa);
+}
+
+po-timepicker .po-timepicker-button .po-button {
+  width: var(--target-size-aaa);
+  max-width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  max-height: var(--target-size-aaa);
+  justify-content: center;
+}
+
+po-timepicker[p-size='small'] .po-timepicker-button .po-button {
+  width: var(--target-size-aa);
+  max-width: var(--target-size-aa);
+  height: var(--target-size-aa);
+  max-height: var(--target-size-aa);
+  justify-content: center;
+}
+
+po-timepicker .po-field-container-content .po-field-icon-container-right:not(po-timer .po-field-icon-container-right) {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+}
+
+po-timepicker .po-input.po-input-icon-right {
+  padding-right: calc(var(--target-size-aaa) * 2);
+}
+
+po-timepicker[p-size='small'] .po-input.po-input-icon-right {
+  padding-right: calc(var(--target-size-aa) * 2);
+}
+
+po-timepicker po-clean.po-icon-input {
+  width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+po-timepicker[p-size='small'] po-clean.po-icon-input {
+  width: var(--target-size-aa);
+  height: var(--target-size-aa);
+}
+
+po-timepicker po-clean.po-icon-input:focus {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: var(--border-width-md);
+}
+
+po-timepicker po-clean .po-field-icon:not(.po-field-icon-disabled) {
+  color: var(--color-neutral-dark-70);
+}
+
+po-timepicker .po-input {
+  font-family: var(--font-family);
+  font-size: var(--font-size, var(--font-size-default));
+  color: var(--text-color);
+  background-color: var(--background);
+  padding: var(--padding, 0 0.5rem);
+  border: 1px solid var(--color);
+  border-radius: var(--border-radius-md);
+  min-height: var(--target-size-aaa);
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: var(--target-size-aaa);
+}
+
+po-timepicker .po-input:hover:not(.po-timepicker-field-disabled):not(.po-timepicker-field-readonly) {
+  border-color: var(--color-hover);
+  background-color: var(--background-hover);
+}
+
+po-timepicker[p-size='small'] .po-input {
+  font-size: var(--font-size, var(--font-size-sm));
+  min-height: var(--target-size-aa);
+  padding-right: var(--target-size-aa);
+}
+
+po-timepicker .po-button-vertical-divider {
+  background-color: var(--color-neutral-mid-40);
+  stroke-linecap: round;
+  width: var(--border-width-sm);
+  height: 24px;
+  flex-shrink: 0;
+}
+
+po-timepicker[p-size='small'] .po-button-vertical-divider {
+  height: 16px;
+}
+
+po-timepicker.ng-invalid.ng-dirty:has(input[required]) .po-timepicker-button .po-button {
+  position: relative;
+  color: var(--color-button-danger);
+}
+
+po-timepicker.ng-invalid.ng-dirty:has(input[required]) .po-timepicker-button .po-button:hover {
+  position: relative;
+  color: var(--color-danger-hover);
+  background-color: var(--background-danger-hover);
+}
+
+po-timepicker.ng-invalid.ng-dirty:has(input[required]) .po-timepicker-button .po-button:active {
+  position: relative;
+  color: var(--color-danger-pressed);
+  background-color: var(--background-danger-pressed);
+}
+
+po-timepicker.ng-invalid.ng-dirty .po-input {
+  border: solid 1px var(--color-feedback-negative-base) !important;
+  color: var(--color-feedback-negative-base);
+}

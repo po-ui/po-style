@@ -218,6 +218,11 @@ po-button[p-size='small'] .po-button-icon {
   fill: var(--color-disabled);
 }
 
+po-button .po-loading-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
 /* Variáveis antigas. Necessárias para a utilização de botão nativo com as classes do po-button */
 
 :root {

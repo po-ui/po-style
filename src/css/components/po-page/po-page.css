@@ -19,7 +19,7 @@ po-page-edit {
    Dentro de .po-wrapper, o seletor .po-wrapper .po-page sobrescreve
    com min-height: 0 para permitir o flex shrink correto. */
 .po-page {
-  background-color: var(--color-page-background-color-page);
+  background-color: var(--background, var(--color-page-background-color-page));
   display: flex;
   flex: 1 1 0%;
   flex-direction: column;

@@ -12,6 +12,7 @@
   border-width: var(--border-width-sm);
   border-style: solid;
   width: 100%;
+  min-height: var(--target-size-aaa);
   box-sizing: border-box;
   resize: both;
 }
@@ -19,6 +20,12 @@
 po-textarea[p-size='small'] .po-textarea {
   font-size: var(--font-size, var(--font-size-sm));
   padding: var(--spacing-squish-xs);
+  min-height: var(--target-size-aa);
+}
+
+.po-field-container-textarea-body {
+  position: relative;
+  display: flex;
 }
 
 .po-textarea::placeholder {
@@ -60,4 +67,41 @@ po-textarea.ng-invalid.ng-dirty .po-textarea {
 
   background: var(--background);
   cursor: text;
+}
+
+po-textarea.ng-invalid.ng-dirty .po-textarea:disabled {
+  border-color: var(--color-disabled);
+  background: var(--background-disabled);
+  cursor: not-allowed;
+}
+
+po-textarea .po-textarea-loading-container .po-loading-icon-container {
+  display: flex;
+}
+
+.po-textarea-loading-container {
+  pointer-events: none;
+  height: var(--target-size-aaa);
+  align-items: center;
+}
+
+po-field-container[p-size='small'] .po-textarea-loading-container {
+  height: var(--target-size-aa);
+}
+
+po-textarea textarea.po-textarea.has-loading {
+  padding-right: var(--target-size-aaa);
+  resize: none;
+}
+
+po-textarea[p-size='small'] textarea.po-textarea.has-loading {
+  padding-right: var(--target-size-aa);
+}
+
+po-textarea textarea.has-loading.has-scroll + .po-textarea-loading-container {
+  right: 1.25rem;
+}
+
+po-textarea[p-size='small'] textarea.has-loading.has-scroll + .po-textarea-loading-container {
+  right: var(--spacing-sm);
 }

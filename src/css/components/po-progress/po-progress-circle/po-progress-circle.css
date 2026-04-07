@@ -106,15 +106,15 @@
 
 @keyframes progressCircleDash {
   0% {
-    stroke-dasharray: 1, 200;
+    stroke-dasharray: 30, 200;
     stroke-dashoffset: 0;
   }
   50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35;
+    stroke-dasharray: 120, 200;
+    stroke-dashoffset: -40;
   }
   100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -124;
+    stroke-dasharray: 30, 200;
+    stroke-dashoffset: -160;
   }
 }

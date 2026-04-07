@@ -1450,7 +1450,7 @@ po-progress-bar {
 
 po-progress-circle {
   --background-color-tray: var(--color-brand-01-lightest);
-  --background-color-indicator: var(--color-action-default);
+  --background-color-indicator: var(--color-brand-01-base);
   --color-icon-error: var(--color-feedback-negative-dark);
 }
 

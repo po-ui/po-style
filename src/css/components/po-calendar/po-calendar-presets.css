@@ -60,6 +60,15 @@ po-calendar[p-size='small'] .po-calendar-mobile .po-calendar-preset-list {
   width: 21rem;
 }
 
+.po-calendar-mobile.po-calendar-responsive .po-calendar-preset-list {
+  scrollbar-width: auto;
+  height: 72px;
+}
+
+po-calendar[p-size='small'] .po-calendar-mobile.po-calendar-responsive .po-calendar-preset-list {
+  height: var(--spacing-3xl);
+}
+
 .po-calendar.po-calendar-mobile.po-calendar-with-presets .po-calendar-footer {
   position: relative;
   padding: var(--spacing-xs) 0;

@@ -89,10 +89,6 @@ po-page-header {
 }
 
 /* Secondary Header Variant */
-.po-page-header-secondary {
-  background: none;
-  padding: var(--spacing-sm);
-}
 
 .po-page-header-secondary .po-page-header-title {
   font-size: var(--font-size-md);

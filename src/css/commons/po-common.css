@@ -158,10 +158,35 @@
    (ex: samples de documentação, layouts com wrapper dentro de page-content) */
 .po-page-content .po-wrapper,
 .po-page-content .po-wrapper-menu-panel {
+  flex-direction: row;
   height: auto;
   min-height: 0;
   overflow: visible;
   position: relative;
+}
+
+/* Reset para nested .po-page dentro de wrapper embedded —
+   impede min-height: 100vh e flex stretch nos filhos */
+.po-page-content .po-wrapper .po-page,
+.po-page-content .po-wrapper-menu-panel .po-page {
+  flex: none;
+  margin-left: 0;
+  min-height: 0;
+  overflow: visible;
+  width: 100%;
+}
+
+.po-page-content .po-wrapper > po-page-default,
+.po-page-content .po-wrapper > po-page-list,
+.po-page-content .po-wrapper > po-page-detail,
+.po-page-content .po-wrapper > po-page-edit,
+.po-page-content .po-wrapper > router-outlet + *,
+.po-page-content .po-wrapper-menu-panel > po-page-default,
+.po-page-content .po-wrapper-menu-panel > po-page-list,
+.po-page-content .po-wrapper-menu-panel > po-page-detail,
+.po-page-content .po-wrapper-menu-panel > po-page-edit,
+.po-page-content .po-wrapper-menu-panel > router-outlet + * {
+  flex: none;
 }
 
 /* Reset para nested .po-page — impede herança de margin-left/width */

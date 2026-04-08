@@ -43,7 +43,7 @@
 }
 
 .po-progress-success .po-progress-circle-indicator {
-  stroke: var(--color-feedback-positive-darker);
+  stroke: var(--color-feedback-positive-dark);
 }
 
 .po-progress-error .po-progress-circle-tray {

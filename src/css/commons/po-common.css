@@ -154,6 +154,16 @@
   width: calc(100% - var(--collapsed-menu-width));
 }
 
+/* Reset para nested .po-wrapper — impede height: 100vh em contexto embedded
+   (ex: samples de documentação, layouts com wrapper dentro de page-content) */
+.po-page-content .po-wrapper,
+.po-page-content .po-wrapper-menu-panel {
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+  position: relative;
+}
+
 /* Reset para nested .po-page — impede herança de margin-left/width */
 .po-wrapper .po-page .po-page,
 .po-wrapper.po-collapsed-menu .po-page .po-page,

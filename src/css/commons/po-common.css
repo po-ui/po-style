@@ -101,6 +101,22 @@
   min-height: 0;
 }
 
+/* Garante que componentes de page participem do flex layout do wrapper,
+   mesmo sem router-outlet (ex: samples com po-menu direto) */
+.po-wrapper > po-page-default,
+.po-wrapper > po-page-list,
+.po-wrapper > po-page-detail,
+.po-wrapper > po-page-edit,
+.po-wrapper-menu-panel > po-page-default,
+.po-wrapper-menu-panel > po-page-list,
+.po-wrapper-menu-panel > po-page-detail,
+.po-wrapper-menu-panel > po-page-edit {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  min-height: 0;
+}
+
 .po-wrapper .po-page {
   display: flex;
   flex-direction: column;

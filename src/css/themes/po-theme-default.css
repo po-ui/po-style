@@ -243,6 +243,82 @@
   --color-12: #06a6a5;
 
   /*------------------------------------*\
+  CAPTION TAG COLORS
+\*------------------------------------*/
+
+  --caption-tag-01: var(--color-caption-tag-01);
+  --caption-tag-02: var(--color-caption-tag-02);
+  --caption-tag-03: var(--color-caption-tag-03);
+  --caption-tag-04: var(--color-caption-tag-04);
+  --caption-tag-05: var(--color-caption-tag-05);
+  --caption-tag-06: var(--color-caption-tag-06);
+  --caption-tag-07: var(--color-caption-tag-07);
+  --caption-tag-08: var(--color-caption-tag-08);
+  --caption-tag-09: var(--color-caption-tag-09);
+  --caption-tag-10: var(--color-caption-tag-10);
+  --caption-tag-11: var(--color-caption-tag-11);
+  --caption-tag-12: var(--color-caption-tag-12);
+  --caption-tag-13: var(--color-caption-tag-13);
+  --caption-tag-14: var(--color-caption-tag-14);
+  --caption-tag-15: var(--color-caption-tag-15);
+  --caption-tag-16: var(--color-caption-tag-16);
+  --caption-tag-17: var(--color-caption-tag-17);
+  --caption-tag-18: var(--color-caption-tag-18);
+  --caption-tag-19: var(--color-caption-tag-19);
+  --caption-tag-20: var(--color-caption-tag-20);
+  --caption-tag-21: var(--color-caption-tag-21);
+  --caption-tag-22: var(--color-caption-tag-22);
+  --caption-tag-23: var(--color-caption-tag-23);
+  --caption-tag-24: var(--color-caption-tag-24);
+  --caption-tag-25: var(--color-caption-tag-25);
+  --caption-tag-26: var(--color-caption-tag-26);
+  --caption-tag-27: var(--color-caption-tag-27);
+  --caption-tag-28: var(--color-caption-tag-28);
+  --caption-tag-29: var(--color-caption-tag-29);
+  --caption-tag-30: var(--color-caption-tag-30);
+  --caption-tag-31: var(--color-caption-tag-31);
+  --caption-tag-32: var(--color-caption-tag-32);
+  --caption-tag-33: var(--color-caption-tag-33);
+  --caption-tag-34: var(--color-caption-tag-34);
+  --caption-tag-35: var(--color-caption-tag-35);
+
+  --caption-tag-text-01: var(--color-caption-tag-text-01);
+  --caption-tag-text-02: var(--color-caption-tag-text-02);
+  --caption-tag-text-03: var(--color-caption-tag-text-03);
+  --caption-tag-text-04: var(--color-caption-tag-text-04);
+  --caption-tag-text-05: var(--color-caption-tag-text-05);
+  --caption-tag-text-06: var(--color-caption-tag-text-06);
+  --caption-tag-text-07: var(--color-caption-tag-text-07);
+  --caption-tag-text-08: var(--color-caption-tag-text-08);
+  --caption-tag-text-09: var(--color-caption-tag-text-09);
+  --caption-tag-text-10: var(--color-caption-tag-text-10);
+  --caption-tag-text-11: var(--color-caption-tag-text-11);
+  --caption-tag-text-12: var(--color-caption-tag-text-12);
+  --caption-tag-text-13: var(--color-caption-tag-text-13);
+  --caption-tag-text-14: var(--color-caption-tag-text-14);
+  --caption-tag-text-15: var(--color-caption-tag-text-15);
+  --caption-tag-text-16: var(--color-caption-tag-text-16);
+  --caption-tag-text-17: var(--color-caption-tag-text-17);
+  --caption-tag-text-18: var(--color-caption-tag-text-18);
+  --caption-tag-text-19: var(--color-caption-tag-text-19);
+  --caption-tag-text-20: var(--color-caption-tag-text-20);
+  --caption-tag-text-21: var(--color-caption-tag-text-21);
+  --caption-tag-text-22: var(--color-caption-tag-text-22);
+  --caption-tag-text-23: var(--color-caption-tag-text-23);
+  --caption-tag-text-24: var(--color-caption-tag-text-24);
+  --caption-tag-text-25: var(--color-caption-tag-text-25);
+  --caption-tag-text-26: var(--color-caption-tag-text-26);
+  --caption-tag-text-27: var(--color-caption-tag-text-27);
+  --caption-tag-text-28: var(--color-caption-tag-text-28);
+  --caption-tag-text-29: var(--color-caption-tag-text-29);
+  --caption-tag-text-30: var(--color-caption-tag-text-30);
+  --caption-tag-text-31: var(--color-caption-tag-text-31);
+  --caption-tag-text-32: var(--color-caption-tag-text-32);
+  --caption-tag-text-33: var(--color-caption-tag-text-33);
+  --caption-tag-text-34: var(--color-caption-tag-text-34);
+  --caption-tag-text-35: var(--color-caption-tag-text-35);
+
+  /*------------------------------------*\
   FONT
 \*------------------------------------*/
 

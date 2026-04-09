@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.9.0](https://github.com/po-ui/po-style/compare/v21.8.0...v21.9.0) (2026-04-09)
+
+
+### Bug Fixes
+
+* **textarea:** remove bloqueio de resize no estado de loading ([c9e875d](https://github.com/po-ui/po-style/commit/c9e875d68d2aa387f2f96585942189394cd57c0e))
+
+
+### Features
+
+* **calendar:** adiciona estilos para painel de presets no modo range ([9f2d6e1](https://github.com/po-ui/po-style/commit/9f2d6e1265c55ab000f7b79461965021c8eb4c8c))
+* **timepicker:** implementa componente po-timepicker ([c7c6a2c](https://github.com/po-ui/po-style/commit/c7c6a2c21440e2eb2550a9747b1e4e18702812f8))
+
+
+
 # [21.8.0](https://github.com/po-ui/po-style/compare/v21.7.0...v21.8.0) (2026-04-01)
 
 

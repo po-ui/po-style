@@ -91,6 +91,15 @@
   overflow: hidden;
 }
 
+/* po-menu host element: position fixed para não consumir espaço
+   no flex layout do wrapper (conteúdo interno .po-menu já é fixed) */
+.po-wrapper > po-menu,
+.po-wrapper-menu-panel > po-menu-panel {
+  height: 0;
+  flex: none;
+  overflow: visible;
+}
+
 /* Garante que o componente roteado (irmão seguinte do router-outlet)
    participe do flex layout do wrapper */
 .po-wrapper > router-outlet + *,

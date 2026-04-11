@@ -1,0 +1,2275 @@
+/**
+ * @theme: po-theme-aura
+ **/
+
+/**
+ * CONTENTS
+ *
+ * COMMONS
+ * Common.........................configurações.
+ * Color..........................variáveis globais de cores.
+ * Color Palette..................variáveis da peleta de cores.
+ * Density........................variáveis de espaçamento e densidade.
+ * Font...........................variáveis de fontes.
+ * Scrollbar......................variáveis do scrollbar.
+ *
+ * COMPONENTS
+ * Accordion......................variáveis do Accordion.
+ * Accordion Manager..............variáveis do Acoordion Manager.
+ * Accordion Item Header..........variáveis do Accordion Item Header.
+ * Accordion Item Header Button...variáveis do Accordion Item Header Button.
+ * Avatar.........................variáveis do Avatar.
+ * Button.........................variáveis do Button.
+ * Badge..........................variáveis do Badge.
+ * Breadcrumb.....................variáveis do Breadcrumb.
+ * Button Group...................variáveis do Button Group.
+ * Calendar.......................variáveis do Calendar.
+ * Chart..........................variáveis do Chart.
+ * Checkbox Group.................variáveis do Checkbox Group.
+ * Combo..........................variáveis do Combo.
+ * Container......................variáveis do Container.
+ * Datepicker Range...............variáveis do Datepicker Range.
+ * Disclaimer.....................variáveis do Disclaimer.
+ * Disclaimer Group...............variáveis do Disclaimer Group.
+ * Divider........................variáveis do Divider.
+ * Dropdown.......................variáveis do Dropdown.
+ * Dynamic........................variáveis do Dynamic.
+ * Field Container ...............variáveis do Field Container.
+ * Field Container Bottom.........variáveis do Field Container Bottom.
+ * Field Icon.....................variáveis do Field Icon.
+ * Gauge..........................variáveis do Gauge.
+ * Helper .........................variáveis do Helper.
+ * Info...........................variáveis do Info.
+ * Input..........................variáveis do Input.
+ * Itemlist.......................variáveis do Itemlist
+ * Label..........................variáveis do Label.
+ * Link...........................variáveis do Link.
+ * Listbox........................variáveis do listbox.
+ * List View......................variáveis do List View.
+ * Loading........................variáveis do Loading.
+ * Loading Overlay................variáveis do Loading Overlay.
+ * Lookup.........................variáveis do Lookup.
+ * Menu...........................variáveis do Menu.
+ * Menu Item......................variáveis do Menu Item.
+ * Menu Filter....................variáveis do Menu Filter.
+ * Menu Panel.....................variáveis do Menu Panel.
+ * Modal..........................variáveis do Modal.
+ * Modal Password Recovery........variáveis do Modal Password Recovery.
+ * Multiselect....................variáveis do Multiselect.
+ * Navbar.........................variáveis do Navbar.
+ * Navbar Action..................variáveis do Navbar Action.
+ * Navbar Action Popup............variáveis do Navbar Action Popup.
+ * Navbar Item....................variáveis do Navbar Item.
+ * Navbar Item Navigation.........variáveis do Navbar Item Navigation.
+ * Overlay........................variáveis do Overlay.
+ * Page...........................variáveis do Page.
+ * Page Background................variáveis do Page Background.
+ * Page Blocked User..............variáveis do Page Blocked User.
+ * Page Change Password...........variáveis do Page Change Password.
+ * Page Content...................variáveis do Page Content.
+ * Page Header................ ...variáveis do Page Header.
+ * Page List......................variáveis do Page List.
+ * Page Login.....................variáveis do Page Login.
+ * Page Slide.....................variáveis do Page Slide.
+ * Popover........................variáveis do Popover.
+ * Popup..........................variáveis do Popup.
+ * Popup Item List................variáveis do Popup Item List.
+ * Progress.......................variáveis do Progress.
+ * Progress Bar...................variáveis do Progress Bar.
+ * Radio..........................variáveis do Radio.
+ * Rich Text......................variáveis do Rich Text.
+ * Search.........................variáveis do Search.
+ * Select.........................variáveis do Select.
+ * Skeleton.......................variáveis do Skeleton.
+ * Slide..........................variáveis do Slide.
+ * Stepper........................variáveis do Stepper.
+ * Switch.........................variáveis do Switch.
+ * Tab Button.....................variáveis do Tab Button.
+ * Tab Dropdown...................variáveis do Tab Dropdown.
+ * Table..........................variáveis do Table.
+ * Table Column Link..............variáveis do Table Column Link.
+ * Table List Manager.............variáveis do Table List Manager.
+ * Tag............................variáveis do Tag.
+ * Textarea.......................variáveis do Textarea.
+ * Toolbar........................variáveis do Toolbar.
+ * Tooltip........................variáveis do Tooltip.
+ * Tree View......................variáveis do Tree View.
+ * Upload.........................variáveis do Upload.
+ * Widget.........................variáveis do Widget.
+ *
+ * SERVICES
+ * Toaster........................variáveis do Toaster.
+ */
+
+/*------------------------------------*\
+  COMMONS
+\*------------------------------------*/
+
+/*------------------------------------*\
+  COMMON
+\*------------------------------------*/
+
+:root {
+  --color-wrapper-menu-panel-color-background: var(--color-neutral-light-00);
+  --color-overlay-background-color-overlay: var(--color-secondary-dark-60-alpha-70);
+  --color-hr-border-top: var(--color-neutral-light-10);
+
+  --outline-width: var(--border-width-lg);
+  --outline-width-focus-visible: var(--border-width-lg);
+}
+
+/*------------------------------------*\
+  BRAND TOKENS - PO UI
+\*------------------------------------*/
+
+:root {
+  --color-brand-01-lightest: #eef2ff;
+  --color-brand-01-lighter: #c7d2fe;
+  --color-brand-01-light: #818cf8;
+  --color-brand-01-base: #4f46e5;
+  --color-brand-01-dark: #4338ca;
+  --color-brand-01-darker: #3730a3;
+  --color-brand-01-darkest: #312e81;
+  --color-brand-02-base: #0891b2;
+  --color-brand-03-base: #a855f7;
+  --color-neutral-dark-70: #475569;
+  --color-neutral-dark-80: #334155;
+  --color-neutral-dark-90: #1e293b;
+  --color-neutral-dark-95: #0f172a;
+  --color-neutral-light-00: #ffffff;
+  --color-neutral-light-05: #f8fafc;
+  --color-neutral-light-10: #f1f5f9;
+  --color-neutral-light-20: #e2e8f0;
+  --color-neutral-light-30: #cbd5e1;
+  --color-neutral-mid-40: #94a3b8;
+  --color-neutral-mid-60: #64748b;
+}
+
+/*------------------------------------*\
+  BRAND TOKENS - COLOR ACTIONS
+\*------------------------------------*/
+
+:root {
+  --color-action-default: var(--color-brand-01-base);
+  --color-action-hover: var(--color-brand-01-dark);
+  --color-action-pressed: var(--color-brand-01-darker);
+  --color-action-disabled: var(--color-neutral-light-30);
+  --color-action-focus: var(--color-brand-01-darkest);
+
+  --font-size-default-normal: 14px;
+  --font-family-default-bold: var(--font-family-bold);
+}
+
+/*------------------------------------*\
+  BRAND TOKENS - COLORS CATEGORICAL E COLOR OVERLAY
+\*------------------------------------*/
+
+:root {
+  --categorical-01: var(--color-caption-categorical-01);
+  --categorical-02: var(--color-caption-categorical-02);
+  --categorical-03: var(--color-caption-categorical-03);
+  --categorical-04: var(--color-caption-categorical-04);
+  --categorical-05: var(--color-caption-categorical-05);
+  --categorical-06: var(--color-caption-categorical-06);
+  --categorical-07: var(--color-caption-categorical-07);
+  --categorical-08: var(--color-caption-categorical-08);
+
+  --categorical-overlay-01: var(--color-caption-categorical-overlay-01);
+  --categorical-overlay-02: var(--color-caption-categorical-overlay-02);
+  --categorical-overlay-03: var(--color-caption-categorical-overlay-03);
+  --categorical-overlay-04: var(--color-caption-categorical-overlay-04);
+  --categorical-overlay-05: var(--color-caption-categorical-overlay-05);
+  --categorical-overlay-06: var(--color-caption-categorical-overlay-06);
+  --categorical-overlay-07: var(--color-caption-categorical-overlay-07);
+  --categorical-overlay-08: var(--color-caption-categorical-overlay-08);
+}
+
+/*------------------------------------*\
+  COLOR PO UI LEGACY - Essas variáveis serão removidas conforme evolução da implementação do AnimaliaDS
+\*------------------------------------*/
+
+:root {
+  --color-primary-light-95: #eef2ff; /* Cor do background da linha da tabela */
+  --color-primary-light-80: #c7d2fe; /* Borda inferior da Table Header */
+  --color-primary-alpha-50: rgba(79, 70, 229, 0.5); /* Cor icon drag and drop upload (opacidade de 50%) */
+
+  --color-primary-dark-20: #4338ca; /* Hover do Botão primário, Links, Cor da borda do botão secundário */
+  --color-primary-dark-40: #3730a3; /* Pressed do Botão primário, Links, Cor da borda do botão secundário */
+
+  --color-secondary-dark-60-alpha-70: rgba(49, 46, 129, 0.7); /* Overlay de Modal e Menu (70% de opacidade) */
+  --color-secondary-dark-60: #312e81;
+
+  --color-tertiary-light-90: #faf5ff; /* Cor do background da linha de arquivo em carregamento (Upload) */
+  --color-tertiary-dark-5: #c084fc; /* Cor de gráficos, botão do disclaimer */
+  --color-tertiary-dark-40: #9333ea;
+  --color-tertiary-dark-60: #7e22ce;
+
+  --color-white-alpha-30: rgba(255, 255, 255, 0.3);
+
+  --color-neutral-alpha-45: rgba(71, 85, 105, 0.45); /* Borda superior do itens do menu (45% de opacidade) */
+
+  --color-black-alpha-10: rgba(0, 0, 0, 0.1); /* Usar em sombras (10% de opacidade) */
+  --color-black-alpha-15: rgba(0, 0, 0, 0.15); /* Usar em menu: Hover - Background de item de menu (15% de opacidade) */
+  --color-black-alpha-30: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Usar em menu: Background dos itens de segundo nível (30% de opacidade) */
+  --color-black: #000000;
+
+  --color-success-default: #00b28e; /* Background do Feedback de sucesso */
+  --color-warning-default: #ea9b3e; /* Background do Feedback de atenção */
+  --color-danger-dark-20: #9e3933; /* Hover para botão danger */
+
+  --color-transparent: transparent;
+
+  /*------------------------------------*\
+  COLOR-PALETTE
+\*------------------------------------*/
+
+  /* Cores que podem ser utilizadas na coluna de labels, legenda e cor de icones do componente table, também utilizadas na tag e badge */
+  --color-01: #0c9abe;
+  --color-02: #2c85c8;
+  --color-03: #2c43c8;
+  --color-04: #5843c8;
+  --color-05: #ab43c8;
+  --color-06: #ab4391;
+  --color-07: #c64840;
+  --color-08: #ea9b3e;
+  --color-09: #abc249;
+  --color-10: #56b96b;
+  --color-11: #00b28e;
+  --color-12: #06a6a5;
+
+  /*------------------------------------*\
+  FONT
+\*------------------------------------*/
+
+  /**
+   * Variáveis para definições de fontes. O PO utiliza as variantes *extra light*, *regular* e *bold* em seus componentes e, para cada uma delas,
+   * é atribuído um @font-face específico. Os nomes elencados no `font-family` no @font-face devem ser os mesmos atribuídos como valor para as variáveis.
+   */
+  --font-family-theme: Roboto;
+  --font-family-theme-bold: Roboto-Bold;
+  --font-family-theme-extra-light: Roboto-Condensed-Light;
+
+  --font-family-heading: Roboto;
+  --font-family-code: Monospace;
+  --font-weight-extra-light: 200;
+  --text-transform-normal: normal;
+  --text-transform-uppercase: uppercase;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./../fonts/Roboto/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Condensed-Light';
+  src: url('./../fonts/Roboto/Roboto-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('./../fonts/Roboto/Roboto-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* DENSITY - LAYOUT TOKENS */
+:root {
+  --po-density-header-padding: var(
+    --po-density-header-padding
+  ); /* Padding interno em headers (inclui pages, dynamics, page slide e modal) */
+  --po-density-content-padding: var(
+    --po-density-content-padding
+  ); /* Padding interno em contents (inclui pages, dynamics, container, list view, modal, page slide, stepper e disclaimer-group) */
+  --po-density-footer-padding: var(
+    --po-density-footer-padding
+  ); /* Padding interno em footers (inclui modal e page slide) */
+  --po-density-gap-header-content: var(
+    --po-density-gap-header-content
+  ); /* Espaço interno entre o header e o content (inclui pages, tabs e stepper) */
+  --po-density-gap-spacing: var(
+    --po-density-gap-spacing
+  ); /* Espaço interno entre blocos de conteúdo presentes no header e content (inclui dividers e gaps) */
+  --po-density-floating-padding: var(
+    --po-density-floating-padding
+  ); /* Padding interno de componentes flutuantes como tooltip e popover */
+}
+
+:root {
+  /*------------------------------------*\
+  SCROLLBAR
+\*------------------------------------*/
+  --color-track: var(--color-neutral-light-10);
+  --color-thumb: var(--color-neutral-light-30);
+}
+
+/*------------------------------------*\
+  COMPONENTS
+\*------------------------------------*/
+
+/*------------------------------------*\
+  ACCORDION
+\*------------------------------------*/
+po-accordion {
+  --background-color: var(--color-neutral-light-00);
+  --color: var(--color-action-default);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --font-weight: var(--font-weight-bold);
+
+  --background-hover: var(--color-brand-01-lightest);
+  --color-hover: var(--color-action-hover);
+
+  --background-pressed: var(--color-brand-01-lighter);
+  --color-pressed: var(--color-action-pressed);
+
+  --color-focus: var(--color-action-focus);
+  --outline-color-focused: var(--color-action-focus);
+
+  --background-disabled: var(--color-neutral-light-10);
+  --color-disabled: var(--color-neutral-mid-60);
+}
+
+/*------------------------------------*\
+  ACCORDION MANAGER
+\*------------------------------------*/
+po-accordion-manager {
+  --background-color: var(--color-brand-01-lightest);
+  --color: var(--color-action-default);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-sm);
+  --font-weight: var(--font-weight-bold);
+
+  --background-pressed: var(--color-brand-01-lighter);
+  --color-pressed: var(--color-action-pressed);
+
+  --color-focus: var(--color-action-default);
+  --outline-color-focused: var(--color-action-focus);
+}
+
+:root {
+  /*------------------------------------*\
+  AVATAR
+\*------------------------------------*/
+  --color-avatar-background-color-avatar: var(--color-neutral-dark-70);
+}
+
+/*------------------------------------*\
+  BUTTON
+\*------------------------------------*/
+po-button {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --font-weight: var(--font-weight-bold);
+  --line-height: var(--line-height-none);
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-md);
+  --padding: var(--padding);
+  /* danger */
+  --text-color-danger: var(--color-neutral-light-00);
+  --color-button-danger: var(--color-feedback-negative-dark);
+  --color-danger-hover: var(--color-feedback-negative-darker);
+  --color-danger-pressed: var(--color-feedback-negative-darkest);
+  --background-danger-hover: var(--color-feedback-negative-lighter);
+  --border-color-danger-hover: var(--color-feedback-negative-darkest);
+  --background-danger-pressed: var(--color-feedback-negative-light);
+  --background-color-button-danger: var(--color-transparent);
+
+  --text-color: var(--color-neutral-light-00);
+  --color: var(--color-action-default);
+  --background-color: var(--color-transparent);
+  --border-color: var(--color-transparent);
+  --shadow: var(--shadow-none);
+
+  /* hover */
+  --color-hover: var(--color-action-hover);
+  --background-hover: var(--color-brand-01-lighter);
+  --border-color-hover: var(--color-brand-01-darkest);
+
+  /* focused */
+  --outline-color-focused: var(--color-action-focus);
+
+  /* pressed */
+  --color-pressed: var(--color-action-pressed);
+  --background-pressed: var(--color-brand-01-light);
+
+  /* disabled */
+  --text-color-disabled: var(--color-neutral-dark-70);
+  --color-disabled: var(--color-action-disabled);
+  --background-color-disabled: var(--color-transparent);
+}
+
+po-badge {
+  --background-color: var(--color-feedback-negative-base);
+  --border-color: var(--color-neutral-light-00);
+  --color: var(--color-neutral-light-00);
+
+  --border-radius: var(--border-radius-md);
+  --font-family: var(--font-family-theme);
+  --font-weight: var(--font-weight-bold);
+}
+
+po-badge[p-status='disabled'] {
+  --background-color: var(--color-action-disabled);
+}
+
+po-badge[p-status='positive'] {
+  --background-color: var(--color-feedback-positive-base);
+}
+
+po-badge[p-status='negative'] {
+  --background-color: var(--color-feedback-negative-base);
+}
+
+po-badge[p-status='warning'] {
+  --background-color: var(--color-feedback-warning-base);
+  --color: var(--color-neutral-dark-95);
+}
+
+:root {
+  /*------------------------------------*\
+  BADGE
+\*------------------------------------*/
+  --color-badge-color: var(--color-neutral-light-00);
+}
+
+/*------------------------------------*\
+  BREADCRUMB
+\*------------------------------------*/
+po-breadcrumb {
+  --font-family: var(--font-family-theme);
+  --font-weight: var(--font-weight-bold);
+  --color-icon: var(--color-neutral-mid-60);
+  --color-current-page: var(--color-neutral-mid-60);
+  --color: var(--color-action-default);
+}
+
+po-button-group {
+  --button-group-container-margin: -2px;
+}
+
+po-button-group .po-button {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --font-weight: var(--font-weight-bold);
+  --line-height: var(--line-height-none);
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-md);
+  --padding: var(--padding);
+
+  --text-color: var(--color-neutral-light-00);
+  --color: var(--color-action-default);
+  --background-color: var(--color-transparent);
+  --shadow: var(--shadow-none);
+
+  /* hover */
+  --color-hover: var(--color-action-hover);
+  --background-hover: var(--color-brand-01-lighter);
+  --border-color-hover: var(--color-brand-01-darkest);
+
+  /* focused */
+  --outline-color-focused: var(--color-action-focus);
+
+  /* pressed */
+  --color-pressed: var(--color-action-pressed);
+  --background-pressed: var(--color-brand-01-light);
+
+  /* disabled */
+  --color-disabled: var(--color-action-disabled);
+  --background-color-disabled: var(--color-transparent);
+}
+
+/*------------------------------------*\
+  CALENDAR
+\*------------------------------------*/
+po-calendar {
+  /* BASE */
+  --background: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-20);
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --shadow: var(--shadow-md);
+
+  /* WEEKLY CELLS */
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --font-weight-weekly: var(--font-weight-weekly);
+  --text-color-weekly: var(--color-neutral-dark-90);
+
+  /* DAY CELLS */
+  --font-weight-days: var(--font-weight-normal);
+  --text-color: var(--color-neutral-dark-90);
+  --border-radius-days: var(--border-radius);
+  --border-width-days: var(--border-width);
+
+  /* TODAY */
+  --font-weight-today: var(--font-weight-bold);
+  --text-color-today: var(--color-action-default);
+
+  /* FOCUS */
+  --outline-color-focused: var(--color-action-focus);
+
+  /* HOVER */
+  --text-color-hover: var(--color-neutral-light-00);
+  --color-hover: var(--color-action-hover);
+
+  /* INTERVAL (Range) */
+  --text-color-interval: var(--color-action-default);
+  --color-interval: var(--color-brand-01-lighter);
+
+  /* NEXT MONTH */
+  --text-color-next: var(--color-neutral-light-30);
+
+  /* DISABLED */
+  --text-color-disabled: var(--color-action-disabled);
+  --border-disabled: var(--color-action-disabled);
+
+  /* SELECTED */
+  --text-color-selected: var(--color-neutral-light-00);
+  --color-selected: var(--color-action-default);
+
+  --day-cell-transition-duration: var(--duration-extra-fast);
+  --day-cell-transition-property: all;
+  --day-cell-transition-timing: var(--timing-standart);
+}
+
+po-timer {
+  /* BASE */
+  --background: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-20);
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --shadow: var(--shadow-md);
+
+  /* CELLS - DISPLAY */
+  --color-display: var(--color-action-default);
+  --font-weight-display: var(--font-weight-bold);
+  --border-radius-display: var(--border-radius-md);
+
+  /* HOVER */
+  --color-hover-display: var(--color-brand-01-darkest);
+  --background-hover-display: var(--color-brand-01-lighter);
+
+  /* FOCUS */
+  --outline-color-focused-display: var(--color-brand-01-darkest);
+
+  /* PRESSED */
+  --background-pressed-display: var(--color-brand-01-light);
+
+  /* DISABLED */
+  --color-disabled-display: var(--color-neutral-light-30);
+
+  /* TRANSITIONS */
+  --transition-duration: var(--duration-extra-fast);
+  --transition-property: all;
+  --transition-timing: var(--timing-standart);
+}
+
+:root {
+  /*------------------------------------*\
+  CALENDAR
+\*------------------------------------*/
+  --color-calendar-background-color: var(--background); /*Deprecated v23.x.x utilizar --background */
+  --color-calender-color-content-label: var(--text-color-weekly); /*Deprecated v23.x.x utilizar --text-color-weekly */
+  --color-calendar-background-color-box-background-hover: var(
+    --color-hover
+  ); /*Deprecated v23.x.x utilizar --color-hover */
+  --color-calendar-background-color-box-background-selected: var(
+    --color-selected
+  ); /*Deprecated v23.x.x utilizar --color-selected */
+  --color-calendar-background-color-box-background-range: var(
+    --color-interval
+  ); /*Deprecated v23.x.x utilizar --color-interval */
+  --color-calendar-color-box-foreground: var(--text-color); /*Deprecated v23.x.x utilizar --text-color */
+  --color-calendar-color-box-foreground-selected: var(
+    --text-color-selected
+  ); /*Deprecated v23.x.x utilizar --text-color-selected */
+  --color-calendar-color-box-foreground-range: var(
+    --text-color-interval
+  ); /*Deprecated v23.x.x utilizar --text-color-interval */
+  --color-calendar-color-box-foreground-today: var(
+    --text-color-today
+  ); /*Deprecated v23.x.x utilizar --text-color-today */
+  --color-calendar-color-box-foreground-disabled: var(
+    --text-color-disabled
+  ); /*Deprecated v23.x.x utilizar --text-color-disabled */
+  --color-calendar-background-color-mobile-overlay: var(--color-neutral-dark-80); /*Deprecated v23.x.x */
+
+  /*------------------------------------*\
+  CHART
+\*------------------------------------*/
+  --color-chart-background-color: var(--color-neutral-light-00);
+  /*Deprecated v22.x.x utilizar --background-color e --background-color-grid */
+  --color-chart-axis-stroke: var(--color-neutral-light-20);
+  /*Deprecated v22.x.x utilizar --color-grid */
+  --color-chart-legend-text: var(--color-neutral-dark-70);
+  /*Deprecated v22.x.x utilizar --color-legend */
+  --color-chart-axis-label-text: var(--color-neutral-dark-90);
+  /*Deprecated v22.x.x utilizar --text-color-grid */
+}
+
+po-chart .po-chart-header {
+  --background-color: var(--color-chart-background-color, var(--color-neutral-light-00));
+  --color: var(--color-neutral-dark-70);
+  --font-family: var(--font-family-theme);
+  --font-size-icons: var(--font-size-md);
+  --font-size-title: var(--font-size-default);
+  --font-weight: var(--font-weight-bold);
+}
+
+po-chart {
+  --background-color-grid: var(--color-chart-background-color, var(--color-neutral-light-00));
+  --color-description-chart: var(--color-gauge-description-text-color, var(--color-neutral-dark-70));
+  --font-family-description-chart: var(--font-family-theme);
+  --font-size-description-chart: var(--font-size-sm);
+  --font-weight-description-chart: var(--font-weight-normal);
+}
+
+po-chart .po-chart {
+  --color-grid: var(--color-chart-axis-stroke, var(--color-neutral-light-20));
+  --text-color-grid: var(--color-chart-axis-label-text, var(--color-neutral-dark-70));
+  --font-family-grid: var(--font-family-theme);
+  --font-size-grid: var(--font-size-xs);
+  --font-weight-grid: var(--font-weight-normal);
+
+  --color-legend: var(--color-chart-legend-text, var(--color-neutral-dark-70));
+
+  --border-color: var(--color-neutral-light-00);
+  --border-radius-bar: var(--border-radius-none);
+
+  --color-hightlight-value: var(--color-neutral-dark-70);
+  --font-family-hightlight-value: var(--font-family-theme);
+  --font-weight-hightlight-value: var(--font-weight-bold);
+
+  --color-base-gauge: var(--color-gauge-base-color, var(--color-neutral-light-20));
+  --color-gauge-pointer-color: var(--color-neutral-dark-70);
+
+  --color-chart-line-point-fill: var(--color-neutral-light-00);
+
+  --border-color-radar: var(--color-neutral-light-30);
+  --color-background-zebra: var(--color-neutral-light-10);
+  --color-background-line: none;
+}
+
+po-chart .po-chart-container-gauge {
+  --background-color-container-gauge: var(--color-chart-background-color, var(--color-neutral-light-00));
+}
+
+/*------------------------------------*\
+  CHECKBOX
+\*------------------------------------*/
+po-checkbox {
+  --border-color: var(--color-neutral-dark-70);
+  --color-unchecked: var(--color-neutral-light-00);
+
+  --color-checked: var(--color-action-default);
+
+  --color-hover: var(--color-action-hover);
+  --shadow-color-hover: var(--color-brand-01-lighter);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-unchecked-disabled: var(--color-action-disabled);
+
+  --color-checked-disabled: var(--color-neutral-dark-70);
+}
+
+/*------------------------------------*\
+  HELPER
+\*------------------------------------*/
+po-helper {
+  --color: var(--color-action-default);
+  --background-hover: var(--color-brand-01-lighter);
+  --background-pressed: var(--color-brand-01-light);
+  --color-disabled: var(--color-action-disabled);
+}
+:root {
+  /*------------------------------------*\
+  CHECKBOX GROUP
+\*------------------------------------*/
+  --color-checkbox-group-border-input-invalid: var(--color-feedback-negative-base);
+}
+/*------------------------------------*\
+    COMBO
+  \*------------------------------------*/
+po-combo {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --text-color: var(--color-neutral-dark-90);
+  --text-color-placeholder: var(--color-neutral-light-30);
+  --color: var(--color-neutral-dark-70);
+  --background: var(--color-neutral-light-05);
+  --border-radius: var(--border-width-lg);
+
+  --color-hover: var(--color-action-hover);
+  --background-hover: var(--color-brand-01-lightest);
+
+  --color-focused: var(--color-action-default);
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-disabled: var(--color-neutral-light-30);
+  --background-disabled: var(--color-neutral-light-20);
+
+  --color-error: var(--color-feedback-negative-base);
+
+  --text-color-suggestion: var(--color-neutral-mid-60);
+  --background-suggestion: var(--color-brand-01-lightest);
+
+  --min-width: 9.375rem;
+}
+
+/*------------------------------------*\
+  CONTAINER
+\*------------------------------------*/
+po-container {
+  /* title */
+  --font-family: var(--font-family-theme);
+  --line-weight: var(--font-weight-semibold);
+  --line-height: var(--line-height-md);
+  --text-color: var(--color-neutral-dark-90);
+  --font-size: var(--font-size);
+  --letter-spacing: 0.017rem;
+  --margin: 0 0 var(--spacing-xs);
+  /* content */
+  --border-radius: var(--border-radius-md);
+  --background: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-20);
+  --border-width: var(--border-width-sm);
+  --padding: var(--padding);
+}
+
+/*------------------------------------*\
+DATEPICKER RANGE
+\*------------------------------------*/
+:root {
+  --color-datepicker-range-background-color-disabled: var(--color-neutral-light-20);
+  --color-datepicker-range-border-text: var(--color-neutral-light-30);
+  --color-datepicker-range-border-text-error: var(--color-feedback-negative-base);
+  --color-datepicker-range-color-disabled: var(--color-neutral-light-30);
+  --color-datepicker-range-color-focused: var(--color-action-default);
+  --color-datepicker-range-color-text-error: var(--color-feedback-negative-base);
+}
+
+/*------------------------------------*\
+  DISCLAIMER
+\*------------------------------------*/
+po-disclaimer {
+  --border-radius: var(--border-radius-pill);
+
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-sm);
+  --line-height: var(--line-height-sm);
+
+  --color-neutral: var(--color-neutral-light-10);
+  --text-color-neutral: var(--color-neutral-dark-80);
+
+  --color: var(--color-brand-01-lightest);
+  --border-color: var(--color-brand-01-lighter);
+  --color-icon: var(--color-action-default);
+  --text-color: var(--color-neutral-dark-80);
+
+  --color-hover: var(--color-brand-01-lighter);
+  --outline-color-focused: var(--color-brand-01-darkest);
+}
+
+:root {
+  /*------------------------------------*\
+  DISCLAIMER GROUP
+\*------------------------------------*/
+
+  --color-disclaimer-group-background-color: var(--color-neutral-light-00);
+  --color-disclaimer-group-border-color: var(--color-neutral-light-10);
+  --color-disclaimer-group-font-title: var(--color-neutral-dark-70);
+}
+
+/*------------------------------------*\
+  DIVIDER
+\*------------------------------------*/
+po-divider {
+  --color: var(--color-neutral-mid-40);
+  --stroke-linecap: round;
+}
+
+/*------------------------------------*\
+  DROPDOWN
+\*------------------------------------*/
+po-dropdown {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --font-weight: var(--font-weight-bold);
+  --line-height: var(--line-height-none);
+  --color: var(--color-action-default);
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-md);
+  --padding: var(--padding);
+
+  /* hover */
+  --color-hover: var(--color-brand-01-darkest);
+  --background-hover: var(--color-brand-01-lighter);
+
+  /* focus */
+  --outline-color-focused: var(--color-action-focus);
+
+  /* pressed */
+  --background-pressed: var(--color-brand-01-light);
+
+  /* disabled */
+  --color-disabled: var(--color-action-disabled);
+
+  /* background color */
+  --background: var(--color-transparent);
+}
+
+/*------------------------------------*\
+  DYNAMIC
+\*------------------------------------*/
+po-dynamic-container {
+  --gap: var(--gap);
+  --font-family: var(--font-family-theme);
+  --font-size: 1.125rem;
+  --line-weight: var(--font-weight-semibold);
+  --line-height: var(--line-height-md);
+  --text-color: var(--color-neutral-dark-90);
+  --letter-spacing: 0.017rem;
+  --margin: 0 0 0.5rem 0;
+}
+po-dynamic-container po-container {
+  --border-radius: var(--border-radius-md);
+  --background: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-20);
+  --border-width: var(--border-width-sm);
+  --padding: var(--padding);
+}
+
+/*------------------------------------*\
+  FIELD CONTAINER TITLE
+\*------------------------------------*/
+:root {
+  --field-container-title-justify: space-between;
+  --field-container-title-flex: 1 auto;
+}
+
+/*------------------------------------*\
+  FIELD CONTAINER HEADER
+\*------------------------------------*/
+po-field-container-header {
+  --font-size: var(--font-size);
+}
+
+/*------------------------------------*\
+  FIELD CONTAINER CONTENT
+\*------------------------------------*/
+.po-field-container-content {
+  --padding: var(--padding);
+}
+
+/*------------------------------------*\
+  FIELD CONTAINER BOTTOM
+\*------------------------------------*/
+po-field-container-bottom {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --line-height: var(--line-height-md);
+  --text-color-help: var(--color-neutral-dark-90);
+
+  --text-color-help-disabled: var(--color-neutral-mid-60);
+
+  --text-color-error: var(--color-feedback-negative-dark);
+  --color-icon-error: var(--color-feedback-negative-base);
+}
+
+:root {
+  /*------------------------------------*\
+  GAUGE
+  \*------------------------------------*/
+  --color-gauge-base-color: var(--color-neutral-light-20);
+  /*Deprecated v22.x.x utilizar --color-base-gauge */
+  --color-gauge-description-text-color: var(--color-neutral-dark-70);
+  /*Deprecated v22.x.x utilizar --color-subtitle-gauge */
+
+  /*------------------------------------*\
+  INFO
+  \*------------------------------------*/
+  --color-info-color-text-label: var(--color-neutral-dark-90);
+  --color-info-color-text-value: var(--color-neutral-dark-90);
+
+  --color-info-color-link: var(--color-brand-02-base);
+  --color-info-color-link-hover: var(--color-primary-dark-20);
+  --color-info-color-link-pressed: var(--color-primary-dark-40);
+}
+
+/*------------------------------------*\
+  INFO CONTAINER CONTENT
+\*------------------------------------*/
+po-info .po-info-container-content {
+  --padding: var(--padding);
+}
+
+po-info .po-info-label-horizontal {
+  --padding: 0 var(--spacing-xs) 0 0;
+}
+
+/*------------------------------------*\
+  INPUT
+\*------------------------------------*/
+po-input,
+po-url,
+po-login,
+po-email,
+po-password,
+po-decimal,
+po-number,
+po-datepicker,
+po-datepicker-range,
+po-datepicker-range .po-input,
+po-timepicker,
+div.po-lookup-filter-content input.po-input,
+input.po-input {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --text-color-placeholder: var(--color-neutral-light-30);
+  --color: var(--color-neutral-dark-70);
+  --background: var(--color-neutral-light-05);
+  --padding: 0 0.5rem;
+  --text-color: var(--color-neutral-dark-90);
+  --color-hover: var(--color-brand-01-dark);
+  --background-hover: var(--color-brand-01-lightest);
+  --color-focused: var(--color-action-default);
+  --outline-color-focused: var(--color-action-focus);
+  --color-disabled: var(--color-neutral-light-30);
+  --background-disabled: var(--color-neutral-light-20);
+  --text-color-disabled: var(--color-neutral-dark-70);
+}
+
+/*------------------------------------*\
+  ITEM LIST
+\*------------------------------------*/
+po-item-list {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
+
+  /* action */
+  --font-weight: var(--font-weight-bold);
+  --color: var(--color-action-default);
+
+  --color-hover: var(--color-brand-01-darkest);
+  --background-hover: var(--color-brand-01-lighter);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --background-pressed: var(--color-brand-01-light);
+
+  --color-disabled: var(--color-action-disabled);
+
+  /* option e check */
+  --color-option: var(--color-neutral-dark-90);
+
+  --font-weight-selected: var(--font-weight-bold);
+  --background-selected: var(--color-brand-01-lightest);
+}
+
+po-item-list:is([p-type='option'], [p-type='check']) {
+  --font-weight: var(--font-weight-normal);
+}
+
+/*------------------------------------*\
+  LABEL
+\*------------------------------------*/
+po-label {
+  /* basic */
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --line-height: var(--line-height-md);
+  --text-color: var(--color-neutral-dark-90);
+
+  /* field */
+  --font-weight-field: var(--font-weight-semibold);
+
+  /* required */
+  --text-color-required: var(--color-neutral-dark-70);
+  --font-size-required: var(--font-size-sm);
+  --line-height-required: var(--line-height-sm);
+
+  /* disabled */
+  --text-color-disabled: var(--color-neutral-mid-60);
+}
+
+/*------------------------------------*\
+  LINK
+\*------------------------------------*/
+po-link {
+  --font-family: var(--font-family-theme);
+  --font-weight: var(--font-weight-bold);
+  --text-color: var(--color-action-default);
+
+  --text-color-hover: var(--color-action-hover);
+  --text-color-pressed: var(--color-action-pressed);
+  --outline-color-focused: var(--color-action-focus);
+  --text-color-visited: var(--color-action-pressed);
+}
+
+/*------------------------------------*\
+  LISTBOX
+\*------------------------------------*/
+po-listbox {
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --border-color: var(--color-neutral-light-20);
+  --background: var(--color-neutral-light-00);
+  --shadow: var(--shadow-md);
+}
+
+/*------------------------------------*\
+  LIST VIEW
+\*------------------------------------*/
+:root {
+  --color-list-view-background-color: var(--color-neutral-light-00);
+  --color-list-view-border: var(--color-neutral-light-10);
+  --color-list-view-color-primary: var(--color-brand-02-base);
+  --color-list-view-color-primary-hover: var(--color-primary-dark-20);
+  --color-list-view-color-select-all-label: var(--color-neutral-dark-70);
+}
+
+/*------------------------------------*\
+  LOADING
+\*------------------------------------*/
+po-loading {
+  --font-family: var(--font-family-theme);
+  --font-weight: var(--font-weight-normal);
+  --text-color: var(--color-neutral-dark-70);
+
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --border-color: var(--color-neutral-light-20);
+  --background: var(--color-neutral-light-00);
+  --shadow: var(--shadow-md);
+}
+
+po-loading-icon {
+  --color: var(--color-action-default);
+}
+
+:root {
+  --color-loading-icon-color-neutral: var(--color-neutral-light-20);
+
+  /*------------------------------------*\
+  LOOKUP
+  \*------------------------------------*/
+  --color-lookup-advanced-search-link-color-text: var(--color-brand-02-base);
+}
+
+po-lookup {
+  --background: var(--color-neutral-light-05);
+  --background-disabled: var(--color-neutral-light-20);
+  --background-hover: var(--color-brand-01-lightest);
+  --background-select: var(--background);
+  --background-select-disabled: var(--background-disabled);
+  --background-select-hover: var(--background-hover);
+
+  --border-radius: var(--border-radius-md);
+
+  --color: var(--color-neutral-dark-70);
+  --color-clear: var(--color-action-default);
+  --color-disabled: var(--color-action-disabled);
+  --color-focused: var(--color-action-default);
+  --color-hover: var(--color-brand-01-dark);
+  --color-icon: var(--color-action-default);
+  --color-error: var(--color-feedback-negative-base);
+
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --text-color: var(--color-neutral-dark-90);
+  --text-color-disabled: var(--color-action-disabled);
+  --text-color-placeholder: var(--color-neutral-light-30);
+
+  --outline-color-focused: var(--color-action-focus);
+  --padding: 0 0.5rem;
+}
+
+/*------------------------------------*\
+  MENU
+\*------------------------------------*/
+po-menu {
+  --border-radius: var(--border-radius-md);
+  --border-color: var(--color-neutral-light-20);
+  --background-color: var(--color-neutral-light-05);
+
+  /* Menu Footer */
+  --color: var(--color-action-default);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
+  --outline-color-focused: var(--color-action-focus);
+  --font-weight-lvl0: var(--font-weight-bold);
+}
+
+/*------------------------------------*\
+  MENU ITEM
+\*------------------------------------*/
+po-menu-item {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
+  --border-radius: var(--border-radius-md);
+  --color: var(--color-action-default);
+  --background-color: transparent;
+
+  --color-hover: var(--color-brand-01-darkest);
+  --background-color-hover: var(--color-brand-01-lighter);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --background-color-pressed: var(--color-brand-01-light);
+
+  --background-color-actived: var(--color-brand-01-lightest);
+  --color-actived: var(--color-action-pressed);
+
+  --font-weight-lvl0: var(--font-weight-bold);
+
+  --font-weight-lvl1: var(--font-weight-normal);
+}
+
+/*------------------------------------*\
+  MENU FILTER
+\*------------------------------------*/
+po-menu-filter {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --text-color-placeholder: var(--color-neutral-light-30);
+  --color: var(--color-neutral-dark-70);
+  --border-radius: var(--border-radius-md);
+  --background: var(--color-neutral-light-05);
+
+  --text-color: var(--color-neutral-dark-90);
+
+  --color-icon-read: var(--color-neutral-dark-70);
+
+  --color-clear: var(--color-action-default);
+
+  --color-hover: var(--color-action-hover);
+  --background-hover: var(--color-brand-01-lightest);
+
+  --color-focused: var(--color-action-default);
+  --outline-color-focused: var(--color-action-focus);
+}
+
+:root {
+  /*------------------------------------*\
+  MENU PANEL
+\*------------------------------------*/
+  --color-menu-panel-background-color-item-hover: var(--color-black-alpha-15);
+  --color-menu-panel-background-color-item-selected: var(--color-neutral-light-20);
+  --color-menu-panel-background-color-menu: var(--color-neutral-light-00);
+
+  --color-menu-panel-border-top-logo: var(--color-neutral-light-20);
+
+  --color-menu-panel-color-menu-item-text: var(--color-brand-02-base);
+  --color-menu-panel-color-menu-item-selected: var(--color-neutral-dark-90);
+}
+
+/*------------------------------------*\
+  CONTEXT MENU
+\*------------------------------------*/
+po-context-menu {
+  --color: var(--color-action-default);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --font-weight: var(--font-weight-bold);
+  --line-height: var(--line-height-md);
+
+  --color-context-title: var(--color-neutral-mid-40);
+  --font-size-context-title: var(--font-size-xs);
+
+  --color-title: var(--color-neutral-dark-80);
+  --font-size-title: var(--font-size-default);
+  --font-weight-title: var(--font-weight-bold);
+
+  --background-color: var(--color-neutral-light-05);
+  --border-color: var(--color-neutral-light-20);
+  --border-radius: var(--border-radius-md);
+  --outline-color-focused: var(--color-action-focus);
+
+  /* Hover */
+  --color-hover: var(--color-brand-01-darkest);
+  --background-color-hover: var(--color-brand-01-lighter);
+
+  /* Pressed */
+  --background-color-pressed: var(--color-brand-01-light);
+
+  /* Active / Selected */
+  --background-color-actived: var(--color-brand-01-lightest);
+  --color-actived: var(--color-action-pressed);
+}
+
+/*------------------------------------*\
+  MODAL
+\*------------------------------------*/
+po-modal {
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --border-color: var(--color-neutral-light-20);
+  --background: var(--color-neutral-light-00);
+  --shadow: var(--shadow-md);
+  --color-overlay: var(--color-neutral-dark-80);
+  --opacity-overlay: 0.7;
+  --color-divider: var(--color-neutral-light-20);
+
+  --padding-header: var(--padding-header);
+  --padding-body: var(--padding-body);
+}
+
+:root {
+  /*------------------------------------*\
+  MODAL PASSWORD RECOVERY
+\*------------------------------------*/
+  --color-modal-password-recovery-link-color: var(--color-brand-02-base);
+  --color-modal-password-recovery-link-color-hover: var(--color-primary-dark-20);
+  --color-modal-password-recovery-text-color: var(--color-neutral-dark-70);
+}
+
+/*------------------------------------*\
+  MULTISELECT
+\*------------------------------------*/
+po-multiselect {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --text-color-placeholder: var(--color-action-disabled);
+  --color: var(--color-neutral-dark-70);
+  --color-icon: var(--color-neutral-dark-70);
+  --background: var(--color-neutral-light-05);
+
+  /* hover */
+  --color-hover: var(--color-action-hover);
+  --background-hover: var(--color-brand-01-lightest);
+
+  /* focus */
+  --color-focused: var(--color-action-default);
+  --outline-color-focused: var(--color-action-focus);
+
+  /* disabled */
+  --color-disabled: var(--color-action-disabled);
+  --background-disabled: var(--color-neutral-light-20);
+
+  /* error */
+  --color-error: var(--color-feedback-negative-base);
+}
+
+/*------------------------------------*\
+  PAGE HEADER
+\*------------------------------------*/
+po-page-header {
+  --padding: var(--padding);
+  --gap: var(--gap);
+  --gap-actions: var(--spacing-xs);
+}
+po-page-header .po-page-header-title {
+  --font-family: var(--font-family-extra-light);
+}
+
+po-page-content {
+  --padding-content: var(--padding-content);
+}
+
+:root {
+  /*------------------------------------*\
+  NAVBAR
+\*------------------------------------*/
+  --color-navbar-color: var(--color-neutral-light-00); /*Deprecated v23.x.x */
+
+  /*------------------------------------*\
+  NAVBAR ACTION
+\*------------------------------------*/
+  --color-navbar-action-color-content: var(--color-brand-02-base); /*Deprecated v23.x.x */
+
+  /*------------------------------------*\
+  NAVBAR ACTION POPUP
+\*------------------------------------*/
+  --color-navbar-action-popup-color-content: var(--color-navbar-action-color-content); /*Deprecated v23.x.x */
+
+  /*------------------------------------*\
+  NAVBAR ITEM
+\*------------------------------------*/
+  --color-navbar-item-color: var(--color-brand-02-base); /*Deprecated v23.x.x */
+  --color-navbar-item-color-selected: var(--color-neutral-dark-70); /*Deprecated v23.x.x */
+  --color-navbar-item-color-shadow-selected: var(--color-feedback-negative-light); /*Deprecated v23.x.x */
+
+  /*------------------------------------*\
+  NAVBAR ITEM NAVIGATION
+\*------------------------------------*/
+  --color-navbar-item-navigation-color-icon: var(--color-brand-02-base); /*Deprecated v23.x.x */
+  --color-navbar-item-navigation-color-icon-disabled: var(--color-neutral-light-20); /*Deprecated v23.x.x */
+}
+/*------------------------------------*\
+  OVERLAY
+\*------------------------------------*/
+po-overlay {
+  --color-overlay: var(--color-neutral-dark-80);
+  --opacity-overlay: 0.7;
+}
+
+:root {
+  /*------------------------------------*\
+  PAGE
+\*------------------------------------*/
+  --color-page-background-color-page: var(--color-neutral-light-00);
+
+  /*------------------------------------*\
+  PAGE BACKGROUND
+\*------------------------------------*/
+  --color-page-background-select-item-border-color: var(--color-neutral-light-10);
+
+  /*------------------------------------*\
+  PAGE BLOCKED USER
+\*------------------------------------*/
+  --color-page-blocked-user-link-color: var(--color-brand-02-base);
+  --color-page-blocked-user-link-color-hover: var(--color-primary-dark-20);
+  --color-page-blocked-user-text-color: var(--color-neutral-dark-70);
+  --color-page--blocked-user-background-color: var(--color-neutral-light-05);
+
+  /*------------------------------------*\
+  PAGE CHANGE PASSWORD
+\*------------------------------------*/
+  --color-page-change-password-background-color-buttons: var(--color-neutral-light-05);
+  --color-page-change-password-background-color-container: var(--color-neutral-light-00);
+  --color-page-change-password-background-color-secondary-logo: var(--color-neutral-light-05);
+  --color-page-change-password-color-link: var(--color-brand-02-base);
+  --color-page-change-password-color-text: var(--color-neutral-dark-70);
+  --color-page-change-password-color-required: var(--color-neutral-dark-70);
+  --color-page-change-password-color-required-ok: var(--color-success-default);
+  --color-page-change-password-color-required-minus: var(--color-black-alpha-30);
+  --color-page-change-password-color-required-text: var(--color-secondary-dark-60-alpha-70);
+
+  /*------------------------------------*\
+  PAGE CONTENT
+\*------------------------------------*/
+  --color-page-content-background-color-scrollbar: var(--color-thumb); /*Deprecated v21.x.x utilizar --color-thumb */
+
+  /*------------------------------------*\
+  PAGE LIST
+\*------------------------------------*/
+  --color-page-list-color-link-text: var(--color-brand-02-base);
+
+  /*------------------------------------*\
+  PAGE LOGIN
+\*------------------------------------*/
+  --color-page-login-header-product-name-color: var(--color-neutral-dark-70);
+  --color-page-login-header-welcome-color: var(--color-action-default);
+  --color-page-login-background-color: var(--color-neutral-light-05);
+  --color-page-login-background-highlight-image: var(--color-neutral-light-10);
+  --color-page-login-highlight-text-color: var(--color-neutral-light-00);
+  --color-page-login-link-color: var(--color-brand-02-base);
+  --color-page-login-link-hover-color: var(--color-primary-dark-20);
+  --color-page-login-popover-color-attempts: var(--color-brand-02-base);
+  --color-page-login-popover-color-title: var(--color-brand-03-base);
+  --color-page-login-support-background-color: var(--color-neutral-light-00);
+  --color-page-login-support-color: var(--color-brand-02-base);
+}
+
+/*------------------------------------*\
+  PAGE SLIDE
+\*------------------------------------*/
+
+/* transition slide */
+:root {
+  --transition-duration: var(--duration-extra-fast);
+  --transition-timing: var(--duration-extra-slow) var(--timing-standart);
+}
+
+po-page-slide {
+  /* base */
+  --background-color: var(--color-neutral-light-00);
+  --border-radius: var(--border-radius-md) 0 0 var(--border-radius-md);
+  --border-color: var(--color-neutral-light-20);
+
+  /* overlay */
+  --color-overlay: var(--color-neutral-dark-80);
+  --opacity-overlay: 0.7;
+
+  /* title */
+  --font-family: var(--font-family-heading);
+  --font-weight: var(--font-weight-bold);
+  --color-title: var(--color-neutral-dark-95);
+
+  --padding-header: var(--padding-header);
+  --padding-body: var(--padding-body);
+  --padding-footer: var(--padding-footer);
+
+  --page-slide-width-sm: 40%;
+  --page-slide-width-md: 50%;
+  --page-slide-width-lg: 60%;
+  --page-slide-width-xl: 70%;
+  --page-slide-min-width-auto: 40%;
+  --page-slide-max-width-auto: 90%;
+}
+
+po-page-slide po-divider {
+  --border-color: var(--color-neutral-light-20);
+}
+
+:root {
+  --color-page-slide-close-button-color: var(--color-brand-02-base);
+  --color-page-slide-body-text-color: var(--color-neutral-dark-90);
+
+  /*------------------------------------*\
+  POPOVER
+\*------------------------------------*/
+  --color-popover-background-color: var(--color-neutral-light-00);
+  --color-popover-background-color-arrow: var(--color-neutral-light-00);
+  --color-popover-background-color-scrollbar: var(--color-thumb); /*Deprecated v21.x.x utilizar --color-thumb */
+
+  --color-popover-color-text-title: var(--color-neutral-dark-70);
+}
+
+/*------------------------------------*\
+  POPUP
+\*------------------------------------*/
+po-popup,
+po-popup po-listbox {
+  --border-radius: var(--border-radius-md);
+  --border-width: var(--border-width-sm);
+  --border-color: var(--color-neutral-light-20);
+  --background: var(--color-neutral-light-00);
+  --shadow: var(--shadow-md);
+}
+
+po-popup po-item-list {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
+
+  /* action */
+  --font-weight: var(--font-weight-bold);
+  --color: var(--color-action-default);
+
+  --color-hover: var(--color-brand-01-darkest);
+  --background-hover: var(--color-brand-01-lighter);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --background-pressed: var(--color-brand-01-light);
+
+  --color-disabled: var(--color-action-disabled);
+
+  /* option e check */
+  --color-option: var(--color-neutral-dark-90);
+
+  --font-weight-selected: var(--font-weight-bold);
+  --background-selected: var(--color-brand-01-lightest);
+}
+
+po-progress {
+  --font-family: var(--font-family-theme);
+  --text-color: var(--color-neutral-dark-90);
+  --text-color-error: var(--color-feedback-negative-dark);
+  --color-icon-error: var(--color-feedback-negative-dark);
+  --margin-bottom: var(--spacing-xs);
+}
+
+po-progress-bar {
+  --background-color-tray: var(--color-brand-01-lightest);
+  --background-color-indicator: var(--color-action-default);
+}
+
+/*------------------------------------*\
+  RADIO
+\*------------------------------------*/
+po-radio {
+  --color-unchecked: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-dark-70);
+
+  /* hover */
+  --shadow-color-hover: var(--color-brand-01-lighter);
+  --color-hover: var(--color-brand-01-dark);
+
+  /* focus */
+  --outline-color-focused: var(--color-brand-01-darkest);
+
+  /* checked */
+  --color-checked: var(--color-action-default);
+
+  /* disabled */
+  --color-unchecked-disabled: var(--color-neutral-light-30);
+  --color-checked-disabled: var(--color-neutral-dark-70);
+}
+
+po-rich-text .po-button {
+  --border-width: var(--border-width-md);
+}
+
+:root {
+  /*------------------------------------*\
+  RICH TEXT
+\*------------------------------------*/
+  --color-rich-text-background-color-scrollbar: var(--color-thumb); /*Deprecated v21.x.x utilizar --color-thumb */
+
+  --color-rich-text-body-background-color: var(--color-neutral-light-05);
+  --color-rich-text-body-border-error: var(--color-feedback-negative-base);
+
+  --color-rich-text-body-text-error: var(--color-feedback-negative-base);
+  --color-rich-text-body-text-link: var(--color-brand-02-base);
+  --color-rich-text-body-text-link-hover: var(--color-primary-dark-20);
+  --color-rich-text-body-text-selected-color: var(--color-primary-light-80);
+
+  --color-rich-text-placeholder-color: var(--color-neutral-mid-40);
+
+  --color-rich-text-toolbar-background-color: var(--color-transparent);
+}
+
+/*------------------------------------*\
+  SEARCH
+\*------------------------------------*/
+po-search {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --text-color-placeholder: var(--color-neutral-light-30);
+  --color: var(--color-neutral-dark-70);
+  --border-radius: var(--border-radius-md);
+  --background: var(--color-neutral-light-05);
+
+  --text-color: var(--color-neutral-dark-90);
+
+  --color-icon-read: var(--color-neutral-dark-70);
+  --color-icon: var(--color-action-default);
+
+  --color-clear: var(--color-action-default);
+  --color-controls: var(--color-action-default);
+
+  --color-hover: var(--color-action-hover);
+  --background-hover: var(--color-brand-01-lightest);
+
+  --color-focused: var(--color-action-default);
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-disabled: var(--color-action-disabled);
+  --background-disabled: var(--color-neutral-light-20);
+
+  --text-color-empty: var(--color-neutral-mid-60);
+
+  --background-select: var(--background);
+  --background-select-hover: var(--background-hover);
+  --background-select-disabled: var(--background-disabled);
+
+  --transition-property: all;
+  --transition-duration: var(--duration-extra-fast);
+  --transition-timing: var(--timing-standart);
+}
+
+/*------------------------------------*\
+  SELECT
+\*------------------------------------*/
+po-select {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+
+  --text-color-empty: var(--color-neutral-light-30);
+  --color: var(--color-neutral-dark-70);
+  --background: var(--color-neutral-light-05);
+  --padding-horizontal: var(--padding-horizontal);
+  --padding-vertical: var(--padding-vertical);
+  --text-color: var(--color-neutral-dark-90);
+
+  --color-hover: var(--color-brand-01-dark);
+  --background-hover: var(--color-brand-01-lightest);
+
+  --color-focused: var(--color-action-default);
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-disabled: var(--color-neutral-light-30);
+  --background-disabled: var(--color-neutral-light-20);
+  --background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.707 8.29301C18.316 7.90201 17.684 7.90201 17.293 8.29301L12 13.586L6.70701 8.29301C6.31601 7.90201 5.68401 7.90201 5.29301 8.29301C4.90201 8.68401 4.90201 9.31601 5.29301 9.70701L11.293 15.707C11.488 15.902 11.744 16 12 16C12.256 16 12.512 15.902 12.707 15.707L18.707 9.70701C19.098 9.31601 19.098 8.68401 18.707 8.29301Z' fill='#4a5c60'/%3E%3C/svg%3E%0A");
+}
+
+/*------------------------------------*\
+  SKELETON
+\*------------------------------------*/
+po-skeleton {
+  --color: var(--color-neutral-light-20);
+  --border-radius: var(--border-radius-md);
+  --border-radius-text: var(--border-radius-md);
+  --transition-property: all;
+  --transition-duration: var(--duration-moderate);
+  --transition-timing: var(--timing-continuous);
+  --animation-duration-pulse: var(--duration-very-slow);
+  --animation-duration-shimmer: var(--duration-ultra-slow);
+  --margin-bottom: var(--spacing-xs);
+
+  /* type: primary */
+  --color-primary: var(--color-neutral-mid-40);
+  --border-radius-primary: var(--border-radius-md);
+
+  /* type: content */
+  --color-content: var(--color-neutral-light-00);
+  --border-radius-content: var(--border-radius-lg);
+
+  /* shimmer highlights */
+  --shimmer-highlight: var(--color-neutral-light-30);
+  --shimmer-highlight-primary: var(--color-neutral-light-20);
+  --shimmer-highlight-content: var(--color-neutral-light-05);
+}
+
+:root {
+  /*------------------------------------*\
+  SLIDE
+\*------------------------------------*/
+  --color-slide-background-color-active-circle: var(--color-brand-02-base);
+  --color-slide-background-color-arrow-circle: var(--color-neutral-light-00);
+  --color-slide-background-color-circle: var(--color-neutral-light-20);
+  --color-slide-background-color-scrollbar: var(--color-thumb); /*Deprecated v21.x.x utilizar --color-thumb */
+  --color-slide-border-arrow: var(--color-brand-02-base);
+  --color-slide-box-shadow-arrow-circle: var(--color-black-alpha-15);
+  --color-slide-box-shadow-wrapper: var(--color-black-alpha-30);
+}
+
+po-stepper {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --font-weight: var(--font-weight-normal);
+
+  --text-color: var(--color-neutral-dark-70);
+  --color-icon-done: var(--color-neutral-dark-70);
+  --background-done: var(--color-neutral-light-00);
+  --color-line-done: var(--color-neutral-mid-40);
+  --color-icon-current: var(--color-neutral-light-00);
+  --background-current: var(--color-action-default);
+  --font-weight-current: var(--font-weight-bold);
+  --font-size-circle: var(--font-size-sm);
+  --color-next: var(--color-action-disabled);
+  --text-color-next: var(--color-neutral-light-30);
+
+  --outline-color-focused: var(--color-action-focus);
+}
+
+:root {
+  /*------------------------------------*\
+    STEPPER
+  \*------------------------------------*/
+  --color-stepper-bar: var(--color-line-done); /*Deprecated v20.x.x utilizar --color-line-done */
+  --color-stepper-bar-disabled: var(--color-next); /*Deprecated v20.x.x utilizar --color-next */
+  --color-stepper-circle-active: var(--background-current); /*Deprecated v20.x.x utilizar --background-current */
+  --color-stepper-circle-default: var(--color-icon-done); /*Deprecated v20.x.x utilizar --color-icon-done */
+  --color-stepper-circle-disabled: var(--color-next); /*Deprecated v20.x.x utilizar --color-next */
+}
+
+/*------------------------------------*\
+  SWITCH
+\*------------------------------------*/
+po-switch {
+  --color-unchecked: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-dark-70);
+  --track-unchecked: var(--color-neutral-light-20);
+
+  --color-checked: var(--color-action-default);
+  --track-checked: var(--color-brand-01-light);
+
+  --color-unchecked-hover: var(--color-brand-01-lightest);
+  --color-checked-hover: var(--color-action-hover);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-unchecked-disabled: var(--color-neutral-light-20);
+  --color-checked-disabled: var(--color-action-disabled);
+}
+
+po-context-tabs,
+po-tabs,
+po-tab-button {
+  --background: var(--color-transparent);
+  --color-baseline: var(--color-neutral-light-20);
+
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --font-weight: var(--font-weight-bold);
+  --color: var(--color-action-default);
+  --border-radius: var(--border-radius-md);
+
+  --background-item-default: var(--color-transparent);
+
+  --background-item-selected: var(--color-brand-01-lightest);
+
+  --color-hover: var(--color-brand-01-darkest);
+  --background-item-hover: var(--color-brand-01-lightest);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-disabled: var(--color-action-disabled);
+  --background-item-disabled: var(--color-neutral-light-10);
+
+  --margin-tabs-container-left: var(--margin-tabs-container-left);
+  --margin-tabs-container-right: var(--margin-tabs-container-right);
+  --padding-tabs-header: var(--spacing-sm);
+
+  --margin-tabs-first-child: var(--spacing-md);
+  --margin-tabs-last-child: var(--spacing-md);
+}
+
+po-tabs po-tab-dropdown po-button {
+  --background-hover: var(--color-brand-01-lightest);
+}
+
+/*------------------------------------*\
+  TABLE
+\*------------------------------------*/
+po-table {
+  --background-color: var(--color-neutral-light-00);
+  --color: var(--color-neutral-dark-95);
+
+  --font-family: var(--font-family-theme);
+
+  --background-striped-color: var(--color-neutral-light-05);
+
+  --color-line: var(--color-neutral-mid-40);
+
+  --background-color-selected: var(--color-brand-01-lightest);
+
+  --background-color-headline: var(--color-neutral-light-10);
+
+  --font-weight-headline: var(--font-weight-bold);
+
+  --color-hover: var(--color-action-hover);
+  --background-color-hover: var(--color-brand-01-lighter);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-actived: var(--color-neutral-dark-90);
+  --background-color-actived: var(--color-brand-01-light);
+
+  --color-disabled: var(--color-neutral-mid-40);
+}
+
+:root {
+  /*------------------------------------*\
+  TABLE COLUMN LINK
+\*------------------------------------*/
+  --color-table-color-link-disabled: var(--color-neutral-light-20);
+}
+
+/*------------------------------------*\
+  TABLE LIST MANAGER
+\*------------------------------------*/
+
+po-table-list-manager {
+  /* type */
+  --color-type: var(--color-neutral-dark-70);
+  --font-weight: var(--font-weight-bold);
+
+  /* column text */
+  --color-column-text: var(--color-neutral-dark-95);
+}
+
+:root {
+  /*------------------------------------*\
+  TABLE COLUMN MANAGER
+\*------------------------------------*/
+  --color-table-column-manager-body-color-background-scrollbar: var(
+    --color-track
+  ); /*Deprecated v21.x.x utilizar --color-track */
+  --color-table-column-manager-border-color: var(--color-neutral-light-10);
+  --color-table-column-manager-close-button-color: var(--color-brand-02-base);
+  --color-table-column-manager-header-title: var(--color-neutral-dark-90);
+  --color-table-column-manager-outline-color-focus: var(--color-action-default);
+}
+
+/*------------------------------------*\
+  TAG
+\*------------------------------------*/
+po-tag {
+  --border-radius: var(--border-radius-pill);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-sm);
+  --font-weight: var(--font-weight-bold);
+  --line-height: var(--line-height-sm);
+  --gap: var(--spacing-xs);
+  --padding: 0;
+
+  /* neutral */
+  --color-neutral: var(--color-neutral-light-10);
+  --text-color-neutral: var(--color-neutral-dark-80);
+
+  /* positive */
+  --color-positive: var(--color-feedback-positive-lightest);
+  --text-color-positive: var(--color-feedback-positive-dark);
+
+  /* negative */
+  --color-negative: var(--color-feedback-negative-lightest);
+  --text-color-negative: var(--color-feedback-negative-darker);
+
+  /* warning */
+  --color-tag-warning: var(--color-feedback-warning-lightest);
+  --text-color-warning: var(--color-feedback-warning-darkest);
+
+  /* info */
+  --color-info: var(--color-feedback-info-lightest);
+  --text-color-info: var(--color-feedback-info-dark);
+
+  /* removable */
+  --color: var(--color-brand-01-lightest);
+  --border-color: var(--color-brand-01-lighter);
+  --color-icon: var(--color-action-default);
+  --text-color: var(--color-neutral-dark-80);
+  --color-hover: var(--color-brand-01-lighter);
+  --outline-color-focused: var(--color-action-focus);
+
+  /* disable */
+  --color-disabled: var(--color-neutral-light-20);
+  --border-color-disabled: var(--color-action-disabled);
+  --color-icon-disabled: var(--color-action-disabled);
+  --text-color-disabled: var(--color-neutral-mid-60);
+}
+
+:root {
+  --color-tag-background-color-white: var(--color-neutral-light-00);
+
+  --color-tag-inverse-border-color-01: var(--color-01);
+  --color-tag-inverse-border-color-02: var(--color-02);
+  --color-tag-inverse-border-color-03: var(--color-03);
+  --color-tag-inverse-border-color-04: var(--color-04);
+  --color-tag-inverse-border-color-05: var(--color-05);
+  --color-tag-inverse-border-color-06: var(--color-06);
+  --color-tag-inverse-border-color-07: var(--color-07);
+  --color-tag-inverse-border-color-08: var(--color-08);
+  --color-tag-inverse-border-color-09: var(--color-09);
+  --color-tag-inverse-border-color-10: var(--color-10);
+  --color-tag-inverse-border-color-11: var(--color-11);
+  --color-tag-inverse-border-color-12: var(--color-12);
+}
+
+/*------------------------------------*\
+  TEXTAREA
+\*------------------------------------*/
+po-textarea {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+
+  --text-color-placeholder: var(--color-neutral-light-30);
+  --color: var(--color-neutral-dark-70);
+  --background: var(--color-neutral-light-05);
+
+  --text-color: var(--color-neutral-dark-90);
+
+  --color-hover: var(--color-brand-01-dark);
+  --background-hover: var(--color-brand-01-lightest);
+
+  --color-focused: var(--color-action-default);
+
+  --outline-color-focused: var(--color-action-focus);
+
+  --color-disabled: var(--color-neutral-light-30);
+  --background-disabled: var(--color-neutral-light-20);
+
+  --text-color-readonly: var(--color-neutral-dark-70);
+
+  --color-error: var(--color-feedback-negative-base);
+}
+
+:root {
+  /*------------------------------------*\
+  TOOLBAR
+\*------------------------------------*/
+
+  --color-toolbar-background-color-badge: var(--color-feedback-negative-base);
+  --color-toolbar-background-color-toolbar: var(--color-neutral-light-00);
+
+  --color-toolbar-border-color-separator: var(--color-neutral-light-10);
+
+  --color-toolbar-color-badge-text: var(--color-neutral-light-00);
+  --color-toolbar-color-default: var(--color-brand-02-base);
+  --color-toolbar-color-title: var(--color-action-default);
+}
+
+/*------------------------------------*\
+  TOOLTIP
+\*------------------------------------*/
+.po-tooltip {
+  --color: var(--color-neutral-dark-80);
+  --border-radius: var(--border-radius-md);
+  --font-family: var(--font-family-theme);
+  --text-color: var(--color-neutral-light-00);
+}
+
+:root {
+  /*------------------------------------*\
+  TREEVIEW
+\*------------------------------------*/
+
+  /** Tree View Item */
+  --color-tree-view-item-border-bottom-color: var(--color-neutral-light-10);
+
+  /** Tree View Item Header */
+  --color-tree-view-item-header-button-color: var(--color-brand-02-base);
+  --color-tree-view-item-header-button-focus: var(--color-action-default);
+  --color-tree-view-item-header-label-text-color: var(--color-neutral-dark-70);
+
+  /*------------------------------------*\
+  UPLOAD
+\*------------------------------------*/
+
+  --color-upload-drag-drop-overlay-icon: var(--color-primary-alpha-50);
+  --color-upload-drag-drop-overlay-text: var(--color-brand-02-base);
+  --color-upload-drag-drop-area-overlay-background-color: var(--color-neutral-light-00);
+
+  --color-upload-drag-drop-area-icon: var(--color-neutral-light-20);
+  --color-upload-drag-drop-area-label-text: var(--color-neutral-dark-70);
+  --color-upload-drag-drop-area-select-files-text: var(--color-brand-02-base);
+  --color-upload-drag-drop-area-border: var(--color-neutral-light-30);
+  --color-upload-drag-drop-area-border-primary: var(--color-brand-02-base);
+  --color-upload-drag-drop-area-border-error: var(--color-feedback-negative-base);
+
+  --color-upload-drag-drop-area-background-color-disabled: var(--color-neutral-light-10);
+  --color-upload-drag-drop-area-color-disabled: var(--color-neutral-light-30);
+
+  --color-upload-file-restrictions-color-text: var(
+    --color-neutral-dark-70
+  ); /*Deprecated v21.x.x utilizar --text-color-text-support*/
+}
+
+/*------------------------------------*\
+  UPLOAD
+\*------------------------------------*/
+po-upload {
+  /* TEXT SUPPORT */
+  --font-family-text-support: var(--font-family-theme);
+  --text-color-text-support: var(--color-neutral-dark-90);
+
+  /* UPLOAD CONTENT */
+  --background-color-content: var(--color-neutral-light-10);
+  --border-color-content: var(--color-neutral-light-20);
+  --border-radius-content: var(--border-radius-md);
+  --text-color-file-name: var(--color-neutral-dark-90);
+  --font-family-file-name: var(--font-family-theme);
+  --text-color-info-bar: var(--color-neutral-mid-60);
+  --font-family-info-bar: var(--font-family-theme);
+
+  /* ERRO STATE */
+  --background-color-content-error: var(--color-neutral-light-00);
+  --border-color-content-error: var(--color-feedback-negative-base);
+  --text-color-error: var(--color-feedback-negative-dark);
+  --color-icon-error: var(--color-feedback-negative-base);
+  --font-family-error: var(--font-family-theme);
+
+  /* UPLOADED STATE */
+  --background-color-content-uploaded: var(--color-neutral-light-00);
+  --border-color-content-uploaded: var(--color-neutral-light-20);
+
+  /* INTERACTIVE STATE */
+  --text-color-file-name-interactive: var(--color-action-default);
+
+  /* THUMBNAIL */
+  --color-icon-thumbnail: var(--color-action-default);
+  --border-width-thumbnail: var(--border-width-sm);
+  --border-radius-thumbnail: var(--border-radius-md);
+  --background-color-thumbnail: var(--color-neutral-light-05);
+
+  --outline-color-focused: var(--color-action-focus);
+}
+
+/*------------------------------------*\
+  WIDGET
+\*------------------------------------*/
+po-widget {
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size);
+  --font-weight: var(--font-weight-bold);
+  --font-color: var(--color-neutral-dark-95);
+  --padding: var(--padding); /*Deprecated v21.x.x utilizar --padding-header, --padding-body, e --padding-footer*/
+
+  --border-radius: var(--border-radius-md);
+  --border-color: var(--color-neutral-light-20);
+  --background: var(--color-neutral-light-00);
+  --border-width: var(--border-width-sm);
+  --shadow: var(--shadow-md);
+
+  --background-selected: var(--color-action-lightest);
+  --border-color-selected: var(--color-action-default);
+
+  --border-color-hover: var(--color-action-hover);
+  --shadow-hover: var(--shadow-lg);
+
+  --color-focused: var(--color-action-default);
+  --outline-color-focused: var(--color-action-focus);
+
+  --padding-header: var(--padding-header);
+  --padding-body: var(--padding-body);
+  --padding-footer: var(--padding-footer);
+}
+
+:root {
+  --color-widget-color-action-active: var(--color-primary-dark-20);
+  --color-widget-color-action-hover: var(--color-primary-dark-20);
+  --color-widget-color-action: var(--color-brand-02-base);
+  --color-widget-color-default: var(--font-color);
+  --color-widget-color-title-action: var(--font-color);
+  --color-widget-color-widget-primary: var(--color-neutral-dark-90);
+
+  --color-widget-primary-background-color: var(--color-brand-03-base);
+
+  --border-widget-border-no-shadow: solid var(--border-width) var(--color-neutral-light-10);
+  --color-widget-border-color-footer: var(--color-neutral-light-10);
+  --color-widget-border-color-footer-primary: var(--color-white-alpha-30);
+
+  --color-widget-background-color-disabled: var(--color-neutral-light-05);
+  --color-widget-background-color-scroll-disabled: var(--color-thumb); /*Deprecated v21.x.x utilizar --color-thumb */
+  --color-widget-color-disabled: var(--color-neutral-mid-40);
+}
+
+/*------------------------------------*\
+  SERVICES
+\*------------------------------------*/
+
+/*------------------------------------*\
+TOASTER
+\*------------------------------------*/
+po-toaster {
+  --border-radius: var(--border-radius-md);
+  --color-icon: var(--color-neutral-light-00);
+  --shadow: var(--shadow-lg);
+
+  --font-family: var(--font-family-theme);
+  --font-color: var(--color-neutral-dark-90);
+  --font-color-support: var(--color-neutral-dark-80);
+
+  /* Success */
+  --color-success: var(--color-feedback-positive-base);
+  --background-success: var(--color-feedback-positive-lightest);
+  --border-color-success: var(--color-feedback-positive-lighter);
+
+  /* Error */
+  --color-error: var(--color-feedback-negative-base);
+  --background-error: var(--color-feedback-negative-lightest);
+  --border-color-error: var(--color-feedback-negative-lighter);
+
+  /* Warning */
+  --color-warning: var(--color-feedback-warning-base);
+  --color-icon-warning: var(--color-neutral-dark-90);
+  --background-warning: var(--color-feedback-warning-lightest);
+  --border-color-warning: var(--color-feedback-warning-lighter);
+
+  /* Info */
+  --color-info: var(--color-feedback-info-base);
+  --background-info: var(--color-feedback-info-lightest);
+  --border-color-info: var(--color-feedback-info-lighter);
+}
+
+po-header {
+  --header-height: 3.5rem;
+  /* base */
+  --background-color: var(--color-neutral-light-05);
+  --border-radius-bottom-left: var(--border-radius-md);
+  --border-radius-bottom-right: var(--border-radius-md);
+  --base-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  --stroke-color: var(--color-brand-01-base);
+
+  /* title */
+  --font-family: var(--font-family-theme);
+  --font-weight: var(--font-weight-bold);
+  --text-color: var(--color-neutral-dark-70);
+
+  /* submenus */
+  --border-radius: var(--border-radius-md);
+  --text-color-submenu: var(--color-brand-01-dark);
+  --icon-color: var(--color-brand-01-dark);
+  --outline-color-focused: var(--color-neutral-dark-95);
+  --font-weight-submenu: var(--font-weight-bold);
+  --font-family-submenu: var(--font-family-theme);
+  /* submenus hover */
+  --background-hover: var(--color-brand-01-lighter);
+  --icon-color-hover: var(--color-brand-01-darkest);
+  --text-color-hover: var(--color-brand-01-darkest);
+  /* submenus pressed */
+  --background-pressed: var(--color-brand-01-light);
+  --icon-color-pressed: var(--color-brand-01-darkest);
+  --text-color-pressed: var(--color-brand-01-darkest);
+
+  /* selected */
+  --background-selected: var(--color-brand-01-light);
+  --text-color-selected: var(--color-brand-01-darkest);
+  --icon-color-selected: var(--color-neutral-dark-95);
+
+  /*customer  */
+  --background-color-customer: var(--color-neutral-light-00);
+  --border-color: var(--color-neutral-light-10);
+  --border-style: solid;
+  --border-width: var(--border-width-sm);
+  /* customer hover */
+  --background-color-customer-hover: var(--color-brand-01-lighter);
+  /* customer pressed */
+  --background-color-customer-pressed: var(--color-brand-01-light);
+  --border-width-pressed: var(--border-width-md);
+  /* focus */
+  --border-width-focus: var(--border-width-md);
+
+  --object-fit-brand: contain;
+  --object-fit-customer: contain;
+  --object-fit-customer-user: cover;
+
+  --nav-position: fixed;
+  --nav-position-top: 0;
+  --nav-overlay-top: 56px;
+  --nav-overlay-left: 0px;
+  --nav-menu-top: 56px;
+  --nav-menu-left: 0px;
+}
+
+/*------------------------------------*\
+  AURA THEME — COMPONENT OVERRIDES
+  Border-radius agressivo + cores Ciano/Lavanda
+\*------------------------------------*/
+
+/*------------------------------------*\
+  AURA — BORDER-RADIUS (hardcoded por componente)
+\*------------------------------------*/
+
+/* Botões — pill style */
+po-button,
+po-button-group .po-button,
+po-dropdown {
+  --border-radius: 28px;
+}
+
+/* Cards / Widgets / Containers */
+po-widget,
+po-container,
+po-accordion,
+po-accordion-manager {
+  --border-radius: 28px;
+}
+
+/* Inputs / Combos / Selects / Search / Lookup */
+po-combo,
+po-select,
+po-search,
+po-lookup,
+po-multiselect,
+po-menu-filter,
+po-textarea {
+  --border-radius: 20px;
+}
+
+po-input,
+po-url,
+po-login,
+po-email,
+po-password,
+po-decimal,
+po-number,
+po-datepicker,
+po-datepicker-range,
+po-timepicker,
+div.po-lookup-filter-content input.po-input,
+input.po-input {
+  --border-radius: 20px;
+}
+
+/* Popup / Popover / Listbox */
+po-popup,
+po-popup po-listbox,
+po-listbox,
+po-context-menu {
+  --border-radius: 24px;
+}
+
+/* Table */
+po-table {
+  --border-radius: 24px;
+}
+
+/* Loading / Toaster */
+po-loading,
+po-toaster {
+  --border-radius: 28px;
+}
+
+/* Modal */
+po-modal {
+  --border-radius: 32px;
+}
+
+/* Page Slide */
+po-page-slide {
+  --border-radius: 32px 0 0 32px;
+}
+
+/* Menu */
+po-menu,
+po-menu-item {
+  --border-radius: 28px;
+}
+
+/* Calendar / Timer */
+po-calendar,
+po-timer {
+  --border-radius: 24px;
+}
+
+/* Tooltip */
+.po-tooltip {
+  --border-radius: 16px;
+}
+
+/* Skeleton */
+po-skeleton {
+  --border-radius: 20px;
+  --border-radius-text: 16px;
+  --border-radius-primary: 20px;
+  --border-radius-content: 24px;
+}
+
+/* Header — bottom radius */
+po-header {
+  --border-radius-bottom-left: 28px;
+  --border-radius-bottom-right: 28px;
+  --border-radius: 24px;
+}
+
+/* Upload */
+po-upload {
+  --border-radius-content: 20px;
+  --border-radius-thumbnail: 16px;
+}
+
+/* Tabs */
+po-context-tabs,
+po-tabs,
+po-tab-button {
+  --border-radius: 20px;
+}
+
+/* Badge */
+po-badge {
+  --border-radius: 16px;
+}
+
+/*------------------------------------*\
+  AURA — BOTÃO PRIMÁRIO: CIANO
+  O botão primário usa ciano ao invés do indigo padrão
+\*------------------------------------*/
+po-button[p-kind='primary'],
+po-button:not([p-kind]) {
+  --color: #0891b2;
+  --text-color: #ffffff;
+  --color-hover: #0e7490;
+  --background-hover: #cffafe;
+  --color-pressed: #155e75;
+  --background-pressed: #a5f3fc;
+  --border-color-hover: #155e75;
+}
+
+/*------------------------------------*\
+  AURA — LINKS: LAVANDA
+  Links usam cor lavanda ao invés da cor de ação padrão
+\*------------------------------------*/
+po-link {
+  --text-color: #a855f7;
+  --text-color-hover: #9333ea;
+  --text-color-pressed: #7e22ce;
+  --text-color-visited: #7e22ce;
+}

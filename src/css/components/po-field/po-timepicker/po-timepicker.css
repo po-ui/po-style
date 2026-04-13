@@ -34,11 +34,14 @@ po-timepicker {
 }
 
 .po-timepicker-field-focused {
-  border-color: var(--color-focused, var(--color-action-default)) !important;
   outline-color: var(--outline-color-focused);
   outline-width: var(--outline-width);
   outline-style: solid;
   outline-offset: 2px;
+}
+
+.po-timepicker-field-focused:not(.po-timepicker-field-readonly) {
+  border-color: var(--color-focused, var(--color-action-default)) !important;
 }
 
 /* Segment wrapper with adaptive width (follows po-datepicker-range pattern) */
@@ -97,6 +100,10 @@ po-timepicker {
   user-select: none;
 }
 
+.po-timepicker-field-placeholder .po-timepicker-field-separator {
+  color: var(--text-color-placeholder);
+}
+
 po-timepicker[p-size='small'] .po-timepicker-field-separator {
   font-size: var(--font-size, var(--font-size-sm));
 }
@@ -113,8 +120,6 @@ po-timepicker[p-size='small'] .po-timepicker-field-separator {
 
 .po-timepicker-period-input {
   text-transform: uppercase;
-  caret-color: transparent;
-  user-select: none;
 }
 
 po-timepicker[p-size='small'] .po-timepicker-field-period {
@@ -250,6 +255,7 @@ po-timepicker po-clean .po-field-icon:not(.po-field-icon-disabled) {
 po-timepicker .po-input {
   font-family: var(--font-family);
   font-size: var(--font-size, var(--font-size-default));
+  font-weight: var(--font-weight-normal);
   color: var(--text-color);
   background-color: var(--background);
   padding: var(--padding, 0 0.5rem);

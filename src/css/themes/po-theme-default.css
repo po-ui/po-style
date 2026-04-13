@@ -92,6 +92,8 @@
  * Table List Manager.............variáveis do Table List Manager.
  * Tag............................variáveis do Tag.
  * Textarea.......................variáveis do Textarea.
+ * Timer..........................variáveis do Timer.
+ * Timepicker.....................variáveis do Timepicker.
  * Toolbar........................variáveis do Toolbar.
  * Tooltip........................variáveis do Tooltip.
  * Tree View......................variáveis do Tree View.
@@ -620,6 +622,9 @@ po-calendar {
   --day-cell-transition-timing: var(--timing-standart);
 }
 
+/*------------------------------------*\
+  TIMER
+\*------------------------------------*/
 po-timer {
   /* BASE */
   --background: var(--color-neutral-light-00);

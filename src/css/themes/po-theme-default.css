@@ -617,6 +617,10 @@ po-calendar {
   --day-cell-transition-duration: var(--duration-extra-fast);
   --day-cell-transition-property: all;
   --day-cell-transition-timing: var(--timing-standart);
+
+  /*SELECTED MONTH-YEAR AND YEAR*/
+  --background-pressed-display: var(--color-brand-01-light);
+  --color-hover-display: var(--color-brand-01-darkest);
 }
 
 po-timer {

@@ -7,7 +7,7 @@
 .po-calendar-preset-list {
   display: flex;
   flex-direction: column;
-  border-right: var(--border-width-sm) solid var(--color-neutral-mid-40);
+  border-right: var(--border-width-sm) solid var(--color-neutral-mid-20);
   padding: var(--spacing-xs);
   min-width: 9rem;
   max-width: 12.75rem;
@@ -19,6 +19,7 @@
 
 po-calendar[p-size='small'] .po-calendar-preset-list {
   max-width: 10.5rem;
+  padding: var(--spacing-xxs);
 }
 
 po-calendar .po-calendar-preset-list .po-button {
@@ -38,7 +39,7 @@ po-calendar[p-size='small'] .po-calendar-with-presets.po-calendar {
 }
 
 .po-calendar-mobile .po-calendar-preset-list {
-  border-top: var(--border-width-sm) solid var(--color-neutral-mid-40);
+  border-top: var(--border-width-sm) solid var(--color-neutral-mid-20);
   border-right: none;
   height: var(--spacing-4xl);
   min-width: unset;
@@ -72,7 +73,7 @@ po-calendar[p-size='small'] .po-calendar-mobile.po-calendar-responsive .po-calen
 .po-calendar.po-calendar-mobile.po-calendar-with-presets .po-calendar-footer {
   position: relative;
   padding: var(--spacing-xs) 0;
-  border-top: var(--border-width-sm) solid var(--color-neutral-mid-40);
+  border-top: var(--border-width-sm) solid var(--color-neutral-mid-20);
 }
 
 .po-calendar-with-presets .po-calendar-footer {

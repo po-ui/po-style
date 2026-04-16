@@ -19,6 +19,7 @@
 
 po-calendar[p-size='small'] .po-calendar-preset-list {
   max-width: 10.5rem;
+  padding: var(--spacing-xxs);
 }
 
 po-calendar .po-calendar-preset-list .po-button {

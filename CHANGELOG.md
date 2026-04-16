@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.39.8](https://github.com/po-ui/po-style/compare/v19.39.7...v19.39.8) (2026-04-16)
+
+
+### Bug Fixes
+
+* **components:** aparta estilos ofensores ao CSP ([2ad719a](https://github.com/po-ui/po-style/commit/2ad719aa6b4ac0788244c23e874f394d4e2a2c62))
+
+
+
 ## [19.39.7](https://github.com/po-ui/po-style/compare/v19.39.6...v19.39.7) (2026-03-26)
 
 Compatibilidade com @po-ui/ng-components@19.39.7

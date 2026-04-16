@@ -1,0 +1,54 @@
+.po-timer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+  row-gap: var(--row-gap);
+}
+
+/**
+ * Container de recorte (clipping). Define a janela visivel da coluna.
+ * overflow: hidden garante que apenas os itens dentro da viewport aparecem.
+ * Nenhuma rolagem nativa ocorre aqui — o scroll e controlado via translateY
+ * no elemento .po-timer-column-items.
+ */
+.po-timer-column-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: clip;
+  height: calc(6 * var(--display-size) + 5 * var(--row-gap) + 2 * var(--padding));
+  padding-bottom: var(--padding);
+}
+
+po-timer[p-size='small'] .po-timer-column-scroll {
+  height: calc(6 * var(--display-size) + 5 * var(--row-gap) + 2 * var(--padding));
+  padding-bottom: var(--padding);
+}
+
+.po-timer-column .po-timer-column-items {
+  padding-block: var(--padding);
+  padding-inline: calc(var(--padding) / 2);
+}
+
+.po-timer-column:first-child .po-timer-column-items {
+  padding-left: var(--padding);
+}
+
+.po-timer-column:last-child .po-timer-column-items {
+  padding-right: var(--padding);
+}
+
+/**
+ * Container dos itens. E um flex-column com todos os botoes.
+ * Sua posicao vertical e controlada via transform: translateY() por JS,
+ * sem nenhuma dependencia de scrollTop ou eventos de scroll do browser.
+ */
+.po-timer-column-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--row-gap);
+  will-change: transform;
+}

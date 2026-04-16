@@ -1,3 +1,9 @@
+/* TOKENS INTERNOS */
+po-calendar {
+  --color-selected-display: var(--color-hover-display);
+  --background-selected-display: var(--background-pressed-display);
+}
+
 .po-calendar {
   background-color: var(--color-calendar-background-color, var(--background));
   border-style: solid;
@@ -8,8 +14,79 @@
   height: auto;
   width: 25.5rem;
   overflow: hidden;
-  position: relative;
   user-select: none;
+}
+
+.po-calendar-month-year {
+  display: flex;
+  height: 336px;
+  width: 273px;
+  padding: 16px;
+  gap: var(--spacing-xs);
+}
+
+po-calendar[p-size='small'] .po-calendar-month-year {
+  height: 264px;
+  width: 273px;
+}
+
+.po-calendar-year {
+  display: flex;
+  height: 336px;
+  width: 136.5px;
+  padding: 16px;
+}
+
+po-calendar[p-size='small'] .po-calendar-year {
+  height: 264px;
+  width: 136.5px;
+}
+
+.po-calendar-years {
+  display: flex;
+  overflow-y: auto;
+  scrollbar-width: none;
+  flex-direction: column;
+  width: 116.5px;
+  padding: var(--spacing-xs);
+  gap: var(--spacing-xs);
+}
+
+po-calendar[p-size='small'] .po-calendar-years {
+  padding: var(--spacing-xxs);
+}
+
+.po-calendar-months {
+  width: 116.5px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  padding: var(--spacing-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+po-calendar[p-size='small'] .po-calendar-months {
+  padding: var(--spacing-xxs);
+}
+
+.po-calendar-month-item po-button,
+.po-calendar-month-item .po-button,
+.po-calendar-year-item po-button,
+.po-calendar-year-item .po-button {
+  gap: 8px;
+  width: 100%;
+}
+
+.po-calendar-month-item,
+.po-calendar-year-item {
+  list-style: none;
+}
+
+.po-button-selected .po-button,
+.po-button-selected .po-button[p-kind='tertiary']:hover {
+  color: var(--color-selected-display);
+  background-color: var(--background-selected-display);
 }
 
 .po-calendar-wrapper {

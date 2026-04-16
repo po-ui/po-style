@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.10.0](https://github.com/po-ui/po-style/compare/v21.9.0...v21.10.0) (2026-04-16)
+
+
+### Bug Fixes
+
+* **components:** aparta estilos ofensores ao CSP ([63b503e](https://github.com/po-ui/po-style/commit/63b503e057a5133b2aaf52274ad30ba650e17f44))
+
+
+### Features
+
+* **tag:** adiciona suporte à nova paleta caption tag colors ([0f77afe](https://github.com/po-ui/po-style/commit/0f77afeac858992503fae3f9b7388a7208070d39))
+
+
+
 # [21.9.0](https://github.com/po-ui/po-style/compare/v21.8.0...v21.9.0) (2026-04-09)
 
 

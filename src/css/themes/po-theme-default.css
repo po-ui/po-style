@@ -719,6 +719,8 @@ po-chart .po-chart {
   --font-weight-grid: var(--font-weight-normal);
 
   --color-legend: var(--color-chart-legend-text, var(--color-neutral-dark-70));
+  --color-legend-scroll-icon-active: var(--color-action-default);
+  --color-legend-scroll-icon-inactive: var(--color-action-disabled);
 
   --border-color: var(--color-neutral-light-00);
   --border-radius-bar: var(--border-radius-none);

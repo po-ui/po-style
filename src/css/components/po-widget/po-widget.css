@@ -288,3 +288,30 @@ po-widget .po-container-content:not(.po-widget-body .po-container-content):first
 .po-widget-wrapper-info .po-widget-wrapper-tag po-tag {
   line-height: 0;
 }
+
+.po-widget-header--tag-top-actions {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: var(--spacing-xs);
+}
+
+.po-widget-header--tag-top-actions .po-widget-header__tag-top {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.po-widget-header--tag-top-actions .po-widget-wrapper-info {
+  display: contents;
+}
+
+.po-widget-header--tag-top-actions .po-widget-wrapper-tag {
+  grid-column: 1;
+  grid-row: 2;
+  min-width: 0;
+}
+
+.po-widget-header--tag-top-actions .po-widget-wrapper-info > .po-widget-button-wrapper {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  align-self: center;
+}

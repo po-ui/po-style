@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.12.0](https://github.com/po-ui/po-style/compare/v21.11.0...v21.12.0) (2026-04-27)
+
+
+### Features
+
+* **chart:** adiciona tokens para ícone da legenda ([0a45447](https://github.com/po-ui/po-style/commit/0a4544776957d1282c452ab4fc847048821c78a7))
+* **progress:** implementa variação circular ([b763733](https://github.com/po-ui/po-style/commit/b76373348cca67ecca2e67060c6a723eaad7eb58))
+
+
+
 ## [21.11.0](https://github.com/po-ui/po-style/compare/v21.10.0...v21.11.0) (2026-04-23)
 
 Compatibilidade com @po-ui/ng-components@21.11.0

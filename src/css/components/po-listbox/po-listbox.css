@@ -129,11 +129,11 @@ po-listbox[p-size='small'] .po-listbox-group-header i {
   color: var(--color-disabled);
 }
 
-.po-listbox-dropdown .po-item-list:not(.po-item-list__danger) i {
+.po-listbox-dropdown .po-item-list:not(.po-item-list__danger):not(.po-item-list__disabled) i {
   color: var(--color-action-default);
 }
 
-.po-listbox-dropdown .po-item-list {
+.po-listbox-dropdown .po-item-list:not(.po-item-list__disabled) {
   border-radius: var(--border-radius-md);
   color: var(--color-brand-01-base);
 }

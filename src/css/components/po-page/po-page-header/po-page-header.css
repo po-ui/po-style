@@ -7,7 +7,6 @@
 .po-page-header {
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
   padding: var(--padding, var(--po-density-header-padding, var(--spacing-xs) var(--spacing-md)));
   width: 100%;
 }

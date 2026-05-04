@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.13.0](https://github.com/po-ui/po-style/compare/v21.12.0...v21.13.0) (2026-05-04)
+
+
+### Bug Fixes
+
+* **page:** corrige cálculo de altura do po-page-content ([4c04211](https://github.com/po-ui/po-style/commit/4c04211f94bc76bc3b2a4decc4f07570dab2cc54))
+
+
+### Features
+
+* **datepicker:** adiciona modos de seleção monthYear e year ([770c85a](https://github.com/po-ui/po-style/commit/770c85ae4b4f9f0c0f1c77786e170fdba59c8039))
+* **page:** adiciona tipos de header e layout de ações ([a3ccd6d](https://github.com/po-ui/po-style/commit/a3ccd6dc5af0b17accf47b7e8aeae426e0be82c1))
+
+
+
 # [21.12.0](https://github.com/po-ui/po-style/compare/v21.11.0...v21.12.0) (2026-04-27)
 
 

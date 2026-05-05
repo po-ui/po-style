@@ -135,7 +135,6 @@ po-listbox[p-size='small'] .po-listbox-group-header i {
 
 .po-listbox-dropdown .po-item-list:not(.po-item-list__disabled) {
   border-radius: var(--border-radius-md);
-  color: var(--color-brand-01-base);
 }
 
 po-listbox[p-size='small'] .po-listbox-dropdown .po-item-list {

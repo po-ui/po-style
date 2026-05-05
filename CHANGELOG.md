@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [21.13.1](https://github.com/po-ui/po-style/compare/v21.13.0...v21.13.1) (2026-05-05)
+
+
+### Bug Fixes
+
+* **dropdown:** ajuste de contraste do label no tema dark ([d4686d8](https://github.com/po-ui/po-style/commit/d4686d808e9d9317d4b15225620dce81c9bfb152))
+
+
+
 # [21.13.0](https://github.com/po-ui/po-style/compare/v21.12.0...v21.13.0) (2026-05-04)
 
 

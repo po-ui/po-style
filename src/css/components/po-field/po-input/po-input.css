@@ -91,6 +91,7 @@ po-datepicker-range .readonly .po-input,
 }
 
 po-datepicker.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-button .po-button,
+po-datetimepicker.ng-invalid.ng-dirty:has(input[required]) .po-datetimepicker-button .po-button,
 po-datepicker-range.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-range-button .po-button,
 .po-field-container-input .po-button-tertiary-danger .po-button {
   position: relative;
@@ -98,6 +99,7 @@ po-datepicker-range.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-rang
 }
 
 po-datepicker.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-button .po-button:hover,
+po-datetimepicker.ng-invalid.ng-dirty:has(input[required]) .po-datetimepicker-button .po-button:hover,
 po-datepicker-range.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-range-button .po-button:hover,
 .po-field-container-input .po-button-tertiary-danger .po-button:hover {
   position: relative;
@@ -106,6 +108,7 @@ po-datepicker-range.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-rang
 }
 
 po-datepicker.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-button .po-button:active,
+po-datetimepicker.ng-invalid.ng-dirty:has(input[required]) .po-datetimepicker-button .po-button:active,
 po-datepicker-range.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-range-button .po-button:active,
 .po-field-container-input .po-button-tertiary-danger .po-button:active {
   position: relative;
@@ -114,6 +117,8 @@ po-datepicker-range.ng-invalid.ng-dirty:has(input[required]) .po-datepicker-rang
 }
 
 po-datepicker .po-button-vertical-divider,
+po-timepicker .po-button-vertical-divider,
+po-datetimepicker .po-button-vertical-divider,
 po-datepicker-range .po-button-vertical-divider {
   background-color: var(--color-neutral-mid-40);
   stroke-linecap: round;
@@ -123,11 +128,14 @@ po-datepicker-range .po-button-vertical-divider {
 }
 
 po-datepicker[p-size='small'] .po-button-vertical-divider,
+po-timepicker[p-size='small'] .po-button-vertical-divider,
+po-datetimepicker[p-size='small'] .po-button-vertical-divider,
 po-datepicker-range[p-size='small'] .po-button-vertical-divider {
   height: 16px;
 }
 
 po-datepicker.ng-invalid.ng-dirty .po-input,
+po-datetimepicker.ng-invalid.ng-dirty .po-input,
 po-datepicker-range.ng-invalid.ng-dirty .po-input,
 po-decimal.ng-invalid.ng-dirty .po-input,
 po-email.ng-invalid.ng-dirty .po-input,

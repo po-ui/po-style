@@ -280,18 +280,6 @@ po-timepicker[p-size='small'] .po-input {
   padding-right: var(--target-size-aa);
 }
 
-po-timepicker .po-button-vertical-divider {
-  background-color: var(--color-neutral-mid-40);
-  stroke-linecap: round;
-  width: var(--border-width-sm);
-  height: 24px;
-  flex-shrink: 0;
-}
-
-po-timepicker[p-size='small'] .po-button-vertical-divider {
-  height: 16px;
-}
-
 po-timepicker.ng-invalid.ng-dirty:has(input[required]) .po-timepicker-button .po-button {
   position: relative;
   color: var(--color-button-danger);

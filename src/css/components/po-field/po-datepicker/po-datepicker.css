@@ -117,6 +117,7 @@ po-datepicker po-clean.po-icon-input:focus {
   outline-style: solid;
   outline-offset: var(--border-width-md);
 }
+
 po-datepicker po-clean .po-field-icon:not(.po-field-icon-disabled) {
   color: var(--color-neutral-dark-70);
 }

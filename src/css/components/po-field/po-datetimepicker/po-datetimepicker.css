@@ -1,0 +1,127 @@
+.po-datetimepicker {
+  position: relative;
+}
+
+po-datetimepicker .po-input.po-input-icon-right {
+  padding-right: calc(var(--target-size-aaa) * 2);
+}
+
+po-datetimepicker[p-size='small'] .po-input.po-input-icon-right {
+  padding-right: calc(var(--target-size-aa) * 2);
+}
+
+po-datetimepicker .po-input {
+  padding-right: var(--target-size-aaa);
+}
+
+po-datetimepicker[p-size='small'] .po-input {
+  font-size: var(--font-size, var(--font-size-sm));
+  min-height: var(--target-size-aa);
+  padding-right: var(--target-size-aa);
+}
+
+po-datetimepicker po-clean.po-icon-input {
+  width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+po-datetimepicker[p-size='small'] po-clean.po-icon-input {
+  width: var(--target-size-aa);
+  height: var(--target-size-aa);
+}
+
+po-datetimepicker po-clean.po-icon-input:focus {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: var(--border-width-md);
+}
+
+po-datetimepicker po-clean .po-field-icon:not(.po-field-icon-disabled) {
+  color: var(--color-neutral-dark-70);
+}
+
+.po-datetimepicker-button i {
+  font-size: var(--font-size-lg);
+}
+
+po-datetimepicker[p-size='small'] .po-datetimepicker-button i {
+  font-size: var(--font-size-default);
+}
+
+po-datetimepicker .po-datetimepicker-button .po-button {
+  width: var(--target-size-aaa);
+  max-width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  max-height: var(--target-size-aaa);
+  justify-content: center;
+}
+
+po-datetimepicker[p-size='small'] .po-datetimepicker-button .po-button {
+  width: var(--target-size-aa);
+  max-width: var(--target-size-aa);
+  height: var(--target-size-aa);
+  max-height: var(--target-size-aa);
+}
+
+po-datetimepicker
+  .po-field-container-content
+  .po-field-icon-container-right:not(po-calendar .po-field-icon-container-right) {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+}
+
+po-datetimepicker .po-loading-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+po-datetimepicker po-loading-icon {
+  position: absolute;
+  right: 0;
+  width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+po-datetimepicker[p-size='small'] po-loading-icon {
+  width: var(--target-size-aa);
+  height: var(--target-size-aa);
+}
+
+.po-datetimepicker-popup-calendar {
+  position: fixed;
+  z-index: 1000;
+}
+
+.po-datetimepicker-popup-calendar po-calendar {
+  position: absolute;
+}
+
+.po-datetimepicker-calendar-mobile {
+  left: calc(50% - (var(--po-calendar-width) / 2));
+  position: fixed !important;
+  top: calc(50% - 145px);
+  z-index: 11;
+}
+
+.po-datetimepicker-calendar-overlay {
+  background: var(--color-calendar-background-color-mobile-overlay, var(--color-neutral-dark-80));
+  opacity: 0.7;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 11;
+}

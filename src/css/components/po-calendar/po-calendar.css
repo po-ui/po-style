@@ -115,3 +115,79 @@ po-calendar[p-size='small'] .po-calendar-months {
   color: var(--color-selected-display);
   background-color: var(--background-selected-display);
 }
+
+/* Estilos aplicados ao calendar do po-datetimepicker abaixo */
+.po-calendar-date-time {
+  display: flex;
+  align-items: stretch;
+  width: 34.25rem;
+
+  border-style: solid;
+  border-radius: var(--border-radius);
+  border-color: var(--border-color);
+  border-width: var(--border-width);
+  box-shadow: var(--shadow);
+}
+
+po-calendar[p-size='small'] .po-calendar-date-time {
+  width: 28.25rem;
+}
+
+.po-calendar-three-columns {
+  width: 38rem;
+}
+
+po-calendar[p-size='small'] .po-calendar-three-columns {
+  width: 31.25rem;
+}
+
+.po-calendar-four-columns {
+  width: 41.75rem;
+}
+
+po-calendar[p-size='small'] .po-calendar-four-columns {
+  width: 34.25rem;
+}
+
+.po-calendar-date-time .po-calendar {
+  border: none;
+  box-shadow: none;
+}
+
+.po-calendar-vertical-divider {
+  background-color: var(--color-neutral-mid-40);
+  stroke-linecap: round;
+  width: var(--border-width-sm);
+  height: auto;
+  flex-shrink: 0;
+  margin: var(--spacing-sm) 0;
+}
+
+po-calendar[p-size='small'] .po-calendar-vertical-divider {
+  margin: var(--spacing-xs) 0;
+}
+
+.po-calendar-date-time > po-timer {
+  position: relative;
+}
+
+.po-calendar-date-time .po-timer-wrapper {
+  position: absolute;
+  inset: 0;
+}
+
+.po-calendar-date-time .po-timer {
+  height: 100%;
+  padding: var(--spacing-sm) 0;
+
+  border: none;
+  box-shadow: none;
+}
+
+po-calendar[p-size='small'] .po-calendar-date-time .po-timer {
+  padding: var(--spacing-xs) 0;
+}
+
+.po-calendar-date-time .po-timer-column-scroll {
+  height: 100%;
+}

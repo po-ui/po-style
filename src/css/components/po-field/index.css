@@ -2,6 +2,7 @@
 @import './po-checkbox-group/po-checkbox-group.css';
 @import './po-combo/po-combo.css';
 @import './po-datepicker/po-datepicker.css';
+@import './po-datetimepicker/po-datetimepicker.css';
 @import './po-datepicker-range/po-datepicker-range.css';
 @import './po-field-container';
 @import './po-field-icon/po-field-icon.css';

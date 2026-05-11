@@ -37,6 +37,7 @@
  * Field Container ...............variáveis do Field Container.
  * Field Container Bottom.........variáveis do Field Container Bottom.
  * Field Icon.....................variáveis do Field Icon.
+ * Filter Chip....................variáveis do Filter Chip.
  * Gauge..........................variáveis do Gauge.
  * Helper .........................variáveis do Helper.
  * Info...........................variáveis do Info.
@@ -974,6 +975,35 @@ po-field-container-bottom {
 
   --text-color-error: var(--color-feedback-negative-dark);
   --color-icon-error: var(--color-feedback-negative-base);
+}
+
+/*------------------------------------*\
+  FILTER CHIP
+\*------------------------------------*/
+po-filter-chip {
+  --border-radius: var(--border-radius-lg);
+  --border-width: var(--border-width-sm);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --font-weight: var(--font-weight-normal);
+
+  /* default state */
+  --border-color: var(--color-neutral-light-20);
+  --text-color: var(--color-neutral-dark-80);
+  --background-color: transparent;
+
+  /* hover state */
+  --background-color-hover: var(--color-brand-01-lightest);
+  --text-color-hover: var(--color-action-default);
+
+  /* selected state */
+  --background-color-selected: var(--color-brand-01-lightest);
+  --border-color-selected: var(--color-brand-01-lighter);
+  --text-color-selected: var(--color-action-default);
+  --icon-color-selected: var(--color-action-default);
+
+  /* disabled state */
+  --opacity-disabled: 0.5;
 }
 
 :root {

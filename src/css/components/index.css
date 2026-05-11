@@ -18,6 +18,7 @@
 @import './po-dropdown';
 @import './po-dynamic';
 @import './po-field';
+@import './po-filter-chip';
 @import './po-gauge';
 @import './po-grid';
 @import './po-helper';

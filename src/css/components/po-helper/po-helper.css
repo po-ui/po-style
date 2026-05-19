@@ -62,3 +62,19 @@ po-helper:has(.po-helper-disabled) {
   cursor: not-allowed;
   pointer-events: none;
 }
+
+.po-helper-content-text {
+  display: inline;
+}
+
+.po-helper-text-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.po-helper-text-italic {
+  font-style: italic;
+}
+
+.po-helper-text-underline {
+  text-decoration: underline;
+}

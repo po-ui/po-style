@@ -20,6 +20,7 @@
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
+  gap: var(--spacing-xs);
 }
 
 .po-page-header-title-container {
@@ -43,9 +44,12 @@
 .po-page-header-subtitle {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-normal);
-  line-height: var(--line-height-2xs);
+  line-height: var(--line-height-sm);
   color: var(--color-neutral-dark-70);
   letter-spacing: var(--letter-spacing-auto);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
 }
 
 .po-page-header-actions {

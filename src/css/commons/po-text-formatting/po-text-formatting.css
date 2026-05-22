@@ -1,0 +1,11 @@
+.po-text-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.po-text-italic {
+  font-style: italic;
+}
+
+.po-text-underline {
+  text-decoration: underline;
+}

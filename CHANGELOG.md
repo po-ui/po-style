@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.17.0](https://github.com/po-ui/po-style/compare/v21.16.0...v21.17.0) (2026-05-25)
+
+
+### Features
+
+* **page-default:** adiciona propriedade p-helper no subtítulo ([6c6547f](https://github.com/po-ui/po-style/commit/6c6547fd800acf4f1a5cd5035cb44ee400736bb1))
+* **page:** suporta tags HTML básicas no subtitle ([a05c6de](https://github.com/po-ui/po-style/commit/a05c6dee2518bcb9602a75de5ff3221b46f508e7))
+
+
+
 # [21.16.0](https://github.com/po-ui/po-style/compare/v21.15.0...v21.16.0) (2026-05-18)
 
 

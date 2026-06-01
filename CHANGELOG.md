@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.18.0](https://github.com/po-ui/po-style/compare/v21.17.0...v21.18.0) (2026-06-01)
+
+
+### Bug Fixes
+
+* **table:** corrige tabela piscando ao realizar scroll ([5a9d439](https://github.com/po-ui/po-style/commit/5a9d4396a06131a0e9d7fb0d05e1f197d9746498))
+
+
+### Features
+
+* **datetimepicker:** implementa componente po-datetimepicker ([3bf9452](https://github.com/po-ui/po-style/commit/3bf9452a68a2b3a0d45ac05ad0bd87b1421fee46))
+* **user-guide:** implementa serviço po-user-guide ([6b75139](https://github.com/po-ui/po-style/commit/6b75139ce92c4e84557748c004a7bbf0e1da1776))
+
+
+
 # [21.17.0](https://github.com/po-ui/po-style/compare/v21.16.0...v21.17.0) (2026-05-25)
 
 

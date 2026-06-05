@@ -1,7 +1,61 @@
-.po-datetimepicker {
-  position: relative;
+.po-datetimepicker-field {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  cursor: text;
 }
 
+.po-datetimepicker-field.po-input:has(.po-field-icon-container-right:hover) {
+  border-color: var(--color);
+  background-color: var(--background);
+}
+
+.po-datetimepicker-field-disabled {
+  pointer-events: none;
+  border-color: var(--color-disabled) !important;
+  background-color: var(--background-disabled) !important;
+  color: var(--text-color-disabled) !important;
+}
+
+.po-datetimepicker-field-readonly {
+  border-color: var(--color-neutral-light-30) !important;
+  background-color: var(--color-neutral-light-05) !important;
+  color: var(--color-neutral-dark-70) !important;
+  cursor: text;
+}
+
+.po-datetimepicker-field-focused {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.po-datetimepicker-field-focused:not(.po-datetimepicker-field-disabled) {
+  border-color: var(--color-focused, var(--color-action-default)) !important;
+}
+
+.po-datetimepicker-inner-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  outline: none;
+}
+
+.po-datetimepicker-inner-input::placeholder {
+  color: var(--text-color-placeholder);
+  opacity: 1;
+}
+
+/* Icon and button sizing */
 po-datetimepicker .po-input.po-input-icon-right {
   padding-right: calc(var(--target-size-aaa) * 2);
 }
@@ -99,6 +153,66 @@ po-datetimepicker[p-size='small'] po-loading-icon {
   height: var(--target-size-aa);
 }
 
+po-datetimepicker .po-datetimepicker-field-segment {
+  position: relative;
+  display: flex;
+  min-width: 0;
+}
+
+po-datetimepicker .po-datetimepicker-field-segment::after {
+  content: attr(data-value);
+  visibility: hidden;
+  white-space: pre;
+  min-width: 1ch;
+}
+
+po-datetimepicker .po-datetimepicker-field-segment input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+po-datetimepicker .po-datetimepicker-segment-input {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
+
+po-datetimepicker .po-datetimepicker-segment-input::-ms-clear,
+po-datetimepicker .po-datetimepicker-segment-input::-ms-reveal {
+  display: none;
+}
+
+po-datetimepicker .po-datetimepicker-segment-input:focus {
+  outline: none;
+}
+
+po-datetimepicker .po-datetimepicker-field-period {
+  display: flex;
+  position: relative;
+  font-size: var(--font-size, var(--font-size-default));
+  color: inherit;
+  margin-left: var(--spacing-xxs);
+  white-space: nowrap;
+}
+
+po-datetimepicker[p-size='small'] .po-datetimepicker-field-period {
+  font-size: var(--font-size, var(--font-size-sm));
+}
+
+po-datetimepicker .po-datetimepicker-period-input {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Calendar popup */
 .po-datetimepicker-popup-calendar {
   position: fixed;
   z-index: 1000;

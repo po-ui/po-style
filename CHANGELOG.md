@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [21.19.0](https://github.com/po-ui/po-style/compare/v21.18.0...v21.19.1) (2026-06-05)
+
+
+### Reverts
+
+* Revert "fix(table): corrige tabela piscando ao realizar scroll" ([c8443aa](https://github.com/po-ui/po-style/commit/c8443aa3b3ce2a2be14e29f7dff29becf8950c7f))
+
+
+
 # [21.18.0](https://github.com/po-ui/po-style/compare/v21.17.0...v21.18.0) (2026-06-01)
 
 

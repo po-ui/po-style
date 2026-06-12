@@ -33,6 +33,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.an-fill.an-columns-minus-right:before {
+  content: '\e92d';
+}
+.an-fill.an-rows-minus-bottom:before {
+  content: '\e92e';
+}
 .an-fill.an-totvs-logo:before {
   content: '\e901';
 }

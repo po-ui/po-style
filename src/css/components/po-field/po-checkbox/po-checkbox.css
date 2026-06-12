@@ -111,7 +111,7 @@ po-checkbox[p-size='large'] .po-checkbox {
 }
 
 .po-checkbox-phosphor[aria-checked='true']:before {
-  content: '\e182';
+  content: '\e183';
   font-size: var(--font-size-default);
 }
 
@@ -121,7 +121,7 @@ po-checkbox[p-size='large'] .po-checkbox {
 }
 
 .po-checkbox-phosphor[aria-checked='mixed']:before {
-  content: '\e32a';
+  content: '\e32b';
   font-size: var(--font-size-default);
 }
 

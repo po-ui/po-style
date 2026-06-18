@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.21.0](https://github.com/po-ui/po-style/compare/v21.20.0...v21.21.0) (2026-06-18)
+
+
+### Features
+
+* **chart:** implementa nova paleta de cores para os temas ([4b1a18d](https://github.com/po-ui/po-style/commit/4b1a18dcf9c0ec12557bb7b006fd6ea33634191d))
+
+
+
 ## [21.20.0](https://github.com/po-ui/po-style/compare/v21.19.0...v21.20.0) (2026-06-15)
 
 Compatibilidade com @po-ui/ng-components@21.20.0

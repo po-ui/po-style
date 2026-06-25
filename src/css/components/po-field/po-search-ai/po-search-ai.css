@@ -1,0 +1,109 @@
+po-search-ai {
+  display: block;
+  width: 100%;
+}
+
+po-search-ai .po-field-icon-container-right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+}
+
+po-search-ai .po-input.po-input-icon-right {
+  padding-right: calc(var(--target-size-aaa) * 2);
+}
+
+po-search-ai[p-size='small'] .po-input.po-input-icon-right {
+  padding-right: calc(var(--target-size-aa) * 2);
+}
+
+po-search-ai .po-search-ai-button {
+  width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+po-search-ai .po-search-ai-button .po-button {
+  width: 2.25rem;
+  max-width: 2.25rem;
+  height: 2.25rem;
+  max-height: 2.25rem;
+  justify-content: center;
+}
+
+po-search-ai[p-size='small'] .po-search-ai-button {
+  width: var(--target-size-aa);
+  height: var(--target-size-aa);
+}
+
+po-search-ai[p-size='small'] .po-search-ai-button .po-button {
+  width: 1.625rem;
+  max-width: 1.625rem;
+  height: 1.625rem;
+  max-height: 1.625rem;
+  justify-content: center;
+}
+
+po-search-ai po-clean.po-icon-input {
+  width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+po-search-ai[p-size='small'] po-clean.po-icon-input {
+  width: var(--target-size-aa);
+  height: var(--target-size-aa);
+}
+
+po-search-ai po-clean.po-icon-input:focus {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: var(--border-width-md);
+}
+
+po-search-ai po-clean .po-field-icon:not(.po-field-icon-disabled) {
+  color: var(--color-neutral-dark-70);
+}
+
+po-search-ai .po-button-vertical-divider {
+  background-color: var(--color-neutral-mid-40);
+  width: var(--border-width-sm);
+  height: 24px;
+  flex-shrink: 0;
+}
+
+po-search-ai[p-size='small'] .po-button-vertical-divider {
+  height: 16px;
+}
+
+po-search-ai.ng-invalid.ng-dirty .po-search-ai-button .po-button {
+  color: var(--color-feedback-negative-base);
+}
+
+po-search-ai.ng-invalid.ng-dirty .po-button-vertical-divider {
+  background-color: var(--color-feedback-negative-base);
+}
+
+po-search-ai po-loading-icon {
+  position: absolute;
+  right: 0;
+  width: var(--target-size-aaa);
+  height: var(--target-size-aaa);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+po-search-ai[p-size='small'] po-loading-icon {
+  width: var(--target-size-aa);
+  height: var(--target-size-aa);
+}

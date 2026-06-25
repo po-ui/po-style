@@ -3,25 +3,158 @@ po-search-ai {
   width: 100%;
 }
 
-po-search-ai .po-field-icon-container-right {
-  right: 0;
-  top: 0;
-  height: 100%;
+po-search-ai .po-search-ai-icon {
+  padding-inline: var(--spacing-xs);
+  color: var(--color-icon-read);
   align-items: center;
+  align-self: stretch;
+  display: flex;
+  font-size: var(--font-size-lg);
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
 }
 
-po-search-ai .po-input.po-input-icon-right {
+po-search-ai[p-size='small'] .po-search-ai-icon {
+  font-size: var(--font-size-default);
+}
+
+po-search-ai .po-input {
+  font-family: var(--font-family);
+  font-size: var(--font-size, var(--font-size-default));
+  color: var(--text-color);
+  border-color: var(--color);
+  border-radius: var(--border-radius);
+  background-color: var(--background);
+
+  font-weight: var(--font-weight-normal);
+  border-width: var(--border-width-sm);
+  border-style: solid;
+
+  min-height: var(--target-size-aaa);
+
+  appearance: none;
+  outline: none;
+  overflow: hidden;
+  padding-left: var(--target-size-aaa);
   padding-right: calc(var(--target-size-aaa) * 2);
+  text-overflow: ellipsis;
+  width: 100%;
+  box-sizing: border-box;
+
+  transition-property: var(--transition-property);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing);
 }
 
-po-search-ai[p-size='small'] .po-input.po-input-icon-right {
+po-search-ai[p-size='small'] .po-input {
+  font-size: var(--font-size, var(--font-size-sm));
+  min-height: var(--target-size-aa);
+  padding-left: var(--target-size-aa);
   padding-right: calc(var(--target-size-aa) * 2);
+}
+
+po-search-ai .po-input:disabled {
+  border-color: var(--color-disabled);
+  background-color: var(--background-disabled);
+  color: var(--text-color);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+po-search-ai .po-input:is(:focus, :focus-visible) {
+  border-color: var(--color-focused);
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+po-search-ai .po-input:is(:focus-visible) {
+  outline-width: var(--outline-width-focus-visible);
+}
+
+po-search-ai .po-input:not(:disabled):hover {
+  border-color: var(--color-hover);
+  background-color: var(--background-hover);
+}
+
+po-search-ai .po-input::placeholder {
+  color: var(--text-color-placeholder);
+}
+
+po-search-ai .po-field-icon-container-right {
+  display: flex;
+  position: absolute;
+  inset: var(--border-width-sm);
+  left: auto;
+  align-items: center;
+  border-top-right-radius: calc(var(--border-radius) - var(--border-width-sm));
+  border-bottom-right-radius: calc(var(--border-radius) - var(--border-width-sm));
+  overflow: hidden;
+}
+
+po-search-ai po-clean.po-icon-input {
+  background-color: transparent;
+  min-width: var(--target-size-aaa);
+  padding-inline: var(--spacing-xs);
+  align-items: center;
+  align-self: stretch;
+  appearance: none;
+  border: none;
+  display: flex;
+  font-size: var(--font-size-lg);
+  height: 100%;
+  justify-content: center;
+  border-radius: var(--border-radius-md);
+}
+
+po-search-ai[p-size='small'] po-clean.po-icon-input {
+  min-width: var(--target-size-aa);
+  font-size: var(--font-size-default);
+}
+
+po-search-ai po-clean.po-icon-input:focus {
+  outline-color: var(--outline-color-focused);
+  outline-width: var(--outline-width);
+  outline-style: solid;
+  z-index: 1;
+}
+
+po-search-ai po-clean.po-icon-input:focus-visible {
+  outline-width: var(--outline-width-focus-visible);
+}
+
+po-search-ai po-clean.po-icon-input:hover {
+  background-color: var(--background-hover);
+  cursor: pointer;
+}
+
+po-search-ai po-clean .po-field-icon:not(.po-field-icon-disabled) {
+  color: var(--color-clear);
+}
+
+po-search-ai po-clean.po-icon-input:hover .po-field-icon {
+  color: var(--color-hover);
+}
+
+po-search-ai .po-button-vertical-divider {
+  background-color: var(--color-divider);
+  width: var(--border-width-sm);
+  height: 24px;
+  flex-shrink: 0;
+  margin-right: var(--spacing-xxs);
+}
+
+po-search-ai[p-size='small'] .po-button-vertical-divider {
+  height: 16px;
 }
 
 po-search-ai .po-search-ai-button {
   width: var(--target-size-aaa);
   height: calc(var(--target-size-aaa) - 8px);
-  margin-right: 3px;
+  margin-right: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +172,7 @@ po-search-ai .po-search-ai-button .po-button {
 po-search-ai[p-size='small'] .po-search-ai-button {
   width: var(--target-size-aa);
   height: calc(var(--target-size-aa) - 6px);
-  margin-right: 2px;
+  margin-right: 3px;
 }
 
 po-search-ai[p-size='small'] .po-search-ai-button .po-button {
@@ -51,41 +184,8 @@ po-search-ai[p-size='small'] .po-search-ai-button .po-button {
   justify-content: center;
 }
 
-po-search-ai po-clean.po-icon-input {
-  width: var(--target-size-aaa);
-  height: var(--target-size-aaa);
-  border-radius: var(--border-radius-md);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-po-search-ai[p-size='small'] po-clean.po-icon-input {
-  width: var(--target-size-aa);
-  height: var(--target-size-aa);
-}
-
-po-search-ai po-clean.po-icon-input:focus {
-  outline-color: var(--outline-color-focused);
-  outline-width: var(--outline-width);
-  outline-style: solid;
-  outline-offset: var(--border-width-md);
-}
-
-po-search-ai po-clean .po-field-icon:not(.po-field-icon-disabled) {
-  color: var(--color-neutral-dark-70);
-}
-
-po-search-ai .po-button-vertical-divider {
-  background-color: var(--color-neutral-mid-40);
-  width: var(--border-width-sm);
-  height: 24px;
-  flex-shrink: 0;
-  margin-right: var(--spacing-xxs);
-}
-
-po-search-ai[p-size='small'] .po-button-vertical-divider {
-  height: 16px;
+po-search-ai po-icon {
+  display: inline-flex;
 }
 
 po-search-ai.ng-invalid.ng-dirty .po-search-ai-button .po-button {
@@ -96,6 +196,14 @@ po-search-ai.ng-invalid.ng-dirty .po-button-vertical-divider {
   background-color: var(--color-feedback-negative-base);
 }
 
+/* Disabled state */
+po-search-ai[p-disabled] .po-search-ai-icon *,
+po-search-ai[p-disabled] .po-field-icon-container-right * {
+  color: var(--color-disabled);
+  pointer-events: none;
+}
+
+/* Processing / Shimmer */
 @keyframes po-search-ai-shimmer-translate {
   0% {
     animation-timing-function: ease-in-out;
@@ -149,6 +257,7 @@ po-search-ai .po-search-ai-processing .po-field-icon-container-right {
   background: transparent;
   z-index: 2;
 }
+
 po-search-ai .po-search-ai-processing-icon {
   display: flex;
   align-items: center;
@@ -156,7 +265,7 @@ po-search-ai .po-search-ai-processing-icon {
   width: var(--target-size-aaa);
   height: 100%;
   margin-right: 3px;
-  color: var(--color-action-default);
+  color: var(--color-icon-processing);
   font-size: var(--font-size, var(--font-size-lg));
   line-height: 1;
   pointer-events: none;

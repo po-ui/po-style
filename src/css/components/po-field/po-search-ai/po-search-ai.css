@@ -154,16 +154,16 @@ po-search-ai .po-search-ai-processing-icon {
   align-items: center;
   justify-content: center;
   width: var(--target-size-aaa);
-  height: var(--target-size-aaa);
+  height: 100%;
   margin-right: 3px;
   color: var(--color-action-default);
   font-size: var(--font-size, var(--font-size-lg));
+  line-height: 1;
   pointer-events: none;
 }
 
 po-search-ai[p-size='small'] .po-search-ai-processing-icon {
   width: var(--target-size-aa);
-  height: var(--target-size-aa);
   margin-right: 2px;
   font-size: var(--font-size, var(--font-size-default));
 }

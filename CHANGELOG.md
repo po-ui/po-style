@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.22.0](https://github.com/po-ui/po-style/compare/v21.21.0...v21.22.0) (2026-06-25)
+
+
+### Features
+
+* **datetimepicker:** implementa input apartado para período ([72cb473](https://github.com/po-ui/po-style/commit/72cb4732599422947cac8560886709e56e7c50b8))
+* **icons:** atualiza AnimaliaIcons para v1.1.0 ([c8606c1](https://github.com/po-ui/po-style/commit/c8606c1dd97361b8585267868eb3a414c1310ef6))
+
+
+
 # [21.21.0](https://github.com/po-ui/po-style/compare/v21.20.0...v21.21.0) (2026-06-18)
 
 

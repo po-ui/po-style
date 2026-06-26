@@ -10,7 +10,6 @@
 
   --font-page-slide-subtitle: {
     @apply --font-text-small;
-    @apply --text-ellipsis;
   }
 
   --default-padding-footer: var(--default-spacing-xs) var(--default-spacing-sm) var(--default-spacing-lg)
@@ -121,6 +120,8 @@
 
 .po-page-slide-subtitle {
   @apply --font-page-slide-subtitle;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .po-page-slide-body {

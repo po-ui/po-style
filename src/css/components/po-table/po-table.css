@@ -698,3 +698,28 @@ po-table[p-components-size='small'] .po-table-column-selectable {
   min-width: 32px;
   max-width: 32px;
 }
+
+/* Início adequação a DTHFUI-11105 */
+.po-table-virtual-scroll-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.po-table-virtual-scroll-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.po-table-virtual-scroll-viewport {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.po-table-virtual-scroll-header,
+.po-table-virtual-scroll-body {
+  table-layout: fixed;
+  width: 100%;
+}
+/* Fim adequação a DTHFUI-11105 */

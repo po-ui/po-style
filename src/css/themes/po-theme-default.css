@@ -1699,8 +1699,8 @@ po-search {
 \*------------------------------------*/
 po-search-ai,
 po-search-ai .po-input {
+  --border-radius: var(--border-radius-md);
   --color-icon-read: var(--color-neutral-dark-70);
-  --color-clear: var(--color-action-default);
   --color-divider: var(--color-neutral-mid-40);
   --color-icon-processing: var(--color-action-default);
 }

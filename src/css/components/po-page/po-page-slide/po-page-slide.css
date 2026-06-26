@@ -120,6 +120,8 @@
 
 .po-page-slide-subtitle {
   @apply --font-page-slide-subtitle;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .po-page-slide-body {

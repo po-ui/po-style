@@ -154,6 +154,10 @@
   width: 256px;
 }
 
+.po-table-actions:has(po-search-ai) .po-table-actions-column-manager {
+  padding-bottom: 8px;
+}
+
 .po-table-container {
   position: relative;
   display: flex;

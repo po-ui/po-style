@@ -144,6 +144,7 @@ po-login.ng-invalid.ng-dirty .po-input,
 po-lookup.ng-invalid.ng-dirty .po-input,
 po-number.ng-invalid.ng-dirty .po-input,
 po-password.ng-invalid.ng-dirty .po-input,
+po-search-ai.ng-invalid.ng-dirty .po-input,
 po-select.ng-invalid.ng-dirty .po-select-button,
 po-upload.ng-invalid.ng-dirty .po-upload-button button:not(:disabled),
 po-url.ng-invalid.ng-dirty .po-input {
@@ -158,6 +159,7 @@ po-login[p-loading='true'].ng-invalid.ng-dirty .po-input,
 po-lookup[p-loading='true'].ng-invalid.ng-dirty .po-input,
 po-number[p-loading='true'].ng-invalid.ng-dirty .po-input,
 po-password[p-loading='true'].ng-invalid.ng-dirty .po-input,
+po-search-ai[p-loading='true'].ng-invalid.ng-dirty .po-input,
 po-select[p-loading='true'].ng-invalid.ng-dirty .po-select-button,
 po-url[p-loading='true'].ng-invalid.ng-dirty .po-input {
   border-color: var(--color-disabled) !important;

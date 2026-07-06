@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.23.0](https://github.com/po-ui/po-style/compare/v21.22.0...v21.23.0) (2026-07-06)
+
+
+### Bug Fixes
+
+* **page-slide:** corrige quebra de linha no subtitle ([01039a0](https://github.com/po-ui/po-style/commit/01039a0910328b326a7cc88483e553daa43acb1c))
+
+
+### Features
+
+* **search-ai:** novo componente po-search-ai ([7c02a96](https://github.com/po-ui/po-style/commit/7c02a9624dcbfe93c46ef870bfa964245ece14fe))
+* **table:** filtra dados com linguagem natural ([e668e57](https://github.com/po-ui/po-style/commit/e668e57b9971423bbe72a07758564adaa94a37db))
+* **widget:** centraliza botão de ações com tag-position top ([a7d99e0](https://github.com/po-ui/po-style/commit/a7d99e09835f5372e6bae401f04fd6d53583c5ef))
+
+
+
 # [21.22.0](https://github.com/po-ui/po-style/compare/v21.21.0...v21.22.0) (2026-06-25)
 
 

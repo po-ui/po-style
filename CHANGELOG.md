@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.39.17](https://github.com/po-ui/po-style/compare/v19.39.16...v19.39.17) (2026-07-06)
+
+
+### Bug Fixes
+
+* **page-slide:** corrige quebra de linha no subtitle ([4af5c14](https://github.com/po-ui/po-style/commit/4af5c143911f3df2451576bb364ae67bfb857349))
+
+
+
 ## [19.39.16](https://github.com/po-ui/po-style/compare/v19.39.15...v19.39.16) (2026-06-25)
 
 Compatibilidade com @po-ui/ng-components@19.39.16

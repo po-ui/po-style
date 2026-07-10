@@ -81,7 +81,8 @@
   padding: var(--po-density-content-padding, var(--spacing-xs) var(--default-spacing-sm, var(--spacing-md)));
 }
 
-.po-list-view-select + .po-list-view-title-link {
+.po-list-view-select + .po-list-view-title-link,
+.po-list-view-select ~ .po-list-view-title-no-link {
   padding-left: 0.5rem;
   vertical-align: bottom;
 }

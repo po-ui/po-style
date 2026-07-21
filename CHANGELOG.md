@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [21.24.0](https://github.com/po-ui/po-style/compare/v21.23.1...v21.24.0) (2026-07-21)
+
+
+### Bug Fixes
+
+* **list-view:** adiciona padding-left no título simples com checkbox ([04008d4](https://github.com/po-ui/po-style/commit/04008d48993dd9c537d605acef53a126ec36be8a))
+
+
 ## [21.23.1](https://github.com/po-ui/po-style/compare/v21.23.0...v21.23.1) (2026-07-14)
 
 Compatibilidade com @po-ui/ng-components@21.23.1

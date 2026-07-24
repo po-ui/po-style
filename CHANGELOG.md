@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.25.0](https://github.com/po-ui/po-style/compare/v21.24.0...v21.25.0) (2026-07-24)
+
+
+### Features
+
+* **components:** implementa melhorias no helper e popover ([8a0b86f](https://github.com/po-ui/po-style/commit/8a0b86fb4b5baf1ebec021ac835cc2103eeedccc))
+
+
 ## [21.24.0](https://github.com/po-ui/po-style/compare/v21.23.1...v21.24.0) (2026-07-21)
 
 

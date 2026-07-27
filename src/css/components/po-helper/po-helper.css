@@ -65,3 +65,22 @@ po-helper:has(.po-helper-disabled) {
 .po-helper-content-text {
   display: inline;
 }
+
+/* Animação da ação de refresh do po-helper utilizada pelo po-page-default */
+@keyframes po-helper-refresh-spin {
+  0% {
+    transform: rotate(0deg) translateX(0);
+  }
+
+  80% {
+    transform: rotate(405deg) translateX(0);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(0);
+  }
+}
+
+.po-helper-container.po-helper-refresh-animating po-icon {
+  animation: po-helper-refresh-spin 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

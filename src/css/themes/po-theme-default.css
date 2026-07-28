@@ -833,7 +833,7 @@ po-container {
   /* content */
   --border-radius: var(--border-radius-md);
   --background: var(--color-neutral-light-00);
-  --border-color: var(--color-neutral-light-20);
+  --border-color: var(--border-color);
   --border-width: var(--border-width-sm);
   --padding: var(--padding);
 }
@@ -878,7 +878,7 @@ po-disclaimer {
 \*------------------------------------*/
 
   --color-disclaimer-group-background-color: var(--color-neutral-light-00);
-  --color-disclaimer-group-border-color: var(--color-neutral-light-10);
+  --color-disclaimer-group-border-color: var(--color-disclaimer-group-border-color);
   --color-disclaimer-group-font-title: var(--color-neutral-dark-70);
 }
 
@@ -886,7 +886,7 @@ po-disclaimer {
   DIVIDER
 \*------------------------------------*/
 po-divider {
-  --color: var(--color-neutral-mid-40);
+  --color: var(--color);
   --stroke-linecap: round;
 }
 
@@ -898,7 +898,7 @@ po-dropdown {
   --font-size: var(--font-size);
   --font-weight: var(--font-weight-bold);
   --line-height: var(--line-height-none);
-  --color: var(--color-action-default);
+  --color: var(--color);
   --border-radius: var(--border-radius-md);
   --border-width: var(--border-width-md);
   --padding: var(--padding);
@@ -936,7 +936,7 @@ po-dynamic-container {
 po-dynamic-container po-container {
   --border-radius: var(--border-radius-md);
   --background: var(--color-neutral-light-00);
-  --border-color: var(--color-neutral-light-20);
+  --border-color: var(--border-color);
   --border-width: var(--border-width-sm);
   --padding: var(--padding);
 }
@@ -1156,7 +1156,7 @@ po-listbox {
 \*------------------------------------*/
 :root {
   --color-list-view-background-color: var(--color-neutral-light-00);
-  --color-list-view-border: var(--color-neutral-light-10);
+  --color-list-view-border: var(--color-list-view-border);
   --color-list-view-color-primary: var(--color-brand-02-base);
   --color-list-view-color-primary-hover: var(--color-primary-dark-20);
   --color-list-view-color-select-all-label: var(--color-neutral-dark-70);
@@ -1223,7 +1223,7 @@ po-lookup {
 \*------------------------------------*/
 po-menu {
   --border-radius: var(--border-radius-md);
-  --border-color: var(--color-neutral-light-20);
+  --border-color: var(--border-color);
   --background-color: var(--color-neutral-light-05);
 
   /* Menu Footer */
@@ -1343,7 +1343,7 @@ po-modal {
   --shadow: var(--shadow-md);
   --color-overlay: var(--color-neutral-dark-80);
   --opacity-overlay: 0.7;
-  --color-divider: var(--color-neutral-light-20);
+  --color-divider: var(--color-divider);
 
   --padding-header: var(--padding-header);
   --padding-body: var(--padding-body);
@@ -1538,7 +1538,7 @@ po-page-slide {
 }
 
 po-page-slide po-divider {
-  --border-color: var(--color-neutral-light-20);
+  --border-color: var(--border-color);
 }
 
 :root {
@@ -1825,7 +1825,7 @@ po-context-tabs,
 po-tabs,
 po-tab-button {
   --background: var(--color-transparent);
-  --color-baseline: var(--color-neutral-light-20);
+  --color-baseline: var(--color-baseline);
 
   --font-family: var(--font-family-theme);
   --font-size: var(--font-size);
@@ -1868,7 +1868,7 @@ po-table {
 
   --background-striped-color: var(--color-neutral-light-05);
 
-  --color-line: var(--color-neutral-mid-40);
+  --color-line: var(--color-line);
 
   --background-color-selected: var(--color-brand-01-lightest);
 
@@ -1914,7 +1914,7 @@ po-table-list-manager {
   --color-table-column-manager-body-color-background-scrollbar: var(
     --color-track
   ); /*Deprecated v21.x.x utilizar --color-track */
-  --color-table-column-manager-border-color: var(--color-neutral-light-10);
+  --color-table-column-manager-border-color: var(--color-table-column-manager-border-color);
   --color-table-column-manager-close-button-color: var(--color-brand-02-base);
   --color-table-column-manager-header-title: var(--color-neutral-dark-90);
   --color-table-column-manager-outline-color-focus: var(--color-action-default);
@@ -2043,7 +2043,7 @@ po-textarea {
 \*------------------------------------*/
 
   /** Tree View Item */
-  --color-tree-view-item-border-bottom-color: var(--color-neutral-light-10);
+  --color-tree-view-item-border-bottom-color: var(--color-tree-view-item-border-bottom-color);
 
   /** Tree View Item Header */
   --color-tree-view-item-header-button-color: var(--color-brand-02-base);
@@ -2061,7 +2061,7 @@ po-textarea {
   --color-upload-drag-drop-area-icon: var(--color-neutral-light-20);
   --color-upload-drag-drop-area-label-text: var(--color-neutral-dark-70);
   --color-upload-drag-drop-area-select-files-text: var(--color-brand-02-base);
-  --color-upload-drag-drop-area-border: var(--color-neutral-light-30);
+  --color-upload-drag-drop-area-border: var(--color-upload-drag-drop-area-border);
   --color-upload-drag-drop-area-border-primary: var(--color-brand-02-base);
   --color-upload-drag-drop-area-border-error: var(--color-feedback-negative-base);
 
@@ -2083,7 +2083,7 @@ po-upload {
 
   /* UPLOAD CONTENT */
   --background-color-content: var(--color-neutral-light-10);
-  --border-color-content: var(--color-neutral-light-20);
+  --border-color-content: var(--border-color-content);
   --border-radius-content: var(--border-radius-md);
   --text-color-file-name: var(--color-neutral-dark-90);
   --font-family-file-name: var(--font-family-theme);
@@ -2124,7 +2124,7 @@ po-widget {
   --padding: var(--padding); /*Deprecated v21.x.x utilizar --padding-header, --padding-body, e --padding-footer*/
 
   --border-radius: var(--border-radius-md);
-  --border-color: var(--color-neutral-light-20);
+  --border-color: var(--border-color);
   --background: var(--color-neutral-light-00);
   --border-width: var(--border-width-sm);
   --shadow: var(--shadow-md);

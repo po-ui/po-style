@@ -1,3 +1,7 @@
+po-dropdown {
+  --color-dropdown: var(--color, var(--color-action-default));
+}
+
 .po-dropdown {
   font-family: var(--font-family);
   font-weight: var(--font-weight);
@@ -19,9 +23,9 @@ po-dropdown[p-size='small'] .po-dropdown {
 
 .po-dropdown-button {
   background-color: var(--background);
-  border: solid var(--border-width) var(--color);
+  border: solid var(--border-width) var(--color-dropdown);
   border-radius: var(--border-radius);
-  color: var(--color);
+  color: var(--color-dropdown);
   cursor: pointer;
   min-height: var(--target-size-aaa);
   padding: var(--padding, 0 var(--spacing-sm));

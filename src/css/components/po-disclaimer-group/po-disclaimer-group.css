@@ -6,7 +6,8 @@
 
 .po-disclaimer-group {
   background-color: var(--color-disclaimer-group-background-color);
-  border: solid 1px var(--color-disclaimer-group-border-color);
+  border: solid 1px
+    var(--color-disclaimer-group-border-color, var(--po-contrast-from-light-10, var(--color-neutral-light-10)));
   border-radius: 3px;
   padding: var(--po-density-content-padding, var(--default-spacing-xs, var(--spacing-sm)));
   padding-bottom: var(--default-spacing-0, var(--spacing-xs));

@@ -73,7 +73,7 @@
 .po-table tbody:not(:last-child) tr td,
 .po-table .po-table-master-detail tbody tr:not(:last-child) td {
   border-bottom: solid;
-  border-bottom-color: var(--color-line);
+  border-bottom-color: var(--color-line, var(--po-contrast-from-mid-40, var(--color-neutral-mid-40)));
   border-bottom-width: var(--border-width-sm);
 }
 
@@ -266,7 +266,7 @@
 
 .po-table-footer {
   @apply --font-table-text;
-  border-top: 2px solid var(--color-line);
+  border-top: 2px solid var(--color-line, var(--po-contrast-from-mid-40, var(--color-neutral-mid-40)));
 }
 
 .po-table-subtitle-footer-container {
@@ -280,7 +280,7 @@
 
 .po-container .po-table-group-row:last-child .po-table-row + tr:not(.po-table-row) .po-table-column-detail {
   border-bottom: none;
-  border-top: 1px solid var(--color-line);
+  border-top: 1px solid var(--color-line, var(--po-contrast-from-mid-40, var(--color-neutral-mid-40)));
 }
 
 .po-container .po-table .po-table-group-row:last-child .po-table-row {

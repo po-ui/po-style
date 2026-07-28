@@ -14,6 +14,8 @@
 
   --default-padding-footer: var(--default-spacing-xs) var(--default-spacing-sm) var(--default-spacing-lg)
     var(--default-spacing-sm);
+
+  --page-slide-divider: var(--border-color, var(--po-contrast-from-light-20, var(--color-neutral-light-20)));
 }
 
 .po-page-slide {
@@ -159,7 +161,7 @@
 }
 
 po-page-slide po-divider {
-  --color: var(--border-color);
+  --color: var(--page-slide-divider);
 }
 
 @media screen and (max-width: 480px) {

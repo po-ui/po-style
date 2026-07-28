@@ -10,7 +10,8 @@
 
 .po-upload-drag-drop-area {
   border-radius: 1px;
-  border: dashed 2px var(--color-upload-drag-drop-area-border);
+  border: dashed 2px
+    var(--color-upload-drag-drop-area-border, var(--po-contrast-from-light-30, var(--color-neutral-light-30)));
   display: table;
   height: 100%;
   width: 100%;

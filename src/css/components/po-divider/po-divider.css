@@ -3,6 +3,7 @@ po-divider {
   --font-size: 10px;
   --line-height: 16px;
   --text-transform: uppercase;
+  --color-line: var(--color, var(--po-contrast-from-mid-40, var(--color-neutral-mid-40)));
 }
 
 .po-divider-label {
@@ -50,7 +51,7 @@ po-divider {
 }
 
 .po-divider line {
-  fill: var(--color);
-  stroke: var(--color);
+  fill: var(--color-line);
+  stroke: var(--color-line);
   stroke-linecap: var(--stroke-linecap);
 }

@@ -1,6 +1,5 @@
-:root {
-  --border-container-border-no-shadow: solid 1px var(--color-container-color-shadow);
-  --shadow-container-box-shadow: var(--shadow-container);
+po-container {
+  --border-color-content: var(--border-color, var(--po-contrast-from-light-20, var(--color-neutral-light-20)));
 }
 
 .po-container {
@@ -21,7 +20,7 @@
 
 .po-container-content {
   border-radius: var(--border-radius);
-  border: solid var(--border-width) var(--border-color);
+  border: solid var(--border-width) var(--border-color-content);
   box-shadow: none;
   display: block;
   height: auto;

@@ -91,6 +91,7 @@
 
 .po-chart-container-gauge {
   background: var(--background-color-container-gauge);
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+  border: solid var(--border-width-sm) var(--po-contrast-from-light-20, var(--color-neutral-light-20));
+  border-radius: var(--border-radius);
   padding: 8px;
 }

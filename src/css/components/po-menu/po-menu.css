@@ -1,10 +1,11 @@
-:root {
+po-menu {
   --menu-size: 290px;
+  --border-color-menu: var(--border-color, var(--po-contrast-from-light-20, var(--color-neutral-light-20)));
 }
 
 .po-menu {
   border-radius: var(--border-radius);
-  border-color: var(--border-color);
+  border-color: var(--border-color-menu);
   background-color: var(--background-color);
 
   border-width: var(--border-width-sm);
@@ -97,7 +98,7 @@
 .po-menu-footer {
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: var(--border-color);
+  border-top-color: var(--border-color-menu);
 
   max-height: 2.75em;
 }

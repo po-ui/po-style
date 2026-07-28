@@ -1,10 +1,14 @@
+po-widget {
+  --border-color-widget: var(--border-color, var(--po-contrast-from-light-20, var(--color-neutral-light-20)));
+}
+
 .po-widget,
 .po-widget-primary {
   font-family: var(--font-family);
 
   background-size: cover;
   border-radius: var(--border-radius);
-  border-color: var(--border-color);
+  border-color: var(--border-color-widget);
   border-width: var(--border-width);
   border-style: solid;
   display: inline-block;
@@ -134,7 +138,7 @@
 .po-widget.po-clickable:not(.po-widget-no-shadow),
 .po-widget-primary.po-clickable:not(.po-widget-no-shadow) {
   box-shadow: var(--shadow);
-  border-color: var(--color-neutral-light-20);
+  border-color: var(--border-color-widget);
 }
 
 .po-widget:not(.po-widget-disabled):not(.po-widget-primary).po-clickable:active {
@@ -183,6 +187,7 @@
 .po-widget-disabled .po-clickable,
 .po-widget-disabled .po-widget-title-action,
 .po-widget-disabled .po-widget-primary {
+  border-color: var(--color-widget-color-disabled);
   color: var(--color-widget-color-disabled) !important;
   cursor: not-allowed !important;
 }

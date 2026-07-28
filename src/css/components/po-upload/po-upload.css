@@ -1,3 +1,7 @@
+po-dropdown {
+  --border-color-content-upload: var(--po-contrast-from-light-20, var(--color-neutral-light-20));
+}
+
 .po-upload {
   position: relative;
 }
@@ -26,7 +30,7 @@
 .po-upload-progress-container po-container {
   --background: var(--background-color-content);
   --border-radius: var(--border-radius-content);
-  --border-color: var(--border-color-content);
+  --border-color: var(--border-color-content-upload);
   --border-width: var(--border-width-sm);
   --padding: 0px;
 

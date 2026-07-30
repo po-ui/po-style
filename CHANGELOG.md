@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.26.0](https://github.com/po-ui/po-style/compare/v21.25.0...v21.26.0) (2026-07-30)
+
+
+### Features
+
+* **page-default:** habilita ação p-refresh no header ([358be24](https://github.com/po-ui/po-style/commit/358be24d5ebb873b4d9f68775cc797649bef4132))
+
+
 # [21.25.0](https://github.com/po-ui/po-style/compare/v21.24.0...v21.25.0) (2026-07-24)
 
 

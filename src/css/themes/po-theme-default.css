@@ -1155,11 +1155,49 @@ po-listbox {
   LIST VIEW
 \*------------------------------------*/
 :root {
-  --color-list-view-background-color: var(--color-neutral-light-00);
-  --color-list-view-border: var(--color-list-view-border);
-  --color-list-view-color-primary: var(--color-brand-02-base);
-  --color-list-view-color-primary-hover: var(--color-primary-dark-20);
-  --color-list-view-color-select-all-label: var(--color-neutral-dark-70);
+  --color-list-view-color-primary: var(--title-color); /* @deprecated 23.x.x utilizar --title-color */
+  --color-list-view-color-primary-hover: var(--title-color-hover); /* @deprecated 23.x.x utilizar --title-color-hover */
+  --color-list-view-background-color: var(
+    --list-item-background
+  ); /* @deprecated 23.x.x utilizar --list-item-background */
+  --color-list-view-border: var(--list-item-border-color); /* @deprecated 23.x.x utilizar --list-item-border-color */
+}
+
+po-list-view {
+  --title-color: var(--title-color);
+  --title-font-family: var(--font-family-theme);
+  --title-font-size: var(--font-size-default);
+  --title-line-height: var(--line-height-md);
+  --title-color-hover: var(--color-action-hover);
+
+  --support-message-color: var(--color-neutral-dark-80);
+  --support-message-font-family: var(--font-family-theme);
+  --support-message-font-size: var(--font-size-sm);
+  --support-message-line-height: var(--line-height-none);
+
+  --title-color-selected: var(--color-action-focus);
+  --support-message-color-selected: var(--color-action-focus);
+
+  --list-item-shadow: var(--shadow-md);
+  --list-item-border-radius: var(--list-item-border-radius);
+  --list-item-background: var(--list-item-background);
+  --list-item-border-color: var(--list-item-border-color);
+  --list-item-border-width: var(--border-width-sm);
+
+  --list-item-background-selected: var(--list-item-background-selected);
+  --list-item-border-color-selected: var(--color-action-default);
+
+  --list-item-border-color-hover: var(--color-action-hover);
+  --list-item-shadow-hover: var(--shadow-lg);
+
+  --list-item-color-focused: var(--color-action-default);
+  --list-item-outline-color-focused: var(--color-action-focus);
+
+  --list-item-background-highlighted: var(--list-item-background-highlighted);
+
+  --list-item-transition-duration: var(--duration-normal);
+  --list-item-transition-property: all;
+  --list-item-transition-timing: var(--timing-standard, var(--timing-standart, ease));
 }
 
 /*------------------------------------*\

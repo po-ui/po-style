@@ -38,6 +38,30 @@
   --list-view-main-header-height: 44px;
 
   --list-view-main-header-height--aa: 32px;
+
+  /* Animalia DS (DTHFUI-12430) */
+  --color-list-view-highlighted-background: var(--color-brand-01-lightest);
+
+  --list-item-transition-duration: var(--duration-normal);
+
+  --list-item-transition-property: all;
+
+  --list-item-transition-timing: var(--timing-standard, var(--timing-standart, ease));
+
+  /* Animalia DS — Tokens customizáveis do título */
+  --color-list-view-title: var(--color-neutral-dark-90);
+  --font-size-list-view-title: var(--font-size-default);
+  --font-weight-list-view-title: var(--font-weight-bold);
+  --line-height-list-view-title: var(--line-height-none);
+
+  /* Animalia DS — Tokens customizáveis do subtitle (support message) */
+  --color-list-view-subtitle: var(--color-neutral-mid-60, #69697c);
+  --font-size-list-view-subtitle: var(--font-size-sm);
+
+  /* Animalia DS — Tokens customizáveis do estado selected */
+  --color-list-view-selected-title: var(--color-action-focus);
+  --color-list-view-selected-subtitle: var(--color-action-focus);
+  --shadow-list-view-selected: var(--shadow-none, none);
 }
 
 .po-list-view-select {
@@ -177,6 +201,107 @@ po-list-view[p-components-size='small'] .po-list-view-title {
 
 .po-list-view-selectable-label {
   margin-left: 0;
+}
+
+.po-list-view-container {
+  transition-property: var(--list-item-transition-property);
+  transition-duration: var(--list-item-transition-duration);
+  transition-timing-function: var(--list-item-transition-timing);
+}
+
+.po-list-view-subtitle {
+  color: var(--neutral-dark-80, var(--color-neutral-dark-80, #36364a));
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: left;
+}
+
+.po-list-view-highlighted {
+  background-color: var(--color-list-view-highlighted-background);
+  border-radius: var(--border-radius-md, 8px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .po-list-view-container {
+    transition: none;
+  }
+}
+
+.po-list-view-animalia .po-list-view-item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  align-self: stretch;
+  margin: var(--spacing-sm, 0.5rem) 0;
+  padding: var(--spacing-sm, 16px) 16px var(--spacing-sm, 16px) var(--spacing-sm, 16px);
+  border-radius: var(--border-radius-md, 4px);
+  border: var(--border-width-sm, 1px) solid var(--color-list-view-border, #ffffff);
+  background: var(--Ani-Card-Interactive---background, #fff);
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+  transition-property: var(--list-item-transition-property);
+  transition-duration: var(--list-item-transition-duration);
+  transition-timing-function: var(--list-item-transition-timing);
+}
+
+.po-list-view-animalia .po-list-view-item-wrapper po-widget {
+  flex: 1;
+  min-width: 0;
+}
+
+.po-list-view-animalia .po-list-view-item-wrapper .po-widget-container {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.po-list-view-animalia .po-list-view-item-wrapper .po-list-view-select {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.po-list-view-animalia .po-list-view-action-advanced {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.po-list-view-animalia .po-widget-text {
+  color: var(--color-list-view-title);
+  font-family: var(--font-family-theme);
+  font-size: var(--font-size-list-view-title);
+  font-weight: var(--font-weight-list-view-title);
+  line-height: var(--line-height-list-view-title);
+}
+
+/* Animalia DS — Estado selected */
+.po-list-view-animalia .po-list-view-selected {
+  box-shadow: var(--shadow-list-view-selected);
+}
+
+.po-list-view-animalia .po-list-view-selected .po-widget-text {
+  color: var(--color-list-view-selected-title);
+}
+
+.po-list-view-animalia .po-list-view-selected .po-list-view-subtitle {
+  color: var(--color-list-view-selected-subtitle);
+}
+
+.po-list-view-animalia .po-list-view-item-wrapper.po-list-view-highlighted {
+  background: var(--color-list-view-highlighted-background);
+}
+
+.po-list-view-animalia .po-list-view-item-wrapper.po-list-view-highlighted.po-list-view-selected {
+  background: var(--color-list-view-highlighted-background);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .po-list-view-animalia .po-list-view-item-wrapper {
+    transition: none;
+  }
 }
 
 @media screen and (max-width: 1366px) {

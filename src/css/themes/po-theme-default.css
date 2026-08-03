@@ -1155,11 +1155,41 @@ po-listbox {
   LIST VIEW
 \*------------------------------------*/
 :root {
+  --color-list-view-color-primary: var(--color-brand-02-base); /* @deprecated 23.x.x — Substituído por --title-color */
+  --color-list-view-color-primary-hover: var(
+    --color-primary-dark-20
+  ); /* @deprecated 23.x.x — Substituído por --title-color */
+}
+
+po-list-view {
   --color-list-view-background-color: var(--color-neutral-light-00);
-  --color-list-view-border: var(--color-list-view-border);
-  --color-list-view-color-primary: var(--color-brand-02-base);
-  --color-list-view-color-primary-hover: var(--color-primary-dark-20);
-  --color-list-view-color-select-all-label: var(--color-neutral-dark-70);
+  --color-list-view-border: var(--color-neutral-light-10);
+
+  --color-list-view-highlighted-background: var(--color-brand-01-lightest);
+
+  --list-item-transition-duration: var(--duration-normal);
+  --list-item-transition-property: all;
+  --list-item-transition-timing: var(--timing-standard, var(--timing-standart, ease));
+
+  --title-color: var(--color-list-view-color-primary, var(--color-neutral-dark-90));
+  --title-font-family: var(--font-family-text);
+  --title-font-size: var(--font-size-default);
+  --title-line-height: var(--line-height-none);
+
+  --support-message-color: var(--color-neutral-dark-80);
+  --support-message-font-family: var(--font-family-text);
+  --support-message-font-size: var(--font-size-sm);
+  --support-message-line-height: var(--line-height-none);
+
+  --shadow-selected: var(--shadow-none, none);
+  --title-color-selected: var(--color-action-focus);
+  --support-message-color-selected: var(--color-action-focus);
+
+  --shadow-list-view-item: 0 0 3px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+  --border-list-view-item: var(--border-width-sm, 1px) solid var(--color-list-view-border, #ffffff);
+  --border-color-widget: var(--border-color, var(--po-contrast-from-light-20, var(--color-neutral-light-20)));
+
+  --color-list-view-selected-background: var(--color-brand-01-lightest);
 }
 
 /*------------------------------------*\

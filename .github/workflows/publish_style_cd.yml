@@ -1,0 +1,94 @@
+name: Run publish @po-ui/style
+
+env:
+  PACKAGE_NAME: po-ui/style
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_channel:
+        description: 'Canal de publicação'
+        required: true
+        type: choice
+        options:
+          - v19-lts
+          - v20-ng
+          - beta
+          - next
+          - latest
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # Required for OIDC (Trusted Publishing)
+      contents: read
+
+    steps:
+      # ── Validação de branch por canal ────────────────────────────────────────
+      - name: Validar branch para o canal selecionado
+        run: |
+          CHANNEL="${{ github.event.inputs.release_channel }}"
+          BRANCH="${{ github.ref }}"
+
+          case "$CHANNEL" in
+            v19-lts)  EXPECTED="refs/heads/19.x.x" ;;
+            v20-ng)   EXPECTED="refs/heads/20.x.x" ;;
+            beta)     EXPECTED="refs/heads/beta"    ;;
+            next|latest) EXPECTED="refs/heads/master" ;;
+          esac
+
+          if [ -n "$EXPECTED" ] && [ "$BRANCH" != "$EXPECTED" ]; then
+            echo "❌ Canal '$CHANNEL' só pode ser publicado a partir da branch '$EXPECTED'."
+            echo "   Branch atual: $BRANCH"
+            exit 1
+          fi
+
+          echo "✅ Branch validada para o canal '$CHANNEL'."
+
+      # ── Checkout e setup ─────────────────────────────────────────────────────
+      # Node >= 22.14.0 obrigatório para OIDC Trusted Publishing (npm >= 11.5.1)
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - run: npm install
+      - run: npm run build
+
+      # ── Verificar se versão já existe no NPM ─────────────────────────────────
+      - name: Obter todas as versões publicadas
+        run: npm show @${{ env.PACKAGE_NAME }} versions --json > versions.json
+
+      - name: Obter versão do package.json
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@v1.3.0
+
+      - name: Verificar se a versão já existe no NPM
+        id: version
+        run: |
+          VERSION_TO_CHECK="${{ steps.package-version.outputs.current-version }}"
+          if jq -e --arg version "$VERSION_TO_CHECK" '.[] | select(. == $version)' versions.json > /dev/null; then
+            echo "publish=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=yes" >> "$GITHUB_OUTPUT"
+          fi
+
+      # ── Publicar nova versão ──────────────────────────────────────────────────
+      - name: Publicar no NPM
+        if: steps.version.outputs.publish == 'yes'
+        run: npm publish dist/style --tag "${{ github.event.inputs.release_channel }}"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # ── Versão já existe: apenas atualizar a tag ──────────────────────────────
+      - name: Atualizar tag no NPM (versão já publicada)
+        if: steps.version.outputs.publish == 'no'
+        run: |
+          npm dist-tags add \
+            @${{ env.PACKAGE_NAME }}@${{ steps.package-version.outputs.current-version }} \
+            "${{ github.event.inputs.release_channel }}"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

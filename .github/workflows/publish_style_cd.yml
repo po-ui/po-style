@@ -1,0 +1,117 @@
+name: Run publish @po-ui/style
+
+env:
+  PACKAGE_NAME: po-ui/style
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_channel:
+        description: 'Canal de publicação'
+        required: true
+        type: choice
+        options:
+          - v19-lts
+          - v20-ng
+          - beta
+          - next
+          - latest
+
+jobs:
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Resolve as configurações de acordo com o canal escolhido
+  # ─────────────────────────────────────────────────────────────────────────────
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      npm_tag:         ${{ steps.cfg.outputs.npm_tag }}
+      required_branch: ${{ steps.cfg.outputs.required_branch }}
+    steps:
+      - name: Resolver configurações do canal
+        id: cfg
+        run: |
+          CHANNEL="${{ github.event.inputs.release_channel }}"
+
+          case "$CHANNEL" in
+            v19-lts)
+              echo "npm_tag=v19-lts"                   >> "$GITHUB_OUTPUT"
+              echo "required_branch=refs/heads/19.x.x" >> "$GITHUB_OUTPUT"
+              ;;
+            v20-ng)
+              echo "npm_tag=v20-ng"                    >> "$GITHUB_OUTPUT"
+              echo "required_branch=refs/heads/20.x.x" >> "$GITHUB_OUTPUT"
+              ;;
+            beta)
+              echo "npm_tag=beta"                      >> "$GITHUB_OUTPUT"
+              echo "required_branch=refs/heads/beta"   >> "$GITHUB_OUTPUT"
+              ;;
+            next)
+              echo "npm_tag=next"                      >> "$GITHUB_OUTPUT"
+              echo "required_branch=refs/heads/master" >> "$GITHUB_OUTPUT"
+              ;;
+            latest)
+              echo "npm_tag=latest"                    >> "$GITHUB_OUTPUT"
+              echo "required_branch=refs/heads/master" >> "$GITHUB_OUTPUT"
+              ;;
+          esac
+
+      # Bloqueia execução se o canal exige uma branch específica e não bate
+      - name: Verificar branch obrigatória
+        if: ${{ steps.cfg.outputs.required_branch != '' }}
+        run: |
+          if [ "${{ github.ref }}" != "${{ steps.cfg.outputs.required_branch }}" ]; then
+            echo "❌ Canal '${{ github.event.inputs.release_channel }}' só pode ser publicado a partir de '${{ steps.cfg.outputs.required_branch }}'."
+            echo "   Branch atual: ${{ github.ref }}"
+            exit 1
+          fi
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  # Build e publicação do pacote @po-ui/style
+  # ─────────────────────────────────────────────────────────────────────────────
+  build-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # Required for OIDC (Trusted Publishing)
+      contents: read
+    needs: setup
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install and Build
+        run: npm install && npm run build
+
+      # Pega as versões publicadas no NPM e salva no arquivo versions.json
+      - name: Obter todas as versões publicadas
+        run: npm show @${{ env.PACKAGE_NAME }} versions --json > versions.json
+
+      # Pega a versão no package.json
+      - name: Get package.json version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@main
+
+      # Verifica se a versão a ser publicada já existe no NPM
+      - name: Verificar se a versão existe
+        id: version
+        run: |
+          VERSION_TO_CHECK="${{ steps.package-version.outputs.current-version }}"
+          if jq -e --arg version "$VERSION_TO_CHECK" '.[] | select(. == $version)' versions.json; then
+            echo "publish=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "publish=yes" >> "$GITHUB_OUTPUT"
+          fi
+
+      # ── @po-ui/style ───────────────────────────────────────────────────────
+      - name: style - publish
+        if: contains(steps.version.outputs.publish, 'yes')
+        run: npm publish dist/style --tag "${{ needs.setup.outputs.npm_tag }}" --provenance
+
+      - name: style - add tag
+        if: contains(steps.version.outputs.publish, 'no')
+        run: npm dist-tags add @${{ env.PACKAGE_NAME }}@${{ steps.package-version.outputs.current-version }} "${{ needs.setup.outputs.npm_tag }}"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

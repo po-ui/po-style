@@ -176,6 +176,13 @@
   overflow-x: auto;
 }
 
+.po-table-virtual-viewport {
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 100%;
+  height: 100%;
+}
+
 .po-table-virtual-scroll-wrapper {
   display: flex;
   flex-direction: column;
@@ -200,6 +207,27 @@
 
 .po-table.po-table-striped > tbody:nth-child(odd) tr:first-child:not(.po-table-row-active) td,
 .po-table.po-table-striped .po-table-master-detail > tbody tr:nth-child(odd):not(.po-table-row-active) td {
+  background-color: var(--background-striped-color);
+}
+
+/* Virtual scroll: borda inferior em cada row (exceto a última) dentro de tbody único */
+.po-table-virtual-viewport .po-table tbody tr.po-table-row:not(:last-of-type) td {
+  border-bottom: solid;
+  border-bottom-color: var(--color-line);
+  border-bottom-width: var(--border-width-sm);
+}
+
+/* Virtual scroll: remove borda quando striped está ativo */
+.po-table-virtual-viewport .po-table.po-table-striped tbody tr.po-table-row td {
+  border-bottom: none;
+}
+
+/* Virtual scroll: efeito zebrado baseado em rows (nth-of-type em tr) */
+.po-table-virtual-viewport
+  .po-table.po-table-striped
+  tbody
+  tr.po-table-row:nth-of-type(odd):not(.po-table-row-active)
+  td {
   background-color: var(--background-striped-color);
 }
 
@@ -682,6 +710,10 @@ span.po-table-header-icon-ascending svg {
 
 .po-table-row-template-container {
   max-width: 1rem;
+}
+
+.po-table-row-template-hidden {
+  display: none;
 }
 
 .po-table-header-flex po-icon,

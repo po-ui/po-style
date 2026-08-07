@@ -28,7 +28,7 @@ po-page-default .po-tabs-container {
   align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
-  box-shadow: inset 0 -1px 0 0 var(--color-baseline);
+  box-shadow: inset 0 -1px 0 0 var(--color-baseline, var(--po-contrast-from-light-20, var(--color-neutral-light-20)));
 }
 
 .po-tabs-content {

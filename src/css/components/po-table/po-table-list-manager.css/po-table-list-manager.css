@@ -6,13 +6,16 @@
   line-height: var(--line-height-md);
 
   font-size: var(--font-size-sm);
-  margin-bottom: 0.5rem;
 }
 
 .po-table-list-manager-section {
   gap: var(--spacing-xs);
   display: flex;
   flex-direction: column;
+}
+
+.po-table-list-manager-section + .po-table-list-manager-section {
+  margin-top: var(--spacing-md);
 }
 
 .po-table-list-manager-section .po-table-list-manager-item-switch po-switch .po-field-container-content {
@@ -30,7 +33,7 @@
 .po-table-list-manager-item {
   border-width: 1px;
   border-style: solid;
-  border-color: var(--color-neutral-light-10);
+  border-color: var(--po-contrast-from-light-10, var(--color-neutral-light-10));
   padding: var(--spacing-xs);
   border-radius: var(--border-radius-lg);
   gap: var(--spacing-xs);

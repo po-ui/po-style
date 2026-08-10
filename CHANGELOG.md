@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.28.0](https://github.com/po-ui/po-style/compare/v21.27.0...v21.28.0) (2026-08-10)
+
+
+### Bug Fixes
+
+* **timepicker:** esconde ":" ao usar placeholder ou formato 12h ([d696d81](https://github.com/po-ui/po-style/commit/d696d81a6ead58eba3447c5571e76a400da71780))
+
+
+
 # [21.27.0](https://github.com/po-ui/po-style/compare/v21.26.0...v21.27.0) (2026-08-03)
 
 Compatibilidade com @po-ui/ng-components@21.27.0

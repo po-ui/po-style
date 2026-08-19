@@ -2,6 +2,7 @@ name: Run publish @po-ui/style
 
 env:
   PACKAGE_NAME: po-ui/style
+  WORKING_DIR: /home/runner/work/po-style/po-style
 
 on:
   workflow_dispatch:
@@ -108,7 +109,7 @@ jobs:
       # ── @po-ui/style ───────────────────────────────────────────────────────
       - name: style - publish
         if: contains(steps.version.outputs.publish, 'yes')
-        run: npm publish dist/style --tag "${{ needs.setup.outputs.npm_tag }}" --provenance
+        run: npm publish ${{env.WORKING_DIR}}/dist/style --tag "${{ needs.setup.outputs.npm_tag }}" --provenance
 
       - name: style - add tag
         if: contains(steps.version.outputs.publish, 'no')

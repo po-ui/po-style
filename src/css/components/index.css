@@ -45,6 +45,7 @@
 @import './po-tooltip';
 @import './po-tree-view';
 @import './po-upload';
+@import './po-drag-drop';
 @import './po-widget';
 @import './po-link';
 @import './po-label';

@@ -1,0 +1,96 @@
+.po-drag-drop-item {
+  position: relative;
+}
+
+.po-drag-drop-item-preview {
+  border: 2px solid var(--color-action-default);
+  border-radius: var(--border-radius-lg, 16px);
+  box-shadow: 0px 8px 24px var(--color-black-alpha-15), 0px 0px 4px var(--color-black-alpha-10);
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+.po-drag-drop-item-preview:has(.po-widget),
+.po-drag-drop-item-preview:has(.po-widget-primary) {
+  opacity: 0.8;
+}
+
+.po-drag-drop-handle {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-sm, 16px);
+  background: var(--color-neutral-light-00);
+  border: 1px solid var(--color-action-default);
+  border-radius: var(--border-radius-full, 400px);
+  box-shadow: 0px 4px 4px var(--color-black-alpha-10), 0px 0px 1.5px var(--color-black-alpha-10);
+  cursor: grab;
+  opacity: 0;
+  transition: opacity 150ms ease;
+  z-index: 2;
+  outline: none;
+}
+
+.po-drag-drop-handle po-icon,
+.po-drag-drop-handle .po-icon,
+.po-drag-drop-handle .an {
+  font-size: 24px;
+  line-height: 1;
+  color: var(--color-action-default);
+  display: flex;
+  align-items: center;
+}
+
+[data-default-size='small'][data-a11y='AA'] .po-drag-drop-handle,
+[data-a11y='AA'] .po-drag-drop-handle.size-small {
+  padding: 2px 16px;
+  top: -10px;
+}
+
+[data-default-size='small'][data-a11y='AA'] .po-drag-drop-handle po-icon,
+[data-default-size='small'][data-a11y='AA'] .po-drag-drop-handle .po-icon,
+[data-default-size='small'][data-a11y='AA'] .po-drag-drop-handle .an,
+[data-a11y='AA'] .po-drag-drop-handle.size-small po-icon,
+[data-a11y='AA'] .po-drag-drop-handle.size-small .po-icon,
+[data-a11y='AA'] .po-drag-drop-handle.size-small .an {
+  font-size: var(--font-size-default);
+}
+
+.po-drag-drop-item:hover .po-drag-drop-handle,
+.po-drag-drop-handle:focus-visible {
+  opacity: 1;
+}
+
+.po-drag-drop-item--overlay-open {
+  transform: none !important;
+}
+
+.po-drag-drop-item:hover:not(.po-drag-drop-item--overlay-open) {
+  transition: box-shadow 150ms ease;
+  box-shadow: 0px 6px 12px var(--color-black-alpha-10), 0px 0px 3px var(--color-black-alpha-10);
+  padding: 0px;
+  margin: 0px;
+}
+
+.po-drag-drop-item--overlay-open:hover {
+  box-shadow: 0px 6px 12px var(--color-black-alpha-10), 0px 0px 3px var(--color-black-alpha-10);
+  padding: 0px;
+  margin: 0px;
+}
+
+.po-drag-drop-item-placeholder {
+  background: var(--color-neutral-light-10);
+  border: 2px dashed var(--color-neutral-mid-60);
+  border-radius: var(--border-radius-lg, 16px);
+  padding: 0px;
+  margin: 0px;
+}
+
+.po-drag-drop-item-placeholder .po-widget {
+  opacity: 0;
+}

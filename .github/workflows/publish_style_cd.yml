@@ -1,4 +1,4 @@
-name: Run publish @po-ui/style
+name: PO Style Publish
 
 env:
   PACKAGE_NAME: po-ui/style

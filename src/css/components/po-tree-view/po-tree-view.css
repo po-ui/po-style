@@ -11,7 +11,7 @@ po-tree-view po-container {
   --font-size: inherit;
   --line-height: inherit;
   --color: inherit;
-  --border-color: var(--stroke-color, var(--po-contrast-from-mid-40, var(--color-neutral-mid-40)));
+  --border-color: var(--stroke-color, var(--po-contrast-from-light-20, var(--color-neutral-mid-40)));
 }
 
 po-tree-view .po-tree-view-item-content-selectable po-label {

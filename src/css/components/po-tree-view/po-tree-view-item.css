@@ -9,6 +9,6 @@ po-tree-view .po-divider {
 
   --color-line: var(
     --color-tree-view-item-border-bottom-color,
-    var(--divider-color, var(--po-contrast-from-mid-40, var(--color-neutral-mid-40)))
+    var(--divider-color, var(--po-contrast-from-light-20, var(--color-neutral-mid-40)))
   );
 }

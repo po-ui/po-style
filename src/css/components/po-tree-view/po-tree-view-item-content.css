@@ -1,0 +1,247 @@
+po-tree-view-item-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.po-tree-view-item-content-wrapper {
+  width: 100%;
+  padding: var(--spacing-xxs);
+}
+
+po-tree-view[p-components-size='small'] .po-tree-view-item-content-wrapper {
+  padding: 0;
+}
+
+.po-tree-view-item-content-padding {
+  padding: 2px;
+  border-radius: var(--border-radius-md);
+}
+
+po-tree-view[p-components-size='small'] .po-tree-view-item-content-padding {
+  padding: var(--spacing-xxs);
+}
+
+.po-tree-view-item-content {
+  gap: var(--spacing-xxs);
+  display: flex;
+  align-items: center;
+  height: var(--target-size-aaa);
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+po-tree-view[p-components-size='small'] .po-tree-view-item-content {
+  height: 2.25rem;
+}
+
+.po-tree-view-item-content-padding:hover {
+  background-color: var(--color-brand-01-lighter);
+}
+
+.po-tree-view-item-content-padding:hover .po-tree-view-item-content-label,
+.po-tree-view-item-content-padding:hover .po-tree-view-item-content-selectable po-label label,
+.po-tree-view-item-content-padding:hover .po-tree-view-item-content-selectable .po-checkbox-label .po-label,
+.po-tree-view-item-content-padding:hover .po-tree-view-item-content-icon,
+.po-tree-view-item-content-padding:hover .po-tree-view-item-content-button-icon .po-button {
+  color: var(--color-hover);
+}
+
+.po-tree-view-item-content-padding:active,
+.po-tree-view-item-content-pressed {
+  background-color: var(--color-brand-01-light);
+}
+
+.po-tree-view-item-content-padding:active .po-tree-view-item-content-label,
+.po-tree-view-item-content-padding:active .po-tree-view-item-content-selectable po-label label,
+.po-tree-view-item-content-padding:active .po-tree-view-item-content-selectable .po-checkbox-label .po-label,
+.po-tree-view-item-content-padding:active .po-tree-view-item-content-icon,
+.po-tree-view-item-content-padding:active .po-tree-view-item-content-button-icon .po-button,
+.po-tree-view-item-content-pressed .po-tree-view-item-content-label,
+.po-tree-view-item-content-pressed .po-tree-view-item-content-selectable po-label label,
+.po-tree-view-item-content-pressed .po-tree-view-item-content-selectable .po-checkbox-label .po-label,
+.po-tree-view-item-content-pressed .po-tree-view-item-content-icon,
+.po-tree-view-item-content-pressed .po-tree-view-item-content-button-icon .po-button {
+  color: var(--color-pressed);
+}
+
+po-tree-view .po-tree-view-item-group .po-tree-view-item .po-tree-view-item-content {
+  padding-left: var(--spacing-sm);
+}
+
+po-tree-view
+  .po-tree-view-item-group
+  .po-tree-view-item
+  .po-tree-view-item-group
+  .po-tree-view-item
+  .po-tree-view-item-content {
+  padding-left: var(--spacing-lg);
+}
+
+po-tree-view
+  .po-tree-view-item-group
+  .po-tree-view-item
+  .po-tree-view-item-group
+  .po-tree-view-item
+  .po-tree-view-item-group
+  .po-tree-view-item
+  .po-tree-view-item-content,
+.po-tree-view-item-content-level-max {
+  padding-left: var(--spacing-2xl);
+}
+
+po-tree-view .po-tree-view-item-content-button-icon .po-button {
+  padding: 0 var(--spacing-xs);
+}
+
+po-tree-view[p-components-size='small'] .po-tree-view-item-content-button-icon .po-button {
+  width: 2.25rem;
+  min-width: 2.25rem;
+  height: var(--target-size-aaa);
+}
+
+po-tree-view .po-tree-view-item-content-button-icon .po-button:hover {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+po-tree-view .po-tree-view-item-content-button-icon .po-button:focus,
+po-tree-view .po-tree-view-item-content-button-icon .po-button:enabled:active {
+  outline: none;
+  background-color: transparent;
+}
+
+po-tree-view .po-checkbox-outline:is(:focus),
+po-tree-view .po-checkbox-outline:is(:focus-visible),
+po-tree-view .po-radio-focus > label {
+  outline: none;
+}
+
+po-tree-view .po-tree-view-item-content-padding:focus {
+  outline-color: var(--color-action-focus);
+  outline-width: var(--border-width-lg);
+  outline-style: solid;
+  outline-offset: -4px;
+}
+
+po-tree-view .po-checkbox:focus-visible,
+po-tree-view .po-radio input[type='radio']:focus-visible {
+  outline-color: var(--color-action-focus);
+  outline-width: var(--border-width-lg);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+/* po-icon */
+po-tree-view .po-tree-view-item-content-icon {
+  color: var(--color);
+  font-size: var(--font-size-lg);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+po-tree-view[p-components-size='small'] .po-tree-view-item-content-icon {
+  width: 2.25rem;
+  min-width: 2.25rem;
+  height: var(--target-size-aaa);
+  font-size: var(--font-size-default);
+  padding: 0;
+  justify-content: center;
+}
+
+po-tree-view .po-tree-view-item-content-selectable {
+  padding: 10px 0 10px 10px;
+}
+
+po-tree-view .po-tree-view-item-content-label-padding-left {
+  padding-left: 12px;
+}
+
+po-tree-view .po-tree-view-item-content-selectable .po-radio > label {
+  gap: 0;
+}
+
+po-tree-view .po-tree-view-item-content-selectable .po-checkbox-label,
+po-tree-view .po-tree-view-item-content-selectable .po-radio po-label label {
+  margin-left: 14px;
+}
+
+po-tree-view .po-tree-view-item-content-label,
+po-tree-view po-checkbox .container-po-checkbox .po-checkbox-label .po-label,
+po-tree-view po-radio.po-tree-view-item-content-selectable .po-label {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--color);
+  font-weight: var(--font-weight-normal);
+}
+
+po-tree-view[p-components-size='small'] .po-tree-view-item-content-label,
+po-tree-view[p-components-size='small'] .container-po-checkbox .po-checkbox-label .po-label,
+po-tree-view[p-components-size='small'] po-radio.po-tree-view-item-content-selectable .po-label {
+  font-size: var(--font-size-sm);
+}
+
+.po-tree-view > .po-tree-view-item > po-tree-view-item-content .po-tree-view-item-content-label,
+.po-tree-view > .po-tree-view-item > po-tree-view-item-content .po-tree-view-item-content-selectable po-label label {
+  font-weight: var(--font-weight-semibold);
+}
+
+.po-tree-view-item-content-selected .po-tree-view-item-content-label,
+.po-tree-view-item-content-selected .po-tree-view-item-content-selectable po-label label,
+.po-tree-view-item-content-selected .po-tree-view-item-content-selectable .po-checkbox-label .po-label {
+  color: var(--title-color);
+}
+
+.po-tree-view-item-content-disabled {
+  color: var(--color-disabled);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.po-tree-view-item-content-line-disabled {
+  cursor: not-allowed;
+}
+
+po-tree-view .po-tree-view-item-content-line-disabled:focus {
+  outline: none;
+}
+
+.po-tree-view-item-content-line-disabled .po-tree-view-item-content-label,
+.po-tree-view-item-content-line-disabled .po-tree-view-item-content-selectable po-label label,
+.po-tree-view-item-content-line-disabled .po-tree-view-item-content-selectable .po-checkbox-label .po-label,
+.po-tree-view-item-content-line-disabled .po-tree-view-item-content-icon,
+.po-tree-view-item-content-line-disabled:hover .po-tree-view-item-content-label,
+.po-tree-view-item-content-line-disabled:hover .po-tree-view-item-content-selectable po-label label,
+.po-tree-view-item-content-line-disabled:hover .po-tree-view-item-content-selectable .po-checkbox-label .po-label,
+.po-tree-view-item-content-line-disabled:hover .po-tree-view-item-content-icon,
+.po-tree-view-item-content-line-disabled:active .po-tree-view-item-content-label,
+.po-tree-view-item-content-line-disabled:active .po-tree-view-item-content-selectable po-label label,
+.po-tree-view-item-content-line-disabled:active .po-tree-view-item-content-selectable .po-checkbox-label .po-label,
+.po-tree-view-item-content-line-disabled:active .po-tree-view-item-content-icon {
+  color: var(--color-disabled);
+}
+
+.po-tree-view-item-content-line-disabled:hover,
+.po-tree-view-item-content-line-disabled:active {
+  background-color: transparent;
+}
+
+.po-tree-view-item-content-line-disabled .po-tree-view-item-content {
+  cursor: not-allowed;
+}
+
+.po-tree-view-item-content-line-disabled .po-tree-view-item-content-button-icon {
+  pointer-events: auto;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.po-tree-view-item-content-line-disabled:focus .po-tree-view-item-content-button-icon .po-button {
+  outline-color: var(--color-action-focus);
+  outline-width: var(--border-width-lg);
+  outline-style: solid;
+  outline-offset: -4px;
+}

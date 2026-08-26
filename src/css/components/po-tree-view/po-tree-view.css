@@ -1,3 +1,14 @@
 .po-tree-view {
   overflow-y: hidden;
 }
+
+po-tree-view po-container {
+  --font-family: inherit;
+  --font-size: inherit;
+  --line-height: inherit;
+  --color: inherit;
+}
+
+po-tree-view .po-tree-view-item-content-selectable po-label {
+  --font-size: inherit;
+}

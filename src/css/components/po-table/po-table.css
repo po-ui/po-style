@@ -176,6 +176,13 @@
   overflow-x: auto;
 }
 
+.po-table-virtual-viewport {
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 100%;
+  height: 100%;
+}
+
 .po-table .po-table-row-active td {
   background-color: var(--background-color-selected);
   color: var(--color-actived);
@@ -183,6 +190,32 @@
 
 .po-table.po-table-striped > tbody:nth-child(odd) tr:first-child:not(.po-table-row-active) td,
 .po-table.po-table-striped .po-table-master-detail > tbody tr:nth-child(odd):not(.po-table-row-active) td {
+  background-color: var(--background-striped-color);
+}
+
+/* Virtual scroll: borda inferior em cada row de dados */
+.po-table-virtual-viewport .po-table tbody tr.po-table-row td {
+  border-bottom: solid;
+  border-bottom-color: var(--color-line);
+  border-bottom-width: var(--border-width-sm);
+}
+
+/* Remove borda da última row do dataset (marcada via classe no template) */
+.po-table-virtual-viewport .po-table tbody tr.po-table-row.po-table-row-last td {
+  border-bottom: none;
+}
+
+/* Virtual scroll: remove borda quando striped está ativo */
+.po-table-virtual-viewport .po-table.po-table-striped tbody tr.po-table-row td {
+  border-bottom: none;
+}
+
+/* Virtual scroll: efeito zebrado baseado em rows (nth-of-type em tr) */
+.po-table-virtual-viewport
+  .po-table.po-table-striped
+  tbody
+  tr.po-table-row:nth-of-type(odd):not(.po-table-row-active)
+  td {
   background-color: var(--background-striped-color);
 }
 

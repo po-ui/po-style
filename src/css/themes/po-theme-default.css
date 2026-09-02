@@ -1533,6 +1533,7 @@ po-page-slide {
   --page-slide-width-md: 50%;
   --page-slide-width-lg: 60%;
   --page-slide-width-xl: 70%;
+  --page-slide-width-full: 100vw;
   --page-slide-min-width-auto: 40%;
   --page-slide-max-width-auto: 90%;
 }

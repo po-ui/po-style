@@ -2037,6 +2037,22 @@ po-textarea {
   --text-color: var(--color-neutral-light-00);
 }
 
+/*------------------------------------*\
+  TREEVIEW
+\*------------------------------------*/
+po-tree-view {
+  --background-color: var(--color-neutral-light-00);
+  --divider-color: var(--color-neutral-mid-40);
+  --font-family: var(--font-family-theme);
+  --font-size: var(--font-size-default);
+  --line-height: var(--line-height-md);
+  --color: var(--color-action-default);
+  --color-hover: var(--color-action-hover);
+  --color-pressed: var(--color-action-pressed);
+  --color-disabled: var(--color-action-disabled);
+  --title-color: var(--color-action-focus);
+}
+
 :root {
   /*------------------------------------*\
   TREEVIEW
@@ -2045,10 +2061,12 @@ po-textarea {
   /** Tree View Item */
   --color-tree-view-item-border-bottom-color: var(--color-tree-view-item-border-bottom-color);
 
-  /** Tree View Item Header */
-  --color-tree-view-item-header-button-color: var(--color-brand-02-base);
-  --color-tree-view-item-header-button-focus: var(--color-action-default);
-  --color-tree-view-item-header-label-text-color: var(--color-neutral-dark-70);
+  /** Tree View Item Content */
+  --color-tree-view-item-header-button-color: var(--color-brand-02-base); /*Deprecated v23.x.x utilizar --color*/
+  --color-tree-view-item-header-button-focus: var(
+    --color-action-default
+  ); /*Deprecated v23.x.x utilizar --color-action-focus*/
+  --color-tree-view-item-header-label-text-color: var(--color-neutral-dark-70); /*Deprecated v23.x.x utilizar --color*/
 
   /*------------------------------------*\
   UPLOAD

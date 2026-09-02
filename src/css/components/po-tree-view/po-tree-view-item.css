@@ -1,14 +1,13 @@
 .po-tree-view-item {
-  border-bottom: 1px solid
-    var(--color-tree-view-item-border-bottom-color, var(--po-contrast-from-light-10, var(--color-neutral-light-10)));
   list-style-type: none;
-  width: 100%;
+  padding: 15.5px;
+  background-color: var(--background-color);
 }
 
-.po-tree-view-item .po-tree-view-item {
-  border-bottom: none;
+.po-tree-view > .po-tree-view-item:not(:last-child) {
+  border-bottom: 1px solid var(--divider-color);
 }
 
-.po-tree-view-item-group {
-  padding-left: 28px;
+po-tree-view .po-tree-view-item-group .po-tree-view-item {
+  padding: 0;
 }

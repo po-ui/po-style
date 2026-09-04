@@ -84,6 +84,16 @@
   width: var(--page-slide-width-xl);
 }
 
+.po-page-slide-full {
+  width: var(--page-slide-width-full, 100vw);
+  max-width: none;
+}
+
+.po-page-slide-full .po-page-slide-content {
+  border-radius: 0;
+  border-width: 0;
+}
+
 .po-page-slide-auto {
   min-width: var(--page-slide-min-width-auto);
   max-width: var(--page-slide-max-width-auto);

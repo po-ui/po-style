@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.31.0](https://github.com/po-ui/po-style/compare/v21.30.1...v21.31.0) (2026-09-15)
+
+
+### Features
+
+* **drag-drop:** nova diretiva ([b723ca8](https://github.com/po-ui/po-style/commit/b723ca813333e52b881b9d14be8cfbbb6fb0397f))
+* **page-slide:** adiciona tamanho full ([66c77a1](https://github.com/po-ui/po-style/commit/66c77a1bd6645890a879da175e4e6a27b350d531))
+
+
+
 ## [21.30.1](https://github.com/po-ui/po-style/compare/v21.30.0...v21.30.1) (2026-09-01)
 
 Compatibilidade com @po-ui/ng-components@21.30.1

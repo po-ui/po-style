@@ -1164,7 +1164,6 @@ po-listbox {
 po-list-view {
   --color-list-view-background-color: var(--color-neutral-light-00);
   --color-list-view-border: var(--color-neutral-light-10);
-
   --color-list-view-highlighted-background: var(--color-brand-01-lightest);
 
   --list-item-transition-duration: var(--duration-normal);
@@ -1172,6 +1171,7 @@ po-list-view {
   --list-item-transition-timing: var(--timing-standard, var(--timing-standart, ease));
 
   --title-color: var(--color-list-view-color-primary, var(--color-neutral-dark-90));
+  --title-color-hover: var(--color-list-view-color-primary-hover, var(--color-action-hover));
   --title-font-family: var(--font-family-text);
   --title-font-size: var(--font-size-default);
   --title-line-height: var(--line-height-none);

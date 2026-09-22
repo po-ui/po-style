@@ -48,7 +48,7 @@ jobs:
               ;;
             next)
               echo "npm_tag=next"                      >> "$GITHUB_OUTPUT"
-              echo "required_branch=refs/heads/master" >> "$GITHUB_OUTPUT"
+              echo "required_branch=refs/heads/22.x.x" >> "$GITHUB_OUTPUT"
               ;;
             latest)
               echo "npm_tag=latest"                    >> "$GITHUB_OUTPUT"

@@ -370,6 +370,24 @@ po-list-view[p-components-size='small'] .po-list-view-main-content {
   line-height: var(--title-line-height);
 }
 
+.po-list-view-widget-mode .po-list-view-no-title .po-widget-text {
+  display: none;
+}
+
+.po-list-view-widget-mode .po-list-view-no-title .po-widget-wrapper-tag {
+  height: auto;
+  min-height: 0;
+}
+
+.po-list-view-widget-mode .po-list-view-no-title .po-widget-wrapper-info {
+  gap: 0;
+  min-height: 0;
+}
+
+.po-list-view-widget-mode .po-list-view-no-title .po-widget-header__tag-top {
+  padding-bottom: 0;
+}
+
 po-list-view[p-components-size='small'] .po-list-view-widget-mode .po-widget-text {
   font-size: var(--font-size-sm);
 }

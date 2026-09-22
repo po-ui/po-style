@@ -416,14 +416,38 @@ po-list-view[p-components-size='small'] .po-list-view-subtitle {
   outline-offset: 2px;
 }
 
+/* Título com aparência de po-link: aplica-se ao título clicável (p-item-click) e com ação (p-title-action). */
+.po-list-view-widget-mode .po-list-view-clickable .po-widget-wrapper-tag .po-widget-text,
+.po-list-view-widget-mode .po-widget-title-action.po-widget-text {
+  color: var(--color-action-default);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.po-list-view-widget-mode .po-list-view-clickable .po-widget-wrapper-tag .po-widget-text:hover,
+.po-list-view-widget-mode .po-widget-title-action.po-widget-text:hover {
+  color: var(--color-action-hover);
+  text-decoration: none;
+}
+
+.po-list-view-widget-mode .po-list-view-clickable .po-widget-wrapper-tag .po-widget-text:active,
+.po-list-view-widget-mode .po-widget-title-action.po-widget-text:active {
+  color: var(--color-action-pressed);
+  text-decoration: none;
+}
+
 .po-list-view-widget-mode .po-list-view-item-wrapper.po-list-view-selected {
   background: var(--color-list-view-selected-background);
   box-shadow: var(--shadow-selected);
   border-color: var(--color-action-default);
 }
 
+.po-list-view-widget-mode .po-list-view-selected.po-list-view-clickable .po-widget-wrapper-tag .po-widget-text,
+.po-list-view-widget-mode .po-list-view-selected .po-widget-title-action.po-widget-text,
 .po-list-view-widget-mode .po-list-view-selected .po-widget-text {
   color: var(--title-color-selected);
+  text-decoration: none;
 }
 
 .po-list-view-widget-mode .po-list-view-selected .po-list-view-subtitle {

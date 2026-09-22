@@ -355,6 +355,13 @@ po-list-view[p-components-size='small'] .po-list-view-main-content {
   justify-content: center;
 }
 
+.po-list-view-avatar-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
 .po-list-view-widget-mode .po-widget-text {
   color: var(--title-color);
   font-family: var(--title-font-family, var(--font-family-theme));

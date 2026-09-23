@@ -326,17 +326,6 @@ po-list-view[p-components-size='small'] .po-list-view-main-content {
   flex-shrink: 0;
 }
 
-.po-list-view-widget-mode .po-list-view-item-row {
-  position: relative;
-}
-
-.po-list-view-widget-mode .po-widget-button-wrapper {
-  position: absolute;
-  right: var(--spacing-sm);
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .po-list-view-avatar-icon {
   width: 48px;
   height: 48px;

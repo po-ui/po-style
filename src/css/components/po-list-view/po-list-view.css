@@ -395,7 +395,8 @@ po-list-view[p-components-size='small'] .po-list-view-subtitle {
   box-shadow: inset 0 0 0 var(--border-width-sm, 1px) var(--color-action-hover), var(--shadow-list-view-item);
 }
 
-.po-list-view-widget-mode .po-list-view-item-wrapper.po-list-view-clickable:active {
+.po-list-view-widget-mode .po-list-view-item-wrapper.po-list-view-clickable:active,
+.po-list-view-widget-mode .po-list-view-item-wrapper.po-list-view-clickable.po-list-view-active {
   background-color: var(--color-brand-01-lightest);
   border-color: var(--color-action-default);
 }
@@ -405,7 +406,6 @@ po-list-view[p-components-size='small'] .po-list-view-subtitle {
   outline-offset: 2px;
 }
 
-/* Título com aparência de po-link: aplica-se ao título clicável (p-item-click) e com ação (p-title-action). */
 .po-list-view-widget-mode .po-list-view-clickable .po-widget-wrapper-tag .po-widget-text,
 .po-list-view-widget-mode .po-widget-title-action.po-widget-text {
   color: var(--color-action-default);
@@ -525,22 +525,18 @@ po-list-view[p-components-size='small'] .po-list-view-subtitle {
   }
 }
 
-/* O container (.po-list-view-show-more) recebe a largura por breakpoint;
-   o botão (po-button host e .po-button interno) preenche 100% do container que o controla. */
 .po-list-view-show-more po-button,
 .po-list-view-show-more .po-button {
   display: block;
   width: 100%;
 }
 
-/* sm (base): 100% */
 .po-list-view-show-more {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* md: 80% */
 @media (min-width: $gridSystemMdMinWidth) and (max-width: $gridSystemMdMaxWidth),
   (min-width: var(--gridSystemMdMinWidth)) and (max-width: var(--gridSystemMdMaxWidth)) {
   .po-list-view-show-more {
@@ -548,7 +544,6 @@ po-list-view[p-components-size='small'] .po-list-view-subtitle {
   }
 }
 
-/* lg: 60% */
 @media (min-width: $gridSystemLgMinWidth) and (max-width: $gridSystemLgMaxWidth),
   (min-width: var(--gridSystemLgMinWidth)) and (max-width: var(--gridSystemLgMaxWidth)) {
   .po-list-view-show-more {
@@ -556,9 +551,19 @@ po-list-view[p-components-size='small'] .po-list-view-subtitle {
   }
 }
 
-/* xl: 40% */
 @media (min-width: $gridSystemXlMinWidth), (min-width: var(--gridSystemXlMinWidth)) {
   .po-list-view-show-more {
     width: 40%;
   }
+}
+
+.po-list-view-item-wrapper po-radio:focus,
+.po-list-view-item-wrapper po-radio:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.po-list-view-item-wrapper po-radio .po-radio.po-radio-focus > label {
+  outline: 2px solid var(--color-action-focus);
+  outline-offset: 2px;
 }

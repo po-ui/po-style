@@ -186,3 +186,45 @@ po-listbox[p-size='small'] .po-listbox-dropdown .po-item-list {
 po-listbox[p-size='small'] .po-listbox-dropdown .po-item-list .po-field-icon {
   font-size: var(--font-size-default);
 }
+
+/*------------------------------------*\
+  PO-LISTBOX SUBITEMS - LAZY LOADING
+\*------------------------------------*/
+
+.po-listbox-subitems-loading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--spacing-sm);
+  min-height: 138px;
+  padding: var(--spacing-sm);
+  box-sizing: border-box;
+}
+
+.po-listbox-subitems-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  min-height: 138px;
+  padding: var(--spacing-md) var(--spacing-sm);
+  text-align: center;
+}
+
+.po-listbox-subitems-error-message {
+  color: var(--color-neutral-dark-70);
+  font-family: var(--font-family-theme);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-md);
+}
+
+po-listbox[p-size='small'] .po-listbox-subitems-loading,
+po-listbox[p-size='small'] .po-listbox-subitems-error {
+  min-height: 100px;
+}
+
+po-listbox[p-size='small'] .po-listbox-subitems-error-message {
+  font-size: var(--font-size-xs);
+}

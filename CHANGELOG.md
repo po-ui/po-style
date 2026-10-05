@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.33.0](https://github.com/po-ui/po-style/compare/v21.32.0...v21.33.0) (2026-10-05)
+
+
+### Features
+
+* **list-view:** implementa definições do AnimaliaDS ([f5f6ad1](https://github.com/po-ui/po-style/commit/f5f6ad1ad820d8a6c9f0df29f216ea9cc3e2ac2a))
+* **tree-view:** implementa animaliaDS ([3150467](https://github.com/po-ui/po-style/commit/315046784f1cf5cf1992d39a64fe0c557eac16de))
+
+
+
 ## [21.32.0](https://github.com/po-ui/po-style/compare/v21.31.0...v21.32.0) (2026-09-29)
 
 Compatibilidade com @po-ui/ng-components@21.32.0

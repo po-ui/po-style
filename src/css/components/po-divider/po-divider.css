@@ -13,7 +13,7 @@ po-divider {
   text-transform: var(--text-transform);
   color: var(--color-neutral-dark-90);
   margin-bottom: 4px;
-  padding-left: 0.2rem;
+  padding-left: 4px;
 }
 
 .po-divider {

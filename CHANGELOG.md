@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [22.0.0-next.0](https://github.com/po-ui/po-style/compare/v21.33.0...v22.0.0-next.0) (2026-10-09)
+
+
+### Code Refactoring
+
+* **chart:** remove tokens css depreciados de chart e gauge ([1f01d91](https://github.com/po-ui/po-style/commit/1f01d913f1cb47b29d100ac7a3721b65c4297649)
+
+
+### BREAKING CHANGES
+
+* **chart:** removidos os tokens css depreciados de chart e gauge
+
+Foram removidos os tokens do tema default. Utilize os substitutos:
+
+--color-chart-background-color  -> --background-color e --background-color-grid
+--color-chart-axis-stroke       -> --color-grid
+--color-chart-legend-text       -> --color-legend
+--color-chart-axis-label-text   -> --text-color-grid
+--color-gauge-base-color        -> --color-base-gauge
+--color-gauge-description-text-color -> --color-subtitle-gauge
+
+
+
 # [21.33.0](https://github.com/po-ui/po-style/compare/v21.32.0...v21.33.0) (2026-10-05)
 
 

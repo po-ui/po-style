@@ -2,13 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [21.34.1](https://github.com/po-ui/po-style/compare/v21.34.0...v21.34.1) (2026-10-19)
+
+Compatibilidade com @po-ui/ng-components@21.34.1
+
 # [21.34.0](https://github.com/po-ui/po-style/compare/v21.33.0...v21.34.0) (2026-10-14)
 
 
 ### Features
 
 * **popup, dropdown:** adiciona suporte a lazy loading ([2856753](https://github.com/po-ui/po-style/commit/2856753e5f81f4ef23e9fe356f81aa62da004ead))
-
 
 
 # [21.33.0](https://github.com/po-ui/po-style/compare/v21.32.0...v21.33.0) (2026-10-05)
@@ -20,11 +23,9 @@ All notable changes to this project will be documented in this file. See [standa
 * **tree-view:** implementa animaliaDS ([3150467](https://github.com/po-ui/po-style/commit/315046784f1cf5cf1992d39a64fe0c557eac16de))
 
 
-
 ## [21.32.0](https://github.com/po-ui/po-style/compare/v21.31.0...v21.32.0) (2026-09-29)
 
 Compatibilidade com @po-ui/ng-components@21.32.0
-
 
 # [21.31.0](https://github.com/po-ui/po-style/compare/v21.30.1...v21.31.0) (2026-09-15)
 
@@ -35,12 +36,9 @@ Compatibilidade com @po-ui/ng-components@21.32.0
 * **page-slide:** adiciona tamanho full ([66c77a1](https://github.com/po-ui/po-style/commit/66c77a1bd6645890a879da175e4e6a27b350d531))
 
 
-
 ## [21.30.1](https://github.com/po-ui/po-style/compare/v21.30.0...v21.30.1) (2026-09-01)
 
 Compatibilidade com @po-ui/ng-components@21.30.1
-
-
 
 # [21.30.0](https://github.com/po-ui/po-style/compare/v21.29.0...v21.30.0) (2026-08-24)
 

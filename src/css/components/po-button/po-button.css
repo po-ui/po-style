@@ -223,6 +223,414 @@ po-button .po-loading-icon-container {
   justify-content: center;
 }
 
+/* Glow */
+
+/*
+ * Todas as camadas do glow ficam dentro do `<button>` e são posicionadas sobre a borda dele. Assim o efeito
+ * acompanha o tamanho real do botão, independentemente dos estilos aplicados ao host `po-button`
+ * (display, padding, largura do grid system etc.).
+ *
+ * O botão é um stacking context (`isolation: isolate`). Ordem de pintura dentro dele:
+ * fundo do botão → halo (z-index -1) → ::before (repete o fundo e esconde o halo dentro do botão)
+ * → ::after (gradiente e brilho interno do hover) → conteúdo (z-index 1) → anel (z-index 2).
+ */
+.po-button[p-kind='glow'] {
+  position: relative;
+  isolation: isolate;
+  color: var(--text-color-glow, var(--color-neutral-light-00));
+  background-color: var(--color-glow, var(--color-action-default));
+  border-color: var(--color-transparent);
+  border-width: var(--border-width-glow, var(--border-width-md));
+  border-radius: var(--border-radius-pill);
+  box-shadow: none;
+  transition: box-shadow var(--duration-glow-state, var(--duration-extra-slow))
+      var(--timing-glow, var(--timing-exiting)),
+    transform var(--duration-moderate) var(--timing-glow, var(--timing-exiting));
+}
+
+.po-button[p-kind='glow'] > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Camadas cobrindo a área da borda do botão */
+.po-button[p-kind='glow']::before,
+.po-button[p-kind='glow']::after,
+.po-button[p-kind='glow'] > .po-button-glow-halo,
+.po-button[p-kind='glow'] > .po-button-glow-ring {
+  position: absolute;
+  top: calc(var(--border-width-glow, var(--border-width-md)) * -1);
+  right: calc(var(--border-width-glow, var(--border-width-md)) * -1);
+  bottom: calc(var(--border-width-glow, var(--border-width-md)) * -1);
+  left: calc(var(--border-width-glow, var(--border-width-md)) * -1);
+  border-radius: var(--border-radius-pill);
+  pointer-events: none;
+}
+
+.po-button[p-kind='glow']::before,
+.po-button[p-kind='glow']::after {
+  content: '';
+}
+
+/* Repete o fundo do botão (em todos os estados) acima do halo */
+.po-button[p-kind='glow']::before {
+  background-color: inherit;
+}
+
+/* Gradiente e brilho interno do hover */
+.po-button[p-kind='glow']::after {
+  background: radial-gradient(
+      90% 120% at 65% 35%,
+      color-mix(in srgb, var(--color-glow-highlight, var(--color-brand-01-light)) 60%, transparent) 0%,
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      var(--color-glow-hover-start, var(--color-brand-01-base)) 0%,
+      var(--color-glow-hover-end, var(--color-brand-01-dark)) 100%
+    );
+  box-shadow: inset 0 0 var(--spacing-sm) var(--border-width-md)
+      color-mix(
+        in srgb,
+        var(--color-glow-inner, var(--color-neutral-light-00)) calc(var(--opacity-glow-inner, 0.55) * 100%),
+        transparent
+      ),
+    inset 0 0 var(--spacing-xxs) var(--border-width-sm)
+      color-mix(
+        in srgb,
+        var(--color-glow-inner, var(--color-neutral-light-00)) calc(var(--opacity-glow-inner, 0.55) * 100%),
+        transparent
+      ),
+    inset 0 var(--border-width-md) var(--border-width-md)
+      color-mix(
+        in srgb,
+        var(--color-glow-inner, var(--color-neutral-light-00)) calc(var(--opacity-glow-inner, 0.55) * 100%),
+        transparent
+      );
+  opacity: 0;
+  transition: opacity var(--duration-glow-state, var(--duration-extra-slow)) var(--timing-glow, var(--timing-exiting));
+}
+
+.po-button[p-kind='glow']:enabled:hover,
+.po-button[p-kind='glow']:enabled:focus-visible {
+  color: var(--text-color-glow, var(--color-neutral-light-00));
+  box-shadow: 0 var(--spacing-xs) var(--spacing-md) calc(var(--spacing-xs) * -1)
+      color-mix(in srgb, var(--color-glow-halo, var(--color-action-default)) 55%, transparent),
+    0 var(--spacing-xxs) var(--spacing-2xs) calc(var(--border-width-md) * -1)
+      color-mix(in srgb, var(--color-glow-halo, var(--color-action-default)) 25%, transparent);
+}
+
+.po-button[p-kind='glow']:enabled:hover::after,
+.po-button[p-kind='glow']:enabled:focus-visible::after {
+  opacity: 1;
+}
+
+.po-button[p-kind='glow']:enabled:active {
+  color: var(--text-color-glow, var(--color-neutral-light-00));
+  background-color: var(--color-glow-pressed, var(--color-action-pressed));
+  transform: scale(var(--scale-glow-pressed, 0.98));
+}
+
+.po-button[p-kind='glow']:enabled:active::after {
+  opacity: 0;
+  transition-duration: var(--duration-fast);
+}
+
+.po-button[p-kind='glow']:disabled {
+  color: var(--text-color-disabled);
+  background-color: var(--color-disabled);
+  box-shadow: none;
+}
+
+.po-button[p-kind='glow'] .po-button-icon > :first-child:not(.po-fonts-icon) path {
+  fill: var(--text-color-glow, var(--color-neutral-light-00));
+}
+
+.po-button[p-kind='glow']:disabled .po-button-icon > :first-child:not(.po-fonts-icon) path {
+  fill: var(--text-color-disabled);
+}
+
+/*
+ * Luz que dá a volta: anel nítido sobre a borda e halo difuso por fora.
+ *
+ * Cada camada contém uma cauda de pontos (`.po-button-glow-dot`) que percorre o contorno em pílula da camada
+ * via `offset-path`, com velocidade constante. Cada ponto da cauda começa um pouco depois do anterior
+ * (`--duration-glow-step`) e é mais transparente que ele.
+ *
+ * Navegadores sem suporte a `offset-path` com formas básicas usam, como fallback, um gradiente cônico girando
+ * no centro da camada.
+ */
+.po-button[p-kind='glow'] > .po-button-glow-halo,
+.po-button[p-kind='glow'] > .po-button-glow-ring {
+  transition: opacity var(--duration-glow-state, var(--duration-extra-slow)) var(--timing-glow, var(--timing-exiting));
+}
+
+/* Máscara que deixa visível apenas a faixa da borda */
+.po-button[p-kind='glow'] > .po-button-glow-ring {
+  z-index: 2;
+  overflow: hidden;
+  padding: var(--border-width-glow, var(--border-width-md));
+  -webkit-mask: linear-gradient(var(--color-neutral-light-00), var(--color-neutral-light-00)) content-box,
+    linear-gradient(var(--color-neutral-light-00), var(--color-neutral-light-00));
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(var(--color-neutral-light-00), var(--color-neutral-light-00)) content-box,
+    linear-gradient(var(--color-neutral-light-00), var(--color-neutral-light-00));
+  mask-composite: exclude;
+}
+
+.po-button[p-kind='glow'] > .po-button-glow-halo {
+  z-index: -1;
+  filter: blur(var(--blur-glow-halo, var(--spacing-sm)));
+  opacity: var(--opacity-glow-halo, 0.3);
+}
+
+.po-button-glow-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  offset-path: inset(var(--spacing-glow-path, var(--border-width-sm)) round var(--border-radius-pill));
+  offset-anchor: 50% 50%;
+  offset-rotate: 0deg;
+  opacity: var(--po-button-glow-dot-opacity, 1);
+  animation: po-button-glow-run var(--duration-glow-lap, 3200ms) linear infinite;
+  animation-delay: calc(
+    var(--po-button-glow-dot-index, 0) * var(--duration-glow-step, 30ms) - var(--duration-glow-lap, 3200ms)
+  );
+}
+
+.po-button-glow-ring .po-button-glow-dot {
+  width: var(--size-glow-ring-dot, var(--spacing-xl));
+  height: var(--size-glow-ring-dot, var(--spacing-xl));
+  background: radial-gradient(
+    circle closest-side,
+    var(--color-glow-ring, var(--color-neutral-light-00)) 0%,
+    color-mix(in srgb, var(--color-glow-ring, var(--color-neutral-light-00)) 95%, transparent) 35%,
+    transparent 100%
+  );
+}
+
+.po-button-glow-halo .po-button-glow-dot {
+  width: var(--size-glow-halo-dot, var(--spacing-2xl));
+  height: var(--size-glow-halo-dot, var(--spacing-2xl));
+  background: radial-gradient(
+    circle closest-side,
+    var(--color-glow-halo, var(--color-action-default)) 0%,
+    transparent 100%
+  );
+}
+
+/*
+ * Posição na cauda e opacidade de cada ponto: (1 - índice / 22) ^ 1.4.
+ * A quantidade de regras deve ser igual a `PO_BUTTON_GLOW_TRAIL_SIZE` (po-button.component.ts, @po-ui/ng-components).
+ */
+.po-button-glow-dot:nth-child(1) {
+  --po-button-glow-dot-index: 0;
+  --po-button-glow-dot-opacity: 1;
+}
+
+.po-button-glow-dot:nth-child(2) {
+  --po-button-glow-dot-index: 1;
+  --po-button-glow-dot-opacity: 0.937;
+}
+
+.po-button-glow-dot:nth-child(3) {
+  --po-button-glow-dot-index: 2;
+  --po-button-glow-dot-opacity: 0.875;
+}
+
+.po-button-glow-dot:nth-child(4) {
+  --po-button-glow-dot-index: 3;
+  --po-button-glow-dot-opacity: 0.814;
+}
+
+.po-button-glow-dot:nth-child(5) {
+  --po-button-glow-dot-index: 4;
+  --po-button-glow-dot-opacity: 0.755;
+}
+
+.po-button-glow-dot:nth-child(6) {
+  --po-button-glow-dot-index: 5;
+  --po-button-glow-dot-opacity: 0.697;
+}
+
+.po-button-glow-dot:nth-child(7) {
+  --po-button-glow-dot-index: 6;
+  --po-button-glow-dot-opacity: 0.64;
+}
+
+.po-button-glow-dot:nth-child(8) {
+  --po-button-glow-dot-index: 7;
+  --po-button-glow-dot-opacity: 0.585;
+}
+
+.po-button-glow-dot:nth-child(9) {
+  --po-button-glow-dot-index: 8;
+  --po-button-glow-dot-opacity: 0.531;
+}
+
+.po-button-glow-dot:nth-child(10) {
+  --po-button-glow-dot-index: 9;
+  --po-button-glow-dot-opacity: 0.479;
+}
+
+.po-button-glow-dot:nth-child(11) {
+  --po-button-glow-dot-index: 10;
+  --po-button-glow-dot-opacity: 0.428;
+}
+
+.po-button-glow-dot:nth-child(12) {
+  --po-button-glow-dot-index: 11;
+  --po-button-glow-dot-opacity: 0.379;
+}
+
+.po-button-glow-dot:nth-child(13) {
+  --po-button-glow-dot-index: 12;
+  --po-button-glow-dot-opacity: 0.332;
+}
+
+.po-button-glow-dot:nth-child(14) {
+  --po-button-glow-dot-index: 13;
+  --po-button-glow-dot-opacity: 0.286;
+}
+
+.po-button-glow-dot:nth-child(15) {
+  --po-button-glow-dot-index: 14;
+  --po-button-glow-dot-opacity: 0.243;
+}
+
+.po-button-glow-dot:nth-child(16) {
+  --po-button-glow-dot-index: 15;
+  --po-button-glow-dot-opacity: 0.201;
+}
+
+.po-button-glow-dot:nth-child(17) {
+  --po-button-glow-dot-index: 16;
+  --po-button-glow-dot-opacity: 0.162;
+}
+
+.po-button-glow-dot:nth-child(18) {
+  --po-button-glow-dot-index: 17;
+  --po-button-glow-dot-opacity: 0.126;
+}
+
+.po-button-glow-dot:nth-child(19) {
+  --po-button-glow-dot-index: 18;
+  --po-button-glow-dot-opacity: 0.092;
+}
+
+.po-button-glow-dot:nth-child(20) {
+  --po-button-glow-dot-index: 19;
+  --po-button-glow-dot-opacity: 0.061;
+}
+
+.po-button-glow-dot:nth-child(21) {
+  --po-button-glow-dot-index: 20;
+  --po-button-glow-dot-opacity: 0.035;
+}
+
+.po-button-glow-dot:nth-child(22) {
+  --po-button-glow-dot-index: 21;
+  --po-button-glow-dot-opacity: 0.013;
+}
+
+/* Fallback: gradiente cônico girando no centro da camada */
+@supports not (offset-path: inset(0 round 1px)) {
+  .po-button-glow-dot {
+    display: none;
+  }
+
+  .po-button[p-kind='glow'] > .po-button-glow-halo {
+    overflow: hidden;
+    top: calc((var(--border-width-glow, var(--border-width-md)) + var(--spacing-glow-halo, var(--spacing-xxs))) * -1);
+    right: calc((var(--border-width-glow, var(--border-width-md)) + var(--spacing-glow-halo, var(--spacing-xxs))) * -1);
+    bottom: calc(
+      (var(--border-width-glow, var(--border-width-md)) + var(--spacing-glow-halo, var(--spacing-xxs))) * -1
+    );
+    left: calc((var(--border-width-glow, var(--border-width-md)) + var(--spacing-glow-halo, var(--spacing-xxs))) * -1);
+    filter: blur(var(--spacing-xs));
+  }
+
+  .po-button-glow-halo::before,
+  .po-button-glow-ring::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    padding-top: 150%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: po-button-glow-spin var(--duration-glow-lap, 3200ms) linear infinite;
+  }
+
+  .po-button-glow-ring::before {
+    background: conic-gradient(
+      from 0deg,
+      transparent var(--glow-trail-start, 252deg),
+      var(--color-glow-ring, var(--color-neutral-light-00))
+    );
+  }
+
+  .po-button-glow-halo::before {
+    background: conic-gradient(
+      from 0deg,
+      transparent var(--glow-trail-start, 252deg),
+      var(--color-glow-halo, var(--color-action-default))
+    );
+  }
+
+  .po-button[p-kind='glow']:disabled .po-button-glow-halo::before,
+  .po-button[p-kind='glow']:disabled .po-button-glow-ring::before {
+    animation: none;
+  }
+}
+
+.po-button[p-kind='glow']:enabled:hover > .po-button-glow-halo,
+.po-button[p-kind='glow']:enabled:focus-visible > .po-button-glow-halo {
+  opacity: var(--opacity-glow-halo-hover, 0.5);
+}
+
+.po-button[p-kind='glow']:disabled > .po-button-glow-halo,
+.po-button[p-kind='glow']:disabled > .po-button-glow-ring {
+  opacity: 0;
+}
+
+/* Pausada, a cauda mantém o formato no ponto em que está, sem consumir quadros de animação */
+.po-button[p-kind='glow']:disabled .po-button-glow-dot {
+  animation-play-state: paused;
+}
+
+@keyframes po-button-glow-run {
+  from {
+    offset-distance: 0%;
+  }
+
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes po-button-glow-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .po-button-glow-dot {
+    animation-play-state: paused;
+  }
+
+  .po-button-glow-halo::before,
+  .po-button-glow-ring::before {
+    animation: none;
+  }
+}
+
 /* Variáveis antigas. Necessárias para a utilização de botão nativo com as classes do po-button */
 
 :root {

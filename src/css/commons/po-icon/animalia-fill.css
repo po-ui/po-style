@@ -33,6 +33,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.an-fill.an-lynn-logo:before {
+  content: '\e903';
+}
 .an-fill.an-columns-minus-right:before {
   content: '\e92d';
 }

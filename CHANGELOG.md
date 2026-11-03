@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [21.36.0](https://github.com/po-ui/po-style/compare/v21.35.0...v21.36.0) (2026-11-03)
+
+
+### Features
+
+* **icons:** atualiza AnimaliaIcons para v1.2.0 ([7f603f3](https://github.com/po-ui/po-style/commit/7f603f389e4cd8da5e1ffcb94a00bcc2433a3b96))
+
+
+
 ## [21.35.0](https://github.com/po-ui/po-style/compare/v21.34.1...v21.35.0) (2026-10-27)
 
 Compatibilidade com @po-ui/ng-components@21.35.0

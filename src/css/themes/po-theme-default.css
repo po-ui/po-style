@@ -115,6 +115,9 @@
 \*------------------------------------*/
 
 :root {
+  /* Identifica o tema deste CSS para o PoThemeService (nome normalizado de poThemeDefault). */
+  --po-theme-name: default;
+
   --color-wrapper-menu-panel-color-background: var(--color-neutral-light-00);
   --color-overlay-background-color-overlay: var(--color-secondary-dark-60-alpha-70);
   --color-hr-border-top: var(--color-neutral-light-10);

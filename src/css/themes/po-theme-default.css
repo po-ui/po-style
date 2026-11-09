@@ -128,26 +128,43 @@
 \*------------------------------------*/
 
 :root {
-  --color-brand-01-lightest: #f2eaf6;
-  --color-brand-01-lighter: #d9c2e5;
-  --color-brand-01-light: #bd94d1;
-  --color-brand-01-base: #753399;
-  --color-brand-01-dark: #5b1c7d;
-  --color-brand-01-darker: #400e58;
-  --color-brand-01-darkest: #260538;
-  --color-brand-02-base: #b92f72;
-  --color-brand-03-base: #ffd464;
-  --color-neutral-dark-70: #4a5c60;
-  --color-neutral-dark-80: #2c3739;
-  --color-neutral-dark-90: #1d2426;
-  --color-neutral-dark-95: #0b0e0e;
-  --color-neutral-light-00: #fff;
-  --color-neutral-light-05: #fbfbfb;
-  --color-neutral-light-10: #eceeee;
-  --color-neutral-light-20: #dadedf;
-  --color-neutral-light-30: #b6bdbf;
-  --color-neutral-mid-40: #9da7a9;
-  --color-neutral-mid-60: #6e7c7f;
+  --color-brand-01-lightest: #f3f6fb;
+  --color-brand-01-lighter: #cfd9ee;
+  --color-brand-01-light: #87a1d3;
+  --color-brand-01-base: #576bb9;
+  --color-brand-01-dark: #434c8c;
+  --color-brand-01-darker: #39416f;
+  --color-brand-01-darkest: #262a45;
+
+  --color-brand-02-lightest: #fef1f6;
+  --color-brand-02-lighter: #fecce2;
+  --color-brand-02-light: #fe68a2;
+  --color-brand-02-base: #f94485;
+  --color-brand-02-dark: #be1243;
+  --color-brand-02-darker: #8b1031;
+  --color-brand-02-darkest: #560117;
+
+  --color-brand-03-lightest: #eefcfd;
+  --color-brand-03-lighter: #aeecf3;
+  --color-brand-03-light: #37c3d9;
+  --color-brand-03-base: #187e97;
+  --color-brand-03-dark: #1b6c83;
+  --color-brand-03-darker: #1f596b;
+  --color-brand-03-darkest: #0e303e;
+
+  --color-neutral-light-00: #ffffff;
+  --color-neutral-light-05: #f9f9fa;
+  --color-neutral-light-10: #ececee;
+  --color-neutral-light-20: #e7e5e4;
+  --color-neutral-light-30: #b4b4c0;
+
+  --color-neutral-mid-40: #9191a1;
+  --color-neutral-mid-60: #69697c;
+
+  --color-neutral-dark-70: #515162;
+  --color-neutral-dark-80: #36364a;
+  --color-neutral-dark-90: #1d1d30;
+  --color-neutral-dark-95: #060613;
 }
 
 /*------------------------------------*\
@@ -331,12 +348,12 @@
    * Variáveis para definições de fontes. O PO utiliza as variantes *extra light*, *regular* e *bold* em seus componentes e, para cada uma delas,
    * é atribuído um @font-face específico. Os nomes elencados no `font-family` no @font-face devem ser os mesmos atribuídos como valor para as variáveis.
    */
-  --font-family-theme: Roboto;
-  --font-family-theme-bold: Roboto-Bold;
-  --font-family-theme-extra-light: Roboto-Condensed-Light;
-
-  --font-family-heading: Roboto;
   --font-family-code: Monospace;
+  --font-family-heading: Aleo, Georgia, serif;
+  --font-family-theme: MonaSans, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-theme-bold: MonaSans-Bold;
+  --font-family-theme-extra-light: MonaSans-Light;
+
   --font-weight-extra-light: 200;
   --text-transform-normal: normal;
   --text-transform-uppercase: uppercase;
@@ -360,6 +377,50 @@
 @font-face {
   font-family: 'Roboto-Bold';
   src: url('./../fonts/Roboto/Roboto-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aleo';
+  src: url('./../fonts/Aleo/Aleo-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aleo-Light';
+  src: url('./../fonts/Aleo/Aleo-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: 'Aleo-Bold';
+  src: url('./../fonts/Aleo/Aleo-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonaSans';
+  src: url('./../fonts/MonaSans/MonaSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonaSans-Light';
+  src: url('./../fonts/MonaSans/MonaSans-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: 'MonaSans-Bold';
+  src: url('./../fonts/MonaSans/MonaSans-Bold.ttf');
   font-weight: bold;
   font-style: normal;
 }

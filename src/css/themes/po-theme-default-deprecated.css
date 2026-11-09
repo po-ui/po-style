@@ -498,6 +498,13 @@ po-button {
   --text-color-disabled: var(--color-neutral-dark-70);
   --color-disabled: var(--color-action-disabled);
   --background-color-disabled: var(--color-transparent);
+
+  /* glow */
+  --color-glow-highlight: var(--color-brand-01-light);
+  --color-glow-ring: var(--color-neutral-light-00);
+  --glow-animation-duration: 3200ms;
+  --glow-transition-duration: var(--duration-extra-slow);
+  --glow-transition-timing: var(--timing-exiting);
 }
 
 po-badge {

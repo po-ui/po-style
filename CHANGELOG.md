@@ -2,7 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-# [22.0.0-rc.0](https://github.com/po-ui/po-style/compare/v22.0.0-next.0...22.0.0-rc.0) (2026-10-28)
+# [22.0.0-rc.1](https://github.com/po-ui/po-style/compare/v22.0.0-rc.0...v22.0.0-rc.1) (2026-11-11)
+
+
+### Features
+
+* **button:** adiciona kind glow ([b0354cb](https://github.com/po-ui/po-style/commit/b0354cb0c4db12d3d58d5654a67aa9f9aacd8520))
+* **themes:** adiciona novo tema EVO por padrão ([472a7de](https://github.com/po-ui/po-style/commit/472a7deaa6af2a6ec84cfd3f7bebe2b2fb02ca9c))
+
+# [22.0.0-rc.0](https://github.com/po-ui/po-style/compare/v22.0.0-next.0...v22.0.0-rc.0) (2026-10-28)
 
 Compatibilidade com @po-ui/ng-components@22.0.0-rc.0
 

@@ -1,3 +1,6 @@
+---
+category: themes
+---
 [comment]: # (@label Personalizando o Tema Padrão com Tokens CSS)
 [comment]: # (@link guides/theme-customization)
 

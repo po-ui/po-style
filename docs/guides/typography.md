@@ -1,3 +1,6 @@
+---
+category: layout
+---
 [comment]: # (@label Tipografia)
 [comment]: # (@link guides/typography)
 

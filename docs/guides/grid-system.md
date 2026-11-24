@@ -1,3 +1,6 @@
+---
+category: layout
+---
 [comment]: # (@label Grid System)
 [comment]: # (@link guides/grid-system)
 

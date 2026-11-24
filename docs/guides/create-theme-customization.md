@@ -1,3 +1,6 @@
+---
+category: themes
+---
 [comment]: # (@label Criando um tema para o PO UI)
 [comment]: # (@link guides/create-theme-customization)
 

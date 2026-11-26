@@ -1,3 +1,6 @@
+---
+category: layout
+---
 [comment]: # (@label Espaçamento)
 [comment]: # (@link guides/spacing)
 

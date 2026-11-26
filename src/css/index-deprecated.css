@@ -1,0 +1,7 @@
+/* @deprecated v24.x.x - bundle do tema padrão anterior ao EVO. Será removido na v24. Utilize ./index.css. */
+@import './themes/po-global-tokens.css';
+@import './themes/po-theme-default-deprecated.css';
+
+@import './commons';
+@import './components';
+@import './services';

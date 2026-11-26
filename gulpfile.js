@@ -65,6 +65,15 @@ const copyThemeVariablesCss = () =>
     })
     .pipe(dest(`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/css/`));
 
+const copyThemeDeprecatedVariablesCss = () =>
+  src(`./src/css/themes/po-theme-default-deprecated.css`)
+    .pipe(rename(`po-theme-default-deprecated-variables.css`))
+    .on('error', err => {
+      console.log(err.toString());
+      this.emit('end');
+    })
+    .pipe(dest(`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/css/`));
+
 const prepareThemeCss = () => src('./src/**/*.css').pipe(dest('./.temp'));
 
 const buildThemeCss = modern =>
@@ -110,6 +119,27 @@ const buildThemeVariablesCss = () =>
     })
     .pipe(dest(`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/css/`));
 
+const buildThemeDeprecatedVariablesCss = () =>
+  src(`./.temp/css/themes/po-theme-default-deprecated.css`)
+    .pipe(postcss([cssnano()]))
+    .pipe(rename(`po-theme-default-deprecated-variables.min.css`))
+    .on('error', err => {
+      console.log(err.toString());
+      this.emit('end');
+    })
+    .pipe(dest(`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/css/`));
+
+// Bundle completo do tema deprecated (espelha buildThemeCssLegacy, usando index-deprecated.css)
+const buildThemeDeprecatedCssLegacy = () =>
+  src(`./.temp/css/index-deprecated.css`)
+    .pipe(postcss([importCss(), apply(), nested(), simpleVars(), autoprefixer(), cssnano()]))
+    .pipe(rename(`css/po-theme-default-deprecated.min.css`))
+    .on('error', err => {
+      console.log(err.toString());
+      this.emit('end');
+    })
+    .pipe(dest(`./dist/${distDirectory}${argv.theme ? '-' + argv.theme : ''}/`));
+
 // Tarefa otimizada para desenvolvimento
 const buildDevThemeCss = () =>
   src('./.temp/css/index.css')
@@ -134,8 +164,21 @@ const buildThemeCssLegacyWatch = () => buildThemeCssWatch(false);
 
 const buildTheme = series(
   cleanTemp,
-  parallel(copyThemeAssets, copyThemePackageJson, copyThemeReadme, copyThemeVariablesCss, prepareThemeCss),
-  parallel(buildThemeCssModern, buildThemeVariablesCss, buildThemeCssLegacy),
+  parallel(
+    copyThemeAssets,
+    copyThemePackageJson,
+    copyThemeReadme,
+    copyThemeVariablesCss,
+    copyThemeDeprecatedVariablesCss,
+    prepareThemeCss
+  ),
+  parallel(
+    buildThemeCssModern,
+    buildThemeVariablesCss,
+    buildThemeCssLegacy,
+    buildThemeDeprecatedVariablesCss,
+    buildThemeDeprecatedCssLegacy
+  ),
   cleanTemp
 );
 buildTheme.displayName = 'build';

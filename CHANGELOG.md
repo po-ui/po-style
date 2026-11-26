@@ -2,27 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-# [22.0.0-rc.1](https://github.com/po-ui/po-style/compare/v22.0.0-rc.0...v22.0.0-rc.1) (2026-11-11)
+# [22.0.0](https://github.com/po-ui/po-style/compare/v21.38.0...v22.0.0) (2026-11-26)
 
 
-### Features
-
-* **button:** adiciona kind glow ([b0354cb](https://github.com/po-ui/po-style/commit/b0354cb0c4db12d3d58d5654a67aa9f9aacd8520))
-* **themes:** adiciona novo tema EVO por padrão ([472a7de](https://github.com/po-ui/po-style/commit/472a7deaa6af2a6ec84cfd3f7bebe2b2fb02ca9c))
-
-# [22.0.0-rc.0](https://github.com/po-ui/po-style/compare/v22.0.0-next.0...v22.0.0-rc.0) (2026-10-28)
-
-Compatibilidade com @po-ui/ng-components@22.0.0-rc.0
-
-# [22.0.0-next.0](https://github.com/po-ui/po-style/compare/v21.35.0...v22.0.0-next.0) (2026-10-09)
-
-
-### Code Refactoring
-
-* **chart:** remove tokens css depreciados de chart e gauge ([1f01d91](https://github.com/po-ui/po-style/commit/1f01d913f1cb47b29d100ac7a3721b65c4297649)
-
-
-### BREAKING CHANGES
+### ⚠ BREAKING CHANGES
 
 * **chart:** removidos os tokens css depreciados de chart e gauge
 
@@ -34,6 +17,19 @@ Foram removidos os tokens do tema default. Utilize os substitutos:
 --color-chart-axis-label-text   -> --text-color-grid
 --color-gauge-base-color        -> --color-base-gauge
 --color-gauge-description-text-color -> --color-subtitle-gauge
+
+
+### Code Refactoring
+
+* **chart:** remove tokens css depreciados de chart e gauge ([767a75d](https://github.com/po-ui/po-style/commit/767a75dde66957643a9c5af3b033b760ce703868))
+* **themes:** deprecia o tema padrão anterior ([6041ce0](https://github.com/po-ui/po-style/commit/6041ce00d578a96f95018e85bfec2964dff08aca))
+
+
+### Features
+
+* **button:** adiciona kind glow ([ffff1c5](https://github.com/po-ui/po-style/commit/ffff1c502510a6647103caf70821f5ab209337c6))
+* **themes:** adiciona novo tema EVO por padrão ([04af3a0](https://github.com/po-ui/po-style/commit/04af3a00a096966def4c4dc14d148c182898acdf))
+
 
 ## [21.38.0](https://github.com/po-ui/po-style/compare/v21.37.0...v21.38.0) (2026-11-16)
 
